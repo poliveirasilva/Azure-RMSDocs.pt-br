@@ -409,7 +409,7 @@
  [Azure-RMSDocs\develop\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/develop/docfx.json) | Ignored | [Details](#50c6711539106c08a3af2aff41bce2851853725a62)
  [Azure-RMSDocs\develop\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/develop/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda83)
  [Azure-RMSDocs\docfx.json](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/docfx.json) | Ignored | [Details](#11a1a849d007c098704731e397545dc24c81bb4a107)
- [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/index.md) | Ignored | [Details](#6265a89ccd4bcdea11a9ca721dbfd6602d5fe44d162)
+ [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/index.md) | Ignored | [Details](#0fa0f5c4377a272cecad174ad9aa70dfc7cc7299162)
  [Azure-RMSDocs\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda163)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_ProtectCustom.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/media/ADRMS_MSRMSApp_ProtectCustom.gif) | Ignored | [Details](#a92b83706a626411ae959ebe0be5e55d78fe7446175)
  [Azure-RMSDocs\media\ADRMS_MSRMSApp_SP_ConsumePfile.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/media/ADRMS_MSRMSApp_SP_ConsumePfile.gif) | Ignored | [Details](#5d2f20557a431bdb26e178ad24039f7b432438a3180)
@@ -2393,7 +2393,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='6265a89ccd4bcdea11a9ca721dbfd6602d5fe44d162'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/index.md)
+##### <a name='0fa0f5c4377a272cecad174ad9aa70dfc7cc7299162'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c9d2e6c09e871c52811023b31dd195b1ab4340f4/Azure-RMSDocs/index.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
