@@ -77,48 +77,6 @@
   "18d42566f6bd25c3b021cab350554a1a4dfb2604": [
     "Azure-RMSDocs\\TOC.md"
   ],
-  "da5c5f97de92edd7962846b9a9d318d76f67b84b": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "428481e871bc69099609aa2532771a0b07fecfee": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "9f23ad1ea3c13a519f1e0e48812a131dc67f4db3": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "5bdf4db680b72e1dd9d4c61939ac6be988ff2ad5": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "f2251301ce15de7c97ad0da8ee0002b768668101": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "b491966f6531f7e401c813f1489341d597e5509c": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "6d888d9c8d3d8d55bf72b58e31acd97bc3cc1a11": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "82332630d0a7107661033b51289181b5b415f6f4": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "80d1b79939e7eb92210e48bdf098aa1c089941ef": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "c1a9648828be4a88f1ae92c0e545616cf5286ba1": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "6c91dbe35ecf80bcc798ad36b7cb8ce5b3bc4574": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "eeb12deda215944c52c491aeff14356d4cc8030f": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "26de87ea2b1a2072f171d17804a8a76bb0792f96": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
-  "568b2230dcb97aa4c7a7b4c694a6b7f68d08cfde": [
-    "Azure-RMSDocs\\TOC.md"
-  ],
   "a8c9a55977a285cd30872beeb160b07ce02edcce": [
     "Azure-RMSDocs\\understand-explore\\azure-rights-management.md"
   ],
@@ -174,15 +132,6 @@
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
   ],
   "8749ea30e4c95dc656c74079ab42ce6519070fd6": [
-    "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
-  ],
-  "3847f53d91e8862feaf09fd6eca3de86397bab0e": [
-    "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
-  ],
-  "bbc92e0b691b7ed9a8217969f1aae590c189ec87": [
-    "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
-  ],
-  "3b75ea0542237f2ab61b681de19b271359423c4e": [
     "Azure-RMSDocs\\understand-explore\\azure-rms-aka.md"
   ],
   "dc4937cd9c03f1ed6786e95f951f7285189703b4": [
@@ -396,12 +345,6 @@
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
   "ca8b970c0a20c657771c0707c18e95de03d4d5ec": [
-    "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
-  ],
-  "f93b7a00190cff7d9952d218b234d567b9350e71": [
-    "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
-  ],
-  "73c171c3a10b1b232d5154763393b9b25cd91373": [
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
   "ee2e1535156736f6cbed96711d7044451aa5ef95": [
@@ -728,9 +671,6 @@
   "ce5f67fda8a7486ad84b1271fb16f8fd055ccb04": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
-  "713befc293e6becf10292d9e6cef1ce8611893be": [
-    "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
-  ],
   "96d04f5003e04f3e8346579ef4251329fee51f87": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
@@ -774,9 +714,6 @@
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
   "476a27a895db001fce67c14aad390d2357414a5b": [
-    "Azure-RMSDocs\\develop\\enabling-logging.md"
-  ],
-  "854401853fa505df1e4762824eb2e160685e034d": [
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
   "7d65d9863d2f468c12ff10daf3255b389ef7a6a9": [
@@ -1002,9 +939,6 @@
     "Azure-RMSDocs\\develop\\linux-c-api-reference.md"
   ],
   "283654c6e489c4cdf0b687c6ab7c43ce8652dc0e": [
-    "Azure-RMSDocs\\develop\\linux-c-api-reference.md"
-  ],
-  "ee5211995f28247a278e8228ec7ffa66c4d4f6f3": [
     "Azure-RMSDocs\\develop\\linux-c-api-reference.md"
   ],
   "ace7103cfb44d84a7dd6bf64f57c2a47530117e0": [
@@ -1571,12 +1505,6 @@
   "6294fdbca6e3017aa83e3c593b9ba21ad765e60a": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
   ],
-  "1a8acb82da4a1f69d5eed88f91b0a93f5b0f7951": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
-  ],
-  "1d2cb19c1315e0f566a7f3eb594b101cfa9495c2": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
-  ],
   "d65bbc9b0791d1dc640b99762d1ffe58edc9727c": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
@@ -1869,9 +1797,6 @@
     "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
   ],
   "0d6806c570a4a921c79fb1ab2f6980c3eee1db37": [
-    "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
-  ],
-  "1001fada1b5229b1bdb677ea0e002276eea257dc": [
     "Azure-RMSDocs\\rms-client\\sharing-app-track-revoke.md"
   ],
   "46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3": [
