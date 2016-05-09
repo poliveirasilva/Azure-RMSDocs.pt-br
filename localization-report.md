@@ -5,12 +5,12 @@
  -------- | ----- 
  Total Files | 433
 [ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 169
+[ Handoff Success Files ](#handoff-success-list)| 168
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 28
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 139
-[ In Sync Handback Files ](#insync-handback-success-list)| 31
+[ In Sync Handback Files ](#insync-handback-success-list)| 32
 [ Ignored Files ](#ignored-list)| 65
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -56,7 +56,6 @@
  [Azure-RMSDocs\get-started\scenario-share-office-file-externally.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/scenario-share-office-file-externally.md) | HandedOffSuccess | [Details](#2cf628751a52ed05f6ae3fb1b1c3663df47d583f124)
  [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/scenario-sharepoint.md) | HandedOffSuccess | [Details](#19fdd694c9271c91f69cdfc8fac7fe13515c75b6125)
  [Azure-RMSDocs\get-started\scenario-work-folders.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/scenario-work-folders.md) | HandedOffSuccess | [Details](#c01122f8c81aec8bf51e5a9df9ea46cdb2523e5d126)
- [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d14ac4c2c7fa905cdbaeb71659f6ab798ff2d4e/Azure-RMSDocs/index.html) | HandedOffSuccess | [Details](#ea3d788a0b31ae119fc6de1aca0b1949d059a865162)
  [Azure-RMSDocs\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/108b102b981f55bfd22745a61d79ff7a4203f1e5/Azure-RMSDocs/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71165)
  [Azure-RMSDocs\media\4d269a30-a873-45c5-87de-30ee6558e7b0.gif](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c1cd5adccb8ed07dac9a0535654f21a970575a78/Azure-RMSDocs/media/4d269a30-a873-45c5-87de-30ee6558e7b0.gif) | HandedOffSuccess | [Details](#a88e0dacb05ee102cc7a0aed64ac5032d1bd9f3d166)
  [Azure-RMSDocs\media\additional_dependencies.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/additional_dependencies.png) | HandedOffSuccess | [Details](#e46ef9487910113bda49dfcfa5e3d3e5798432b0171)
@@ -381,6 +380,7 @@
  [Azure-RMSDocs\includes\rms-quickstart-step3-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f3175f081efab6e21cd2f370c579c55fbc9e8096/Azure-RMSDocs/includes/rms-quickstart-step3-include.md) | InSyncHandedBackSuccess | [Details](#c8f0d0902216a6bdde443e8bfc81754cab556ce4155)
  [Azure-RMSDocs\includes\rms-quickstart-step4-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f3175f081efab6e21cd2f370c579c55fbc9e8096/Azure-RMSDocs/includes/rms-quickstart-step4-include.md) | InSyncHandedBackSuccess | [Details](#4e4bc7a8efc4a8d6582160903344482c6e9ecd4b156)
  [Azure-RMSDocs\includes\rms-quickstart-step5-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9ab036a0694bf630d511268c535321da33444734/Azure-RMSDocs/includes/rms-quickstart-step5-include.md) | InSyncHandedBackSuccess | [Details](#6bd1adbf3f669c1009800bad64acc4b341a82a2a157)
+ [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d14ac4c2c7fa905cdbaeb71659f6ab798ff2d4e/Azure-RMSDocs/index.html) | InSyncHandedBackSuccess | [Details](#ea3d788a0b31ae119fc6de1aca0b1949d059a865162)
  [scratch\full-screen-picture-activating-rights-management.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/27660fc7a954a18d7ef7b9144dd5445d3c3a9d87/scratch/full-screen-picture-activating-rights-management.md) | InSyncHandedBackSuccess | [Details](#21be53ddbfca6554c1c22986e021408f22a52e96402)
  [scratch\full-screen-picture-alice-gets-email-notification.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/27660fc7a954a18d7ef7b9144dd5445d3c3a9d87/scratch/full-screen-picture-alice-gets-email-notification.md) | InSyncHandedBackSuccess | [Details](#3034f10214efe573d807c948a01ec3eeed8ab231403)
  [scratch\full-screen-picture-alice-shares-protected-attachment.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/27660fc7a954a18d7ef7b9144dd5445d3c3a9d87/scratch/full-screen-picture-alice-shares-protected-attachment.md) | InSyncHandedBackSuccess | [Details](#45b4a27dd78e162ef6518c27f01b327bb5028a02404)
@@ -2685,15 +2685,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='ea3d788a0b31ae119fc6de1aca0b1949d059a865162'></a> Source: [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d14ac4c2c7fa905cdbaeb71659f6ab798ff2d4e/Azure-RMSDocs/index.html)
-* Status: HandedOffSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/d6b060f8f69d3c66a42bf263b673d02d59d8bcc0/Azure-RMSDocs/index.html)
 * Handoff File: [ea3d788a0b31ae119fc6de1aca0b1949d059a865.html](https://github.com/Microsoft/EM.handoff/blob/9007aa5e6dfa6c7e9efb8d8b93f4b89e4efa29c5/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/ea3d788a0b31ae119fc6de1aca0b1949d059a865.html)
 * Handoff Datetime: 2016-04-15 08:58:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [ea3d788a0b31ae119fc6de1aca0b1949d059a865.html](https://github.com/Microsoft/EM.handback/blob/f718d418678e10780a10f07d3b99fcd5c7df1d8f/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/ea3d788a0b31ae119fc6de1aca0b1949d059a865.html)
+* Handback Datetime: 2016-05-09 14:10:53
 * [Back to Top](#report-top)
 
 ##### <a name='e1175da572ad6985c44f16a1addafe16bf2fe9a1163'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8865025f8f905bfd73fbd97e40855b8467a9e082/Azure-RMSDocs/index.md)
