@@ -1,7 +1,11 @@
-# [Understand & explore](/rights-management/understand-explore/azure-rights-management)
-# [Get started](/rights-management/get-started/requirements-azure-rms)
-# [Plan & design](/rights-management/plan-design/deployment-roadmap)
-# [Deploy & Use the Service](/rights-management/deploy-use/activate-service)
-# [Deploy & Use the Client](/rights-management/rms-client/use-client)
-# [Develop & customize apps](/rights-management/develop/developers-guide)
-# [Administer](/rights-management/administer/administer-powershell)
+# [Entender e explorar](/rights-management/understand-explore/azure-rights-management)
+# [Introdução](/rights-management/get-started/requirements-azure-rms)
+# [Planejar e projetar](/rights-management/plan-design/deployment-roadmap)
+# [Implantar e usar](/rights-management/deploy-use/activate-service)
+# [Desenvolver e personalizar aplicativos](/rights-management/develop/developers-guide)
+# [Administrar](/rights-management/administer/administer-powershell)
+# [Usar o cliente RMS](/rights-management/rms-client/use-client)
+
+<!--HONumber=Apr16_HO3-->
+
+
