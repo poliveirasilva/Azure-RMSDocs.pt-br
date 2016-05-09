@@ -1,0 +1,53 @@
+---
+# required metadata
+
+title: Conceitos de desenvolvedor | Azure RMS
+description: Os tópicos nesta seção abordam os principais conceitos no RMS.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 20d3d9a4-f66e-4dfa-8c76-29e18f49eb0d
+
+# optional metadata
+
+#ROBOTS:
+audience: developer
+#ms.devlang:
+ms.reviewer: shubhamp
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+﻿
+# Conceitos de desenvolvedor
+
+Os tópicos nesta seção abordam os principais conceitos no RMS.
+
+[Tipos de aplicativo](application-types.md) - este tópico aborda os tipos de aplicativos que você pode escolher criar como habilitados para direitos.
+
+[Entendendo cadeias de certificado](understanding-certificate-chains.md) - desenvolver um aplicativo habilitado para direitos requer um par de chaves públicas e uma cadeia de certificados que leve de volta a um certificado da Microsoft na raiz de confiança.
+
+[Noções básicas sobre restrições de uso](understanding-usage-restrictions.md) - todos os aplicativos habilitados para RMS devem impor restrições de uso.
+
+[Habilitar o serviço de aplicativo para trabalhar com a nuvem com base em RMS](how-to-use-file-api-with-aadrm-cloud.md) - esse tópico descreve as etapas para configurar seu aplicativo de serviço para usar o Azure Rights Management.
+
+ 
+
+## Tópicos relacionados ##
+- [Visão geral](ad-rms-overview.md)
+- [Como usar](how-to-use-msipc.md)
+ 
+
+ 
+
+
+<!--HONumber=Apr16_HO3-->
+
+
