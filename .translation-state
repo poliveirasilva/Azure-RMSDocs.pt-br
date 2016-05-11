@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "0a4f8aa90f7cf79099922ea7d128a0e1a34f38d1",
-  "LastTranslatedCommit": "893bd4747c7c8e32c5e450431bfe971d1bd486c1",
+  "LastTranslatedCommit": "86717d24b6060c9d585ba297bea03c7daa0af519",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -48370,14 +48370,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "86717d24b6060c9d585ba297bea03c7daa0af519",
+      "TargetFilePath": "Azure-RMSDocs\\get-started\\scenario-executives-email.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pt-br\\master\\scenario-executives-email.02fb32c7a1e5b62754681e4d720db2d250184079.pt-br.xlf",
+      "HandbackFileCommit": "627d39e76bbd807995cdbcbdd10b555983a0bb93",
+      "HandbackDateTime": "2016-05-11T11:12:17.445821Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-05-11T11:12:17.445821Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.pt-br\\master\\archive\\scenario-executives-email.02fb32c7a1e5b62754681e4d720db2d250184079.pt-br.xlf",
       "ArchiveFileCommit": "d2c54a7365eb033f1aacd5776b5eff97f19ffa03",
       "ArchiveFileDateTime": "2016-04-26T05:05:39.1382095Z",
