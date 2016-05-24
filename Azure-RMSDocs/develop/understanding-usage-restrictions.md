@@ -2,7 +2,7 @@
 # required metadata
 
 title: Noções básicas sobre restrições de uso | Azure RMS
-description:
+description: Todos os aplicativos habilitados para RMS devem impor restrições de uso.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 361bbc29-821f-4577-ace6-0aec799039a9
-
+ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Noções básicas sobre restrições de uso
+# Noções básicas sobre restrições de uso
 
 Todos os aplicativos habilitados para RMS devem impor restrições de uso. Uma restrição de uso é uma condição que ocorre quando um usuário tenta executar uma ação (por exemplo, imprimir um documento), mas a política do RMS para esse documento não concede a ele permissão ou direito de executar essa ação (por exemplo, o direito PRINT).
 
@@ -51,7 +50,7 @@ As permissões do usuário para um documento podem ser consultadas usando a fun�
 
     Para obter diretrizes de como impor direitos específicos, consulte [Referência de restrição de uso](usage-restriction-reference.md).
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Conceitos de desenvolvedor](ad-rms-concepts-nav.md)
 * [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
@@ -64,6 +63,6 @@ As permissões do usuário para um documento podem ser consultadas usando a fun�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 
