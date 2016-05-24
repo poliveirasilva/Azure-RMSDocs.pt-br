@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 03d4fa22-0de4-400f-935d-e347d5890680
-
+ms.assetid: 186A9740-D812-4440-B28A-6968B2D8898C
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Como usar
 
 Os tópicos a seguir fornecem orientações durante as principais tarefas de utilização do Rights Management Services SDK 2.1 para implementar a proteção de informações do seu aplicativo.
@@ -38,7 +36,7 @@ Os tópicos a seguir fornecem orientações durante as principais tarefas de uti
   Esta seção guiará você durante o processo de liberação de seu aplicativo testado para um ambiente de produção.
  
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Visão geral](ad-rms-overview.md)
 * [Como usar](how-to-use-msipc.md)
@@ -47,6 +45,6 @@ Os tópicos a seguir fornecem orientações durante as principais tarefas de uti
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

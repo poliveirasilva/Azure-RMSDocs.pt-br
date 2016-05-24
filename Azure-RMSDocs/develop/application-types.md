@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 749146d4-a49d-47dc-a43a-d37d96310e18
-
+ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Tipos de aplicativo
 
 
@@ -60,7 +58,7 @@ O Bloco de Notas da Microsoft é um aplicativo cliente avançado simples. O Micr
 
 Para obter mais informações sobre como proteger seu aplicativo, consulte [Noções básicas sobre restrições de uso](understanding-usage-restrictions.md).
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Conceitos de desenvolvedor](ad-rms-concepts-nav.md)
 * [Exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
@@ -75,6 +73,6 @@ Para obter mais informações sobre como proteger seu aplicativo, consulte [Noç
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

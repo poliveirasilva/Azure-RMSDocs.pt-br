@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 94697eb5-1fab-4591-bd40-b5646daac8a3
-
+ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Como adicionar autenticação ao seu aplicativo
 
 Este tópico descreve os conceitos básicos da autenticação do usuário para seu aplicativo habilitado para RMS.
@@ -276,6 +274,6 @@ Essas diretrizes e parâmetros são necessários para os fluxos de trabalho do R
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

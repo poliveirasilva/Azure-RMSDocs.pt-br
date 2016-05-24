@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c73fde39-6e16-470c-800e-59ab04c78f5f
-
+ms.assetid: 09BA148C-7D1E-43C8-92EA-24BBB6EFDB19
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Assinando o aplicativo para produção
 
 Este tópico orienta você pelo processo de assinatura do aplicativo para o modo de produção.
@@ -67,7 +65,7 @@ Coloque-os no mesmo diretório que *GenManifest.exe* e o seu binário do aplicat
 
     -   O *NomeDoSeuAplicativo*.exe.man sempre deve ser colocado no mesmo diretório que *NomeDoSeuAplicativo*.exe.
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Como usar](how-to-use-msipc.md)
 * [Testando seu aplicativo habilitado para direitos](running-your-first-application.md)
@@ -79,6 +77,6 @@ Coloque-os no mesmo diretório que *GenManifest.exe* e o seu binário do aplicat
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

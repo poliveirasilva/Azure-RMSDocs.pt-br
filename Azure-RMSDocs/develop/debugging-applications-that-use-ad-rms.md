@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: caf031ca-4876-4d42-9fbc-8638f579fb38
-
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Depurar um aplicativo habilitado para direitos
 
 O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
@@ -72,7 +70,7 @@ Por exemplo, o comando a seguir habilitará o log de eventos do MSIPC e definir�
 
  
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Como usar](how-to-use-msipc.md)
  
@@ -83,6 +81,6 @@ Por exemplo, o comando a seguir habilitará o log de eventos do MSIPC e definir�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

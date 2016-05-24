@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 013f9d75-0b66-44a8-9b01-d05b44a5ea0c
-
+ms.assetid: 6749817E-FF34-4384-BF63-39AEA5C372CA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Obtenção de uma licença de produto
 
 Antes de você poder lançar um aplicativo desenvolvido com o Rights Management Services SDK 2.1, você deve se inscrever para um Cato de licença de produção a fim de obter um certificado de produção.
@@ -43,8 +41,6 @@ Para saber mais sobre chaves, confira [Testar seu aplicativo habilitado para dir
 Você pode obter o certificado por meio da inscrição em um Contrato de licença de produção.
 
 ## Solicitação de um Contrato de licença de produção
-
-![](../media/wedge.gif)
 
 -   Envie uma mensagem de email para [RMLA@microsoft.com](mailto:rmla@microsoft.com) e inclua as seguintes informações:
 
@@ -84,7 +80,7 @@ Você pode obter o certificado por meio da inscrição em um Contrato de licenç
 ## Tópicos relacionados
 
 * [Como usar](how-to-use-msipc.md)
-* [Testar seu aplicativo habilitado para direitos](running-your-first-application.md)
+* [Testando seu aplicativo habilitado para direitos](running-your-first-application.md)
  
 
  
@@ -93,6 +89,6 @@ Você pode obter o certificado por meio da inscrição em um Contrato de licenç
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

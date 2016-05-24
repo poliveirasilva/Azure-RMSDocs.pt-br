@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 10e3bee0-aaa4-4cbc-912f-f1ac50e117d5
-
+ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Termos e diretrizes para desenvolvedores
 O foco do Microsoft Rights Management SDK 4.2 é ajudar a compilar aplicativos habilitados para AD RMS que utilizam o AD RMS (Active Directory Right Management Services) da maneira mais simples possível.
 
@@ -45,6 +43,6 @@ Os tópicos a seguir destinam-se a dar suporte ao seu processo de design para o 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

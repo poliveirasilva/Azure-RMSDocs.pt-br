@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 191f4c29-8aea-48cc-a859-84487b803797
-
+ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Recursos da comunidade
 
 Também há suporte para o Active Directory Rights Management Services por uma crescente comunidade de desenvolvedores em várias plataformas.
@@ -55,6 +53,6 @@ Se você ainda não tiver se registrado no Microsoft Connect, faça o seguinte:
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
