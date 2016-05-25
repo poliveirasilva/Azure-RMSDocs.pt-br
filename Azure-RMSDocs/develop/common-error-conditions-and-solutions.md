@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ac6453e1-e24f-480e-99bd-02ba9a49f468
-
+ms.assetid: A5B95EB8-3528-4CFF-86FC-166613A5F4A3
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Condições de erro comuns e soluções
 Esse tópico inclui as mensagens de erro mais comuns que você pode encontrar ao usar as ferramentas de desenvolvedor do Rights Management Services SDK 2.1. Ele também fornece uma ação recomendada para corrigir o erro, quando aplicável.
 
@@ -76,6 +74,6 @@ Essas são as chaves de assinatura e seus valores associados (hierarquia **DWORD
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

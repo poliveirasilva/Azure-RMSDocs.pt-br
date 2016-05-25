@@ -12,8 +12,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 5b0c32e3-9685-4863-bd9f-e8f342825e90
-
+ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
 # optional metadata
 
 #ROBOTS:
@@ -26,7 +25,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Plataformas com suporte
 
 Este tópico identifica as plataformas de cliente e servidor do Rights Management Services SDK 2.1 com suporte.
@@ -52,6 +50,6 @@ Este tópico identifica as plataformas de cliente e servidor do Rights Managemen
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

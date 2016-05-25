@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: bdb24446-d69f-435b-be39-a036540f7378
-
+ms.assetid: 4629ACAA-2A83-4697-B769-D649114D35E1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Configurando o ambiente de desenvolvimento de pré-produção
 
 Esta seção o orientará durante o processo de configuração e execução do seu aplicativo habilitado para direitos em um ambiente de teste/pré-produção. Os tópicos a seguir abordam como configurar seu ambiente de desenvolvimento de pré-produção e são listados de modo a sugerir uma ordem para execução das tarefas.
@@ -41,7 +39,7 @@ Esta seção o orientará durante o processo de configuração e execução do s
 |[Depurar um aplicativo habilitado para direitos](debugging-applications-that-use-ad-rms.md)|O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.|
 
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Visão geral](ad-rms-overview.md)
 * [Como usar](how-to-use-msipc.md)
@@ -50,6 +48,6 @@ Esta seção o orientará durante o processo de configuração e execução do s
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: deb9a110-c098-4834-8319-05d5a28a0ccd
-
+ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Formatos de arquivo com suporte
 
 A API do arquivo dá suporte aos formatos nativo e Pfile.
@@ -39,7 +37,7 @@ A versão atual da API do arquivo dá suporte à proteção nativa para arquivos
 
 Os administradores podem definir chaves do Registro para configurar se e como os arquivos devem ser protegidos com base em sua extensão de nome de arquivo. Para obter mais informações sobre como configurar a proteção de arquivo ao usar a API do arquivo, consulte [Configuração da API do arquivo](file-api-configuration.md).
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Notas do desenvolvedor](developer-notes.md)
 * [Configuração da API do arquivo](file-api-configuration.md)
@@ -51,6 +49,6 @@ Os administradores podem definir chaves do Registro para configurar se e como os
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

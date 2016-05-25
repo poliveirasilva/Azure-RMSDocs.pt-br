@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 43b611a8-2cc0-49a8-9db9-e81321c38f7a
-
+ms.assetid: 834B7242-31D3-4275-A892-CFE95A61E29E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Testar seu aplicativo habilitado para direitos
 
 Este tópico descreve as etapas que precisam ser concluídas para testar seu aplicativo habilitado para direitos do Rights Management Services SDK 2.1.
@@ -107,7 +105,7 @@ Você pode executar o aplicativo de qualquer diretório, mas o manifesto do apli
 
     Para saber mais sobre como configurar o cliente, veja [Configuração do cliente](how-to-configure-the-ad-rms-client-2-0.md) Para saber mais sobre como instalar um servidor RMS, veja [Instalação e configuração do servidor](how-to-install-and-configure-an-rms-server.md).
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Como usar](how-to-use-msipc.md)
 * [Configuração do cliente](how-to-configure-the-ad-rms-client-2-0.md)
@@ -125,6 +123,6 @@ Você pode executar o aplicativo de qualquer diretório, mas o manifesto do apli
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
