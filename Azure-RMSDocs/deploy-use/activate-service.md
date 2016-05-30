@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Ativando o Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Quando você ativa o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS), sua organização pode começar a proteger dados importantes por meio de aplicativos e serviços que dão suporte a essa solução de proteção de informações. Os administradores também podem gerenciar e monitorar arquivos protegidos e emails que sua organização possui. Você deve habilitar o [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] antes de começar a usar os recursos de IRM (Gerenciamento de Direitos de Informação) no Office, no SharePoint e no Exchange e proteger qualquer arquivo sensível ou confidencial.
 
 Se você quiser saber mais sobre o Azure Rights Management antes de ativar o serviço - por exemplo, quais problemas de negócios ele resolve, alguns casos típicos de uso e como funciona - consulte [O que é o Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
@@ -37,21 +40,25 @@ Se você quiser saber mais sobre o Azure Rights Management antes de ativar o ser
 
 Depois de ter ativado o Azure RMS, todos os usuários em sua organização podem aplicar proteção de informações aos seus arquivos e todos os usuários podem abrir (consumir) os arquivos que foram protegidos pelo Azure RMS. No entanto, se você preferir, pode restringir quem pode aplicar proteção de informações por meio de controles de integração para uma implantação em fases. Para obter mais informações, consulte a seção [Configurando controles de integração para uma implantação em fases](#configuring-onboarding-controls-for-a-phased-deployment) neste artigo.
 
-Para obter instruções como ativar o Rights Management, selecione se você usará o centro de administração do Office 365 (preview ou clássico) ou o portal de gerenciamento clássico do Azure:
+Para obter instruções de como ativar o Rights Management no portal de gerenciamento, selecione se você usará o centro de administração do Office 365 (preview ou clássico) ou o portal de gerenciamento clássico do Azure:
 
 
 - [Centro de administração do Office 365 - preview](activate-office365-preview.md)
 - [Centro de administração do Office 365 - clássico](activate-office365-classic.md)
 - [Portal clássico do Azure](activate-azure-classic.md)
 
-> [!TIP]
-> Você também pode usar o cmdlet do Windows PowerShell, [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx), para ativar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
+Como alternativa, você pode usar cmdlets do Windows PowerShell para ativar [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
+
+1. Instale a ferramenta de administração do Azure Rights Management, que instala o módulo de administração do Azure Rights Management. Para obter instruções de instalação, confira [Instalação do Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+
+2. Em uma sessão do Windows PowerShell, execute [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx), e quando solicitado, forneça ao administrador global detalhes da conta para seu locatário do Azure RMS.
+
+3. Execute [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx), que ativa o serviço Azure RMS.
 
 ## Configurando controles de integração para uma implantação em fases
 Se você não deseja que todos os usuários consigam proteger os arquivos imediatamente usando o Azure RMS, poderá configurar os controles de integração usando o comando Windows PowerShell [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) . Você pode executar esse comando antes ou depois de ativar o Azure RMS.
 
-> [!IMPORTANT]
-> Para usar esse comando, você deve ter pelo menos a versão **2.1.0.0** do módulo [RMS Windows PowerShell do Azure](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT] Para usar esse comando, você deve ter pelo menos a versão **2.1.0.0** do módulo [Azure RMS para Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=257721).
 >
 > Para verificar a versão instalada, execute: **(Get-Module aadrm –ListAvailable).Version**
 
@@ -75,11 +82,10 @@ Agora que você ativou o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_right
 
 Por exemplo, você talvez queira usar [modelos personalizados](configure-custom-templates.md) para facilitar que os usuários apliquem a proteção de informações a arquivos, conectem os servidores locais para usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] por meio da instalação do [conector RMS](deploy-rms-connector.md), e implantem o [aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-windows.md) que dá suporte à proteção de todos os tipos de arquivo em todos os dispositivos. 
 
-Serviços do Office, como o Exchange Online e o SharePoint Online, exigem configuração adicional antes de usar os recursos do IRM (Information Rights Management). 
-Para obter informações sobre como os aplicativos funcionam com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md).
+Serviços do Office, como o Exchange Online e o SharePoint Online, exigem configuração adicional antes de usar os recursos do IRM (Information Rights Management). Para obter informações sobre como os aplicativos funcionam com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

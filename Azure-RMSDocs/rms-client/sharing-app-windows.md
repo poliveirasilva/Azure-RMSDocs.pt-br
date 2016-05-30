@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Aplicativo de compartilhamento Rights Management para Windows
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+
 O aplicativo de compartilhamento Rights Management para Windows (também conhecido como "o aplicativo RMS sharing") é um aplicativo gratuito que pode ser baixado para organizações que usam o AD RMS([Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx)) ou o Azure RMS ([Azure Rights Management](../understand-explore/azure-rights-management.md)) e para organizações que não têm sua própria infraestrutura de proteção de informações mas que desejam consumir conteúdo protegido por outras organizações que usam o Azure RMS.
 
 -   [Aplicativo de compartilhamento do Rights Management: histórico de lançamento de versão](sharing-app-version-release-history.md)
@@ -35,13 +38,13 @@ O aplicativo de compartilhamento Rights Management para Windows (também conheci
 -   [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 > [!TIP]
-> Também é um aplicativo de compartilhamento do Rights Management para computadores Mac e para dispositivos móveis. Para obter mais informações, veja a [FAQ sobre o aplicativo de compartilhamento do Rights Management para plataformas móveis e Mac.](http://technet.microsoft.com/dn451248).
+> Também é um aplicativo de compartilhamento do Rights Management para computadores Mac e para dispositivos móveis. Para obter mais informações, veja a [FAQ for Microsoft Rights Management Sharing Application](http://technet.microsoft.com/dn451248) (Perguntas frequentes sobre o aplicativo de compartilhamento do Rights Management para plataformas móveis e Mac).
 
 ## Consulte também
 [FAQ do aplicativo de compartilhamento do Rights Management para Windows](http://technet.microsoft.com/dn467883)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

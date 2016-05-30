@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Gerenciado pela Microsoft: operações de ciclo de vida da chave de locatário
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Se a Microsoft gerencia sua chave de locatário para o Azure Rights Management (o padrão), use as seções a seguir para obter mais informações sobre as operações do ciclo de vida que são relevantes para esta topologia.
 
 ## Revogue sua chave de locatário
@@ -83,7 +86,7 @@ Você pode exportar sua configuração do Azure RMS e a chave do locatário segu
 
 -   Após receber sua chave de locatário, guarde-a em local seguro, pois se alguém tiver acesso a ela será possível descriptografar todos os documentos protegidos usando essa chave.
 
-    Caso queira exportar sua chave de locatário porque não deseja mais usar o Azure RMS, a prática recomendada é desativar seu locatário do RMS. Não demore para fazer isso após receber sua chave de locatário, pois isso o ajudará a minimizar as consequências se sua chave for acessada por alguém que não deveria ter acesso a ela. Para instruções, consulte [Encerramento e desativação do Azure Rights Management](decommission-deactivate.md).
+    Caso queira exportar sua chave de locatário porque não deseja mais usar o Azure RMS, a prática recomendada é desativar seu locatário do RMS. Não demore para fazer isso após receber sua chave de locatário, pois isso o ajudará a minimizar as consequências se sua chave for acessada por alguém que não deveria ter acesso a ela. Para instruções, consulte [Descomissionando e desativando o Azure Rights Management](decommission-deactivate.md).
 
 ## Responder a uma violação
 Nenhum sistema de segurança, sem importar o forte que seja, está completo sem um processo de resposta de violação. Sua chave de locatário pode estar comprometida ou roubada. Ainda quando estiver bem protegido, as vulnerabilidades podem ser encontradas na tecnologia HSM da geração atual ou em comprimentos e algoritmos da chave atual.
@@ -101,6 +104,6 @@ Se você detectar uma violação, a melhor ação que você ou a Microsoft pode 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

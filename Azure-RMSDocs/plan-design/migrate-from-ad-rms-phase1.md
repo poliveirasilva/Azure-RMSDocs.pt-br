@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Fase de migração 1: configuração do lado do servidor para o AD RMS
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+
 Use as informações a seguir para a Fase 1 da migração do AD RMS para o Azure RMS (Azure Rights Management). Esses procedimentos abrangem as etapas 1 a 4 de [Migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
@@ -44,8 +47,7 @@ Esta etapa é um processo de duas partes:
 ### Exportar os dados de configuração do AD RMS
 Faça o seguinte em todos os clusters do AD RMS, para todos os domínios de publicação confiáveis que já protegeram o conteúdo da sua organização. Você não precisa executar isso em clusters somente de licenciamento.
 
-> [!NOTE]
-> Se você estiver usando o Windows Server 2003 Rights Management, em vez destas instruções, siga o procedimento [Exportar chave privada SLC, TUD, TPD e RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) do artigo [Migração do Windows RMS para AD RMS em uma infraestrutura diferente](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
+> [!NOTE] Se você estiver usando o Windows Server 2003 Rights Management, em vez dessas instruções, siga o procedimento [Exportar chave privada de SLC, TUD, TPD e RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) do artigo [Migrando do Windows RMS para AD RMS em uma infraestrutura diferente](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
 
 #### Para exportar os dados de configuração (informações de domínio de publicação confiável)
 
@@ -78,8 +80,7 @@ Sua implantação atual do AD RMS usará uma das seguintes configurações para 
 
 -   Senha protegida usando um provedor criptográfico externo.
 
-> [!NOTE]
-> Para saber mais sobre como usar módulos de segurança de hardware com o AD RMS, consulte [Usando o AD RMS com módulos de segurança de hardware](http://technet.microsoft.com/library/jj651024.aspx).
+> [!NOTE] Para saber mais sobre como usar módulos de segurança de hardware com o AD RMS, consulte [Usando o AD RMS com módulos de segurança de hardware](http://technet.microsoft.com/library/jj651024.aspx).
 
 As duas opções de topologia de chave de locatário do Azure RMS são: a Microsoft gerencia sua chave de locatário (**gerenciada pela Microsoft**) ou você pode gerenciar a sua chave de locatário (**gerenciada pelo cliente**). Quando você gerencia a sua própria chave de locatário do Azure RMS, nós chamamos isso de “traga sua própria chave” (BYOK) e requer um módulo de segurança de hardware (HSM) da Thales. Para saber mais, confira o artigo [Planejamento e implementação de sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md).
 
@@ -91,14 +92,13 @@ Use a tabela a seguir para identificar o procedimento a ser usado para a migraç
 |Implantação atual do AD RMS|Topologia de chave de locatário escolhida do Azure RMS|Instruções de migração|
 |-----------------------------|----------------------------------------|--------------------------|
 |Proteção por senha no banco de dados do AD RMS|Gerenciado pela Microsoft|Veja o procedimento de migração de **Chave protegida por software para chave protegida por software** depois desta tabela.<br /><br />Esse é o caminho de migração mais simples e requer apenas que você transfira os dados de configuração para o Azure RMS.|
-|Proteção de HSM usando um módulo de segurança de hardware (HSM) Thales nShield|Gerenciada pelo cliente (BYOK)|Consulte o procedimento **Migração de chave protegida por HSM para chave protegida por HSM** depois desta tabela.<br /><br />Isso exige que o conjunto de ferramentas BYOK e dois conjuntos de etapas transfiram a chave do seu HSM local para o Azure RMS HSM e depois transfiram os dados de configuração para o Azure RMS.|
+|Proteção de HSM usando um módulo de segurança de hardware (HSM) Thales nShield|Gerenciada pelo cliente (BYOK)|Consulte o procedimento de migração **Chave protegida por HSM para chave protegida por HSM** depois desta tabela.<br /><br />Isso exige que o conjunto de ferramentas BYOK e dois conjuntos de etapas transfiram a chave do seu HSM local para o Azure RMS HSM e depois transfiram os dados de configuração para o Azure RMS.|
 |Proteção por senha no banco de dados do AD RMS|Gerenciada pelo cliente (BYOK)|Consulte o procedimento **Migração de chave protegida por software para chave protegida por HSM** depois desta tabela.<br /><br />Isso exige que o conjunto de ferramentas BYOK e três conjuntos de etapas extraiam primeiro sua chave de software e importem-na para um HSM local, transfiram a chave de seu HSM local para os Azure RMS HSMs e, finalmente, transfiram os dados de configuração para o Azure RMS.|
 |Proteção de HSM usando um módulo de segurança de hardware (HSM) de um fornecedor que não seja a Thales|Gerenciada pelo cliente (BYOK)|Contate o fornecedor do seu HSM para saber como transferir a sua chave desse HSM para um Módulo de Segurança de Hardware (HSM) Thales nShield. Em seguida, siga as instruções para o procedimento **Migração de chave protegida por HSM para chave protegida por HSM** depois desta tabela.|
 |Senha protegida usando um provedor criptográfico externo|Gerenciada pelo cliente (BYOK)|Contate o fornecedor para o provedor criptográfico para saber como transferir sua chave para um Módulo de Segurança de Hardware (HSM) Thales nShield. Em seguida, siga as instruções para o procedimento **Migração de chave protegida por HSM para chave protegida por HSM** depois desta tabela.|
 Antes de começar estes procedimentos, verifique se você pode acessar os arquivos .xml que você criou antes quando exportou os domínios de publicação confiáveis. Por exemplo, eles podem ter sido salvos em um pen drive USB que você tirou do servidor AD RMS na estação de trabalho conectada à Internet.
 
-> [!NOTE]
-> Embora você armazene esses arquivos, use as práticas recomendadas de segurança para protegê-los porque esses dados incluem sua chave privada.
+> [!NOTE] Embora você armazene esses arquivos, use as práticas recomendadas de segurança para protegê-los porque esses dados incluem sua chave privada.
 
 
 Para concluir a Etapa 2, escolha e selecione as instruções para seu caminho de migração: 
@@ -109,13 +109,9 @@ Para concluir a Etapa 2, escolha e selecione as instruções para seu caminho de
 - [Chave de software para chave HSM](migrate-softwarekey-to-hsmkey.md)
 
 
-<<<<<<< HEAD
-## Etapa 3. Ativar o seu locatário do Azure RMS
-As instruções para esta etapa foram completamente abordadas no artigo [Ativação do Azure Rights Management](../deploy-use/activate-azure-classic.md).
-=======
 ## Etapa 3. Ativar o seu locatário do RMS
 As instruções para esta etapa foram completamente abordadas no artigo [Ativação do Azure Rights Management](../deploy-use/activate-service.md).
->>>>>>> 32b7eccb741760c33bf45a2ce253454827c6d6ba
+
 
 > [!TIP]
 > Se tiver uma assinatura do Office 365, será possível ativar o Azure RMS no Centro de administração do Office 365 ou no Portal clássico do Azure. Recomendamos usar o Portal clássico do Azure, porque você usará esse portal de gerenciamento para concluir a próxima etapa.
@@ -137,8 +133,7 @@ Você poderá ver o grupo de sua organização criado automaticamente se copiar 
 
 -   Use o cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar o modelo para um arquivo .XML que você possa editar a fim de adicionar o grupo e os direitos de "AllStaff" aos grupos e direitos existentes e use o cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para importar essa mudança de volta para o Azure RMS.
 
-> [!NOTE]
-> Esse grupo equivalente ao "AllStaff" não é exatamente o mesmo que o grupo QUALQUER PESSOA no AD RMS: o grupo "AllStaff" inclui todos os usuários em seu locatário do Azure, considerando que o grupo QUALQUER PESSOA inclui todos os usuários autenticados, que poderiam estar fora da sua organização.
+> [!NOTE] Esse grupo equivalente ao "AllStaff" não é exatamente o mesmo que o grupo QUALQUER PESSOA no AD RMS: o grupo "AllStaff" inclui todos os usuários em seu locatário do Azure, considerando que o grupo QUALQUER PESSOA inclui todos os usuários autenticados, que poderiam estar fora da sua organização.
 > 
 > Devido a esta diferença entre os dois grupos, talvez seja necessário também adicionar usuários externos, além do grupo "AllStaff". Atualmente, não há suporte para endereços de email externos para grupos.
 
@@ -190,6 +185,6 @@ Acesse a [fase 2 - configuração do lado do cliente](migrate-from-ad-rms-phase2
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

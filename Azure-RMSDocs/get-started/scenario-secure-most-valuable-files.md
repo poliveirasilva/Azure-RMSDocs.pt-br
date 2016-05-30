@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Proteger seus arquivos mais valiosos (alguns)
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Esse cenário e a documentação do usuário de suporte usam o Azure Rights Management para proteger manualmente e de maneira personalizada alguns arquivos que você identificou como sendo os mais valiosos, o que garante o mais alto nível de proteção contra acesso não autorizado. Geralmente, esses são arquivos que somente algumas pessoas devem poder acessar. Por exemplo, instruções de receita para o produto alimentício que é o carro-chefe da sua empresa ou planos de tomada de controle não devem se tornar públicos antes de uma data especificada.
 
 As instruções são adequadas para o seguinte conjunto de circunstâncias:
@@ -43,7 +46,7 @@ As instruções são adequadas para o seguinte conjunto de circunstâncias:
 -   O administrador deve ser capaz de controlar quem está acessando os arquivos e quando, e de revogar o acesso, se necessário.
 
 ## Instruções de implantação
-![](../media/AzRMS_AdminBanner.png)
+![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
 
@@ -52,7 +55,7 @@ Para que este cenário funcione, faça o seguinte:
 
 |Requisito|Se você precisar de mais informações|
 |---------------|--------------------------------|
-|Você preparou as contas e os grupos para o Office 365 ou o Active Directory do Azure:<br /><br />Um grupo habilitado para email denominado **Acesso privilegiado**, que contém as pessoas que devem ter acesso a esses documentos altamente confidenciais<br /><br />Um grupo habilitado para email denominado **Gerenciadores de conformidade de TI**, que contém as pessoas cujo trabalho inclui descoberta automática, monitoramento e auditoria<br /><br />Um grupo habilitado para email denominado **Administradores RMS**, e todos os administradores que configuram o Azure RMS são membros desse grupo|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Você preparou as contas e os grupos para o Office 365 ou o Active Directory do Azure:<br /><br />- Um grupo habilitado para email nomeado **Acesso privilegiado**, que contém as pessoas que devem ter acesso a esses documentos altamente confidenciais<br /><br />- Um grupo habilitado para email nomeado **Gerenciadores de conformidade de TI**, que contém as pessoas cujo trabalho inclui descoberta automática, monitoramento e auditoria<br /><br />- Um grupo habilitado para email nomeado **Administradores de RMS**, e todos os administradores que configuram o Azure RMS são membros desse grupo|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Você configurou um modelo personalizado conforme descrito a seguir|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |O aplicativo de compartilhamento Rights Management é implantado em seu computador Windows para que você possa proteger esses arquivos no local, conforme descrito na próxima seção|[Baixar e instalar o aplicativo Rights Management sharing](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -91,8 +94,7 @@ Para que este cenário funcione, faça o seguinte:
 
 Para saber mais sobre como proteger os arquivos no local, confira [Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo de compartilhamento Rights Management](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
 
-> [!TIP]
-> Se o número de arquivos a proteger um for muito alto para fazê-lo manualmente, considere usar o [ferramenta de proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) a fim de proteger os arquivos em massa usando o modelo.
+> [!TIP] Se o número de arquivos a proteger um for muito alto para fazê-lo manualmente, considere usar a [ferramenta de proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) a fim de proteger os arquivos em massa usando o modelo.
 
 ### Para monitorar e, se necessário, revogar acesso aos arquivos
 
@@ -109,29 +111,29 @@ Usando o modelo a seguir, copie e cole o anúncio em uma comunicação para seus
 
 1.  Forneça os nomes reais dos arquivos ou use uma referência clara que os usuários autorizados irão entender.
 
-2.  Substitua os *&lt;detalhes de contato&gt;* por instruções sobre como esses usuários podem contatar a assistência técnica ou o departamento de TI com um canal de suporte escalonado que corresponda à importância desses documentos. Por exemplo, forneça um número de telefone 24 horas para chamadas de suporte de severidade alta.
+2.  Substitua os *&lt;detalhes de contato&gt;* por instruções sobre como esses usuários podem contatar o suporte técnico ou o departamento de TI com um canal de suporte escalonado que corresponda à importância desses documentos. Por exemplo, forneça um número de telefone 24 horas para chamadas de suporte de severidade alta.
 
 3.  Faça modificações adicionais no anúncio, se desejar, e envie-o para esses usuários.
 
 A documentação de exemplo mostra como esse anúncio pode parecer para os usuários depois das personalizações.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
 
-### Anúncio de TI: protegendo os documentos secretos da &lt;nome da organização&gt;
-Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a eles, para que somente &lt; usuários restritos & gt; possam acessá-los e alterá-los. Para ajudar a protegê-los contra acesso não autorizado, seu aplicativo solicitará autorização automaticamente cada vez que os arquivos forem abertos. Portanto, agora você precisa ter uma conexão com a Internet e suas credenciais poderão ser solicitadas:
+### Comunicado de TI: protegendo os documentos secretos da &lt;nome da organização&gt;
+Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a eles, para que somente &lt;usuários restritos&gt; possam acessá-los e alterá-los. Para ajudar a protegê-los contra acesso não autorizado, seu aplicativo solicitará autorização automaticamente cada vez que os arquivos forem abertos. Portanto, agora você precisa ter uma conexão com a Internet e suas credenciais poderão ser solicitadas:
 
--   &lt;documento secreto, tipo ou local 1&gt;
+-   &lt;principal documento secreto, tipo ou local 1&gt;
 
--   &lt;documento secreto, tipo ou local 2&gt;
+-   &lt;principal documento secreto, tipo ou local 2&gt;
 
--   &lt;documento secreto, tipo ou local 3&gt;
+-   &lt;principal documento secreto, tipo ou local 3&gt;
 
 **Precisa de ajuda?**
 
--   Se você não consegue acessar esses arquivos ou observou alterações suspeitas nos arquivos &lt;ação e detalhes de contato&gt;.
+-   Se você não consegue acessar esses arquivos ou observou alterações suspeitas nos arquivos &lt;detalhes de ação e contato&gt;.
 
 #### Documentação do usuário personalizada de exemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ##### Anúncio de TI: protegendo documentos secretos da VanArsdel
 Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a eles, para que somente as pessoas na linha Para dessa mensagem de email possam acessá-los e alterá-los. Para ajudar a protegê-los contra acesso não autorizado, seus aplicativos solicitarão autorização automaticamente cada vez que os arquivos forem abertos. Portanto, agora você precisa ter uma conexão com a Internet para abri-los e suas credenciais poderão ser solicitadas:
@@ -150,6 +152,6 @@ Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a el
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

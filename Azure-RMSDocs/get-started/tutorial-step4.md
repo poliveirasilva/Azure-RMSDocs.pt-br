@@ -1,32 +1,20 @@
 ---
-# required metadata
+# metadados necessários
 
-title: Tutorial de início rápido do Azure RMS - Etapa 4 | Azure RMS
-description: A quarta etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+título: Tutorial de início rápido do Azure RMS - Etapa 4 | Descrição do Azure RMS: a quarta etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
+palavras-chave: autor: cabailey manager: mbaldwin ms.date: ms.topic 28/04/2016: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# optional metadata
+# metadados opcionais
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ROBÔS: público-alvo: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Etapa 4 do início rápido do Azure RMS: Pedir que seus destinatários abram o documento enviado por email
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 
 Ir para: 
 > [!div class="op_single_selector"]
@@ -38,7 +26,7 @@ Ir para:
 - [Etapa 5: Rastrear o seu documento](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps4.PNG)
+![Tutorial de início rápido do Azure RMS - Etapa 4](../media/AzRMS_QuickStartSteps4.PNG)
 
 Os destinatários podem usar vários dispositivos para ler o documento protegido enviado como anexo de email. Os dispositivos incluem iPads, iPhones, telefones e tablets Android, computadores Mac, bem como computadores Windows.
 
@@ -49,7 +37,7 @@ Peça que eles leiam a mensagem de email que você enviou. Eles verão a mensage
 
 Ao clicarem no link, eles acessarão as instruções para instalação do aplicativo RMS sharing e, caso necessário, inscrição de uma conta gratuita. A conta gratuita concederá uma assinatura do RMS para indivíduos, que garante que os usuários autorizados sempre possam ler um documento protegido, mesmo se a organização deles não tiver o Azure RMS. Assim, eles estarão prontos para ler o anexo protegido usando as instruções a seguir.
 
-![](../media/AzRMS_Tutorial_4_Screenshots.png)
+![Capturas de tela da etapa 4 do tutorial](../media/AzRMS_Tutorial_4_Screenshots.png)
 
 ### Para exibir o documento protegido do anexo
 
@@ -72,10 +60,9 @@ Agora que o destinatário abriu o anexo e, opcionalmente, encaminhou o mesmo par
 |Sobre as duas versões do arquivo que você vê anexados à mensagem de email|[O que é o arquivo .ppdf, criado automaticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"]
-[« Etapa 3](tutorial-step3.md)
+>[!div class="step-by-step"] [« Etapa 3](tutorial-step3.md)
 [Etapa 5 »](tutorial-step5.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

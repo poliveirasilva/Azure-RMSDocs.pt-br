@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Opções da caixa de diálogo do aplicativo de compartilhamento do Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 Use essas informações para ajudá-lo a especificar as opções na caixa de diálogo **Adicionar proteção** ou na caixa de diálogo **Compartilhamento protegido** do aplicativo RMS sharing. Você verá essa caixa de diálogo ao [proteger um arquivo para compartilhamento](sharing-app-protect-by-email.md) ou ao [proteger um arquivo no local](sharing-app-protect-in-place.md) e deverá escolher permissões personalizadas.
 
 > [!IMPORTANT]
@@ -58,7 +61,7 @@ Além das opções que você pode escolher, você deve também estar se pergunta
 
 -   Em comparação, quando você usa a **proteção interna (nativa)** do Rights Management com aplicativos que dão suporte a isso (por exemplo, arquivos do Office), a proteção se aplica ao arquivo mesmo que o arquivo seja enviado para outra pessoa ou salvo em outro local. E, ao proteger esses arquivos, você pode usar permissões restritivas, como somente leitura, ou a permissão para editar, mas não imprimir ou copiar. Por exemplo, você poderá selecionar **Visualizador – somente exibição**de modo que o conteúdo não possa ser editado, impresso ou copiado.
 
-Para obter informações técnicas adicionais, consulte a seção [Níveis de proteção – nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no [guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+Para obter informações técnicas adicionais, consulte a seção [Níveis de proteção – nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
 
 ## O que é o arquivo .ppdf, criado automaticamente?
 
@@ -74,13 +77,13 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

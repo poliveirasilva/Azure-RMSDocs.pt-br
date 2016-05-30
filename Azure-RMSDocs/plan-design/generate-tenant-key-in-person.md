@@ -27,6 +27,9 @@ ms.suite: ems
 
 # Gerar e transferir sua chave de locatário pessoalmente
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 Utilize os procedimentos a seguir se decidiu [gerenciar sua própria chave de locatário](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) e não quiser transferi-la pela Internet, mas em vez disso, quiser transferir sua chave de locatário pessoalmente.
 
 ## Gerar sua chave de locatário
@@ -153,6 +156,6 @@ Agora você concluiu as instruções necessárias para trazer sua própria chave
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

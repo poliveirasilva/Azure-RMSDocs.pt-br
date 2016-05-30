@@ -2,7 +2,7 @@
 # required metadata
 
 title: Noções básicas sobre cadeias de certificados | Azure RMS
-description:
+description: Um aplicativo habilitado para direitos requer um par de chaves públicas e uma cadeia de certificados que leve de volta a um certificado da Microsoft na raiz de confiança
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 14694cb0-adc4-4c2f-aff5-22aa132777df
-
+ms.assetid: 6AEA2162-82BF-4867-9285-111CD3FCD2F6
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Noções básicas sobre cadeias de certificados
+# Noções básicas sobre cadeias de certificados
 
 Desenvolvendo um aplicativo habilitado para direitos requer um par de chaves públicas e uma cadeia de certificados que leve de volta a um certificado da Microsoft na raiz de confiança.
 
@@ -49,7 +48,7 @@ Independentemente de você ter usado um certificado de pré-produção durante o
 
 Para obter mais informações sobre como trabalhar com cadeias de certificados e a assinatura de aplicativos, consulte [Alternando para o ambiente de produção](switching-to-the-production-environment.md).
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 * [Conceitos de desenvolvedor](ad-rms-concepts-nav.md)
 * [Alternando para o ambiente de produção](switching-to-the-production-environment.md)
@@ -58,6 +57,6 @@ Para obter mais informações sobre como trabalhar com cadeias de certificados e
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

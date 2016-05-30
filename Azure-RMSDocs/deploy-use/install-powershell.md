@@ -26,16 +26,19 @@ ms.suite: ems
 ---
 
 # Instalando o Windows PowerShell para Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use as seguintes informações para ajudar na instalação do Windows PowerShell para Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS).
 
-Você pode usar este módulo do Windows PowerShell para administrar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] a partir da linha de comando usando qualquer computador que tenha uma conexão com a Internet e que atenda aos pré-requisitos listados na próxima seção. O Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dá suporte para scripts para automação ou pode ser necessário para cenários de configuração avançada. Para obter mais informações sobre as tarefas e as configurações de administração aos quais o módulo dá suporte, consulte [Administração do Azure Rights Management usando o Windows PowerShell](administer-powershell.md).
+Você pode usar este módulo do Windows PowerShell para administrar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] a partir da linha de comando usando qualquer computador que tenha uma conexão com a Internet e que atenda aos pré-requisitos listados na próxima seção. O Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dá suporte para scripts para automação ou pode ser necessário para cenários de configuração avançada. Para obter mais informações sobre as tarefas e configurações de administração aos quais o módulo dá suporte, consulte [Administrando o Azure Rights Management usando o Windows PowerShell](administer-powershell.md).
 
 ## Pré-requisitos
 Esta tabela lista os pré-requisitos para instalar e usar o Windows PowerShell para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|A versão do Windows que suporta o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Verifique a lista de sistemas operacionais que oferecem suporte na seção **Requisitos de Sistema** na [página de download para a Ferramenta de Administração do Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
+|A versão do Windows que suporta o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Verifique a lista de sistemas operacionais com suporte na seção **Requisitos de Sistema** na [página de download para a ferramenta de administração do Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
 |Versão mínima do Windows PowerShell: 2.0|O suporte para o módulo de administração [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] foi introduzido no Windows PowerShell 2.0.<br /><br />Por padrão, a maioria dos sistemas operacionais Windows é instalada com pelo menos a versão 2.0 do Windows PowerShell. Se você precisar instalar o Windows PowerShell 2.0, consulte [Instalar o Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Dica: você pode confirmar a versão do Windows PowerShell que está executando digitando **$PSVersionTable** em uma sessão do Windows PowerShell.|
 |Versão mínima do Microsoft .NET Framework: 4.5<br /><br />Observação: essa versão do Microsoft .NET Framework está incluída nos sistemas operacionais mais recentes, portanto, você precisará realizar uma instalação manual somente se o sistema operacional cliente for anterior ao Windows 8.0 ou se o sistema operacional do servidor for anterior ao Windows Server 2012.|Se a versão mínima do Microsoft .NET Framework não estiver instalada, você poderá baixar o [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />A versão mínima do Microsoft .NET Framework é necessária para algumas das classes que o módulo de administração [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] utiliza.|
 |Assistente de Conexão do Microsoft Online Services 7.0|O Assistente de Conexão do Microsoft Online Services é necessário para [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] autenticação.<br /><br />Para obter mais informações, consulte o [Centro de Download: Assistente do Microsoft Online Services para profissionais de TI RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
@@ -73,6 +76,6 @@ Antes de executar qualquer comando que configure o serviço [!INCLUDE[aad_rights
 [Administrando o Azure Rights Management usando o Windows PowerShell](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

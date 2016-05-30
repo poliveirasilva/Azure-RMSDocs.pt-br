@@ -27,7 +27,10 @@ ms.suite: ems
 
 # Configuração de servidores para o conector do Azure Rights Management
 
-Use as informações a seguir para ajudá-lo a configurar os servidores locais que usarão o conector do Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapa 5 da [Implantação do conector do Azure Rights Management](deploy-rms-connector.md).
+*Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+
+
+Use as informações a seguir para ajudá-lo a configurar os servidores locais que usarão o conector do Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapa 5 da [Implantando o conector do Azure Rights Management](deploy-rms-connector.md).
 
 Antes de começar, certifique-se de que você instalou e configurou o conector RMS e verificou os [pré-requisitos](deploy-rms-connector.md#prerequisites-for-the-rms-connector) que são aplicáveis para os servidores que usam o conector.
 
@@ -89,7 +92,7 @@ Depois de fazer as alterações de configuração nos servidores, você deve rei
 
 ### Como usar a ferramenta de configuração do servidor para o conector Microsoft RMS
 
-1.  Se você ainda não tiver baixado o script para a ferramenta de configuração do servidor do conector Microsoft RMS (GenConnectorConfig.ps1), baixe-o da [Central de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+1.  Se você ainda não tiver baixado o script para a ferramenta de configuração do servidor do conector Microsoft RMS (GenConnectorConfig.ps1), baixe-o da [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 2.  Salve o arquivo GenConnectorConfig.ps1 no computador em que a ferramenta será executada. Se você executar a ferramenta localmente, ela deve ser o servidor que você deseja configurar para se comunicar com o conector do RMS. Caso contrário, você poderá salvá-la em qualquer computador.
 
@@ -168,6 +171,10 @@ Você também precisará instalar nestes servidores uma versão do cliente RMS q
 
 3.  Habilite a funcionalidade do IRM no Exchange. Para obter mais informações, consulte [Procedimentos de Gerenciamento de Direitos de Informação](https://technet.microsoft.com/library/dd351212%28v=exchg.150%29.aspx) na biblioteca do Exchange.
 
+    > [!NOTE]
+    > Por padrão, após a execução de **Set-IRMConfiguration - InternalLicensingEnabled $true**, o IRM é habilitado automaticamente para o Outlook Web App e dispositivos móveis, e também para as caixas de correio. No entanto, os administradores podem desabilitar o IRM em níveis diferentes, por exemplo, para um servidor de Acesso para Cliente, para o diretório virtual do Outlook Web App ou a política de caixa de correio do Outlook Web App e para uma política de caixa de correio do dispositivo móvel. Se os usuários não puderem ver nenhum dos modelos do Azure RMS d no Outlook Web App (após aguardar um dia) ou em dispositivos móveis quando podem ver os modelos no cliente Outlook, verifique as configurações relevantes para verificar se o IRM não está desabilitado. Para obter mais informações, consulte [Habilitar ou desabilitar o Gerenciamento de Direitos de Informação nos servidores de acesso para cliente](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx) na documentação do Exchange. 
+
+
 ## Configurando um servidor SharePoint para usar o conector
 As seguintes funções do SharePoint se comunicam com o conector do RMS:
 
@@ -175,18 +182,20 @@ As seguintes funções do SharePoint se comunicam com o conector do RMS:
 
 Para usar o conector do RMS, esses servidores que executam o SharePoint devem estar executando uma das seguintes versões do software:
 
+-   SharePoint Server 2016
+
 -   SharePoint Server 2013
 
 -   SharePoint Server 2010
 
-Um servidor do SharePoint 2013 também deve executar uma versão do cliente MSIPC 2.1 que tem suporte com o conector RMS. Para certificar-se de que você tem uma versão com suporte, baixe o cliente mais recente do [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
+Um servidor que executa o SharePoint 2016 ou SharePoint 2013 também deve executar uma versão do cliente MSIPC 2.1 que tem suporte com o conector RMS. Para garantir que você tenha uma versão com suporte, baixe o cliente mais recente do [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
 
 > [!WARNING]
 > Existem várias versões do cliente MSIPC 2.1, então certifique-se de que você tem a versão 1.0.2004.0 ou posterior.
 >
 > É possível verificar a versão do cliente, verificando o número de versão do MSIPC.dll, que está localizado em **\Program Files\Active Directory Rights Management Services Client 2.1**. A caixa de diálogo de propriedades mostra o número de versão do cliente MSIPC 2.1.
 
-Estes servidores executando o SharePoint 2010 devem ter instalada uma versão do cliente MSDRM que inclui suporte para o modo de criptografia RMS 2. A versão mínima com suporte no Windows Server 2008 está incluída no hotfix que você pode baixar do [comprimento da chave RSA é aumentado para 2048 bits para AD RMS no Windows Server 2008 R2 e no Windows Server 2008](http://support.microsoft.com/kb/2627272)e a versão mínima do Windows Server 2008 R2 pode ser baixada em [comprimento da chave RSA é aumentado para 2048 bits para AD RMS no Windows 7 ou no Windows Server 2008 R2](http://support.microsoft.com/kb/2627273). O Windows Server 2012 e o Windows Server 2012 R2 suportam nativamente o Modo crptográfico 2.
+Servidores que executam o SharePoint 2010 devem ter uma versão do cliente MSDRM instalada que inclui suporte para o modo criptográfico 2 do RMS. A versão mínima com suporte no Windows Server 2008 está incluída no hotfix que você pode baixar do [comprimento da chave RSA é aumentado para 2048 bits para AD RMS no Windows Server 2008 R2 e no Windows Server 2008](http://support.microsoft.com/kb/2627272)e a versão mínima do Windows Server 2008 R2 pode ser baixada em [comprimento da chave RSA é aumentado para 2048 bits para AD RMS no Windows 7 ou no Windows Server 2008 R2](http://support.microsoft.com/kb/2627273). O Windows Server 2012 e o Windows Server 2012 R2 suportam nativamente o Modo crptográfico 2.
 
 ### Para configurar servidores SharePoint para usar o conector
 
@@ -196,19 +205,19 @@ Estes servidores executando o SharePoint 2010 devem ter instalada uma versão do
 
     -   Execute a ferramenta de configuração do servidor para o conector Microsoft RMS. Para obter mais informações, consulte [Como usar a ferramenta de configuração do servidor para o conector Microsoft RMS](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector) neste artigo.
 
-        Por exemplo, para executar a ferramenta localmente para configurar um servidor executando o SharePoint 2013:
+        Por exemplo, para executar a ferramenta localmente para configurar um servidor executando o SharePoint 2016 ou SharePoint 2013:
 
         ```
         .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetSharePoint2013
         ```
 
-    -   Se estiver usando o SharePoint 2013, faça edições de Registro manualmente usando as informações em [Configurações do Registro para o conector RMS](rms-connector-registry-settings.md) para adicionar manualmente as configurações do Registro nos servidores. 
+    -   Se você estiver usando o SharePoint 2016 ou SharePoint 2013, faça edições de Registro manualmente usando as informações em [Configurações de Registro para o conector RMS](rms-connector-registry-settings.md) para adicionar manualmente as configurações do Registro nos servidores. 
 
 3.  Habilite o IRM no SharePoint. Para obter mais informações, consulte [Configurar o Gerenciamento de Direitos de Informação (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx) na biblioteca do SharePoint.
 
     Quando seguir estas instruções, você deverá configurar o SharePoint para usar o conector especificando **Usar este servidor RMS** e, em seguida, digite a URL do conector de balanceamento de carga que você configurou. Digite o prefixo de protocolo (HTTP:// ou HTTPS://) e o nome do conector que você definiu no DNS para o endereço de balanceamento de carga do seu conector. Por exemplo, se o nome do conector for https://connector.contoso.com, sua configuração ficará como a imagem a seguir:
 
-    ![](../media/AzRMS_SharePointConnector.png)
+    ![Configurando o SharePoint Server para o conector RMS](../media/AzRMS_SharePointConnector.png)
 
     Depois que o IRM é habilitado em um farm do SharePoint, você pode habilitar o IRM em bibliotecas individuais usando a opção **Gerenciamento de Direitos de Informação** na página **Definições da Biblioteca** para cada uma das bibliotecas.
 
@@ -239,7 +248,7 @@ Para usar o conector RMS e a infraestrutura de classificação de arquivos para 
 3.  Criar regras de classificação e tarefas de gerenciamento de arquivos para proteger documentos com a criptografia do RMS e, em seguida, especificar um modelo de RMS para aplicar automaticamente as políticas do RMS. Para obter mais informações, consulte [Visão Geral do Gerenciador de Recursos do Servidor de Arquivos](http://technet.microsoft.com/library/hh831701.aspx) na biblioteca de documentação do Windows Server.
 
 ## Próximas etapas
-Agora que o conector do RMS está instalado e configurado e seus servidores estão configurados para usá-lo, os administradores de TI e os usuários podem proteger e consumir mensagens de email e documentos usando o Azure RMS. Para facilitar isso para os usuários, implante o aplicativo de compartilhamento do RMS, que instala um complemento do Office e adiciona novas opções de atalho para o Explorador de Arquivos. Para obter mais informações, consulte o [Guia do Administrador do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-admin-guide.md).
+Agora que o conector do RMS está instalado e configurado e seus servidores estão configurados para usá-lo, os administradores de TI e os usuários podem proteger e consumir mensagens de email e documentos usando o Azure RMS. Para facilitar isso para os usuários, implante o aplicativo de compartilhamento do RMS, que instala um complemento do Office e adiciona novas opções de atalho para o Explorador de Arquivos. Para saber mais, confira o [Guia do administrador do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-admin-guide.md).
 
 Além disso, você pode considerar o seguinte para ajudar a monitorar o conector RMS e o uso do Azure RMS da sua organização:
 
@@ -252,6 +261,6 @@ Além disso, você pode considerar o seguinte para ajudar a monitorar o conector
 Você pode usar o [Mapa de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para verificar se existem outras etapas de configuração que você possa precisar executar antes de lançar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para os usuários e administradores. 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

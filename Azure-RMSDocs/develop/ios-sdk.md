@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23f64fc8-d0f3-49ee-8d8a-b34ef26878a7
-
+ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Configuração do iOS e OS X
+# Configuração do iOS e OS X
 
 Os aplicativos iOS e OS X podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM (Azure Active Directory Rights Management).
 
@@ -67,41 +66,41 @@ Nossa biblioteca de interface do usuário fornece uma interface de usuário reut
 -   Para criar um novo projeto, no menu **Arquivo**, clique em **Novo** e, em seguida, **Projeto**.
 -   Selecione **Aplicativo de Exibição Única**.
 
-    ![](../media/iOS-Project.png)
+    ![Crie um novo projeto](../media/iOS-Project.png)
 
 -   Insira um nome e um identificador para o novo projeto.
 
-    ![](../media/iOS-project-options.png)
+    ![Nomear o projeto](../media/iOS-project-options.png)
 
 -   Clique em **Avançar** e selecione o local do seu projeto.
 -   Para adicionar a estrutura **MSRightsManagement** para iOS Frameworks, arraste a pasta .framework da pasta de instalação do SDK para a seção **Estruturas** de seu **Navegador de Projeto**.
 
-    ![](../media/ios-add-dependencies-01a.png)
+    ![Definir local](../media/ios-add-dependencies-01a.png)
 
 -   Selecione o botão de opção **Criar grupos para qualquer pasta adicionada** e desmarque a caixa de seleção **Copiar itens na pasta do grupo de destino (se necessário)**.
 
     Essa ação mantém a referência para a pasta de instalação do SDK em vez de criar uma cópia.
 
-    ![](../media/iOS-create-groups.png)
+    ![Definir referência à pasta de instalação do SDK](../media/iOS-create-groups.png)
 
 -   Para adicionar o MS RMS SDK 4.2 ao grupo de recursos, arraste o arquivo MSRightsManagementResources.bundle da pasta MSRightsManagement.framework/Resources para a seção **Estruturas** do seu navegador de projeto.
 
-    ![](../media/iOS-add-resource-bundle-02a.png)
+    ![Adicionar pacote de recursos](../media/iOS-add-resource-bundle-02a.png)
 
 -   Como você fez quando copiou a estrutura, selecione o botão de opção **Criar grupos para qualquer pasta adicionada** e desmarque a caixa de seleção **Copiar itens na pasta do grupo de destino (se necessário)**.
 -   O SDK depende de outras estruturas, incluindo: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** e **Segurança**. Para adicionar essas estruturas, navegue até a seção **Estruturas e bibliotecas vinculadas** do painel **Resumo** do destino e expanda essa seção para adicioná-las.
 
     As estruturas **UIKit** e **Foundation** são necessárias e, geralmente, estão presentes por padrão.
 
-    ![](../media/iOS-add-libraries.png)
+    ![Adicionar recursos](../media/iOS-add-libraries.png)
 
 -   Adicione o sinalizador **- ObjC** como **Outros Sinalizadores do Vinculador** ao seu destino **Configurações da Compilação**.
 
-    ![](../media/iOS-linker-flags.png)
+    ![Adicionar configurações de build](../media/iOS-linker-flags.png)
 
 -   Agora seu **Navegador de Projeto** deve estar parecido com essa árvore.
 
-    ![](../media/iOS-verify-setup-01a.png)
+    ![Revisar projeto](../media/iOS-verify-setup-01a.png)
 
 -   Agora você está pronto para criar seus próprios aplicativos novos do iOS/OS.
 
@@ -123,6 +122,6 @@ Nossa biblioteca de interface do usuário fornece uma interface de usuário reut
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

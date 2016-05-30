@@ -4,8 +4,8 @@
 title: Política de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS | Azure RMS
 description:
 keywords:
-author: 
-manager: mbaldwin
+author: msmbaldwin
+manager: msmbaldwin
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: azure
@@ -29,7 +29,7 @@ ms.suite: ems
 Aplica-se a: Funcionalidade do Microsoft Rights Management inserida em aplicativos
 
 > [!NOTE]
-> Esta declaração de privacidade está disponível em idiomas adicionais usando o [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
+> Esta política de privacidade está disponível em idiomas adicionais usando o [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
 
 A Microsoft está comprometida a proteger sua privacidade, oferecendo software que proporcione o desempenho, a potência e a conveniência desejados em computação pessoal. Esta declaração de privacidade explica muitas das práticas de uso e a coleta de dados de dados do serviço ou software cliente Microsoft Rights Management e outros produtos ou serviços da Microsoft vinculados a esta notificação.
 
@@ -65,6 +65,6 @@ Ocasionalmente, atualizamos esta política de privacidade para refletir mudança
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

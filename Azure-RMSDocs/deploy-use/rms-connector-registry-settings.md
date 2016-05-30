@@ -28,13 +28,16 @@ ms.suite: ems
 
 # Configurações de Registro para o conector do Rights Management
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 Use as tabelas das seções a seguir apenas se quiser adicionar manualmente ou verificar as configurações do Registro nos servidores que executam o Exchange, SharePoint ou Windows Server, que configuram os servidores para usar o [conector RMS](deploy-rms-connector.md). O método recomendado para configurar esses servidores é usar a ferramenta de configuração do servidor para o conector Microsoft RMS.
 
 Instruções para quando você usar essas configurações:
 
 -   *MicrosoftRMSURL* é a URL de serviço do Microsoft RMS da sua organização. Para encontrar esse valor:
 
-    1.  Execute o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo do Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
+    1.  Execute o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
 
     2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**
 
@@ -149,7 +152,7 @@ Instruções para quando você usar essas configurações:
 - https://*ConnectorFQDN*
 
 
-## Configurações de Registro do SharePoint 2013
+## Tabela para configurações de registro do SharePoint 2016 ou SharePoint 2013
 
 **Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
@@ -219,6 +222,6 @@ Instruções para quando você usar essas configurações:
 
 Volte para [Implantando o conector do Azure Rights Management](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

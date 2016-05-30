@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Ajudando os usuários a proteger os arquivos usando o Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Após ter implantado e configurado o Azure Rights Managenent (RMS) para sua organização, forneça ajuda e orientação para os usuários, administradores e seu suporte técnico:
 
 -   **Informação do usuário final:**
@@ -56,7 +59,7 @@ Após ter implantado e configurado o Azure Rights Managenent (RMS) para sua orga
 
     -   **Problemas de proteção ou consumo de conteúdo:**
 
-        Certifique-se de que os usuários tenham as instruções apropriadas para os aplicativos que eles usam e que estão usando aplicativos e dispositivos que são suportados pelo Azure RMS. Para mais informações sobre os dispositivos e aplicativos com suporte, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+        Certifique-se de que os usuários tenham as instruções apropriadas para os aplicativos que eles usam e que estão usando aplicativos e dispositivos que são suportados pelo Azure RMS. Para obter mais informações sobre os dispositivos e aplicativos com suporte, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
         Se os usuários vêem um erro ao tentar proteger ou consumir conteúdo, peça-lhes para executar o [Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um usuário do Azure RMS.
 
@@ -69,7 +72,7 @@ O aplicativo de compartilhamento Rights Management (RMS) é necessário para que
 
 Além de tornar mais fácil para os usuários a proteção de documentos importantes, o aplicativo de compartilhamento do RMS permite aos usuários controlar os documentos que eles tenham protegido e, se necessário, revogar o acesso a eles.
 
-Para obter instruções para usar esse aplicativo para computadores com Windows, consulte o [guia de usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+Para obter instruções para usar esse aplicativo para computadores com Windows, consulte o [Guia de usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
 
 Para dispositivos móveis, consulte [Perguntas Frequentes para o aplicativo de compartilhamento Microsoft Rights Management para plataformas móveis](http://technet.microsoft.com/dn451248).
 
@@ -99,7 +102,7 @@ Quando outros abrime o documento, primeiro são autenticados. Se eles não são 
 
 1.  No Outlook, crie uma nova mensagem de e-mail direcionada a um recipiente dentro da sua organização.
 
-2.  Na guia **OPÇÕES** clique em **Permissões**, e então selecione uma opção. Por exemplo, **Não Encaminhar**, **<Nome da Empresa> - Confidencial** ou **<Nome da Empresa> - Exibição Somente Confidencial**.
+2.  Na guia **OPÇÕES** clique em **Permissões**, e então selecione uma opção. Por exemplo: **Não Encaminhar**, **&lt;Nome da Empresa&gt; - Confidencial** ou **&lt;Nome da Empresa&gt; - Somente Exibição Confidencial**.
 
 3.  Envie a mensagem.
 
@@ -109,7 +112,7 @@ Da mesma forma a ver um documento protegido, quando os destinatários recebem a 
 
 1.  No Outlook Web App, crie uma nova mensagem de e-mail direcionada a um recipiente dentro da sua organização.
 
-2.  Clique em  **…**, clique em **definir permissões**e então selecione uma opção. Por exemplo, **Não Encaminhar**, **Não Responder a Todos**, **<Nome da Empresa> - Confidencial** ou **<Nome da Empresa> - Exibição Somente Confidencial**.
+2.  Clique em  **…**, clique em **definir permissões**e então selecione uma opção. **Não Encaminhar**, **Não Responder a Todos**, **&lt;Nome da Empresa&gt; - Confidencial** ou **&lt;Nome da Empresa&gt; Somente Exibição Confidencial**.
 
 3.  Envie a mensagem.
 
@@ -118,6 +121,6 @@ Da mesma forma a ver um documento protegido, quando os destinatários recebem a 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

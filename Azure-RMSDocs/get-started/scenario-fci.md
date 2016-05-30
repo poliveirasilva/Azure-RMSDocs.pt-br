@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Cenário - Proteger arquivos em um compartilhamento de servidor de arquivos
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Este cenário e a documentação de usuário de suporte usam o Azure Rights Management para proteger em massa todos os arquivos que você deseja proteger em um servidor de arquivos, a fim de garantir que somente os funcionários de sua organização possam acessá-los, mesmo que eles sejam copiados e salvos em armazenamentos que não estejam sob controle de seu departamento de TI ou sejam enviados por email para outras pessoas.
 
 Essas instruções usam um dos modelos padrão, que restringe o acesso a todos os funcionários com todos os direitos de uso. Mas, se for necessário, você pode restringir ainda mais os direitos de acesso e uso configurando um modelo personalizado em vez de usar um modelo padrão.
@@ -39,7 +42,7 @@ As instruções são adequadas para o seguinte conjunto de circunstâncias:
 -   Todos os arquivos passam por uma reaplicação agendada da proteção, a fim de garantir que as alterações nos modelos de política de direitos sejam aplicadas aos arquivos protegidos.
 
 ## Instruções de implantação
-![](../media/AzRMS_AdminBanner.png)
+![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
 
@@ -50,7 +53,7 @@ Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
 |---------------|--------------------------------|
 |O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Você sincronizou suas contas de usuário do Active Directory local com o Active Directory do Azure ou o Office 365, incluindo seu endereço de email. Isso é necessário para todos os usuários que talvez precisem acessar arquivos depois que eles foram protegidos pelo FCI e pelo Azure Rights Management.|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Um das seguintes condições:<br /><br />Para usar um modelo padrão para todos os usuários: Você não arquivou o padrão, &lt;nome da organização&gt; -Confidencial<br /><br />Para usar um modelo personalizado para usuários específicos: Você criou e publicou este modelo personalizado|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Um das seguintes condições:<br /><br />- Para usar um modelo padrão para todos os usuários: você não arquivou o padrão, &lt;nome da organização&gt; - confidencial<br /><br />- Para usar um modelo personalizado para usuários específicos: você criou e publicou este modelo personalizado|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |O aplicativo Rights Management sharing é implantado nos computadores dos usuários que executam o Windows|[Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |Você baixou a ferramenta de Proteção do RMS e configurou os pré-requisitos para o Azure RMS|Para obter instruções sobre como baixar a ferramenta e seus pré-requisitos: [Cmdlets da Proteção do RMS](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Para configurar os pré-requisitos adicionais para o Azure RMS, como a conta de entidade do serviço: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
@@ -70,7 +73,7 @@ Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
     ```
     Get-RMSTemplate
     ```
-    Para usar o modelo padrão que restringe o acesso a todos os funcionários com todos os direitos de uso, procure o nome do modelo de **&lt;nome da organização&gt; - Confidencial**. Por exemplo, **VanArsdel, Ltd - Confidencial**.
+    Para usar o modelo padrão que restringe o acesso a todos os funcionários com todos os direitos de uso, procure o nome do modelo de **&lt;nome da organização&gt; - confidencial**. Por exemplo, **VanArsdel, Ltd - Confidencial**.
 
 4.  Siga as instruções passo a passo em [Proteção RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server ](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx).
 
@@ -85,13 +88,13 @@ Se os arquivos protegidos tiverem uma extensão de nome de arquivo **.pfile**, o
 
 Usando o modelo a seguir, copie e cole as instruções para os usuários finais para que eles saibam como editar arquivos genericamente protegidos. Faça essas modificações para refletir seu ambiente:
 
--   Substitua *&lt;tipo de arquivo&gt;* e *&lt;arquivo de compartilhamento do servidor&gt;* pelo tipo de arquivo que será protegido genericamente e pelo nome do compartilhamento de servidor de arquivo.
+-   Substitua *&lt;tipo de arquivo&gt;* e *&lt;compartilhamento de servidor de arquivos&gt;* pelo tipo de arquivo que será protegido genericamente e o nome do compartilhamento de servidor de arquivo.
 
--   Substitua *&lt;nome da organização&gt;* pelo nome de sua organização, como ele é exibido em seus modelos do Azure Rights Management.
+-   Substitua o *&lt;nome da organização&gt;* pelo nome da sua organização, como ele é exibido nos modelos do Azure Rights Management.
 
--   Substitua *&lt;nome de organização&gt;* pelo nome de sua organização.
+-   Substitua o *&lt;nome da organização&gt;* pelo nome da sua organização.
 
--   Substitua *&lt;instruções de como salvar o arquivo e remover a extensão de nome de arquivo .pfile&gt;* pelas instruções específicas do aplicativo para este tipo de arquivo.
+-   Substitua *&lt;instruções como salvar o arquivo e remover a extensão de nome de arquivo. pfile&gt;* por instruções específicas do aplicativo para este tipo de arquivo.
 
 -   Substitua detalhes de contato por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
 
@@ -99,19 +102,19 @@ Usando o modelo a seguir, copie e cole as instruções para os usuários finais 
 
 A documentação de exemplo mostra como essas instruções pode parecer para os usuários, após as personalizações.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
 
-### Como editar &lt;tipo de arquivo&gt; do &lt;compartilhamento do servidor de arquivos&gt;
+### Como editar o &lt;tipo de arquivo&gt; do &lt;compartilhamento de servidor de arquivos&gt;
 
 1.  Clique duas vezes no arquivo para abri-lo. Suas credenciais serão solicitadas.
 
-2.  Você verá uma caixa de diálogo **Arquivo protegido** do aplicativo de compartilhamento do Microsoft Rights Management, que informa você sobre a necessidade de cumprir com as permissões para **&lt;nome de organização&gt; - Confidencial**. Isso significa que você não deve compartilhar esse documento com outras pessoas, se elas não trabalharem para &lt;nome da organização&gt;.
+2.  Você verá uma caixa de diálogo **arquivo protegido** no aplicativo de compartilhamento Microsoft Rights Management, que informa que você deve cumprir as permissões para **&lt;nome da organização&gt; - Confidencial**. Isso significa que você não deve compartilhar este documento com outras pessoas se elas não trabalham para a &lt;nome da organização&gt;.
 
 3.  Clique em **Abrir**.
 
 4.  Para editar o arquivo, salve primeiro o arquivo e remova a extensão de nome de arquivo .pfile:
 
-    -   &lt;Instruções sobre como salvar o arquivo e remover a extensão de nome de arquivo .pfile&gt;
+    -   &lt;Instruções de como salvar o arquivo e remover a extensão de nome de arquivo .pfile&gt;
 
 5.  Agora você pode editar e salvar o arquivo como de costume.
 
@@ -125,10 +128,10 @@ Periodicamente, o arquivo será protegido novamente, o que adiciona novamente a 
 
 -   Entre em contato com o suporte técnico:
 
-    -   *&lt;detalhes do contato&gt;*
+    -   *&lt;detalhes de contato&gt;*
 
 ### Documentação do usuário personalizada de exemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Como editar desenhos em CAD no compartilhamento de ProjectNextGen
 
@@ -140,7 +143,7 @@ Periodicamente, o arquivo será protegido novamente, o que adiciona novamente a 
 
 4.  Para editar o arquivo, salve primeiro o arquivo e remova a extensão de nome de arquivo .pfile:
 
-    -   **Arquivo** &gt; **Salvar como**
+    -   **Arquivo** &gt; **Salvar Como**
 
     -   Exclua **.pfile** do final do nome do arquivo e clique em **OK**.
 
@@ -158,6 +161,6 @@ Periodicamente, o arquivo será protegido novamente, o que adiciona novamente a 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

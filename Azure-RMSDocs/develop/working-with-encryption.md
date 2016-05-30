@@ -2,7 +2,7 @@
 # required metadata
 
 title: Trabalhando com criptografia | Azure RMS
-description:
+description: orienta você para nossos pacotes de criptografia
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 088c98f9-f06e-4aae-8fac-bc7605e545f5
-
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Trabalhando com criptografia
+# Trabalhando com criptografia
 
 Este tópico orienta você sobre nossos pacotes de criptografia e mostra alguns trechos de código para o uso desses pacotes.
 
@@ -107,6 +106,6 @@ Este exemplo também mostra a nova maneira de dar suporte a *algoritmos preterid
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

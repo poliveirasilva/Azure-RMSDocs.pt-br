@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Aplicativos e serviços do Office
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Os aplicativos de usuário final do Office (como o Word, Excel, PowerPoint e Outlook) e serviços do Office (como o Exchange e SharePoint) podem usar o Microsoft Azure Rights Management para ajudar a proteger os dados da sua organização.
 
 ## Aplicativos do Office: Word, Excel, PowerPoint, Outlook
@@ -49,7 +52,7 @@ Ao usar o Exchange Online ou o Exchange Server, você pode usar a integração d
 
 -   A**Criptografia de mensagem do Office 365** que usa regras de transporte para enviar emails criptografados para pessoas de fora da empresa e o email é lido em um navegador com uma interface semelhante ao Outlook Web App. Você pode personalizar o texto de aviso e o texto do cabeçalho em emails criptografados de sua empresa, e até mesmo adicionar o logotipo da empresa. Para obter mais informações, consulte [Criptografia de Mensagens do Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) no site do Office.
 
-Se usar o Exchange Server, você poderá usar os recursos de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] implantando o conector de RMS, que atua como um retransmissor entre os servidores no local e o serviço de nuvem do RMS. Para obter mais informações, consulte [Implantando o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md).
+Se usar o Exchange Server, você poderá usar os recursos de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] implantando o conector de RMS, que atua como um retransmissor entre os servidores no local e o serviço de nuvem do RMS. Para obter mais informações, consulte [Implantando o conector Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## SharePoint Online e SharePoint Server
 Ao usar o SharePoint Online ou o SharePoint Server, você pode usar a integração de gerenciamento de direitos de informação (IRM), que permite que os administradores protejam listas ou bibliotecas, para que um arquivo fique protegido quando um usuário fechá-lo e apenas pessoas autorizadas possam visualizar e usar o arquivo de acordo com as políticas de proteção de informações especificadas. Por exemplo, o arquivo pode ser somente leitura, pode desativar a cópia de texto, pode impedir que uma cópia local seja salva e pode evitar a impressão do arquivo.
@@ -58,7 +61,7 @@ Para listas e bibliotecas, a proteção de informações é sempre aplicada por 
 
 O serviço IRM deve primeiro ser habilitado para o SharePoint. Em seguida, especifique o Gerenciamento de Direitos de Informação para uma biblioteca. No caso do SharePoint Online e OneDrive para Negócios, os usuários podem especificar também Gerenciamento de Direitos de Informação do seu OneDrive para a biblioteca de Negócios. O SharePoint não usa modelos de política de direitos, embora haja definições de configuração do SharePoint para selecionar que se aproximam daquelas que você pode especificar em modelos.
 
-Se usar o SharePoint Server, você poderá usar os recursos de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] implantando o conector de RMS, que atua como um retransmissor entre os servidores no local e o serviço de nuvem do RMS. Para obter mais informações, consulte [Implantando o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md).
+Se usar o SharePoint Server, você poderá usar os recursos de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] implantando o conector de RMS, que atua como um retransmissor entre os servidores no local e o serviço de nuvem do RMS. Para obter mais informações, consulte [Implantando o conector Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 > [!NOTE]
 > Atualmente, existem algumas limitações quando você usa o IRM com o SharePoint:
@@ -75,6 +78,6 @@ Para obter mais informações sobre como usar o Azure RMS com o SharePoint, cons
 
 Para ver como outros aplicativos e serviços dão suporte ao Azure Rights Management, consulte [Como os aplicativos dão suporte ao Azure Rights Management](applications-support.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Etapa 2: migração de chave protegida por HSM para chave protegida por HSM | Azure RMS
+title: Etapa 2&colon; Migração de chave protegida por HSM para chave protegida por HSM | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -27,12 +27,15 @@ ms.suite: ems
 
 # Etapa 2: migração de chave protegida por HSM para chave protegida por HSM
 
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+
+
 Estas instruções são parte do [caminho de migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) e são aplicáveis somente se a chave do AD RMS é protegida por HSM e se você deseja migrar para o Azure Rights Management com uma chave de locatário protegida por HSM. 
 
 Se este não for o cenário de configuração escolhido, volte para a [Etapa 2. Exporte os dados de configuração do AD RMS e importe-os para o Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) e escolha uma configuração diferente.
 
 > [!NOTE]
-> Essas instruções presumem que a sua chave do AD RMS é protegido por módulo. Este é o caso comum. Se a chave do AD RMS é protegida por OCS, entre em contato com [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key) antes de seguir essas instruções.
+> Essas instruções presumem que a sua chave do AD RMS é protegido por módulo. Este é o caso comum. Se sua chave do AD RMS é protegida por OCS, entre em contato com [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key) antes de seguir essas instruções.
 
 Esse é um procedimento de duas partes para importar a sua chave HSM e configuração do AD RMS para o Azure RMS, para resultar na sua chave de locatário do Azure RMS gerenciada por você (BYOK).
 
@@ -69,10 +72,10 @@ Agora que você preparou sua chave HSM para o Azure RMS, você está pronto para
     Disconnect-AadrmService
     ```
 
-Agora você está pronto para ir para a [Etapa 3. Ativar seu locatário do RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+Agora você está pronto para ir para a [Etapa 3. Ativar locatário do RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

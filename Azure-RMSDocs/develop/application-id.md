@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 834c5943-a724-4322-9035-060c1112fe22
-
+ms.assetid: 0fe9dc-bc91-4018-b28d-2db293a3eaa2
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Como: obter uma ID do aplicativo do Azure
 
 Criar um aplicativo habilitado para RMS com o Microsoft Rights Management SDK 4.2 exige criar um contrato com a equipe do RMS.
@@ -47,7 +45,7 @@ Use as seguintes etapas para criar sua ID do aplicativo e assinar o contrato de 
 
 
     // Retrieve token using ADAL
-        [context acquireTokenWithResource:authenticationParameters.resource
+        [contexto acquireTokenWithResource:authenticationParameters.resource
                                  clientId:appClientId
                               redirectUri:redirectURI
                                    userId:authenticationParameters.userId
@@ -64,6 +62,6 @@ Use as seguintes etapas para criar sua ID do aplicativo e assinar o contrato de 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

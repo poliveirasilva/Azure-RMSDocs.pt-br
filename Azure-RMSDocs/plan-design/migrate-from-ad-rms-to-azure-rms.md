@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Migrando do AD RMS para o Azure Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+
 Use o seguinte conjunto de instruções para migrar sua implantação do Active Directory Rights Management Services (AD RMS) para o Azure Rights Management (Azure RMS). Após a migração, os usuários ainda terão acesso aos documentos e às mensagens de email que sua organização protegia usando o AD RMS, e o novo conteúdo protegido usará o Azure RMS.
 
 Não sabe se essa migração do AD RMS é adequada para sua organização?
@@ -63,7 +66,7 @@ Antes de iniciar a migração para o Azure RMS, lembre-se de seguir estes pré-r
 
 - **Todos os requisitos para executar o Azure RMS, incluindo um locatário do Azure RMS (não ativado)**
 
-    Consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Confira os [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
     Embora você deva ter um locatário do Azure RMS antes de migrar do AD RMS, recomendamos que não ative o serviço de Rights Management antes da migração. O processo de migração inclui essa etapa depois de exportar chaves e modelos do AD RMS e importá-los para o Azure RMS. No entanto, se o Azure RMS já está ativado, você ainda pode migrar do AD RMS.
 
@@ -74,7 +77,7 @@ Antes de iniciar a migração para o Azure RMS, lembre-se de seguir estes pré-r
 
     - Grupos habilitados para email no Active Directory do Azure
 
-    Consulte [Preparação para o Azure Rights Management](prepare.md).
+    Confira [Preparando para o Azure Rights Management](prepare.md).
 
 
 - **Se você usou a funcionalidade de IRM (Information Rights Management) do Exchange Server** (por exemplo, regras de transporte e o Outlook Web Access) ou o SharePoint Server com o AD RMS:
@@ -88,7 +91,7 @@ Antes de iniciar a migração para o Azure RMS, lembre-se de seguir estes pré-r
 
 Limitações:
 
--   Embora o processo de migração dê suporte para a migração da chave do SLC (Certificado de Licenciamento do Servidor) para um HSM (Módulo de Segurança de Hardware) para o Azure RMS, o Exchange Online não dá suporte para essa configuração no momento. Se desejar usar todas as funcionalidades do IRM com o Exchange Online após migrar do Azure RMS, a sua chave de locatário do Azure RMS deverá ser [gerenciada pela Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-). Como alternativa, você pode executar o IRM com funcionalidade reduzida no Exchange Online quando seu locatário do Azure RMS é gerenciado por você (BYOK). Para obter mais informações sobre como usar o Exchange Online com o Azure RMS, consulte [Etapa 6. Configure a integração do IRM para o Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) destas instruções de migração.
+-   Embora o processo de migração dê suporte para a migração da chave do SLC (Certificado de Licenciamento do Servidor) de um HSM (Módulo de Segurança de Hardware) para o Azure RMS, o Exchange Online não dá suporte a essa configuração no momento. Se desejar usar todas as funcionalidades do IRM com o Exchange Online após migrar do Azure RMS, a sua chave de locatário do Azure RMS deverá ser [gerenciada pela Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-). Como alternativa, você pode executar o IRM com funcionalidade reduzida no Exchange Online quando seu locatário do Azure RMS é gerenciado por você (BYOK). Para obter mais informações sobre como usar o Exchange Online com o Azure RMS, consulte [Etapa 6. Configure a integração do IRM para o Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) destas instruções de migração.
 
 -   Se tiver clientes e software sem suporte com o Azure RMS, eles não poderão proteger ou consumir conteúdo protegido pelo Azure RMS. Verifique as seções de clientes e aplicativos com suporte do artigo [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
@@ -113,7 +116,7 @@ As 9 etapas de migração podem ser divididas em 4 fases que podem ser feitas em
 
 - **Etapa 2. Exportar os dados de configuração do AD RMS e importá-los para o Azure RMS**
 
-    Exporte os dados de configuração (chavfes, modelos, URLs) do AD RMS para um arquivo XML e, em seguida, carregue esse arquivo para o Azure RMS usando o cmdlet Import-AadrmTpd do PowerShell do Windows. Dependendo da sua configuração de chave no AD RMS, poderão ser necessárias etapas adicionais:
+    Exporte os dados de configuração (chaves, modelos, URLs) do AD RMS para um arquivo XML e, em seguida, carregue esse arquivo para o Azure RMS usando o cmdlet Import-AadrmTpd do PowerShell do Windows. Dependendo da sua configuração de chave no AD RMS, poderão ser necessárias etapas adicionais:
 
     - **Migração de chave protegida por software para chave protegida por software**:
 
@@ -167,7 +170,7 @@ As 9 etapas de migração podem ser divididas em 4 fases que podem ser feitas em
 
 [**FASE 4: PUBLICAR TAREFAS DE MIGRAÇÃO**](migrate-from-ad-rms-phase4.md )
 
-- **Etapa: Descomissionamento do AD RMS**
+- **Etapa 8: Desativar o AD RMS**
 
     Depois de confirmar que todos os clientes estão usando o Azure RMS e não estão mais acessando os servidores do AD RMS, você pode encerrar sua implantação do AD RMS.
 
@@ -182,6 +185,6 @@ Para iniciar a migração, vá para [Fase 1 - configuração do lado do servidor
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

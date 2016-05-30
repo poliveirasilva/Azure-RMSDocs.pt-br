@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # Script do Windows PowerShell para proteção do Azure RMS usando o Gerenciador de Recursos de Servidor de Arquivos FCI
-Esta página contém o script de exemplo para copiar e editar, conforme descrito em [Proteção RMS com Infraestrutura de Classificação de Arquivos do Windows Server](configure-fci.md).
+
+*Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+
+Esta página contém o script de exemplo para copiar e editar, conforme descrito em [Proteção RMS com infraestrutura de classificação de arquivos do Windows Server](configure-fci.md).
 
 *&#42;&#42;Aviso de isenção de responsabilidade&#42;&#42;: não há suporte para esse script de exemplo em qualquer serviço ou programa de suporte padrão da Microsoft. Esse*
 *script de exemplo é fornecido como está sem garantias de qualquer tipo.*
@@ -174,9 +177,9 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-Voltar para [Proteção RMS com a Infraestrutura de Classificação de Arquivos do Windows Server](configure-fci.md).
+Voltar para [Proteção RMS com a infraestrutura de classificação de arquivos do Windows Server](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

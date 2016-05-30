@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Gerenciado pelo cliente: operações de ciclo de vida da chave de locatário
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Se você gerencia sua chave de locatário para o Azure Rights Management (traga sua própria chave, ou BYOK), use as seções a seguir para obter mais informações sobre as operações do ciclo de vida que são relevantes para esta topologia.
 
 ## Revogue sua chave de locatário
@@ -68,6 +71,6 @@ Se você tem uma violação, a melhor ação que você ou a Microsoft podem toma
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

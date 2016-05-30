@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Gerar e transferir a chave de locatário - pela Internet
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use os seguintes procedimentos se decidir [gerenciar sua própria chave de locatário](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) e quiser transferi-la pela Internet, em vez de viajar para uma instalação da Microsoft para transferir a chave de locatário pessoalmente:
 
 
@@ -45,7 +48,7 @@ Na estação de trabalho conectada à Internet, baixe e instale o módulo do Win
 > [!NOTE]
 > Se você já baixou previamente este módulo do Windows PowerShell, execute o seguinte comando para verificar se o seu número de versão é, pelo menos, 2.1.0.0: `(Get-Module aadrm -ListAvailable).Version`
 
-Para instruções de instalação, consulte [Instalando o Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Para instruções de instalação, consulte [Instalando o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md)..
 
 ### Etapa 2: Obtenha sua ID de locatário do Active Directory do Azure
 Inicie o Windows PowerShell com a opção **Executar como administrador** e, em seguida, execute os seguintes comandos:
@@ -86,11 +89,11 @@ O conjunto de ferramentas inclui o seguinte:
 
 -   Um pacote do Security World que tem um nome que começa com **BYOK-SecurityWorld-pkg-**.
 
--   Um script python chamado **verifykeypackage.py**.
+-   Um script python nomeado **verifykeypackage.py**.
 
 -   Um arquivo executável de linha de comando chamado **KeyTransferRemote.exe**, um arquivo de metadados chamado **KeyTransferRemote.exe.config** e as DLLs associadas.
 
--   Um pacote redistribuível do Visual C++, chamado **vcredist_x64.exe**.
+-   Um pacote redistribuível do Visual C++, nomeado **vcredist_x64.exe**.
 
 Copie o pacote para uma unidade USB ou outro armazenamento portátil.
 
@@ -270,7 +273,7 @@ Ao executar este comando, substitua *contosokey* pelo mesmo valor especificado n
 
 Você será solicitado a conectar seus cartões de ACS do mundo de segurança e, se for especificado, sua senha ou PIN.
 
-Ao concluir o comando, você verá **Resultado: SUCCESSO** e a cópia da sua chave de locatário com permissões reduzidas estará no arquivo chamado key_xferacId_*&lt;contosokey&gt;*.
+Ao concluir o comando, você verá **Resultado: SUCCESSO** e a cópia da sua chave de locatário com permissões reduzidas estará no arquivo nomeado key_xferacId_*&lt;contosokey&gt;*.
 
 ### Etapa 2: Inspecione a nova cópia da chave
 Opcionalmente, execute os utilitários da Thales para confirmar as permissões mínimas na nova chave de locatário:
@@ -380,6 +383,6 @@ Agora você concluiu todas as etapas necessárias para obter sua própria chave 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

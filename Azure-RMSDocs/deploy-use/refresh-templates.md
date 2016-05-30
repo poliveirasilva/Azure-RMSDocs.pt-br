@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,14 +27,17 @@ ms.suite: ems
 
 
 # Atualizando modelos para usuários
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Ao usar o Azure RMS, os modelos são baixados automaticamente para os computadores clientes para que os usuários possam selecioná-los em seus aplicativos. No entanto, talvez seja necessário tomar medidas adicionais se forem feitas alterações nos modelos:
 
 |Aplicativo ou serviço|Como os modelos são atualizados após as alterações|
 |--------------------------|---------------------------------------------|
 |Exchange Online|Configuração manual necessária para atualizar os modelos.<br /><br />Para as etapas de configuração, consulte a seção a seguir, [Exchange Online somente: como configurar o Exchange para baixar modelos personalizados alterados](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
 |Office 365|Atualizado automaticamente, não são necessários outros procedimentos.|
-|Office 2016 e Office 2013<br /><br />Aplicativo de compartilhamento RMS para Windows|Atualizado automaticamente, por agendamento:<br /><br />Para essas versões posteriores do Office: o intervalo de atualização padrão é a cada 7 dias.<br /><br />Para o aplicativo RMS sharing para Windows: da versão 1.0.1784.0 em diante, o intervalo de atualização padrão é a cada 1 dia. As versões anteriores têm um intervalo de atualização padrão de a cada 7 dias.<br /><br />Para forçar uma atualização antes desse agendamento, expanda a seção a seguir, [Aplicativo RMS sharing para Windows, Office 2013 e Office 2016: como forçar uma atualização de um modelo personalizado alterado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Office 2010|Atualizado quando os usuários fazem logon.<br /><br />Para forçar uma atualização, peça ou force os usuários a fazerem logoff e logon novamente. Ou consulte a seção a seguir: [Somente Office 2010: como forçar uma atualização para um modelo personalizado alterado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2016 e Office 2013<br /><br />Aplicativo de compartilhamento RMS para Windows|Atualizado automaticamente, por agendamento:<br /><br />Para essas versões posteriores do Office: o intervalo de atualização padrão é a cada 7 dias.<br /><br />Para o aplicativo RMS sharing para Windows: da versão 1.0.1784.0 em diante, o intervalo de atualização padrão é a cada 1 dia. As versões anteriores têm um intervalo de atualização padrão de a cada 7 dias.<br /><br />Para forçar uma atualização antes desse agendamento, expanda a seção a seguir, [Office 2016, Office 2013 e Aplicativo de compartilhamento do RMS para Windows: como forçar uma atualização de um modelo personalizado alterado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2010|Atualizado quando os usuários fazem logon.<br /><br />Para forçar uma atualização, peça ou force os usuários a fazerem logoff e logon novamente. Ou, consulte a seção a seguir: [Somente Office 2010: Como forçar uma atualização para um modelo personalizado alterado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
 Para dispositivos móveis que usam o aplicativo RMS sharing, os modelos são baixados (e atualizados, se necessário) automaticamente sem configuração adicional necessária.
 
 ## Somente Exchange Online: como configurar o Exchange para baixar modelos personalizados alterados
@@ -108,7 +111,7 @@ Editando o registro nos computadores que executam o Office 2016, o Office 2013 o
 
 1.  Ao utilizar um editor de registro, crie e defina um dos seguintes valores de registro:
 
-    - Para definir uma frequência de atualização em dias (mínimo de 1 dia):  Crie um novo valor de registro denominado **TemplateUpdateFrequency** e defina um valor inteiro para os dados que especifica a frequência em dias para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do registro para criar esse novo valor de registro.
+    - Para definir uma frequência de atualização em dias (mínimo de 1 dia):  Crie um novo valor de registro denominado **TemplateUpdateFrequency** e defina um valor inteiro para os dados que especifica a frequência em dias para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do Registro para criar esse novo valor de Registro.
 
         **Caminho de Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -116,16 +119,15 @@ Editando o registro nos computadores que executam o Office 2016, o Office 2013 o
 
         **Valor:** TemplateUpdateFrequency
 
+    - Para definir uma frequência de atualização em segundos (mínimo de 1 segundo):  Crie um novo valor de registro denominado **TemplateUpdateFrequencyInSeconds** e definir um valor inteiro para os dados que especifica a frequência em segundos para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do Registro para criar esse novo valor de Registro.
 
-    - To set an update frequency in seconds (minimum of 1 second):  Create a new registry value named **TemplateUpdateFrequencyInSeconds** and define an integer value for the data, which specifies the frequency in seconds to download any changes to a downloaded template. Use the following table to locate the registry path to create this new registry value.
+        **Caminho de Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **Registry path:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **Tipo:** REG_DWORD
 
-        **Type:** REG_DWORD
+        **Valor:** TemplateUpdateFrequencyInSeconds
 
-        **Value:** TemplateUpdateFrequencyInSeconds
-
-    Make sure that you create and set one of these registry values, not both. If both are present, **TemplateUpdateFrequency** is ignored.
+    Certifique-se de criar e definir um desses valores de registro, não ambos. Se ambos estiverem presentes, **TemplateUpdateFrequency** será ignorado.
 
 2.  Se você quiser forçar uma atualização imediata dos modelos, vá para o próximo procedimento. Caso contrário, reinicie seus aplicativos do Office e instâncias do Explorador de arquivos agora.
 
@@ -142,7 +144,7 @@ Editando o registro nos computadores que executam o Office 2016, o Office 2013 o
     > [!TIP]
         > No caminho do Registro, <*MicrosoftRMS_FQDN*> refere-se ao FQDN do serviço Microsoft RMS. Se você quiser verificar este valor:
 
-    > 1.  Execute o cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo do Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
+    > 1.  Execute o cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
     > 2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**
     > 
     >     Por exemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -190,6 +192,6 @@ Ao editar o registro nos computadores que executam o Office 2010, você pode def
 ## Consulte também
 [Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

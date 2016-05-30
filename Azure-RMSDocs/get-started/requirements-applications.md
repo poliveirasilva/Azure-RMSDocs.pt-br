@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/13/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Requisitos do Azure RMS: aplicativos
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 Use a tabela a seguir para identificar os aplicativos que oferecem suporte nativo ao Azure RMS nativamente, ou seja, o RMS é totalmente integrado a esses aplicativos usando as APIs do RMS a fim de oferecer suporte às restrições de uso. Esses aplicativos também são conhecidos como aprimorados pelo RMS.
 
 A menos que exista indicação em contrário, os recursos com suporte se aplicam ao Azure RMS e ao AD RMS. Além disso, o suporte do AD RMS no iOS, no Android, no OS X e no Windows Phone 8.1 requer a [Extensão de dispositivo móvel do Active Directory Rights Management Services](https://technet.microsoft.com/library/dn673574.aspx).
@@ -43,11 +46,11 @@ Informações sobre as colunas da tabela:
 
 |**Sistema operacional do dispositivo**|Word, Excel, PowerPoint|PDF protegido|Email|Outros tipos de arquivos|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Aplicativos Office Mobile (somente Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client para Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicativo RMS sharing|Outlook 2010<br /><br />Outlook 2013<br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Aplicativo de compartilhamento RMS para Windows: texto, imagens, pfile<br /><br />Siemens JT2Go: arquivos JT (somente Windows 10)|
-|**iOS**|Office para iPad e iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad e iPhone [[4]](#footnote-4)<br /><br />OWA para iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile<br /><br />TITUS Docs: Pfile|
-|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) e [[6]](#footnote-6)<br /><br />Samsung Email (S3 e posterior) [[6]](#footnote-6)<br /><br />Classificação TITUS para dispositivos móveis|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplicativos Office Mobile (somente Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client para Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicativo RMS sharing|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|Aplicativo de compartilhamento RMS para Windows: texto, imagens, pfile<br /><br />Siemens JT2Go: arquivos JT (somente Windows 10)|
+|**iOS**|Office para iPad e iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad e iPhone [[4]](#footnote-4)<br /><br />OWA para iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile<br /><br />TITUS Docs: Pfile|
+|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) and [[7]](#footnote-7)<br /><br />Samsung Email (S3 e posterior) [[7]](#footnote-7)<br /><br />Classificação TITUS para dispositivos móveis|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
 |**OS X**|Office 2011 (somente do AD RMS)<br /><br />Office 2016 para Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|Outlook 2011 (somente do AD RMS)<br /><br />Outlook 2016 para Mac<br /><br />Outlook para Mac|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
-|**Windows 10 Mobile**|Aplicativos do Office Mobile (somente Azure RMS)[[1]](#footnote-1)|Sem suporte|Citrix WorxMail<br /><br />Email do Outlook|Sem suporte|
+|**Windows 10 Mobile**|Aplicativos do Office Mobile (somente Azure RMS)[[1]](#footnote-1)|Sem suporte|Citrix WorxMail [[6]](#footnote-6)<br /><br />Email do Outlook|Sem suporte|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|Sem suporte|Outlook 2013 RT<br /><br />Aplicativo de email para o Windows<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: arquivos JT|
 |**Windows Phone 8.1**|Office Móvel (somente do AD RMS)|Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|Outlook Mobile [[4]](#footnote-4)|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
 |**Blackberry 10**|Sem suporte|Sem suporte|Email do Blackberry [[4]](#footnote-4)|Sem suporte|
@@ -71,6 +74,9 @@ Se um destinatário tem uma caixa de correio no Exchange no local e recebe um em
 oferece suporte à exibição e edição de documentos protegidos. Para saber mais, confira a seguinte postagem no blog do Office: [Azure Rights Management support comes to Office for iPad and iPhone (O suporte ao Azure Rights Management chega até o Office para iPad e iPhone)](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/)
 
 ###### Nota de rodapé 6
+Para obter mais informações, consulte [Documentação de produto para WorxMail](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html).
+
+###### Nota de rodapé 7
 Para saber mais, confira a seguinte postagem no blog do Office: [OWA for Android now available on select devices (OWA para Android já disponível em dispositivos selecionados)](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/)
 
 ## Para saber mais sobre o suporte do Azure RMS para Office
@@ -139,6 +145,6 @@ Para saber mais sobre como os aplicativos usados com mais frequência oferecem s
 
 Para saber mais sobre como configurar os aplicativos usados com mais frequência para o Azure RMS, veja [Configuração de aplicativos para o Azure Rights Management](../deploy-use/configure-applications.md).
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

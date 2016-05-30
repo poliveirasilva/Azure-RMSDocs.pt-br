@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Tutorial de início rápido para o Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Ir para: 
 > [!div class="op_single_selector"]
 - [Etapa 1: Ativar o Azure RMS](tutorial-step1.md)
@@ -36,7 +39,7 @@ Ir para:
 
 Use este tutorial para testar rapidamente o Microsoft Azure Rights Management (também conhecido como Azure RMS) para sua organização em apenas 5 etapas que devem levar menos de 15 minutos. Você ativará o serviço, enviará um documento confidencial por email para alguém em outra organização com segurança e será capaz de controlar quando o documento for aberto. Quando o documento confidencial for enviado por email, será criptografado em trânsito e apenas poderá ser lido pela pessoa para a qual for enviado, usando as permissões definidas pelo remetente.
 
-![](../media/AzRMS_QuickStartStepsAll.PNG)
+![Todas as etapas do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartStepsAll.PNG)
 
 Este tutorial é destinado a administradores de TI e consultores, para ajudar a avaliar o Azure Rights Management como uma solução de proteção de informações para uma organização. Em um ambiente de produção as instruções para ativar o serviço devem ser realizadas por um administrador, e as instruções para enviar um documento, por usuários finais. Ambos os conjuntos de instruções estão incluídos neste tutorial, para demonstrar o cenário de envio de um documento confidencial para alguém em outra organização com segurança de ponta a ponta. Se você encontrar problemas para concluir este tutorial, envie um email para [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) e iremos ajudá-lo.
 
@@ -52,13 +55,12 @@ Para concluir este tutorial, você precisará do seguinte:
 
 Vamos começar.
 
->[!div class="step-by-step"]
-[Etapa 1 »](tutorial-step1.md)
+>[!div class="step-by-step"] [Etapa 1 »](tutorial-step1.md)
 
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

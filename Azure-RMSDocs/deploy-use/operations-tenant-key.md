@@ -26,9 +26,12 @@ ms.suite: ems
 ---
 
 # Operações para sua chave de locatário do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Dependendo da topologia da sua chave de locatário (gerenciada pela Microsoft ou gerenciada pelo cliente), você tem diferentes níveis de controle e responsabilidade para sua chave de locatário do Microsoft Azure Rights Management (Azure RMS) após ser implantado.
 
-Quando você gerencia sua própria chave de locatário, esta é geralmente chamada de trazer sua própria chave (BYOK). Para obter mais informações sobre esse cenário e de como escolher entre as duas topologias de chave de locatário, consulte [Planejamento e implementação da sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+Quando você gerencia sua própria chave de locatário, esta é geralmente chamada de trazer sua própria chave (BYOK). Para obter mais informações sobre esse cenário e de como escolher entre as duas topologias de chave de locatário, consulte [Planejando e implementando sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 A tabela a seguir identifica as operações que você pode realizar, dependendo da topologia escolhida para sua chave de locatário do Azure RMS.
 
@@ -51,6 +54,6 @@ Depois de ter identificado a topologia que você implementou, use uma das seçõ
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

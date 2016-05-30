@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Registrando em log e analisando o uso do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use as informações neste tópico para ajudá-lo a entender como usar registro em log com o Azure RMS (Azure Rights Management). O serviço Azure Rights Management pode registrar cada solicitação feita para sua organização, incluindo solicitações de usuários, ações realizadas por administradores do Rights Management na sua organização e ações realizadas por operadores da Microsoft para dar suporte à sua implantação do Azure Rights Management.
 
 Você pode usar esses logs do Azure Rights Management para dar suporte aos cenários de negócios a seguir:
@@ -44,8 +47,7 @@ Você pode usar esses logs do Azure Rights Management para dar suporte aos cená
 
     Se você tiver um vazamento de informação, é provável que seja solicitado quem acessou recentemente documentos específicos e que informações a pessoa suspeitosa acessou recentemente. Você pode responder a esse tipo de pergunta quando usa o Azure Rights Management e o registro em log porque as pessoas que usam o conteúdo protegido sempre devem obter uma licença do Rights Management para abrir documentos e imagens que sejam projetadas pelo Azure Rights Management, mesmo que esses arquivos sejam movidos por email ou copiados para unidades USB ou outros dispositivos de armazenamento. Isso significa que você pode usar os logs do Azure Rights Management como uma fonte definitiva de informações para análise forense ao proteger seus dados usando o Azure Rights Management.
 
-> [!NOTE]
-> Se você estiver interessado somente no registro em log de tarefas administrativas para o Azure Rights Management e não quiser controlar como os usuários estão usando o Rights Management, poderá usar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell do Azure Rights Management.
+> [!NOTE] Se você estiver interessado somente no registro em log de tarefas administrativas para o Azure Rights Management e não quiser controlar como os usuários estão usando o Rights Management, poderá usar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell para Azure Rights Management.
 > 
 > Você também pode usar o portal clássico do Azure para relatórios de uso de alto nível que incluem **Resumo do RMS**, **Usuários RMS ativos**, **Plataformas do dispositivo RMS** e **Uso do aplicativo RMS**. Para acessar esses relatórios no portal clássico do Azure, clique em **Active Directory**, selecione e abra um diretório e clique em **RELATÓRIOS**,
 
@@ -54,8 +56,7 @@ Use as seguintes seções para obter mais informações sobre registro em log do
 ## Como habilitar o registro em log de uso do Azure Rights Management
 A partir de fevereiro de 2016, o registro em log do uso do Azure Rights Management é habilitado por padrão para todos os clientes. Isto aplica-se aos clientes que ativaram seu serviço Azure RMS antes de fevereiro de 2016 e aos clientes que ativaram o serviço depois de fevereiro de 2016. 
 
-> [!NOTE]
-> Não há nenhum custo extra para o armazenamento de log ou para a funcionalidade de recurso de registro em log.
+> [!NOTE] Não há nenhum custo extra para o armazenamento de log ou para a funcionalidade de recurso de registro em log.
 > 
 > Se você usou o log de uso para Azure RMS antes de fevereiro de 2016, você precisava de uma assinatura do Azure e de armazenamento suficiente no Azure, o que não é mais o caso.
 
@@ -151,7 +152,7 @@ Cada uma das linhas subsequentes é um registro de log. Os valores dos campos es
 |email proprietário|Cadeia de caracteres|Endereço de email do proprietário do documento.|alice@contoso.com|
 |emissor|Cadeia de caracteres|Endereço de email do emissor do documento.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Id do modelo|Cadeia de caracteres|ID do modelo usado para proteger o documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|Nome do arquivo|Cadeia de caracteres|Nome do arquivo do documento que estava protegido.|TopSecretDocument.docx|
+|Nome do arquivo|Cadeia de caracteres|Nome do arquivo do documento que estava protegido. <br /><br />No momento, alguns arquivos (como documentos do Office) são exibidos como GUIDs em vez do nome do arquivo real.|TopSecretDocument.docx|
 |Data de publicação|Data|Data quando o documento foi protegido.|2015-10-15T21:37:00|
 |c-info|Cadeia de caracteres|As informações sobre a plataforma do cliente que estão fazendo a solicitação.<br /><br />A cadeia de caracteres varia, dependendo do aplicativo (por exemplo, o sistema operativo ou o navegador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Endereço|O endereço IP do cliente que realiza a solicitação.|64.51.202,144|
@@ -159,9 +160,9 @@ Cada uma das linhas subsequentes é um registro de log. Os valores dos campos es
 #### Exceções para o campo user-id
 Mesmo que o campo user-id geralmente indica ao usuário que realizou o pedido, há duas exceções onde o valor não mapeia a um usuário real:
 
--   O valor **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**.
+-   O valor **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;região&gt;.aadrm.com'**.
 
-    Isso indica que um serviço Office 365, como o Exchange Online ou SharePoint Online, está realizando a solicitação. Na cadeia de caracteres, o *&lt;YourTenantID&gt;* é o GUID para seu locatário e *&lt;region&gt;* é a região onde seu locatário é registrado. Por exemplo, **na** representa América do Norte, **eu** representa a Europa e **ap** representa a Ásia.
+    Isso indica que um serviço Office 365, como o Exchange Online ou SharePoint Online, está realizando a solicitação. Na cadeia de caracteres, *&lt;YourTenantID&gt;* é o GUID para seu locatário e *&lt;região&gt;* é a região onde seu locatário é registrado. Por exemplo, **na** representa América do Norte, **eu** representa a Europa e **ap** representa a Ásia.
 
 -   Se você estiver usando o conector do RMS.
 
@@ -228,6 +229,6 @@ Para obter mais informações sobre o uso do Windows PowerShell para o Azure Rig
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

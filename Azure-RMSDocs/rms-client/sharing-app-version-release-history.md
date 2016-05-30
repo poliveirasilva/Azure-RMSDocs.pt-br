@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aplicativo de compartilhamento Rights Management&colon; histórico de lançamento de versão | Azure RMS
+title: Aplicativo de compartilhamento Rights Management&colon; Histórico de lançamento de versão | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,12 +26,15 @@ ms.suite: ems
 ---
 
 # Aplicativo de compartilhamento do Rights Management: histórico de lançamento de versão
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 A equipe do Rights Management atualiza o aplicativo Rights Management sharing regularmente para correções e novas funcionalidades. Use as informações a seguir para ver o que há de novo ou o que foi alterado em uma versão. A versão mais recente é listada primeiro.
 
 As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 > [!NOTE]
-> Se você tiver um comentário ou uma pergunta sobre o aplicativo RMS sharing, envie um email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> Se você tiver comentários ou uma pergunta sobre o aplicativo RMS sharing, envie uma mensagem de email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
 ## Versão 1.0.2004.0
 **Lançada**: 11/12/2015
@@ -59,7 +62,7 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 -   Suporte para Multi-Factor Authentication (MFA) para o Azure RMS, que também remove a dependência do assistente de conexão da Microsoft que usa autenticação moderna.
 
-    Para obter mais informações, consulte a seção [Multi-Factor Authentication (MFA) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) de [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Para obter mais informações, consulte a seção [MFA (Multi-Factor Authentication) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) de [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
 ## Versão 1.0.1784.0
 **Lançada**: 30/7/2015
@@ -81,7 +84,7 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 **Novos recursos**:
 
--   Suporte para rastreamento e revogação de documentos. Para obter mais informações, consulte [Rastrear e revogar seus documentos ao usar o aplicativo RMS sharing](sharing-app-track-revoke.md).
+-   Suporte para rastreamento e revogação de documentos. Para obter mais informações, consulte [Acompanhar e revogar seus documentos ao usar o aplicativo de compartilhamento RMS](sharing-app-track-revoke.md)..
 
 -   Suporte de modelo quando você escolhe **Compartilhamento protegido**:
 
@@ -106,10 +109,10 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 **Novos recursos**:
 
--   **Suporte para vários domínios de email dentro de sua organização**: se você usa o AD RMS e os usuários em sua organização têm vários domínios de email, essa atualização permite que os usuários consumam conteúdo protegido por usuários em sua organização em outros domínios. Para obter mais informações, consulte a seção [Somente AD RMS: suporte para vários domínios de email dentro de sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+-   **Suporte para vários domínios de email dentro de sua organização**: se você usa o AD RMS e os usuários em sua organização têm vários domínios de email, essa atualização permite que os usuários consumam conteúdo protegido por usuários em sua organização em outros domínios. Para obter mais informações, consulte a seção [Somente AD RMS: suporte para vários domínios de email dentro de sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

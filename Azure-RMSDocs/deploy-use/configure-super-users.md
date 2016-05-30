@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Configurando os superusuários para o Azure Rights Management e os serviços de descoberta ou a recuperação de dados
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 O recurso de superusuário do Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) garante que serviços e pessoas autorizadas sempre possam ler e inspecionar os dados que o Azure RMS protege para sua organização. E, se necessário, remover a proteção ou alterar a proteção aplicada anteriormente. Um superusuário sempre tem direitos totais de proprietário para todas as licenças de uso concedidas pelo locatário do RMS da organização. Essa capacidade às vezes é chamada de "raciocínio sobre dados" e é um elemento crucial para manter o controle dos dados da sua organização. Por exemplo, você usaria esse recurso para qualquer um dos seguintes cenários:
 
 -   Um funcionário deixa a empresa e você precisa ler os arquivos protegidos.
@@ -74,6 +77,6 @@ Para obter mais informações sobre esses cmdlets, consulte [Cmdlets de proteç�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

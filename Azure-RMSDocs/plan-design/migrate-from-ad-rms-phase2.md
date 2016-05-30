@@ -26,6 +26,9 @@ ms.suite: ems
 
 ---
 # Fase de migração 2 - configuração do lado do cliente
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+
 Use as informações a seguir para a Fase 2 da migração do AD RMS para o Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapas 5 de [Migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
@@ -46,7 +49,7 @@ Para clientes Windows:
 
 Para clientes de dispositivos móveis e computadores Mac:
 
--   Remova os registros SRV do DNS criados quando você implantou a [extensão de dispositivos móveis AD RMS](http://technet.microsoft.com/library/dn673574.aspx).
+-   Remova os registros SRV do DNS criados quando você implantou a [Extensão de dispositivos móveis do AD RMS](http://technet.microsoft.com/library/dn673574.aspx)..
 
 #### Alterações feitas pelos scripts de migração
 Esta seção documenta as alterações feitas pelos scripts de migração. Use essas informações apenas para referência, para solucionar problemas ou, se preferir, para fazer essas alterações por conta própria.
@@ -91,7 +94,7 @@ Redirect_OnPrem.cmd:
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    Cada entrada tem um valor REG_SZ de **https://OldRMSserverURL/_wmcs/licensing** com dados no seguinte formato: **https://&lt;YourTenantURL&gt;/_wmcs/licensing**.
+    Cada entrada tem um valor REG_SZ de **https://OldRMSserverURL/_wmcs/licensing** com os dados no seguinte formato: **https://&lt;YourTenantURL&gt;/_wmcs/licensing**.
 
     > [!NOTE]
     > *&lt;YourTenantURL&gt;* tem o seguinte formato: **{GUID}.rms.[Region].aadrm.com**.
@@ -104,6 +107,6 @@ Redirect_OnPrem.cmd:
 ## Próximas etapas
 Para continuar a migração, vá para [fase 3 -configuração de serviços de suporte](migrate-from-ad-rms-phase3.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

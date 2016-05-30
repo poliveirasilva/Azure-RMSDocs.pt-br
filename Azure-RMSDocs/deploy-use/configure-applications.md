@@ -25,11 +25,14 @@ ms.suite: ems
 
 ---
 
-# Configurando aplicativos do Azure Rights Management
+# Configuração de aplicativos do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 > [!NOTE]
 > Essas informações são para os administradores de TI e consultores que implantaram o Azure Rights Management. Se você estiver procurando ajuda e informações sobre como usar o Rights Management para um aplicativo específico ou como abrir um ficheiro com direitos protegidos, use a ajuda e orientação que acompanha o seu aplicativo.
 >
-> Por exemplo, para aplicativos do Office, clique no ícone de Ajuda e insira termos de pesquisa como **Rights Management** ou **IRM**. Para o aplicativo RMS sharing para Windows, consulte o [Guia de usuário de aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+> Por exemplo, para aplicativos do Office, clique no ícone de Ajuda e insira termos de pesquisa como **Rights Management** ou **IRM**. Para o aplicativo de compartilhamento RMS para Windows, consulte o [Guia de usuário de aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
 
 Após ter implantado o Azure Rights Management (Azure RMS) para a sua organização, use a seguinte informação para configurar aolicações e serviços para oferecer suporte ao Azure Rights Management (RMS). Isso inclui aplicativos do Office como Word 2013 e Word 2010 e serviços como o Exchange Online (regras de transporte, prevenção de perda de dados, não encaminhar e criptografia de mensagens) e o SharePoint Online (bibliotecas protegidas). Para obter mais informações sobre como esses aplicativos dão suporte ao Azure RMS, consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md).
 
@@ -77,6 +80,6 @@ Depois de configurar seus aplicativos para dar suporte ao Azure Rights Managemen
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

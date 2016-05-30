@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cliente do Rights Management (RMS) | Azure RMS
+title: Cliente RMS (Rights Management) | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,12 +25,17 @@ ms.suite: ems
 
 ---
 
-# Cliente do Rights Management (RMS)
-Use a seguinte documentação para obter informações sobre o cliente RMS (Rights Management), que pode ser usada com os serviços no local do Rights Management (AD RMS) e na nuvem (Azure RMS) para ajudar a proteger os dados da sua organização:
+# Cliente RMS (Rights Management)
 
-- [Observações de implantação do Cliente RMS](client-deployment-notes.md)
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-- [Proteção por RMS com a Infraestrutura de Classificação de Arquivos (FCI) do Windows Server](configure-fci.md)
+O Microsoft Rights Management Services é uma solução cliente/servidor, em que o cliente RMS é integrado a aplicativos executados em computadores e dispositivos móveis, e o serviço RMS reside na nuvem (Azure RMS) ou localmente (AD RMS). O cliente RMS é instalado automaticamente com alguns aplicativos, como aplicativos do Office, o aplicativo de compartilhamento RMS e aplicativos habilitados para RMS de fornecedores de software. No entanto, ele também pode ser instalado por si só, dando suporte a cenários como de desenvolvedores que desejam integrar a proteção RMS em seus aplicativos de linha de negócios e administradores ou usuários avançados que querem proteger arquivos em massa usando a ferramenta de proteção do RMS.
+
+Use a seguinte documentação quando precisar de mais informações sobre como implantar e usar o cliente Rights Management (RMS), que pode ser usada com o Azure RMS ou AD RMS para ajudar a proteger os dados da organização:
+
+- [Anotações sobre a implantação do cliente RMS](client-deployment-notes.md)
+
+- [Proteção por RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server](configure-fci.md)
 
 - [Aplicativo e compartilhamento Rights Management para Windows](sharing-app-windows.md)
 
@@ -39,9 +44,10 @@ Use a seguinte documentação para obter informações sobre o cliente RMS (Righ
 
 Para recursos adicionais, incluindo a comunidade e as opções de suporte, visite o site [Microsoft Rights Management Services](https://www.microsoft.com/rms).
 
+## Consulte também
+[Comparando o Azure RMS e o AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

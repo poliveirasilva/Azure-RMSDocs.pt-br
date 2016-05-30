@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 # Requisitos do Azure RMS: diretório do Azure AD
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 É necessário ter um diretório do Azure AD para usar o Azure RMS (Azure Rights Management). Você pode usar a conta da sua organização deste diretório para acessar o Portal clássico do Azure, onde, por exemplo, é possível configurar e gerenciar modelos do Rights Management.
 
 Se você ainda não tiver uma assinatura do Azure para sua organização, poderá obtê-la se inscrevendo em uma avaliação gratuita: vá para a página [Introdução ao Azure](https://account.windowsazure.com/organization) e siga as instruções.
@@ -39,8 +42,7 @@ Para obter mais informações, consulte os seguintes recursos na documentação 
 
 Se deseja integrar seu diretório do Azure AD com as florestas do AD local, consulte [Integração de entidades locais com o Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE]
-> Se você tem dispositivos móveis ou computadores Mac que autenticam localmente usando AD FS ou um provedor de autenticação equivalente:
+> [!NOTE] Se você tiver dispositivos móveis ou computadores Mac que autenticam localmente usando AD FS ou um provedor de autenticação equivalente:
 > 
 > -   Você deve usar o AD FS na versão mínima do servidor **Windows Server 2012 R2** ou um provedor de autenticação alternativo que dê suporte ao protocolo OAuth 2.0.
 
@@ -78,6 +80,6 @@ Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Ma
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

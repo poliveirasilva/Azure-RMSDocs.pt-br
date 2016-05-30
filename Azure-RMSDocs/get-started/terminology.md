@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Terminologia do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Confuso com uma palavra, frase ou acrônimo relacionado ao Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS)? Encontre aqui a definição de termos e abreviações que são específicos do Azure RMS ou que têm um significado específico quando usados no contexto de [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
 
 |Termo|Definição|
@@ -73,6 +76,6 @@ Confuso com uma palavra, frase ou acrônimo relacionado ao Microsoft [!INCLUDE[a
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Requisitos do Azure RMS: assinaturas de nuvem | que dão suporte ao Azure RMS
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Para usar o Azure RMS (Azure Rights Management), sua organização deve ter pelo menos uma das seguintes assinaturas com um número suficiente de licenças para usuários e serviços que protegerão arquivos e mensagens de email. Se você tiver um serviço que aplique a proteção para os usuários (os proprietários dos arquivos ou mensagens de email), os usuários precisam de uma dessas licenças. Os usuários que só irão consumir (por exemplo, ler e editar) esses dados protegidos não precisam de uma licença.
 
 -   Office 365
@@ -41,7 +44,7 @@ Use as seções a seguir para obter mais informações e opções de inscrição
 
 Para obter uma comparação do licenciamento dos recursos do Azure RMS para as assinaturas pagas, consulte [Comparação das ofertas de RMS (Rights Management Services)](http://technet.microsoft.com/dn858608).
 
-Você tem mais dúvidas sobre o licenciamento para Azure RMS? Baixe o documento **Perguntas Frequentes de Licenciamento para o Azure Rights Management** na página [Compra do Azure Rights Management](https://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/Purchasing.aspx). 
+Você tem mais dúvidas sobre o licenciamento para Azure RMS? Baixe o documento **Perguntas frequentes sobre o licenciamento para o Azure Rights Management** na página [Compra do Azure Rights Management](https://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/Purchasing.aspx). 
 
 ## Assinatura do Office 365
 [Avaliação de 30 dias gratuita: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
@@ -94,6 +97,6 @@ Para obter mais informações, consulte [RMS para pessoas físicas e Azure Right
 ## Próximas etapas
 Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Guia de implantação rápida do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use este guia junto com as informações de configuração na seção **Implantar e usar** para obter ajuda com uma implantação e uso mais ágil do Azure RMS (Azure Rights Management) escolhendo em uma lista de cenários específicos de implementação.
 
 Esses cenários contêm as instruções do administrador e a documentação de acompanhamento para o usuário final. Antes de fornecer a documentação (instruções ou anúncios) para os usuários finais, você precisará personalizá-la de acordo com suas necessidades de negócio e fluxos de trabalho existentes. Um exemplo de conjunto de instruções ou um aviso mostra a aparência final da documentação para o usuário final.
@@ -36,8 +39,7 @@ Os cenários listados aqui são um exemplo dos mais populares. Como o Azure RMS 
 
 Antes de implementar essas soluções, convém enviar um anúncio amplo aos usuários finais, avisando sobre algumas alterações que serão feitas para ajudar a proteger os dados da empresa, e que isso pode exigir algumas alterações da parte deles. Veja um exemplo de comunicação logo após a tabela a seguir.
 
-> [!NOTE]
-> Se você tiver dúvidas e comentários sobre este guia, use os mecanismos de comentários nesta página ou envie um email para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE] Se você tiver dúvidas e comentários sobre este guia, use os mecanismos de comentários nesta página ou envie uma mensagem de email para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Cenários para o Azure RMS
 Para ajudar você a implantar o Azure RMS mais rapidamente a fim de resolver problemas comerciais específicos, escolha os cenários mais próximos de suas metas comerciais e adapte-os quando for necessário.
@@ -130,7 +132,7 @@ Consulte: [Cenário - Configurar pastas de trabalho para proteção persistente]
 ## Anúncio para os usuários antes da implementação
 Você pode usar o seguinte exemplo de mensagem de comunicação para avisar os usuários de que a implantação do Azure RMS exigirá algumas mudanças. Copie e cole o seguinte texto, que será enviado por email para todos os usuários por alguém da equipe de liderança de sua organização, preferencialmente pelo diretor executivo. Considere a possibilidade de fazer alterações no texto que tornem a mensagem mais relevante para os usuários e para sua organização.
 
-![](../media/AzRMS_ExampleBanner.png)
+![Faixa de documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ### Mudanças que estamos fazendo para proteger nossos dados
 Você já quis bloquear o acesso àquele documento enviado por engano para seus parceiros? Você já pensou se há uma maneira de saber quais clientes leram as notícias mais recentes sobre o produto enviadas por você? Você tem a necessidade de compartilhar informações confidenciais sobre o produto sem a preocupação de que elas podem ser enviadas a pessoas que não deveriam vê-las?
@@ -139,7 +141,7 @@ Você poderá fazer essas coisas em breve, pois o departamento de TI está impla
 
 Por exemplo, para rastrear (e, se necessário, revogar) os documentos compartilhados, você usará o site de rastreamento de documentos:
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Capturas de tela de acompanhamento de documento do Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 Para obter uma prévia de como isso funciona, confira este vídeo de dois minutos: [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Rastreamento e revogação de documento do Azure RMS)
 
@@ -149,6 +151,6 @@ As soluções que estamos implementando nos ajudarão a proteger nossos dados va
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

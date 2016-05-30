@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Cenário - Executivos trocam informações privilegiadas de maneira segura
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Este cenário e a documentação de usuário de suporte usam o Azure Rights Management para que os executivos possam trocar emails e anexos por email entre si com segurança e para que políticas restrinjam automaticamente o acesso para os executivos sem exigir ações especiais da parte deles. Os emails e anexos serão automaticamente protegidos pelo Azure Rights Management.
 
 Se for necessário, você pode adicionar uma exceção à regra, como a abreviação de DNP (para "Do Not Protect" ou Não proteja) no assunto do email, para que os executivos possam especificar isso se precisarem enviar um email desprotegido para outros executivos, por exemplo, para examinar antes de encaminhar para outras pessoas.
@@ -39,7 +42,7 @@ As instruções são adequadas para o seguinte conjunto de circunstâncias:
 -   Os executivos podem substituir a regra por conta própria se algum dia precisarem enviar um email desprotegido para outros executivos.
 
 ## Instruções de implantação
-![](../media/AzRMS_AdminBanner.png)
+![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
 
@@ -48,10 +51,10 @@ Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
 
 |Requisito|Se você precisar de mais informações|
 |---------------|--------------------------------|
-|Você preparou as contas e os grupos para o Office 365 ou o Active Directory do Azure:<br /><br />Um grupo habilitado para email chamado **Executivos**, e todos os executivos são membros desse grupo<br /><br />Um grupo habilitado para email denominado **Administradores RMS**, e todos os administradores que configuram o Azure RMS são membros desse grupo|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Você preparou as contas e os grupos para o Office 365 ou o Active Directory do Azure:<br /><br />- Um grupo habilitado para email nomeado **Executivos**, e todos os executivos são membros desse grupo<br /><br />- Um grupo habilitado para email nomeado **Administradores de RMS**, e todos os administradores que configuram o Azure RMS são membros desse grupo|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Sua chave de locatário do Azure Rights Management é gerenciada pela Microsoft. Você não está usando BYOK|[Planejando e implementando sua chave de locatário do Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Uma destas configurações:<br /><br />O Exchange Online está habilitado para o Azure Rights Management<br /><br />O conector do RMS está instalado e configurado para o Exchange local|Para o Exchange Online: confira a seção **Exchange Online: configuração do IRM** em [Configuração de aplicativos para o Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Para o Exchange local: [Implantação do conector do Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
+|Uma destas configurações:<br /><br />- O Exchange Online está habilitado para o Azure Rights Management<br /><br />- O conector RMS está instalado e configurado para o Exchange local|Para o Exchange Online: confira a seção **Exchange Online: configuração do IRM** em [Configuração de aplicativos para o Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Para o Exchange local: [Implantação do conector do Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
 |Você configurou um modelo personalizado conforme descrito a seguir|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Você configurou uma regra de proteção de transporte para IRM, conforme descrito posteriormente neste artigo|Para o Exchange Online: [Criar uma Regra de proteção de transporte](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Para o Exchange 2013: [Criar uma Regra de proteção de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Para o Exchange 2010: [Criar uma Regra de proteção de transporte](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
@@ -94,33 +97,33 @@ No entanto, talvez seja necessário informar aos executivos e a seu suporte téc
 
 Usando o modelo a seguir, copie e cole o anúncio em uma comunicação para seus usuários finais e faça com que essas modificações reflitam o seu ambiente:
 
-1.  Substitua as instâncias de *&lt;nome de organização&gt;* pelo nome de sua organização.
+1.  Substitua as instâncias de *&lt;nome da organização&gt;* pelo nome de sua organização.
 
 2.  Se você escolher uma cadeia de caracteres diferente de DNP para a isenção, substitua o valor e a explicação adequadamente.
 
 3.  Substitua *&lt;emaildomain&gt;* pelo nome de domínio de email de sua organização.
 
-4.  Substitua os *&lt;detalhes de contato&gt;* por instruções sobre como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
+4.  Substitua *&lt;detalhes de contato&gt;* por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
 
 5.  Faça modificações adicionais no anúncio, se desejar, e envie-o para esses usuários.
 
 A documentação de exemplo mostra como esse anúncio pode parecer para os usuários depois das personalizações.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
 
-### Anúncio de TI: Os emails de executivos da &lt;Nome da organizaçãoname&gt; agora são protegidos automaticamente
-De agora em diante, sempre que você enviar emails a outro executivo da &lt;Nome da organização&gt;, o conteúdo dos emails e os anexos serão automaticamente protegidos para que apenas outro executivo da empresa possa acessá-los para ler as informações, imprimi-los, copiá-los e assim por diante. Essa restrição se aplica mesmo se você encaminhar a mensagem de email a outras pessoas ou salvar os anexos. Essa proteção ajuda a impedir a perda de dados de informações confidenciais e sigilosas.
+### Comunicado de TI: os emails de executivos de &lt;Nome da organização&gt; agora são protegidos automaticamente
+De agora em diante, sempre que você enviar emails a outro executivo da &lt;nome da organização&gt; o conteúdo dos emails e os anexos serão automaticamente protegidos para que apenas outro executivo da empresa possa acessá-los para ler as informações, imprimi-los, copiá-los e assim por diante. Essa restrição se aplica mesmo se você encaminhar a mensagem de email a outras pessoas ou salvar os anexos. Essa proteção ajuda a impedir a perda de dados de informações confidenciais e sigilosas.
 
-Observe que se você quiser que outras pessoas que não sejam executivos da &lt;Nome da organização&gt; possam ler e editar as informações enviadas nesses emails, você deverá enviá-los por email separadamente. Ou, para substituir a proteção automática, digite as letras **DNP** (uma abreviação Do Not Protect, ou Não proteja) em qualquer lugar no assunto do email.
+Observe que, se você quiser que outras pessoas que não sejam executivos da &lt;nome da organização&gt; possam ler e editar as informações enviadas nesses emails, você deverá enviá-los por email separadamente. Ou, para substituir a proteção automática, digite as letras **DNP** (uma abreviação Do Not Protect, ou Não proteja) em qualquer lugar no assunto do email.
 
-Ao enviar informações confidenciais da empresa a outro executivo da &lt;Nome da organização&gt;, lembre-se de enviá-las ao seu endereço de email de trabalho (*nome*@&lt;emaildomain&gt;), e não a um endereço de email pessoal.
+Ao enviar informações confidenciais da empresa a outro executivo da &lt;nome da organização&gt;, lembre-se de enviá-las ao seu endereço de email de trabalho (*nome*@&lt;emaildomain&gt;), e não a um endereço de email pessoal.
 
 **Precisa de ajuda?**
 
--   Entre em contato com o suporte técnico: &lt;detalhes de contato&gt;
+-   Entre em contato com o suporte técnico: &lt;detalhes do contato&gt;
 
 ### Documentação do usuário de exemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Anúncio de TI: Os emails de executivos da VanArsdel agora são protegidos automaticamente
 De agora em diante, sempre que você enviar emails a outro executivo da VanArsdel, o conteúdo dos emails e os anexos serão automaticamente protegidos para que apenas outro executivo da empresa possa acessá-los para ler as informações, imprimi-los, copiá-los e assim por diante. Essa restrição se aplica mesmo se você encaminhar a mensagem de email a outras pessoas ou salvar os anexos. Essa proteção ajuda a impedir a perda de dados de informações confidenciais e sigilosas.
@@ -135,6 +138,6 @@ Ao enviar informações confidenciais da empresa a outro executivo da VanArsdel,
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -28,12 +28,14 @@ ms.suite: ems
 
 
 # Referência do PowerShell para modelos personalizados
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Tudo que você pode fazer no portal clássico do Azure para criar e gerenciar modelos, você pode fazer na linha de comando pelo uso do PowerShell. Além disso, você pode exportar e importar modelos, de modo que você possa copiar os modelos entre locatários ou realizar edições em massa de propriedades complexas em modelos, como nomes e descrições.
 
 Você pode também usar a exportação e importação para fazer backup e restaurar seus modelos personalizados, como melhor prática, fazer backup regularmente de seus modelos personalizados, para que, se você fizer uma alteração não pretendida, poderá revertê-la facilmente para uma versão anterior.
 
-> [!IMPORTANT]
-> Para usar o Windows PowerShell para criar e gerenciar modelos de política de direitos do Azure RMS, você deve ter pelo menos a versão 2.0.0.0 do [módulo Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT] Para usar o Windows PowerShell para criar e gerenciar modelos de política de direitos do Azure RMS, você deve ter pelo menos a versão 2.0.0.0 do [módulo Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 > 
 > Se você instalou este módulo do PowerShell anteriormente, execute o seguinte comando em uma janela do PowerShell para verificar o número de versão: `(Get-Module aadrm -ListAvailable).Version`
 
@@ -62,6 +64,6 @@ Os cmdlets que oferecem suporte à criação e gerenciamento de modelos são:
 ## Consulte também
 [Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

@@ -26,13 +26,16 @@ ms.suite: ems
 ---
 
 # Preparando o Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Depois que você se inscreveu para uma assinatura na nuvem e estabeleceu uma conta para sua organização do [!INCLUDE[o365_1](../includes/o365_1_md.md)] ou do Azure Active Directory, você está pronto para habilitar o serviço do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
 
 No entanto, antes de fazê-lo, certifique-se de que o seguinte esteja em vigor:
 
 -   Contas de usuário e grupos na nuvem que você cria manualmente ou que são criados e sincronizados automaticamente a partir dos Serviços de Domínio do Active Directory (AD DS).
 
-    Quando você sincroniza seu grupos e contas locais, nem todos os atributos precisam ser sincronizados. Para obter uma lista dos atributos que devem ser sincronizados para o Azure RMS, consulte esta [seção do Azure RMS](/active-directory/active-directory-aadconnectsync-attributes-synchronized.md#azure-rms) na documentação do Azure Active Directory. Para facilitar a implantação, recomendamos que você use o [Azure AD Connect](/active-directory/active-directory-aadconnectsync-whatis) para conectar seu diretórios locais ao Azure Active Directory, mas você pode usar qualquer método de sincronização de diretório que atinja o mesmo resultado.
+    Quando você sincroniza seu grupos e contas locais, nem todos os atributos precisam ser sincronizados. Para obter uma lista dos atributos que devem ser sincronizados para o Azure RMS, consulte esta [seção do Azure RMS](/active-directory/active-directory-aadconnectsync-attributes-synchronized#azure-rms) na documentação do Azure Active Directory. Para facilitar a implantação, recomendamos que você use o [Azure AD Connect](/active-directory/active-directory-aadconnectsync-whatis) para conectar seu diretórios locais ao Azure Active Directory, mas você pode usar qualquer método de sincronização de diretório que atinja o mesmo resultado.
 
 -   Grupos habilitados para email na nuvem que você irá usar com o Rights Management. Eles podem ser grupos internos ou criados manualmente contendo usuários que usarão o Rights Management.
 

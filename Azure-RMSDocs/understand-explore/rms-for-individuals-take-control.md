@@ -29,6 +29,9 @@ ms.suite: ems
 
 # Como os administradores podem controlar as contas criadas para o RMS para pessoas físicas
 
+*Aplica-se a: Azure Rights Management*
+
+
 Se você não deseja converter o RMS de assinatura para pessoas físicas da sua organização em uma assinatura paga, você ainda pode controlar as contas de usuário no diretório do Azure que foi criado para a sua organização das seguintes maneiras:
 
 -   Implemente soluções de integração de diretório para o Azure Active Directory e sua infraestrutura de Serviços de Domínio do Active Directory. É possível sincronizar contas e senhas para que os usuários não precisem criar novas contas para usar o Rights Management, e suas políticas de senha no local serão aplicáveis ​​às novas contas de usuário do Azure. Também é possível sincronizar senhas para que os usuários não precisem se lembrar de uma senha diferente para usar o Rights Management.
@@ -49,6 +52,6 @@ Para controlar as contas de usuário no diretório do Azure ou para impedir que 
 Se os usuários, em vez dos administradores, podem criar suas contas no Azure Active Directory para o RMS para pessoas físicas, como você pode saber se eles fizeram isso?  Consulte [Como saber se os usuários se inscreveram para o RMS para pessoas físicas](rms-for-individuals-identify-sign-up.md).
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

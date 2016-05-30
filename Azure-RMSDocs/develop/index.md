@@ -12,7 +12,6 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
-
 # optional metadata
 
 #ROBOTS:
@@ -35,7 +34,7 @@ Três gerações do Rights Management SDK estão disponíveis: **Microsoft Right
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Um conjunto de ferramentas simplificado e de última geração, que fornece uma experiência de desenvolvimento leve para habilitar seus aplicativos de dispositivos Android, iOS, Mac OS X, Windows Phone/RT e Linux/C++ com proteção de informações por meio dos serviços Microsoft Rights Management |
 | [SDK 2.1 do RMS](microsoft-information-protection-and-control-client-portal.md) | Uma oferta de SDK poderosa para os desenvolvedores de aplicativos da área de trabalho do Windows e os provedores de soluções baseadas em servidor para habilitar seus produtos para o gerenciamento de direitos|
-|[SDK do AD RMS]()|** OBSERVAÇÃO ** - o AD RMS SDK, que aproveita a funcionalidade exposta pelo cliente em Msdrm.dll, está disponível para uso no Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em seu lugar, use o Microsoft Rights Management Services SDK 2.1, que aproveita a funcionalidade exposta pelo cliente em Msipc.dll.|
+|[SDK do AD RMS]()|** OBSERVAÇÃO ** - O AD RMS SDK que aproveita a funcionalidade exposta pelo cliente em Msdrm.dll, está disponível para uso no Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em seu lugar, use o Microsoft Rights Management Services SDK 2.1, que aproveita a funcionalidade exposta pelo cliente em Msipc.dll.|
 |[API de scripts do AD RMS]()| Usada para criar scripts para administrar uma instalação do AD RMS|
 
 ## Exemplos de código e ferramentas ##
@@ -56,6 +55,6 @@ Esta coleção de exemplos de código do Microsoft RMS e ferramentas de suporte 
 | [Cenários de uso do Android](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) e versões posteriores do SDK 4.x|**Os exemplos de código em Java** representam cenários importantes de desenvolvimento para você se acostumar ao RMS SDK. Exemplos incluem o uso do formato de Arquivo Protegido da Microsoft, formatos de arquivo protegidos personalizados e controles de interface do usuário personalizados.|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

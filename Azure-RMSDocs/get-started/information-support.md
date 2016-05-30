@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,9 +26,12 @@ ms.suite: ems
 ---
 
 # Informações e suporte para o Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use os seguintes recursos para obter informações adicionais sobre o Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS).
 
-|Para fazer isso...|.. faça isto:|
+|Para fazer isso...|... faça isto:|
 |----------------|---------------|
 |… leia a documentação mais atual do produto [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] →|Use a biblioteca de documentação do [Azure Rights Management](../understand-explore/azure-rights-management.md)|
 |… forneça comentários sobre a documentação ou faça uma pergunta sobre a documentação →|Envie um email para [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
@@ -47,8 +50,7 @@ O grupo do produto Rights Management usa o [Blog da equipe do RMS (Microsoft Rig
 
 Você pode usar a [etiqueta de documentos](http://blogs.technet.com/b/rms/archive/tags/docs/) e os anúncios de documentação mensal para verificar se há novos artigos e se artigos existentes foram revisados recentemente.
 
-> [!TIP]
-> Se você desenvolve aplicativos para o Azure RMS ou AD RMS, pode também se interessar pelo [Blog do desenvolvedor do Active Directory Rights Management Services (AD RMS)](http://blogs.msdn.com/b/rms/).
+> [!TIP] Se você desenvolve aplicativos para o Azure RMS ou AD RMS, pode também se interessar pelo [Blog do desenvolvedor do AD RMS (Active Directory Rights Management Services)](http://blogs.msdn.com/b/rms/).
 
 ## Opções de suporte e recursos da comunidade
 Os links a seguir fornecem informações sobre opções de suporte e solução de problemas e recursos da comunidade:
@@ -69,6 +71,6 @@ Além disso, visite o [portal de serviços do Microsoft Rights Management](http:
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Cenário: configurar pastas de trabalho para proteção persistente
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Esse cenário e a documentação do usuário de suporte usam o Azure Rights Management para aplicar proteção persistente a documentos do Office nas [Pastas de Trabalho](https://technet.microsoft.com/library/dn265974.aspx). As pastas de trabalho usam um serviço de função para servidores de arquivos executando o Windows Server que fornece uma maneira consistente para os usuários acessarem os arquivos de trabalho em seus PCs e dispositivos. Embora as pastas de trabalho forneçam suas próprias criptografias para proteger os arquivos, essa proteção será perdida se os arquivos forem movidos para fora do ambiente Pastas de Trabalho. Por exemplo, usuários copiam os arquivos sincronizados e os salvam em armazenamento que não está sob o controle do seu departamento de TI, ou eles são enviados por email para outras pessoas.
 
 A proteção adicional que o Azure Rights Management fornece ajuda a evitar a perda acidental de dados, impedindo que os arquivos sejam exibidos por pessoas fora da sua organização. Para fazer isso, você pode usar um dos modelos internos de política de direitos padrão. No entanto, antes de implantar este cenário, pondere se os usuários precisam legitimamente compartilhar algum desses arquivos com pessoas fora da organização. Por exemplo, depois de trabalhar em uma lista de preços de rascunho, um usuário envia a versão final para os clientes em outra organização. Quando você usa o modelo de gerenciamento de direitos padrão para Pastas de Trabalho, o cliente na outra organização não é capaz de ler o documento enviado por email. Você pode atender a esse requisito criando um modelo personalizado que permite aos usuários aplicar uma nova política de direitos para o arquivo e substitui a restrição original de todos os funcionários para as pessoas que estão especificadas no email.
@@ -46,7 +49,7 @@ As instruções são adequadas para o seguinte conjunto de circunstâncias:
 -   Para arquivos que devem ser compartilhados com pessoas que não estão especificadas no modelo de política de direitos (por exemplo, usuários em outra organização), os usuários devem aplicar uma nova política de direitos para substituir a proteção de política de direitos original.
 
 ## Instruções de implantação
-![](../media/AzRMS_AdminBanner.png)
+![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
 
@@ -57,7 +60,7 @@ Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
 |---------------|--------------------------------|
 |O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Você sincronizou suas contas de usuário do Active Directory local com o Active Directory do Azure ou o Office 365, incluindo seu endereço de email. Isso é necessário para todos os usuários que usam Pastas de Trabalho.|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Um das seguintes condições:<br /><br />Para usar um modelo padrão para todos os usuários que não permite que os usuários apliquem uma nova política de direitos: você não arquivou o modelo padrão, **&lt; nome da organização&gt; – Confidencial**<br /><br />Para usar um modelo personalizado que é adequado para que os usuários apliquem uma nova política de direitos: use as instruções a seguir para criar um modelo personalizado|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Um das seguintes condições:<br /><br />- Para usar um modelo padrão para todos os usuários que não permite que os usuários apliquem uma nova política de direitos: você não arquivou o modelo padrão, **&lt;nome da organização&gt; – Confidencial**<br /><br />- Para usar um modelo personalizado que é adequado para que os usuários apliquem uma nova política de direitos: use as instruções a seguir para criar um modelo personalizado|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |O conector do Rights Management está instalado, autorizado para o computador Windows Server e configurado para a função **Servidor FCI**.|[Implantando o conector do Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
 |O aplicativo Rights Management sharing é implantado nos computadores dos usuários que executam o Windows|[Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
@@ -101,7 +104,7 @@ Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
 
     2.  Para a ação, escolha **criptografia RMS** e selecione um modelo:
 
-        -   Se você não criou um modelo personalizado porque não deseja que os usuários possam compartilhar arquivos com outras pessoas fora da organização, selecione o nome do modelo **&lt;nome da organização&gt; - Confidencial**. Por exemplo, **VanArsdel, Ltd - Confidencial**.
+        -   Se você não criou um modelo personalizado porque não quer que os usuários possam compartilhar arquivos com outras pessoas fora da organização, selecione o nome do modelo de **&lt;nome da organização&gt; - Confidencial**. Por exemplo, **VanArsdel, Ltd - Confidencial**.
 
         -   Se você criou um modelo personalizado usando as instruções anteriores, selecione esse modelo. Por exemplo, **Conteúdo protegido por Pastas de Trabalho**.
 
@@ -125,6 +128,6 @@ Se você tiver configurado o modelo personalizado conforme documentado para esse
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

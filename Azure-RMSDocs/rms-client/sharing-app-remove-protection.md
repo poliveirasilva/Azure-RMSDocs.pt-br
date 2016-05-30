@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Remover a proteção de um arquivo usando o aplicativo de compartilhamento Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 Para remover a proteção de um arquivo (ou seja, desproteger um arquivo) que foi anteriormente protegido usando o aplicativo RMS sharing, use a opção **Remover Proteção** no Explorador de Arquivos.
 
 > [!IMPORTANT]
@@ -35,11 +38,11 @@ Para remover a proteção de um arquivo (ou seja, desproteger um arquivo) que fo
 
 1.  No Explorador de Arquivos, clique com o botão direito do mouse no arquivo (por exemplo, Exemplo.ptxt), selecione **Proteger com o RMS**, clique em **Proteção no local**, e, em seguida, clique em **Remover proteção**:
 
-    ![](../media/ADRMS_MSRMSApp_RemoveProtection.png)
+    ![Remover a opção de menu de proteção para o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_RemoveProtection.png)
 
     Suas credenciais não serão solicitadas.
 
-Observação: caso você não veja essas opções, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+Observação: caso você não veja essas opções, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
 
 O arquivo original protegido é excluído (por exemplo, Sample.ptxt) e substituído por um arquivo que tem o mesmo nome, mas com a extensão de nome de arquivo desprotegido (por exemplo, Sample.txt).
 
@@ -48,13 +51,12 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

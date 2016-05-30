@@ -1,32 +1,20 @@
 ---
-# required metadata
+# metadados necessários
 
-title: Tutorial de início rápido do Azure RMS - Etapa 5 | Azure RMS
-description: A última etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
+título: Tutorial de início rápido do Azure RMS - Etapa 5 | Descrição do Azure RMS: a última etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
+palavras-chave: autor: cabailey manager: mbaldwin ms.date: 05/09/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
 
-# optional metadata
+# metadados opcionais
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ROBÔS: público-alvo: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Etapa 5 do início rápido do Azure RMS: Rastrear o documento protegido
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 
 Ir para: 
 > [!div class="op_single_selector"]
@@ -37,7 +25,7 @@ Ir para:
 - [Etapa 4: O destinatário lê o documento](tutorial-step4.md)
 - [Etapa 5: Rastrear o seu documento](tutorial-step5.md)
 
-![](../media/AzRMS_QuickStartSteps5.PNG)
+![Tutorial de início rápido do Azure RMS - Etapa 5](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
 > Para esta etapa, você deve ter uma assinatura que ofereça suporte ao controle de documentos. Para verificar se a sua assinatura inclui o controle de documentos, consulte [Comparação de ofertas de Serviços do Rights Management (RMS)](https://technet.microsoft.com/dn858608.aspx).
@@ -48,7 +36,7 @@ Esta etapa é opcional, mas muitas pessoas gostariam de saber se o anexo enviado
 
 -   Ao ver que a pessoa abriu o documento, você pode fazer um contato de acompanhamento, perguntando se surgiu alguma dúvida ou se ela precisa de informações adicionais.
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Capturas de tela da etapa 5 do tutorial](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 ### Para controlar o documento protegido
 
@@ -73,12 +61,13 @@ Você pode retornar a este site para controlar ainda mais a atividade do seu doc
 |Para solução de problemas e perguntas do cliente|[Perguntas Frequentes para o Controle de documentos](https://technet.microsoft.com/dn947488)|
 
 ### Próximas etapas
-Neste tutorial você percorreu apenas uma hipótese de como o Azure RMS pode ajudar a proteger seus dados. Para ver outros usos comuns, consulte [Azure RMS em ação](../understand-explore/what-admins-users-see.md) de [O que é o Azure Rights Management?](../understand-explore/what-is-azure-rms.md). Outras seções neste artigo também podem ser úteis, como o funcionamento do Azure RMS e os problemas de negócios que ele pode ajudar a solucionar.
+Neste tutorial você percorreu apenas uma hipótese de como o Azure RMS pode ajudar a proteger seus dados. Para ver outros usos comuns, consulte [Azure RMS em ação](../understand-explore/what-admins-users-see.md) de [O que é o Azure Rights Management?](../understand-explore/what-is-azure-rms.md) Outras seções neste artigo também podem ser úteis, como o funcionamento do Azure RMS e os problemas de negócios que ele pode ajudar a solucionar.
 
 Quando estiver pronto para iniciar a implantação do Azure RMS, consulte [Roteiro de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para obter as etapas de implantação e links para as instruções.
 
->[!div class="step-by-step"]
-[Introdução](quick-start-tutorial.md)
+Ou, para obter uma lista de cenários específicos e etapas de configuração associadas e documentação do usuário final, consulte o [Guia de implantação rápida para o Azure Rights Management](../get-started/rapid-deployment-guide.md).
+
+>[!div class="step-by-step"] [Introdução](quick-start-tutorial.md)
 [Etapa 1](tutorial-step1.md)
 [Etapa 2](tutorial-step2.md)
 [Etapa 3](tutorial-step3.md)
@@ -86,6 +75,6 @@ Quando estiver pronto para iniciar a implantação do Azure RMS, consulte [Rotei
 *Etapa 5*
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

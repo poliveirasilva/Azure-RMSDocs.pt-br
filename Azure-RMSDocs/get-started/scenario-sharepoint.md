@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Cenário: reter controle de documentos armazenados no SharePoint
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Esse cenário e a documentação do usuário de suporte usam o Azure Rights Management para garantir que os documentos do Office armazenados no SharePoint permaneçam sob seu controle usando bibliotecas protegidas. Por exemplo, os documentos são protegidos automaticamente contra vazamento acidental ou pretendido pelos usuários, e você pode bloquear o acesso ao conteúdo mesmo depois que ele é baixado ou sincronizado. Os arquivos que você deseja proteger podem ser para colaboração interna em planos ou documentos de design ou para outros resultados. Quando você configurar bibliotecas protegidas para o SharePoint, os arquivos do Office armazenados nelas estarão protegidos pelo Azure Rights Management.
 
 As instruções são adequadas para o seguinte conjunto de circunstâncias:
@@ -37,7 +40,7 @@ As instruções são adequadas para o seguinte conjunto de circunstâncias:
 -   Os funcionários não precisam compartilhar esses documentos com pessoas fora da sua organização.
 
 ## Instruções de implantação
-![](../media/AzRMS_AdminBanner.png)
+![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Tenha os seguintes requisitos e os procedimentos de suporte prontos antes de ir para a documentação do usuário.
 
@@ -54,7 +57,7 @@ Para que este cenário funcione, o seguinte deve ser feito:
 
 ### Para configurar a biblioteca do SharePoint de acordo com as configurações IRM
 
-1.  Depois de configurar o SharePoint para usar o serviço IRM, navegue até a biblioteca do SharePoint para protegê-la com o Azure RMS. Na página **Configurações** &gt; **IRM (Gerenciamento de Direitos de Informação)** no site, além de selecionar **Restringir permissões nesta biblioteca no download** e especificar um título de política para administradores e descrições uma política para os usuários, clique em **MOSTRAR OPÇÕES**.
+1.  Depois de configurar o SharePoint para usar o serviço IRM, navegue até a biblioteca do SharePoint para protegê-la com o Azure RMS. Na página **Configurações** &gt; **IRM (Gerenciamento de Direitos de Informação)** no site, além de selecionar **Restringir permissões nesta biblioteca no download**, e especificar um título de política para administradores e descrições uma política para os usuários, clique em **MOSTRAR OPÇÕES**.
 
 2.  Selecione os seguintes valores:
 
@@ -69,31 +72,31 @@ Não há instruções procedimentais específicas para dar aos usuários para es
 
 Usando o modelo a seguir, copie e cole o anúncio em uma comunicação para seus usuários finais e faça com que essas modificações reflitam o seu ambiente:
 
-1.  Substitua cada ocorrência do *&lt;nome da biblioteca do SharePoint&gt;* pelo nome e link da biblioteca do SharePoint que você configurou para o Azure Rights Management. Se essa comunicação for para mais de uma biblioteca protegida, altere as instruções adequadamente.
+1.  Substitua cada ocorrência de *&lt;nome da biblioteca do SharePoint&gt;* pelo nome e o link da biblioteca do SharePoint que você configurou para o Azure Rights Management. Se essa comunicação for para mais de uma biblioteca protegida, altere as instruções adequadamente.
 
-2.  Se você tiver configurado o **Permitir a proteção de grupo. Opção Grupo padrão**, substitua *&lt;nome do grupo&gt;* pelo nome do grupo configurado e forneça a &lt;razão por que esse grupo tem permissões de acesso para colaborar nos arquivos, mas não usando a biblioteca do SharePoint&gt;. Se você não configurou essa opção, exclua essa frase.
+2.  Se você tiver configurado o **Permitir a proteção de grupo. Opção Grupo padrão**, substitua *&lt;nome do grupo&gt;* pelo nome do grupo configurado e forneça o &lt;motivo pelo qual esse grupo tem permissões de acesso para colaborar nos arquivos, mas não para usar a biblioteca do SharePoint&gt;. Se você não configurou essa opção, exclua essa frase.
 
-3.  Substitua os *&lt;detalhes de contato&gt;* por instruções sobre como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
+3.  Substitua *&lt;detalhes de contato&gt;* por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
 
 4.  Faça modificações adicionais no anúncio, se desejar, e envie-o para esses usuários.
 
 A documentação de exemplo mostra como esse anúncio pode parecer para os usuários depois das personalizações.
 
-![](../media/AzRMS_UsersBanner.png)
+![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
 
-### Anúncio de TI: mudanças no site &lt;nome da biblioteca do SharePoint&gt;
-O site do SharePoint, **&lt;nome da biblioteca do SharePoint&gt;**, agora está configurado para colaboração segura. Agora, somente membros do &lt;nome do grupo&gt; podem abrir esses documentos neste site, mesmo se você salvá-los localmente ou enviá-los para outra pessoa. A exceção é que você pode compartilhá-los com membros do &lt;nome do grupo&gt; depois de baixar os documentos, para que &lt;motivo por que esse grupo tem permissões de acesso para colaborar nos arquivos, mas não usando a biblioteca do SharePoint&gt;. Quando editar os arquivos, você verá um banner de informações amarelo na parte superior do documento, para que possa saber que tem essa proteção e quem pode acessá-los.
+### Comunicado de TI: alterações no site do &lt;nome da biblioteca do SharePoint&gt;
+O site do SharePoint, **&lt;nome da biblioteca do SharePoint&gt;**, agora está configurado para colaboração segura. Agora, somente membros do &lt;nome do grupo&gt; podem abrir esses documentos deste site, mesmo se você salvá-los localmente ou enviar por email para outra pessoa. A exceção é que você pode compartilhá-los com membros do &lt;nome do grupo&gt; depois de baixar os documentos, para esclarecer o &lt;motivo pelo qual esse grupo tem permissões de acesso para colaborar nos arquivos, mas não para usar a biblioteca do SharePoint&gt;. Quando editar os arquivos, você verá um banner de informações amarelo na parte superior do documento, para que possa saber que tem essa proteção e quem pode acessá-los.
 
 Essa alteração ajuda a manter os dados confidenciais de nossa empresa protegidos de pessoas que não deveriam vê-los. Se usa um dispositivo móvel para acessar esses documentos protegidos, você pode visualizá-los, mas deve usar um dispositivo de desktop para editá-los.
 
-Você não pode carregar documentos para o site &lt;nome do site do SharePoint&gt; se eles não dão suporte a colaboração segura.
+Você não poderá carregar documentos no &lt;nome do site do SharePoint&gt; se eles não derem suporte à colaboração segura.
 
 **Precisa de ajuda?**
 
--   Entre em contato com o suporte técnico: &lt;detalhes de contato&gt;
+-   Entre em contato com o suporte técnico: &lt;detalhes do contato&gt;
 
 ### Documentação do usuário de exemplo
-![](../media/AzRMS_ExampleBanner.png)
+![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Anúncio de TI: Alterações no site de Relatórios e Previsões de Vendas
 O site do SharePoint, **Relatórios e Previsões de Vendas**, agora está configurado para colaboração segura. Agora, somente membros de nossas equipes de vendas e marketing podem abrir esses documentos neste site, mesmo se você salvá-los localmente ou enviá-los para outra pessoa. A exceção é que você pode compartilhá-los com os membros da equipe de finanças depois de ter baixado os documentos, assim eles podem extrair os números de previsão mensais. Quando editar os arquivos, você verá um banner de informações amarelo na parte superior do documento, para que possa saber que tem essa proteção e quem pode acessá-los.
@@ -108,6 +111,6 @@ Você não pode carregar documentos para o site de previsões de vendas e relat�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

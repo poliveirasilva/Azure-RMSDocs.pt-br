@@ -2,7 +2,7 @@
 # required metadata
 
 title: Acompanhando o conteúdo | Azure RMS
-description:
+description: Orientações básicas para implementar o acompanhamento de documento
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ca08e01f-690d-46f4-ae0f-a880cc29dabc
-
+ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 # optional metadata
 
 #ROBOTS:
@@ -25,9 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Acompanhando o conteúdo
-
-\[Algumas informações se relacionam ao produto de pré-lançamento que pode ser substancialmente modificado antes do lançamento no mercado. A Microsoft não oferece nenhuma garantia, expressa ou implícita, quanto às informações fornecidas aqui.\]
+# Acompanhando o conteúdo
 
 Este tópico aborda as diretrizes básicas para implementar o acompanhamento de conteúdo protegido com o Rights Management Services SDK 2.1.
 
@@ -120,7 +117,7 @@ Aqui está um trecho de código que mostra um exemplo de configuração de metad
                               sendLicenseRegistrationNotificationEmail);
 
 
-### Tópicos relacionados
+## Tópicos relacionados
 
 
 * [**Tipos de propriedade de metadados de licença**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
@@ -137,6 +134,6 @@ Aqui está um trecho de código que mostra um exemplo de configuração de metad
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

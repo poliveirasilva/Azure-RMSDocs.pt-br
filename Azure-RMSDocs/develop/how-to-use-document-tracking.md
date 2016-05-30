@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: d193afec-6dc5-477d-8e67-f820a97480ff
-
+ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Como: usar o rastreamento de documentos
 
 O uso do recurso de rastreamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
@@ -54,7 +52,7 @@ A sequência de etapas que você usará para configurar o rastreamento de docume
 
     -   Para o rastreamento de documentos com base em ad-hoc, defina a propriedade **metadados de licença** do objeto **descritor de política**.
 
-        Para obter mais informações, consulte [**PolicyDescriptor.getLicenseMetadata**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) e [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
+        Para obter mais informações, consulte [**PolicyDescriptor.getLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) e [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
 
     **Observação**: o objeto de metadados de licença pode ser acessado diretamente somente durante o processo de configuração de rastreamento de documentos da política de usuário específica. Depois de criar o objeto de política de usuário, os metadados de licença associados não estão acessíveis, ou seja, alterar os valores de metadados de licença não tem nenhum efeito.
 
@@ -72,6 +70,6 @@ A sequência de etapas que você usará para configurar o rastreamento de docume
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

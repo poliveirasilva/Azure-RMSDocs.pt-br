@@ -27,11 +27,14 @@ ms.suite: ems
 
 # O que é o Azure Rights Management?
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 O Azure Rights Management (Azure RMS) é uma solução de proteção de informações para as organizações que desejam proteger seus dados no ambiente de trabalho desafiador de hoje.
 
 Estes desafios incluem a necessidade de estar conectado à Internet, com os usuários levando seus dispositivos pessoais para o trabalho, acessando os dados da empresa em trânsito e em casa e compartilhando informações confidenciais com parceiros comerciais importantes. Como parte de seu trabalho diário, os usuários compartilham informações usando email, sites de compartilhamento de arquivos e serviços de nuvem. Nesses casos, os controles de segurança (como listas de controle de acesso e permissões NTFS) e os firewalls tradicionais têm uma eficácia limitada se você deseja proteger os dados da sua empresa e, ao mesmo tempo, dar autonomia aos usuários para que trabalhem de forma eficiente.
 
-Em comparação, o Azure Rights Management (Azure RMS) pode proteger as informações confidenciais da sua empresa em todos esses cenários. Ele usa criptografia, identidade e diretivas de autorização para ajudar a proteger seus arquivos e e-mail, e funciona em vários dispositivos — PCs, tablets e telefones. Informações podem ser protegidas tanto na sua organização e fora da organização pois essa proteção permanece com os dados, mesmo quando ele sai dos limites da organização. 
+Em comparação, o Azure Rights Management (Azure RMS) pode proteger as informações confidenciais da sua empresa em todos esses cenários. Ele usa criptografia, identidade e diretivas de autorização para ajudar a proteger seus arquivos e e-mail, e funciona em vários dispositivos — PCs, tablets e telefones. Informações podem ser protegidas tanto na sua organização e fora da organização pois essa proteção permanece com os dados, mesmo quando ele sai dos limites da organização.
 
 Como exemplo, os funcionários podem enviar um documento por email para uma empresa parceira ou salvar um documento em sua unidade em nuvem. A proteção permanente que o Azure RMS oferece ajuda não só a proteger os dados da empresa, mas pode ser legalmente obrigatória para fins de conformidade, divulgação judicial ou simplesmente para manter práticas adequadas de gerenciamento de informações.
 
@@ -39,7 +42,10 @@ Porém, é muito importante que as pessoas autorizadas e os serviços (como pesq
 
 A imagem a seguir mostra como o Azure RMS funciona como uma solução do Rights Management para o Office 365, bem como para servidores e serviços locais. Além disso, ele oferece suporte a dispositivos de usuário final populares que executam o Windows, o Mac OS, o iOS, o Android e o Windows Phone.
 
-![](../media/AzRMS_elements.png)
+> [!NOTE]
+Você pode usar o Azure RMS com assinaturas de nuvem diferentes, que incluem o Office 365 Enterprise Mobility Suite e o Azure RMS Premium. Para obter mais informações, consulte [Assinaturas de nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).
+
+![Como o Azure RMS funciona](../media/AzRMS_elements.png)
 
 ## Próximas etapas
 
@@ -61,9 +67,6 @@ No entanto, se estiver pronto para iniciar a implantação do Azure RMS para sua
 > Para obter ajuda e informações adicionais, use os recursos e links em [Informações e suporte para o Azure Rights Management](../get-started/information-support.md).
 
 
-
-
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

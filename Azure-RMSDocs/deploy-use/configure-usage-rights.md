@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Configuração dos direitos de uso do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Quando você define a proteção em arquivos ou emails usando o Azure Rights Management (Azure RMS) e não usa um modelo, você deve configurar os direitos de uso por conta própria. Além disso, ao configurar modelos personalizados para o Azure RMS, selecione os direitos de uso que serão aplicados automaticamente quando o modelo é selecionado por usuários, administradores, ou serviços configurados. Por exemplo, no portal clássico do Azure, você pode selecionar funções que configuram um agrupamento lógico de direitos de uso ou pode configurar os direitos individuais.
 
 Use este artigo para ajudá-lo a configurar os direitos de uso que você deseja para o aplicativo que está usando e compreender como esses direitos são interpretados pelos aplicativos.
@@ -47,8 +50,6 @@ Permite que usuário modifique, reorganize, formate ou filtre o conteúdo dentro
 **Nome em modelos do AD RMS**:*Editar*
 
 **Constante de API ou valor:** *não aplicável*
-
-Em aplicativos do Office, esse direito também permite que o usuário salve o documento.
 
 ---
 
@@ -90,7 +91,7 @@ Esse direito está disponível no SDK, está disponível como uma política ad h
 
 ### Salvar como, Exportar
 
-Habilita a opção para salvar o conteúdo com um nome de arquivo diferente (Salvar como). Dependendo do aplicativo, o arquivo pode ser salvo sem proteção.
+Habilita a opção para salvar o conteúdo com um nome de arquivo diferente (Salvar como). Para documentos do Office, o arquivo pode ser salvo sem proteção.
 
 **Codificação na política:** EXPORT
 
@@ -108,7 +109,7 @@ Esse direito também permite que o usuário execute outras opções de exportaç
 
 ### Encaminhar
 
-Habilita a opção para encaminhar uma mensagem de email e adicionar destinatários nas linhas *Para* e *Cc* .
+Habilita a opção para encaminhar uma mensagem de email e adicionar destinatários nas linhas *Para* e *Cc* . Esse direito não se aplica a documentos; apenas mensagens de email.
 
 **Codificação na política:** FORWARD
 
@@ -206,55 +207,24 @@ Permite que o usuário abra o documento e visualize o conteúdo.
 
 ---
 
-### Direitos de exibição
+### Copiar
 
-Permite que o usuário veja a política aplicada ao documento.
+Habilita opções para copiar dados (incluindo capturas de tela) do documento para o mesmo documento ou outro.
 
-**Codificação na política:** VIEWRIGHTSDATA
+**Codificação na política:** EXTRAIR
 
-**Implementação de direitos personalizados do Office:** não implementado
+**Implementação nos direitos personalizados do Office:** como a opção de política personalizada *Permitir que usuários com acesso de leitura copiem conteúdo*.
 
-**Nome no portal clássico do Azure:** *Exibir Direitos Atribuídos*
+**Nome no portal clássico do Azure:** *Copiar e Extrair Conteúdo*
 
-**Nome em modelos do AD RMS:** *Exibir Direitos*
+**Nome nos modelos do AD RMS** *Extrair*
 
-**Constante de API ou valor:** IPC_READ_RIGHTSL "VIEWRIGHTSDATA"
+**Constante ou valor de API**: IPC_GENERIC_EXTRACTL"EXTRACT"
 
----
-
-### Nome comum: direitos de exibição
-
-Permite que o usuário veja a política aplicada ao documento.
-
-**Codificação na política:** VIEWRIGHTSDATA
-
-**Implementação de direitos personalizados do Office:** não implementado
-
-**Nome no portal clássico do Azure:** *Exibir Direitos Atribuídos*
-
-**Nome em modelos do AD RMS:** *Exibir Direitos*
-
-**Constante de API ou valor:** IPC_READ_RIGHTSL "VIEWRIGHTSDATA"
-
-Ignorado por alguns aplicativos.
+Em alguns aplicativos, ele também permite que todo o documento seja salvo no formato não protegido.
 
 ---
 
-### Direitos de alteração
-
-Permite que o usuário altere a política que é aplicada ao documento. Inclui a remoção da proteção.
-
-**Codificação na política:** EDITRIGHTSDATA
-
-**Implementação de direitos personalizados do Office:** não implementado
-
-**Nome no portal clássico do Azure:** *Alterar Direitos*
-
-**Nome em modelos do AD RMS:** *Editar Direitos*
-
-**Constante de API ou valor:** IPC_WRITE_RIGHTSL"EDITRIGHTSDATA"
-
----
 
 ### Permitir Macros
 
@@ -294,7 +264,7 @@ Os direitos que estão incluídos com os modelos padrão são as seguintes:
 
 |Nome para Exibição|Direitos incluídos (nome comum)|
 |----------------|---------------------------------|
-|&lt;*nome da organização*&gt; *- Somente Exibição Confidencial*|Modo de exibição, Abrir, Ler|
+|&lt;*nome da organização*&gt;*- Somente exibição confidencial*|Modo de exibição, Abrir, Ler|
 |&lt;*nome da organização*&gt; *- Confidencial*|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Exibir Direitos Atribuídos; Permitir Macros; Encaminhar; Responder; Responder a Todos|
 
 ## Consulte também
@@ -302,6 +272,6 @@ Os direitos que estão incluídos com os modelos padrão são as seguintes:
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

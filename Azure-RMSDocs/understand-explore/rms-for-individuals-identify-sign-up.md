@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Como saber se os usuários se inscreveram para o RMS para pessoas físicas
+
+*Aplica-se a: Azure Rights Management*
+
 Como administrador, como você sabe se os usuários se inscreveram para o RMS para pessoas físicas? Você pode usar qualquer um dos seguintes métodos ou uma combinação deles:
 
 -   Pergunte aos usuários como eles protegem arquivos altamente confidenciais, especialmente quando colaboram com pessoas de fora da organização.
@@ -39,6 +42,6 @@ Como administrador, como você sabe se os usuários se inscreveram para o RMS pa
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

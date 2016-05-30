@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # Configurando modelos personalizados do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Depois da [ativação do Azure Rights Management](activate-service.md) (Azure RMS), os usuários podem usar automaticamente dois modelos padrão que facilitam a aplicação de políticas a arquivos confidenciais que restringem o acesso a usuários autorizados em sua organização. Esses dois modelos têm as seguintes restrições de política de direitos:
 
 -   Visualização de somente leitura para o conteúdo protegido
 
-    -   Nome de exibição: **&lt;nome da organização&gt; - somente exibição confidencial**
+    -   Nome de exibição: **&lt;nome da organização&gt; - Somente exibição confidencial**
 
     -   Permissão específica: Exibir Conteúdo
 
 -   As permissões de leitura ou modificação do conteúdo protegido
 
-    -   Nome de exibição: **&lt;nome da organização&gt; - confidencial**
+    -   Nome de exibição: **&lt;nome da organização&gt; - Confidencial**
 
     -   Permissões específicas: Exibir Conteúdo, Salvar Arquivo, Editar Conteúdo, Exibir Direitos Atribuídos, Permitir Macros, Encaminhar, Responder e Responder a Todos
 
@@ -69,6 +72,6 @@ Use as informações a seguir para ajudar a configurar e usar modelos personaliz
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

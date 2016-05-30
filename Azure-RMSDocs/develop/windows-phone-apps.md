@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuração do Windows Phone | Azure RMS
-description:
+description: Aplicativos Windows Phone podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 71119aa7-ffc6-46e0-82ae-0b3b614c2cad
-
+ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Configuração do Windows Phone
+# Configuração do Windows Phone
 
 
 Os aplicativos do Windows Phone podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM (Azure Active Directory Rights Management).
@@ -58,16 +57,16 @@ Examine as informações no [guia de desenvolvimento do Windows Phone](https://m
 -   Clique em **Arquivo**. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 -   Na caixa de diálogo **Novo Projeto**, selecione **Visual C#** e selecione **Aplicativo em branco (Windows Phone)**; em seguida, clique em **OK**.
 
-    ![](../media/wpsetup-newproj.png)
+    ![Criar novo projeto](../media/wpsetup-newproj.png)
 
 -   No Gerenciador de Soluções, clique com o botão direito do mouse em seu projeto e selecione **Adicionar Referência** para abrir a caixa de diálogo **Adicionar Referência**.
 
-    ![](../media/wpsetup-addref.png)
+    ![Adicionar referência](../media/wpsetup-addref.png)
 
 -   Clique em **Procurar** na caixa de diálogo **Adicionar Referência** e selecione o arquivo *Microsoft.RightsManagment.dll* que está localizado na pasta em que você extraiu o pacote.
--   **Aplicativos gerenciados** - para compilar um aplicativo gerenciado, você precisará adicionar essa referência; selecione **Windows 8.1**-&gt;**Extensões** e marque a caixa **Pacote de tempo de execução do Windows Visual C++ para Windows**
+-   **Aplicativos gerenciados** - Para compilar um aplicativo gerenciado, você precisará adicionar essa referência; selecione **Windows 8.1**-&gt;**Extensões** e marque a caixa **Pacote de tempo de execução do Windows Visual C++ para Windows**
 
-    ![](../media/wpsetup-refmngr.png)
+    ![Adicionar extensões](../media/wpsetup-refmngr.png)
 
 -   **Adicionando funcionalidades** - seu aplicativo precisará da funcionalidade de "Internet (cliente e servidor)" para usar o SDK. Para adicionar essa funcionalidade ao seu aplicativo, abra o arquivo *Package.appxmanifest* no projeto e navegue até a guia **Funcionalidades** para adicionar.
 
@@ -97,6 +96,6 @@ Agora você está pronto para criar seus próprios aplicativos novos do Windows 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

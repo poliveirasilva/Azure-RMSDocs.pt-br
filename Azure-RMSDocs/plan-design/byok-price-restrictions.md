@@ -27,13 +27,16 @@ ms.suite: ems
 
 # Preços e restrições do BYOK
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 A organização que tem uma assinatura gerenciada de TI Azure pode usar o BYOK e registrar o seu uso, sem custo extra. As organizações que usam o RMS para indivíduos não podem usar BYOK e log, porque elas não têm um administrador do locatário para configurar esses recursos.
 
 
 > [!NOTE]
 > Para obter mais informações sobre o RMS para pessoas físicas, consulte [RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-![](../media/RMS_BYOK_noExchange.png)
+![BYOK não dá suporte ao Exchange Online](../media/RMS_BYOK_noExchange.png)
 
 O BYOK e o log funcionam perfeitamente com todos os aplicativos que se integram com o Azure RMS. Isso inclui serviços de nuvem, como o SharePoint Online, servidores locais que executam o Exchange e servidores do SharePoint que trabalham com Azure RMS pelo uso do conector RMS e de aplicativos cliente, como o Office 2013. Você vai ter registros de uso de chave, independentemente de qual aplicativo faça solicitações de Azure RMS.
 
@@ -57,12 +60,12 @@ Se você estiver migrando para o Azure RMS do AD RMS, você pode importar a sua 
 
 ## Próximas etapas
 
-Se você fez a decisão para gerenciar sua própria chave, vá para [Implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
+Se você decidiu gerenciar sua própria chave, vá para [Implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
 
 Se você decidiu permanecer com a configuração padrão em que a Microsoft gerencia sua chave de locatário, consulte a seção [Próximas etapas](plan-implement-tenant-key.md#next-steps) do artigo Planejamento e implementação de sua chave de locatário do Azure Rights Management.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

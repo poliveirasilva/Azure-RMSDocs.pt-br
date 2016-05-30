@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Planejando e implementando sua chave de locatário do Azure Rights Management
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Use as informações nesse artigo para ajudá-lo a planejar e a gerenciar sua chave de locatário do RMS (Rights Management) para o Azure RMS. Por exemplo, em vez da Microsoft gerenciar sua chave de locatário (o padrão), caso queira gerenciar a sua própria chave de locatário de acordo com as normas específicas que se aplicam à sua organização.  Gerenciar a sua chave de locatário também é chamado de trazer sua própria chave, ou BYOK.
 
 > [!NOTE]
@@ -62,11 +65,11 @@ Se você decidir que a Microsoft deve gerenciar sua chave de locatário, a Micro
 
 Os diagramas a seguir mostram e comparam essas duas opções. O primeiro diagrama mostra que há poucas sobrecargas de administrador para você na configuração padrão, quando a Microsoft gerencia a chave de locatário.
 
-![](../media/RMS_BYOK_cloud.png)
+![Ciclo de vida da chave de locatário do Azure RMS - gerenciado pela Microsoft, o padrão](../media/RMS_BYOK_cloud.png)
 
 O segundo diagrama mostra os passos adicionais necessários ao gerenciar a sua própria chave de locatário.
 
-![](../media/RMS_BYOK_onprem.png)
+![Ciclo de vida da chave de locatário do Azure RMS - gerenciado por você, BYOK](../media/RMS_BYOK_onprem.png)
 
 Se decidir deixar a Microsoft gerenciar sua chave de locatário, não será necessária nenhuma ação adicional para gerar a chave e você pode ir direto para as [Próximas etapas](plan-implement-tenant-key.md#next-steps).
 
@@ -90,7 +93,7 @@ Veja a tabela a seguir para obter uma lista de pré-requisitos para trazer sua p
 |Uma assinatura que dá suporte ao Azure RMS.|Para obter mais informações sobre as assinaturas disponíveis, consulte [Assinaturas da nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).|
 |Você não pode usar o RMS para indivíduos ou Exchange Online. Ou, se você usar o Exchange Online, entenda e aceite as limitações do uso do BYOK com essa configuração.|Para obter mais informações sobre as atuais restrições e limitações do BYOK, consulte [Preços e restrições do BYOK](byok-price-restrictions.md).<br /><br />**Importante**: atualmente, o BYOK não é compatível com o Exchange Online.|
 |HSM da Thales, smartcards e software de suporte.<br /><br />**Observação**: se estiver migrando do AD RMS para o Azure RMS usando a chave de software para a chave de hardware, você deverá ter uma versão mínima de 11.62 para os drivers da Thales.|É necessário ter acesso a um Módulo de Segurança de Hardware da Thales e um conhecimento operacional básico dos HSMs da Thales. Consulte [Módulo de Segurança de Hardware da Thales](http://www.thales-esecurity.com/msrms/buy) para obter a lista de modelos compatíveis ou para comprar um HSM, se você não tiver um.|
-|Se deseja transferir sua chave de locatário via Internet, em vez de estar fisicamente presente em Redmond, EUA, há 3 requisitos:<br /><br />Requisito 1: uma estação de trabalho x64 offline com um sistema operacional Windows mínimo do Windows 7 e software da Thales nShield que seja, pelo menos, da versão 11.62.<br /><br />Se esta estação de trabalho executa o Windows 7, você deve [instalar o Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />Requisito 2: uma estação de trabalho que esteja conectada à Internet e que tenha um sistema operacional Windows mínimo do Windows 7.<br /><br />Requisito 3: uma unidade USB ou outro dispositivo de armazenamento portátil que tenha, pelo menos, 16 MB de espaço livre.|Esses pré-requisitos não são necessários se você viajar para Redmond e transferir sua chave de locatário pessoalmente.<br /><br />Por razões de segurança, recomendamos que a primeira estação de trabalho não esteja conectada a uma rede. No entanto, isto não é programaticamente aplicado.<br /><br />Observação: nas instruções a seguir, essa estação de trabalho é mencionada como a **estação de trabalho desconectada**.<br /><br />Além disso, se a chave de locatário for para uma rede de produção, recomendamos o uso de uma segunda estação de trabalho separada para baixar o conjunto de ferramentas e fazer o upload da chave de locatário. Mas para fins de teste, é possível usar a mesma estação de trabalho como a primeira.<br /><br />Observação: nas instruções a seguir, essa segunda estação de trabalho é mencionada como a **estação de trabalho conectada à Internet**.|
+|Se deseja transferir sua chave de locatário via Internet, em vez de estar fisicamente presente em Redmond, EUA, há 3 requisitos:<br /><br />1: uma estação de trabalho x64 offline com um sistema operacional Windows mínimo do software Windows 7 e Thales nShield que seja, pelo menos, da versão 11.62.<br /><br />Se esta estação de trabalho executa o Windows 7, você deve [instalar o Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2: uma estação de trabalho que esteja conectada à Internet e que tenha um sistema operacional Windows mínimo de Windows 7.<br /><br />3: uma unidade USB ou outro dispositivo de armazenamento portátil que tenha, pelo menos, 16 MB de espaço livre.|Esses pré-requisitos não são necessários se você viajar para Redmond e transferir sua chave de locatário pessoalmente.<br /><br />Por razões de segurança, recomendamos que a primeira estação de trabalho não esteja conectada a uma rede. No entanto, isto não é programaticamente aplicado.<br /><br />Observação: nas instruções a seguir, essa estação de trabalho é mencionada como a **estação de trabalho desconectada**.<br /><br />Além disso, se a chave de locatário for para uma rede de produção, recomendamos o uso de uma segunda estação de trabalho separada para baixar o conjunto de ferramentas e fazer o upload da chave de locatário. Mas para fins de teste, é possível usar a mesma estação de trabalho como a primeira.<br /><br />Observação: nas instruções a seguir, essa segunda estação de trabalho é mencionada como a **estação de trabalho conectada à Internet**.|
 
 Os procedimentos para gerar e utilizar a sua própria chave de locatário dependem se você deseja fazer isso pela Internet ou pessoalmente:
 
@@ -135,7 +138,7 @@ Agora que você já planejou e, se necessário, gerou sua chave de locatário, f
 
     Se você decidiu gerenciar sua própria chave de locatário, o log inclui informações sobre como usar sua chave de locatário. Consulte o exemplo a seguir de um arquivo de log exibido no Excel, onde os Tipos de solicitação **Descriptografar** e **SignDigest** mostram que a chave de locatário está sendo usada.
 
-    ![](../media/RMS_Logging.gif)
+    ![arquivo de log no Excel no qual a chave de locatário está sendo usada](../media/RMS_Logging.gif)
 
     Para obter mais informações sobre registro em log de uso, consulte [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -145,6 +148,6 @@ Agora que você já planejou e, se necessário, gerou sua chave de locatário, f
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -28,11 +28,14 @@ ms.suite: ems
 
 # Azure Rights Management - também conhecido como...
 
+*Aplica-se a: Azure Rights Management, Office 365*
+
+
 O Azure Rights Management também é conhecido como *Azure Rights Management Service*, mas por ser executado como um serviço no Azure, o "serviço" normalmente é omitido do seu nome. É a versão de nuvem do *Active Directory Rights Management Services* (AD RMS) que foi inicialmente lançado como *Windows Rights Management Services* (Windows RMS).
 
 Como RMS é uma abreviação conhecida devido a seus predecessores, o Azure Rights Management é muitas vezes abreviado como ***Azure RMS***.
 
-O Azure Rights Management foi originalmente denominado *Microsoft Azure Active Directory Rights Management* (muitas vezes abreviado como Microsoft Azure AD Rights Management), depois como Microsoft Azure Rights Management e, finalmente, como Azure Rights Management.
+O Azure Rights Management foi originalmente nomeado *Microsoft Azure Active Directory Rights Management* (muitas vezes abreviado como Microsoft Azure AD Rights Management), depois como Microsoft Azure Rights Management e, finalmente, como Azure Rights Management.
 
 Você também poderá ver referências a *Information Rights Management*, muitas vezes abreviado como *IRM*. Isso é a implementação do Office do Rights Management que é compatível com o Azure RMS e o AD RMS.  Quando o Azure RMS foi lançado, ele só podia ser usado somente com o Office 365 — por exemplo, com uma assinatura do Office 365 E3. Agora, o Azure RMS foi estendido a outras assinaturas, como o Enterprise Mobility Suite (EMS), e o suporte agora inclui o Office 2016, Office 2013, Office 2010, versões locais do SharePoint e do Exchange e o Azure RMS pode proteger qualquer tipo de arquivo. Para obter mais informações, consulte [Como os aplicativos dão suporte ao Azure Rights Management](applications-support.md).
 
@@ -45,6 +48,6 @@ Como uma solução de proteção de informações corporativas, o Microsoft Righ
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

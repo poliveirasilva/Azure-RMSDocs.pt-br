@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Proteção por RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server
+
+*Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+
 Use este artigo para obter as instruções e um script para usar o cliente do Rights Management (RMS) com a ferramenta de Proteção por RMS para configurar o Gerenciador de Recursos de Servidor de Arquivos e a Infraestrutura de Classificação de Arquivos (FCI).
 
 Esta solução permite proteger automaticamente todos os arquivos em uma pasta em um servidor de arquivos executando o Windows Server ou protege automaticamente os arquivos que atendem a critérios específicos. Por exemplo, os arquivos que foram classificados como contendo informações confidenciais ou sensíveis. Esta solução usa o Azure RMS (Azure Rights Management) para proteger os arquivos, portanto, você deve ter essa tecnologia implantada em sua organização.
@@ -33,7 +36,7 @@ Esta solução permite proteger automaticamente todos os arquivos em uma pasta e
 > [!NOTE]
 > Apesar de o Azure RMS incluir um [conector](../deploy-use/deploy-rms-connector.md) que dá suporte à infraestrutura de classificação de arquivos, essa solução dá suporte apenas à proteção nativa, por exemplo, arquivos do Office.
 > 
-> Para dar suporte a todos os tipos de arquivo com a infraestrutura de classificação de arquivos, você deve usar o módulo de **Proteção por RMS** do Windows PowerShell, conforme documentado neste artigo. Os cmdlets de Proteção por RMS, como o aplicativo de RMS sharing, dão suporte tanto à proteção genérica como à proteção nativa, o que significa que todos os arquivos podem ser protegidos. Para obter mais informações sobre os diferentes níveis de proteção, consulte a seção [Níveis de proteção - nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) do tópico [Guia do administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+> Para dar suporte a todos os tipos de arquivo com a infraestrutura de classificação de arquivos, você deve usar o módulo de **Proteção por RMS** do Windows PowerShell, conforme documentado neste artigo. Os cmdlets de Proteção por RMS, como o aplicativo de RMS sharing, dão suporte tanto à proteção genérica como à proteção nativa, o que significa que todos os arquivos podem ser protegidos. Para obter mais informações sobre os diferentes níveis de proteção, consulte a seção [Níveis de proteção - nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no tópico [Guia do administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
 
 As instruções a seguir são para o Windows Server 2012 R2 ou o Windows Server 2012. Se você executar outras versões com suporte do Windows, talvez seja necessário adaptar algumas das etapas para as diferenças entre a versão do seu sistema operacional e o documentado neste artigo.
 
@@ -46,7 +49,7 @@ Pré-requisitos para estas instruções:
 
     -   Você identificou uma pasta local que contém os arquivos a serem protegidos com o Rights Management. Por exemplo, C:\FileShare.
 
-    -   Você instalou a ferramenta de Proteção por RMS, incluindo os pré-requisitos da ferramenta (como o cliente RMS) e para o Azure RMS (como a conta de entidade de serviço). Para obter maiores informações, consulte [Cmdlets de Proteção do RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+    -   Você instalou a ferramenta de Proteção por RMS, incluindo os pré-requisitos da ferramenta (como o cliente RMS) e para o Azure RMS (como a conta de entidade de serviço). Para obter mais informações, consulte [Cmdlets de proteção do RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
     -   Se você quiser alterar o nível padrão de proteção por RMS (nativa ou genérica) para extensões de nome de arquivo específico, você editou o Registro conforme descrito na página [Configuração da API de arquivo](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx).
 
@@ -158,9 +161,9 @@ Agora podemos criar uma regra de classificação que usa essa propriedade.
 
         -   **Habilitado**: Mantenha o padrão, que é essa caixa de seleção estar selecionada.
 
-        -   **Descrição**: Tipo **classificar todos os arquivos na pasta &lt; nome da pasta &gt; para Rights Management**.
+        -   **Descrição**: tipo **Classificar todos os arquivos em &lt;nome da pasta&gt; para o Rights Management**.
 
-            Substitua *&lt; nome da pasta &gt;* com o nome da pasta escolhida. Por exemplo, **classifique todos os arquivos na pasta C:\FileShare para Rights Management**
+            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta escolhida. Por exemplo, **classifique todos os arquivos na pasta C:\FileShare para Rights Management**
 
         -   **Escopo**: Adicione a sua pasta escolhida. Por exemplo, **C:\FileShare**.
 
@@ -200,9 +203,9 @@ Agora você concluiu a configuração de classificação, você estará pronto p
 
         -   Manter a caixa de seleção **Habilitar** selecionada.
 
-        -   **Descrição**: Tipo **proteger arquivos em &lt; nome da pasta &gt; com Rights Management e um modelo usando um script do Windows PowerShell.**
+        -   **Descrição**: tipo **Proteger arquivos em &lt;nome da pasta&gt; com Rights Management e um modelo usando um script do Windows PowerShell.**
 
-            Substitua *&lt; nome da pasta &gt;* com o nome da pasta escolhida. Por exemplo, **proteger arquivos em C:\FileShare com Rights Management e um modelo usando um script do Windows PowerShell**
+            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta escolhida. Por exemplo, **proteger arquivos em C:\FileShare com Rights Management e um modelo usando um script do Windows PowerShell**
 
         -   **Escopo**: Selecione a sua pasta escolhida. Por exemplo, **C:\FileShare**.
 
@@ -219,7 +222,7 @@ Agora você concluiu a configuração de classificação, você estará pronto p
             ```
             Se o Windows não estiver na unidade C:, modifique esse caminho ou navegue até o arquivo.
 
-        -   **Argumento**: Especifique o seguinte, fornecendo seus próprios valores para &lt; caminho &gt; e &lt; ID do modelo &gt;:
+        -   **Argumento**: especifique o seguinte, fornecendo seus próprios valores para &lt;caminho&gt; e &lt;ID do modelo&gt;:
 
             ```
             -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail [Source File Owner Email]"
@@ -263,11 +266,11 @@ Agora você concluiu a configuração de classificação, você estará pronto p
 
     2.  Clique em **Aguardar a conclusão da classificação**, e, em seguida, clique em **OK**.
 
-2.  Aguarde até que a caixa de diálogo **Executando Classificação** feche e, em seguida, veja os resultados no relatório exibido automaticamente. Você deve ver **1** para o campo **Propriedades** e o número de arquivos na pasta. Confirme usando o Explorador de Arquivos e verificando as propriedades de arquivos na pasta escolhida. Na guia **Classificação** , você deve ver **RMS** como um nome de propriedade e **Sim** para o seu **valor**.
+2.  Aguarde até que a caixa de diálogo **Executando Classificação** feche e, em seguida, veja os resultados no relatório exibido automaticamente. Você deve ver **1** para o campo **Propriedades** e o número de arquivos na pasta. Confirme usando o Explorador de Arquivos e verificando as propriedades de arquivos na pasta escolhida. Na guia **Classificação**, você deve ver **RMS** como um nome de propriedade e **Sim** como seu **Valor**.
 
 3.  Execute a tarefa de gerenciamento de arquivos:
 
-    1.  Clique em **Tarefas de Gerenciamento de Arquivos** &gt; **Proteger Arquivos com o RMS** &gt; **Executar Tarefa de Gerenciamento de Arquivo Agora**
+    1.  Clique em **Tarefas de Gerenciamento de Arquivos** &gt; **Proteger arquivos com o RMS** &gt; **Executar Tarefa de Gerenciamento de Arquivos Agora**
 
     2.  Clique em **Aguardar a conclusão da tarefa**, e, em seguida, clique em **OK**.
 
@@ -299,12 +302,12 @@ Quando tiver confirmado que essas tarefas foram executadas com êxito, você pod
 ## Modificando as instruções para proteger os arquivos de forma seletiva
 Quando você tiver as instruções anteriores trabalhando, é então muito fácil modificá-los para uma configuração mais sofisticada. Por exemplo, proteger os arquivos usando o mesmo script, mas apenas para arquivos que contêm Informações de Identificação Pessoal e, talvez, selecione um modelo que tenha direitos mais restritivos.
 
-Para fazer isso, use uma das propriedades internas de classificação (por exemplo, **Informações de Identificação Pessoal**) ou crie uma nova propriedade de sua própria autoria. Em seguida, crie uma nova regra que usa essa propriedade. Por exemplo, você pode selecionar o **Classificador de Conteúdo**, escolha o **Informações de Identificação Pessoal** propriedade com um valor de **Alto**, e configure o padrão de cadeia de caracteres ou expressão que identifica o arquivo a ser configurado para essa propriedade (como a cadeia de caracteres "**Data de nascimento**").
+Para fazer isso, use uma das propriedades internas de classificação (por exemplo, **Informações de Identificação Pessoal**) ou crie uma nova propriedade de sua própria autoria. Em seguida, crie uma nova regra que usa essa propriedade. Por exemplo, você pode selecionar o **Classificador de Conteúdo**, escolher a propriedade **Informações de Identificação Pessoal** com um valor de **Alto**, e configurar o padrão de cadeia de caracteres ou expressão que identifica o arquivo a ser configurado para essa propriedade (como a cadeia de caracteres “**Data de nascimento**”)").
 
-Agora tudo o que você precisa fazer é criar uma nova tarefa de gerenciamento de arquivo que usa o mesmo script mas talvez com um modelo diferente e configure a condição para a propriedade de classificação que você configurou. Por exemplo, em vez da condição que configuramos anteriormente (**RMS** propriedade **Igual**, **Sim**), selecione o **Informações de Identificação Pessoal** propriedade com o **Operador** valor definido como **igual** e **Valor** **Alto**.
+Agora tudo o que você precisa fazer é criar uma nova tarefa de gerenciamento de arquivo que usa o mesmo script mas talvez com um modelo diferente e configure a condição para a propriedade de classificação que você configurou. Por exemplo, em vez da condição que configuramos anteriormente (propriedade **RMS**, **Igual**, **Sim**), selecione a propriedade **Informações de Identificação Pessoal** com o valor **Operador** definido como **Igual** e **Valor** **Alto**.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

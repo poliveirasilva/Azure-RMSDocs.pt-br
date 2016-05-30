@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # Exiba e use os arquivos que foram protegidos pelo Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 Quando o [aplicativo de compartilhamento Rights Management (RMS) é instalado em seu computador](install-sharing-app.md), um arquivo protegido é exibido ao clicar duas vezes nele. O arquivo pode ser um anexo em uma mensagem de email ou você pode visualizá-lo ao usar o Explorador de arquivos.
 
 > [!NOTE]
 > Antes de exibir o arquivo protegido, o RMS primeiro deve confirmar que você está autorizado a visualizar o arquivo, o que é feito através da verificação de seu nome de usuário e senha. Em alguns casos, isto pode estar em cache e você não verá um prompt solicitando suas credenciais. Em outros casos, será solicitado que você forneça suas credenciais.
-> 
+>
 > Se a sua organização não usa o Azure Rights Management (Azure RMS) ou o AD RMS, você pode se registrar para obter uma conta gratuita que aceitará as suas credenciais para abrir arquivos protegidos por meio do RMS:
-> 
+>
 > -   Para se registrar para esta conta, clique no link de registro do [RMS para pessoas físicas](http://go.microsoft.com/fwlink/?LinkId=309469).
-> 
+>
 >     Ao se registrar, use seu endereço de email da empresa em vez de um endereço de email pessoal. Se você estiver se registrando porque recebeu por email um anexo protegido, use o mesmo endereço de email no qual a mensagem foi recebida.
-> -   Para obter mais informações, consulte [RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> -   Para saber mais, confira [RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Para exibir um arquivo protegido
 Usando o Explorador de arquivos ou a mensagem de email que contém o anexo, clique duas vezes no arquivo protegido e insira suas credenciais se solicitado.
@@ -46,7 +49,7 @@ Se você vir duas versões do arquivo, mas com extensões de nome de arquivo dif
 > [!NOTE]
 > Para obter mais informações, consulte “[O que é o arquivo .ppdf, criado automaticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)”.
 
-A forma como o arquivo é aberto depende de como ele foi protegido, o que pode ser confirmado ao examinar a extensão de nome de arquivo. Em cada caso, a abertura do arquivo pode ser auditada e permanecer auditada desde que ele esteja protegido. Além disso, se o arquivo foi enviado como anexo de email, o remetente pode ser notificado por email toda vez que abrir o arquivo. 
+A forma como o arquivo é aberto depende de como ele foi protegido, o que pode ser confirmado ao examinar a extensão de nome de arquivo. Em cada caso, a abertura do arquivo pode ser auditada e permanecer auditada desde que ele esteja protegido. Além disso, se o arquivo foi enviado como anexo de email, o remetente pode ser notificado por email toda vez que abrir o arquivo.
 
 - **O arquivo tem uma extensão de nome de arquivo *.pfile***
 
@@ -54,9 +57,9 @@ A forma como o arquivo é aberto depende de como ele foi protegido, o que pode s
 
     Ao abrir o arquivo, você verá uma caixa de diálogo de **arquivo protegido** no aplicativo de compartilhamento que o informa sobre quem protegeu o arquivo e que você deve cumprir as permissões do coproprietário. Clique em **Abrir** para ler o arquivo.
 
-    ![](../media/ADRMS_MSRMSApp_PfilePermission.png)
+    ![Caixa de diálogo para um pfile compartilhado por email ao usar o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*)**
+- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*))**
 
     O arquivo foi protegido nativamente como uma cópia de somente leitura.
 
@@ -68,7 +71,7 @@ A forma como o arquivo é aberto depende de como ele foi protegido, o que pode s
 
     O arquivo é aberto usando o aplicativo que está associado à extensão de nome de arquivo original e uma faixa de restrição é exibida na parte superior do arquivo. A faixa pode exibir as permissões aplicadas ao arquivo ou pode fornecer um link para exibi-los. Por exemplo, ao clicar em **A permissão está restrita atualmente** para ver as permissões reais que são aplicadas ao arquivo e às pessoas que podem acessá-lo, você poderá ver o seguinte:
 
-    ![](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
+    ![Banner de acesso restrito quando o arquivo estiver protegido](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
 
 
 
@@ -88,7 +91,7 @@ Se depois de abrir o arquivo protegido, você quiser fazer mais do que apenas l�
 
     O novo arquivo não está mais protegido. Se desejar protegê-lo, você deve fazê-lo manualmente. Para obter instruções, consulte [Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo de compartilhamento Rights Management](sharing-app-protect-in-place.md).
 
-- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*)**
+- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*))**
 
     Só é possível visualizar o arquivo e, se você o renomear ou mover, a proteção permanece com o arquivo.
 
@@ -104,13 +107,12 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

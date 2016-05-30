@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Remover (arquivar) modelos
+
+*Aplica-se a: Azure Rights Management, Office 365*
+
 Os modelos padrão não podem ser excluídos, mas podem ser arquivados para que os usuários não os vejam.
 
 Da mesma forma, se você publicou um modelo personalizado e não quer mais que os usuários o vejam, é possível editar o modelo e escolher **ARQUIVAR** e **SALVAR** na página **CONFIGURAR** . Ou ainda, você pode selecionar a partir da página **MODELOS** e selecionar **ARQUIVAR**.
@@ -44,6 +47,6 @@ O status é alterado de **Publicado** para **Arquivado**. Se você mudar de idei
 ## Consulte também
 [Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

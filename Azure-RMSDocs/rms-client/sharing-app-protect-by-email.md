@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Proteja arquivos que você compartilha por email usando o aplicativo de compartilhamento Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 Ao proteger um arquivo que você compartilha por email, será criada uma nova versão do arquivo original. Enquanto o arquivo original permanecerá desprotegido, a nova versão será protegida e automaticamente anexada a um e-mail para você enviar.
 
 Em alguns casos (para arquivos criados no Microsoft Word, Excel e PowerPoint), o aplicativo de RMS sharing cria duas versões do arquivo que anexa à mensagem de email. A segunda versão tem a extensão de nome de arquivo **.ppdf** , e é uma cópia de sombra do arquivo PDF. Esta versão garante que os destinatários sempre poderão ler o arquivo, mesmo sem terem instalado o aplicativo que você usou para criá-lo. Isso costuma ocorrer quando as pessoas acessam emails corporativos em dispositivos móveis e desejam exibir anexos de email. Para abrir o arquivo, elas precisam apenas do aplicativo RMS sharing. Assim, elas podem ler o arquivo anexado, mas não poderão alterá-lo até abrirem a outra versão do arquivo usando um aplicativo que dê suporte ao RMS.
@@ -34,15 +37,15 @@ Se a sua organização usa o Azure RMS, você pode manter o controle dos arquivo
 
 -   Selecione uma opção para receber emails quando alguém tentar abrir anexos protegidos. Cada vez que o arquivo é acessado, você será notificado sobre quem tentou abrir o arquivo e quando, e se foram bem-sucedidos (autenticados com êxito) ou não.
 
--   Use o site de rastreamento do documento. Você pode até mesmo interromper o compartilhamento do arquivo, revogando o acesso a ele no site de rastreamento do documento. Para obter mais informações, consulte [Rastrear e revogar seus documentos ao usar o aplicativo RMS sharing](sharing-app-track-revoke.md).
+-   Use o site de rastreamento do documento. Você pode até mesmo interromper o compartilhamento do arquivo, revogando o acesso a ele no site de rastreamento do documento. Para obter mais informações, consulte [Acompanhar e revogar seus documentos ao usar o aplicativo de compartilhamento RMS](sharing-app-track-revoke.md)..
 
 ## Usando o Outlook: Para proteger um arquivo que você compartilha por email
 
-1.  Crie sua mensagem de email e anexe o arquivo. Depois, na guia **Mensagem** no grupo do **RMS** , clique em **Compartilhamento Protegido** , e então clique em **Compartilhamento Protegido** novamente:
+1.  Crie sua mensagem de email e anexe o arquivo. Depois, na guia **Mensagem** no grupo **RMS** , clique em **Compartilhamento protegido** , e então clique em **Compartilhamento protegido** novamente:
 
-    ![](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
+    ![Suplemento do Outlook para o aplicativo de compartilhamento de RMS](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    Se você não estiver vendo esse botão, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada, ou seu computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+    Se você não estiver vendo esse botão, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada, ou seu computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
 
 2.  Especifique as opções que você deseja para esse arquivo na [caixa de diálogo do compartilhamento protegido](sharing-app-dialog-box.md), e então clique em **Enviar Agora**.
 
@@ -59,13 +62,13 @@ Além de compartilhar um arquivo protegido usando o Outlook, você também pode 
 
     -   Para o Explorador de Arquivos: clique com o botão direito do mouse, selecione **Proteger com RMS** e, em seguida, selecione **Compartilhamento Protegido**:
 
-        ![](../media/ADRMS_MSRMSApp_ShareProtectedMenu.png)
+        ![Compartilhar opção de menu protegido](../media/ADRMS_MSRMSApp_ShareProtectedMenu.png)
 
     -   Para aplicativos do Office, Word, Excel e PowerPoint: Primeiro, verifique se você salvou o arquivo. Depois, na guia **Início** no grupo do **RMS** , clique em **Compartilhamento Protegido** , e então clique em **Compartilhamento Protegido** novamente:
 
-        ![](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
+        ![Suplemento da bBarra de ferramentas do Office](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    Se você não estiver vendo essas opções para proteção, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada, ou seu computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+    Se você não estiver vendo essas opções para proteção, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada, ou seu computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
 
 2.  Especifique as opções que você deseja para esse arquivo na [caixa de diálogo do compartilhamento protegido](sharing-app-dialog-box.md) e, então, clique em **Enviar**.
 
@@ -73,7 +76,7 @@ Além de compartilhar um arquivo protegido usando o Outlook, você também pode 
 
     Exemplo:
 
-    ![](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Mensagem de email para o Azure RMS](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
     Você está pensando: [o que é o arquivo .ppdf, criado automaticamente?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
 
@@ -89,13 +92,12 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

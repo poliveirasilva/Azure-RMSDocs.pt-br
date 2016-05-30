@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Visão geral técnica do aplicativo de compartilhamento Microsoft Rights Management
+
+*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+
 
 O aplicativo de compartilhamento Microsoft Rights Management é um aplicativo para download opcional do Microsoft Windows e outras plataformas que oferece os seguintes recursos:
 
@@ -52,8 +55,8 @@ Aplicativo de compartilhamento Microsoft Rights Management oferece suporte a pro
 |Tipo de proteção|Nativo|Genérico|
 |----------------------|----------|-----------|
 |Descrição|Para arquivos de texto, imagem, do Microsoft Office (Word, Excel, PowerPoint), .pdf e para tipos de arquivo de outros aplicativos que suportam o AD RMS, a proteção nativa fornece um alto nível de proteção que inclui criptografia e aplicação de direitos (permissões).|Para todos os outros aplicativos e tipos de arquivo, a proteção genérica oferece um nível de proteção que inclui tanto o encapsulamento de arquivos o tipo de arquivo .pfile e autenticação para verificar se um usuário está autorizado a abrir o arquivo.|
-|Proteção|Os arquivos estão completamente criptografados e a proteção é imposta das seguintes maneiras:<br /><br />Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que recebem o arquivo por email ou recebem acesso a ele por meio de permissões de arquivo ou compartilhamento.<br /><br />Além disso, direitos de uso e a diretiva definida pelo proprietário do conteúdo quando os arquivos são protegidos são totalmente aplicadas quando o conteúdo é renderizado no Visualizador de IP (para arquivos de texto e imagem protegidos) ou o aplicativo associado (para todos os outros tipos de arquivo com suporte).|A proteção de arquivos é imposta das seguintes maneiras:<br /><br />Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que estão autorizados a abrir o arquivo e recebem acesso a ele. Se a autorização falhar, o arquivo não abre.<br /><br />Direitos de uso e a diretiva definida pelo proprietário do conteúdo são exibidos para informar aos usuários autorizados a política de uso pretendido.<br /><br />Log de auditoria de usuários autorizados a abrir e acessar arquivos ocorre, no entanto, sem direitos de uso são aplicados, não oferecendo suporte a aplicativos.|
-|Padrão para tipos de arquivo|Isso é o nível de proteção padrão para os seguintes tipos de arquivo:<br /><br />Arquivos de texto e imagem<br /><br />Arquivos do Microsoft Office (Word, Excel, PowerPoint)<br /><br />Formato PDF (. PDF)<br /><br />Para obter mais informações, consulte a seção a seguir, [Tipos de arquivo com suporte e extensões de nome de arquivo](#supported-file-types-and-file-name-extensions).|Isso é a proteção padrão para todos os outros tipos de arquivo (como .vsdx, .rtf e assim por diante) que não têm suporte pela proteção completa.|
+|Proteção|Os arquivos estão completamente criptografados e a proteção é imposta das seguintes maneiras:<br /><br />- Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que recebem o arquivo por email ou recebem acesso a ele por meio de permissões de arquivo ou compartilhamento.<br /><br />- Além disso, direitos de uso e a política definida pelo proprietário do conteúdo quando os arquivos são protegidos são totalmente aplicadas quando o conteúdo é renderizado no Visualizador de IP (para arquivos de texto e imagem protegidos) ou o aplicativo associado (para todos os outros tipos de arquivo com suporte).|A proteção de arquivos é imposta das seguintes maneiras:<br /><br />- Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que estão autorizados a abrir o arquivo e recebem acesso a ele. Se a autorização falhar, o arquivo não abre.<br /><br />- Direitos de uso e a política definida pelo proprietário do conteúdo são exibidos para informar aos usuários autorizados a política de uso pretendido.<br /><br />- Log de auditoria de usuários autorizados a abrir e acessar arquivos ocorre, no entanto, nenhum direito de uso é aplicado por aplicativos sem suporte.|
+|Padrão para tipos de arquivo|Isso é o nível de proteção padrão para os seguintes tipos de arquivo:<br /><br />- Arquivos de texto e imagem<br /><br />- Arquivos do Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para obter mais informações, consulte a seção a seguir, [Tipos de arquivo com suporte e extensões de nome de arquivo](#supported-file-types-and-file-name-extensions).|Isso é a proteção padrão para todos os outros tipos de arquivo (como .vsdx, .rtf e assim por diante) que não têm suporte pela proteção completa.|
 Você pode alterar o nível de proteção padrão que o aplicativo de RMS sharing aplica. Você pode alterar o nível padrão de nativo para genérico, de genérico para nativo e até mesmo impedir que o aplicativo de aplicar proteção de compartilhamento do RMS. Para obter mais informações, consulte a seção [Alterando o nível de proteção padrão de arquivos](#changing-the-default-protection-level-of-files) neste artigo.
 
 ## Tipos de arquivo com suporte e extensões de nome de arquivo
@@ -63,8 +66,7 @@ Além disso, quando o aplicativo RMS sharing nativamente protege um arquivo do W
 
 Para arquivos protegidos genericamente, a extensão de nome de arquivo original sempre é alterada para. pfile.
 
-> [!WARNING]
-> Se você tiver firewalls, proxies da web ou software de segurança que inspecione e atue de acordo com as extensões de nome de arquivo, talvez seja necessário reconfigurá-los para oferecer suporte a essas novas extensões de nome de arquivo.
+> [!WARNING] Se você tiver firewalls, proxies da web ou software de segurança que inspecionem e atuem de acordo com as extensões de nome de arquivo, talvez seja necessário reconfigurá-los para dar suporte a essas novas extensões de nome de arquivo.
 
 |Extensão de nome de arquivo original|Extensão protegida por RMS|
 |--------------------------------|-------------------------------------|
@@ -107,11 +109,11 @@ Você também pode forçar o aplicativo RMS sharing a bloquear a proteção de a
 
 Para configurar o aplicativo RMS sharing a aplicar a proteção genérica a todos os arquivos como padrão, que teriam a proteção nativa aplicada, faça as seguintes edições no registro:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: crie uma nova chave chamada **&#42;**.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: crie uma nova chave nomeada *.
 
     Essa configuração denota arquivos com qualquer extensão de nome de arquivo.
 
-2.  Na chave recém adicionada do **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\&#42;**, crie um novo valor de cadeia de caracteres (REG_SZ) chamado **Criptografia**, com o valor de dados **Pfile**.
+2.  Na chave recém adicionada de HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\*, crie um novo valor de cadeia (REG_SZ) nomeada **Criptografia** que possua o valor de dados de **Pfile**.
 
     Essa configuração resulta no aplicativo RMS sharing aplicando proteção genérica.
 
@@ -142,6 +144,6 @@ Você pode fazer edições de registro semelhantes para outros cenários, altera
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

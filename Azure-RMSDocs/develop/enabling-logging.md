@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b0aafe75-19c9-47dc-bbba-cf4287399c6e
-
+ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Como: habilitar o log de desempenho e de erro
 O Microsoft Rights Management SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
 
@@ -85,7 +83,7 @@ Habilitar registro em log automático
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Para obter mais informações sobre as configurações opcionais, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptionss).
+Para obter mais informações sobre as configurações opcionais, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
 
 Obter a configuração do sinalizador de controle de log atual
 
@@ -101,6 +99,6 @@ Obter a configuração do sinalizador de controle de log atual
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
