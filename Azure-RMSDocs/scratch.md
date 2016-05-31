@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cabeçalho de primeiro nível
 
-Consulte o markdown desse arquivo [no Github](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md); consulte a referência de markdown no [guia de estilo do Piloto EM](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931). 
+Consulte o markdown desse arquivo [no Github](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md); consulte a referência de markdown no [Guia de estilo do Piloto EM](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931). 
 
 ## cabeçalho de segundo nível
 ### Cabeçalho de terceiro nível
@@ -93,10 +93,10 @@ Isso é algo real?
 
 ## Tabela
 
-| Tabelas        | são           | legais  |
+| Tabelas        | São           | Legais  |
 | ------------- |:-------------:| -----:|
-| a col. 3 é      | alinhada à direita | $ 1.600 |
-| a col. 2 é      | centralizada      |   $ 12 |
+| a col. 3 está      | alinhada à direita | R$ 1600 |
+| a col. 2 está      | centralizada      |   $ 12 |
 | faixas pretas e brancas | são perfeitas      |    $ 1 |
 
 ## Você encabeça uma linha de cabeçalho?
@@ -108,7 +108,7 @@ Isso é algo real?
 
 ## Código
 
-### CodeBlock
+### Codeblock
 
     function fancyAlert(arg) {
       if(arg) {
@@ -116,18 +116,18 @@ Isso é algo real?
       }
     }
 
-### Código in-line
+### Código em linha
 
 Este é um exemplo de `in-line code`.
 
 ## Blockquote
 
-> A seca tinha durado agora por dez milhões de anos, e o reino dos terríveis lagartos havia terminado muito antes disso. Aqui no Equador, no continente que um dia seria conhecido como África, a batalha pela sobrevivência atingiu um novo clímax de ferocidade, e o vencedor ainda não era conhecido. Nesta terra estéril e desértica, apenas os pequenos, velozes ou selvagens poderiam prosperar, ou mesmo ter esperança de sobreviver.
+> A seca tinha durado agora por dez milhões de anos, e o reino dos terríveis lagartos havia terminado muito antes disso. Aqui no Equador, no continente que um dia seria conhecido como África, a batalha pela sobrevivência atingiu um novo clímax de ferocidade, e o vencedor ainda não era conhecido. Nesta terra estéril e desértica, apenas os pequenos, os velozes ou os selvagens poderiam prosperar, ou mesmo ter esperança de sobreviver.
 
 ## Imagens
 
 ### Imagem Estática
-![este é o texto Alt](./media/AzRMS_elements.png)
+![este é o texto alternativo](./media/AzRMS_elements.png)
 
 ### Imagem Vinculada
 
@@ -165,6 +165,18 @@ Este é um exemplo de `in-line code`.
 [links de botão](/azure-rms/index.html)
 
 ### Seletor
+
+Intro text: [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+Intro text: > [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+
+
+
 > [!div class="op_single_selector"]
 - [foo](./develop/developers-guide.md)
 - [bar](./develop/developer-notes.md)
@@ -172,13 +184,13 @@ Este é um exemplo de `in-line code`.
 # Passo a passo
 
 >[!div class="step-by-step"]
-[Voltar](https://www.example.com)
+[Anterior](https://www.example.com)
 [Avançar](https://www.example.com)
 
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
