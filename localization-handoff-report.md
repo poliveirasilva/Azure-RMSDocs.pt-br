@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e84de6afd80196d4237499718af45c64788c408d/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md) | OutofSyncHandedBackSuccess | [Details](#2863c98390b8fda528c4fe3a1b2ebce3510763b4386)
 
 ## Item Details
-##### <a name='2863c98390b8fda528c4fe3a1b2ebce3510763b4386'></a> Source: [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e84de6afd80196d4237499718af45c64788c408d/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/8df68fd67a50de29f7a47d5e4d6d174e76cf1078/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.pt-br.xlf)
-* Handoff Datetime: 2016-06-02 19:17:49
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md)
-* Current Handback File: [azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.pt-br.xlf)
-* Current Handback Datetime: 2016-05-30 22:14:59
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
