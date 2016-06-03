@@ -1,11 +1,45 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f517c66dde0f686e3a74d7abc76a7c4f5d2252f8/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md) | OutofSyncHandedBackSuccess | [Details](#00db0afb2e5d872162f7ac4e361f517623530ae231)
+ [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562/Azure-RMSDocs/understand-explore/how-does-it-work.md) | OutofSyncHandedBackSuccess | [Details](#505f2c94bb4fd056b4d2f51c147c6b0b84efac00389)
 
 ## Item Details
+##### <a name='00db0afb2e5d872162f7ac4e361f517623530ae231'></a> Source: [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f517c66dde0f686e3a74d7abc76a7c4f5d2252f8/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/daea36145e0ace5a71d29a36e81174a3c71be83b/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf)
+* Handoff Datetime: 2016-06-03 17:20:38
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md)
+* Current Handback File: [operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf)
+* Current Handback Datetime: 2016-05-30 22:14:59
+* [Back to Top](#report-top)
+
+##### <a name='505f2c94bb4fd056b4d2f51c147c6b0b84efac00389'></a> Source: [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562/Azure-RMSDocs/understand-explore/how-does-it-work.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/daea36145e0ace5a71d29a36e81174a3c71be83b/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.pt-br.xlf)
+* Handoff Datetime: 2016-06-03 17:20:38
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/understand-explore/how-does-it-work.md)
+* Current Handback File: [how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/how-does-it-work.e10d4871d616835b44d201ec5b1212a575d0f425.pt-br.xlf)
+* Current Handback Datetime: 2016-05-30 22:14:59
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
