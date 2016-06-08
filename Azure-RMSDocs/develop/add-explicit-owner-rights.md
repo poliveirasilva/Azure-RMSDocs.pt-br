@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Adicionar direitos de proprietário explícitos
 
 Seu aplicativo deve adicionar explicitamente direitos de "Proprietário" ao criar uma licença desde o início ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
@@ -32,7 +32,7 @@ Seu aplicativo deve adicionar explicitamente direitos de "Proprietário" ao cria
 
 Quando seu aplicativo estiver criando um identificador de licença usando [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), ele também deverá conceder o proprietário todos os direitos (permissões) explicitamente.
 
-**Observação** configurar um usuário como "proprietário" usando [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com o **IPC\_LI\_OWNER** propriedade não conceda ao proprietário permissões completas.
+**Observação** Configurar um usuário como "proprietário" usando [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com a propriedade **IPC\_LI\_OWNER** não concede ao proprietário permissões completas.
 
  
 ## Cenário - atribuição de direitos a uma licença
@@ -117,6 +117,6 @@ Estes dois direitos são adicionados a esses usuários:
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Como usar
 
 Os tópicos a seguir fornecem orientações durante as principais tarefas de utilização do Rights Management Services SDK 2.1 para implementar a proteção de informações do seu aplicativo.
@@ -45,6 +45,6 @@ Os tópicos a seguir fornecem orientações durante as principais tarefas de uti
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

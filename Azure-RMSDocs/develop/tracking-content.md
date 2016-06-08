@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Acompanhando o conteúdo
 
 Este tópico aborda as diretrizes básicas para implementar o acompanhamento de conteúdo protegido com o Rights Management Services SDK 2.1.
@@ -134,6 +134,6 @@ Aqui está um trecho de código que mostra um exemplo de configuração de metad
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

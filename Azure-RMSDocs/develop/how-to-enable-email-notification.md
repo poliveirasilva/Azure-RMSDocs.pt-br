@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Habilitar a notificação por email
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# Habilitando a notificação por email
 
 A notificação por email permite que um proprietário de conteúdo protegido seja notificado quando seu conteúdo for acessado.
 
@@ -71,6 +71,6 @@ A tabela a seguir contém os campos de dados do aplicativo, pares de nome e valo
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

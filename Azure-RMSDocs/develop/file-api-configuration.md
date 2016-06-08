@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Configuração da API do arquivo
 
 
@@ -75,7 +75,7 @@ Defina o valor *Criptografia* na chave para especificar o comportamento de prote
 - *Pfile*: a criptografia Pfile é usada. O arquivo criptografado terá pfile acrescentado à extensão do original. Por exemplo, após a criptografia, um arquivo. txt, terá uma extensão. txt.pfile.
 
 
-> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` é definido como & quot;Pfile", os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
+> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
 
 A configuração de qualquer outro valor ou a ausência valor resulta no comportamento padrão.
 
@@ -89,7 +89,7 @@ Se a criptografia é tentada em um tipo de arquivo que está bloqueado, ocorre u
 
 ### API de arquivo – detalhes do suporte a arquivo
 
-Suporte nativo pode ser adicionado a qualquer tipo de arquivo (extensão). Por exemplo, uma extensão & lt;ext&gt; (non-office), \*.p & lt;ext&gt; será usada se a configuração de administração para essa extensão for "NATIVA".
+Suporte nativo pode ser adicionado a qualquer tipo de arquivo (extensão). Por exemplo, qualquer extensão &lt;ext&gt; (não office e pdf), \*.p&lt;ext&gt; será usada se a configuração de administração para essa extensão for "NATIVA".
 
 **Arquivos do Office**
 
@@ -161,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Como este SDK é melhor
 Este tópico descreve como o Rights Management Services SDK 2.1 é uma melhoria significativa em relação a [SDK original do Active Directory Rights Management Services](https://msdn.microsoft.com/library/Cc530379) em termos de esforço de desenvolvimento necessário para criar um aplicativo habilitado para direitos.
 
@@ -51,6 +51,6 @@ O AD RMS SDK, que aproveita a funcionalidade exposta pelo cliente em Msdrm.dll, 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

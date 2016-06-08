@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Configuração do cliente
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# Configurar o cliente
 
 Este tópico contém instruções sobre como configurar o Active Directory Rights Management Services Client 2.1.
 
@@ -53,9 +53,9 @@ Instruções
 
 As etapas a seguir descrevem como instalar o tempo de execução do desenvolvedor, configurar o cliente a fim de usar a hierarquia de certificados do ISV (pré-produção) e configurar a descoberta de serviços no cliente.
 
-1.  Copie o tempo de execução do desenvolvedor, Ipcsecproc\_isv.dll, from %MSIPCSDKDIR%\\bin\\x86 (para versões de 32 bits do Windows) ou %MSIPCSDKDIR\\bin\\x64 (para versões de 64 bits do Windows), em C:\\Arquivos de Programas\\Active Directory Rights Management Services Client 2.1.
+1.  Copie o tempo de execução do desenvolvedor, Ipcsecproc\_isv.dll, de %MSIPCSDKDIR%\\bin\\x86 (para versões de 32 bits do Windows) ou %MSIPCSDKDIR\\bin\\x64 (para versões de 64 bits do Windows), para C:\\Program Files\\Active Directory Rights Management Services Client 2.1.
 
-    **Importante** Se você estiver executando um aplicativo de 32 bits em uma versão de 64 bits do Windows, copie Ipcsecproc\_isv.dll from %MSIPCSDKDIR%\\bin\\x86 para C:\\Arquivos de Programas(x86)\\Active Directory Rights Management Services Client 2.1.
+    **Importante** Se você estiver executando um aplicativo de 32 bits em uma versão de 64 bits do Windows, copie Ipcsecproc\_isv.dll de %MSIPCSDKDIR%\\bin\\x86 para C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1.
 
      
 
@@ -129,6 +129,6 @@ As diretrizes neste tópico não são abrangentes. Para saber mais sobre como co
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,14 +23,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# IPCHelloWorld - um exemplo de aplicativo
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# IPCHelloWorld - um aplicativo de exemplo
 
 Este tópico contém instruções para criar um aplicativo de exemplo habilitado para direitos.
 
 Este aplicativo simples, IPCHelloWorld, ajudará você a entender os conceitos básicos e o código de um aplicativo habilitado para direitos.
 
-Baixe o exemplo de aplicativo, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), do Microsoft Connect. Os itens restantes para download no site estão integrados aqui para sua conveniência.
+Baixe o aplicativo de exemplo, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), do Microsoft Connect. Os itens restantes para download no site estão integrados aqui para sua conveniência.
 
 **Observação** O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
@@ -222,6 +222,6 @@ Antes de terminar, você também precisa liberar todos os recursos alocados.
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

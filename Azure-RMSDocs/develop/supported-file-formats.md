@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Formatos de arquivo com suporte
 
 A API do arquivo dá suporte aos formatos nativo e Pfile.
@@ -49,6 +49,6 @@ Os administradores podem definir chaves do Registro para configurar se e como os
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Instalar o SDK
 
 Este tópico o orientará durante a instalação das ferramentas de desenvolvedor.
@@ -39,7 +39,7 @@ Este tópico o orientará durante a instalação das ferramentas de desenvolvedo
 
     O arquivo Setup\_sdk.exe instalará o RMS SDK 2.1 e o Active Directory Rights Management Services Client 2.1.
 
-Para obter mais informações sobre os arquivos instalados em seu sistema por "setup\_sdk.exe", consulte [Arquivos do ambiente de desenvolvimento](sdk-elements.md)
+Para obter mais informações sobre os arquivos instalados em seu sistema por "setup\_sdk.exe", consulte [Development environment files](sdk-elements.md) (Arquivos do ambiente de desenvolvimento)
 
 ## Tópicos relacionados
 
@@ -53,6 +53,6 @@ Para obter mais informações sobre os arquivos instalados em seu sistema por "s
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

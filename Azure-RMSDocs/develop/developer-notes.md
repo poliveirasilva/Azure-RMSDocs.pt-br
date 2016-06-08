@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Notas do desenvolvedor
 
 Esta seção aborda as diretrizes específicas para vários cenários de desenvolvimento importantes. Os cenários nesta seção são específicos para esta versão do Rights Management Services SDK 2.1 e podem ser alterados em versões subsequentes.
@@ -48,6 +48,6 @@ Esta seção aborda as diretrizes específicas para vários cenários de desenvo
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

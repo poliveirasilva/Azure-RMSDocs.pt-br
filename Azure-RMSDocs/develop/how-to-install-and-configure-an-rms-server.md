@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Instalação e configuração do servidor
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# Instalar e configurar o servidor
 
 Este tópico aborda as etapas de instalação e configuração do servidor RMS para testar seu aplicativo habilitado para direitos.
 
@@ -49,21 +49,21 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 
     **Observação** Se você estiver usando o Windows Server 2008 R2 ou o Windows Server 2008, defina os valores do Registro antes de instalar o serviço AD RMS.
 
-    Se você estiver usando o AD RMS no Windows Server 2008 R2, será necessário definir o seguinte valor **REG\_DWORD**. Altere esse valor para 0 (zero) a fim de alternar para a hierarquia de produção.
+    Se você estiver usando o AD RMS no Windows Server 2008 R2, será necessário definir o valor **REG\_DWORD** a seguir. Altere esse valor para 0 (zero) a fim de alternar para a hierarquia de produção.
 
-    **Computador**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**Hierarchy** = 0x00000001
+    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**Hierarchy** = 0x00000001
 
     Se você estiver usando o AD RMS no Windows Server 2008 R2 e outro serviço AD RMS já estiver implantado no Active Directory como um serviço de pré-produção, adicione o seguinte valor de cadeia de caracteres vazia ao Registro.
 
-    **Computador**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**GICURL** = ""
+    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**GICURL** = ""
 
-    Se você estiver usando o AD RMS no Windows Server 2008, será necessário definir o seguinte valor **REG\_DWORD**. Altere esse valor para 0 (zero) a fim de alternar para a hierarquia de produção.
+    Se você estiver usando o AD RMS no Windows Server 2008, será necessário definir o valor **REG\_DWORD** a seguir. Altere esse valor para 0 (zero) a fim de alternar para a hierarquia de produção.
 
-    **Computador**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**Hierarchy** = 0x00000001
+    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**Hierarchy** = 0x00000001
 
     Se você estiver usando o AD RMS no Windows Server 2008 e outro serviço AD RMS já estiver implantado no Active Directory como um serviço de pré-produção, adicione o seguinte valor de cadeia de caracteres vazia ao Registro.
 
-    **Computador**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**GICURL** = ""
+    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**GICURL** = ""
 
 2.  **Instalação do servidor**
 
@@ -85,7 +85,7 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 
         A partir do Windows Server 2008, você pode registrar um servidor RMS na hierarquia apropriada sem enviar informações à Microsoft. Quando você instala a função RMS, um certificado de autorregistro e uma chave privada também são instalados. Eles são usados para criar automaticamente o certificado de licenciante para servidor. Nenhuma informação é trocada com a Microsoft.
 
-    -   **Registro online**Se você estiver usando o AD RMS v 1.0 SP2, poderá registrar o servidor online. O registro ocorre em segundo plano durante o processo de provisionamento, mas você deve ter uma conexão com a Internet e especificar o valor apropriado do Registro para identificar em qual hierarquia você está registrando o servidor. Para registrar-se na Hierarquia de pré-produção, adicione o seguinte valor **REG\_SZ** e provisione o servidor. Para registrar-se na Hierarquia de produção, limpe esse valor e provisione o servidor.
+    -   **Registro online**Se você estiver usando o AD RMS v 1.0 SP2, poderá registrar o servidor online. O registro ocorre em segundo plano durante o processo de provisionamento, mas você deve ter uma conexão com a Internet e especificar o valor apropriado do Registro para identificar em qual hierarquia você está registrando o servidor. Para registrar-se na Hierarquia de pré-produção, adicione o valor **REG\_SZ** a seguir e provisione o servidor. Para registrar-se na Hierarquia de produção, limpe esse valor e provisione o servidor.
 
         Para saber mais, consulte a etapa anterior, Etapa 1, "Configuração do Registro".
 
@@ -102,6 +102,6 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

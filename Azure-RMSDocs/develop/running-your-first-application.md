@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Testar seu aplicativo habilitado para direitos
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# Testando seu aplicativo habilitado para direitos
 
 Este tópico descreve as etapas que precisam ser concluídas para testar seu aplicativo habilitado para direitos do Rights Management Services SDK 2.1.
 
@@ -77,17 +77,17 @@ Para gerar o manifesto do aplicativo usando a cadeia de certificados de pré-pro
 
     %MSIPCSdkDir%\\bin\\Isvtier5appsignsdk\_client.xml
 
-    %MSIPCSdkDir%\\bin\\NomeDoSeuAplic.isv.mcf
+    %MSIPCSdkDir%\\bin\\YourAppName.isv.mcf
 
 2.  Na pasta de seu aplicativo, renomeie o arquivo de configuração do manifesto, NomeDoSeuAplic.isv.mcf, com o nome de seu aplicativo com a extensão de nome de arquivo .mcf anexada. Por exemplo se o seu aplicativo chamar MeuAplic.exe, renomeie NomeDoSeuAplic.isv.mcf para MeuAplic.exe.mcf.
 
-3.  Use um editor de texto para adicionar o aplicativo ao arquivo de configuração do manifesto. Para fazer isso, substitua o texto de espaço reservado &lt;NomeDoSeuAplicativo&gt;.exe na lista de módulos em seu arquivo .mcf pelo nome de seu aplicativo; por exemplo, MeuAplic.exe.
+3.  Use um editor de texto para adicionar o aplicativo ao arquivo de configuração do manifesto. Para fazer isso, substitua o texto de espaço reservado &lt;YourAppName&gt;.exe na lista de módulos em seu arquivo .mcf pelo nome de seu aplicativo; por exemplo, MyApp.exe.
 
     O processo de assinatura gerará um erro se o arquivo .mcf for usado sem modificação.
 
 4.  Execute Genmanifest.exe para gerar o manifesto do aplicativo. Isso também é conhecido como assinar seu aplicativo. A saída dessa operação deve ser um arquivo .man. Por exemplo, se o seu aplicativo chamar MeuAplic.exe e seu arquivo de configuração de manifesto chamar MeuAplic.exe.mcf, execute o seguinte comando:
 
-    **genmanifest.exe -chain isvtier5appsignsdk\_client.xml MeuAplic.exe.mcf MeuAplic.exe.man**
+    **genmanifest.exe -chain isvtier5appsignsdk\_client.xml MyApp.exe.mcf MyApp.exe.man**
 
 ### Etapa 3: Executar seu aplicativo
 
@@ -123,6 +123,6 @@ Você pode executar o aplicativo de qualquer diretório, mas o manifesto do apli
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

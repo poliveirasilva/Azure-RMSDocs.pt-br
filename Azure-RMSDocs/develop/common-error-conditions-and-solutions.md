@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Condições de erro comuns e soluções
 Esse tópico inclui as mensagens de erro mais comuns que você pode encontrar ao usar as ferramentas de desenvolvedor do Rights Management Services SDK 2.1. Ele também fornece uma ação recomendada para corrigir o erro, quando aplicável.
 
@@ -45,21 +45,21 @@ Algumas funções do RMS SDK 2.1 são projetadas para falhar em um depurador:
 - [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 
 Para depurar o código que segue essas chamadas de função, você deve interromper o processo e anexar um depurador após a conclusão das chamadas de função. Uma maneira de fazer isso é usar uma instrução assert para invadir o depurador. A macro ASSERTE está incluída no cabeçalho *Crtdbg.h*.
-Para obter mais informações sobre \_ASSERTE, consulte [\_ASSERT, \_ASSERTE Macros](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+Para obter mais informações sobre \_ASSERTE, consulte [\_ASSERT, \_Macros ASSERTE](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
 
-**ERROR** - *IPCERROR_BROKEN_CERT_CHAIN* - cadeia de certificados não coincide.
+**ERROR** - *IPCERROR_BROKEN_CERT_CHAIN* - A cadeia de certificados não coincide.
 
 **AÇÃO** - verifique se a chave de hierarquia contém o valor correto com base na chave usada para assinar o manifesto do aplicativo do AD RMS.
 Essas são as chaves de assinatura e seus valores associados (hierarquia **DWORD**):
 - ISV—1
 - Production—0 ou não está presente
 
-**ERROR** - *IPCERROR_MACHINE_CERT_NOT_TRUSTED* - você está usando um aplicativo assinado com a chave de assinatura de ISV, mas ele está tentando se comunicar com um servidor de produção AD RMS, ou vice-versa.
+**ERROR** - *IPCERROR_MACHINE_CERT_NOT_TRUSTED* - Você está usando um aplicativo assinado com a chave de assinatura de ISV, mas ele está tentando se comunicar com um servidor de produção AD RMS, ou vice-versa.
 
 - Se você estiver usando a versão de desenvolvedor do servidor AD RMS, certifique-se de que você está usando a chave de assinatura do ISV para assinar seu aplicativo.
 - Se você estiver usando a versão de produção do servidor AD RMS, certifique-se de que você está usando a chave de assinatura de produção para assinar seu aplicativo.
 
-**ERROR** - *IPCERROR_APPLICATION_AUTH_ERROR_MANIFEST* - o manifesto do aplicativo não é válido. Isso pode ser causado quando o binário (aplicativo) foi recriado e o manifesto não foi regenerado.
+**ERROR** - *IPCERROR_APPLICATION_AUTH_ERROR_MANIFEST* - O manifesto do aplicativo não é válido. Isso pode ser causado quando o binário (aplicativo) foi recriado e o manifesto não foi regenerado.
 
 **AÇÃO** - certifique-se de regenerar seu manifesto do aplicativo sempre que recriar seu aplicativo.
 
@@ -68,12 +68,12 @@ Essas são as chaves de assinatura e seus valores associados (hierarquia **DWORD
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [\_ASSERT, \_ASSERTE macros](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+* [\_ASSERT, Macros \_ASSERTE](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

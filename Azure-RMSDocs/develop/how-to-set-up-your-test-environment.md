@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Configurar o ambiente de teste
 
 O aplicativo habilitado para direitos pode ser testado com diferentes opções de servidor.
@@ -65,6 +65,6 @@ Há duas opções disponíveis para testar seu aplicativo em um servidor RMS:
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

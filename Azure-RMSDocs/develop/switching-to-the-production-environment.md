@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Alternando para o ambiente de produção
 
 Esta seção guiará você durante o processo de liberação de seu aplicativo testado para um ambiente de produção.
@@ -60,6 +60,6 @@ Os tópicos a seguir vão orientá-lo pelo processo.
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

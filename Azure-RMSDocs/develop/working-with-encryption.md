@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
 # Trabalhando com criptografia
 
 Este tópico orienta você sobre nossos pacotes de criptografia e mostra alguns trechos de código para o uso desses pacotes.
@@ -44,7 +44,7 @@ Da [atualização de março de 2015](release-notes-rtm.md) em diante, nós incor
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (também conhecidos como algoritmos preteridos)
 
-Os sinalizadores de pacote de criptografia, consulte [**Criptografia preferencial**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption), podem ser usados em conjunto com nosso novo sinalizador de Propriedade de Licença **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Os sinalizadores de pacote de criptografia, consulte [**Preferred encryption**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption) (Criptografia preferencial), podem ser usados em conjunto com nosso novo sinalizador de Propriedade de Licença **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
 A seguir estão alguns trechos de código simples que demonstram como usar a nova propriedade de licença.
 
@@ -106,6 +106,6 @@ Este exemplo também mostra a nova maneira de dar suporte a *algoritmos preterid
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

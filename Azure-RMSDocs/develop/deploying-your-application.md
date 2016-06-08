@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-# Implantação de seu aplicativo
+** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# Implantando seu aplicativo
 
 
 Este tópico descreve opções de implantação para seu aplicativo habilitado para direitos e orienta você sobre elas.
@@ -44,8 +44,7 @@ O AD RMS Client 2.1 é um software projetado para seus computadores cliente para
 
 O AD RMS Client 2.1 não é um componente do sistema operacional Windows. O AD RMS Client 2.1 é enviado com um download opcional que pode ser, com a confirmação e aceitação do seu contrato de licença, distribuído gratuitamente com o software de terceiros para permitir ao cliente acessar o conteúdo que tenha sido protegidos por direitos pelo uso e a implantação de servidores RMS em seu ambiente.
 
-> [!IMPORTANT]
-> O AD RMS Client 2.1 é específico à arquitetura e deve corresponder à arquitetura de seu sistema operacional de destino.
+> [!IMPORTANT] O AD RMS Client 2.1 é específico à arquitetura e deve corresponder à arquitetura de seu sistema operacional de destino.
 
 
 ## Opções de instalação do AD RMS Client 2.1
@@ -103,6 +102,6 @@ Para saber mais sobre como permitir que seu aplicativo use o RMS para o Azure Ri
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
