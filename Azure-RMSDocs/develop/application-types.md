@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+
 # Tipos de aplicativo
 
 
@@ -36,7 +36,6 @@ Os seguintes tipos de aplicativo têm suporte no momento no Rights Management Se
 Um aplicativo simples pode ser uma ferramenta de linha de comando criada para criptografar um arquivo fornecido. Para obter um exemplo de um aplicativo simples habilitado para direitos, consulte [IPCHelloWorld - um de aplicativo de exemplo](how-to-build-your-first-application.md).
 
 ### Aplicativos de modo de servidor
-
 
 *Modo de servidor* é destinado para aplicativos não interativos que consomem, protegem ou processam o conteúdo protegido por RMS. Um exemplo seria um aplicativo de *Prevenção de Perda de Dados* executado como um serviço em um servidor de arquivos e que protege automaticamente documentos confidenciais. Consulte o [exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) para obter um exemplo desse tipo de aplicativo.
 
@@ -60,19 +59,12 @@ Para obter mais informações sobre como proteger seu aplicativo, consulte [Noç
 
 ## Tópicos relacionados
 
-* [Conceitos de desenvolvedor](ad-rms-concepts-nav.md)
 * [Exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
 * [Configurando o modo de segurança de API](setting-the-api-security-mode-api-mode.md)
 * [Noções básicas sobre restrições de uso](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
