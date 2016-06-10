@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\scenario-work-folders.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-work-folders.md) | InSyncHandedBackSuccess | [Details](#35ad445e229eac3feeca5522a41b9e3b25fd1180118)
 
 ## Item Details
-##### <a name='35ad445e229eac3feeca5522a41b9e3b25fd1180118'></a> Source: [Azure-RMSDocs\get-started\scenario-work-folders.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-work-folders.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\get-started\scenario-work-folders.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/907c2ea3edb262dbcd031b908d360255878d8392/Azure-RMSDocs/get-started/scenario-work-folders.md)
-* Handoff File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f26906298fc6d06477516f95b370caa6d1413cd0/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
-* Handoff Datetime: 2016-05-20 21:13:33
-* Handoff Reason: Include
-* Archive File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/37a7752641bba17706e533525f42f760434a0a49/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
-* Archive Datetime: 2016-05-21 18:45:39
-* Handback File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3ac0fcf7628ac82a99e0707d4bd99fc6ba7c7add/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
-* Handback Datetime: 2016-06-10 20:54:22
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
