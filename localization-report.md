@@ -791,9 +791,9 @@
 * Archive Datetime: 2016-06-16 13:11:11
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/deploy-use/help-users.md)
-* Current Handback File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf)
-* Current Handback Datetime: 2016-05-30 22:14:59
+* Current Target File: [Azure-RMSDocs\deploy-use\help-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/a46f754184dbe2b5bc116aa5318436d56db6d5f6/Azure-RMSDocs/deploy-use/help-users.md)
+* Current Handback File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d799b040db72a5a234ecb522868e8f38c1e345ee/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf)
+* Current Handback Datetime: 2016-06-16 19:16:21
 * Bilingual File: [help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/help-users.ef625c9825183cbee7c061bcc4e8aa415965344e.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 10:21:04
 * [Back to Top](#report-top)
@@ -888,9 +888,9 @@
 * Archive Datetime: 2016-06-16 13:11:11
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md)
-* Current Handback File: [operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf)
-* Current Handback Datetime: 2016-05-30 22:14:59
+* Current Target File: [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/a46f754184dbe2b5bc116aa5318436d56db6d5f6/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md)
+* Current Handback File: [operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d799b040db72a5a234ecb522868e8f38c1e345ee/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf)
+* Current Handback Datetime: 2016-06-16 19:16:21
 * Bilingual File: [operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/operations-microsoft-managed-tenant-key.1128a69c06be9836b7e8e311b5dea4f8647d0797.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 10:21:04
 * [Back to Top](#report-top)
@@ -1700,9 +1700,9 @@
 * Archive Datetime: 2016-06-16 13:11:11
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/8d776171959b4c18163f4627dc1a5f1e2cb64698/Azure-RMSDocs/develop/release-notes-rtm.md)
-* Current Handback File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/ab9e54f7fcb614e917880df284f8706a3fa576ce/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf)
-* Current Handback Datetime: 2016-06-08 05:09:18
+* Current Target File: [Azure-RMSDocs\develop\release-notes-rtm.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/a46f754184dbe2b5bc116aa5318436d56db6d5f6/Azure-RMSDocs/develop/release-notes-rtm.md)
+* Current Handback File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d799b040db72a5a234ecb522868e8f38c1e345ee/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf)
+* Current Handback Datetime: 2016-06-16 19:16:21
 * Bilingual File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/ab9e54f7fcb614e917880df284f8706a3fa576ce/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 10:21:04
 * [Back to Top](#report-top)
