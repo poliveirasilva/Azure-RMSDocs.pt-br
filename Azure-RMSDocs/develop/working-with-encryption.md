@@ -1,30 +1,19 @@
 ---
-# required metadata
+# metadados necessários
 
-title: Trabalhando com criptografia | Azure RMS
-description: orienta você para nossos pacotes de criptografia
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optional metadata
+título: Como trabalhar com configurações de criptografia | Azure RMS descrição: Este artigo orienta você quanto ao uso de nossos pacotes de criptografia palavras-chave: autor: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# metadados opcionais
 
 #ROBOTS:
-audience: developer
+público: desenvolvedor
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
-# Trabalhando com criptografia
+
+# Como trabalhar com configurações de criptografia
 
 Este tópico orienta você sobre nossos pacotes de criptografia e mostra alguns trechos de código para o uso desses pacotes.
 
@@ -58,54 +47,54 @@ Ainda é possível obter o benefício do sinalizador de algoritmos de criptograf
 
 Nenhuma alteração no código necessária, *AES 256* CBC4K é o padrão.
 
-    
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    C++
+
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
+
 
 ## Proteger arquivos com AES-128 CBC4K
 
-    
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    C++
+
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
-    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K; 
-    
-    hr = IpcSetLicenseProperty(pLicenseHandle, 
+
+    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K;
+
+    hr = IpcSetLicenseProperty(pLicenseHandle,
                            false,
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
-    
+
 
 ## Proteger arquivos com o AES-128 ECB (algoritmos preteridos)
 
 Este exemplo também mostra a nova maneira de dar suporte a *algoritmos preteridos*.
 
+    C++
     
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
-                                    0, 
-                                    NULL, 
+    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                    0,
+                                    NULL,
                                     &amp;pLicenseHandle);
-    
+
     DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_ECB;
-    
-    hr = IpcSetLicenseProperty(pLicenseHandle, 
+
+    hr = IpcSetLicenseProperty(pLicenseHandle,
                            false,
-                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE, 
+                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
-    
- 
 
  
 
+ 
 
 
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

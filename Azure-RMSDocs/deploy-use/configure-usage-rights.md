@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/19/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Permite que usuário modifique, reorganize, formate ou filtre o conteúdo dentro
 
 **Codificação na política**: DOCEDIT
 
-**Implementação nos direitos personalizados do Office**: como parte das opções *Alterar* e *Controle Total*.**
+**Implementação nos direitos personalizados do Office**: como parte das opções *Alterar* e *Controle Total*.
 
 **Nome no portal clássico do Azure**: *Editar Conteúdo*
 
@@ -267,11 +267,32 @@ Os direitos que estão incluídos com os modelos padrão são as seguintes:
 |&lt;*nome da organização*&gt;*- Somente exibição confidencial*|Modo de exibição, Abrir, Ler|
 |&lt;*nome da organização*&gt; *- Confidencial*|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Exibir Direitos Atribuídos; Permitir Macros; Encaminhar; Responder; Responder a Todos|
 
+## Opções Não Encaminhar para emails
+
+Os clientes e serviços do Exchange (por exemplo, o cliente do Outlook, o aplicativo Outlook Web Access e as regras de transporte do Exchange) têm sua própria opção de proteção de direitos de informações para emails: **Não Encaminhar**. 
+
+Embora essa opção apareça para os usuários (e os administradores do Exchange) como se fosse um modelo padrão do Rights Management que eles podem selecionar, **Não Encaminhar** não é um modelo. Isso explica por que você não a vê no portal clássico do Azure quando você exibe e gerencia modelos do Azure RMS. Em vez disso, a opção **Não Encaminhar** é um conjunto de direitos que é aplicado dinamicamente por usuários para seus destinatários de email.
+
+Quando a opção **Não Encaminhar** é aplicada a um email, os destinatários não podem encaminhá-lo, imprimi-lo, copiá-lo, salvar anexos ou salvá-lo com um nome diferente. Por exemplo, no cliente do Outlook, o botão Encaminhar não fica disponível, as opções de menu **Salvar Como**, **Salvar Anexo** e **Imprimir** não estão disponíveis e você não pode adicionar ou alterar destinatários nas caixas **Para**, **Ccc** ou **Cco**.
+
+Há uma distinção importante entre aplicar a opção **Não Encaminhar** e aplicar um modelo que não concede o direito de Encaminhar um email: a opção **Não Encaminhar** usa uma lista dinâmica de usuários autorizados baseada nos destinatários escolhidos pelo usuário do email original, enquanto os direitos no modelo têm uma lista estática de usuários autorizados que o administrador especificou anteriormente. Qual é a diferença? Vejamos um exemplo: 
+
+Uma usuária deseja enviar algumas informações por email para pessoas específicas do departamento de marketing, e essas informações não devem ser compartilhadas com mais ninguém. Ela deve proteger o email com um modelo que restringe os direitos (exibir, responder e salvar) para o departamento de marketing?  Ou deve escolher a opção **Não Encaminhar**? Ambas as opções fariam com que os destinatários não pudessem encaminhar o email. 
+
+- Se ela aplicasse o modelo, os destinatários ainda poderiam compartilhar as informações com outras pessoas no departamento de marketing. Por exemplo, um destinatário poderia usar o Explorer para arrastar e soltar o email para um local compartilhado ou uma unidade USB. Agora, qualquer pessoa do departamento de marketing (e o proprietário do email) com acesso a esse local poderia exibir as informações no email.
+ 
+- Se ela aplicasse a opção **Não Encaminhar**, os destinatários não poderiam compartilhar as informações com nenhuma outra pessoa no departamento de marketing movendo o email para outro local. Nesse cenário, somente os destinatários originais (e o proprietário de email) poderiam exibir as informações no email.
+
+> [!NOTE] Use **Não Encaminhar** quando for importante que somente os destinatários que o remetente escolher possam ver as informações no email. Use um modelo para emails para restringir direitos a um grupo de pessoas que o administrador especifica antecipadamente, independentemente dos destinatários escolhidos pelo remetente.
+
+
+
+
 ## Consulte também
 [Configurando modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

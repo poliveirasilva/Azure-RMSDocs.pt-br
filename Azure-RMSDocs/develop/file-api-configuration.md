@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+
 # Configuração da API do arquivo
 
 
@@ -40,46 +40,45 @@ Para saber mais sobre formatos de arquivo com suporte, confira **Detalhes de sup
 
 As seções a seguir descrevem as chaves e valores de chave que controlam a criptografia.
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*Tipo*: chave
+**Tipo**: chave
 
-*Descrição*: contém a configuração geral para a API de arquivo.
+**Descrição**: contém a configuração geral para a API do Arquivo.
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-*Tipo: chave
+**Tipo**: chave
 
-*Descrição: especifica informações de configuração para uma extensão de arquivo específica. Por exemplo, TXT, JPG e assim por diante.
+**Descrição**: especifica informações de configuração para uma extensão de arquivo específica. Por exemplo, TXT, JPG e assim por diante.
 
 - O caractere curinga ' *', é permitido. No entanto, uma configuração de uma extensão específica tem precedência sobre a configuração de um curinga. O caractere curinga não afeta as configurações dos arquivos do Microsoft Office. Estes devem ser desabilitados explicitamente por tipo de arquivo.
 - Para especificar os arquivos que não têm uma extensão, use '.'
 - Não especifique o caractere '.' ao especificar a chave para uma extensão de arquivo específica. Por exemplo, use `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` a fim de especificar configurações para arquivos .txt. (Não use `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`.)
 
-Defina o valor *Criptografia* na chave para especificar o comportamento de proteção. Se o valor *Criptografia* não for definido, o comportamento padrão para o tipo de arquivo será seguido.
+Defina o valor **Criptografia** na chave para especificar o comportamento de proteção. Se o valor **Criptografia** não for definido, o comportamento padrão para o tipo de arquivo será seguido.
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*Tipo: REG_SZ*
+**Tipo**: REG_SZ
 
-*Descrição: contém um dos três valores:
+**Descrição**: contém um dos três valores:
 
-- *Desativada*: a criptografia está desabilitada.
+- **Desativada**: a criptografia está desabilitada.
 
-> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de EXTRAÇÃO.
+> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de **EXTRAÇÃO**.
 
-- *Nativa*: a criptografia nativa é usada. No caso de arquivos do Office, o arquivo criptografado terá a mesma extensão do arquivo original. Por exemplo, um arquivo com a extensão de arquivo .docx será criptografado como um arquivo com uma extensão .docx. No caso de outros arquivos que podem ter a proteção nativa aplicada, o arquivo será criptografado como um arquivo com uma extensão do formato p**zzz**, em que **zzz** é a extensão de arquivo original. Por exemplo, arquivos. txt serão criptografados em um arquivo com a extensão. ptxt. Abaixo temos uma lista de extensões de arquivo que pode ter a proteção nativa aplicada.
+- **Nativa**: a criptografia nativa é usada. No caso de arquivos do Office, o arquivo criptografado terá a mesma extensão do arquivo original. Por exemplo, um arquivo com a extensão de arquivo .docx será criptografado como um arquivo com uma extensão .docx. No caso de outros arquivos que podem ter a proteção nativa aplicada, o arquivo será criptografado como um arquivo com uma extensão do formato p*zzz*, em que *zzz* é a extensão de arquivo original. Por exemplo, arquivos. txt serão criptografados em um arquivo com a extensão. ptxt. Abaixo temos uma lista de extensões de arquivo que pode ter a proteção nativa aplicada.
 
-- *Pfile*: a criptografia Pfile é usada. O arquivo criptografado terá pfile acrescentado à extensão do original. Por exemplo, após a criptografia, um arquivo. txt, terá uma extensão. txt.pfile.
+- **Pfile**: a criptografia Pfile é usada. O arquivo criptografado terá pfile acrescentado à extensão do original. Por exemplo, após a criptografia, um arquivo. txt, terá uma extensão. txt.pfile.
 
 
 > [AZURE.NOTE] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
 
 A configuração de qualquer outro valor ou a ausência valor resulta no comportamento padrão.
 
-## Comportamento padrão para formatos de arquivo diferentes**
+## Comportamento padrão para formatos de arquivo diferentes
 
 -   **Arquivos do Office** A criptografia nativa está habilitada.
 -   **Arquivos txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** A criptografia nativa está habilitada (xxx se torna pxxx)
@@ -106,7 +105,7 @@ Suporte nativo pode ser adicionado a qualquer tipo de arquivo (extensão). Por e
 
 **Todos os outros formatos de arquivo**
 
--   Tipo de proteção = Pfile: sample.*zzz* é criptografado e chamado sample.*zzz*. pfile, em que zzz é a extensão de arquivo original.
+-   Tipo de proteção = Pfile: sample.*zzz* é criptografado e chamado sample.*zzz*. pfile, em que *zzz* é a extensão de arquivo original.
 -   Desativada: desabilita a criptografia.
 
 ### Exemplos
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

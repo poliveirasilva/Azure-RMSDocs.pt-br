@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Depois da [ativação do Azure Rights Management](activate-service.md) (Azure RM
 
     -   Permissões específicas: Exibir Conteúdo, Salvar Arquivo, Editar Conteúdo, Exibir Direitos Atribuídos, Permitir Macros, Encaminhar, Responder e Responder a Todos
 
-Além disso, o [aplicativo RMS sharing](../rms-client/sharing-app-windows.md) permite que os usuários definam seu próprio conjunto de permissões. E, para o cliente Outlook e Outlook Web Access, os usuários podem selecionar a opção **Não Encaminhar** para mensagens de email.
+Além disso, o [aplicativo RMS sharing](../rms-client/sharing-app-windows.md) permite que os usuários definam seu próprio conjunto de permissões. E, para o cliente Outlook e o Outlook Web Access, os usuários podem selecionar a opção [Não Encaminhar](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
 
 Para muitas organizações, os modelos padrão podem ser suficientes. Porém, se você quiser criar seus próprios modelos personalizados de política de direitos, isso é possível. Os motivos para criar um modelo personalizado incluem o seguinte:
 
@@ -72,6 +72,6 @@ Use as informações a seguir para ajudar a configurar e usar modelos personaliz
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO1-->
 
 

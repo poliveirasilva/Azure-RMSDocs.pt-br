@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -70,9 +70,9 @@ O Azure RMS sempre usa uma conta do Active Directory do Azure e um endereço de
 O método de autenticação para essas contas pode variar, dependendo de como o administrador na outra organização configurou as contas do Active Directory do Azure. Por exemplo, seria possível usar senhas que foram criadas para essas contas, Multi-Factor Authentication (MFA), federação ou senhas que foram criadas nos serviços de domínio do Active Directory e, em seguida, sincronizadas com o Active Directory do Azure.
 
 ## Posso adicionar usuários de fora da minha empresa aos modelos personalizados?
-Sim.  Ao criar modelos personalizados, onde os usuários finais (e os administradores) possam selecionar aplicativos, a aplicação de proteção de informações usando políticas predefinidas que você especifica torna-se um processo rápido e fácil. Uma das configurações no modelo é a de quem está autorizado a acessar o conteúdo, e você pode especificar usuários e grupos da sua organização e usuários fora da sua organização.
+Sim. Ao criar modelos personalizados, onde os usuários finais (e os administradores) possam selecionar aplicativos, a aplicação de proteção de informações usando políticas predefinidas que você especifica torna-se um processo rápido e fácil. Uma das configurações no modelo é a de quem está autorizado a acessar o conteúdo, e você pode especificar usuários e grupos da sua organização e usuários fora da sua organização.
 
-Para especificar usuários de fora de sua organização, use o [módulo do Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md):
+Para especificar usuários fora da sua organização, adicione-os como contatos a um grupo que você seleciona no portal clássico do Azure ao configurar seus modelos. Ou use o [Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md):
 
 -   **Use um objeto de definição de direitos para criar ou atualizar um modelo**.    Especifique os endereços de email externos e seus direitos em um objeto de definição de direitos que você usará para criar ou atualizar um modelo. É possível especificar o objeto de definição de direitos usando o cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) para criar uma variável e, em seguida, fornecer essa variável ao parâmetro -RightsDefinition com o cmdlet [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) (para um novo modelo) ou o cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (se você estiver modificando um modelo existente). No entanto, se você está adicionando esses usuários a um modelo existente, precisará definir objetos de definição de direitos para os grupos existentes nos modelos e não apenas os usuários externos.
 
@@ -140,6 +140,11 @@ A prevenção de capturas de tela pode ajudar a evitar a divulgação acidental 
 
 Como esses exemplos demonstram, mesmo se todas as plataformas e todo o software derem suporte às APIs do Rights Management para bloquear as capturas de tela, a tecnologia sozinha nem sempre poderá impedir que os usuários compartilhem dados que não deveriam. O Rights Management pode ajudar a proteger seus dados importantes usando autorização e políticas de uso, mas esta solução de gestão de direitos de empresa deve ser usada com outros controles. Por exemplo, implementar a segurança física, monitorar cuidadosamente as pessoas com acesso autorizado aos dados de sua organização e investir na educação do usuário para que eles entendam quais dados não devem ser compartilhados.
 
+## Qual é a diferença entre um usuário proteger um email com Não Encaminhar e um modelo que não inclui o direito de Encaminhar?
+
+Apesar do nome e da aparência, **Não Encaminhar** não é o oposto do direito de Encaminhar e não é um modelo. Na verdade, trata-se de um conjunto de direitos que inclui restrições de copiar, imprimir e salvar anexos, além restrições de encaminhamento de emails. Os direitos são aplicados dinamicamente aos usuários por meio dos destinatários escolhidos, e não estaticamente atribuídos pelo administrador. Para obter mais informações, consulte a seção [Opção Não Encaminhar para emails](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) em [Configurando os direitos de uso do Azure Rights Management](../deploy-use/configure-usage-rights.md).
+
+
 ## Onde posso encontrar informações de suporte para o Azure RMS, tais como informações jurídicas, de conformidade e SLAs?
 O Azure RMS oferece suporte a outros serviços e também se baseia em outros serviços. Se você estiver procurando por informações relacionadas ao Azure RMS, mas não sobre como usar o serviço Azure RMS, verifique os seguintes recursos:
 
@@ -191,6 +196,6 @@ Essa página de Perguntas Frequentes será atualizada regularmente, com novas ad
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

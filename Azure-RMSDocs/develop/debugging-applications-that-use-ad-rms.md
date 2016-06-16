@@ -1,30 +1,20 @@
 ---
-# required metadata
+# metadados necessários
 
-title: Depurar um aplicativo habilitado para direitos | Azure RMS
-description: O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optional metadata
+título: Como depurar um aplicativo habilitado para direitos | Azure RMS descrição: O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
+palavras-chave: autor: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: artigo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# metadados opcionais
 
 #ROBOTS:
-audience: developer
+público: desenvolvedor
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
-# Depurar um aplicativo habilitado para direitos
+
+# Como depurar um aplicativo habilitado para direitos
 
 O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
 
@@ -33,6 +23,7 @@ O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do
 No Rights Management Services SDK 2.1, as verificações antidepuração na versão de desenvolvedor do nosso tempo de execução estão desabilitadas.
 
 Você pode ativar o rastreamento de depuração usando a chave do Registro a seguir. (Para desligar o rastreamento de depuração, altere o valor para 0.) Não é necessário mais nada para depuração nesta versão.
+
 
 ```
 HKEY_LOCAL_MACHINE
@@ -72,15 +63,11 @@ Por exemplo, o comando a seguir habilitará o log de eventos do MSIPC e definir�
 
 ## Tópicos relacionados
 
-* [Como usar](how-to-use-msipc.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

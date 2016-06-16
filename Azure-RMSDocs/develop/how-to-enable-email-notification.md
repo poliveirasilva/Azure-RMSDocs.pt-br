@@ -23,16 +23,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
-# Habilitando a notificação por email
+
+# Como habilitar a notificação por email
 
 A notificação por email permite que um proprietário de conteúdo protegido seja notificado quando seu conteúdo for acessado.
 
 Para configurar a notificação por email para uma licença determinada, use [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com o parâmetro de tipo de propriedade, *dwPropID*, como [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) e os campos de dados de aplicativo formatados como [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
 
-## C++
+    C++
 
-    ...
     int numDataPairs = 3;
 
     IPC_NAME_VALUE propertyValuePairs [numDataPairs];
@@ -46,7 +45,7 @@ Para configurar a notificação por email para uma licença determinada, use [**
     IPC_NAME_VALUE_LIST emailNotificationAppData = {numDataPairs, propertyValuePairs};
 
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
-    ...    
+        
 
 A tabela a seguir contém os campos de dados do aplicativo, pares de nome e valor da propriedade, para notificação por email do RMS.
 
@@ -71,6 +70,6 @@ A tabela a seguir contém os campos de dados do aplicativo, pares de nome e valo
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
