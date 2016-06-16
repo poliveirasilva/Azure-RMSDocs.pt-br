@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -54,7 +54,7 @@ Você pode exportar sua configuração do Azure RMS e a chave do locatário segu
 
 ### Etapa 1: Iniciar exportação
 
--   Para fazer isso, contate o Serviço de Atendimento ao Cliente da Microsoft (CSS). Você deve provar que é um administrador para seu locatário do Azure RMS.
+-   Para fazer isso, entre em contato com o CSS (Suporte de Atendimento ao Consumidor) da Microsoft para abrir um **Caso de suporte do Azure Rights Management com uma solicitação de exportação de chave do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam. Exportar sua chave de locatário não é um serviço de suporte gratuito.
 
 ### Etapa 2: Espere a verificação
 
@@ -86,7 +86,7 @@ Você pode exportar sua configuração do Azure RMS e a chave do locatário segu
 
 -   Após receber sua chave de locatário, guarde-a em local seguro, pois se alguém tiver acesso a ela será possível descriptografar todos os documentos protegidos usando essa chave.
 
-    Caso queira exportar sua chave de locatário porque não deseja mais usar o Azure RMS, a prática recomendada é desativar seu locatário do RMS. Não demore para fazer isso após receber sua chave de locatário, pois isso o ajudará a minimizar as consequências se sua chave for acessada por alguém que não deveria ter acesso a ela. Para instruções, consulte [Descomissionando e desativando o Azure Rights Management](decommission-deactivate.md).
+    Caso queira exportar sua chave de locatário porque não deseja mais usar o Azure RMS, a prática recomendada é desativar seu locatário do RMS. Não demore para fazer isso após receber sua chave de locatário, pois isso o ajudará a minimizar as consequências se sua chave for acessada por alguém que não deveria ter acesso a ela. Para instruções, consulte [Encerramento e desativação do Azure Rights Management](decommission-deactivate.md).
 
 ## Responder a uma violação
 Nenhum sistema de segurança, sem importar o forte que seja, está completo sem um processo de resposta de violação. Sua chave de locatário pode estar comprometida ou roubada. Ainda quando estiver bem protegido, as vulnerabilidades podem ser encontradas na tecnologia HSM da geração atual ou em comprimentos e algoritmos da chave atual.
@@ -104,6 +104,6 @@ Se você detectar uma violação, a melhor ação que você ou a Microsoft pode 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

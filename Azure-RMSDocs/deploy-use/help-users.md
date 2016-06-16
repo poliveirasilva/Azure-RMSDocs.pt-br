@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,8 +35,7 @@ Após ter implantado e configurado o Azure Rights Managenent (RMS) para sua orga
 
     Informe os usuários sobre como proteger documentos e e-mails que contenham informações confidenciais. Sempre que possível, forneça essas informações para seus fluxos de trabalho existentes para que eles possam incorporar as etapas adicionais em um processo já familiar em vez de introduzir processos completamente novos. Permita-lhes saber os benefícios (e os riscos) que são específicos do seu negócio, assim como fornecer orientação para quando eles devem proteger arquivos e e-mails. Se você configurou os [modelos personalizados](configure-custom-templates.md), forneça instruções sobre qual selecionar se o nome e a descrição do modelo não forem suficientes para eles escolherem o modelo correto.
 
-    > [!TIP]
-    > Vídeos de exemplo para os usuários finais:
+    > [!TIP] Vídeos de exemplo para os usuários finais:
     >
     > -   [Experiência do usuário do Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Rastreio e revogação de documentos no Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -59,7 +58,7 @@ Após ter implantado e configurado o Azure Rights Managenent (RMS) para sua orga
 
     -   **Problemas de proteção ou consumo de conteúdo:**
 
-        Certifique-se de que os usuários tenham as instruções apropriadas para os aplicativos que eles usam e que estão usando aplicativos e dispositivos que são suportados pelo Azure RMS. Para obter mais informações sobre os dispositivos e aplicativos com suporte, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+        Certifique-se de que os usuários tenham as instruções apropriadas para os aplicativos que eles usam e que estão usando aplicativos e dispositivos que são suportados pelo Azure RMS. Para mais informações sobre os dispositivos e aplicativos com suporte, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
         Se os usuários vêem um erro ao tentar proteger ou consumir conteúdo, peça-lhes para executar o [Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um usuário do Azure RMS.
 
@@ -72,18 +71,16 @@ O aplicativo de compartilhamento Rights Management (RMS) é necessário para que
 
 Além de tornar mais fácil para os usuários a proteção de documentos importantes, o aplicativo de compartilhamento do RMS permite aos usuários controlar os documentos que eles tenham protegido e, se necessário, revogar o acesso a eles.
 
-Para obter instruções para usar esse aplicativo para computadores com Windows, consulte o [Guia de usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+Para obter instruções para usar esse aplicativo para computadores com Windows, consulte o [guia de usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
 
 Para dispositivos móveis, consulte [Perguntas Frequentes para o aplicativo de compartilhamento Microsoft Rights Management para plataformas móveis](http://technet.microsoft.com/dn451248).
 
-> [!TIP]
-> Para um cenário de exemplo de alto nível com capturas de tela, consulte [usuários que compartilham com segurança anexos com usuários móveis](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users.
+> [!TIP] Para ver um cenário de exemplo de alto nível com capturas de tela, consulte [Os usuários compartilham com segurança anexos com usuários móveis](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
 ## Usando a proteção de informações com o Office 365, Office 2016 ou Office 2013
 Se você estiver usando o Azure RMS e não tiver instalado o aplicativo de compartilhamento Rights Management, os usuários não verão o botão **Compartilhamento protegido** na faixa de opções ou **Proteção no local** no Explorador de Arquivo que lhes facilita proteger os arquivos. Para esses usuários, eles devem seguir instruções semelhantes a estas.
 
-> [!TIP]
-> Para encontrar ajuda específica do aplicativo e instruções para usar a proteção de informações com estes aplicativos, pesquise **IRM** e o nome e versão do aplicativo.
+> [!TIP]Para encontrar ajuda específica do aplicativo e instruções para usar a proteção de informações com estes aplicativos, pesquise **IRM** e o nome e versão do aplicativo.
 
 #### Para proteger um documento no Word 2013
 
@@ -91,8 +88,7 @@ Se você estiver usando o Azure RMS e não tiver instalado o aplicativo de compa
 
 2.  No menu **Arquivo** , clique em **Informações**, clique em **Proteger Documento**, clique em **Restringir Acesso**, e então escolha um modelo para rapidamente aplicar os direitos de uso apropriados, ou selecione **Restringir o Acesso** e selecione os direitos de uso você mesmo.
 
-    > [!NOTE]
-    > Se esta for a primeira vez que você usou o Rights Management, você contatará o serviço do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] e suas credenciais serão solicitadas para configurar o cliente do Office IRM.
+    > [!NOTE]Se esta for a primeira vez que você usa o Rights Management, você contatará o serviço do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] e suas credenciais serão solicitadas para configurar o cliente do Office IRM.
 
 3.  Salve o documento.
 
@@ -121,6 +117,6 @@ Da mesma forma a ver um documento protegido, quando os destinatários recebem a 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
