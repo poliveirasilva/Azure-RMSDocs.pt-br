@@ -67,14 +67,14 @@ Defina o valor **Criptografia** na chave para especificar o comportamento de pro
 
 - **Desativada**: a criptografia está desabilitada.
 
-> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de **EXTRAÇÃO**.
+> [!Note] Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de **EXTRAÇÃO**.
 
 - **Nativa**: a criptografia nativa é usada. No caso de arquivos do Office, o arquivo criptografado terá a mesma extensão do arquivo original. Por exemplo, um arquivo com a extensão de arquivo .docx será criptografado como um arquivo com uma extensão .docx. No caso de outros arquivos que podem ter a proteção nativa aplicada, o arquivo será criptografado como um arquivo com uma extensão do formato p*zzz*, em que *zzz* é a extensão de arquivo original. Por exemplo, arquivos. txt serão criptografados em um arquivo com a extensão. ptxt. Abaixo temos uma lista de extensões de arquivo que pode ter a proteção nativa aplicada.
 
 - **Pfile**: a criptografia Pfile é usada. O arquivo criptografado terá pfile acrescentado à extensão do original. Por exemplo, após a criptografia, um arquivo. txt, terá uma extensão. txt.pfile.
 
 
-> [AZURE.NOTE] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
+> [!Note] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
 
 A configuração de qualquer outro valor ou a ausência valor resulta no comportamento padrão.
 

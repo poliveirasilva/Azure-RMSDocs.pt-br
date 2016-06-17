@@ -43,13 +43,13 @@ Este tópico contém duas abordagens de autenticação com exemplos de código c
 
   Use essa abordagem se quiser que o cliente RMS exiba um prompt de autenticação ADAL quando a autenticação for necessária. Para obter detalhes sobre como configurar seu aplicativo, consulte a seção "Autenticação interna".
 
-  >AZURE.NOTE Se seu aplicativo usa atualmente o AD RMS SDK 2.1 com o assistente de conexão, é recomendável que você use o método de autenticação interna como o caminho de migração do aplicativo.
+  > [!Note] Se seu aplicativo usa atualmente o AD RMS SDK 2.1 com o assistente de conexão, é recomendável que você use o método de autenticação interna como o caminho de migração do aplicativo.
 
 - **Autenticação externa** -autenticação OAuth gerenciada pelo seu aplicativo.
 
   Use essa abordagem se quiser que seu aplicativo para gerenciar sua própria autenticação OAuth. Com essa abordagem, o cliente RMS usará um retorno de chamada definido pelo aplicativo quando a autenticação for necessária. Para obter um exemplo detalhado, consulte "Autenticação externa" no final deste tópico.
 
-  >AZURE.NOTE Autenticação externa não implica a capacidade de alterar usuários. o cliente RMS sempre usa o usuário padrão para determinado locatário do RMS.
+  > [!Note] Autenticação externa não implica a capacidade de alterar usuários. o cliente RMS sempre usa o usuário padrão para determinado locatário do RMS.
 
 ## Autenticação interna
 
