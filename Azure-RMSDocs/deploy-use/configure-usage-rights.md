@@ -269,7 +269,7 @@ Os direitos que estão incluídos com os modelos padrão são as seguintes:
 
 ## Opções Não Encaminhar para emails
 
-Os clientes e serviços do Exchange (por exemplo, o cliente do Outlook, o aplicativo Outlook Web Access e as regras de transporte do Exchange) têm sua própria opção de proteção de direitos de informações para emails: **Não Encaminhar**. 
+Os clientes e serviços do Exchange (por exemplo, o cliente do Outlook, o aplicativo Outlook Web Access e as regras de transporte do Exchange) têm uma opção adicional de proteção de direitos de informações para emails: **Não Encaminhar**. 
 
 Embora essa opção apareça para os usuários (e os administradores do Exchange) como se fosse um modelo padrão do Rights Management que eles podem selecionar, **Não Encaminhar** não é um modelo. Isso explica por que você não a vê no portal clássico do Azure quando você exibe e gerencia modelos do Azure RMS. Em vez disso, a opção **Não Encaminhar** é um conjunto de direitos que é aplicado dinamicamente por usuários para seus destinatários de email.
 

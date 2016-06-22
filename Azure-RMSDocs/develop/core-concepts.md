@@ -29,11 +29,10 @@ O foco do Microsoft Rights Management SDK 4.2 é ajudar a compilar aplicativos h
 
 Os tópicos a seguir destinam-se a dar suporte ao seu processo de design para o desenvolvimento de aplicativos habilitados por RMS.
 
-- [Como: adicionar autenticação ao seu aplicativo](authentication-integration.md) - descreve os conceitos básicos da autenticação do usuário para seu aplicativo habilitado para RMS.
-- [Como: habilitar registro em log de desempenho e erro](enabling-logging.md) - o RMS SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
-- [Como: obter uma ID de aplicativo do Azure](application-id.md) - criar um aplicativo habilitado para RMS com o MS RMS SDK 4.2 exige criar um contrato com a equipe do RMS.
-- [Como: usar direitos internos](built-in-rights-usage-restriction-reference.md) - descreve os direitos internos que o RMS SDK 4.2 fornece e as restrições de uso que um aplicativo deve impor para respeitar essas restrições.
-- [Como: usar o rastreamento de documentos](how-to-use-document-tracking.md) - o uso do recurso de rastreamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
+- [Como registrar e habilitar para RMS seu aplicativo com Azure AD](authentication-integration.md) – descreve os conceitos básicos de autenticação de usuário para seu aplicativo habilitado para RMS.
+- [Como habilitar registro em log de erro e desempenho](enabling-logging.md) – o RMS SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
+- [Como usar direitos internos](built-in-rights-usage-restriction-reference.md) – descreve os direitos internos que o RMS SDK 4.2 fornece e as restrições de uso que um aplicativo deve impor para respeitar essas restrições.
+- [Como usar o acompanhamento de documentos](how-to-use-document-tracking.md) – o uso do recurso de acompanhamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
 - [Termos](terms.md) - uma coleção de definições de terminologia específicas do Rights Management Services.
 
  
@@ -43,6 +42,6 @@ Os tópicos a seguir destinam-se a dar suporte ao seu processo de design para o 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: debug a rights-enabled application | Azure RMS
-description: The following topic shows how to debug your application and use the Windows Event Log.
+title: Como depurar um aplicativo habilitado para direitos | Azure RMS
+description: O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
 keywords:
 author: bruceperlerms
 manager: mbaldwin

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ Você tem mais dúvidas sobre o licenciamento para Azure RMS? Baixe o documento 
 ## Assinatura do Office 365
 [Avaliação de 30 dias gratuita: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[Avaliação de 30 dias gratuita: Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 Essa assinatura foi desenvolvida para organizações que desejam utilizar os serviços online do Office e usar o recurso IRM (Gerenciamento de Direitos de Informação), que usa o Azure RMS. No entanto, nem todas as assinaturas do Office 365 incluem o Azure RMS.
 
 Assinatura  |Inclui o IRM 
@@ -84,7 +86,7 @@ Se sua assinatura de avaliação expirar, você perderá acesso ao conteúdo que
 Uma exceção à perda de acesso após a expiração é se a sua organização usou o Azure RMS com o RMS para assinaturas de pessoa física antes de ter obtido a assinatura de avaliação. Depois, o acesso à conteúdo anteriormente protegido permanece, mesmo depois que a assinatura de avaliação expira.
 
 ## Assinatura do Enterprise Mobility Suite
-[Avaliação gratuita de 30 dias](http://go.microsoft.com/fwlink/?LinkId=615385)
+[Avaliação gratuita de 30 dias](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 Essa assinatura foi desenvolvida para organizações que querem usar uma combinação do Azure Active Directory Premium, do Windows Intune e do Azure Rights Management. O suporte para usar o Azure Rights Management com o Office é o mesmo que usar a assinatura Premium do Azure Rights Management. Para obter mais informações sobre a assinatura do Enterprise Mobility Suite, consulte a [Visão geral do Microsoft Enterprise Mobility](http://go.microsoft.com/fwlink/?LinkId=615386).
 
@@ -98,6 +100,6 @@ Para saber mais, confira [RMS para pessoas físicas e Azure Rights Management](.
 ## Próximas etapas
 Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

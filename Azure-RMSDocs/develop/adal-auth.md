@@ -29,11 +29,11 @@ ms.suite: ems
 
 Este tópico descreve as etapas para configurar a autenticação baseada no Azure ADAL.
 
-## Autenticação interna
+## Instalação da Autenticação do Azure
 
 Você precisará do seguinte:
 
-- Um [assinatura do Microsoft Azure](https://azure.microsoft.com/en-us/) (uma avaliação gratuita é suficiente):
+- Uma [assinatura do Microsoft Azure](https://azure.microsoft.com/en-us/) (uma avaliação gratuita é suficiente). Para obter mais informações, consulte [How users sing up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) (Como usuários se inscrevem no RMS para as pessoas)
 - Uma assinatura do Microsoft Azure Rights Management (uma conta gratuita [RMS para pessoas físicas](https://technet.microsoft.com/en-us/library/dn592127.aspx) é suficiente).
 
 > [!NOTE] Pergunte ao seu administrador de TI se você tem ou não uma assinatura do Microsoft Azure Rights Management e peça que ele execute as etapas abaixo. Se sua organização não tiver uma assinatura, peça que o administrador de TI crie uma. Além disso, seu administrador de TI deve assinar com uma *Conta corporativa ou de estudante*, em vez de uma *Conta da Microsoft* (por exemplo, Hotmail).

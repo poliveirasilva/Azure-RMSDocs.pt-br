@@ -32,7 +32,7 @@ Este tópico contém diretrizes essenciais sobre os principais aspectos de um ap
 
 As diretrizes neste tópico têm como base o aplicativo de exemplo, IPCHelloWorld, que ajudará você a entender os conceitos básicos e o código de um aplicativo habilitado para direitos. Você pode baixar o aplicativo de exemplo completo, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), do Microsoft Connect.
 
->AZURE.NOTE O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+> [!Note] O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
 ## Como carregar o MSIPC.dll
 

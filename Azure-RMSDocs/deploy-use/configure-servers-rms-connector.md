@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -30,7 +30,7 @@ ms.suite: ems
 *Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 
-Use as informações a seguir para ajudá-lo a configurar os servidores locais que usarão o conector do Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapa 5 da [Implantando o conector do Azure Rights Management](deploy-rms-connector.md).
+Use as informações a seguir para ajudá-lo a configurar os servidores locais que usarão o conector do Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapa 5 da [Implantação do conector do Azure Rights Management](deploy-rms-connector.md).
 
 Antes de começar, certifique-se de que você instalou e configurou o conector RMS e verificou os [pré-requisitos](deploy-rms-connector.md#prerequisites-for-the-rms-connector) que são aplicáveis para os servidores que usam o conector.
 
@@ -83,8 +83,7 @@ Desvantagens:
 
 ---
 
-> [!IMPORTANT]
-> Em ambos os casos, você deve manualmente instalar todos os pré-requisitos e configurar o Exchange, o SharePoint e a infraestrutura de classificação de arquivos para usar o Gerenciamento de Direitos.
+> [!IMPORTANT] Em ambos os casos, instale manualmente todos os pré-requisitos e configure o Exchange, o SharePoint e a Infraestrutura de Classificação de Arquivos para usar o Rights Management.
 
 Para a maioria das organizações, a configuração automática com a ferramenta de configuração do servidor para o conector do Microsoft RMS será a melhor opção, pois proporciona mais eficiência e confiabilidade do que a configuração manual.
 
@@ -92,7 +91,7 @@ Depois de fazer as alterações de configuração nos servidores, você deve rei
 
 ### Como usar a ferramenta de configuração do servidor para o conector Microsoft RMS
 
-1.  Se você ainda não tiver baixado o script para a ferramenta de configuração do servidor do conector Microsoft RMS (GenConnectorConfig.ps1), baixe-o da [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+1.  Se você ainda não tiver baixado o script para a ferramenta de configuração do servidor do conector Microsoft RMS (GenConnectorConfig.ps1), baixe-o da [Central de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 2.  Salve o arquivo GenConnectorConfig.ps1 no computador em que a ferramenta será executada. Se você executar a ferramenta localmente, ela deve ser o servidor que você deseja configurar para se comunicar com o conector do RMS. Caso contrário, você poderá salvá-la em qualquer computador.
 
@@ -115,8 +114,7 @@ Depois de fazer as alterações de configuração nos servidores, você deve rei
 
 Para executar o script, você deve inserir a URL do conector RMS de sua organização. Digite o prefixo de protocolo (HTTP:// ou HTTPS://) e o nome do conector que você definiu no DNS para o endereço de balanceamento de carga do seu conector. Por exemplo, https://connector.contoso.com. A ferramenta, então, usa essa URL em contato com os servidores que executam o conector RMS e obtém outros parâmetros que são usados ​​para criar as configurações necessárias.
 
-> [!IMPORTANT]
-> Quando você executar essa ferramenta, certifique-se de especificar o nome do conector do RMS com o balanceamento de carga para sua organização e não o nome de um único servidor que executa o serviço de conector do RMS.
+> [!IMPORTANT] Ao executar essa ferramenta, certifique-se de especificar o nome do conector RMS com o balanceamento de carga para a sua organização e não o nome de um único servidor que execute o serviço de conector RMS.
 
 Use as seguintes seções para obter informações específicas para cada tipo de serviço:
 
@@ -188,10 +186,9 @@ Para usar o conector do RMS, esses servidores que executam o SharePoint devem es
 
 -   SharePoint Server 2010
 
-Um servidor que executa o SharePoint 2016 ou SharePoint 2013 também deve executar uma versão do cliente MSIPC 2.1 que tem suporte com o conector RMS. Para garantir que você tenha uma versão com suporte, baixe o cliente mais recente do [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
+Um servidor que executa o SharePoint 2016 ou SharePoint 2013 também deve executar uma versão do cliente MSIPC 2.1 que tem suporte com o conector RMS. Para certificar-se de que você tem uma versão com suporte, baixe o cliente mais recente do [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
 
-> [!WARNING]
-> Existem várias versões do cliente MSIPC 2.1, então certifique-se de que você tem a versão 1.0.2004.0 ou posterior.
+> [!WARNING] Existem diversas versões do cliente MSIPC 2.1, assim, certifique-se de ter a versão 1.0.2004.0 ou posterior.
 >
 > É possível verificar a versão do cliente, verificando o número de versão do MSIPC.dll, que está localizado em **\Program Files\Active Directory Rights Management Services Client 2.1**. A caixa de diálogo de propriedades mostra o número de versão do cliente MSIPC 2.1.
 
@@ -248,19 +245,13 @@ Para usar o conector RMS e a infraestrutura de classificação de arquivos para 
 3.  Criar regras de classificação e tarefas de gerenciamento de arquivos para proteger documentos com a criptografia do RMS e, em seguida, especificar um modelo de RMS para aplicar automaticamente as políticas do RMS. Para obter mais informações, consulte [Visão Geral do Gerenciador de Recursos do Servidor de Arquivos](http://technet.microsoft.com/library/hh831701.aspx) na biblioteca de documentação do Windows Server.
 
 ## Próximas etapas
-Agora que o conector do RMS está instalado e configurado e seus servidores estão configurados para usá-lo, os administradores de TI e os usuários podem proteger e consumir mensagens de email e documentos usando o Azure RMS. Para facilitar isso para os usuários, implante o aplicativo de compartilhamento do RMS, que instala um complemento do Office e adiciona novas opções de atalho para o Explorador de Arquivos. Para saber mais, confira o [Guia do administrador do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-admin-guide.md).
+Agora que o conector RMS está instalado e configurado e que seus servidores estão configurados para usá-lo, os administradores de TI e os usuários podem proteger e consumir mensagens de email e documentos usando o Azure RMS. Para facilitar isso para os usuários, implante o aplicativo de compartilhamento do RMS, que instala um complemento do Office e adiciona novas opções de atalho para o Explorador de Arquivos. Para saber mais, confira o [Guia do administrador do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-admin-guide.md).
 
-Além disso, você pode considerar o seguinte para ajudar a monitorar o conector RMS e o uso do Azure RMS da sua organização:
+Você pode usar o [Mapa de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para verificar se existem outras etapas de configuração que você possa precisar executar antes de lançar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para os usuários e administradores.
 
--   Os contadores de desempenho internos do **conector do Microsoft Rights Management**.
-
--   A [ferramenta Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437), usando a opção Conector RMS para ajudá-lo a monitorar a integridade do conector e identificar qualquer problema de configuração.
-
--   [Registrando em log e analisando o uso do Azure Rights Management](log-analyze-usage.md)
-
-Você pode usar o [Mapa de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para verificar se existem outras etapas de configuração que você possa precisar executar antes de lançar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para os usuários e administradores. 
+Para monitorar o conector RMS, consulte [Monitor the Azure Rights Management connector](monitor-rms-connector.md) (Monitorar o conector do Azure Rights Management). 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

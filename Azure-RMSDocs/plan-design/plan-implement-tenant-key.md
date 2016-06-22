@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -81,9 +81,9 @@ Use as informações e os procedimentos desta seção se você tiver decidido ge
 
 
 > [!IMPORTANT]
-> Se você já tiver começado a usar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tiver usuários que executam o Office 2010, entre em contato com o CSS (Microsoft Customer Support Services) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, talvez seja possível usar o BYOK, mas com algumas limitações ou passos adicionais.
+> Se você já tiver começado a usar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tiver usuários que executem o Office 2010, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, talvez seja possível usar o BYOK, mas com algumas limitações ou passos adicionais.
 > 
-> Entre em contato com o CSS também se sua organização possui políticas específicas para a manipulação de chaves.
+> Também entre em [contato com o Suporte Microsoft](../get-started/information-support#to-contact-microsoft-support) se a sua organização tiver políticas específicas para a manipulação de chaves.
 
 ### Pré-requisitos para o BYOK
 Veja a tabela a seguir para obter uma lista de pré-requisitos para trazer sua própria chave (BYOK).
@@ -114,7 +114,7 @@ Os procedimentos para gerar e utilizar a sua própria chave de locatário depend
     > [!NOTE]
     > Sua chave de locatário pode se mover com segurança em computadores e redes não confiáveis​​, pois é criptografada e protegida com permissões de nível de controle de acesso, o que torna utilizável apenas dentro de seus HSMs e HSMs da Microsoft para o Azure RMS. Você pode usar os scripts que são fornecidos no conjunto de ferramentas para verificar as medidas de segurança e ler mais informações sobre como isso funciona a partir da Thales: [Gerenciamento de chaves de hardware na nuvem do RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Pessoalmente:** Isso requer que você entre em contato com os Serviços de Atendimento ao Cliente da Microsoft (CSS) para agendar uma consulta de transferência de chave para o Azure RMS. Será necessário viajar para um escritório da Microsoft em Redmond, Washington, nos Estados Unidos, para transferir a chave de locatário para o mundo de segurança do Azure RMS.
+-   **Pessoalmente:** isso requer que você [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para agendar um compromisso de transferência de chave para o Azure RMS. Será necessário viajar para um escritório da Microsoft em Redmond, Washington, nos Estados Unidos, para transferir a chave de locatário para o mundo de segurança do Azure RMS.
 
 Para instruções, selecione se você vai gerar e transferir sua chave de locatário pela Internet ou pessoalmente: 
 
@@ -148,6 +148,6 @@ Agora que você já planejou e, se necessário, gerou sua chave de locatário, f
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

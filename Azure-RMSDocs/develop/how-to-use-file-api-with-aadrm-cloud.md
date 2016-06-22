@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: enable your service application to work with cloud based RMS | Azure RMS
-description: This topic outlines steps for setting up your service application to use Azure Rights Management.
+title: Como permitir que seu aplicativo de serviço funcione com RMS baseado em nuvem | Azure RMS
+description: Este tópico descreve as etapas para configurar seu aplicativo de serviço para usar o Azure Rights Management.
 keywords:
 author: bruceperlerms
 manager: mbaldwin

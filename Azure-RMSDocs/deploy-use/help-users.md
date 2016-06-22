@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -75,7 +75,7 @@ Para obter instruções para usar esse aplicativo para computadores com Windows,
 
 Para dispositivos móveis, consulte [Perguntas Frequentes para o aplicativo de compartilhamento Microsoft Rights Management para plataformas móveis](http://technet.microsoft.com/dn451248).
 
-> [!TIP] Para ver um cenário de exemplo de alto nível com capturas de tela, consulte [Os usuários compartilham com segurança anexos com usuários móveis](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
+> [!TIP] Para ver um cenário de exemplo de alto nível com capturas de tela, consulte [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) (Os usuários compartilham com segurança anexos com usuários móveis).
 
 ## Usando a proteção de informações com o Office 365, Office 2016 ou Office 2013
 Se você estiver usando o Azure RMS e não tiver instalado o aplicativo de compartilhamento Rights Management, os usuários não verão o botão **Compartilhamento protegido** na faixa de opções ou **Proteção no local** no Explorador de Arquivo que lhes facilita proteger os arquivos. Para esses usuários, eles devem seguir instruções semelhantes a estas.

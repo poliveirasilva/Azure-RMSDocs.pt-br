@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: install, configure and test with an RMS server | Azure RMS
-description: Install and configure and RMS Sever for testing your rights-enabled application.
+title: Como instalar, configurar e testar com um Servidor RMS | Azure RMS
+description: Instale e configure o servidor RMS para testar seu aplicativo habilitado para direitos.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -66,7 +65,7 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 
     Para fazer testes com um Servidor RMS, configure a descoberta no lado do servidor ou a descoberta no lado do cliente para permitir que o Rights Management Service Client 2.1 descubra e estabeleça a comunicação com o Servidor RMS.
 
-    >[OBSERVAÇÃO] Testar com o Azure RMS não requer configuração de descoberta.
+    > [!Note] Testar com o Azure RMS não requer configuração de descoberta.
 
   - Na descoberta do lado do servidor, um administrador registra um ponto de conexão de serviço (SCP) para o cluster RMS raiz com o Active Directory, e o cliente consulta o Active Directory para descobrir o SCP e estabelecer uma conexão com o servidor.
   - Na descoberta no lado do cliente, você define as configurações de Descoberta do Serviço RMS no Registro no computador no qual o RMS Client 2.1 está em execução. Essas configurações apontam o RMS Client 2.1 para uso do servidor RMS. Quando estiverem presentes, a descoberta no lado do servidor não será executada.

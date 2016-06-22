@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ A Criação repetida de chaves também é conhecida como geração repetida de s
 
 -   Você acredita que a cópia mestre da sua chave de locatário (a cópia em sua posse) foi comprometida.
 
-Você pode criar novamente sua chave de locatário chamando ao CSS (Serviços de Atendimento ao Cliente) da Microsoft e provando que você é o administrador de locatário.
+Você pode criar novamente sua chave de locatário [entrando em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com uma solicitação para criar novamente sua chave de locatário do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam; recriar a chave de locatário não é um serviço de suporte gratuito.
 
 Ao criar novamente sua chave de locatário, o novo conteúdo é protegido usando a nova chave de locatário. Isto acontece em uma maneira em fases, para que em um período de tempo, algum conteúdo novo continuará sendo protegido com a chave de locatário antiga. O conteúdo previamente protegido permanece protegido com sua chave de locatário antiga. Para oferecer suportes a este cenário, o Azure RMS retém sua chave de locatário antiga de modo que possa emitir licenças para conteúdo antigo.
 
@@ -54,7 +54,7 @@ Você pode exportar sua configuração do Azure RMS e a chave do locatário segu
 
 ### Etapa 1: Iniciar exportação
 
--   Para fazer isso, entre em contato com o CSS (Suporte de Atendimento ao Consumidor) da Microsoft para abrir um **Caso de suporte do Azure Rights Management com uma solicitação de exportação de chave do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam. Exportar sua chave de locatário não é um serviço de suporte gratuito.
+-   Para fazer isso, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **Caso de suporte do Azure Rights Management com uma solicitação de exportação de chave do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam. Exportar sua chave de locatário não é um serviço de suporte gratuito.
 
 ### Etapa 2: Espere a verificação
 
@@ -97,13 +97,13 @@ Se você detectar uma violação, a melhor ação que você ou a Microsoft pode 
 
 |Descrição do incidente|Resposta provável|
 |------------------------|-------------------|
-|Sua chave de locatário vazou.|Crie novamente sua chave de locatário. Consulte a seção [Crie novamente sua chave de locatário](operations-tenant-key.md#re-key-your-tenant-key) nesse artigo.|
+|Sua chave de locatário vazou.|Crie novamente sua chave de locatário. Consulte a seção [Criar novamente sua chave de locatário](operations-tenant-key#re-key-your-tenant-key) nesse artigo.|
 |Um indivíduo não autorizado ou malware obteve direitos para usar sua chave de locatário mas a chave em si não vazou.|Criar novamente sua chave de locatário não ajuda aqui e necessita um análises da causa raiz. Se um processo ou bug do software foi responsável para que o indivíduo não autorizado obtenha acesso, aquela situação deve ser resolvida.|
 |Vulnerabilidade descoberta no algoritmo RSA, ou comprimento da chave, ou ataques de força bruta se tornam possíveis em termos computacionais.|A Microsoft deve atualizar o Azure RMS para oferecer suporte de novos algoritmos e comprimentos de chave maiores que sejam resilientes, e instruir a todos os usuários a renovar suas chaves de locatário.|
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
