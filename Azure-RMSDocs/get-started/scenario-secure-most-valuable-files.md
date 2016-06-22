@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário: proteger seus arquivos mais valiosos (alguns) | Azure RMS
+title: "Cenário: proteger seus arquivos mais valiosos (alguns) | Azure RMS"
 description:
 keywords:
 author: cabailey

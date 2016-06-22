@@ -1,14 +1,25 @@
 ---
-# metadados necessários
+# required metadata
 
-título: Como instalar, configurar e testar com um Servidor RMS | Azure RMS descrição: Instale e configure o servidor RMS para testar seu aplicativo habilitado para direitos.
-palavras-chave: autor: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: artigo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# metadados opcionais
+title:
+How-to: install, configure and test with an RMS server | Azure RMS
+description: Install and configure and RMS Sever for testing your rights-enabled application.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# optional metadata
 
 #ROBOTS:
-público: desenvolvedor
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

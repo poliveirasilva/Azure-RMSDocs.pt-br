@@ -1,12 +1,28 @@
 ---
-# metadados necessários
+# required metadata
 
-título: Tutorial de início rápido do Azure RMS - Etapa 4 | Descrição do Azure RMS: a quarta etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
-palavras-chave: autor: cabailey manager: mbaldwin ms.date: ms.topic 28/04/2016: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+title: "Tutorial de início rápido do Azure RMS - Etapa 4 | AZURE RMS"
+description: "a quarta etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos."
+keywords:
+author: cabailey
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# metadados opcionais
+# optional metadata
 
-ROBÔS: público-alvo: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
+ROBOTS:
+audience:
+ms.devlang:
+ms.reviewer: esaggese
+ms.suite: ems
+ms.tgt_pltfrm:
+ms.technology:
+ms.custom:
 
 ---
 

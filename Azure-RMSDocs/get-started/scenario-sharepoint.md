@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário: reter controle de documentos armazenados no SharePoint | Azure RMS
+title: "Cenário: reter controle de documentos armazenados no SharePoint | Azure RMS"
 description:
 keywords:
 author: cabailey

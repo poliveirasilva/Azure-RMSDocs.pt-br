@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário: configurar pastas de trabalho para proteção persistente | Azure RMS
+title: "Cenário: configurar pastas de trabalho para proteção persistente | Azure RMS"
 description:
 keywords:
 author: cabailey

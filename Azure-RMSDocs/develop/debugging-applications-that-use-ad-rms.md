@@ -1,14 +1,25 @@
 ---
-# metadados necessários
+# required metadata
 
-título: Como depurar um aplicativo habilitado para direitos | Azure RMS descrição: O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
-palavras-chave: autor: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: artigo ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# metadados opcionais
+title:
+How-to: debug a rights-enabled application | Azure RMS
+description: The following topic shows how to debug your application and use the Windows Event Log.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# optional metadata
 
 #ROBOTS:
-público: desenvolvedor
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

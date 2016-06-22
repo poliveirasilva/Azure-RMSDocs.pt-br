@@ -1,13 +1,25 @@
 ---
-# metadados necessários
+# required metadata
 
-título: Como trabalhar com configurações de criptografia | Azure RMS descrição: Este artigo orienta você quanto ao uso de nossos pacotes de criptografia palavras-chave: autor: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# metadados opcionais
+title:
+How-to: work with encryption settings | Azure RMS
+description: This article orients you to our encryption packages
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# optional metadata
 
 #ROBOTS:
-público: desenvolvedor
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
