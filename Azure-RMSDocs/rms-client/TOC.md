@@ -1,0 +1,29 @@
+# [Entender e explorar](/rights-management/understand-explore/azure-rights-management)
+# [Introdução](/rights-management/get-started/requirements-azure-rms)
+# [Planejar e projetar](/rights-management/plan-design/deployment-roadmap)
+# [Implantar e usar o serviço](/rights-management/deploy-use/activate-service)
+# [Implantar e usar o cliente](use-client.md)
+## [Cliente Rights Management](use-client.md)
+### [Observações sobre a implantação do RMS Client](client-deployment-notes.md)
+### [Proteção por RMS com FCI do Windows Server](configure-fci.md)
+#### [Script do PowerShell](fci-script.md)
+### [Aplicativo e compartilhamento Rights Management para Windows](sharing-app-windows.md)
+#### [Aplicativo de compartilhamento do Rights Management: histórico de lançamento de versão](sharing-app-version-release-history.md)
+#### [Guia do administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md)
+##### [Visão geral técnica](sharing-app-admin-guide-technical.md)
+#### [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+##### [Baixar e instalar](install-sharing-app.md)
+##### [Proteger um arquivo em um dispositivo](sharing-app-protect-in-place.md)
+##### [Proteger um arquivo que você compartilha por email](sharing-app-protect-by-email.md)
+##### [Rastrear e revogar seus documentos](sharing-app-track-revoke.md)
+##### [Exibir e usar arquivos protegidos](sharing-app-view-use-files.md)
+##### [Remover proteção](sharing-app-remove-protection.md)
+##### [Usar atalhos de teclado](sharing-app-keyboard-shortcuts.md)
+##### [Opções da caixa de diálogo](sharing-app-dialog-box.md)
+### [Política de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS](privacy-statement-rms-enlightened-applications.md)
+# [Desenvolver e personalizar aplicativos](/rights-management/develop/developers-guide)
+
+
+<!--HONumber=Apr16_HO5-->
+
+
