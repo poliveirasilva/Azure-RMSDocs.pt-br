@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tutorial de início rápido do Azure RMS - Etapa 3 | Azure RMS
-description: A terceira etapa de um tutorial para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
+title: Tutorial de início rápido do Azure RMS – Passo 3 | Azure RMS
+description: O terceiro passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos.
 keywords:
 author: cabailey
 manager: mbaldwin
@@ -26,65 +26,65 @@ ms.suite: ems
 ---
 
 
-# Etapa 3 do início rápido do Azure RMS: Enviar por email o documento que você deseja proteger
+# Passo 3 do início rápido do Azure RMS: enviar por e-mail o documento que pretende proteger
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-Ir para: 
+Passar para: 
 > [!div class="op_single_selector"]
 - [Introdução](quick-start-tutorial.md)
-- [Etapa 1: Ativar o Azure RMS](tutorial-step1.md)
-- [Etapa 2: Instalar o aplicativo RMS sharing](tutorial-step2.md)
-- [Etapa 3: Enviar o documento confidencial por email](tutorial-step3.md)
-- [Etapa 4: O destinatário lê o documento](tutorial-step4.md)
-- [Etapa 5: Rastrear o seu documento](tutorial-step5.md)
+- [Passo 1: ativar o Azure RMS](tutorial-step1.md)
+- [Passo 2: instalar aplicação de partilha RMS](tutorial-step2.md)
+- [Passo 3: enviar e-mail do documento confidencial](tutorial-step3.md)
+- [Passo 4: o destinatário lê o documento](tutorial-step4.md)
+- [Passo 5: controlar o documento](tutorial-step5.md)
 
 
-Para essa etapa, primeiro crie e salve um documento usando o Word, que representará o documento que você deseja proteger, e nomeie-o **Confidential.docx**. Para este tutorial, não importa qual o texto nele, mas algum texto deve ser escrito para que você possa confirmar se o destinatário autorizado conseguiu lê-lo. Por exemplo, você pode digitar: **Se você conseguiu ler este documento de seu anexo de email, o remetente compartilhou com êxito um arquivo que foi protegido com o Azure RMS.**
+Para este passo, comece por criar e guardar um documento através do Word que represente o documento que pretende proteger e atribua-lhe o nome **Confidential.docx**. Para este tutorial, é irrelevante o texto que de facto contém, mas é aconselhável que tenha algum texto, para que possa mais facilmente confirmar que o destinatário autorizado o conseguiu ler. Por exemplo, pode introduzir: **Se consegue ler isto a partir do seu anexo de e-mail, o remetente partilhou com êxito um ficheiro que foi protegido com o Azure RMS.**
 
-Assim, você estará pronto para compartilhar com segurança este documento por email.
+Em seguida, está pronto para partilhar de forma segura este documento por e-mail.
 
-![Tutorial de início rápido do Azure RMS - Etapa 3](../media/AzRMS_Tutorial_3_Screenshots.png)
+![Passo 3 do tutorial de início rápido do Azure RMS](../media/AzRMS_Tutorial_3_Screenshots.png)
 
-### Para compartilhar com segurança o seu documento por email
+### Para partilhar de forma segura o seu documento por e-mail
 
-1.  Usando o Outlook, crie uma nova mensagem e anexe o arquivo que você acabou de criar.
+1.  Ao utilizar o Outlook, crie uma nova mensagem e anexe o ficheiro que acabou de criar.
 
-2.  Na caixa **Para** , digite um ou mais endereços de email comerciais. Verifique se você especificou um endereço de email comercial como **janetm@contoso.com** ou **p.dover@fabrikam.com**, porque atualmente o Azure Rights Management não dá suporte a endereços de email pessoais que você possa usar em casa, do seu provedor de Internet. Não se preocupe se a pessoa para a qual você está enviando também tem o Azure Rights Management.
+2.  Na caixa **Para**, escreva um ou mais endereços de e-mail profissional. Certifique-se de que especifica um endereço de e-mail profissional, como **janetm@contoso.com** ou **p.dover@fabrikam.com**, porque atualmente o Azure Rights Management não suporta os endereços de e-mail pessoais que poderá utilizar em casa através do seu fornecedor de Internet. Não se preocupe se a pessoa a quem está a enviar também tem o Azure Rights Management ou não.
 
-3.  Digite um assunto, como  **Documento confidencial** e depois digite uma mensagem curta para o email, como **Leia este documento confidencial e não compartilhe com ninguém.**
+3.  Escreva um assunto, tal como **Documento confidencial** e, em seguida, escreva uma mensagem curta para o e-mail, tal como **Leia este documento confidencial e não o partilhe com outras pessoas.**
 
-4.  Depois, na guia **Mensagem** no grupo **RMS** , clique em **Compartilhamento protegido** , e então clique em **Compartilhamento protegido** novamente:
+4.  Em seguida, no separador **Mensagem**, no grupo **RMS**, clique em **Partilhar Protegido** e, em seguida, clique em **Partilhar Protegido** novamente:
 
-5.  Na caixa de diálogo **compartilhamento protegido** :
+5.  Na caixa de diálogo **Partilhar Protegido**:
 
-    1.  Selecione **Visualizador - Somente exibição**.
+    1.  Selecione **Visualizador – Visualizar Apenas**.
 
-        Com isso, os destinatários poderão exibir o documento, mas não editá-lo ou imprimi-lo.
+        Isto significa que os nossos destinatários poderão visualizar o documento, mas não o poderão editar nem imprimir.
 
-    2.  Selecione **Enviar um email para mim quando alguém tentar abrir esses documentos**.
+    2.  Selecione **Enviar-me um e-mail quando alguém tentar abrir estes documentos**.
 
-        Você receberá uma notificação por email sempre que os destinatários tentarem abrir o anexo, e também se outra pessoa tentar abri-lo; por exemplo, se o destinatário encaminhar o email para um colega de trabalho. Nesta última hipótese, você verá que o acesso foi negado e, a partir dos detalhes do usuário, pode optar por enviar uma cópia do documento que essa pessoa possa abrir.
+        Receberá uma notificação por e-mail sempre que os destinatários tentam abrir o anexo e também se outra pessoa tentar abri-lo — por exemplo, o destinatário reencaminha a mensagem de e-mail para um colega de trabalho. Neste último cenário, verá que o acesso foi negado e, a partir dos detalhes do utilizador, pode decidir se envia uma cópia do documento a essa pessoa para que o possa abrir.
 
-    3.  Selecione **Permitir que eu revogue instantaneamente o acesso a esses documentos**.
+    3.  Selecione **Permitir a revogação instantânea do acesso a estes documentos**.
 
-        Esta opção requer que os destinatários tenham uma conexão de Internet sempre que abrirem o anexo, mas possui o benefício de, se você revogar posteriormente o documento, não conseguirem abri-lo na próxima tentativa que fizerem. Se você não selecionar essa opção os destinatários poderão abri-lo mesmo sem uma conexão à Internet, mas a desvantagem é que, se você revogar posteriormente o documento, pode haver um atraso para a revogação entrar em vigor.
+        Esta opção requer que os destinatários tenham ligação à Internet sempre que abrem o anexo, mas com a vantagem que se mais tarde revogar o documento, da próxima vez que tentarem abri-lo, não será possível. Se não selecionar esta opção, os destinatários poderão conseguir abri-lo, mesmo sem uma ligação à Internet, mas com a desvantagem que se mais tarde revogar o documento, poderá haver um atraso quando a revogação entrar em vigor.
 
-    4.  Clique em **Enviar agora**.
+    4.  Clique em **Enviar Agora**.
 
-        O email com anexo é enviado para os endereços de email que você especificou. Além de sua mensagem de email, eles verão instruções de como ler o documento anexado protegido pelo Azure Rights Management.
+        A mensagem de e-mail com anexo é enviada para os endereços de e-mail que especificou. Para além da sua mensagem de e-mail, os destinatários veem instruções de como ler o documento anexado protegido pelo Azure Rights Management.
 
-Agora que você enviou o documento protegido está pronto para solicitar que os destinatários aguardem a chegada dele, e abram-no. Mas não feche o Outlook, pois usaremos ele novamente na etapa final, para controlar o anexo.
+Agora que enviou o documento protegido, pode pedir aos seus destinatários para aguardarem por ele e, em seguida, abri-lo. Mas não feche o Outlook, pois iremos utilizá-lo novamente no passo final para controlar o anexo.
 
-|Se deseja obter mais informações|Informações adicionais|
+|Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
-|Instruções completas e métodos alternativos para proteger arquivos compartilhados por email|[Proteja arquivos que você compartilha por email usando o aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-protect-by-email.md)|
-|Sobre as opções da caixa de diálogo **compartilhamento protegido**|[Opções da caixa de diálogo do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-dialog-box.md)|
+|Instruções completas e métodos alternativos para proteger ficheiros que partilha por e-mail|[Proteger um ficheiro que partilha por e-mail ao utilizar a aplicação de partilha Rights Management](../rms-client/sharing-app-protect-by-email.md)|
+|Acerca das opções na caixa de diálogo **partilhar protegido**|[Opções da caixa de diálogo para a aplicação de partilha Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"] [« Etapa 2](tutorial-step2.md)
-[Etapa 4 »](tutorial-step4.md)
+>[!div class="step-by-step"] [« Passo 2](tutorial-step2.md)
+[Passo 4 »](tutorial-step4.md)
 
 <!--HONumber=May16_HO2-->
 

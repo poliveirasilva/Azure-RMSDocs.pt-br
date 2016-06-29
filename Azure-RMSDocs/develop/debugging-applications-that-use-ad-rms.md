@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como depurar um aplicativo habilitado para direitos | Azure RMS
-description: O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
+title: Procedimentos sobre como depurar uma aplicação com capacidade para direitos | Azure RMS
+description: O tópico seguinte mostra como depurar a aplicação e utilizar o Registo de Eventos do Windows.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,15 +24,15 @@ ms.suite: ems
 
 ---
 
-# Como depurar um aplicativo habilitado para direitos
+# Procedimentos: depurar uma aplicação com permissão para direitos
 
-O tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
+O tópico seguinte mostra como depurar a aplicação e utilizar o Registo de Eventos do Windows.
 
-## Depurando seu aplicativo
+## Depurar a aplicação
 
-No Rights Management Services SDK 2.1, as verificações antidepuração na versão de desenvolvedor do nosso tempo de execução estão desabilitadas.
+No SDK Rights Management Services 2.1, as verificações antidepuração na versão de programador do nosso tempo de execução estão desativadas.
 
-Você pode ativar o rastreamento de depuração usando a chave do Registro a seguir. (Para desligar o rastreamento de depuração, altere o valor para 0.) Não é necessário mais nada para depuração nesta versão.
+Pode ativar o rastreio de depuração utilizando a seguinte chave de registo. (Para desativar o rastreio de depuração, altere o valor para 0.) Não é necessário mais nada para a depuração nesta versão.
 
 
 ```
@@ -45,29 +45,29 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### Log de aplicativo usando o Log de Eventos do Windows
+### Registo de aplicações ao utilizar o Registo de Eventos do Windows
 
-O nome do log de eventos é "Microsoft-RMS-MSIPC/Debug". Isso significa que, no Visualizador de Eventos do Windows, o log aparece como "Logs de Aplicativos e Serviços\\Microsoft\\RMS\\MSIPC\\Debug".
+O nome do registo de eventos é “Microsoft-RMS-MSIPC/Depuração”. Isto significa que, no Visualizador de Eventos do Windows, o seu registo aparece como “Registos de Aplicações e Serviços\\Microsoft\\RMS\\MSIPC\\Depuração”.
 
-**Observação**  O log é habilitado por padrão e definido para o nível de detalhamento 3.
+**Nota** O registo está ativado por predefinição e definido para verbosidade de nível 3.
 
  
 
-Para alterar as configurações do recurso de registro em log, você pode usar a interface do usuário do Visualizador de Eventos do Windows ou Wevtutil, uma ferramenta de linha de comando interna do Windows.
+Para alterar as definições da funcionalidade de registo, pode utilizar a IU do Visualizador de Eventos do Windows ou o Wevtutil, uma ferramenta de linha de comandos incorporada no Windows.
 
-Por meio da interface Wevtutil, você pode controlar o nível de detalhamento de seu log.
+Através da interface do Wevtutil, pode controlar o nível de verbosidade do seu registo.
 
-Neste momento, damos suporte a 3 níveis de registro em log:
+De momento, suportamos 3 níveis de registo:
 
--   Nível 2 - Erro
--   Nível 3 - Aviso
--   Nível 4 - Informações
+-   Nível 2 – Erro
+-   Nível 3 – Aviso
+-   Nível 4 – Informações
 
-Por exemplo, o comando a seguir habilitará o log de eventos do MSIPC e definirá o nível de detalhamento para informações.
+Por exemplo, o comando seguinte ativa o registo de eventos MSIPC e define o nível de verbosidade para informações.
 
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
-**Observação**  No Visualizador de Eventos do Windows no menu **exibição**, selecione **Mostrar logs analíticos e de depuração** para tornar visível o log de depuração do MSIPC.
+**Nota** No Visualizador de Eventos do Windows, no menu **Ver**, selecione **Mostrar Registos Analíticos e de Depuração** para tornar visível o registo de depuração MSIPC.
 
  
 

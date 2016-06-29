@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário - Enviar um email confidencial da empresa | Azure RMS
+title: Cenário – enviar um e-mail confidencial da empresa | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,141 +25,141 @@ ms.suite: ems
 
 ---
 
-# Cenário - Enviar um email confidencial da empresa
+# Cenário – enviar um e-mail confidencial da empresa
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Esse cenário e a documentação de suporte ao usuário usam o Azure Rights Management para que qualquer usuário na organização possa enviar com segurança comunicações por email que não possam ser lidas fora da organização. Por exemplo, se alguém encaminha a mensagem de email para outra pessoa em outra organização ou para uma conta de email pessoal. Os emails e anexos serão protegidos pelo Azure Rights Management e por um modelo que os usuários selecionam no cliente de email.
+Este cenário e a documentação de apoio do utilizador utilizam o Azure Rights Management para que qualquer utilizador na organização possa enviar em segurança comunicações por e-mail que não podem ser lidas fora da organização. Por exemplo, se alguém reencaminhar a mensagem de e-mail para alguém noutra organização ou para uma conta de e-mail pessoal. As mensagens de e-mail e quaisquer anexos serão protegidos pelo Azure Rights Management e por um modelo que os utilizadores selecionam no cliente de e-mail.
 
-A maneira mais simples de habilitar esse cenário é usar um dos modelos internos padrão que restringem automaticamente o acesso a todos os usuários em sua organização. Mas, se for necessário, você pode tornar isso ainda mais restritivo por meio da criação de um modelo personalizado que, por exemplo, restringe o acesso a um subconjunto de usuários, ou que tenha outras restrições, como somente leitura ou uma data de expiração, ou ainda desabilite o botão Avançar no cliente de email.
+A forma mais simples para ativar este cenário é utilizar um dos modelos predefinidos incorporados que automaticamente restringem o acesso a todos os utilizadores na sua organização. Porém, se necessário, pode tornar isto mais restritivo ao criar um modelo personalizado que, por exemplo, restringe o acesso a um subconjunto de utilizadores ou que tenha outras restrições, tais como só de leitura ou uma data de validade, ou desativa o botão Reencaminhar no cliente de e-mail.
 
 > [!IMPORTANT]
-> Nesse cenário, embora seja possível remover o direito **Forward** (Encaminhar) de um modelo personalizado configurado por você, e isso desabilitará o botão Avançar no cliente de email, essa configuração não impede que os usuários compartilhem o email com outro usuário autorizado. O destinatário pode salvar o email (e todos os anexos) e compartilhar as informações por meio de outros mecanismos de compartilhamento.
+> Neste cenário, embora possa remover o direito **Reencaminhar** de um modelo personalizado que configurou (este procedimento desativará o botão Reencaminhar no cliente de e-mail), esta configuração não impede que os utilizadores partilhem o e-mail com outro utilizador autorizado. O destinatário pode guardar o e-mail (e quaisquer anexos) e, em seguida, partilhar as informações através de outros mecanismos de partilha.
 > 
-> Por exemplo, Vinícius envia um email para Alice usando um modelo personalizado que aplica os direitos personalizados Salvar Arquivo e Editar Conteúdo para o grupo Marketing, e não inclui o direito Forward. Apesar de Alice não poder encaminhar o email para outras pessoas, ela pode salvar a mensagem de email e os anexos em uma unidade USB ou compartilhamento de servidor de arquivo, que qualquer membro do grupo Marketing pode ler e editar se puderem acessar esses arquivos. Os usuários que não estão no grupo Marketing não poderão abrir o conteúdo.
+> Por exemplo, João envia um e-mail a Adriana através de um modelo personalizado que aplica os direitos personalizados Guardar Ficheiro e Editar Conteúdo ao grupo de Marketing e não inclui o direito Reencaminhar. Embora Adriana não possa reencaminhar o e-mail a outras pessoas, pode guardar a mensagem de e-mail e quaisquer anexos numa pen USB ou numa partilha de servidor de ficheiros, que, posteriormente, qualquer membro do grupo de Marketing pode ler e editar se conseguir aceder a estes ficheiros. Os utilizadores que não estão no grupo de Marketing não poderão abrir o conteúdo.
 
-As instruções são adequadas para o seguinte conjunto de circunstâncias:
+As instruções aplicam-se às seguintes circunstâncias:
 
--   Qualquer usuário na organização deseja compartilhar informações com outras pessoas da organização, mas essas informações não devem ser compartilhadas fora da organização.
+-   Qualquer utilizador da organização pretende partilhar informações com outras pessoas dentro da organização, mas essas informações não devem ser partilhadas fora da organização.
 
--   As informações a serem compartilhadas podem estar dentro da mensagem de email ou do anexo.
+-   As informações a serem partilhadas podem estar dentro da mensagem de e-mail ou do anexo.
 
--   Os usuários devem selecionar manualmente o modelo de dentro de seu cliente de email.
+-   Os utilizadores têm de selecionar manualmente o modelo no cliente de e-mail.
 
-## Instruções de implantação
-![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
+## Instruções de implementação
+![Instruções do administrador para a Implementação Rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
-Verifique se os requisitos a seguir estão satisfeitos antes de prosseguir para a documentação do usuário.
+Certifique-se de que os seguintes requisitos estão em vigor antes de avançar para a documentação do utilizador.
 
 ## Requisitos para este cenário
-Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
+Para que as instruções para este cenário funcionem, é necessário o seguinte:
 
-|Requisito|Se você precisar de mais informações|
+|Requisito|Se precisar de mais informações|
 |---------------|--------------------------------|
-|Você preparou contas e grupos do Office 365 ou o Azure Active Directory|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Sua chave de locatário do Azure Rights Management é gerenciada pela Microsoft. Você não está usando BYOK|[Planejando e implementando sua chave de locatário do Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
-|O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Um das seguintes condições:<br /><br />- O Exchange Online está habilitado para o Azure Rights Management<br /><br />- O conector RMS está instalado e configurado para o Exchange local|Para o Exchange Online: confira a seção **Exchange Online: configuração do IRM** de [Configuração de aplicativos para o Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Para o Exchange local: [Implantação do conector do Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
-|Você não arquivou o modelo padrão do Azure Rights Management **&lt;organização&gt; - Confidencial**. Ou, você configurou um modelo personalizado para essa finalidade, pois precisa de configurações mais restritivas, ou apenas um subconjunto de usuários na organização deve ser capaz de ler os emails protegidos.|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Dica: se você precisar de configurações de política de uso mais restritivas, mas para todos os usuários na organização, copie e edite os modelos padrão, em vez de criar um modelo a partir do zero.<br /><br />Os modelos atualizados não são atualizados imediatamente para os clientes de email nesse cenário. Confira a seção [Atualização de modelos para usuários](https://technet.microsoft.com/library/dn642472.aspx) no artigo de configuração de modelos para saber mais.|
-|Os usuários que enviam email protegido têm o Outlook 2013 ou 2016 ou o Outlook Web Access.<br /><br />Os usuários que receberem o e-mail têm um cliente de email que oferece suporte ao Azure Rights Management.|Você pode usar o Outlook 2010, mas deve [instalar o aplicativo de compartilhamento do Rights Management para Windows](https://technet.microsoft.com/library/dn339003.aspx) e ajustar as instruções do usuário adequadamente.<br /><br />Para obter uma lista de clientes de email que oferecem suporte ao Azure Rights Management, veja a coluna **Email** na tabela [Recurso de dispositivos do cliente](https://technet.microsoft.com/library/dn655136.aspx), de [Requisitos do Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)|
+|Preparou contas e grupos para o Office 365 ou o Azure Active Directory|[Preparar para o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|A chave de inquilino do Azure Rights Management é gerida pela Microsoft; não está a utilizar o BYOK|[Planear e implementar a chave de inquilino do Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
+|O Azure Rights Management está ativado|[Ativar o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
+|Um dos seguintes:<br /><br />- O Exchange Online está ativado para o Azure Rights Management<br /><br />- O conetor RMS está instalado e configurado para o Exchange no local|Para o Exchange Online: consulte a secção **Exchange Online: configuração de IRM** em [Configurar aplicações do Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />Para o Exchange no local: [Implementar o conetor Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
+|Não arquivou o modelo do Azure Rights Management predefinido **&lt;organização&gt; – Confidencial**. Ou configurou um modelo personalizado para este fim porque precisa de definições mais restritivas ou apenas um subconjunto de utilizadores da organização deve ter capacidade para ler os e-mails protegidos.|[Configurar modelos personalizados para o Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Sugestão: se forem necessárias definições de política de utilização mais restritivas, mas para todos os utilizadores na organização, copie e edite um dos modelos predefinidos, em vez de criar um modelo do zero.<br /><br />Os modelos atualizados não são imediatamente atualizados para os clientes de e-mail neste cenário. Consulte a secção [Atualizar modelos para utilizadores](https://technet.microsoft.com/library/dn642472.aspx) no artigo de configuração de modelos para obter informações.|
+|Os utilizadores que enviem o e-mail protegido têm o Outlook 2013, o Outlook 2016 ou o Outlook Web Access.<br /><br />Os utilizadores que recebem o e-mail têm um cliente de e-mail que suporta o Azure Rights Management.|Pode utilizar o Outlook 2010, mas tem de [instalar a aplicação de partilha Rights Management para Windows](https://technet.microsoft.com/library/dn339003.aspx) e ajustar as instruções de utilizador em conformidade.<br /><br />Para obter uma lista de clientes de e-mail que suportam o Azure Rights Management, consulte a coluna **E-mail** na tabela [Capacidade dos dispositivos cliente](https://technet.microsoft.com/library/dn655136.aspx) de [Requisitos do Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)|
 
-## Instruções sobre a documentação do usuário
-Usando o modelo a seguir, copie e cole as instruções do usuário em uma comunicação para seus usuários finais e faça com que essas modificações reflitam o seu ambiente:
+## Instruções da documentação do utilizador
+Utilizando o modelo seguinte, copie e cole as instruções de utilizador numa comunicação destinada aos utilizadores finais e efetue estas alterações para refletir o seu ambiente:
 
-1.  Substitua todas as instâncias de *&lt;nome da organização&gt;* pelo nome de sua organização.
+1.  Substitua todas as instâncias de *&lt;nome da organização&gt;* pelo nome da sua organização.
 
-2.  Substitua todas as instâncias de *&lt;nome da organização - Confidencial&gt;* pelo nome do modelo personalizado ou padrão.
+2.  Substitua todas as instâncias de *&lt;nome da organização – Confidencial&gt;* pelo nome do modelo personalizado ou predefinido.
 
-3.  Substitua as capturas de tela para que elas mostrem os nomes de modelo de sua organização.
+3.  Substitua as capturas de ecrã para mostrarem os nomes dos modelos da organização.
 
-4.  Substitua *&lt;detalhes de contato&gt;* por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
+4.  Substitua os *&lt;detalhes de contacto&gt;* por instruções sobre como os utilizadores podem contactar o suporte técnico, tais como uma ligação para um Web site, um endereço de e-mail ou um número de telefone.
 
-5.  **Modificações adicionais que talvez você queira fazer:**
+5.  **Modificações adicionais que poderá pretender efetuar:**
 
-    -   Se for prático limitar as instruções para um cliente de email apenas, considere fazer isso para manter a simplicidade e exclua o outro conjunto de instruções.
+    -   Se for prático limitar as instruções apenas a um cliente de e-mail, considere fazê-lo para simplificar e elimine o outro conjunto de instruções.
 
-    -   Se você usar um modelo personalizado em vez do modelo padrão sugerido, revise as palavras adequadamente:
+    -   Se utilizar um modelo personalizado em vez do modelo predefinido sugerido, reveja as palavras utilizadas em conformidade:
 
         -   Torne o título mais específico.
 
-        -   Especifique os usuários ou grupos para seleção na etapa 1.
+        -   Especifique os utilizadores ou grupos a selecionar no passo 1.
 
-        -   Especifique o nome do modelo personalizado na etapa 2.
+        -   Especifique o nome do modelo personalizado no passo 2.
 
         -   Modifique o parágrafo final para explicar as restrições que os destinatários terão.
 
-6.  Faça outras modificações que deseje para este conjunto de instruções e, em seguida, envie-o para esses usuários.
+6.  Efetue as modificações adicionais que pretender a este conjunto de instruções e, em seguida, envie-o para os utilizadores.
 
-7.  Como alguns clientes não oferecem suporte ao Rights Management, talvez seja necessário fornecer orientações e recomendações para os destinatários dessas mensagens de email protegido. Essas informações terão base nos dispositivos e aplicativos de email usados em sua organização e em quaisquer preferências que você tenha. Por exemplo, recomendamos que os usuários do iOS leiam os emails protegidos com o Outlook para iPad e iPhone, em vez do cliente de email para iOS nativo .
+7.  Uma vez que alguns clientes não suportam o Rights Management, poderá ter de fornecer orientações e recomendações aos destinatários destas mensagens de e-mail protegidas. Estas informações serão baseadas nos dispositivos e aplicações de e-mail que estarão em utilização na sua organização e nas preferências que tiver. Por exemplo, recomendamos que os utilizadores do iOS leiam os e-mails protegidos com o Outlook para iPad e iPhone, em vez do cliente de correio iOS nativo.
 
-    Para saber mais sobre os clientes de email, veja a coluna **Email** na tabela [Recurso de dispositivos do cliente](https://technet.microsoft.com/library/dn655136.aspx), de [Requisitos do Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)
+    Para obter mais informações sobre os clientes de e-mail, consulte a coluna **E-mail**, na tabela [Capacidade dos dispositivos cliente](https://technet.microsoft.com/library/dn655136.aspx) de [Requisitos do Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx).
 
-A documentação de exemplo mostra como essas instruções pode parecer para os usuários, após as personalizações.
+A documentação de exemplo mostra o aspeto que estas instruções poderão ter para os utilizadores depois das personalizações.
 
-![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
+![Modelo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Como enviar emails que contêm informações confidenciais da empresa usando o Outlook
+### Como enviar e-mails que contêm informações confidenciais da empresa através do Outlook
 
-1.  No Outlook, crie uma nova mensagem de email, adicione os anexos que quiser incluir e selecione os usuários ou grupos de *&lt;nome da organização&gt;*.
+1.  No Outlook, crie uma nova mensagem de correio, adicione os anexos que pretende incluir e, em seguida, selecione os utilizadores ou os grupos da *&lt;nome da organização&gt;*.
 
-2.  Na guia **OPÇÕES**, clique em **Permissão** e selecione **&lt;nome da organização - Confidencial&gt;**:
+2.  No separador **OPÇÕES**, clique em **Permissão** e, em seguida, selecione **&lt;nome da organização – Confidencial&gt;**:
 
-    ![Captura de tela de como enviar emails que contêm informações confidenciais da empresa usando o Outlook](../media/AzRMS_OutlookTemplate.PNG)
-
-3.  Envie a mensagem.
-
-### Como enviar emails que contêm informações confidenciais da empresa usando o Outlook Web App
-
-1.  No Outlook Web App, crie uma nova mensagem de email, adicione todos os anexos que você quiser incluir e, em seguida, selecione usuários ou grupos de *&lt;nome da organização&gt;* do catálogo de endereços.
-
-2.  Clique em **...**, clique em **Definir permissões**, e, em seguida, selecione **&lt;nome da organização - Confidencial&gt;**:
-
-    ![Captura de tela de como enviar emails que contêm informações confidenciais da empresa usando o Outlook Web App](../media/AzRMS_OWATemplate.png)
+    ![Captura de ecrã de como enviar e-mails que contêm informações confidenciais da empresa através do Outlook](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  Envie a mensagem.
 
-Quando alguém na linha **Para**, **Cc**, ou **Cco** recebe o email, pode ser solicitado a autenticar antes de lerem a mensagem, para verificar se são um usuário de *&lt;nome da organização&gt;*. Outras vezes, os usuários não recebem essa solicitação, pois já estão autenticados.
+### Como enviar e-mails que contêm informações confidenciais da empresa através do Outlook Web App
 
-As pessoas para as quais você envia o email poderão encaminhá-lo para outras pessoas, mas apenas os usuários de *&lt;nome da organização&gt;* conseguirão lê-lo. Se você anexar um documento do Office, ele terá a mesma proteção, mesmo se esse anexo for salvo com um nome diferente, em outro local. No entanto, os usuários autenticados com êxito poderão copiar e colar do email ou anexo, ou imprimir a partir dele. Se precisar de uma proteção mais restritiva que impeça ações como essas, entre em contato com o suporte técnico.
+1.  No Outlook Web App, crie uma nova mensagem de correio, adicione os anexos que pretende incluir e, em seguida, selecione os utilizadores ou os grupos da *&lt;nome da organização&gt;* no livro de endereços.
+
+2.  Clique em **…**, clique em **Definir permissões** e, em seguida, selecione **&lt;nome da organização – Confidencial&gt;**:
+
+    ![Captura de ecrã de como enviar e-mails que contêm informações confidenciais da empresa através do Outlook Web App](../media/AzRMS_OWATemplate.png)
+
+3.  Envie a mensagem.
+
+Quando os indivíduos na linha **Para**, **Cc** ou **Bcc** recebem este e-mail, poderá ser pedida a sua autenticação antes de poderem ler a mensagem para confirmar se são utilizadores da *&lt;nome da organização&gt;*. Noutros casos, a autenticação não é solicitada porque estes já estão autenticados.
+
+As pessoas a quem enviar o e-mail poderão reencaminhá-lo para outras pessoas, mas apenas os utilizadores da *&lt;nome da organização&gt;* poderão lê-lo. Se anexar um documento do Office, terá a mesma proteção, mesmo que esse anexo seja guardado com um nome diferente e noutra localização. No entanto, os utilizadores autenticados com êxito podem copiar e colar a partir do e-mail ou anexo ou imprimir a partir do mesmo. Se precisar de uma proteção mais restritiva que impeça ações como estas, contacte o suporte técnico.
 
 **Precisa de ajuda?**
 
--   Entre em contato com o suporte técnico:
+-   Contactar o suporte técnico:
 
-    -   *&lt;detalhes de contato&gt;*
+    -   *&lt;detalhes de contacto&gt;*
 
-### Documentação do usuário personalizada de exemplo
-![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
+### Exemplo de documentação do utilizador personalizada
+![Exemplo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Como enviar emails que contêm informações confidenciais da empresa usando o Outlook
+#### Como enviar e-mails que contêm informações confidenciais da empresa através do Outlook
 
-1.  No Outlook, crie uma nova mensagem de email, adicione os anexos que quiser incluir e selecione os usuários ou grupos da VanArsdel do catálogo de endereços
+1.  No Outlook, crie uma nova mensagem de correio, adicione os anexos que pretende incluir e, em seguida, selecione os utilizadores ou os grupos da VanArsdel no livro de endereços.
 
-2.  Na guia **OPÇÕES** clique em **Permissões** e selecione **VanArsdel, Ltd - Confidencial**:
+2.  No separador **OPÇÕES**, clique em **Permissão** e, em seguida, selecione **VanArsdel, Lda. – Confidencial**:
 
-    ![Captura de tela de como enviar emails que contêm informações confidenciais da empresa usando o Outlook](../media/AzRMS_OutlookTemplate.PNG)
-
-3.  Envie a mensagem.
-
-#### Como enviar emails que contêm informações confidenciais da empresa usando o Outlook Web App
-
-1.  No Outlook Web App, crie uma nova mensagem de email, adicione os anexos que quiser incluir e selecione os usuários ou grupos da VanArsdel do catálogo de endereços
-
-2.  Clique em **…**, clique em **Definir permissões** e selecione **VanArsdel, Ltd - Confidential**:
-
-    ![Captura de tela de como enviar emails que contêm informações confidenciais da empresa usando o Outlook Web App](../media/AzRMS_OWATemplate.png)
+    ![Captura de ecrã de como enviar e-mails que contêm informações confidenciais da empresa através do Outlook](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  Envie a mensagem.
 
-Quando alguém na linha **Para**, **Cc** ou **Cco** receber o email, poderá receber uma solicitação de autenticação antes de poder ler a mensagem, a fim de verificar se são usuários da VanArsdel, Ltd. Outras vezes, os usuários não recebem essa solicitação, pois já estão autenticados.
+#### Como enviar e-mails que contêm informações confidenciais da empresa através do Outlook Web App
 
-As pessoas para as quais você envia seu email poderão encaminhá-lo a outras pessoas, mas apenas os usuários de VanArsdel conseguirão lê-lo. Se você anexar um documento do Office, ele terá a mesma proteção, mesmo se esse anexo for salvo com um nome diferente, em outro local. No entanto, os usuários autenticados com êxito poderão copiar e colar do email ou anexo, ou imprimir a partir dele. Se precisar de uma proteção mais restritiva que impeça ações como essas, entre em contato com o suporte técnico.
+1.  No Outlook Web App, crie uma nova mensagem de correio, adicione os anexos que pretende incluir e, em seguida, selecione os utilizadores ou os grupos da VanArsdel no livro de endereços.
+
+2.  Clique em **…**, clique em **Definir permissões** e, em seguida, selecione **VanArsdel, Lda. – Confidencial**:
+
+    ![Captura de ecrã de como enviar e-mails que contêm informações confidenciais da empresa através do Outlook Web App](../media/AzRMS_OWATemplate.png)
+
+3.  Envie a mensagem.
+
+Quando os indivíduos na linha **Para**, **Cc** ou **Bcc** recebem este e-mail, poderá ser pedida a sua autenticação antes de poderem ler a mensagem para confirmar se são utilizadores da VanArsdel, Ltd. Noutros casos, a autenticação não é solicitada porque estes já estão autenticados.
+
+As pessoas a quem enviar o e-mail poderão reencaminhá-lo para outras pessoas, mas apenas os utilizadores da VanArsdel poderão lê-lo. Se anexar um documento do Office, terá a mesma proteção, mesmo que esse anexo seja guardado com um nome diferente e noutra localização. No entanto, os utilizadores autenticados com êxito podem copiar e colar a partir do e-mail ou anexo ou imprimir a partir do mesmo. Se precisar de uma proteção mais restritiva que impeça ações como estas, contacte o suporte técnico.
 
 **Precisa de ajuda?**
 
--   Entre em contato com o suporte técnico:
+-   Contactar o suporte técnico:
 
-    -   Email: helpdesk@vanarsdelltd.com
+    -   E-mail: helpdesk@vanarsdelltd.com
 
 
 

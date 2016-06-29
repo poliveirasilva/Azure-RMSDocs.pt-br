@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuração do Visual Studio | Azure RMS
-description: Instruções sobre como configurar um projeto do Visual Studio para usar o RMS SDK 2.1.
+title: Configurar o Visual Studio | Azure RMS
+description: Instruções sobre como configurar um projeto do Visual Studio para utilizar o SDK RMS 2.1.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 # Configurar o Visual Studio
 
-Este tópico contém instruções sobre como configurar um projeto do Visual Studio para usar o Rights Management Services SDK 2.1.
+Este tópico contém instruções sobre como configurar um projeto do Visual Studio para utilizar o SDK Rights Management Services 2.1.
 
 ## Pré-requisitos
 
@@ -34,44 +34,44 @@ Este tópico contém instruções sobre como configurar um projeto do Visual Stu
 
 **Instruções**
 
-### Etapa 1: configurar um projeto do Visual Studio para usar o RMS SDK 2.1
+### Passo 1: configurar um projeto do Visual Studio para utilizar o SDK RMS 2.1
 
-Essas instruções são específicas para o Microsoft Visual Studio 2010. Se você estiver usando uma versão diferente do Microsoft Visual Studio, suas caixas de diálogo de configurações poderão ser ligeiramente diferentes.
+Estas instruções são específicas para o Microsoft Visual Studio 2010. Se estiver a utilizar uma versão diferente do Microsoft Visual Studio, as caixas de diálogo das definições podem ter um aspeto ligeiramente diferente.
 
-Essas instruções se aplicam à criação de um aplicativo nativo de 32 bits.
+Estas instruções aplicam-se à criação de uma aplicação de 32 bits nativa.
 
-1.  Adicione o diretório de inclusão do RMS SDK 2.1 ao seu projeto do Visual Studio 2010.
+1.  Adicione o diretório de inclusão do SDK RMS 2.1 ao projeto do Visual Studio 2010.
 
-    Em **Propriedades de Configuração** Selecione **Diretórios VC ++** e adicione o diretório de inclusão do RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, no campo **Diretórios de Inclusão**.
+    Em **Propriedades de Configuração**, selecione **VC++ Directories** e adicione o diretório de inclusão do SDK RMS 2.1, **$(MSIPCSDKDIR)\\inc** ao campo **Incluir Diretórios**.
 
-    ![Configuração do campo de diretórios de inclusão de propriedades](../media/include_directories.png)
+    ![Campo de diretórios de inclusão das propriedades de configuração](../media/include_directories.png)
 
-2.  Adicione o diretório da biblioteca do RMS SDK 2.1 ao seu projeto do Visual Studio 2010.
+2.  Adicione o diretório de bibliotecas do SDK RMS 2.1 ao projeto do Visual Studio 2010.
 
-    Em **Propriedades de Configuração** Selecione **Diretórios VC ++** e adicione o diretório de biblioteca do RMS SDK 2.1, no campo **Diretórios de Biblioteca** da sua plataforma.
+    Em **Propriedades de Configuração**, selecione **VC++ Directories** e adicione o diretório de bibliotecas do SDK RMS 2.1 ao campo **Biblioteca de Diretórios** da sua plataforma.
 
-    -   Para Win32, use **$(MSIPCSDKDIR)\\lib**
-    -   Para x64, use **$(MSIPCSDKDIR)\\lib\\x64**
+    -   Para o Win32, utilize **$(MSIPCSDKDIR)\\lib**
+    -   Para o x64, utilize **$(MSIPCSDKDIR)\\lib\\x64**
 
-    ![Configuração do campo de diretórios de biblioteca de propriedades](../media/library_directories.png)
+    ![Campo de diretórios de bibliotecas das propriedades de configuração](../media/library_directories.png)
 
-3.  Adicione os arquivos da biblioteca do RMS SDK 2.1 como dependências do Visual Studio 2010.
+3.  Adicione os ficheiros de biblioteca do SDK RMS 2.1 como dependências do Visual Studio 2010.
 
-    Em **Vinculador**, selecione **Entrada** e adicione os arquivos de biblioteca do RMS SDK 2.1; **Msipc.lib** e **Msipc\_s.lib**, no campo **Dependências Adicionais**.
+    Em **Linker**, selecione **Entrada** e adicione os ficheiros de biblioteca do SDK RMS 2.1 **Msipc.lib** e **Msipc\_s.lib** ao campo **Dependências Adicionais**.
 
-    ![Campo de dependências de biblioteca do vinculador](../media/additional_dependencies.png)
+    ![Campo de dependências da biblioteca do linker](../media/additional_dependencies.png)
 
-4.  Adicione a DLL (Dynamic Link Library) do RMS SDK 2.1 como uma DLL carregada com atraso.
+4.  Adicione o ficheiro DLL (Dynamic-Link Library) do SDK RMS 2.1 como um DLL carregado com atraso.
 
-    Em **Vinculador**, selecione **Entrada**, e adicione o arquivo DLL do RMS SDK 2.1, **Msipc.dll**, no campo **Atrasar DLLs Carregadas**.
+    Em **Linker**, selecione **Entrada** e adicione o ficheiro DLL do SDK RMS 2.1 **Msipc.dll** ao campo **DLL Carregado com Atraso**.
 
-    ![Campo das bibliotecas carregadas com atraso do vinculador](../media/delay_loaded.png)
+    ![Campo de bibliotecas carregadas com atraso do linker](../media/delay_loaded.png)
 
-5.  Crie informações de versão para o binário resultante.
+5.  Crie informações da versão para o binário resultante.
 
-    Em **Gerenciador de Soluções** selecione **Arquivos de Recurso** e adicione seu nome binário ao campo **OriginalFileName**.
+    Em **Explorador de Soluções**, selecione **Ficheiros de Recurso** e adicione o nome binário ao campo **NomeFicheiroOriginal**.
 
-    ![Campo de arquivos de recurso do Gerenciador de Soluções](../media/original_file_name.png)
+    ![Campo de ficheiros de recurso do explorador de soluções](../media/original_file_name.png)
 
 ## Tópicos relacionados
 

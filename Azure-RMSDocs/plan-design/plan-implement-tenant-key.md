@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planejando e implementando sua chave de locatário do Azure Rights Management | Azure RMS
+title: Planear e implementar a sua chave de inquilino do Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,126 +25,126 @@ ms.suite: ems
 
 ---
 
-# Planejando e implementando sua chave de locatário do Azure Rights Management
+# Planear e implementar a sua chave de inquilino do Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Use as informações nesse artigo para ajudá-lo a planejar e a gerenciar sua chave de locatário do RMS (Rights Management) para o Azure RMS. Por exemplo, em vez da Microsoft gerenciar sua chave de locatário (o padrão), caso queira gerenciar a sua própria chave de locatário de acordo com as normas específicas que se aplicam à sua organização.  Gerenciar a sua chave de locatário também é chamado de trazer sua própria chave, ou BYOK.
+Utilize as informações deste artigo para o ajudar a planear e gerir a sua chave de inquilino do RMS (Rights Management) do Azure RMS. Por exemplo, em vez de a sua chave de inquilino ser gerida pela Microsoft (predefinição), poderá querer gerir a sua própria chave de inquilino para cumprir os regulamentos específicos que se aplicam à sua organização.  A gestão da sua própria chave de inquilino também é referida como Bring Your Own Key (Traga a Sua Própria Chave) ou BYOK.
 
 > [!NOTE]
-> A chave de locatário do RMS também é conhecida como chave do certificado de licenciante para servidor (SLC). O Azure RMS mantém uma ou mais chaves para cada organização que assina o Azure RMS. Sempre que uma chave é usada para o RMS dentro de uma organização (tais como chaves de usuário, chaves de computador, chaves de criptografia de documento), eles a encadeiam criptograficamente com a sua chave de locatário do RMS.
+> A chave de inquilino do RMS também é conhecida como a chave do Certificado de Licenciante para Servidor (SLC). O Azure RMS mantém uma ou mais chaves para cada organização que subscreve o Azure RMS. Sempre que uma chave é utilizada para o RMS numa organização (por exemplo, chaves de utilizador, chaves de computador, chaves de encriptação de documentos), esta associa-se criptograficamente à sua chave de inquilino do RMS.
 
-**Visão geral:** Use a seguinte tabela como um guia rápido para sua topologia de chave de locatário recomendada. Então, use a documentação adicional para obter mais informações.
+**Resumindo:** utilize a seguinte tabela como um guia rápido para a sua topologia de chaves de inquilino recomendada. Em seguida, utilize a documentação adicional para obter mais informações.
 
-Se você implantar o Azure RMS usando uma chave de locatário gerenciada pela Microsoft, você pode alterar para BYOK posteriormente. No entanto, no momento você não pode alterar sua chave de locatário do Azure RMS de BYOK para gerenciada pela Microsoft.
+Se implementar o Azure RMS com uma chave de inquilino gerida pela Microsoft, pode mudar para o BYOK mais tarde. No entanto, atualmente não pode alterar a gestão da sua chave de inquilino do Azure RMS do BYOK para gerida pela Microsoft.
 
-|Requisito de negócios|Topologia de chave de locatário recomendada|
+|Necessidade comercial|Topologia de chaves de inquilino recomendada|
 |------------------------|-----------------------------------|
-|Implantar o Azure RMS rapidamente e sem a necessidade de hardware especial|Gerenciada pela Microsoft|
-|Precisa de funcionalidade completa do IRM no Exchange Online com o Azure RMS|Gerenciada pela Microsoft|
-|As suas chaves são criadas por você e protegidas em um módulo de segurança de hardware (HSM)|BYOK<br /><br />Atualmente, essa configuração resultará em funcionalidade reduzida do IRM no Exchange Online. Para obter mais informações, consulte [Preços e restrições do BYOK](byok-price-restrictions.md).|
+|Implementar o Azure RMS rapidamente e sem necessitar de hardware especial|Gerida pela Microsoft|
+|Necessita da funcionalidade IRM completa no Exchange Online com o Azure RMS|Gerida pela Microsoft|
+|As suas chaves são criadas por si e protegidas num módulo de hardware de segurança (HSM)|BYOK<br /><br />Atualmente, esta configuração resultará na redução da funcionalidade IRM no Exchange Online. Para mais informações, consulte [Preços e restrições do BYOK](byok-price-restrictions.md).|
 
-## Escolha sua topologia de chave de locatário: Gerenciada pela Microsoft (o padrão) ou gerenciada por você (BYOK)
-Decida qual topologia de chave de locatário é melhor para sua organização. Por padrão, o Azure RMS gera sua chave de locatário e gerencia a maioria dos aspectos do ciclo de vida da chave de locatário. Esta é a opção mais simples com as menores despesas administrativas gerais. Na maioria dos casos, você não precisa nem saber que você tem uma chave de locatário. Basta se inscrever no Azure RMS e o resto do processo de gerenciamento de chave é feito pela Microsoft.
+## Selecione a sua topologia de chaves de inquilino: gerida pela Microsoft (predefinição) ou gerida por si (BYOK)
+Decida que topologia de chaves de inquilino é melhor para a sua organização. Por predefinição, o Azure RMS gera a sua chave de inquilino e gere a maioria dos aspetos do ciclo de vida da chave de inquilino. Esta é a opção mais simples e com menos tarefas administrativas adicionais. Na maioria dos casos, nem precisa de saber que tem uma chave de inquilino. Basta inscrever-se no Azure RMS e o processo de gestão de chaves restante é processado pela Microsoft.
 
-Como alternativa, você pode querer ter controle total sobre a sua chave de locatário, que envolve criá-la e manter a cópia mestra em suas instalações. Este cenário é, muitas vezes, mencionado como trazer a sua própria chave (BYOK). Com esta opção, acontece o seguinte:
+Em alternativa, pode querer ter controlo total sobre a sua chave de inquilino, o que envolve criar a sua chave de inquilino e guardar a cópia principal no local. Este cenário é frequentemente referido como BYOK (Bring Your Own Key – Traga a Sua Própria Chave). Quando esta opção é selecionada, ocorre o seguinte:
 
-1.  Você gera a chave de locatário em suas instalações, de acordo com suas políticas de TI.
+1.  Você gera a sua chave de inquilino no local, de acordo com as suas políticas de TI.
 
-2.  Transfira com segurança a chave de locatário de um HSM (Módulo de Segurança de Hardware) em sua posse para HSMs que são de propriedade e gerenciados pela Microsoft. Durante todo esse processo, a chave de locatário nunca sai do limite de proteção de hardware.
+2.  Transfere com segurança a chave de inquilino de um Módulo de Hardware de Segurança (HSM) do qual é proprietário para HSMs que são propriedade da Microsoft e geridos pela mesma. Durante este processo, a sua chave de inquilino nunca ultrapassa o limite de proteção de hardware.
 
-3.  Ao transferir a chave de locatário para a Microsoft, ela permanece protegida por HSMs da Thales. A Microsoft trabalhou com a Thales para garantir que a chave de locatário não possa ser extraída de HSMs da Microsoft.
+3.  Quando transfere a chave de inquilino para a Microsoft, esta permanece protegida pelos HSMs da Thales. A Microsoft trabalhou com a Thales para se certificar de que não é possível extrair a sua chave de inquilino dos HSMs da Microsoft.
 
-Embora seja opcional, recomendamos o uso em logs de uso do Azure RMS e quase tempo real para ver exatamente como e quando a chave de locatário é usada.
+Embora seja opcional, provavelmente também irá querer utilizar os registos de utilização quase em tempo real do Azure RMS, para saber exatamente como e quando a sua chave de inquilino está a ser utilizada.
 
 > [!NOTE]
-> Como medida de proteção adicional, o Azure RMS usa mundos de segurança separados para seus centros de dados na América do Norte, EMEA (Europa, Oriente Médio e África) e Ásia. Ao gerenciar a sua própria chave de locatário, ela é vinculada ao mundo de segurança da região em que o locatário do RMS está registrado. Por exemplo, uma chave de locatário de um cliente europeu não pode ser utilizada em centros de dados na América do Norte ou na Ásia.
+> Como medida de proteção adicional, o Azure RMS utiliza universos de segurança separados nos seus centros de dados na América do Norte, EMEA (Europa, Médio Oriente e África) e Ásia. Quando faz a gestão da sua própria chave de inquilino, esta é associada ao universo de segurança da região na qual o seu inquilino do RMS está registado. Por exemplo, não é possível utilizar uma chave de inquilino de um cliente europeu nos centros de dados da América do Norte ou da Ásia.
 
-## O ciclo de vida da chave de locatário
-Se você decidir que a Microsoft deve gerenciar sua chave de locatário, a Microsoft lidará com a maioria das operações de chave do ciclo de vida. No entanto, se decidir gerenciar sua chave de locatário, você será responsável por muitas das operações do ciclo de vida da chave e por alguns procedimentos adicionais.
+## O ciclo de vida das chaves de inquilino
+Se decidir que a Microsoft deve gerir a sua chave de inquilino, a maioria das operações de ciclo de vida da chave será processada pela Microsoft. No entanto, se optar por gerir a sua chave de inquilino, fica responsável por muitas das operações de ciclo de vida da chave e por alguns procedimentos adicionais.
 
-Os diagramas a seguir mostram e comparam essas duas opções. O primeiro diagrama mostra que há poucas sobrecargas de administrador para você na configuração padrão, quando a Microsoft gerencia a chave de locatário.
+Os diagramas seguintes apresentam e comparam estas duas opções. O primeiro diagrama mostra que há poucas tarefas administrativas adicionais para si na configuração predefinida quando a Microsoft gere a chave de inquilino.
 
-![Ciclo de vida da chave de locatário do Azure RMS - gerenciado pela Microsoft, o padrão](../media/RMS_BYOK_cloud.png)
+![Ciclo de vida da chave de inquilino do Azure RMS – gerida pela Microsoft (a predefinição)](../media/RMS_BYOK_cloud.png)
 
-O segundo diagrama mostra os passos adicionais necessários ao gerenciar a sua própria chave de locatário.
+O segundo diagrama mostra os passos adicionais necessários quando gere a sua própria chave de inquilino.
 
-![Ciclo de vida da chave de locatário do Azure RMS - gerenciado por você, BYOK](../media/RMS_BYOK_onprem.png)
+![Ciclo de vida da chave de inquilino do Azure RMS – gerida por si (BYOK)](../media/RMS_BYOK_onprem.png)
 
-Se decidir deixar a Microsoft gerenciar sua chave de locatário, não será necessária nenhuma ação adicional para gerar a chave e você pode ir direto para as [Próximas etapas](plan-implement-tenant-key.md#next-steps).
+Se decidir deixar que a sua chave de inquilino seja gerida pela Microsoft, não precisa de tomar medidas adicionais para a gerar e pode ir diretamente para [Passos seguintes](plan-implement-tenant-key.md#next-steps).
 
-Se optar por gerenciar sua chave de locatário por conta própria, leia as seguintes seções para obter mais informações.
+Se optar por gerir a sua chave de inquilino, leia as secções seguintes para obter mais informações.
 
-## Implementando sua chave de locatário do Azure Rights Management
+## Implementar a sua chave de inquilino do Azure Rights Management
 
-Use as informações e os procedimentos desta seção se você tiver decidido gerar e gerenciar sua chave de locatário; o cenário BYOK (trazer a sua própria chave):
+Utilize as informações e os procedimentos desta secção, se tiver decidido gerar e gerir a sua chave de inquilino – o cenário BYOK (Bring Your Own Key – Traga a Sua Própria Chave):
 
 
 > [!IMPORTANT]
-> Se você já tiver começado a usar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tiver usuários que executem o Office 2010, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, talvez seja possível usar o BYOK, mas com algumas limitações ou passos adicionais.
+> Se já começou a utilizar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tem utilizadores que utilizam o Office 2010, [contacte o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, continua a poder utilizar o BYOK, mas com algumas restrições ou passos adicionais.
 > 
-> Também entre em [contato com o Suporte Microsoft](../get-started/information-support#to-contact-microsoft-support) se a sua organização tiver políticas específicas para a manipulação de chaves.
+> Também pode [contactar o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) caso a sua organização disponha de políticas para processar chaves específicas.
 
 ### Pré-requisitos para o BYOK
-Veja a tabela a seguir para obter uma lista de pré-requisitos para trazer sua própria chave (BYOK).
+Consulte a seguinte tabela para obter uma lista de pré-requisitos para o BYOK (Bring Your Own Key – Traga a Sua Própria Chave).
 
 |Requisito|Mais informações|
 |---------------|--------------------|
-|Uma assinatura que dá suporte ao Azure RMS.|Para obter mais informações sobre as assinaturas disponíveis, consulte [Assinaturas da nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).|
-|Você não pode usar o RMS para indivíduos ou Exchange Online. Ou, se você usar o Exchange Online, entenda e aceite as limitações do uso do BYOK com essa configuração.|Para obter mais informações sobre as atuais restrições e limitações do BYOK, consulte [Preços e restrições do BYOK](byok-price-restrictions.md).<br /><br />**Importante**: atualmente, o BYOK não é compatível com o Exchange Online.|
-|HSM da Thales, smartcards e software de suporte.<br /><br />**Observação**: se estiver migrando do AD RMS para o Azure RMS usando a chave de software para a chave de hardware, você deverá ter uma versão mínima de 11.62 para os drivers da Thales.|É necessário ter acesso a um Módulo de Segurança de Hardware da Thales e um conhecimento operacional básico dos HSMs da Thales. Consulte [Módulo de Segurança de Hardware da Thales](http://www.thales-esecurity.com/msrms/buy) para obter a lista de modelos compatíveis ou para comprar um HSM, se você não tiver um.|
-|Se deseja transferir sua chave de locatário via Internet, em vez de estar fisicamente presente em Redmond, EUA, há 3 requisitos:<br /><br />1: uma estação de trabalho x64 offline com um sistema operacional Windows mínimo do software Windows 7 e Thales nShield que seja, pelo menos, da versão 11.62.<br /><br />Se esta estação de trabalho executa o Windows 7, você deve [instalar o Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2: uma estação de trabalho que esteja conectada à Internet e que tenha um sistema operacional Windows mínimo de Windows 7.<br /><br />3: uma unidade USB ou outro dispositivo de armazenamento portátil que tenha, pelo menos, 16 MB de espaço livre.|Esses pré-requisitos não são necessários se você viajar para Redmond e transferir sua chave de locatário pessoalmente.<br /><br />Por razões de segurança, recomendamos que a primeira estação de trabalho não esteja conectada a uma rede. No entanto, isto não é programaticamente aplicado.<br /><br />Observação: nas instruções a seguir, essa estação de trabalho é mencionada como a **estação de trabalho desconectada**.<br /><br />Além disso, se a chave de locatário for para uma rede de produção, recomendamos o uso de uma segunda estação de trabalho separada para baixar o conjunto de ferramentas e fazer o upload da chave de locatário. Mas para fins de teste, é possível usar a mesma estação de trabalho como a primeira.<br /><br />Observação: nas instruções a seguir, essa segunda estação de trabalho é mencionada como a **estação de trabalho conectada à Internet**.|
+|Uma subscrição que suporta Azure RMS.|Para mais informações sobre as subscrições disponíveis, consulte [Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).|
+|Não utilizar o RMS para utilizadores autónomos ou para o Exchange Online. Em alternativa, se utilizar o Exchange Online, compreender e aceitar as limitações da utilização do BYOK com esta configuração.|Para mais informações sobre as restrições e limitações atuais do BYOK, consulte [Preços e restrições do BYOK](byok-price-restrictions.md).<br /><br />**Importante**: o BYOK não é atualmente compatível com o Exchange Online.|
+|HMS da Thales, smart cards e software de suporte.<br /><br />**Nota**: se estiver a migrar do AD RMS para o Azure RMS através da utilização de chave de software para chave de hardware, tem de ter uma versão de controladores da Thales igual ou posterior à 11.62.|Tem de ter acesso a um Módulo de Hardware de Segurança da Thales e conhecimentos operacionais básicos dos HMSs da Thales. Consulte [Thales Hardware Security Module (Módulo de Hardware de Segurança da Thales – em inglês)](http://www.thales-esecurity.com/msrms/buy) para conhecer a lista de modelos compatíveis ou para comprar um HSM caso não tenha um.|
+|Se quiser transferir a sua chave de inquilino através da Internet em vez de a transferir pessoalmente em Redmond, EUA, existem 3 requisitos:<br /><br />1: uma estação de trabalho offline x64, com o sistema operativo Windows 7 ou posterior e a versão 11.62 ou posterior do software nShield da Thales.<br /><br />Se esta estação de trabalho executar o Windows 7, tem de [instalar o Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2: uma estação de trabalho que está ligada à Internet e com o sistema operativo Windows 7 ou posterior.<br /><br />3: uma unidade USB ou outro dispositivo de armazenamento portátil que tenha pelo menos 16 MB de espaço livre.|Estes pré-requisitos não são necessários se viajar até Redmond e transferir a sua chave de inquilino pessoalmente.<br /><br />Por motivos de segurança, recomendamos que a primeira estação de trabalho não esteja ligada a uma rede. Contudo, isto não é imposto a nível de programação.<br /><br />Nota: nas instruções que se seguem, esta primeira estação de trabalho é referida como a **estação de trabalho desligada**.<br /><br />Além disso, se a chave de inquilino se destinar a uma rede de produção, recomendamos que utilize uma segunda estação de trabalho separada para transferir o conjunto de ferramentas e carregar a chave de inquilino. Contudo, para fins de teste, pode utilizar a mesma estação de trabalho.<br /><br />Nota: nas instruções que se seguem, esta segunda estação de trabalho é referida como a **estação de trabalho ligada à Internet**.|
 
-Os procedimentos para gerar e utilizar a sua própria chave de locatário dependem se você deseja fazer isso pela Internet ou pessoalmente:
+Os procedimentos para gerar e utilizar a sua própria chave de inquilino são diferentes consoante queira fazê-lo através da Internet ou pessoalmente:
 
--   **Através da Internet:** Isso requer algumas etapas de configuração extras, como baixar e usar um conjunto de ferramentas e cmdlets do Windows PowerShell. No entanto, não é necessário estar fisicamente em uma instalação da Microsoft para transferir a chave de locatário. A segurança é mantida pelos seguintes métodos:
+-   **Através da Internet:** são necessários alguns passos de configuração adicionais, tais como transferir e utilizar um conjunto de ferramentas e cmdlets do Windows PowerShell. Contudo, não tem de estar fisicamente numa instalação da Microsoft para transferir a sua chave de inquilino. A segurança é mantida através dos seguintes métodos:
 
-    -   Você gera a chave de locatário de uma estação de trabalho offline, o que reduz a superfície de ataque.
+    -   A chave de inquilino é gerada a partir de uma estação de trabalho offline, o que reduz a superfície de ataque.
 
-    -   A chave de locatário é criptografada com uma KEK (Key Exchange Key - Chave de Troca de Chave), que permanece criptografada até que seja transferida para os HSMs do Azure RMS. Apenas a versão criptografada da chave de locatário deixa a estação de trabalho de origem.
+    -   A chave de inquilino é encriptada com uma Chave de Troca de Chaves (KEK), que permanece encriptada até ser transferida para os HSMs do Azure RMS. A versão encriptada da sua chave de inquilino é a única que deixa a estação de trabalho original.
 
-    -   Uma ferramenta define propriedades na sua chave de locatário que se vincula à sua chave de locatário para a segurança mundial do Azure RMS. Portanto, após os HSMs do Azure RMS receberem e descriptografarem a chave de locatário, somente esses HSMs poderão usá-la. Sua chave de locatário não pode ser exportada. Essa associação é exigida pelos HSMs da Thales.
+    -   Uma ferramenta define as propriedades da sua chave de inquilino, vinculando-a a um universo de segurança do Azure RMS. Assim, depois de os HSMs do Azure RMS receberem e desencriptarem a chave de inquilino, esta só poderá ser utilizada por estes HSMs. Não é possível exportar a sua chave de inquilino. Este vínculo é imposto pelos HSMs da Thales.
 
-    -   O KEK (Key Exchange Key) que é usado para criptografar a chave de locatário é gerado dentro dos HSMs do Azure RMS e não é exportável. Os HSMs exigem que não haja nenhuma versão clara do KEK fora dos HSMs. Além disso, o conjunto de ferramentas inclui atestado da Thales de que a KEK não é exportável e foi gerada dentro de um HSM original que foi fabricado pela Thales.
+    -   A Chave de Troca de Chaves (KEK) que é utilizada para encriptar a sua chave de inquilino é gerada nos HSMs do Azure RMS e não é exportável. Os HSMs impõem que não pode existir uma versão não encriptada da KEK fora dos mesmos. Além disso, o conjunto de ferramentas inclui um atestado da Thales que indica que a KEK não é exportável e que foi gerada num HSM genuíno fabricado pela Thales.
 
-    -   O conjunto de ferramentas inclui atestado da Thales de que o mundo de segurança do Azure RMS também foi gerado em um HSM original fabricado pela Thales. Isso comprova que a Microsoft está usando hardware original.
+    -   O conjunto de ferramentas inclui um atestado da Thales que indica que o universo de segurança do Azure RMS também foi gerado num HSM genuíno fabricado pela Thales. Isto prova que a Microsoft está a utilizar hardware genuíno.
 
-    -   A Microsoft usa KEKs separadas, bem como mundos de segurança separados em cada região geográfica, o que garante que a sua chave de locatário só pode ser utilizada em centros de dados na região em que você a criptografou. Por exemplo, uma chave de locatário de um cliente europeu não pode ser utilizada em centros de dados na América do Norte ou na Ásia.
+    -   A Microsoft utiliza KEKs separadas, bem como Universos de Segurança separados em cada região geográfica, garantindo que a sua chave de inquilino só pode ser utilizada nos centros de dados da região na qual a encriptou. Por exemplo, não é possível utilizar uma chave de inquilino de um cliente europeu nos centros de dados da América do Norte ou da Ásia.
 
     > [!NOTE]
-    > Sua chave de locatário pode se mover com segurança em computadores e redes não confiáveis​​, pois é criptografada e protegida com permissões de nível de controle de acesso, o que torna utilizável apenas dentro de seus HSMs e HSMs da Microsoft para o Azure RMS. Você pode usar os scripts que são fornecidos no conjunto de ferramentas para verificar as medidas de segurança e ler mais informações sobre como isso funciona a partir da Thales: [Gerenciamento de chaves de hardware na nuvem do RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
+    > A sua chave de inquilino pode ser movida com segurança através de computadores e redes não fidedignos, dado que está encriptada e protegida com permissões de controlo de acesso, o que faz com que só possa ser utilizada nos seus HSMs e nos HSMs da Microsoft para o Azure RMS. Pode utilizar os scripts que são fornecidos no conjunto de ferramentas para verificar as medidas de segurança e ler mais informações sobre como isto funciona a partir da Thales em [Hardware Key management in the RMS Cloud (Gestão de Chaves de Hardware na Nuvem do RMS – em inglês)](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Pessoalmente:** isso requer que você [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para agendar um compromisso de transferência de chave para o Azure RMS. Será necessário viajar para um escritório da Microsoft em Redmond, Washington, nos Estados Unidos, para transferir a chave de locatário para o mundo de segurança do Azure RMS.
+-   **Pessoalmente:** terá de [contactar o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para agendar uma sessão de transferência da chave para o Azure RMS. Tem de se deslocar até aos escritórios da Microsoft em Redmond, Washington, Estados Unidos da América, para transferir a sua chave de inquilino para o universo de segurança do Azure RMS.
 
-Para instruções, selecione se você vai gerar e transferir sua chave de locatário pela Internet ou pessoalmente: 
+Para obter instruções relativas aos procedimentos, selecione se irá gerar e transferir a sua chave de inquilino através da Internet ou pessoalmente: 
 
-- [Pela Internet](generate-tenant-key-internet.md)
+- [Através da Internet](generate-tenant-key-internet.md)
 - [Pessoalmente](generate-tenant-key-in-person.md)
 
 
-## Próximas etapas
+## Passos seguintes
 
-Agora que você já planejou e, se necessário, gerou sua chave de locatário, faça o seguinte:
+Agora que já planeou e, se necessário, gerou a chave do inquilino, faça o seguinte:
 
-1.  Comece a usar sua chave de locatário:
+1.  Comece a utilizar a sua chave de inquilino:
 
-    -   Se ainda não tiver feito isso, será necessário agora ativar o Rights Management de modo que sua organização possa começar a usar o RMS. Os usuários começam imediatamente a utilizar a chave de locatário (gerenciada pela Microsoft ou por você).
+    -   Se ainda não o fez, tem agora de ativar o Rights Management para que a sua organização possa começar a utilizar o RMS. Os utilizadores começam a utilizar de imediato a sua chave de inquilino (gerida pela Microsoft ou por si).
 
-        Para obter mais informações sobre uma ativação, consulte [Ativando o Microsoft Azure Rights Management](../deploy-use/activate-service.md).
+        Para mais informações sobre a ativação, consulte [Ativar o Azure Rights Management](../deploy-use/activate-service.md).
 
-    -   Se já tiver ativado o Rights Management e decidir gerenciar sua própria chave de locatário, os usuários farão a transição gradual da chave de locatário antiga para a nova chave de locatário, e essa transição escalonada pode levar algumas semanas para ser concluída. Os documentos e arquivos que foram protegidos com a chave de locatário antiga, permanecem acessíveis para usuários autorizados.
+    -   Se já tinha ativado o Rights Management e depois decidiu gerir a sua própria chave de inquilino, a transição dos utilizadores da chave de inquilino antiga para a nova chave de inquilino será efetuada gradualmente. A conclusão desta transição escalonada poderá demorar algumas semanas. Os documentos e ficheiros que foram protegidos com a chave de inquilino antiga permanecem acessíveis aos utilizadores autorizados.
 
-2.  Considere usar o registro em log de uso, que registra todas as transações que o RMS executa.
+2.  Pondere utilizar registos de utilização, que lhe permitem registar todas as transações efetuadas pelo RMS.
 
-    Se você decidiu gerenciar sua própria chave de locatário, o log inclui informações sobre como usar sua chave de locatário. Consulte o exemplo a seguir de um arquivo de log exibido no Excel, onde os Tipos de solicitação **Descriptografar** e **SignDigest** mostram que a chave de locatário está sendo usada.
+    Se decidiu gerir a sua própria chave de inquilino, o registo incluirá informações sobre como utilizar a sua chave de inquilino. Consulte o seguinte exemplo de um ficheiro de registo apresentado no Excel onde os Tipos de Pedido **Decrypt** e **SignDigest** mostram que a chave de inquilino está a ser utilizada.
 
-    ![arquivo de log no Excel no qual a chave de locatário está sendo usada](../media/RMS_Logging.gif)
+    ![ficheiro de registo no Excel onde a chave de inquilino está a ser utilizada](../media/RMS_Logging.gif)
 
-    Para obter mais informações sobre registro em log de uso, consulte [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md).
+    Para mais informações sobre o registo de utilização, consulte [Registo e análise da utilização do Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-3.  Mantenha sua chave de locatário.
+3.  Guarde a sua chave de inquilino.
 
-    Para obter mais informações, consulte [Operações para sua chave de locatário do Azure Rights Management](../deploy-use/operations-tenant-key.md).
+    Para mais informações, consulte [Operações para a sua chave de inquilino do Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 
 

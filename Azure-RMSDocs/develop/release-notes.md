@@ -2,7 +2,7 @@
 # required metadata
 
 title: Novidades e notas de versão | Azure RMS
-description: Descreve alterações e recursos importantes nesta nova versão do RMS SDK.
+description: Descreve as funcionalidades e alterações importantes nesta versão nova do SDK RMS.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -27,28 +27,28 @@ ms.suite: ems
 # Novidades e notas de versão
 
 ## Novidades
-O Microsoft Rights Management SDK 4.2 leva a habilitação do aplicativo RMS para um novo nível de facilidade e flexibilidade. Este tópico descreve alterações e recursos importantes nesta nova versão do RMS SDK.
+O SDK Microsoft Rights Management 4.2 leva a aplicação RMS a um novo nível de facilidade e flexibilidade. Este tópico descreve as funcionalidades e alterações importantes nesta versão nova do SDK RMS.
 
--   [Novidades de nossa Atualização de dezembro de 2015](#new_for_our_december_2015_update)
--   [Atualização de julho de 2015 - Acrescenta suporte para Linux/desenvolvimento em C++](#july_2015_update_-_adds_support_for_linux___c___development)
--   [Atualização de maio de 2015 - Acrescenta o controle de registro em log](#may_2015_update_-_adds_logging_control)
--   [Atualização de fevereiro de 2015 - Acrescenta o suporte a aplicativos da Windows Store](#february_2015_update_-_adds_windows_store_application_support)
--   [Atualização de janeiro de 2015 - Acrescenta suporte à plataforma WinPhone](#january_2015_update_-_adds_winphone_platform_support)
--   [Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
+-   [Novo na nossa Atualização de dezembro de 2015](#new_for_our_december_2015_update)
+-   [Atualização de julho de 2015 – adiciona suporte para a programação em Linux/C++](#july_2015_update_-_adds_support_for_linux___c___development)
+-   [Atualização de maio de 2015 – adiciona o controlo de registo](#may_2015_update_-_adds_logging_control)
+-   [Atualização de fevereiro de 2015 – adiciona o suporte para aplicações da Loja Windows](#february_2015_update_-_adds_windows_store_application_support)
+-   [Atualização de janeiro de 2015 – adiciona o suporte da plataforma WinPhone](#january_2015_update_-_adds_winphone_platform_support)
+-   [Atualização de outubro de 2014 – atualizar para o SDK Microsoft RMS 4.1](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
 -   [Notas de versão](#release-notes)
--   [Perguntas frequentes](#frequently_asked_questions)
+-   [Perguntas mais frequentes](#frequently_asked_questions)
 
-### Novidades de nossa Atualização de dezembro de 2015
+### Novo na nossa Atualização de dezembro de 2015
 
-Com esta versão, o RMS SDK para dispositivos está na versão 4.2 e acrescenta:
+Com esta versão, o SDK RMS para dispositivos está agora na versão 4.2 e adiciona:
 
--   Rastreamento de documentos, somente RMS Online, para sistemas operacionais Android e iOS/OS X.
+-   O controlo de documentos e o RMS apenas online para sistemas operativos Android e iOS/OS X.
 
-    Para obter detalhes e orientações de uso no iOS/OS X, veja a classe [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc), que fornece informações de rastreamento e o método adicional de registro para rastreamento de documentos em [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc). Há adições semelhante para Android no [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) e [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
+    Para obter detalhes e instruções de utilização no iOS/OS X, consulte a classe [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc), que fornece informações de controlo e o método adicional de registo de controlo de documentos [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc). Existem adições semelhantes para o Android em [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) e [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
 
-    Para obter uma descrição detalhada do recurso de rastreamento de documentos, veja [**Como usar o rastreamento de documentos**](how-to-use-document-tracking.md).
+    Para obter uma descrição detalhada da funcionalidade de controlo de documentos, consulte [**Como: utilizar o controlo de documentos**](how-to-use-document-tracking.md).
 
--   Um conjunto de métodos síncronos que corresponde às versões assíncronas da API do Android:
+-   Um conjunto de métodos síncronos paralelos às versões assíncronas para a API do Android:
 
     [**Método síncrono CustomProtectedInputStream.create**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_create_synchronous_method_java)
 
@@ -66,161 +66,161 @@ Com esta versão, o RMS SDK para dispositivos está na versão 4.2 e acrescenta:
 
     [**Método síncrono UserPolicy.create (TempalteDescriptor…)**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_templatedescriptor_______synchronous_method_java)
 
--   Uma nova classe [**ProtectedBuffer**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) foi adicionada à API do Android.
--   Atualizações para melhorar a experiência com mensagens de erro e com a solução de problemas.
--   Aprimoramentos consideráveis de desempenho para operações criptográficas.
+-   Foi adicionada uma nova classe [**ProtectedBuffer**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) à API do Android.
+-   Atualizações para melhorar a experiência de resolução de problemas e de mensagens de erro.
+-   Melhorias de desempenho significativas para operações de criptografia.
 
-### Atualização de julho de 2015 - Acrescenta suporte para Linux/desenvolvimento em C++
+### Atualização de julho de 2015 – adiciona suporte para a programação em Linux/C++
 
-Essa versão adiciona o seguinte:
+Esta versão adiciona o seguinte:
 
--   RMS SDK 4.1 para plataformas Linux
+-   SDK RMS 4.1 para plataformas Linux
 
-    Para saber mais, confira [Introdução](get-started.md).
+    Para obter mais informações, consulte [Introdução](get-started.md).
 
-### Atualização de maio de 2015 - Acrescenta o controle de registro em log
+### Atualização de maio de 2015 – adiciona o controlo de registo
 
-Essa versão adiciona suporte para o seguinte:
+Esta versão adiciona o suporte para o seguinte:
 
 -   iOS
 
-    A criptografia e descriptografia de aplicativo pode operar independentemente e em paralelo.
+    A encriptação e a desencriptação de aplicações podem funcionar independentemente e em paralelo.
 
-    Para saber mais, confira [**MSProtector**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc).
+    Para obter mais informações, consulte [**MSProtector**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc).
 
-    Configurações de controle do nível do log habilitadas.
+    Definições de controlo do nível de registo ativadas.
 
-    Para saber mais, confira [Como habilitar o registro em log de desempenho e de erros](enabling-logging.md)
+    Para obter mais informações, consulte [Como: ativar registo de erros e de desempenho](enabling-logging.md)
 
-    Adição do suporte à limpeza do cache.
+    Suporte de limpeza da cache adicionado.
 
-    Para saber mais, confira [**MSProtection:resetStateWithCompletionBlock**](/rights-management/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc).
+    Para obter mais informações, consulte [**MSProtection:resetStateWithCompletionBlock**](/rights-management/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc).
 
-### Atualização de fevereiro de 2015 - Acrescenta o suporte a aplicativos da Windows Store
+### Atualização de fevereiro de 2015 – adiciona o suporte para aplicações da Loja Windows
 
-Essa versão adiciona suporte para aplicativos da Windows Store e fornece uma paridade funcional com a versão do RMS SDK 4.1 para iOS/OS X, Android e Windows Phone .
+Esta versão adiciona o suporte para aplicações da Loja Windows e fornece paridade funcional com o lançamento para Windows Phone, Android e iOS/OS X do SDK RMS 4.1.
 
-### Atualização de janeiro de 2015 - Acrescenta suporte à plataforma WinPhone
+### Atualização de janeiro de 2015 – adiciona o suporte da plataforma WinPhone
 
-Essa versão adiciona suporte para o sistema operacional Windows Phone e fornece uma paridade funcional com a versão do RMS SDK 4.1 para iOS/OS X e Android.
+Esta versão adiciona o suporte para o sistema operativo Windows Phone e fornece paridade funcional com o lançamento para Android e iOS/OS X do SDK RMS 4.1.
 
-## Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1
+## Atualização de outubro de 2014 – atualizar para o SDK Microsoft RMS 4.1
 
-A versão 4.1 do RMS SDK adiciona os seguintes recursos novos ao Google Android e Apple iOS/OS X.
+O lançamento da versão 4.1 do SDK RMS adiciona as seguintes funcionalidades novas para o Google Android e Apple iOS/OS X.
 
--   Extensões da API do SDK para Android e iOS/OS X para processamento de *consentimento do usuário*, permitindo a confirmação do usuário de comportamentos do SDK. Atualmente, o rastreamento de documentos e o acesso a URLs de serviço desconhecidas do AD RMS são os tipos de consentimento com suporte.
+-   Extensões da API do SDK iOS/OS X para o processamento do *consentimento do utilizador*, permitindo a confirmação do utilizador de comportamentos do SDK. Atualmente, o controlo de documentos e o acesso a URLs desconhecidos do serviço AD RMS são os tipos de consentimento suportados.
 
-    Para saber mais, veja como exemplo, a versão da API do Android da [**interface ConsentCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java).
+    Para obter mais informações, consulte, como exemplo, a versão da API do Android da [**interface ConsentCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java).
 
--   Agora há suporte para iOS 8 e OS X10.10 (Yosemite). Também houve algumas alterações de nome de propriedade exigidas pelo Xcode 6.
+-   O iOS 8 e o OS X 10.10 (Yosemite) já são suportados. De igual modo, houve algumas alterações de nomes de propriedades obrigatórias pelo Xcode 6.
 
-    Exemplo; MSUserPolicy.name alterado para [**MSUserPolicy.policyName**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc).
+    Exemplo: alterou-se MSUserPolicy.name para [**MSUserPolicy.policyName**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc).
 
 ## Notas de versão
 
-Esta seção descreve as informações sobre as versões atuais e anteriores das APIs do Microsoft Rights Management SDK 4.x que você, como desenvolvedor, deseja conhecer.
+Esta secção apresenta as informações sobre as versões atuais e anteriores das APIs SDK Microsoft Rights Management 4. x que o programador deve ter em consideração.
 
-**AD RMS SDK 4.1 - Versão de disponibilidade global para as plataformas iOS/OS X e Android**
+**SDK AD RMS 4.1 – Lançamento de Disponibilidade Global para as plataformas iOS/OS X e Android**
 
--   **Suporte para AD RMS** - Os administradores de TI podem usar aplicativos habilitados para RMS em dispositivos móveis com as extensões de dispositivo móvel do novo servidor de AD RMS.
--   **Consumo offline** - Os usuários finais podem acessar no modo offline os dados do RMS protegidos.
--   **Autenticação separada** - Os desenvolvedores podem usar sua própria biblioteca de autenticação para o Azure RMS e o AD RMS (ou usar a [ADAL (Biblioteca de Autenticação do Azure AD)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)).
--   **Interface de usuário separada** - os desenvolvedores podem criar sua interface de usuário para proteger e consumir documentos protegidos do RMS.
--   **API reprojetada** – Os desenvolvedores podem aproveitar uma API simples e transparente de criptografia e descriptografia que fornece comportamentos e experiência de usuário consistentes de RMS com o mínimo de esforço.
+-   **Suporte do AD RMS** – os administradores de TI podem utilizar aplicações com suporte RMS em dispositivos móveis com as novas extensões para dispositivos móveis do servidor AD RMS.
+-   **Consumo offline** – os utilizadores finais podem aceder a dados protegidos por RMS offline.
+-   **Autorização Separada** – os programadores podem utilizar a sua própria biblioteca de autenticação para o Azure RMS e AD RMS (ou utilizar a [Azure AD Authentication Library (ADAL)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx) recomendada).
+-   **IU Separada** – os programadores podem criar a sua interface de utilizador para proteger e consumir documentos protegidos por RMS.
+-   **API Reformulada** – os programadores podem agora desfrutar de uma API de encriptação e desencriptação simples e transparente, que fornece uma interface de utilizador e comportamentos de RMS consistentes, com esforços mínimos.
 
-**Comum a todas as plataformas**
+**Comuns a todas as plataformas**
 
--   As APIs do RMS SDK 4.x não são *thread-safe*.
+-   As APIs do SDK RMS 4.x não são *seguras para os threads*.
 
 **Android**
 
--   Quando você usa um aplicativo de exemplo em um dispositivo Amazon® Kindle para exibir anexos em .ptxt, primeiro precisa baixar o arquivo antes de visualizá-lo.
+-   Quando utilizar uma aplicação de exemplo num dispositivo Amazon® Kindle para ver anexos .ptxt, tem primeiro de transferir o ficheiro antes de o visualizar.
 
-    **Solução** - Esse é um problema conhecido e será abordado posteriormente.
+    **Solução** – isto é um problema conhecido e será resolvido mais tarde.
 
--   Um aplicativo que usa o SDK pode falhar se várias instâncias forem permitidas.
+-   Uma aplicação que utilize o SDK pode falhar se forem permitidas várias instâncias.
 
-    **Solução** - Verifique se o aplicativo não permite chamadas de várias instâncias à API do Android.
+    **Solução** – certifique-se de que a aplicação não permite chamadas de várias instâncias para a API do Android.
 
--   Quando uso o método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** com um tamanho diferente no valor *array.length*, não sou capaz de consumir o conteúdo mais tarde usando o SDK.
+-   Quando utilizo o método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** com um comprimento diferente do valor *array.length*, não consigo consumir o conteúdo posteriormente utilizando o SDK.
 
-    **Solução** - Esse é um problema conhecido. Para resolvê-lo, passe sempre uma matriz **bytes \[\]** com o mesmo valor de tamanho que o parâmetro de tamanho ou use o método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)**.
+    **Solução** – isto é um problema conhecido. Para o resolver, transmita sempre uma matriz de **bytes \ [\]** com o mesmo valor de comprimento que o parâmetro de comprimento ou utilize o método [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)**.
 
-**iOS e OS X**
+**iOS e OS X**
 
--   Há dois dialetos de português que recebem suporte de nossos SDKs para iOS e OS X. Infelizmente, devido a um bug, no momento não oferecemos suporte completo à primeira localização. Devido a esse bug, não há suporte total para português. A maior parte do texto está traduzida, mas não a interface de usuário.
+-   Existem dois dialetos de português que os nossos SDKs para iOS e OS X suportam. Infelizmente, devido a um erro, de momento, não suportamos a 1ª localização completamente. Devido a este erro, o português não é totalmente suportado. A maior parte do texto é traduzido, mas não a IU.
 
     1. Português
 
     2. Português (Portugal)
 
-**Somente iOS**
+**Apenas no iOS**
 
--   O RMS SDK 4.x não mostra o indicador de atividade de rede.
+-   O SDK RMS 4.x não mostra o indicador da atividade de rede.
 
-    Esse é um comportamento conhecido opcional para iOS de acordo com as Diretrizes de Interface Humana da Apple.
+    Este é um comportamento opcional conhecido do iOS, de acordo com as Diretrizes de Interface Humana da Apple.
 
-**Somente para OS X**
+**Apenas no OS X**
 
--   O RMS SDK 4.x não mostra o indicador de atividade de rede.
+-   O SDK RMS 4.x não mostra o indicador da atividade de rede.
 
-    Esse é um comportamento conhecido opcional para o OS X de acordo com as Diretrizes de Interface Humana da Apple.
+    Este é um comportamento opcional conhecido do OS X, de acordo com as Diretrizes de Interface Humana da Apple.
 
--   **Solução** - para criar um aplicativo MDI (interface de vários documentos) usando nosso SDK para OS X, use as diretrizes a seguir.
+-   **Solução** – para criar uma aplicação de interface MDI (multiple document interface) através do nosso SDK para OS X, utilize as seguintes orientações.
 
-    Os métodos abaixo não devem ser executados simultaneamente. Para monitorar a conclusão da execução, use a abordagem de bloco de conclusão, conforme indicado.
+    Os seguintes métodos não podem ser executados em simultâneo. Para poder monitorizar a conclusão da execução, utilize a abordagem do bloco de conclusão, conforme indicado.
 
     - [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
     - [**customProtectedDataWithPolicy**](/rights-management/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
 
 
 
-**Observação** Não há suporte para aplicativos MDI em nossa API para iOS.
+**Nota** As aplicações MDI não são suportadas pela nossa API do iOS.
 
-## Perguntas frequentes
+## Perguntas mais frequentes
 
 **Todas as plataformas**
 
-**P**: Eu não vejo uma interface do usuário de seleção de **permissões personalizadas** no fluxo de trabalho de proteção. Por quê?
+**P**: não consigo ver uma IU de seleção de **Permissões Personalizadas** no fluxo de trabalho da proteção. Por que motivo?
 
-**R**: Esse é um problema conhecido e será abordado posteriormente.
+**R** – isto é um problema conhecido e será resolvido mais tarde.
 
-**P**: Como obter novos locatários organizacionais para experimentar o SDK e os aplicativos de exemplo?
+**P**: de que forma obtenho novos inquilinos organizacionais para experimentar o SDK e as aplicações de exemplo?
 
-**R**: Para solicitar credenciais para organizações de teste do Azure AD RMS, envie um email para <rmcstbeta@microsoft.com>.
+**R**: para pedir credenciais para as organizações de teste do Azure AD RMS, envie um e-mail para <rmcstbeta@microsoft.com>.
 
-**P**: Não vejo qualquer discussão de hierarquia de teste aqui na documentação. Por quê?
+**P**: não vejo qualquer debate sobre a hierarquia de testes aqui na documentação. Por que motivo?
 
-**R**: Não há um conceito de hierarquia de teste com os novos AD RMS SDKs. Você sempre trabalhará com a hierarquia de produção.
+**R**: não existe qualquer conceito de hierarquia de testes com os novos SDKs AD RMS. Irá sempre trabalhar com a hierarquia de produção.
 
-**P**: Na versão 2.1 do RMS SDK, era necessário gerar um manifesto para cada aplicativo que implementasse a proteção de informações. Isso ainda é verdade para as versões 4.0 e posteriores do SDK?
+**P**: na versão 2.1 do SDK RMS, era necessário um manifesto gerado para cada aplicação que implementasse a proteção de informações, isto ainda se mantém para as versões 4.0 e posteriores do SDK?
 
-**R**: Não, os manifestos não são mais necessários para as versões 3.0 e posteriores do Rights Management SDK.
+**R**: não, os manifestos já não são necessários para as versões 3.0 e posteriores do SDK Rights Management.
 
 **Android**
 
-**P**: Em quais ambientes de desenvolvimento o SDK foi testado?
+**P**: com que ambientes de desenvolvimento foi o SDK testado?
 
-**R**: Eclipse Juno usando a API 15 do Google e posteriores.
+**R**: Eclipse Juno através da API do Google 15 e superior.
 
-**P**: Posso chamar cancel(), um método de cancelamento, do thread da interface de usuário?
-**R**: Você deve chamar cancel() de um thread que não seja na interface de usuário, pois isso pode abortar uma conexão de rede.
+**P**: posso chamar um método de cancelamento cancel() a partir do thread da IU?
+**R**: deve chamar cancel() a partir de um thread não IU, pois pode abortar uma ligação de rede.
 
 **iOS**
 
-**P**: Quais plataformas foram verificadas para o desenvolvimento do SDK?
+**P**: que plataformas foram verificadas para o desenvolvimento de SDK?
 
-**R**: Xcode 5.0 com iOS 7 e posterior.
+**R**: Xcode 5.0 com iOS 7 e posterior.
 
-**P**: Chamei um método cancel() em uma operação, no entanto, ainda recebo uma notificação de que a operação foi concluída. Por quê?
+**P**: chamei um método cancel() numa operação; no entanto, ainda obtive uma notificação sobre a conclusão da operação. Por que motivo?
 
-**R**: Nem todas as operações podem ser canceladas, portanto, uma operação de cancelamento é executada da melhor forma possível.
+**Um**: nem todas as operações podem ser canceladas, pelo que uma operação de cancelamento é executada da melhor forma possível.
 
-**OS x**
+**OS x**
 
-**P**: A estrutura do aplicativo de exemplo foi adaptada para o Xcode 5. Posso trabalhar com o Xcode 4.6?
+**P**: a estrutura de aplicações de exemplo é adaptada para o Xcode 5, posso trabalhar com o Xcode 4.6?
 
-**R**: O OSX SDK funciona apenas com o Xcode 4.6 e posterior, e também com o OS X 10.8 e posterior.
+**R**: o SDK OS X apenas funciona com o Xcode 4.6 e versões posteriores, bem como o OS X 10.8 e versões posteriores.
 
  
 

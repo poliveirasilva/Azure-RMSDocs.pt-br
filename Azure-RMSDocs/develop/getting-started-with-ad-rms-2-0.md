@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introdução | Azure RMS
-description: A plataforma do RMS SDK 2.1 permite aos desenvolvedores compilar aplicativos que aproveitam a proteção de informações do RMS.
+description: A plataforma SDK RMS 2.1 permite aos programadores criarem aplicações que tiram partido da proteção de informações do RMS.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -25,58 +25,58 @@ ms.suite: ems
 ---
 # Introdução
 
-A plataforma do Rights Management Services SDK 2.1 permite aos desenvolvedores compilar aplicativos que aproveitam a proteção de informações do RMS por meio de um Servidor RMS ou do Azure RMS. A plataforma lida com as práticas de segurança complexas, como processamento de descriptografia, criptografia e gerenciamento de chaves, e oferece uma API simplificada para fácil desenvolvimento de aplicativos.
+A plataforma do SDK Rights Management Services 2.1 permite aos programadores criar aplicações que tiram partido da proteção de informações do RMS através de um RMS Server ou do Azure RMS. A plataforma processa práticas de segurança complexas tais como a gestão de chaves, o processamento de encriptação e desencriptação e oferece uma API simplificada para a programação de aplicações fácil.
 
-## Introdução ao RMS SDK 2.1
+## Introdução ao SDK RMS 2.1
 
-Este tópico o orientará durante o processo de configuração e execução do seu aplicativo habilitado para direitos em um ambiente de teste. Os tópicos a seguir abordam como configurar seu ambiente de desenvolvimento e são listados de modo a sugerir uma ordem para execução das tarefas.
+Este tópico descreve o processo de configuração e execução da aplicação com permissão para direitos num ambiente de teste. Os tópicos seguintes analisam como configurar o ambiente de desenvolvimento, sendo listados pela ordem de execução das tarefas.
 
-## Nestas seções
+## Nestas secções
 
 | Tópico | Descrição |
 |-------|-------------|
-| [Notas de versão](release-notes-rtm.md) | Este tópico contém informações importantes sobre esta versão e sobre versões anteriores do RMS SDK 2.1.|
-| [Instalar o SDK](install-the-rms-sdk.md) | Este tópico o orientará durante a instalação das ferramentas de desenvolvedor.|
-| [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Este tópico contém instruções sobre como configurar um projeto do Visual Studio para usar o RMS SDK 2.1.|
-| [Desenvolvendo seu aplicativo](developing-your-application.md) | Este tópico contém orientações essenciais sobre os principais aspectos de um aplicativo habilitado para RMS e pode servir como a base do desenvolvimento de seu próprio aplicativo.|
-| [Testando seu aplicativo](running-your-first-application.md) |Este tópico contém instruções sobre a configuração dos testes para seu aplicativo.|
-| [Implantar na produção](deploying-your-application.md) |Este tópico orienta você quanto à opções de implantação para seu aplicativo habilitado para direitos.|
+| [Release Notes (Notas de Lançamento)](release-notes-rtm.md) | Este tópico contém informações importantes sobre isto e sobre versões anteriores do SDK RMS 2.1.|
+| [Instalar o SDK](install-the-rms-sdk.md) | Este tópico descreve o processo de instalação das ferramentas de programação.|
+| [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Este tópico contém instruções sobre como configurar um projeto do Visual Studio para utilizar o SDK RMS 2.1.|
+| [Desenvolver a sua aplicação](developing-your-application.md) | Este tópico contém documentação de orientação essencial sobre os aspetos base de uma aplicação com permissão para RMS e pode servir de ponto de partida para o desenvolvimento da sua aplicação.|
+| [Testar a sua aplicação](running-your-first-application.md) |Este tópico contém instruções sobre como configurar o teste de aplicações.|
+| [Implementar em produção](deploying-your-application.md) |Este tópico descreve as opções de implementação da sua aplicação com permissão para direitos.|
 
-Depois de ter começado usar, confira alguns dos nossos outros [exemplos de RMS](samples.md). Em seguida, mantenha-se atualizado por meio de nosso [Blog do Desenvolvedor do RMS](http://blogs.msdn.com/b/rms/).
+Assim que tiver iniciado, veja algumas das nossas outras [amostras do RMS](samples.md). Em seguida, mantenha-se atualizado através da nossa [Área para Programadores do RMS](http://blogs.msdn.com/b/rms/).
 
 
-Tente usar o RMS SDK 2.1 seguindo as diretrizes nestes tópicos:
+Tente utilizar o SDK RMS 2.1 ao seguir as orientações nos seguintes tópicos:
 
 -   [Instalar o SDK](install-the-rms-sdk.md)
--   [Testando seu aplicativo habilitado para direitos](running-your-first-application.md)
--   [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
+-   [Testar a aplicação com capacidade para direitos](running-your-first-application.md)
+-   [IPCHelloWorld – uma aplicação de exemplo](how-to-build-your-first-application.md)
 
-### Por que usar o RMS SDK 2.1 para proteger seu conteúdo
+### Por que motivo deve utilizar o SDK RMS 2.1 para proteger o seu conteúdo
 
-Para os desenvolvedores que desejam adicionar suporte RMS para seus aplicativos novos e existentes, o RMS SDK 2.1 ajuda a tornar mais fácil:
+Para programadores que pretendem adicionar o suporte do RMS às suas aplicações novas e existentes, o SDK RMS 2.1 facilita:
 
--   Aplicativos gerenciáveis pelo autor, compatíveis e robustos que reconhecem o RMS.
--   Criptografe dados de usuário de maneira persistente. Os dados permanecem criptografados independentemente do ambiente, do dispositivo ou do sistema operacional.
--   Imponha um rico conjunto de restrições de uso, como impedir a capturas de tela de seus dados confidenciais.
--   Dê suporte a políticas de proteção gerenciadas pela empresa.
--   Dê suporte a novos mecanismos de autenticação e algoritmos de criptografia assim que eles ficarem disponíveis.
+-   Criar aplicações geríveis, compatíveis, robustas e com suporte para RMS.
+-   Encriptar dados do utilizador de forma persistente. Os dados permanecem encriptados independentemente do ambiente, do dispositivo ou do sistema operativo.
+-   Impor um conjunto completo de restrições de utilização, tais como impedir as capturas de ecrã dos dados confidenciais.
+-   Apoiar políticas de proteção geridas por empresas.
+-   Suportar novos mecanismos de autenticação e algoritmos de encriptação à medida que ficam disponíveis.
 
-O RMS SDK 2.1 dá suporte a uma variedade de importantes plataformas de cliente e servidor. Para obter mais informações, consulte [Plataformas com suporte](supported-platforms.md).
+O SDK RMS 2.1 suporta uma gama de plataformas de clientes e servidores importantes. Para obter mais informações, consulte [Plataformas suportadas](supported-platforms.md).
 
-## Princípios básicos
+## Princípios fundamentais
 
-**Simplicidade** – padrões de uso e comentários para AD RMS SDK 1.0 foram analisados e esses dados foram usados para simplificar ou automatizar as tarefas de programação mais difícil. Aplicativos RMS criados usando o RMS SDK 2.1 normalmente exigem de cinco a dez menos linhas de código RMS que aplicativos RMS escritos usando o AD RMS SDK 1.0.
-**Escreva uma vez**— os aplicativos RMS SDK 2.1 não precisam de alteração ou recompilação de código para funcionarem com os recursos mais recentes do RMS. Novos recursos do RMS estarão disponíveis em seu aplicativo existente conforme são adicionados ao servidor RMS.
-**Consistência**— o RMS SDK 2.1 ajuda a tornar mais fácil escrever aplicativos que cumpram consistentemente configurações diferentes do RMS. Ele também reduzem significativamente a quantidade da interface do usuário do RMS que você, como desenvolvedor do aplicativo, precisa criar, incentivando uma aparência consistente e reduzindo a necessidade de treinamento do usuário.
+**Simplicidade** – foram analisados padrões de comentários e de utilização do SDK AD RMS 1.0 e esses dados foram utilizados para simplificar ou automatizar as tarefas de programação mais difíceis. Normalmente, as aplicações do RMS criadas utilizando o SDK RMS 2.1 necessitam de 5 a 10 vezes menos linhas de código do RMS do que as aplicações do RMS escritas utilizando o SDK AD RMS 1.0.
+**Escrita única** – as aplicações do SDK RMS 2.1 não necessitam de uma alteração de código ou de uma recompilação para funcionar com as funcionalidades do RMS mais recentes. As novas funcionalidades do RMS ficarão disponíveis na sua aplicação existente conforme forem adicionadas ao servidor RMS.
+**Consistência** – o SDK RMS 2.1 faz com que seja mais fácil escrever as aplicações que respeitam de forma consistente diferentes configurações do RMS. Além disso, reduz significativamente a quantidade da interface de utilizador do RMS que o programador da aplicação precisa para criar, incentivando um aspeto e funcionalidade consistentes, e reduzindo a necessidade da educação do utilizador.
 
 ## Tópicos relacionados
 
-* [Exemplos do AD RMS](samples.md)
-* [Blog do Desenvolvedor do AD RMS](http://blogs.msdn.com/b/rms/)
+* [Amostras do AD RMS](samples.md)
+* [Área para Programadores do AD RMS](http://blogs.msdn.com/b/rms/)
 * [Instalar o SDK](install-the-rms-sdk.md)
-* [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
-* [Visão geral](ad-rms-overview.md)
-* [Plataformas com suporte](supported-platforms.md)
+* [IPCHelloWorld – uma aplicação de exemplo](how-to-build-your-first-application.md)
+* [Descrição Geral](ad-rms-overview.md)
+* [Plataformas suportadas](supported-platforms.md)
  
 
  

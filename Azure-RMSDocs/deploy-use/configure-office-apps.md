@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aplicativos do Office; configuração para clientes | Azure RMS
+title: "Aplicações do Office: configuração para clientes | Azure RMS"
 description:
 keywords:
 author: cabailey
@@ -25,22 +25,22 @@ ms.suite: ems
 
 ---
 
-# Aplicativos do Office: configuração para clientes
+# Aplicações do Office: configuração para clientes
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-Use essas informações para determinar o que você precisa fazer para que os aplicativos do Office usados por seus usuários finais funcionem com o Azure Rights Management (Azure RMS).
+Utilize estas informações para determinar o que tem de fazer para que as aplicações do Office utilizadas pelos seus utilizadores finais funcionem com o Azure Rights Management (Azure RMS).
 
 ## Office 2016 e Office 2013
-Como as versões posteriores do Office dão suporte nativo ao Azure RMS, nenhuma configuração do computador cliente é necessária para dar suporte aos recursos do IRM (gerenciamento de direitos de informação) para aplicativos como Word, Excel, PowerPoint, Outlook e o Outlook Web App. Tudo o que os usuários precisam fazer é entrar em seus aplicativos do Office com suas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] e eles poderão proteger arquivos e emails, e usar arquivos e emails que foram protegidos por outras pessoas.
+Uma vez que estas versões mais recentes do Office suportam nativamente o Azure RMS, não é necessária nenhuma configuração de computador cliente para suportar as funcionalidades de gestão de direitos de informação (IRM) em aplicações como o Word, o Excel, o PowerPoint, o Outlook e o Outlook Web App. Os utilizadores só têm de iniciar sessão nas aplicações do Office com as respetivas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] para poderem proteger ficheiros e e-mails e utilizar ficheiros e e-mails protegidos por outras pessoas.
 
-No entanto, recomendamos que você complemente esses aplicativos com o aplicativo de compartilhamento do Rights Management, de modo que os usuários se beneficiem do suplemento do Office. Para obter mais informações, consulte [Aplicativo de compartilhamento Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
+No entanto, recomendamos que complemente estas aplicações com a aplicação de partilha Rights Management, para que os utilizadores possam beneficiar do suplemento do Office. Para mais informações, consulte [Aplicação de partilha Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
 
 ## Office 2010
-Para que computadores cliente usem o Azure RMS com o Office 2010, é necessário instalar o aplicativo de compartilhamento do Rights Management do Windows. Nenhuma outra configuração é necessária exceto que os usuários devem entrar com suas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] e poderão, em seguida, proteger arquivos e usar arquivos que tenham sido protegidos por outras pessoas.
+Para que os computadores cliente utilizem o Azure RMS com o Office 2010, a aplicação de partilha Rights Management para Windows deve estar instalada nestes computadores. Os utilizadores apenas têm de iniciar sessão com as respetivas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] para poderem proteger ficheiros e utilizar ficheiros que tenham sido protegidos por outros utilizadores.
 
-Para obter mais informações sobre o aplicativo de compartilhamento Rights Management, consulte a seção [Aplicativo de compartilhamento Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
+Para mais informações acerca da aplicação de partilha Rights Management, consulte [Aplicação de partilha Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
 
 
 

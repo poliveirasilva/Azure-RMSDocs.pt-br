@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Como os usuários se inscrevem no RMS para pessoas físicas | Azure RMS
+title: Como os utilizadores se inscrevem no RMS para indivíduos | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,84 +25,84 @@ ms.suite: ems
 
 ---
 
-# Como os usuários se inscrevem no RMS para pessoas físicas
+# Como os utilizadores se inscrevem no RMS para indivíduos
 
 *Aplica-se a: Azure Rights Management*
 
-Solicite o registro para esta conta gratuita visitando a [página do Microsoft Rights Management](https://portal.aadrm.com/) e forneça seu endereço de email do trabalho ou escola. 
+Para se inscrever nesta conta gratuita, os utilizadores efetuam o pedido ao visitar a [página Microsoft Rights Management](https://portal.aadrm.com/) e fornecem o seu endereço de e-mail profissional ou escolar. 
 
-A maneira mais comum para ser direcionado para a página de inscrição é receber uma mensagem de email com um anexo protegido que contenha instruções de como se inscrever. Você receberá um email em resposta da Microsoft e, em seguida, poderá concluir o processo de inscrição digitando os detalhes para criar sua conta. Quando você receber um email de confirmação da Microsoft, esta mensagem final enviará o usuário para uma página na qual é possível baixar o aplicativo de compartilhamento para diferentes dispositivos e um link para o guia do usuário.
+A forma mais habitual através da qual os utilizadores serão direcionados para esta página de inscrição é se receberem uma mensagem de e-mail com um anexo protegido, que contém instruções para a inscrição. Recebem um e-mail em resposta da Microsoft e, em seguida, podem concluir o processo de inscrição, introduzindo os detalhes para criar a conta. Quando recebem uma confirmação de e-mail da Microsoft, esta última mensagem de e-mail envia-os para uma página onde podem transferir a aplicação de partilha para diferentes dispositivos e uma ligação para o guia do utilizador.
 
-## Para se inscrever no RMS para pessoas físicas
+## Para se inscrever no RMS para indivíduos
 
-1.  Usando um computador Windows ou Mac, vá para a [página do Microsoft Rights Management](https://portal.aadrm.com).
+1.  Num computador Windows ou Mac, aceda à [página Microsoft Rights Management](https://portal.aadrm.com).
 
-2.  Digite o endereço de email que você usa para sua organização, como **janetm@contoso.com** ou **p.dover@fabrikam.com**.
+2.  Escreva o endereço de e-mail que utiliza para a sua organização, tal como **juliam@contoso.com** ou **p.barbosa@fabrikam.com**.
 
     > [!IMPORTANT]
-    > Não há suporte para contas de email pessoal, por isso não insira uma conta da Microsoft (antes conhecida como conta da Microsoft Live ID) ou outra conta pessoal que você use em casa do seu provedor de Internet.
+    > As contas de e-mail pessoais não são suportadas, como tal, não introduza uma conta Microsoft (anteriormente denominada uma conta Microsoft Live ID) ou outra conta pessoal que poderá utilizar em casa através do seu fornecedor de Internet.
 
 3.  Clique em **Introdução**.
 
-    A Microsoft usa seu endereço de email para verificar se sua organização já tem uma [assinatura paga que inclua o Azure RMS](../get-started/requirements-subscriptions.md). Se esse for o caso, você não precisará do RMS para pessoas físicas, por isso, você será conectado imediatamente e a assinatura de autoatendimento para o RMS para pessoas físicas será cancelada. Se uma assinatura paga do Azure RMS não for encontrada, você continuará para a próxima etapa.
+    A Microsoft utiliza o seu endereço de e-mail para verificar se a sua organização já tem uma [subscrição paga que inclui o Azure RMS](../get-started/requirements-subscriptions.md). Se for esse o caso, não precisa do RMS para indivíduos, pelo que irá iniciar sessão imediatamente e a inscrição self-service para o RMS para indivíduos é cancelada. Se não for encontrada uma subscrição paga para o Azure RMS, irá continuar para o passo seguinte.
 
-4.  Aguarde uma mensagem de confirmação por email que será enviada para o endereço fornecido. Será da Microsoft (DoNotReply@microsoft.com) e tem como assunto **Microsoft RMS**.
+4.  Aguarde que uma mensagem de e-mail de confirmação seja enviada para o endereço que especificou. Esta mensagem será enviada pela Microsoft (DoNotReply@microsoft.com) com o assunto **Microsoft RMS**.
 
-5.  Ao receber o email, clique no link das instruções para concluir o processo de inscrição.
+5.  Quando receber o e-mail, clique na ligação nas instruções para concluir o processo de inscrição.
 
-6.  O link leva você uma nova página do **Microsoft Rights Management** para fornecer detalhes da sua conta. Digite seu nome, sobrenome, insira e confirme uma senha de sua escolha, selecione seu país (ou o país mais próximo, caso seu país não esteja na lista suspensa) e, em seguida, clique em **Criar**.
+6.  A ligação reencaminha-o para uma nova página **Microsoft Rights Management** para que forneça os detalhes da sua conta. Escreva o seu nome próprio e apelido, introduza e confirme uma palavra-passe à sua escolha, selecione o seu país (ou o país mais próximo do seu se o seu país não estiver listado) na lista pendente e, em seguida, clique em **Criar**.
 
-7.  Espere por outra mensagem de email da Microsoft agora confirmando que a sua conta está pronta para ser usada.
+7.  Aguarde por outra mensagem de e-mail da Microsoft que confirme que a sua conta já está pronta a ser utilizada.
 
-8.  Quando você receber o email, clique no link para entrar e ler as instruções para baixar e instalar o aplicativo de compartilhamento ou clique no link Ajuda para ler o guia do usuário do aplicativo de compartilhamento.
+8.  Quando receber o e-mail, clique na ligação para iniciar sessão e leia as instruções para transferir e instalar a aplicação de partilha ou clique na ligação de Ajuda para ler o guia do utilizador da aplicação de partilha.
 
-Agora que a sua conta foi criada, você pode começar a proteger arquivos e ler arquivos que outras pessoas protegeram. Ao ser solicitado a entrar para proteger ou ler arquivos protegidos, digite o endereço de email e a senha usados para criar a conta no RMS para indivíduos.
+Agora, a sua conta está criada, está pronto para começar a proteger ficheiros e a ler ficheiros que outros utilizadores protegeram. Quando lhe for pedido que inicie sessão para proteger ou ler ficheiros protegidos, introduza o seu endereço de e-mail e palavra-passe que utilizou para criar a conta do RMS para indivíduos.
 
-## Visão geral técnica do processo de inscrição
-O RMS para pessoas físicas usa um processo de inscrição de autoatendimento que também é usado por outros serviços que usam tecnologia baseada em nuvem da Microsoft para autenticar usuários.
+## Descrição geral técnica do processo de inscrição
+O RMS para indivíduos utiliza um processo de inscrição self-service que também é utilizado por outros serviços que utilizam a tecnologia baseada na nuvem da Microsoft para autenticar os utilizadores.
 
-Isso é o que acontece em segundo plano quando um usuário se inscreve para o RMS para indivíduos e sua organização não tiver uma assinatura do Office 365 ou assinatura do Azure e, portanto, nenhum diretório no Azure para autenticar os usuários:
+Isto é o que acontece em segundo plano quando um utilizador se inscreve no RMS para indivíduos e a respetiva organização não tem uma subscrição do Office 365 ou do Azure e, por conseguinte, nenhum diretório no Azure para autenticar os utilizadores:
 
-1.  Quando o primeiro usuário de uma organização solicita uma assinatura do RMS para pessoas físicas, o nome de domínio fornecido em seu endereço de email é verificado para ver se ele já está associado a um locatário do Azure. Se não houver nenhum locatário existente, um novo locatário e o diretório do Azure são criados automaticamente para a organização, que contém uma conta para este primeiro usuário. Ao contrário de uma assinatura paga do Azure, essa primeira conta não é um administrador global, mas um usuário padrão. A nova conta usa o endereço de email e senha que o usuário forneceu.
+1.  Quando o primeiro utilizador de uma organização solicita uma subscrição do RMS para indivíduos, o nome de domínio fornecido no respetivo endereço de e-mail é verificado para ver se já está associado a um inquilino do Azure. Se não houver um inquilino existente, é criado automaticamente um novo inquilino e um diretório do Azure para a organização, que contém uma conta para este primeiro utilizador. Ao invés de uma subscrição paga do Azure, esta primeira conta não é um administrador global, mas um utilizador padrão. A nova conta utiliza o endereço de e-mail e a palavra-passe que o utilizador forneceu.
 
     > [!NOTE]
-    > Alguns nomes de domínio não podem ser usados para criar o diretório e, portanto, não podem ser usados para o RMS para indivíduos. A lista de nomes de domínios bloqueados pode ser visualizada neste arquivo do JavaScript Object Notation: [http://portal.aadrm.com/content/blocked_domains.json](http://portal.aadrm.com/content/blocked_domains.json)
+    > Alguns nomes de domínio não podem ser utilizados para criar o diretório e, por conseguinte, não podem ser utilizados para o RMS para indivíduos. A lista de nomes de domínio bloqueados pode ser visualizada neste ficheiro JavaScript Object Notation: [http://portal.aadrm.com/content/blocked_domains.json](http://portal.aadrm.com/content/blocked_domains.json)
 
-    Se for encontrado um locatário existente, será verificado se ele já possui uma assinatura do Azure RMS. Quando nenhuma assinatura é encontrada, a assinatura gratuita do RMS para pessoas físicas pode ser adicionada.
+    Se for encontrado um inquilino existente, este é verificado para ver se já tem uma subscrição do Azure RMS. Quando não é encontrada qualquer subscrição, é possível adicionar a subscrição do RMS para indivíduos gratuita.
 
-2.  A organização recebe a assinatura do RMS para pessoas físicas. Agora, esse usuário poderá ser autenticado pelo Azure e poderá proteger e ler arquivos protegidos por outras pessoas usando o Azure Rights Management. Para proteger e ler arquivos protegidos, o usuário deve ter um aplicativo habilitado para RMS, como o [aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-windows.md) gratuito.
+2.  É concedida à organização a subscrição do RMS para indivíduos. Agora, este utilizador pode ser autenticado pelo Azure e pode, em seguida, proteger ficheiros e ler ficheiros que outras pessoas protegeram utilizando o Azure Rights Management. Para proteger e ler ficheiros protegidos, o utilizador tem de ter uma aplicação otimizada por RMS, tal como a [aplicação de partilha Rights Management](../rms-client/sharing-app-windows.md) gratuita.
 
-3.  Quando o segundo usuário da mesma organização solicita uma assinatura do RMS para indivíduos, uma nova conta de usuário é adicionada ao diretório do Azure criado anteriormente, usando a assinatura do RMS para indivíduos da organização. Este segundo usuário pode fazer tudo o que o primeiro usuário podia fazer (proteger arquivos e ler arquivos protegidos), mas esses dois usuários agora também podem colaborar com segurança e mais facilmente, porque eles podem aplicar rapidamente modelos padrão a arquivos que restringem o acesso a contas no diretório do Azure da organização.
+3.  Quando o segundo utilizador da mesma organização solicita uma subscrição do RMS para indivíduos, é adicionada uma nova conta de utilizador ao diretório do Azure criado anteriormente, utilizando a subscrição do RMS para indivíduos da organização. Este segundo utilizador pode fazer tudo o que o primeiro utilizador podia fazer (proteger ficheiros e ler ficheiros protegidos), mas, além disso, estes dois utilizadores podem agora colaborar mais facilmente em segurança porque podem aplicar rapidamente modelos predefinidos a ficheiros que restringem o acesso a contas no diretório do Azure da sua organização.
 
-4.  Os usuários subsequentes da mesma organização seguem o mesmo padrão, adicionando contas de usuário (quando novos usuários se inscreverem) ao diretório Azure da organização. Quanto mais contas forem adicionadas ao diretório, mais os usuários podem colaborar de forma segura com os colegas e parceiros, e fica mais fácil evitar que pessoas não autorizadas leiam seus arquivos quando nem deveriam acessá-los.
+4.  Os utilizadores subsequentes da mesma organização seguem o mesmo padrão, adicionando contas de utilizadores (quando novos utilizadores se inscrevem) ao diretório do Azure da sua organização. Quanto mais contas forem adicionadas ao diretório, mais utilizadores podem colaborar com colegas e parceiros de forma mais segura e impedir mais facilmente que as pessoas não autorizadas leiam os seus ficheiros quando não devem ter acesso aos mesmos.
 
-Durante todo este processo, não há custos para a organização e nenhum trabalho é exigido do departamento de TI. No entanto, o departamento de TI pode optar por uma das seguintes opções:
+Ao longo deste processo, não é cobrado qualquer valor à organização e não é necessário qualquer trabalho por parte do departamento de TI. No entanto, o departamento de TI pode optar por efetuar um dos seguintes procedimentos:
 
--   **Gerenciar as contas e o processo de inscrição**: os administradores de TI podem assumir a propriedade do diretório e contas criados automaticamente no Azure. Eles podem gerenciar as contas através da implementação de soluções de integração de diretório, como a sincronização de senhas e logon único. Ou eles podem impedir que os usuários criem contas ou se inscrevam no RMS para pessoas físicas.
+-   **Gerir as contas e o processo de inscrição**: os administradores de TI podem tornar-se proprietários das contas e diretórios criados automaticamente no Azure. Em seguida, podem gerir as contas através da implementação de soluções de integração de diretórios como o início de sessão único e a sincronização de palavras-passe. Em alternativa, podem impedir os utilizadores de criarem contas ou de se inscreverem no RMS para indivíduos.
 
-    Para obter mais informações, consulte [Como os administradores podem controlar as contas criadas para o RMS para pessoas físicas](rms-for-individuals-take-control.md).
+    Para obter mais informações, consulte [Como os administradores podem controlar as contas criadas para o RMS para indivíduos](rms-for-individuals-take-control.md).
 
--   **Gerenciar o Rights Management**: os administradores de TI podem converter a assinatura do RMS para indivíduos da organização para uma assinatura paga que inclui o Azure Rights Management. Ao fazer isso, o diretório do Azure e as contas existentes serão preservados para proporcionar uma transição suave para os usuários existentes que estavam usando o RMS para indivíduos. Todos os arquivos protegidos anteriormente ainda serão protegidos com as mesmas políticas e as pessoas a quem concederam permissões para usar os arquivos ainda poderão usar os arquivos da mesma forma.
+-   **Gerir o Rights Management**: os administradores de TI podem converter a subscrição do RMS para indivíduos da organização numa subscrição paga que inclui o Azure Rights Management. Ao fazê-lo, as contas e o diretório do Azure existentes são preservadas para uma transição sem problemas para utilizadores existentes que estavam a utilizar o RMS para indivíduos. Todos os ficheiros que os utilizadores protegeram anteriormente continuarão a estar protegidos com as mesmas políticas e as pessoas às quais foram concedidas permissões para utilizar os ficheiros continuarão a poder utilizar os ficheiros da mesma forma.
 
-    Quando você faz isso, sua organização se beneficia da capacidade de integrar o Rights Management em seus fluxos de trabalho, serviços e armazenamento de dados. Além disso, agora você pode gerenciar o Rights Management, porque você tem controle sobre a chave do locatário da organização para o Azure Rights Management. Agora você pode fazer o seguinte:
+    Ao realizar este procedimento, a sua organização é beneficiada por poder integrar o Rights Management nos seus fluxos de trabalho, serviços e arquivos de dados. Além disso, já pode gerir o Rights Management porque tem controlo sobre a chave de inquilino da sua organização para o Azure Rights Management. Agora, pode realizar o seguinte:
 
-    -   Configure o Exchange e o SharePoint para dar suporte ao Azure Rights Management, ainda que eles estejam em execução local. O Exchange e o SharePoint têm suporte nativo para os serviços online e são suportados por um conector para os servidores locais. Para obter mais informações, consulte o seguinte:
+    -   Configurar o Exchange e o SharePoint para suportar o Azure Rights Management, mesmo que estas estejam em execução no local. O Exchange e o SharePoint são nativamente suportados para os serviços online e são suportados por um conetor para os servidores no local. Para obter mais informações, consulte o seguinte:
 
-        -   As seções do Exchange Online e o SharePoint Online do [Office 365: configuração para clientes e serviços online](../deploy-use/configure-office365.md)
+        -   As secções do Exchange Online e do SharePoint Online de [Office 365: configuração para os clientes e os serviços online](../deploy-use/configure-office365.md)
 
-        -   [Implantando o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md)
+        -   [Implementar o conetor Azure Rights Management](../deploy-use/deploy-rms-connector.md)
 
-    -   Execute o e-discovery em dados de propriedade da empresa para que, se necessário, você possa descriptografar arquivos que foram protegidos com o Rights Management. Para obter mais informações, consulte [Configurando superusuários para o Azure Rights Management e serviços de descoberta ou recuperação de dados](../deploy-use/configure-super-users.md).
+    -   Efetue a deteção de dados eletrónicos nos dados pertencentes à empresa para poder, se necessário, desencriptar ficheiros que foram protegidos através do Rights Management. Para mais informações, consulte [Configurar superutilizadores para o Azure Rights Management e serviços de deteção ou recuperação de dados](../deploy-use/configure-super-users.md).
 
-    -   Registre todas as atividades no Rights Management como é feito na sua organização. Isso é muito eficiente, porque não só é possível monitorar quais arquivos estão sendo protegidos e quem os está acessando com sucesso, mas você também pode identificar comportamentos potencialmente suspeitos de pessoas não autorizadas que estão tentando acessar os arquivos protegidos. Para obter mais informações, consulte [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md).
+    -   Registe toda a atividade do Rights Management, conforme utilizado na sua organização. Isto é extremamente útil porque não só pode monitorizar os ficheiros que estão a ser protegidos e quem está a aceder a esses ficheiros protegidos com êxito, como também pode identificar comportamentos potencialmente suspeitos de pessoas não autorizadas que estão a tentar aceder a ficheiros protegidos. Para obter mais informações, consulte [Registo e análise da utilização do Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Forneça aos usuários a capacidade de rastrear e revogar seus documentos protegidos, se esses recursos forem compatíveis com a sua [assinatura do Azure RMS](https://technet.microsoft.com/dn858608). Para obter mais informações, consulte [Acompanhar e revogar arquivos](../rms-client/sharing-app-track-revoke.md) no [guia de usuário do aplicativo de compartilhamento RMS](../rms-client/sharing-app-user-guide.md)..
+    -   Forneça aos utilizadores a capacidade de controlar e revogar os seus documentos protegidos, se estas funcionalidades forem suportadas pela sua [Subscrição do Azure RMS](https://technet.microsoft.com/dn858608). Para obter mais informações, consulte [Controlar e revogar os ficheiros](../rms-client/sharing-app-track-revoke.md) no [Guia do utilizador da aplicação de partilha RMS](../rms-client/sharing-app-user-guide.md).
 
-    -   Implemente a solução BYOK (Bring Your Own Key ou Traga Sua Própria Chave) para que sua chave de locatário para o Azure Rights Management seja gerada no local, de acordo com suas políticas de TI, e transferida com segurança para a Microsoft usando um Hardware Security Module (HSM). Para obter mais informações, consulte [Planejando e implementando sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+    -   Implemente uma solução “traga a sua própria chave” (BYOK) para que a chave de inquilino do Azure Rights Management seja gerada no local, de acordo com as políticas de TI, e seja transferida em segurança para a Microsoft através da utilização de um Módulo de Hardware de Segurança (HSM). Para mais informações, consulte [Planear e implementar a chave de inquilino do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 
-## Próximas etapas
-Consulte [Como os administradores podem controlar as contas criadas para o RMS para pessoas físicas](rms-for-individuals-take-control.md).
+## Passos seguintes
+Consulte [Como os administradores podem controlar as contas criadas para o RMS para indivíduos](rms-for-individuals-take-control.md).
 
 
 

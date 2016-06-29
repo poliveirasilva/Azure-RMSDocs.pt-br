@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migração do AD RMS para o Azure Rights Management - Fase 1 | Azure RMS
+title: Migrar do AD RMS para o Azure Rights Management – Fase 1 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,127 +25,127 @@ ms.suite: ems
 
 ---
 
-# Fase de migração 1: configuração do lado do servidor para o AD RMS
+# Fase de migração 1 – configuração do lado do servidor para o AD RMS
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management*
 
-Use as informações a seguir para a Fase 1 da migração do AD RMS para o Azure RMS (Azure Rights Management). Esses procedimentos abrangem as etapas 1 a 4 de [Migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+Utilize as seguintes informações para a Fase 1 da migração do AD RMS para o Azure Rights Management (Azure RMS). Estes procedimentos abrangem os passos 1 a 4 de [Migrar do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Etapa 1: baixar a ferramenta de Administração do Azure Rights Management
-Vá para a Central de Download da Microsoft e baixe a [Ferramenta de Administração do Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721), que contém o módulo de administração do Azure RMS para o Windows PowerShell.
+## Passo 1: transferir a Ferramenta de Administração do Azure Rights Management
+Aceda ao Centro de Transferências da Microsoft e transfira a [Ferramenta de Administração do Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721), que contém o módulo de administração do Azure RMS para o Windows PowerShell.
 
-Instale o aplicativo. Para obter instruções de instalação, confira [Instalação do Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
+Instale a ferramenta. Para obter instruções, consulte [Instalar o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md).
 
-## Etapa 2. Exportar os dados de configuração do AD RMS e importá-los para o Azure RMS
-Esta etapa é um processo de duas partes:
+## Passo 2. exportar os dados de configuração do AD RMS e importá-los para o Azure RMS
+Este passo divide-se em duas partes:
 
-1.  Exporte os dados de configuração do AD RMS, exportando os domínios de publicação confiável (TPDs) para um arquivo .xml. Esse processo é o mesmo para todas as migrações.
+1.  Exportar os dados de configuração do AD RMS através da exportação dos domínios de publicação fidedignos (TPD) para um ficheiro. xml. Este processo é igual para todas as migrações.
 
-2.  Importe os dados de configuração para o Azure RMS. Existem processos diferentes para essa etapa, dependendo da sua configuração atual de implantação do AD RMS e da sua topologia preferencial para a chave de locatário do Azure RMS.
+2.  Importar os dados de configuração para o Azure RMS Existem diferentes processos para este passo consoante a configuração da implementação atual do AD RMS e a topologia preferida para a sua chave de inquilino do Azure RMS.
 
 ### Exportar os dados de configuração do AD RMS
-Faça o seguinte em todos os clusters do AD RMS, para todos os domínios de publicação confiáveis que já protegeram o conteúdo da sua organização. Você não precisa executar isso em clusters somente de licenciamento.
+Efetue o seguinte procedimento em todos os clusters do AD RMS de todos os domínios de publicação fidedignos que possuem conteúdos protegidos da sua organização. Não tem de o executar em clusters só de licenciamento.
 
-> [!NOTE] Se você estiver usando o Windows Server 2003 Rights Management, em vez dessas instruções, siga o procedimento [Exportar chave privada de SLC, TUD, TPD e RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) do artigo [Migrando do Windows RMS para AD RMS em uma infraestrutura diferente](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
+> [!NOTE] Se estiver a utilizar a Gestão de Direitos do Windows Server 2003, em vez de seguir estas instruções, siga o procedimento [Exportar a chave privada do SLC, do TUD, do TPD e do RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) do artigo [Migrar do Windows RMS para o AD RMS numa Infraestrutura Diferente](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx).
 
-#### Para exportar os dados de configuração (informações de domínio de publicação confiável)
+#### Para exportar os dados de configuração (informações de domínio de publicação fidedigno)
 
-1.  Faça logon no cluster do AD RMS como um usuário com permissões administrativas do AD RMS.
+1.  Inicie sessão no cluster do AD RMS como utilizador com permissões de administração do AD RMS.
 
-2.  No console de gerenciamento do AD RMS (**Active Directory Rights Management Services**), expanda o nome do cluster AD RMS, expanda **Diretivas de confiança**e clique em **Domínios de Publicação Confiável**.
+2.  Na consola de gestão do AD RMS (**Serviços de Gestão de Direitos do Active Directory**), expanda o nome do cluster do AD RMS, expanda as **Políticas de Fidedignidade** e, em seguida, clique em **Domínios de Publicação Fidedignos**.
 
-3.  No painel de resultados, selecione o domínio de publicação confiável e, no painel de ações, clique em **Exportar Domínio de Publicação Confiável**.
+3.  No painel de resultados, selecione o domínio de publicação fidedigno e, em seguida, no painel Ações, clique em **Exportar Domínio de Publicação Fidedigno**.
 
-4.  Na caixa de diálogo **Exportar Domínio de Publicação Confiável** :
+4.  Na caixa de diálogo **Exportar Domínio de Publicação Fidedigno**:
 
-    -   Clique em **Salvar Como** e salve o caminho e o nome de arquivo de sua escolha. Verifique se você especificou **.xml** como a extensão do nome do arquivo (ela não é acrescentada automaticamente).
+    -   Clique em **Guardar Como** e guarde no caminho e com um nome de ficheiro à sua escolha. Certifique-se de que especifica **. xml** a extensão de nome de ficheiro (esta não é acrescentada automaticamente).
 
-    -   Especifique e confirme uma senha forte. Guarde essa senha, pois você precisará dela mais tarde, quando importar os dados de configuração para o Azure RMS.
+    -   Especifique e confirme uma palavra-passe segura. Lembre-se desta palavra-passe, dado que precisará dela mais tarde quando importar os dados de configuração para o Azure RMS.
 
-    -   Não marque a caixa de seleção para salvar o arquivo de domínio confiável na versão 1.0 do RMS.
+    -   Não selecione a caixa de verificação para guardar o ficheiro de domínio fidedigno na versão 1.0 do RMS.
 
-Quando tiver exportado todos os domínios de publicação confiáveis, você estará pronto para iniciar o procedimento de importação desses dados para o Azure RMS. HSM (Módulo de segurança de hardware) de Thales. Para saber mais, 
+Após exportar todos os domínios de publicação fidedignos, estará pronto para iniciar a importação destes dados para o módulo de hardware de segurança do Azure RMS (HSM) da Thales. Para mais informações, 
 
 ### Importar os dados de configuração para o Azure RMS
-Os procedimentos exatos para essa etapa dependem da sua configuração atual de implantação do AD RMS e da sua topologia preferencial para a chave de locatário do Azure RMS.
+Os processos exatos para este passo dependem da configuração da sua implementação atual do AD RMS e da topologia preferida para a sua chave de inquilino do Azure RMS.
 
-Sua implantação atual do AD RMS usará uma das seguintes configurações para sua chave do certificado de licenciante para servidor (SLC):
+A sua implementação atual do AD RMS utilizará uma das seguintes configurações para a sua chave do certificado de licenciante para servidor (SLC):
 
--   Proteção por senha no banco de dados do AD RMS. Essa é a configuração padrão.
+-   Proteção por palavra-passe na base de dados do AD RMS. Esta é a configuração predefinida.
 
--   Proteção de HSM usando um módulo de segurança de hardware (HSM) Thales.
+-   Proteção HSM através da utilização de um módulo de hardware de segurança (HSM) da Thales.
 
--   Proteção de HSM usando um módulo de segurança de hardware (HSM) de um fornecedor que não seja a Thales.
+-   Proteção HSM através da utilização de um módulo de hardware de segurança (HSM) de um fornecedor diferente da Thales.
 
--   Senha protegida usando um provedor criptográfico externo.
+-   Proteção por palavra-passe através de um fornecedor de serviços de criptografia externo.
 
-> [!NOTE] Para saber mais sobre como usar módulos de segurança de hardware com o AD RMS, consulte [Usando o AD RMS com módulos de segurança de hardware](http://technet.microsoft.com/library/jj651024.aspx).
+> [!NOTE] Para mais informações sobre a utilização de módulos de hardware de segurança com o AD RMS, consulte [Utilizar o AD RMS com Módulos de Hardware de Segurança](http://technet.microsoft.com/library/jj651024.aspx).
 
-As duas opções de topologia de chave de locatário do Azure RMS são: a Microsoft gerencia sua chave de locatário (**gerenciada pela Microsoft**) ou você pode gerenciar a sua chave de locatário (**gerenciada pelo cliente**). Quando você gerencia a sua própria chave de locatário do Azure RMS, nós chamamos isso de “traga sua própria chave” (BYOK) e requer um módulo de segurança de hardware (HSM) da Thales. Para saber mais, confira o artigo [Planejamento e implementação de sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md).
+As duas opções de topologia de chaves de inquilino do Azure RMS estão relacionadas com o facto de a sua chave de inquilino poder ser gerida pela Microsoft (**gerida pela Microsoft**) ou por si (**gerida pelo cliente**). Quando faz a gestão da sua própria chave de inquilino do AD RMS, essa gestão é por vezes referida como "bring your own key" (BYOK – Traga a Sua Própria Chave) e requer um módulo de hardware de segurança (HSM) da Thales. Para mais informações, consulte [Planear e implementar a sua chave de inquilino do Azure Rights Management](plan-implement-tenant-key.md).
 
 > [!IMPORTANT]
-> Atualmente o Exchange Online não é compatível com Azure RMS BYOK.  Se você quiser usar o BYOK após a migração e planeja usar o Exchange Online, certifique-se de que você compreende como essa configuração reduz a funcionalidade do IRM para o Exchange Online. Veja as informações em [Preços e restrições de BYOK](byok-price-restrictions.md) para obter ajuda com a escolha da melhor topologia de chave de locatário do Azure RMS para a migração.
+> O Exchange Online não é atualmente compatível com o Azure RMS BYOK.  Se quer utilizar o BYOK após a migração e tenciona utilizar o Exchange Online, certifique-se de que compreende como esta configuração reduz a funcionalidade IRM no Exchange Online. Reveja as informações em [BYOK pricing and restrictions (Preços e restrições do BYOK – em inglês)](byok-price-restrictions.md) para o ajudar a escolher a melhor topologia de chaves de inquilino do Azure RMS para a sua migração.
 
-Use a tabela a seguir para identificar o procedimento a ser usado para a migração. Não há suporte para combinações que não estão listadas.
+Utilize a seguinte tabela para identificar o procedimento a utilizar para a sua migração. As combinações que não estão listadas não são suportadas.
 
-|Implantação atual do AD RMS|Topologia de chave de locatário escolhida do Azure RMS|Instruções de migração|
+|Implementação atual do AD RMS|Topologia de chaves de inquilino do Azure RMS selecionada|Instruções de migração|
 |-----------------------------|----------------------------------------|--------------------------|
-|Proteção por senha no banco de dados do AD RMS|Gerenciado pela Microsoft|Veja o procedimento de migração de **Chave protegida por software para chave protegida por software** depois desta tabela.<br /><br />Esse é o caminho de migração mais simples e requer apenas que você transfira os dados de configuração para o Azure RMS.|
-|Proteção de HSM usando um módulo de segurança de hardware (HSM) Thales nShield|Gerenciada pelo cliente (BYOK)|Consulte o procedimento de migração **Chave protegida por HSM para chave protegida por HSM** depois desta tabela.<br /><br />Isso exige que o conjunto de ferramentas BYOK e dois conjuntos de etapas transfiram a chave do seu HSM local para o Azure RMS HSM e depois transfiram os dados de configuração para o Azure RMS.|
-|Proteção por senha no banco de dados do AD RMS|Gerenciada pelo cliente (BYOK)|Consulte o procedimento **Migração de chave protegida por software para chave protegida por HSM** depois desta tabela.<br /><br />Isso exige que o conjunto de ferramentas BYOK e três conjuntos de etapas extraiam primeiro sua chave de software e importem-na para um HSM local, transfiram a chave de seu HSM local para os Azure RMS HSMs e, finalmente, transfiram os dados de configuração para o Azure RMS.|
-|Proteção de HSM usando um módulo de segurança de hardware (HSM) de um fornecedor que não seja a Thales|Gerenciada pelo cliente (BYOK)|Contate o fornecedor do seu HSM para saber como transferir a sua chave desse HSM para um Módulo de Segurança de Hardware (HSM) Thales nShield. Em seguida, siga as instruções para o procedimento **Migração de chave protegida por HSM para chave protegida por HSM** depois desta tabela.|
-|Senha protegida usando um provedor criptográfico externo|Gerenciada pelo cliente (BYOK)|Contate o fornecedor para o provedor criptográfico para saber como transferir sua chave para um Módulo de Segurança de Hardware (HSM) Thales nShield. Em seguida, siga as instruções para o procedimento **Migração de chave protegida por HSM para chave protegida por HSM** depois desta tabela.|
-Antes de começar estes procedimentos, verifique se você pode acessar os arquivos .xml que você criou antes quando exportou os domínios de publicação confiáveis. Por exemplo, eles podem ter sido salvos em um pen drive USB que você tirou do servidor AD RMS na estação de trabalho conectada à Internet.
+|Proteção por palavra-passe na base de dados do AD RMS|Gerida pela Microsoft|Consulte o procedimento de migração **Chave protegida por software para chave protegida por software** que se encontra após esta tabela.<br /><br />Este é o caminho de migração mais simples e requer apenas que transfira os seus dados de configuração para o Azure RMS.|
+|Proteção HSM através da utilização de um módulo de hardware de segurança (HSM) nShield da Thales.|Gerida pelo cliente (BYOK)|Consulte o procedimento de migração **Chave protegida por HMS para chave protegida por HMS ** que se encontra após esta tabela.<br /><br />Para este procedimento, é necessário o conjunto de ferramentas BYOK e seguir dois conjuntos de passos para transferir a chave do seu HSM no local para os HSMs do RMS do Azure e, em seguida, transferir os seus dados de configuração para o Azure RMS.|
+|Proteção por palavra-passe na base de dados do AD RMS|Gerida pelo cliente (BYOK)|Consulte o procedimento de migração **Chave protegida por software para chave protegida por HMS ** que se encontra após esta tabela.<br /><br />Para este procedimento, é necessário o conjunto de ferramentas BYOK e seguir três conjuntos de passos para, em primeiro lugar, extrair a sua chave de software e importá-la para um HSM no local; em seguida, transferir a chave do seu HSM no local para os HSMs do Azure RMS e, por último, transferir os seus dados de configuração para o Azure RMS.|
+|Proteção HSM através da utilização de um módulo de hardware de segurança (HSM) a partir de um fornecedor que não seja a Thales|Gerida pelo cliente (BYOK)|Contacte o seu fornecedor do HSM para obter instruções sobre como transferir a chave deste HSM para um Módulo de Hardware de Segurança (HSM) nShield da Thales. Em seguida, siga as instruções do procedimento de migração **Chave protegida por HMS para chave protegida por HMS** que se encontram após esta tabela.|
+|Proteção por palavra-passe através de um fornecedor de serviços de criptografia externo|Gerida pelo cliente (BYOK)|Contacte o seu fornecedor de serviços de criptografia para obter instruções sobre como transferir a sua chave para um Módulo de Hardware de Segurança (HSM) nShield da Thales. Em seguida, siga as instruções do procedimento de migração **Chave protegida por HMS para chave protegida por HMS** que se encontram após esta tabela.|
+Antes de iniciar estes procedimentos, certifique-se de que consegue aceder aos ficheiros. xml que criou anteriormente, quando exportou os domínios de publicação fidedignos. Estes poderão estar guardados, por exemplo, numa pen USB que pode ser movida do servidor do AD RMS para uma estação de trabalho com ligação à Internet.
 
-> [!NOTE] Embora você armazene esses arquivos, use as práticas recomendadas de segurança para protegê-los porque esses dados incluem sua chave privada.
-
-
-Para concluir a Etapa 2, escolha e selecione as instruções para seu caminho de migração: 
+> [!NOTE] Independentemente da forma como guarda estes ficheiros, siga os procedimentos de segurança recomendados para os proteger, uma vez que estes dados incluem a sua chave privada.
 
 
-- [Chave de software para chave de software](migrate-softwarekey-to-softwarekey.md)
-- [Chave HSM para chave HSM](migrate-hsmkey-to-hsmkey.md)
-- [Chave de software para chave HSM](migrate-softwarekey-to-hsmkey.md)
+Para concluir o passo 2, escolha e selecione as instruções para o seu caminho de migração: 
 
 
-## Etapa 3. Ativar o seu locatário do RMS
-As instruções para esta etapa foram completamente abordadas no artigo [Ativação do Azure Rights Management](../deploy-use/activate-service.md).
+- [Software key to software key (Chave de software para chave de software – em inglês)](migrate-softwarekey-to-softwarekey.md)
+- [HSM key to HSM key (Chave HSM para chave HSM – em inglês)](migrate-hsmkey-to-hsmkey.md)
+- [Software key to HSM key (Chave de software para chave HSM – em inglês)](migrate-softwarekey-to-hsmkey.md)
+
+
+## Passo 3: ativar o seu inquilino do RMS
+As instruções para este passo encontram-se descritas na íntegra no artigo [Activating Azure Rights Management (Ativar o Azure Rights Management – em inglês)](../deploy-use/activate-service.md).
 
 
 > [!TIP]
-> Se tiver uma assinatura do Office 365, será possível ativar o Azure RMS no Centro de administração do Office 365 ou no Portal clássico do Azure. Recomendamos usar o Portal clássico do Azure, porque você usará esse portal de gerenciamento para concluir a próxima etapa.
+> Se tiver uma subscrição do Office 365, pode ativar o Azure RMS a partir do centro de administração do Office 365 ou do portal clássico do Azure. Recomendamos que utilize o portal clássico do Azure, dado que irá utilizar este portal de gestão para concluir o passo seguinte.
 
-**E se o seu locatário do Azure RMS já estiver ativado?** Se o serviço do Azure RMS já estiver ativado para a sua organização, talvez os usuários já tenham usado o Azure RMS para proteger o conteúdo com uma chave de locatário gerada automaticamente (e os modelos padrão) em vez de suas chaves (e modelos) existentes do AD RMS. Isso é improvável de acontecer em computadores que estão bem gerenciados em sua intranet, pois eles serão configurados automaticamente para sua infraestrutura do AD RMS. Mas isso pode acontecer em computadores do grupo de trabalho ou computadores que raramente se conectam à sua intranet. Infelizmente, também é difícil identificar esses computadores, por isso, recomendamos que você não ative o serviço antes de importar os dados de configuração do AD RMS.
+**E se o inquilino do Azure RMS já estiver ativado?** Se o serviço Azure RMS já estiver ativado na sua organização, os utilizadores poderão já ter utilizado o Azure RMS para proteger conteúdos com uma chave de inquilino gerada automaticamente (e com os modelos predefinidos) em vez das chaves (e modelos) existentes do AD RMS. É pouco provável que tal ocorra em computadores que são bem geridos na sua intranet, dado que estes serão automaticamente configurados para a sua infraestrutura do AD RMS. No entanto, esta situação pode ocorrer em computadores de grupo de trabalho ou em computadores que raramente estabelecem ligação à sua intranet. Infelizmente, também é difícil identificar estes computadores, razão pela qual recomendamos que não ative o serviço antes de importar os dados de configuração do AD RMS.
 
-Se seu locatário do Azure RMS já estiver ativado e você puder identificar esses computadores, execute o script CleanUpRMS_RUN_Elevated.cmd nesses computadores conforme descrito na Etapa 5. A execução deste script força a reinicializar o ambiente do usuário, para que eles baixem a chave de locatário atualizada e os modelos importados.
+Se o seu inquilino do Azure RMS já estiver ativado e conseguir identificar estes computadores, certifique-se de que executa o script CleanUpRMS_RUN_Elevated.cmd nestes computadores, conforme descrito no passo 5. A execução deste script força-os a reinicializar o ambiente do utilizador para que seja possível transferir a chave de inquilino atualizada e os modelos importados.
 
-## Etapa 4. Configurar modelos importados
-Como os modelos importados têm um estado padrão de **Arquivado**, você deve alterar esse estado para ser **Publicado** se desejar que os usuários possam utilizá-los com o Azure RMS.
+## Passo 4. configurar modelos importados
+Como os modelos que importou estão predefinidos para o estado **Arquivado**, tem de alterar este estado para **Publicado** se quiser que os utilizadores possam utilizar estes modelos com o Azure RMS.
 
-Além disso, se seus modelos no AD RMS tiverem usado o grupo **QUALQUER PESSOA**, esse grupo será removido automaticamente quando você importar os modelos para o Azure RMS; é necessário adicionar manualmente o grupo ou os usuários equivalentes e os mesmos direitos aos modelos importados. O grupo equivalente para o Azure RMS é chamado de **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nome_do_locatário>.onmicrosoft.com**. Por exemplo, esse grupo pode parecer com o seguinte para a Contoso: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Além disso, se os seus modelos no AD RMS utilizaram o grupo **ANYONE**, este grupo será removido automaticamente quando importar os modelos para o Azure RMS, pelo que tem de adicionar manualmente o grupo ou os utilizadores equivalentes, bem como adicionar os mesmos direitos aos modelos importados. O grupo equivalente do Azure RMS é designado por **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Por exemplo, para a Contoso, este grupo poderá ser algo semelhante a **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**
 
-Se você não tiver certeza se os seus modelos do AD RMS incluem o grupo QUALQUER PESSOA, use o exemplo de script do Windows PowerShell para identificar esses modelos. Para saber mais sobre como usar o Windows PowerShell com o AD RMS, confira [Como usar o Windows PowerShell para administrar o AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx).
+Se não tiver a certeza se os seus modelos do AD RMS incluem o grupo ANYONE, pode utilizar o script de exemplo do Windows PowerShell para identificar estes modelos. Para obter mais informações sobre como utilizar o Windows PowerShell com o AD RMS, consulte [Utilizar o Windows PowerShell para Administrar o AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx).
 
-Você poderá ver o grupo de sua organização criado automaticamente se copiar um dos modelos de política de direitos padrão no Portal Clássico do Azure e identificar o **NOME DE USUÁRIO** na página **DIREITOS**. No entanto, você não poderá usar o Portal clássico do Azure para adicionar esse grupo a um modelo criado manualmente ou importado. Em vez disso, deverá usar uma das opções do Azure RMS PowerShell:
+Pode ver o grupo automaticamente criado da sua organização se copiar um dos modelos da política de direitos predefinidos no portal clássico do Azure e, em seguida, identificar o **NOME DE UTILIZADOR** na página **DIREITOS**. No entanto, não pode utilizar o portal clássico para adicionar este grupo a um modelo criado ou importado manualmente. Em vez disso, tem de utilizar uma das seguintes opções do PowerShell do Azure RMS:
 
--   Use o cmdlet do PowerShell [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) para definir o grupo "AllStaff" e os direitos como um objeto de definição de direitos, e execute este comando novamente para cada um dos outros grupos ou usuários com direitos já concedidos no modelo original além do grupo QUALQUER PESSOA. Em seguida, adicione esses objetos de definição de direitos aos modelos usando o cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/en-us/library/azure/dn727076.aspx).
+-   Utilize o cmdlet PowerShell [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) para definir os direitos e o grupo "AllStaff" como um objeto de definição de direitos e execute novamente este comando para cada um dos outros grupos ou utilizadores aos quais já foram concedidos direitos no modelo original juntamente com o grupo ANYONE. Em seguida, adicione os objetos de definição de direitos aos modelos através do cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/en-us/library/azure/dn727076.aspx).
 
--   Use o cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar o modelo para um arquivo .XML que você possa editar a fim de adicionar o grupo e os direitos de "AllStaff" aos grupos e direitos existentes e use o cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para importar essa mudança de volta para o Azure RMS.
+-   Utilize o cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) para exportar o modelo para um ficheiro .XML que consiga editar para adicionar os direitos e o grupo “AllStaff” aos grupos e direitos existentes e, em seguida, utilize o cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) para voltar a importar esta alteração para o Azure RMS.
 
-> [!NOTE] Esse grupo equivalente ao "AllStaff" não é exatamente o mesmo que o grupo QUALQUER PESSOA no AD RMS: o grupo "AllStaff" inclui todos os usuários em seu locatário do Azure, considerando que o grupo QUALQUER PESSOA inclui todos os usuários autenticados, que poderiam estar fora da sua organização.
+> [!NOTE] Este grupo equivalente "AllStaff" não é exatamente igual ao grupo ANYONE no AD RMS. O grupo "AllStaff" inclui todos os utilizadores no seu inquilino do Azure, ao passo que o grupo ANYONE inclui todos os utilizadores autenticados, que podem estar fora da sua organização.
 > 
-> Devido a esta diferença entre os dois grupos, talvez seja necessário também adicionar usuários externos, além do grupo "AllStaff". Atualmente, não há suporte para endereços de email externos para grupos.
+> Devido a esta diferença entre os dois grupos, é possível que também tenha de adicionar utilizadores externos, além do grupo "AllStaff". Atualmente, não são suportados endereços de e-mails externos para grupos.
 
-Os modelos que você importar do AD RMS terão a aparência e o comportamento iguais aos modelos personalizados que você pode criar no Portal clássico do Azure. Para alterar os modelos importados de modo que sejam publicados para que os usuários possam vê-los e selecioná-los nos aplicativos, ou para fazer outras mudanças nos modelos, confira [Configurando modelos personalizados do Azure Rights Management](../deploy-use/configure-custom-templates.md).
+Os modelos que importa do AD RMS assemelham-se e comportam-se tal como os modelos personalizados que pode criar no portal clássico do Azure. Para alterar modelos importados a publicar para que os utilizadores os possam ver e selecionar a partir de aplicações ou para fazer outras alterações aos modelos, consulte [Configurar modelos personalizados para o Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
 > [!TIP]
-> Para dar aos usuários uma experiência mais consistente durante o processo de migração, não faça alterações aos modelos importados além destas duas alterações; e não publique os dois modelos padrão fornecidos com o Azure RMS nem crie novos modelos no momento. Em vez disso, aguarde a conclusão do processo de migração e encerre os servidores AD RMS.
+> Para que os utilizadores tenham uma experiência mais consistente durante o processo de migração, não altere os modelos importados, com exceção destas duas alterações e não publique os dois modelos predefinidos que vêm com o Azure RMS nem crie novos modelos nessa altura. Em vez disso, aguarde até que o processo de migração seja concluído e até ter encerrado os servidores do AD RMS.
 
-### Exemplo de script do Windows PowerShell para identificar modelos do AD RMS que incluem o grupo ANYONE
-Esta seção contém o script de exemplo para ajudar a identificar modelos do AD RMS que têm o grupo ANYONE definido, conforme descrito na seção anterior.
+### Script de exemplo do Windows PowerShell para identificar modelos do AD RMS que incluem o grupo ANYONE
+Esta secção contém o script de exemplo para o ajudar a identificar modelos do AD RMS que têm o grupo ANYONE definido, conforme descrito na secção anterior.
 
-**Aviso de isenção de responsabilidade:** não há suporte para esse exemplo de script em nenhum serviço ou programa de suporte padrão da Microsoft. Esse exemplo de script é fornecido COMO ESTÁ sem garantias de qualquer tipo.*
+**Exclusão de responsabilidade:** este script de exemplo não é suportado por nenhum serviço ou programa de suporte padrão da Microsoft. Este script de exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantias.*
 
 ```
 import-module adrmsadmin 
@@ -180,8 +180,8 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## Próximas etapas
-Acesse a [fase 2 - configuração do lado do cliente](migrate-from-ad-rms-phase2.md).
+## Passos seguintes
+Vá para a [fase 2 - configuração do lado do cliente](migrate-from-ad-rms-phase2.md).
 
 
 

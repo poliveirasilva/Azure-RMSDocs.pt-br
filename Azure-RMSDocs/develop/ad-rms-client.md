@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cliente | Azure RMS
-description: O cliente AD RMS 2.1 é um software projetado para seus computadores cliente pra ajudar a proteger o acesso e o uso de informações
+description: O Cliente de AD RMS 2.1 é um software concebido para os computadores cliente para ajudar a proteger o acesso e a utilização de informações
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,20 +26,20 @@ ms.suite: ems
 
 # Cliente
 
-Este tópico descreve a finalidade e a função do Rights Management Services Client 2.1.
+Este tópico descreve a finalidade e a função do Rights Management Service Client 2.1.
 
-O RMS Client 2.1 é um software projetado para seus computadores cliente para ajudar a proteger o acesso e uso das informações que passam por aplicativos que usam o RMS, seja instalado no seu local ou em um datacenter da Microsoft. Ele é enviado com um download opcional que pode ser, com a confirmação e aceitação do seu contrato de licença, distribuído gratuitamente com o software de terceiros para permitir ao cliente acessar o conteúdo que tenha sido protegidos por direitos pelo uso e a implantação de servidores RMS em seu ambiente.
+O RMS Client 2.1 é um software concebido para computadores cliente para ajudar a proteger o acesso e a utilização de informações que circulam nas aplicações que utilizam o RMS, independentemente de estar instalado no local ou num centro de dados Microsoft. É incluído como uma transferência opcional que pode ser, com o reconhecimento e a aceitação do respetivo contrato de licença, distribuído gratuitamente com o seu software de terceiros para permitir o acesso de cliente ao conteúdo que foi protegido por direitos através da utilização e implementação de servidores RMS no seu ambiente.
 
-O RMS Client 2.1 expõe a funcionalidade que habilita os usuários a criar, publicar e consumir conteúdo protegido (criptografado). Especificamente, um aplicativo habilitado por RMS aproveita o cliente instalado no computador do usuário final para executar as tarefas que ele foi criado para executar no contexto do gerenciamento de direitos.
+O RMS Client 2.1 expõe uma funcionalidade que permite aos utilizadores criar, publicar e consumir conteúdo protegido (encriptado). Especificamente, uma aplicação com capacidade para RMS tira partido do cliente instalado no computador do utilizador final para efetuar tarefas para as quais foi criada no contexto da gestão de direitos.
 
-O Rights Management Services SDK 2.1 funciona com o RMS Client 2.1. Aplicativos habilitados para direitos criados com o RMS SDK 2.1 devem usar o RMS Client 2.1.
+O SDK Rights Management Services 2.1 funciona com o RMS Client 2.1. As aplicações com permissão para direitos incorporadas no SDK RMS 2.1 têm de utilizar o RMS Client 2.1.
 
-Para obter mais informações, consulte a [Documentação do TechNet sobre o RMS Client 2.1](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx).
+Para obter mais informações, consulte a [Documentação do TechNet acerca do RMS Client 2.1](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx).
 
 ## Tópicos relacionados
 
-* [Visão geral](ad-rms-overview.md)
-* [Habilite seu aplicativo de serviço a operar com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md)
+* [Descrição Geral](ad-rms-overview.md)
+* [Permitir que a aplicação do serviço funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md)
 * [Documentação do TechNet sobre o RMS Client 2.1](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
  
 

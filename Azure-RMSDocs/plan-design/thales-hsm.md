@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Informações sobre HSMs da Thales e adições da Microsoft | Azure RMS
+title: Informações sobre os HSMs da Thales e adições da Microsoft | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,15 +25,15 @@ ms.suite: ems
 
 ---
 
-# Mais informações sobre HSMs da Thales e adições da Microsoft
+# Mais informações sobre os HSMs da Thales e adições da Microsoft
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-O Azure RMS usa HSMs da Thales para proteger suas chaves quando você gerencia sua chave de locatário (o cenário BYOK ou traga sua própria chave).
+O Azure RMS utiliza HSMs da Thales para proteger as chaves quando gere a sua própria chave de inquilino (o cenário “traga a sua própria chave” ou BYOK).
 
-A Thales e-Security é uma fornecedora líder global de criptografia de dados e soluções de segurança cibernética para os setores de serviços financeiros, alta tecnologia, manufatura, governo e tecnologia. Com um histórico de 40 anos de proteção de informações corporativas e governamentais, as soluções Thales são usadas ​​por quatro das cinco maiores empresas de energia e aeroespacial, 22 países da OTAN, e oferece segurança a mais de 80% das operações de pagamento em todo o mundo.
+A Thales e-Security é um dos principais fornecedores globais de soluções de encriptação de dados e cibersegurança para os setores de serviços financeiros, alta tecnologia, fabrico, administração pública e tecnologia. Com um historial de 40 anos a proteger informações empresariais e da administração pública, as soluções da Thales são utilizadas por quatro das cinco maiores empresas do setor energético e aeroespacial, 22 países da NATO, e protege mais de 80% das transações de pagamento em todo o mundo.
 
-A Microsoft tem colaborado com a Thales para melhorar o alto nível dos HSMs. Essas melhorias permitem obter os benefícios típicos de serviços hospedados sem abrir mão do controle sobre as chaves. Especificamente, essas melhorias permitem que a Microsoft gerencie os HSMs para que você não precise fazê-lo. Como um serviço de nuvem, o Azure RMS é dimensionado a curto prazo para atender aos picos de uso da organização. Ao mesmo tempo, sua chave está protegida dentro dos HSMs da Microsoft: Você mantém o controle sobre o ciclo de vida da chave porque gera a chave e a transfere para os HSMs da Microsoft.
+A Microsoft colaborou com a Thales para melhorar a tecnologia dos HSMs. Estas melhorias permitem-lhe obter as vantagens típicas dos serviços alojados sem abdicar do controlo sobre as suas chaves. Especificamente, estas melhorias permitem que a Microsoft efetue a gestão dos HSMs para que o utilizador não tenha de o fazer. Na qualidade de um serviço em nuvem, o Azure RMS ajusta-se com rapidez para satisfazer os picos de utilização da sua organização. Ao mesmo tempo, a sua chave está protegida no interior dos HSMs da Microsoft: o utilizador mantém o controlo sobre o ciclo de vida da chave, uma vez que gera a chave e a transfere para os HSMs da Microsoft.
 
 Para obter mais informações, consulte [HSMs da Thales e Azure RMS](http://www.thales-esecurity.com/msrms/cloud) no site da Thales.
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Autenticação ADAL para seu aplicativo habilitado para RMS | Azure RMS
-description: Descreve o processo de autenticação com ADAL
+title: Autenticação ADAL para a aplicação com suporte RMS | Azure RMS
+description: Descreve o processo para a autenticação com a ADAL
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
@@ -25,38 +25,38 @@ ms.suite: ems
 
 ---
 
-# Como usar a autenticação de ADAL
+# Procedimentos: utilizar a autenticação ADAL
 
-Autenticação com o Azure RMS para seu aplicativo usando o ADAL (Azure Active Directory Authentication Library).
+Autenticação com o Azure RMS para a sua aplicação com o ADAL (Azure Active Directory Authentication Library).
 
-Ao atualizar seu aplicativo para usar a autenticação ADAL em vez do Assistente de Conexão do Microsoft Online, você e seus clientes poderão:
+Ao atualizar a aplicação para utilizar a autenticação ADAL em vez do Assistente de Início de Sessão Online da Microsoft, o utilizador e os seus clientes poderão:
 
-- Usar a autenticação multifator
-- Instalar o cliente do RMS 2.1 sem exigir privilégios administrativos no computador
-- Certificar o aplicativo para o Windows 10
+- Utilizar a autenticação multifator
+- Instalar o cliente RMS 2.1 sem necessidade de privilégios administrativos no computador
+- Certificar a aplicação para o Windows 10
 
-## Duas abordagens de autenticação
+## Duas abordagens para autenticação
 
-Este tópico contém duas abordagens de autenticação com exemplos de código correspondentes.
+Este tópico contém duas abordagens para autenticação com os exemplos de código correspondentes.
 
-- **Autenticação interna** -autenticação OAuth gerenciada pelo RMS SDK.
+- **Autenticação interna** – Autenticação OAuth gerida pelo SDK RMS.
 
-  Use essa abordagem se quiser que o cliente RMS exiba um prompt de autenticação ADAL quando a autenticação for necessária. Para obter detalhes sobre como configurar seu aplicativo, consulte a seção "Autenticação interna".
+  Utilize esta abordagem se pretender que o cliente RMS apresente um pedido de autenticação ADAL quando a autenticação for necessária. Para obter detalhes sobre como configurar a sua aplicação, consulte a secção “Autenticação interna”.
 
-  > [!Note] Se seu aplicativo usa atualmente o AD RMS SDK 2.1 com o assistente de conexão, é recomendável que você use o método de autenticação interna como o caminho de migração do aplicativo.
+  > [!Note] Se a sua aplicação utilizar atualmente o SDK AD RMS 2.1 com o assistente de início de sessão, recomendamos que utilize o método de autenticação interno como o caminho de migração da sua aplicação.
 
-- **Autenticação externa** -autenticação OAuth gerenciada pelo seu aplicativo.
+- **Autenticação externa** – Autenticação OAuth gerida pela sua aplicação.
 
-  Use essa abordagem se quiser que seu aplicativo para gerenciar sua própria autenticação OAuth. Com essa abordagem, o cliente RMS usará um retorno de chamada definido pelo aplicativo quando a autenticação for necessária. Para obter um exemplo detalhado, consulte "Autenticação externa" no final deste tópico.
+  Utilize esta abordagem se pretender que a aplicação efetue a gestão da sua própria autenticação OAuth. Com esta abordagem, o cliente RMS irá exercer uma chamada de retorno definida pela aplicação quando a autenticação for necessária. Para obter um exemplo detalhado, consulte “Autenticação externa” no final deste tópico.
 
-  > [!Note] Autenticação externa não implica a capacidade de alterar usuários. o cliente RMS sempre usa o usuário padrão para determinado locatário do RMS.
+  > [!Note] A autenticação externa não implica a capacidade de alterar os utilizadores. O cliente RMS utiliza sempre o utilizador predefinido de um inquilino do RMS especificado.
 
 ## Autenticação interna
 
-1. Siga as etapas de configuração do Azure em [Configurar o Azure RMS para autenticação de ADAL](adal-auth.md) e retorne para a próxima etapa de inicialização do aplicativo.
-2. Agora você está pronto para configurar seu aplicativo para usar a autenticação interna do ADAL fornecido pelo RMS SDK 2.1.
+1. Siga os passos da configuração do Azure em [Configurar o Azure RMS para autenticação ADAL](adal-auth.md) e, em seguida, volte ao passo de inicialização de aplicação seguinte.
+2. Agora está pronto para configurar a sua aplicação para utilizar a autenticação ADAL interna fornecida pelo SDK RMS 2.1.
 
-Para configurar o cliente RMS, adicione uma chamada a [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) logo após a chamada a [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) para configurar o cliente RMS. Use o trecho de código a seguir como exemplo.
+Para configurar o cliente RMS, adicione uma chamada para [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) imediatamente após chamar [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) para configurar o cliente RMS. Utilize o seguinte fragmento de código como um exemplo.
 
       C++
       IpcInitialize();
@@ -70,9 +70,9 @@ Para configurar o cliente RMS, adicione uma chamada a [IpcSetGlobalProperty](/ri
         //Handle the error
       }
 
-## Autenticação externa
+## Autenticação Externa
 
-Use esse código como um exemplo de como gerenciar seus próprios tokens de autenticação.
+Utilize este código como um exemplo de como gerir os seus próprios tokens de autenticação.
 C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Parameters, __out wstring wstrToken) throw();
 
       HRESULT GetLicenseKey(PCIPC_BUFFER pvLicense, __in LPVOID pContextForAdal, __out IPC_KEY_HANDLE &hKey)

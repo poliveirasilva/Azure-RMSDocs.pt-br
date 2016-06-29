@@ -26,26 +26,26 @@ ms.suite: ems
 ---
 
 
-# Remover (arquivar) modelos
+# Remover modelos (arquivo)
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Os modelos padrão não podem ser excluídos, mas podem ser arquivados para que os usuários não os vejam.
+Os modelos predefinidos não podem ser eliminados, mas podem ser arquivados para que os utilizadores não os vejam.
 
-Da mesma forma, se você publicou um modelo personalizado e não quer mais que os usuários o vejam, é possível editar o modelo e escolher **ARQUIVAR** e **SALVAR** na página **CONFIGURAR** . Ou ainda, você pode selecionar a partir da página **MODELOS** e selecionar **ARQUIVAR**.
+Do mesmo modo, se tiver publicado um modelo personalizado e já não quiser que os utilizadores o vejam, pode editar o modelo e selecionar **ARQUIVAR** e **GUARDAR** na página **CONFIGURAR**. Em alternativa, pode selecionar a partir da página **MODELOS** e selecionar **ARQUIVAR**.
 
-Como não é possível editar os modelos padrão, para arquivar esses modelos é necessário usar a opção **ARQUIVAR** da página **MODELOS** . Não é possível arquivar a opção **Não encaminhar** do Outlook.
+Como não pode editar modelos predefinidos, para arquivar estes modelos, tem de utilizar a opção **ARQUIVAR** a partir da página **MODELOS**. Não pode arquivar a opção do Outlook **Não Reencaminhar**.
 
-## Para remover um modelo padrão
+## Para remover um modelo predefinido
 
--   Na página **modelos** , selecione o modelo padrão e clique em **ARQUIVAR**.
+-   Na página **MODELOS**, selecione o modelo predefinido e clique em **ARQUIVAR**.
 
-O status é alterado de **Publicado** para **Arquivado**. Se você mudar de ideia, selecione o modelo e clique em **PUBLICAR**.
+O estado é alterado de **Publicado** para **Arquivado**. Se mudar de ideias, selecione o modelo e clique em **PUBLICAR**.
 
 
 
-## Consulte também
-[Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
+## Consulte Também
+[Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
 <!--HONumber=May16_HO3-->
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Servidor do AD RMS | Azure RMS
-description: O componente de servidor do Rights Management Services (RMS) é implementado por um conjunto de serviços Web executados nos Serviços de Informações da Internet da Microsoft.
+title: Servidor AD RMS | Azure RMS
+description: O componente de servidor do Rights Management Services (RMS) é implementado por um conjunto de serviços Web que são executados nos Serviços de Informação de Internet da Microsoft.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,34 +26,34 @@ ms.suite: ems
 
 # Servidor
 
-Este tópico descreve o a finalidade e as funções do Servidor RMS para Azure e Windows Server.
+Este tópico descreve a finalidade e as funções do RMS Server para o Azure e Windows Server.
 
-**Azure RMS** – para obter mais informações sobre como usar o serviço do Azure Rights Management, consulte [Habilitar seu aplicativo de serviço para trabalhar com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md).
+**Azure RMS** - Para obter informações sobre a utilização do serviço Azure Rights Management, consulte [Ativar a aplicação de serviço para suportar o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md).
 
-> [!IMPORTANT] Recomendamos que você desenvolva e teste seu aplicativo usando o Azure RMS.
+> [!IMPORTANT] Recomendamos que desenvolva e teste a sua aplicação através do Azure RMS.
 
-**Windows Server** – para servidores RMS locais, começando com o Windows Server 2008, você pode instalar e configurar o serviço RMS adicionando-o como uma função. Para instalar o serviço em sistemas operacionais anteriores, baixe-o do Centro de Download da Microsoft em [Microsoft Windows Rights Management Services com Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
+**Windows Server** - Nos servidores de RMS no local, a partir do Windows Server 2008, pode instalar e configurar o serviço RMS adicionando-o como uma função. Para instalar o serviço em sistemas operativos anteriores, transfira-o do centro de transferências da Microsoft em [Microsoft Windows Rights Management Services com Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
 
-Dos muitos serviços Web instalados, os seguintes são importantes para o desenvolvimento de aplicativos para Servidor RMS no Windows Server.
+Entre os diversos serviços Web instalados, os que se seguem são importantes para o desenvolvimento de aplicações para o RMS Server no Windows Server.
 
 | Serviço | Descrição |
 |---------|-------------|
-| Administração | Hospeda o site de administração que permite gerenciar o RMS. O serviço é executado em servidores de certificação raiz e servidores de licenciamento. Você pode usar a API de Scripts do Active Directory Rights Management Services para escrever scripts de administração.|
-| Certificação de conta |Cria certificados de computador que identificam computadores na hierarquia de certificados RMS e certificados da conta de direitos que associam usuários a computadores específicos. Para obter mais informações, consulte Ativando um usuário e Ativando um computador.<p><p>Esse serviço é executado no servidor de certificação raiz. |
-|Licenciamento | Publica uma *licença de usuário final*. O serviço é executado em servidores de certificação raiz e servidores de licenciamento.|
-|Publicando | Cria um *licença de publicação* que define as políticas que podem ser enumeradas em uma licença do usuário final. Para obter mais informações, consulte [Criando uma licença de publicação](https://msdn.microsoft.com/library/Aa362355).<p><p>O serviço é executado em servidores de certificação raiz e servidores de licenciamento.|
-|Pré-certificação | Permite que um servidor solicite um *certificado de conta de direitos* em nome de um usuário. O serviço é executado em servidores de certificação raiz e servidores de licenciamento.|
-|Localizador de serviço | Fornece a URL da certificação de conta e dos serviços de licenciamento e publicação ao Active Directory para que possam ser descobertos por clientes RMS. O serviço é executado em servidores de certificação raiz e servidores de licenciamento.|
+| Administration | Aloja o site de Administração que permite gerir o RMS. O serviço é executado em servidores de certificação de raiz e em servidores de licenciamento. Pode utilizar a API de Scripts dos Serviços de Gestão de Direitos do Active Directory para escrever scripts de administração.|
+| Certificação de Conta |Cria certificados de computador que identificam os computadores na hierarquia de certificados de RMS e certificados de conta de direitos que associam utilizadores a computadores específicos. Para obter mais informações, consulte Ativar um Computador e Ativar um Utilizador.<p><p>Este serviço é executado no servidor de certificação de raiz. |
+|Licenciamento | Emite um *contrato de licença do utilizador final*. O serviço é executado em servidores de certificação de raiz e em servidores de licenciamento.|
+|Publicação | Cria uma *licença de emissão* que define as políticas que podem ser enumeradas numa licença do utilizador final. Para obter mais informações, consulte [Criar uma Licença de Emissão](https://msdn.microsoft.com/library/Aa362355).<p><p>O serviço é executado em servidores de certificação de raiz e em servidores de licenciamento.|
+|Pré-certificação | Permite que um servidor peça um *certificado de conta de direitos* em nome de um utilizador. O serviço é executado em servidores de certificação de raiz e em servidores de licenciamento.|
+|Localizador de Serviço | Fornece o URL dos serviços de certificação de conta, licenciamento e publicação ao Active Directory para que possam ser detetados pelos clientes RMS. O serviço é executado em servidores de certificação de raiz e em servidores de licenciamento.|
 
 ## Tópicos relacionados ##
-* [Visão geral](ad-rms-overview.md)
-* [Serviços de Informações da Internet da Microsoft](http://www.iis.net/overview)
-* [Habilite seu aplicativo de serviço a operar com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md)
-* [Microsoft Windows Rights Management Services com Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
-* [API de script do Active Directory Rights Management Services](https://msdn.microsoft.com/library/Bb968797)
-* [Ativando um computador](https://msdn.microsoft.com/library/Cc530377)
-* [Ativando um usuário](https://msdn.microsoft.com/library/Cc530378)
-* [Criando uma licença de emissão](https://msdn.microsoft.com/library/Aa362355)
+* [Descrição Geral](ad-rms-overview.md)
+* [Serviços de Informação Internet da Microsoft](http://www.iis.net/overview)
+* [Permitir que a aplicação do serviço funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md)
+* [Microsoft Windows Rights Management Services com Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
+* [API de Scripting dos Serviços de Gestão de Direitos do Active Directory](https://msdn.microsoft.com/library/Bb968797)
+* [Ativar um Computador](https://msdn.microsoft.com/library/Cc530377)
+* [Ativar um Utilizador](https://msdn.microsoft.com/library/Cc530378)
+* [Criar uma Licença de Emissão](https://msdn.microsoft.com/library/Aa362355)
 
  
 

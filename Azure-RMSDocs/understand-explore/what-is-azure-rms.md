@@ -30,41 +30,41 @@ ms.suite: ems
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-O Azure Rights Management (Azure RMS) é uma solução de proteção de informações para as organizações que desejam proteger seus dados no ambiente de trabalho desafiador de hoje.
+O Azure Rights Management (Azure RMS) é uma solução de proteção de informações para as organizações que pretendem proteger os seus dados no ambiente de trabalho exigente da atualidade.
 
-Estes desafios incluem a necessidade de estar conectado à Internet, com os usuários levando seus dispositivos pessoais para o trabalho, acessando os dados da empresa em trânsito e em casa e compartilhando informações confidenciais com parceiros comerciais importantes. Como parte de seu trabalho diário, os usuários compartilham informações usando email, sites de compartilhamento de arquivos e serviços de nuvem. Nesses casos, os controles de segurança (como listas de controle de acesso e permissões NTFS) e os firewalls tradicionais têm uma eficácia limitada se você deseja proteger os dados da sua empresa e, ao mesmo tempo, dar autonomia aos usuários para que trabalhem de forma eficiente.
+Estes desafios incluem a necessidade de estar ligado à Internet, com utilizadores que levam os dispositivos pessoais para o trabalho, acedem aos dados da empresa em viagem e em casa e partilham informações confidenciais com parceiros de negócios importantes. Como parte do seu trabalho diário, os utilizadores partilham informações através de e-mail, de sites de partilha de ficheiros e de serviços em nuvem. Nestes cenários, os controlos de segurança tradicionais (tais como listas de controlo de acesso e permissões de NTFS) e as firewalls têm uma eficácia limitada se pretender proteger os dados da sua empresa, mas permitir que os utilizadores trabalhem com eficiência.
 
-Em comparação, o Azure Rights Management (Azure RMS) pode proteger as informações confidenciais da sua empresa em todos esses cenários. Ele usa criptografia, identidade e diretivas de autorização para ajudar a proteger seus arquivos e e-mail, e funciona em vários dispositivos — PCs, tablets e telefones. Informações podem ser protegidas tanto na sua organização e fora da organização pois essa proteção permanece com os dados, mesmo quando ele sai dos limites da organização.
+Em comparação, o Azure RMS pode proteger as informações confidenciais da sua empresa em todos estes cenários. Utiliza políticas de encriptação, identidade e autorização para ajudar a proteger os ficheiros e o e-mail. Além disso, funciona em vários dispositivos (telemóveis, tablets e PCs). As informações podem ser protegidas dentro e fora da organização, porque essa proteção permanece com os dados, mesmo quando sai dos limites da organização.
 
-Como exemplo, os funcionários podem enviar um documento por email para uma empresa parceira ou salvar um documento em sua unidade em nuvem. A proteção permanente que o Azure RMS oferece ajuda não só a proteger os dados da empresa, mas pode ser legalmente obrigatória para fins de conformidade, divulgação judicial ou simplesmente para manter práticas adequadas de gerenciamento de informações.
+Por exemplo, os funcionários podem enviar por e-mail um documento a uma empresa parceira ou guardar um documento na respetiva unidade na nuvem. A proteção persistente que o Azure RMS fornece não só ajuda a proteger os dados da sua empresa, mas também poderá ser exigida juridicamente por motivos de conformidade, para requisitos de procedimentos probatórios ou simplesmente para boas práticas de gestão de informações.
 
-Porém, é muito importante que as pessoas autorizadas e os serviços (como pesquisa e indexação) possam continuar lendo e inspecionando os dados protegidos pelo Azure RMS, uma tarefa difícil com outras soluções de proteção de informações que usam a criptografia ponto a ponto. Essa capacidade às vezes é chamada de "raciocínio sobre dados" e é um elemento crucial para manter o controle dos dados da sua organização.
+Igualmente importante é o facto de as pessoas e os serviços autorizados (por exemplo, pesquisa e indexação) poderem continuar a ler e a inspecionar os dados que o Azure RMS protege, o que não se realiza com facilidade noutras soluções de proteção de informações que utilizam encriptação ponto a ponto. Esta capacidade é por vezes referida como “raciocínio através de dados” e é um elemento fundamental na manutenção do controlo dos dados da sua organização.
 
-A imagem a seguir mostra como o Azure RMS funciona como uma solução do Rights Management para o Office 365, bem como para servidores e serviços locais. Além disso, ele oferece suporte a dispositivos de usuário final populares que executam o Windows, o Mac OS, o iOS, o Android e o Windows Phone.
+A imagem que se segue mostra de que forma o Azure RMS funciona como uma solução de Rights Management para o Office 365, bem como para servidores e serviços no local. Também verá que suporta os dispositivos de utilizador final populares que utilizam Windows, Mac OS, iOS, Android e Windows Phone.
 
 > [!NOTE]
-Você pode usar o Azure RMS com assinaturas de nuvem diferentes, que incluem o Office 365 Enterprise Mobility Suite e o Azure RMS Premium. Para obter mais informações, consulte [Assinaturas de nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).
+Pode utilizar o Azure RMS com subscrições de nuvem diferentes, que incluem o Office 365, o Enterprise Mobility Suite e o Azure RMS Premium. Para obter mais informações, consulte [Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).
 
-![Como o Azure RMS funciona](../media/AzRMS_elements.png)
+![Como funciona o Azure RMS](../media/AzRMS_elements.png)
 
-## Próximas etapas
+## Passos seguintes
 
-Para saber mais sobre o Azure RMS:
+Para saber mais acerca do Azure RMS:
 
--   [Quais problemas o Azure RMS resolve?](azure-rms-problems-it-solves.md)
+-   [Que problemas resolve o Azure RMS?](azure-rms-problems-it-solves.md)
 
--   [O Azure RMS em ação: O que administradores e usuários veem](what-admins-users-see.md)
+-   [O Azure RMS em ação: conteúdo visto pelos administradores e utilizadores](what-admins-users-see.md)
 
--   [Como funciona o Azure RMS? De modo subjacente](how-does-it-work.md)
+-   [Como funciona o Azure RMS? Os bastidores](how-does-it-work.md)
 
 
 
-Se você quiser entrar diretamente e experimentar o Azure RMS por conta própria, use o [Tutorial de início rápido para o Azure Rights Management](../get-started/quick-start-tutorial.md).
+Se quiser começar já e experimentar o Azure RMS, utilize o [Tutorial de início rápido do Azure Rights Management](../get-started/quick-start-tutorial.md).
 
-No entanto, se estiver pronto para iniciar a implantação do Azure RMS para sua organização, consulte [Roteiro de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para obter as etapas de implantação e links para as instruções.
+No entanto, se estiver pronto para iniciar a implementação do Azure RMS na sua organização, utilize o [Plano de implementação do Azure Rights Management](../plan-design/deployment-roadmap.md) para obter os passos da implementação e ligações para instruções sobre como proceder.
 
 > [!TIP]
-> Para obter ajuda e informações adicionais, use os recursos e links em [Informações e suporte para o Azure Rights Management](../get-started/information-support.md).
+> Para obter informações adicionais e ajuda, utilize os recursos e ligações em [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
 
 
 <!--HONumber=May16_HO1-->

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Instalar o SDK | Azure RMS
-description: Este tópico o orientará durante a instalação das ferramentas de desenvolvedor.
+description: Este tópico descreve o processo de instalação das ferramentas de programação.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,24 +26,24 @@ ms.suite: ems
 
 # Instalar o SDK
 
-Este tópico o orientará durante a instalação das ferramentas de desenvolvedor.
+Este tópico descreve o processo de instalação das ferramentas de programação.
 
 ## Instruções
 
-### Instalar as ferramentas de desenvolvedor
+### Instalar as ferramentas de programação
 
-1.  Baixe o [Rights Management Services SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) no Centro de Download da Microsoft, tomando cuidado para escolher a versão de arquitetura correta para seu computador.
-2.  Execute o pacote do instalador de seu local de instalação:
+1.  Transfira o [SDK Rights Management Services 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) do Centro de Transferências da Microsoft, com o cuidado de escolher a versão de arquitetura correta para o seu computador.
+2.  Execute o pacote do instalador a partir da sua localização de instalação:
 
     **...\\setup\_sdk.exe**
 
-    O arquivo Setup\_sdk.exe instalará o RMS SDK 2.1 e o Active Directory Rights Management Services Client 2.1.
+    O ficheiro Setup\_sdk.exe instala o SDK RMS 2.1 e o Cliente dos Serviços de Gestão de Direitos do Active Directory 2.1.
 
-Para obter mais informações sobre os arquivos instalados em seu sistema por "setup\_sdk.exe", consulte [Development environment files](sdk-elements.md) (Arquivos do ambiente de desenvolvimento)
+Para obter mais informações sobre os ficheiros instalados no seu sistema pelo ficheiro “setup\_sdk.exe”, consulte [Ficheiros do ambiente de desenvolvimento](sdk-elements.md)
 
 ## Tópicos relacionados
 
-* [Arquivos do ambiente de desenvolvimento](sdk-elements.md)
+* [Ficheiros do ambiente de desenvolvimento](sdk-elements.md)
  
 
  

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Guia de implantação rápida do Azure Rights Management | Azure RMS
+title: Guia de implementação rápida para o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,84 +25,84 @@ ms.suite: ems
 
 ---
 
-# Guia de implantação rápida do Azure Rights Management
+# Guia de implementação rápida para o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Use este guia junto com as informações de configuração na seção **Implantar e usar** para obter ajuda com uma implantação e uso mais ágil do Azure RMS (Azure Rights Management) escolhendo em uma lista de cenários específicos de implementação.
+Utilize este guia, além das informações de configuração na secção **Implementar e Utilizar**, para o ajudar a implementar e utilizar mais rapidamente o Azure Rights Management (Azure RMS) ao selecionar a numa lista dos cenários específicos a implementar.
 
-Esses cenários contêm as instruções do administrador e a documentação de acompanhamento para o usuário final. Antes de fornecer a documentação (instruções ou anúncios) para os usuários finais, você precisará personalizá-la de acordo com suas necessidades de negócio e fluxos de trabalho existentes. Um exemplo de conjunto de instruções ou um aviso mostra a aparência final da documentação para o usuário final.
+Estes cenários contêm as instruções do administrador e a documentação do utilizador final associada. Antes de dar a documentação (instruções ou anúncios) aos seus utilizadores finais, terá primeiro de personalizá-la para os seus requisitos empresariais e fluxos de trabalho existentes. Um conjunto de instruções de exemplo ou um anúncio mostram o possível aspeto da documentação do utilizador final.
 
-Cada cenário tem uma lista de requisitos com links para obter mais informações, se necessário, para que você pode implantar essas soluções de forma independente e em qualquer ordem.
+Cada cenário tem uma lista dos requisitos com ligações para mais informações, se necessário, para que possa implementar estas soluções de forma independente e por qualquer ordem.
 
-Os cenários listados aqui são um exemplo dos mais populares. Como o Azure RMS pode ser usado para proteger as informações em uma grande quantidade de cenários, tanto dentro de uma organização quanto entre organizações, você pode definir seus próprios cenários e implantá-los em seu ambiente e para seus usuários usando esse mesmo modelo. Ao concentrar-se em cenários específicos, sua implantação do Azure RMS ficará mais alinhada aos objetivos comerciais. Além disso, nossa experiência diz que os usuários tendem a seguir instruções específicas ao cenário de forma mais rígida e sistemática do que uma orientação geral, por exemplo, "proteger documentos confidenciais".
+Os cenários aqui listados são uma amostra daqueles mais populares. Uma vez que o Azure RMS pode ser utilizado para proteger as informações num grande número de cenários numa organização e entre organizações, pode definir os seus próprios cenários e implementá-los para o seu ambiente e os seus utilizadores com este mesmo modelo. Ao concentrar-se em cenários específicos, a implementação do Azure RMS estará mais alinhada com os seus objetivos empresariais. Além disso, a nossa experiência é que os utilizadores tendem a seguir instruções de cenários específicos muito mais atentamente e sistematicamente do que as orientações gerais, tais como “proteger documentos confidenciais”.
 
-Antes de implementar essas soluções, convém enviar um anúncio amplo aos usuários finais, avisando sobre algumas alterações que serão feitas para ajudar a proteger os dados da empresa, e que isso pode exigir algumas alterações da parte deles. Veja um exemplo de comunicação logo após a tabela a seguir.
+Antes de implementar estas soluções, deve enviar um anúncio abrangente para os utilizadores finais, permitindo-lhes saber que algumas alterações serão feitas para ajudar a proteger os dados da empresa e que podem ser necessárias algumas alterações por parte desses indivíduos. Uma comunicação de exemplo está incluída depois da tabela seguinte.
 
-> [!NOTE] Se você tiver dúvidas e comentários sobre este guia, use os mecanismos de comentários nesta página ou envie uma mensagem de email para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE] Se tiver perguntas e comentários acerca deste guia, utilize os mecanismos de comentários nesta página ou envie uma mensagem de e-mail para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Cenários para o Azure RMS
-Para ajudar você a implantar o Azure RMS mais rapidamente a fim de resolver problemas comerciais específicos, escolha os cenários mais próximos de suas metas comerciais e adapte-os quando for necessário.
+Para o ajudar a implementar mais rapidamente o Azure RMS para resolver problemas empresariais específicos, escolha os cenários que melhor correspondem aos seus objetivos empresariais e adapte-os sempre que necessário.
 
 
 
-**Envie um arquivo do Office por email com segurança para usuários em outra organização, com a capacidade de acompanhar os acessos resultantes (colaboração entre empresas).**
-
-Exemplos:
-
-- Enviar uma lista de preços, roteiro ou planos de lançamentos a um cliente
-
-- Enviar um pedido de trabalho ou a especificação de marketing para um fornecedor
-
-- Enviar uma proposta ou solicitação de cotação (RFQ) a um parceiro.
-
-Consulte: [Cenário - Compartilhar um arquivo do Office com usuários em outra organização](scenario-share-office-file-externally.md)
-
-**Verifique se os documentos armazenados na biblioteca do SharePoint permanecem sob seu controle**
+**Envie um ficheiro do Office por e-mail para utilizadores noutra organização com a capacidade para controlar os acessos resultantes (colaboração de empresa-empresa)**
 
 Exemplos:
 
-- Relatórios e planilhas departamentais
+- Enviar uma lista de preços, informações gerais ou planos de lançamento para um cliente
 
-- Colaboração entre equipes para documentos de design ou outros produtos.
+- Enviar uma ordem de trabalho ou uma especificação de marketing a um fornecedor
 
-Consulte: [Cenário - Mantenha o controle dos documentos armazenados no SharePoint](scenario-sharepoint.md)
+- Enviar uma proposta ou pedido de orçamento (RFQ) a um parceiro
 
-**Os executivos podem trocar informações privilegiadas com segurança por email**
+Consulte: [Cenário – partilhar um ficheiro do Office com os utilizadores noutra organização](scenario-share-office-file-externally.md)
 
-Exemplos:
-
-- Compartilhamento de planos de aquisição
-
-- Discussão ou disseminação de questões legais
-
-- Informações sobre possíveis demissões ou outros assuntos sensíveis
-
-Consulte: [Cenário - Executivos trocam informações privilegiadas de maneira segura](scenario-executives-email.md)
-
-**Proteja automaticamente todos os arquivos em um servidor de arquivos**
+**Certificar-se de que os documentos armazenados numa biblioteca do SharePoint permanecem no seu controlo**
 
 Exemplos:
 
-- Documentos de CAD que devem ser mantidos internamente para evitar a perda de propriedade intelectual
+- Folhas de cálculo departamentais e relatórios
 
-- Planos de promoção de marketing e datas que devem ser mantidos em segredo, sem divulgação pública, a fim de manter uma vantagem competitiva
+- Colaboração entre equipas para criar documentos ou outros materiais a entregar
 
-Consulte: [Cenário - Proteger arquivos em um compartilhamento de servidor de arquivos](scenario-fci.md)
+Consulte: [Cenário – manter o controlo de documentos armazenados no SharePoint](scenario-sharepoint.md)
 
-**Proteja de forma rígida seus documentos de alto impacto comercial e mais confidenciais**
+**Os executivos podem trocar informações privilegiadas em segurança por e-mail**
 
 Exemplos:
 
-- Informações de receitas ou fórmulas exclusivas de sua empresa
+- Partilhar planos de aquisição
 
-- Planos de controle ou fusão altamente confidenciais
+- Debater ou divulgar problemas legais
+
+- Informações sobre potenciais despedimentos ou outros assuntos confidenciais
+
+Consulte: [Cenário – os executivos trocam informações privilegiadas em segurança](scenario-executives-email.md)
+
+**Proteger automaticamente todos os ficheiros num servidor de ficheiros**
+
+Exemplos:
+
+- Documentos CAD que têm de ser mantidos internamente para impedir uma perda de propriedade intelectual
+
+- As datas e os planos de promoção de marketing têm de ser mantidos em segredo para evitar a divulgação pública e para manter uma vantagem competitiva
+
+Consulte: [Cenário – proteger ficheiros numa partilha de servidor de ficheiros](scenario-fci.md)
+
+**Proteger cuidadosamente os seus documentos empresariais mais confidenciais e de elevado impacto**
+
+Exemplos:
+
+- Informações de receitas ou fórmulas que são exclusivas da sua empresa
+
+- Planos de aquisições ou fusões altamente confidenciais
 
 - Dados de exploração de recursos naturais
 
-Consulte: [Cenário - Proteger seus &#40;poucos&#41; arquivos mais valiosos](scenario-secure-most-valuable-files.md)
+Consulte: [Cenário – proteger os seus ficheiros mais importantes](scenario-secure-most-valuable-files.md)
 
-**Envie com segurança anexos e emails confidenciais da empresa**
+**Enviar anexos e e-mails da empresa confidenciais**
 
 Exemplos:
 
@@ -110,44 +110,44 @@ Exemplos:
 
 - Organogramas, notícias de reorganização ou anúncios de promoção
 
-- Informações sobre políticas da empresa
+- Informações sobre a política da empresa
 
-Consulte: [Cenário - Enviar um email confidencial da empresa](scenario-company-confidential-email.md)
+Consulte: [Cenário – enviar um e-mail confidencial da empresa](scenario-company-confidential-email.md)
 
-**Aplique proteção persistente para arquivos do Office em pastas de trabalho**
+**Aplicar proteção persistente a ficheiros do Office nas Pastas de Trabalho**
 
 Exemplos:
 
-- Documentos do Word editados localmente para um projeto confidencial da empresa
+- Documentos editados localmente do Word para um projeto confidencial da empresa
 
-- Planilhas criadas localmente contendo dados confidenciais ou dados de alto impacto comercial
+- Folhas de cálculo criadas localmente que contêm dados confidenciais ou dados de elevado impacto para a empresa
 
-- Apresentações do PowerPoint ainda em produção e armazenadas localmente que não devem ser vazadas ou compartilhadas acidentalmente com pessoas fora da organização, até que as apresentações sejam concluídas
+- Apresentações do PowerPoint em curso armazenadas localmente que não podem ser divulgadas ou acidentalmente partilhadas com pessoas fora da organização, até que as apresentações estejam concluídas
 
-Consulte: [Cenário - Configurar pastas de trabalho para proteção persistente](scenario-work-folders.md)
-
-
+Consulte: [Cenário – configurar pastas de trabalho para proteção persistente](scenario-work-folders.md)
 
 
-## Anúncio para os usuários antes da implementação
-Você pode usar o seguinte exemplo de mensagem de comunicação para avisar os usuários de que a implantação do Azure RMS exigirá algumas mudanças. Copie e cole o seguinte texto, que será enviado por email para todos os usuários por alguém da equipe de liderança de sua organização, preferencialmente pelo diretor executivo. Considere a possibilidade de fazer alterações no texto que tornem a mensagem mais relevante para os usuários e para sua organização.
 
-![Faixa de documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-### Mudanças que estamos fazendo para proteger nossos dados
-Você já quis bloquear o acesso àquele documento enviado por engano para seus parceiros? Você já pensou se há uma maneira de saber quais clientes leram as notícias mais recentes sobre o produto enviadas por você? Você tem a necessidade de compartilhar informações confidenciais sobre o produto sem a preocupação de que elas podem ser enviadas a pessoas que não deveriam vê-las?
+## Anúncio para utilizadores antes da implementação
+Pode utilizar a seguinte mensagem de comunicação de exemplo para que os utilizadores saibam que implementar o Azure RMS significa que algumas alterações estão a caminho. Copie e cole o seguinte texto para ser enviado por e-mail para todos os utilizadores de alguém na equipa de liderança da sua organização, de preferência, o Diretor Executivo. Considere efetuar alterações a este texto para tornar a mensagem mais relevante para os utilizadores e a sua organização.
 
-Você poderá fazer essas coisas em breve, pois o departamento de TI está implantando algumas alterações que implementam o Azure RMS (Microsoft Azure Rights Management) como uma solução de proteção de dados corporativos. Muitas dessas soluções aplicarão automaticamente a proteção necessária, sem precisar fazer algo diferente. Porém, algumas mudanças podem exigir que você faça algumas coisas de forma diferente e, quando esse for o caso, o departamento de TI enviará informações e instruções, com o apoio do suporte técnico se você tiver dúvidas ou problemas.
+![Exemplo de faixa de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-Por exemplo, para rastrear (e, se necessário, revogar) os documentos compartilhados, você usará o site de rastreamento de documentos:
+### As alterações que estamos a efetuar para salvaguardar os nossos dados
+Alguma vez quis bloquear o acesso a um documento enviado para os parceiros por engano? Já pensou se existe uma forma de saber qual dos seus clientes leu as notícias mais recentes do produto que enviou? Tem necessidade de partilhar informações confidenciais do produto sem preocupações de que poderão ser enviadas a pessoas que não as deveriam ver?
 
-![Capturas de tela de acompanhamento de documento do Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
+Em breve, poderá fazer tudo isto, porque o Departamento de TI está a implementar algumas alterações que implementam o Microsoft Azure Rights Management (Azure RMS) como uma solução de proteção de dados da empresa. Muitas destas soluções aplicarão automaticamente a proteção de que precisamos, sem precisar de fazer algo diferente. Algumas alterações podem exigir efetuar algo de forma diferente e, quando for este o caso, o Departamento de TI enviar-lhe-á informações e instruções, com o apoio do suporte técnico se tiver questões ou problemas.
 
-Para obter uma prévia de como isso funciona, confira este vídeo de dois minutos: [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Rastreamento e revogação de documento do Azure RMS)
+Por exemplo, para controlar (e, se for necessário, revogar) os documentos que partilha, irá utilizar o site de controlo de documentos:
 
-Um dos ativos mais valiosos da organização são os dados; os dados que geramos, armazenamos e usamos diariamente. Eles nos proporcionam nossa vantagem competitiva e nos ajudam a ter sucesso. É por isso que é tão importante permanecer no controle de nossos dados e garantir que as pessoas que não devem acessá-los, não o façam.
+![Capturas de Ecrã do Controlo de Documentos do Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
 
-As soluções que estamos implementando nos ajudarão a proteger nossos dados valiosos e fornecerão as ferramentas para manter o controle dos dados. Obrigado por sua cooperação durante a implementação dessas alterações.
+Para uma antevisão de como isto funciona, veja este vídeo de 2 minutos: [Revogação e Controlo de Documentos do Azure RMS](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
+
+Um dos recursos mais importantes desta organização são os seus dados — os dados que geramos, armazenamos e utilizamos numa base diária. Dá-nos a uma vantagem competitiva e ajuda-nos a ter êxito. É por esse motivo que é tão importante mantermos o controlo dos nossos dados e certificarmo-nos de que as pessoas que não devem aceder aos mesmos não o conseguem fazer.
+
+As soluções que estamos a implementar ajudam-nos a proteger os nossos dados valiosos e dão-lhe as ferramentas necessárias para manter o controlo desses dados. Obrigado pela sua cooperação enquanto implementamos estas alterações.
 
 
 

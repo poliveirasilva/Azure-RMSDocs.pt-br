@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como&#58; habilitar o log de desempenho e de erro | Azure RMS
-description: O Microsoft Rights Management SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
+title: Como&#58; ativar registo de erros e de desempenho | Azure RMS
+description: O SDK Microsoft Rights Management 4.2 gere o carregamento de registos de diagnóstico e de desempenho através de uma propriedade de único dispositivo.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,75 +24,75 @@ ms.suite: ems
 
 ---
 
-# Como: habilitar o log de desempenho e de erro
-O Microsoft Rights Management SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
+# Como: ativar registo de erros e de desempenho
+O SDK Microsoft Rights Management 4.2 gere o carregamento de registos de diagnóstico e de desempenho através de uma propriedade de único dispositivo.
 
-## Visão geral ##
-Você pode melhorar a experiência de seus usuários e solução de problemas habilitando o diagnóstico automático e o upload do log de desempenho para a Microsoft. Para respeitar a privacidade do usuário, você, como o desenvolvedor do aplicativo, deve solicitar o consentimento do usuário antes de habilitar o registro em log automático.
+## Descrição Geral ##
+Pode melhorar a experiência dos seus utilizadores e a resolução de problemas ao ativar o carregamento de diagnósticos automáticos e do registo de desempenho para a Microsoft. Para honrar a privacidade do utilizador, na qualidade de programador da aplicação, deve pedir consentimento ao utilizador antes de ativar o registo automático.
 
-Você gerenciará o controle de log por meio de duas propriedades.
+Irá gerir o controlo de registo através de duas propriedades.
 
--   Habilite o registro em log por meio da propriedade **IpcCustomerExperienceDataCollectionEnabled**. A configuração é persistente entre reinicializações do dispositivo.
--   Controlar o nível de log por meio da propriedade **IpcLogLevel** usando as configurações a seguir.
+-   Ative o registo através da propriedade **IpcCustomerExperienceDataCollectionEnabled**. A definição resiste às reposições do dispositivo.
+-   Controle o nível de registo através da propriedade **IpcLogLevel** ao utilizar as seguintes definições.
 
-    * 1 - Detalhado
-    * 2 - Informativo
-    * 3 - Aviso
-    * 4 - Erro
-    * 5 - Crítico
+    * 1 – Verboso
+    * 2 – Informativo
+    * 3 – Aviso
+    * 4 – Erro
+    * 5 – Crítico
 
-Em cada um dos trechos de código de exemplo a seguir, o aplicativo de chamada pode definir ou consultar a propriedade.
+Em cada um dos fragmentos de código de exemplo que se seguem, a aplicação de chamada pode definir ou consultar a propriedade.
 
 ### Android ###
-Habilitar registro em log automático
+Ativar o registo automático
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     SharedPreferences.Editor editor = preferences.edit();
     editor.putBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, true);
     editor.commit();
 
-Obter a configuração do sinalizador de controle de log atual
+Obter a definição atual do sinalizador de controlo de registo
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     Boolean isLogUploadEnabled = preferences.getBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, false);
 
 ## iOS ##
-Habilitar registro em log automático
+Ativar o registo automático
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
         [prefs setBool:FALSE forKey:@&quot;IpcCustomerExperienceDataCollectionEnabled”];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-Obter a configuração do sinalizador de controle de log atual
+Obter a definição atual do sinalizador de controlo de registo
 
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcCustomerExperienceDataCollectionEnabled&quot;];
 
-Definir o controle de nível de log
+Definir o controlo do nível de registo
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
       [prefs setInteger:1 forKey:@&quot;IpcLogLevel”];
       [[NSUserDefaults standardUserDefaults] synchronize];
 
-Obter configuração de controle de nível de log
+Obter a definição de controlo do nível de registo
 
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
  
 
 ## Windows ##
-Habilitar registro em log automático
+Ativar o registo automático
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Para obter mais informações sobre as configurações opcionais, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
+Para obter mais informações sobre definições opcionais, consulte [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
 
-Obter a configuração do sinalizador de controle de log atual
+Obter a definição atual do sinalizador de controlo de registo
 
     CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Option;
 
 
-**Observação** - os trechos de código do Windows acima estão em C++. Para C\#, atualize a sintaxe com ‘.’ em vez de ‘::’.
+**Nota** – Os recortes de código Windows acima são em C++. Para C\#, atualize a sintaxe com ‘.’ em vez de ‘::’.
 
-**Linux/C++** - este SDK tem algum registro em log básico que não é tão grande quanto o encontrado em outras plataformas. Para obter mais informações, consulte a seção **Solução de problemas** de "README.md" no [RMS SDK para C++ móvel](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting).
+**Linux/C++** – Este SDK possui algum registo básico que não é tão extensivo como o de outras plataformas. Para mais informações, consulte a secção **Resolução de problemas** do “LEIAME.md” em [SDK RMS para Portable C++](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting).
 
  
 

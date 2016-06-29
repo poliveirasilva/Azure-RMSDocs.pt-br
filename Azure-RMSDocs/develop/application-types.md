@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tipos de aplicativos | Azure RMS
-description: Este tópico aborda os tipos de aplicativos que você pode escolher criar como habilitado para direitos.
+title: Tipos de aplicações | Azure RMS
+description: Este tópico inclui os tipos de aplicações que pode escolher para criar com capacidade para direitos.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,45 +24,45 @@ ms.suite: ems
 
 ---
 
-# Tipos de aplicativo
+# Tipos de aplicações
 
 
-Este tópico aborda os tipos de aplicativos que você pode escolher criar como habilitado para direitos.
+Este tópico inclui os tipos de aplicações que pode escolher para criar com capacidade para direitos.
 
-Os seguintes tipos de aplicativo têm suporte no momento no Rights Management Services SDK 2.1
+Os tipos de aplicações que se seguem são atualmente suportados pelo SDK Rights Management Services 2.1
 
-## Aplicativos simples
+## Aplicações simples
 
-Um aplicativo simples pode ser uma ferramenta de linha de comando criada para criptografar um arquivo fornecido. Para obter um exemplo de um aplicativo simples habilitado para direitos, consulte [IPCHelloWorld - um de aplicativo de exemplo](how-to-build-your-first-application.md).
+Uma aplicação simples pode ser uma ferramenta de linha de comandos criada para encriptar um ficheiro fornecido. Para obter um exemplo de uma aplicação simples e com capacidade para direitos, consulte [IPCHelloWorld – uma aplicação de exemplo](how-to-build-your-first-application.md).
 
-### Aplicativos de modo de servidor
+### Aplicações de modo de servidor
 
-*Modo de servidor* é destinado para aplicativos não interativos que consomem, protegem ou processam o conteúdo protegido por RMS. Um exemplo seria um aplicativo de *Prevenção de Perda de Dados* executado como um serviço em um servidor de arquivos e que protege automaticamente documentos confidenciais. Consulte o [exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) para obter um exemplo desse tipo de aplicativo.
+O *modo de servidor* destina-se às aplicações não interativas que consomem, protegem ou processam conteúdo protegido por RMS. Um exemplo seria uma aplicação de *Prevenção de Perda de Dados* que é executada como um serviço num servidor de ficheiros e protege automaticamente documentos confidenciais. Consulte o [Exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) para obter um exemplo deste tipo de aplicação.
 
-Se seu aplicativo usar o *modo de servidor*, ele deverá autenticar para o servidor RMS silenciosamente. Diferente do *modo cliente*, o RMS SDK 2.1 não abrirá uma solicitação de credenciais quando falhar em autenticar silenciosamente. Além disso, quando executado no *modo de servidor*, não é necessário nenhum manifesto do aplicativo.
+Se a sua aplicação utilizar o *modo de servidor*, deve autenticar para o servidor do RMS silenciosamente. Ao contrário do *modo de cliente*, o SDK RMS 2.1 não irá abrir um pedido de credenciais quando não conseguir autenticar silenciosamente. Além disso, quando executar no *modo de servidor*, não é necessário nenhum manifesto de aplicação.
 
-Para obter mais informações sobre como definir o modo de segurança de API, consulte [Configurando o modo de segurança de API](setting-the-api-security-mode-api-mode.md).
+Para obter mais informações sobre a definição do modo de segurança da API, consulte [Definir o modo de segurança de API](setting-the-api-security-mode-api-mode.md).
 
-### Aplicativos cliente avançado
+### Aplicações de clientes avançados
 
-Um aplicativo cliente avançado permite aos usuários exibir e manipular dados por meio de uma GUI (interface gráfica do usuário). Normalmente, os dados apresentados nessa GUI têm alto valor e são sensível a roubo ou exposição acidental. O suporte à proteção de informações normalmente aprimora cenários existentes, mas não é a principal motivação para desenvolver o aplicativo.
+Uma aplicação de cliente avançado permite que os utilizadores visualizem e manipulem dados através de uma interface gráfica (GUI). Os dados apresentados nesta GUI são frequentemente de elevado valor e passíveis de roubo ou exposição acidental. O suporte para proteção de informações normalmente melhora os cenários existentes; no entanto, não é a motivação primária para o desenvolvimento da aplicação.
 
-Usar o RMS SDK 2.1 com aplicativos cliente avançados ajuda a:
+Utilizar o SDK RMS 2.1 com aplicações de cliente avançado ajuda-o a:
 
--   Certificar-se de que esses dados estejam sempre criptografados.
+-   Garantir que estes dados são sempre encriptados.
 
--   Impedir que os usuários extraiam dados para um formato desprotegido (por exemplo, impeça o uso da área de transferência para copiar e colar).
+-   Impedir que os utilizadores extraiam dados num formato não protegido (por exemplo, impedir a utilização da área de transferência para copiar e colar).
 
-O Bloco de Notas da Microsoft é um aplicativo cliente avançado simples. O Microsoft Office é um aplicativo cliente avançado mais complexo.
+O Bloco de Notas da Microsoft é uma aplicação simples de cliente avançado. O Microsoft Office é uma aplicação de cliente avançado mais complexa.
 
-Para obter mais informações sobre como proteger seu aplicativo, consulte [Noções básicas sobre restrições de uso](understanding-usage-restrictions.md).
+Para obter mais informações acerca de como proteger a sua aplicação, consulte [Compreender as restrições de utilização](understanding-usage-restrictions.md).
 
 ## Tópicos relacionados
 
 * [Exemplo de IpcDlp](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
-* [Configurando o modo de segurança de API](setting-the-api-security-mode-api-mode.md)
-* [Noções básicas sobre restrições de uso](understanding-usage-restrictions.md)
+* [IPCHelloWorld – uma aplicação de exemplo](how-to-build-your-first-application.md)
+* [Definir o modo de segurança de API](setting-the-api-security-mode-api-mode.md)
+* [Compreender as restrições de utilização](understanding-usage-restrictions.md)
 
 
 <!--HONumber=Jun16_HO2-->

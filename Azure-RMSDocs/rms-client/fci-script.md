@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Script do Windows PowerShell para proteção do Azure RMS usando o Gerenciador de Recursos de Servidor de Arquivos FCI | Azure RMS
+title: Script do Windows PowerShell para a proteção Azure RMS através do Gestor de Recursos do Servidor de Ficheiros (FCI) | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,14 +25,14 @@ ms.suite: ems
 
 ---
 
-# Script do Windows PowerShell para proteção do Azure RMS usando o Gerenciador de Recursos de Servidor de Arquivos FCI
+# Script do Windows PowerShell para a proteção Azure RMS através do Gestor de Recursos do Servidor de Ficheiros (FCI)
 
 *Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Esta página contém o script de exemplo para copiar e editar, conforme descrito em [Proteção RMS com infraestrutura de classificação de arquivos do Windows Server](configure-fci.md).
+Esta página contém o script de exemplo para copiar e editar, conforme descrito em [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
 
-*&#42;&#42;Aviso de isenção de responsabilidade&#42;&#42;: não há suporte para esse script de exemplo em qualquer serviço ou programa de suporte padrão da Microsoft. Esse*
-*script de exemplo é fornecido como está sem garantias de qualquer tipo.*
+*&#42;&#42;Exclusão de responsabilidade&#42;&#42;: este script de exemplo não é suportado por nenhum serviço ou programa de suporte padrão da Microsoft. Este script de*
+*exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantias.*
 
 ```
 <#
@@ -177,7 +177,7 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-Voltar para [Proteção RMS com a infraestrutura de classificação de arquivos do Windows Server](configure-fci.md).
+Voltar a [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
 
 
 <!--HONumber=Apr16_HO4-->

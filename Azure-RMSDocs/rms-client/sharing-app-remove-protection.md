@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remover a proteção de um arquivo usando o aplicativo de compartilhamento Rights Management | Azure RMS
+title: Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,36 +25,36 @@ ms.suite: ems
 
 ---
 
-# Remover a proteção de um arquivo usando o aplicativo de compartilhamento Rights Management
+# Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-Para remover a proteção de um arquivo (ou seja, desproteger um arquivo) que foi anteriormente protegido usando o aplicativo RMS sharing, use a opção **Remover Proteção** no Explorador de Arquivos.
+Para remover a proteção de um ficheiro (ou seja, desproteger um ficheiro) protegido anteriormente ao utilizar a aplicação de partilha RMS, utilize a opção **Remover Proteção** do Explorador de Ficheiros.
 
 > [!IMPORTANT]
-> Você deve ser um proprietário do arquivo para remover a proteção.
+> Tem de ser um proprietário do ficheiro para remover a proteção.
 
-## Para remover a proteção de um arquivo
+## Para remover a proteção de um ficheiro
 
-1.  No Explorador de Arquivos, clique com o botão direito do mouse no arquivo (por exemplo, Exemplo.ptxt), selecione **Proteger com o RMS**, clique em **Proteção no local**, e, em seguida, clique em **Remover proteção**:
+1.  No Explorador de Ficheiros, clique com o botão direito do rato no ficheiro (por exemplo, Amostra.ptxt), selecione **Proteger com RMS**, clique em **Proteger no local** e, em seguida, clique em **Remover Proteção**:
 
-    ![Remover a opção de menu de proteção para o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_RemoveProtection.png)
+    ![Opção de menu Remover proteção da aplicação de partilha RMS](../media/ADRMS_MSRMSApp_RemoveProtection.png)
 
-    Suas credenciais não serão solicitadas.
+    Poderão ser-lhe pedidas as credenciais.
 
-Observação: caso você não veja essas opções, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
+Nota: se não vir estas opções de proteção, é provável que a aplicação de partilha RMS não esteja instalada no seu computador, que a versão mais recente não esteja instalada ou que seja necessário reiniciar o computador para concluir a instalação. Para obter mais informações sobre como instalar a aplicação de partilha, consulte [Transferir e instalar a aplicação de partilha Rights Management](install-sharing-app.md).
 
-O arquivo original protegido é excluído (por exemplo, Sample.ptxt) e substituído por um arquivo que tem o mesmo nome, mas com a extensão de nome de arquivo desprotegido (por exemplo, Sample.txt).
+O ficheiro protegido original é eliminado (por exemplo, Amostra.ptxt) e substituído por um ficheiro que tem o mesmo nome, mas com a extensão de nome de ficheiro não protegido (por exemplo, Amostra.txt).
 
 ## Exemplos e outras instruções
-Para obter exemplos de como você pode usar o aplicativo Rights Management sharing e instruções, consulte as seguintes seções do guia de usuário do aplicativo Rights Management sharing:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
--   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que pretende fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
-## Consulte também
-[Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+## Consulte Também
+[Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
 <!--HONumber=May16_HO2-->

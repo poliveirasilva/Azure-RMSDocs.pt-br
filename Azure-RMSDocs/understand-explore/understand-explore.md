@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Compreender e explorar o Azure Rights Management | Azure RMS
+title: Compreender e Explorar o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: msmbaldwin
@@ -25,7 +25,7 @@ ms.reviewer: mbaldwin
 
 ---
 
-# Compreender e explorar o Azure Rights Management
+# Compreender e Explorar o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 

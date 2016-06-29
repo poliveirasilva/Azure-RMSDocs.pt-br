@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Namespace do Android | Azure RMS
-description: A API do Android tem dois namespaces.
+title: Espaço de nomes do Android | Azure RMS
+description: A API do Android tem dois espaços de nomes.
 keywords: RMS, Android
 author: bruceperlerms
 manager: mbaldwin
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Namespaces do Android
+# Espaços de nomes do Android
 
-A API do Android tem dois namespaces que abrangem a funcionalidade principal e exceções.
+A API do Android tem dois espaços de nomes que abrangem a funcionalidade principal e exceções.
 
 - [com.microsoft.rightsmanagement](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement)
 - [com.microsoft.rightsmanagementexceptions](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement.exceptions)

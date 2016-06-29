@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: IPCHelloWorld - um exemplo de aplicativo | Azure RMS
-description: Este tópico contém instruções para criar um aplicativo de exemplo habilitado para direitos.
+title: IPCHelloWorld – uma aplicação de exemplo | Azure RMS
+description: Este tópico contém instruções para criar uma aplicação com capacidade para direitos.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,23 +23,23 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Este conteúdo do SDK não é atual. Por um curto período, encontre a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
-# IPCHelloWorld - um aplicativo de exemplo
+** Este conteúdo do SDK não está atualizado. Durante um curto período de tempo, pode encontrar a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
+# IPCHelloWorld – uma aplicação de exemplo
 
-Este tópico contém instruções para criar um aplicativo de exemplo habilitado para direitos.
+Este tópico contém instruções para criar uma aplicação com capacidade para direitos.
 
-Este aplicativo simples, IPCHelloWorld, ajudará você a entender os conceitos básicos e o código de um aplicativo habilitado para direitos.
+Esta aplicação IPCHelloWorld simples descreve os conceitos básicos e o código de uma aplicação com capacidade para direitos.
 
-Baixe o aplicativo de exemplo, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), do Microsoft Connect. Os itens restantes para download no site estão integrados aqui para sua conveniência.
+Transfira a aplicação de amostra, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), a partir do Microsoft Connect. Os itens transferíveis restantes no site estão integrados aqui para sua comodidade.
 
-**Observação** O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+**Nota** o projeto IPCHelloWorld já está configurado para o SDK Rights Management Services 2.1. Para obter informações sobre como configurar um novo projeto para utilizar o SDK RMS 2.1, consulte [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
  
-As seções a seguir abrangem as principais etapas do aplicativo e tudo o que você precisa entender.
+As secções seguintes abrangem os principais passos e conhecimentos necessários relativos à aplicação.
 
-## Como carregar o MSIPC.dll
+## Carregar o MSIPC.dll
 
-Antes de chamar quaisquer funções do SDK 2.1 do RMS, primeiro você precisa chamar a função [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) para carregar o MSIPC.dll.
+Antes de poder chamar quaisquer funções do SDK RMS 2.1, tem primeiro de chamar a função [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) para carregar o MSIPC.dll.
 
 
 
@@ -53,11 +53,11 @@ Antes de chamar quaisquer funções do SDK 2.1 do RMS, primeiro você precisa ch
 
 
 
-## Enumeração de modelos
+## Enumerar modelos
 
-Um modelo RMS define a política usada para proteger os dados, ou seja, define os usuários que têm permissão para acessar os dados e seus direitos. Os modelos RMS são instalados no servidor RMS.
+Um modelo de RMS define a política utilizada para proteger os dados, ou seja, define os utilizadores que têm permissão para aceder aos dados e respetivos direitos. Os modelos de RMS estão instalados no servidor RMS.
 
-O trecho de código a seguir enumera os modelos RMS disponíveis no servidor RMS padrão.
+O recorte de código seguinte enumera os modelos de RMS disponíveis no servidor RMS predefinido.
 
 
 
@@ -71,7 +71,7 @@ O trecho de código a seguir enumera os modelos RMS disponíveis no servidor RMS
 
 
 
-Essa chamada recuperará os modelos RMS instalados no servidor padrão e carregará os resultados na estrutura [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) apontada pela variável *pcTil* e, em seguida, exibirá os modelos.
+Esta chamada irá obter modelos de RMS instalados no servidor predefinido e carregar os resultados na estrutura [**IPC\_TIL** ](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) indicada pela variável *pcTil* e, em seguida, apresentar os modelos.
 
 
 
@@ -93,13 +93,13 @@ Essa chamada recuperará os modelos RMS instalados no servidor padrão e carrega
 
 
 
-## Serialização de uma licença
+## Serializar uma Licença
 
-Antes de poder proteger os dados, você precisa serializar uma licença e obter uma chave de conteúdo. A chave de conteúdo é usada para criptografar os dados confidenciais. A licença serializada geralmente está associada aos dados criptografados e é usada pelo consumidor dos dados protegidos. O consumidor precisará chamar a função [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) usando a licença serializada para obter a chave de conteúdo para descriptografar o conteúdo e obter a política associada ao conteúdo.
+Antes de poder proteger quaisquer dados, precisa de serializar uma licença e obter uma chave de conteúdo. A chave de conteúdo é utilizada para encriptar os dados confidenciais. Normalmente, a licença serializada está ligada aos dados encriptados e é utilizada pelo consumidor dos dados protegidos. O consumidor terá de chamar a função [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) através da licença serializada para obter a chave de conteúdo para desencriptar o conteúdo e para obter a política associada ao conteúdo.
 
-Para simplificar, use o primeiro modelo RMS retornado por [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) para serializar uma licença.
+Com vista à simplicidade, utilize o primeiro modelo de RMS devolvido por [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) para serializar uma licença.
 
-Normalmente, você usaria uma caixa de diálogo de interface do usuário para permitir que o usuário selecione o modelo desejado.
+Normalmente, deve utilizar uma caixa de diálogo de interface de utilizador para permitir ao utilizador selecionar o modelo pretendido.
 
 
 
@@ -114,11 +114,11 @@ Normalmente, você usaria uma caixa de diálogo de interface do usuário para pe
 
 
 
-Depois de fazer isso você terá a chave de conteúdo, *hContentKey*, e a licença serializada, *pSerializedLicense*, que você precisa anexar aos dados protegidos.
+Depois de o fazer, obtém a chave de conteúdo, *hContentKey*, e a licença serializada, *pSerializedLicense*, de que precisa para anexar aos dados protegidos.
 
-## Protegendo dados
+## Proteger Dados
 
-Agora você está pronto para criptografar os dados confidenciais usando a função [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt). Primeiro, você precisa perguntar à função **IpcEncrypt** qual será o tamanho dos dados criptografados.
+Agora, está pronto para encriptar os dados confidenciais através da função [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt). Em primeiro lugar, tem de perguntar à função **IpcEncrypt** qual vai ser o tamanho dos dados encriptados.
 
 
 
@@ -133,9 +133,9 @@ Agora você está pronto para criptografar os dados confidenciais usando a funç
 
 
 
-Aqui, *wszText* contém o texto não criptografado que você pretende proteger. A função [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) retorna o tamanho dos dados criptografados no parâmetro *cbEncrypted*.
+Aqui, *wszText* contém o texto simples que vai proteger. A função [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) devolve o tamanho dos dados encriptados no parâmetro *cbEncrypted*.
 
-Agora, aloque memória para os dados criptografados.
+Agora, atribua memória para os dados encriptados.
 
 
 
@@ -147,7 +147,7 @@ Agora, aloque memória para os dados criptografados.
     }
 
 
-Por fim, você pode realizar a criptografia.
+Por fim, pode efetuar a encriptação real.
 
 
 
@@ -160,11 +160,11 @@ Por fim, você pode realizar a criptografia.
     }
 
 
-Depois desta etapa, você terá os dados criptografados, *pbEncrypted*, e a licença serializada, *pSerializedLicense*, que será usado pelos consumidores para descriptografar os dados.
+Após este passo, tem os dados encriptados, *pbEncrypted*, e a licença serializada, *pSerializedLicense*, que será utilizada pelos consumidores para desencriptar os dados.
 
-## Tratamento de erro
+## Processamento de Erros
 
-Em todo este exemplo de aplicativo, a função **DisplayError** está sendo usada para manipular erros.
+Nesta aplicação de exemplo, a função **DisplayError** está a ser utilizada para processar erros.
 
 
 
@@ -181,11 +181,11 @@ Em todo este exemplo de aplicativo, a função **DisplayError** está sendo usad
     }   
 
 
-A função **DisplayError** usa a função [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) para obter a mensagem de erro do código de erro correspondente e a imprime na saída padrão.
+A função **DisplayError** utiliza a função [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) para obter a mensagem de erro do código de erro correspondente e imprime-a para a saída padrão.
 
 ## Limpeza
 
-Antes de terminar, você também precisa liberar todos os recursos alocados.
+Antes de terminar, também tem de libertar todos os recursos atribuídos.
 
 
 
@@ -208,7 +208,7 @@ Antes de terminar, você também precisa liberar todos os recursos alocados.
 
 ## Tópicos relacionados
 
-* [Notas do desenvolvedor](developer-notes.md)
+* [Notas do programador](developer-notes.md)
 * [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
 * [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
 * [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)

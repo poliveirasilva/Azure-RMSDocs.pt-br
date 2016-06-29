@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planejar e projetar o Azure Rights Management | Azure RMS
+title: Planear e estruturar o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: msmbaldwin
@@ -25,7 +25,7 @@ ms.reviewer: mbaldwin
 
 ---
 
-# Planejar e projetar o Azure Rights Management
+# Planear e estruturar o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 

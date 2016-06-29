@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migração do AD RMS para o Azure Rights Management - Fase 2 | Azure RMS
+title: Migrar do AD RMS para o Azure Rights Management – Fase 2 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,40 +25,40 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Fase de migração 2 - configuração do lado do cliente
+# Fase 2 da migração – configuração do lado do cliente
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management*
 
-Use as informações a seguir para a Fase 2 da migração do AD RMS para o Azure RMS (Azure Rights Management). Esses procedimentos abrangem a etapas 5 de [Migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+Utilize as seguintes informações para a Fase 2 da migração do AD RMS para o Azure Rights Management (Azure RMS). Estes procedimentos incluem o passo 5 do tópico [Migrar do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Etapa 5. Reconfigurar clientes para usar o Azure RMS
+## Passo 5. Reconfigurar clientes para utilizarem o Azure RMS
 Para clientes Windows:
 
-1.  [Baixe os scripts de migração](http://go.microsoft.com/fwlink/?LinkId=524619):
+1.  [Transfira os scripts de migração](http://go.microsoft.com/fwlink/?LinkId=524619):
 
     -   CleanUpRMS_RUN_Elevated.cmd
 
     -   Redirect_OnPrem.cmd
 
-    Esses scripts redefinem a configuração em computadores com Windows para que os mesmos usem o serviço do Azure RMS em vez do AD RMS.
+    Estes scripts repõem a configuração em computadores Windows para que utilizem o serviço do Azure RMS em vez do AD RMS.
 
-2.  Siga as instruções no script de redirecionamento (Redirect_OnPrem.cmd) modificando-o para apontar para o novo locatário do Azure RMS.
+2.  Siga as instruções no script de redirecionamento (Redirect_OnPrem.cmd) para modificar o script para apontar para o novo inquilino do Azure RMS.
 
-3.  Nos computadores Windows, execute esses scripts com privilégios elevados no contexto do usuário.
+3.  Nos computadores Windows, execute estes scripts com privilégios elevados no contexto do utilizador.
 
 Para clientes de dispositivos móveis e computadores Mac:
 
--   Remova os registros SRV do DNS criados quando você implantou a [Extensão de dispositivos móveis do AD RMS](http://technet.microsoft.com/library/dn673574.aspx)..
+-   Remova os registos SRV de DNS que criou quando implementou a [extensão de dispositivo móvel do AD RMS](http://technet.microsoft.com/library/dn673574.aspx).
 
-#### Alterações feitas pelos scripts de migração
-Esta seção documenta as alterações feitas pelos scripts de migração. Use essas informações apenas para referência, para solucionar problemas ou, se preferir, para fazer essas alterações por conta própria.
+#### Alterações efetuadas pelos scripts de migração
+Esta secção documenta as alterações que os scripts de migração efetuam. Pode utilizar estas informações apenas para efeitos de referência, para resolução de problemas ou para o caso de preferir efetuar estas alterações sozinho.
 
 CleanUpRMS_RUN_Elevated.cmd:
 
--   Exclua o conteúdo das pastas %userprofile%\AppData\Local\Microsoft\DRM e %userprofile%\AppData\Local\Microsoft\MSIPC, incluindo todas as subpastas e todos os arquivos com nomes de arquivo longos.
+-   Elimine o conteúdo das pastas %userprofile%\AppData\Local\Microsoft\DRM e %userprofile%\AppData\Local\Microsoft\MSIPC, incluindo quaisquer subpastas e ficheiros com nomes de ficheiro longos.
 
--   Exclua o conteúdo das seguintes chaves de registro:
+-   Elimine o conteúdo das seguintes chaves de registo:
 
     -   HKEY_LOCAL_MACHINE\Software\Microsoft\Office\(11.0|12.0|14.0)\Common\DRM
 
@@ -74,7 +74,7 @@ CleanUpRMS_RUN_Elevated.cmd:
 
     -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation
 
--   Exclua os seguintes valores de registro:
+-   Elimine os seguintes valores do registo:
 
     -   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM\DefaultServerURL
 
@@ -82,7 +82,7 @@ CleanUpRMS_RUN_Elevated.cmd:
 
 Redirect_OnPrem.cmd:
 
--   Crie os seguintes valores de registro para cada URL fornecida como um parâmetro em cada um destes locais:
+-   Crie os seguintes valores do registo para cada URL fornecido como um parâmetro em cada uma das seguintes localizações:
 
     -   HKEY_CURRENT_USER\Software\Microsoft\Office\(11.0|12.0|14.0)\Common\DRM\LicenseServerRedirection
 
@@ -94,18 +94,18 @@ Redirect_OnPrem.cmd:
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    Cada entrada tem um valor REG_SZ de **https://OldRMSserverURL/_wmcs/licensing** com os dados no seguinte formato: **https://&lt;YourTenantURL&gt;/_wmcs/licensing**.
+    Cada entrada tem um valor REG_SZ de **https://OldRMSserverURL/_wmcs/licensing** com os dados no seguinte formato: **https://&lt;URLdeInquilino&gt;/_wmcs/licensing**.
 
     > [!NOTE]
-    > *&lt;YourTenantURL&gt;* tem o seguinte formato: **{GUID}.rms.[Region].aadrm.com**.
+    > *&lt;URLdeInquilino&gt;* tem o seguinte formato: **{GUID}.rms.[Região].aadrm.com**.
     > 
-    > Por exemplo, 5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
+    > Por exemplo: 5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
-    > Você pode encontrar esse valor por meio da identificação do valor **RightsManagementServiceId** quando você executar o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS.
+    > Pode encontrar este valor ao identificar o valor **RightsManagementServiceId** quando executar o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) do Azure RMS.
 
 
-## Próximas etapas
-Para continuar a migração, vá para [fase 3 -configuração de serviços de suporte](migrate-from-ad-rms-phase3.md).
+## Passos seguintes
+Para continuar a migração, consulte a [fase 3 – configuração de serviços de suporte](migrate-from-ad-rms-phase3.md).
 
 <!--HONumber=Apr16_HO4-->
 

@@ -31,27 +31,27 @@ ms.suite: ems
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Tudo que você pode fazer no portal clássico do Azure para criar e gerenciar modelos, você pode fazer na linha de comando pelo uso do PowerShell. Além disso, você pode exportar e importar modelos, de modo que você possa copiar os modelos entre locatários ou realizar edições em massa de propriedades complexas em modelos, como nomes e descrições.
+Tudo o que consegue fazer no portal clássico do Azure para criar e gerir modelos, pode fazer a partir da linha de comandos com o PowerShell. Além disso, pode exportar e importar modelos para poder copiar modelos entre inquilinos ou fazer edições em volume de propriedades complexas nos modelos, como nomes e descrições multilingues.
 
-Você pode também usar a exportação e importação para fazer backup e restaurar seus modelos personalizados, como melhor prática, fazer backup regularmente de seus modelos personalizados, para que, se você fizer uma alteração não pretendida, poderá revertê-la facilmente para uma versão anterior.
+Também pode utilizar a exportação e importação para criar uma cópia de segurança e restaurar os modelos personalizados. De acordo com as melhores práticas, crie uma cópia de segurança dos seus modelos personalizados regularmente, pois se fizer uma alteração que não pretendia, pode facilmente reverter para uma versão anterior.
 
-> [!IMPORTANT] Para usar o Windows PowerShell para criar e gerenciar modelos de política de direitos do Azure RMS, você deve ter pelo menos a versão 2.0.0.0 do [módulo Windows PowerShell para Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT] Para utilizar o Windows PowerShell para criar e gerir modelos de política de direitos do Azure RMS, tem de ter, pelo menos, a versão 2.0.0.0 do [módulo do Windows PowerShell para o Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 > 
-> Se você instalou este módulo do PowerShell anteriormente, execute o seguinte comando em uma janela do PowerShell para verificar o número de versão: `(Get-Module aadrm -ListAvailable).Version`
+> Se já tiver instalado este módulo do PowerShell, execute o seguinte comando numa janela do PowerShell para verificar o número da versão: `(Get-Module aadrm -ListAvailable).Version`
 
-Para instruções de instalação, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
+Para obter instruções de instalação, consulte [Installing Windows PowerShell for Azure Rights Management (Instalar o Windows PowerShell para o Azure Rights Management – em inglês)](install-powershell.md).
 
-Os cmdlets que oferecem suporte à criação e gerenciamento de modelos são:
+Os cmdlets que suportam a criação e gestão de modelos:
 
 -   [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx)
 
--   [Expout-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx)
+-   [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx)
 
 -   [Get-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727079.aspx)
 
 -   [Get-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727081.aspx)
 
--   [Impout-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx)
+-   [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx)
 
 -   [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx)
 
@@ -61,8 +61,8 @@ Os cmdlets que oferecem suporte à criação e gerenciamento de modelos são:
 
 
 
-## Consulte também
-[Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
+## Consulte Também
+[Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
 <!--HONumber=May16_HO3-->
 

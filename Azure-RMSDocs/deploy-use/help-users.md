@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ajudando os usuários a proteger os arquivos usando o Azure Rights Management | Azure RMS
+title: Ajudar os utilizadores a proteger ficheiros ao utilizar o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,94 +25,94 @@ ms.suite: ems
 
 ---
 
-# Ajudando os usuários a proteger os arquivos usando o Azure Rights Management
+# Ajudar os utilizadores a proteger ficheiros ao utilizar o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Após ter implantado e configurado o Azure Rights Managenent (RMS) para sua organização, forneça ajuda e orientação para os usuários, administradores e seu suporte técnico:
+Após ter implementado e configurado o Azure Rights Management (Azure RMS) para a sua organização, forneça ajuda e orientação para utilizadores, administradores e o suporte técnico:
 
--   **Informação do usuário final:**
+-   **Informações do utilizador final:**
 
-    Informe os usuários sobre como proteger documentos e e-mails que contenham informações confidenciais. Sempre que possível, forneça essas informações para seus fluxos de trabalho existentes para que eles possam incorporar as etapas adicionais em um processo já familiar em vez de introduzir processos completamente novos. Permita-lhes saber os benefícios (e os riscos) que são específicos do seu negócio, assim como fornecer orientação para quando eles devem proteger arquivos e e-mails. Se você configurou os [modelos personalizados](configure-custom-templates.md), forneça instruções sobre qual selecionar se o nome e a descrição do modelo não forem suficientes para eles escolherem o modelo correto.
+    Informe os utilizadores sobre como e quando proteger documentos e e-mails que contêm informações confidenciais. Sempre que possível, forneça estas informações para os seus fluxos de trabalho existentes para que possam incorporar os passos adicionais a um processo já familiar em vez de introduzir processos completamente novos. Certifique-se de que lhes transmite os benefícios (e os riscos) específicos da sua empresa, bem como orientações para quando devem proteger ficheiros e e-mails. Se tiver configurado [modelos personalizados](configure-custom-templates.md), forneça instruções sobre qual deve selecionar se o nome do modelo e a descrição não forem suficientes para escolherem o correto.
 
-    > [!TIP] Vídeos de exemplo para os usuários finais:
+    > [!TIP] Exemplo de vídeos para utilizadores finais:
     >
-    > -   [Experiência do usuário do Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
-    > -   [Rastreio e revogação de documentos no Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
+    > -   [Experiência de utilizador do Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
+    > -   [Revogação e Controlo de Documentos do Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
 
--   **Informações do administrador:**
+-   **Informações de administrador:**
 
-    Alguns aplicativos aplicam a proteção de informações automaticamente, usando as políticas e configurações que os administradores configuram. Para estes aplicativos, talvez seja necessário fornecer instruções para outros administradores que gerenciem estes aplicativos e serviços. Para obter mais informações, consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md) e [Configurando aplicativos do Azure Rights Management](configure-applications.md).
+    Algumas aplicações aplicam automaticamente a proteção de informações através da utilização de políticas e de definições que os administradores configuram. Para estas aplicações, poderá ter de fornecer instruções aos outros administradores que gerem estas aplicações e serviços. Para obter mais informações, consulte [Como é que as aplicações suportam o Azure Rights Management](../understand-explore/applications-support.md) e [Configurar aplicações para o Azure Rights Management](configure-applications.md).
 
--   **Informações de suporte técnico:**
+-   **Informações do suporte técnico:**
 
-    Uma das ferramentas mais úteis para o suporte técnico é o [Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Operadores de suporte técnico podem executá-lo com a opção de administrador do Azure RMS e podem solicitar aos usuários para executá-lo com a opção de usuário do Azure RMS. Essa ferramenta pode não apenas ajudar a identificar problemas, mas também corrigir os problemas que encontrar e se o problema não for resolvido, cria registos de rastreamento.
+    Uma das ferramentas mais úteis para o suporte técnico é o [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Os operadores do suporte técnico podem executá-lo com a opção do administrador do Azure RMS e podem pedir aos utilizadores que o executem com a opção do utilizador do Azure RMS. Esta ferramenta pode ajudar a identificar problemas, mas também corrigir problemas que encontra e, se não tiverem sido corrigidos, registar registos de rastreio.
 
-    Se houver solicitações legítimas para direitos totais de acesso a documentos protegidos, por exemplo, uma solicitação do departamento jurídico ou gerente depois que um funcionário sai da organização, verifique se o suporte técnico tem processos para solicitação usando o [recurso de superusuário](configure-super-users.md) do Azure RMS.
+    Se existirem pedidos legítimos para ter acesso de direitos totais a documentos protegidos; por exemplo, um pedido efetuado pelo departamento jurídico ou um gestor depois de um funcionário ter saído da organização, certifique-se de que o suporte técnico tem processos para efetuar este pedido através da [funcionalidade de superutilizador](configure-super-users.md) do Azure RMS.
 
-    Além disso, estes são alguns dos problemas típicos que os usuários podem relatar:
+    Além disso, estes são alguns dos problemas típicos que os utilizadores poderão comunicar:
 
-    -   **Ajuda de logon:**
+    -   **Ajuda com o início de sessão:**
 
-        Os usuários poderão ser solicitados a fornecerem suas credenciais quando o Azure RMS precise autenticar um usuário e não possa usar as credenciais armazenadas em cache. Essa será a conta e senha comercial ou escolar do usuário que está associada ao seu locatário do Office 365 ou seu locatário do Active Directory do Azure. Não será uma conta da Microsoft (anteriormente a ID do Microsoft Live) ou sua conta de e-mail pessoal, porque essas atualmente não têm suporte no Azure RMS. Forneça aos usuários e ao seu suporte técnico instruções sobre que conta usar quando os usuários são solicitados a fornecer suas credenciais ao usarem esses aplicativos.
+        Poderá ser pedido aos utilizadores que introduzam credenciais quando o Azure RMS tiver de autenticar um utilizador e não puder utilizar credenciais em cache. Esta será a conta escolar ou profissional e a palavra-passe do utilizador que estão associadas ao seu inquilino do Office 365 ou ao inquilino do Azure Active Directory. Não será uma conta Microsoft (anteriormente, Microsoft Live ID) nem a respetiva conta de e-mail pessoal, porque estas não são atualmente suportadas pelo Azure RMS. Forneça aos utilizadores e ao suporte técnico instruções sobre a conta a utilizar quando for pedido aos utilizadores que introduzam credencias quando utilizarem estas aplicações com o Azure RMS.
 
-    -   **Problemas de proteção ou consumo de conteúdo:**
+    -   **Problemas ao proteger ou ao consumir conteúdos:**
 
-        Certifique-se de que os usuários tenham as instruções apropriadas para os aplicativos que eles usam e que estão usando aplicativos e dispositivos que são suportados pelo Azure RMS. Para mais informações sobre os dispositivos e aplicativos com suporte, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+        Certifique-se de que os utilizadores têm as instruções adequadas para as aplicações que utilizam e que estão a utilizar aplicações e dispositivos suportados pelo Azure RMS. Para mais informações sobre as aplicações e os dispositivos suportados, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
-        Se os usuários vêem um erro ao tentar proteger ou consumir conteúdo, peça-lhes para executar o [Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um usuário do Azure RMS.
+        Se os utilizadores virem um erro ao tentar proteger ou consumir conteúdos, peça-lhes para executarem o [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um utilizador do Azure RMS.
 
-        Se os usuários relatarem que podem abrir o conteúdo protegido, mas não têm os direitos necessários, peça-lhes para executar o [Analisador RMS](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um usuário do Azure RMS e baixar e verem os modelos. Isso confirmará que baixaram com êxito os modelos e quais são os direitos que os modelos fornecem. O problema pode ser que o usuário não esteja no grupo correto que está configurado para o modelo, ou que o modelo precisa ser reconfigurado para o usuário.
+        Se os utilizadores comunicarem que conseguem abrir conteúdos protegidos, mas que não têm os direitos de que necessitam, peça-lhes para executarem o [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) como um utilizador do Azure RMS e transferirem e visualizarem os modelos. Isto confirma que transferiram com êxito os modelos e os direitos que os modelos fornecem. O problema poderá ser que o utilizador não está no grupo correto que está configurado para o modelo ou que o modelo tem de ser reconfigurado para o utilizador.
 
-Use as seguintes seções para obter informações específicas ao aplicativo para ajudar os usuários a proteger documentos e e-mails confidenciais.
+Utilize as secções seguintes para obter informações específicas de aplicações para ajudar os utilizadores a proteger e-mails e documentos confidenciais.
 
-## Usar a proteção de informações com o aplicativo de compartilhamento Rights Management
-O aplicativo de compartilhamento Rights Management (RMS) é necessário para que os usuários protejam e consumam conteúdo protegido se eles usam o Office 2010, mas também é recomendado para todos os computadores e dispositivos móveis que suportem o Azure RMS.
+## Utilizar a proteção de informações com a aplicação de partilha Rights Management
+A aplicação de partilha Rights Management (RMS) é necessária para os utilizadores protegerem e consumirem conteúdos protegidos se utilizarem o Office 2010, mas também é recomendada para todos os computadores e dispositivos móveis que suportam o Azure RMS.
 
-Além de tornar mais fácil para os usuários a proteção de documentos importantes, o aplicativo de compartilhamento do RMS permite aos usuários controlar os documentos que eles tenham protegido e, se necessário, revogar o acesso a eles.
+Para além de tornar mais fácil para os utilizadores protegerem documentos importantes, a aplicação de partilha RMS permite aos utilizadores controlarem os documentos que protegeram e, se necessário, revogarem o acesso aos mesmos.
 
-Para obter instruções para usar esse aplicativo para computadores com Windows, consulte o [guia de usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+Para obter as instruções de utilização desta aplicação em computadores Windows, consulte o [Guia do utilizador da aplicação de partilha Rights Management](../rms-client/sharing-app-user-guide.md).
 
-Para dispositivos móveis, consulte [Perguntas Frequentes para o aplicativo de compartilhamento Microsoft Rights Management para plataformas móveis](http://technet.microsoft.com/dn451248).
+Para dispositivos móveis, consulte as [FAQ acerca da Aplicação de Partilha Microsoft Rights Management para Plataformas Móveis](http://technet.microsoft.com/dn451248).
 
-> [!TIP] Para ver um cenário de exemplo de alto nível com capturas de tela, consulte [Users safely share attachments with mobile users](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) (Os usuários compartilham com segurança anexos com usuários móveis).
+> [!TIP] Para obter um cenário de exemplo de nível superior com capturas de ecrã, consulte [Os utilizadores partilham anexos de forma segura com os utilizadores móveis](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
-## Usando a proteção de informações com o Office 365, Office 2016 ou Office 2013
-Se você estiver usando o Azure RMS e não tiver instalado o aplicativo de compartilhamento Rights Management, os usuários não verão o botão **Compartilhamento protegido** na faixa de opções ou **Proteção no local** no Explorador de Arquivo que lhes facilita proteger os arquivos. Para esses usuários, eles devem seguir instruções semelhantes a estas.
+## Utilizar a proteção de informações com o Office 365, Office 2016 ou Office 2013
+Se estiver a utilizar o Azure RMS e não tiver instalado a aplicação de partilha Rights Management, os utilizadores não verão o botão **Partilhar Protegido** no friso ou **Proteger no local** do Explorador de Ficheiros que facilita aos mesmos a proteção de ficheiros. Estes utilizadores têm de seguir instruções semelhantes a estas.
 
-> [!TIP]Para encontrar ajuda específica do aplicativo e instruções para usar a proteção de informações com estes aplicativos, pesquise **IRM** e o nome e versão do aplicativo.
+> [!TIP] Para encontrar ajuda e instruções específicas da aplicação para utilização da proteção de informações com estas aplicações, procure **IRM** e o nome e a versão da aplicação.
 
 #### Para proteger um documento no Word 2013
 
 1.  No Microsoft Word, crie um novo documento.
 
-2.  No menu **Arquivo** , clique em **Informações**, clique em **Proteger Documento**, clique em **Restringir Acesso**, e então escolha um modelo para rapidamente aplicar os direitos de uso apropriados, ou selecione **Restringir o Acesso** e selecione os direitos de uso você mesmo.
+2.  No menu **Ficheiro**, clique em **Informações**, clique em **Proteger Documento**, clique em **Restringir Acesso** e selecione um modelo para aplicar rapidamente os direitos de utilização adequados ou selecione **Restringir Acesso** e selecione os direitos de utilização.
 
-    > [!NOTE]Se esta for a primeira vez que você usa o Rights Management, você contatará o serviço do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] e suas credenciais serão solicitadas para configurar o cliente do Office IRM.
+    > [!NOTE] Se esta for a primeira vez que utiliza o Rights Management, deverá contactar o serviço [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] e ser-lhe-á pedido que introduza as credenciais para configurar o cliente Office IRM.
 
-3.  Salve o documento.
+3.  Guarde o documento.
 
-Quando outros abrime o documento, primeiro são autenticados. Se eles não são autorizados a abrir o documento, o documento não abre. Se eles são autorizados a abrir o documento, ele abre com os direitos de uso restritos que foram especificados para aquele usuário. Por exemplo, um direito de uso de Somente leitura não permite ao usuário editar ou salvar o documento, mesmo que primeiro seja copiado de outro local. Os direitos de uso são exibidos na parte superior do documento usando uma faixa de restrição. A faixa pode exibir as permissões que são aplicadas ao documento, ou pode fornecer um link para mostrá-las.
+Quando outras pessoas abrirem o documento, primeiro são autenticadas. Se não estiverem autorizadas a abrir o documento, o documento não abre. Se estiverem autorizadas a abrir o documento, este abre-se com os direitos de utilização restrita que foram especificados para esse utilizador. Por exemplo, um direito de utilização Ver Apenas não permite que o utilizador edite ou guarde o documento, mesmo que primeiro seja copiado para outra localização. Os direitos de utilização são apresentados na parte superior do documento, através de uma faixa de restrição. A faixa pode apresentar as permissões que são aplicadas ao documento ou pode disponibilizar uma ligação para as mostrar.
 
-#### Para proteger uma mensagem de e-mail usando o Outlook 2013 e o Exchange Online
+#### Para proteger uma mensagem de e-mail através do Outlook 2013 e do Exchange Online
 
-1.  No Outlook, crie uma nova mensagem de e-mail direcionada a um recipiente dentro da sua organização.
+1.  No Outlook, crie uma nova mensagem de e-mail endereçada a um destinatário da sua organização.
 
-2.  Na guia **OPÇÕES** clique em **Permissões**, e então selecione uma opção. Por exemplo: **Não Encaminhar**, **&lt;Nome da Empresa&gt; - Confidencial** ou **&lt;Nome da Empresa&gt; - Somente Exibição Confidencial**.
-
-3.  Envie a mensagem.
-
-Da mesma forma a ver um documento protegido, quando os destinatários recebem a mensagem de e-mail, eles são autenticados primeiro. Se eles são autorizados a ver a mensagem de e-mail, ele abre com os direitos de uso restritos que foram especificados para aquele usuário. Por exemplo, se você selecionou **Não encaminhar**, o botão Encaminhar não estará disponível na faixa de opções.
-
-#### Para proteger uma mensagem de e-mail usando o Outlook Web App
-
-1.  No Outlook Web App, crie uma nova mensagem de e-mail direcionada a um recipiente dentro da sua organização.
-
-2.  Clique em  **…**, clique em **definir permissões**e então selecione uma opção. **Não Encaminhar**, **Não Responder a Todos**, **&lt;Nome da Empresa&gt; - Confidencial** ou **&lt;Nome da Empresa&gt; Somente Exibição Confidencial**.
+2.  No separador **OPÇÕES**, clique em **Permissão** e selecione uma opção. Por exemplo: **Não Reencaminhar**, **&lt;Nome da Empresa&gt; – Confidencial** ou **&lt;Nome da Empresa&gt; – Apenas Visualização Confidencial**.
 
 3.  Envie a mensagem.
 
-Da mesma forma a ver um documento protegido, quando os destinatários recebem a mensagem de e-mail, eles são autenticados primeiro. Se eles são autorizados a ver a mensagem de e-mail, ele abre com os direitos de uso restritos que foram especificados para aquele usuário. Por exemplo, se você selecionou **Não Responder a Todos**, a opção **RESPONDER A TODOS** não estará disponível na janela da mensagem.
+Tal como na visualização de um documento protegido, quando os destinatários recebem a mensagem de e-mail, primeiro são autenticados. Se estiverem autorizados a ver a mensagem de e-mail, esta abre-se com os direitos de utilização restrita que foram especificados para esse utilizador. Por exemplo, se tiver selecionado **Não Reencaminhar**, o botão Reencaminhar no friso não está disponível.
+
+#### Para proteger uma mensagem de e-mail através do Outlook Web App
+
+1.  No Outlook Web App, crie uma nova mensagem de e-mail endereçada a um destinatário da sua organização.
+
+2.  Clique em **…**, clique em **definir permissão** e selecione uma opção. Por exemplo: **Não Reencaminhar**, **Não Responder a Todos**, **&lt;Nome da Empresa&gt; – Confidencial** ou **&lt;Nome da Empresa&gt; – Apenas Visualização Confidencial**.
+
+3.  Envie a mensagem.
+
+Tal como na visualização de um documento protegido, quando os destinatários recebem a mensagem de e-mail, primeiro são autenticados. Se estiverem autorizados a ver a mensagem de e-mail, esta abre-se com os direitos de utilização restrita que foram especificados para esse utilizador. Por exemplo, se tiver selecionado **Não Responder a Todos**, a opção **RESPONDER A TODOS** na janela da mensagem não está disponível.
 
 
 

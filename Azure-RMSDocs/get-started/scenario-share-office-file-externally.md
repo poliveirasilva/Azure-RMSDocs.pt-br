@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário - compartilhar um arquivo do Office com usuários em outra organização | Azure RMS
+title: Cenário – Partilhar um ficheiro do Office com os utilizadores noutra organização | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,137 +25,137 @@ ms.suite: ems
 
 ---
 
-# Cenário - compartilhar um arquivo do Office com usuários em outra organização
+# Cenário – Partilhar um ficheiro do Office com os utilizadores noutra organização
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Esse cenário e a documentação do usuário de suporte correspondente usam o Azure Rights Management para que os usuários possam enviar um arquivo do Office por email com segurança a pessoas em outra organização. Por exemplo, o arquivo do Office pode ser um documento do Word, planilha do Excel ou apresentação do PowerPoint contendo informações da lista de preços para um parceiro, uma lista de produtos para um revendedor ou uma lista de linhas de tempo de entrega com clientes em potencial. Quando os usuários seguirem as instruções, o arquivo anexado à mensagem de email estará protegido pelo Azure Rights Management.
+Este cenário e a documentação do utilizador associada utilizam o Azure Rights Management para que os utilizadores possam enviar em segurança um ficheiro do Office por e-mail para pessoas noutra organização. Por exemplo, o ficheiro do Office poderá ser um documento do Word, uma folha de cálculo do Excel ou uma apresentação do PowerPoint com informações sobre a lista de preços de um parceiro, uma lista de produtos de um revendedor ou uma lista de prazos de entrega com potenciais clientes. Se os utilizadores seguirem as instruções, o ficheiro anexado à mensagem de e-mail será protegido pelo Azure Rights Management.
 
-Este cenário é adequado para o seguinte conjunto de circunstâncias:
+Este cenário aplica-se às seguintes circunstâncias:
 
--   O funcionário tem que enviar informações de fora da organização via email, na forma de um anexo de documento do Office.
+-   O empregado tem de enviar informações para fora da organização, por e-mail, sob a forma de um anexo de documento do Office.
 
--   O documento contém informações que não são públicas, mas não são exclusivamente para uso interno.
+-   O documento contém informações que não são públicas, mas que não se destinam exclusivamente a utilização interna.
 
--   Os usuários do destinatário não tem um requisito para compartilhar essas informações com outras pessoas, imprimi-la ou usá-la como parte de sua própria documentação. Se esse não for o caso, você pode alterar as instruções do usuário de selecionar permissões de somente exibição para outra opção que permita que o destinatário altere o anexo.
+-   Os destinatários não precisam de partilhar estas informações com outras pessoas, imprimi-las ou utilizá-las como parte da sua própria documentação. Se não for este o caso, pode alterar as instruções de utilizador na seleção de permissões só de visualização para outra opção que permita ao destinatário alterar o anexo.
 
--   O funcionário está potencialmente interessado em saber quando este documento for aberto pelo usuário externo.
+-   O empregado está possivelmente interessado em saber quando este documento é aberto pelo utilizador externo.
 
-## Instruções de implantação
-![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
+## Instruções de implementação
+![Instruções do administrador para a Implementação Rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
-Verifique se os requisitos a seguir estão satisfeitos antes de prosseguir para a documentação do usuário.
+Certifique-se de que os seguintes requisitos estão em vigor antes de avançar para a documentação do utilizador.
 
 ## Requisitos para este cenário
-Para ver as instruções de usuário para este cenário funcionarem, os seguintes requisitos devem estar em vigor:
+Para que as instruções de utilizador para este cenário funcionem, é necessário que os seguintes aspetos estejam implementados:
 
-|Requisito|Se você precisar de mais informações|
+|Requisito|Se precisar de mais informações|
 |---------------|--------------------------------|
-|Você preparou contas e grupos do Office 365 ou o Azure Active Directory|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|O aplicativo Rights Management sharing é implantado nos computadores dos usuários que executam o Windows|[Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|Os usuários têm o Outlook do Office 2013|Se os usuários têm o Office 2010, substitua a captura de tela por uma versão equivalente para que a imagem corresponda a que os usuários veem.|
-|Sua assinatura do Azure RMS inclui rastreamento de documento|Se sua assinatura do Azure RMS não inclui controle de documento e revogação, os usuários não poderão concluir todas as etapas nas instruções do usuário. Nesse caso, adquira também uma assinatura que ofereça suporte a esses recursos ou modifique as instruções do usuário para remover as etapas que usam esses recursos.<br /><br />Para verificar o suporte de assinatura: [Comparação de Ofertas do Rights Management Services (RMS)](https://technet.microsoft.com/dn858608).|
+|Preparou contas e grupos para o Office 365 ou o Azure Active Directory|[Preparar para o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|O Azure Rights Management está ativado|[Ativar o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
+|A aplicação de partilha Rights Management está implementada nos computadores dos utilizadores que executam o Windows|[Implementação automática da aplicação de partilha Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Os utilizadores têm o Outlook do Office 2013|Se os utilizadores tiverem o Office 2010, substitua a captura de ecrã por uma versão equivalente para que a imagem corresponda ao que os utilizadores veem.|
+|A subscrição do Azure RMS inclui o controlo de documentos|Se a sua subscrição do Azure RMS não incluir o controlo de documentos e a revogação, os utilizadores não conseguirão concluir todos os passos nas instruções de utilizador. Neste caso, compre uma subscrição que suporte estas funcionalidades ou modifique as instruções de utilizador para remover os passos que as utilizam.<br /><br />Para verificar o suporte da subscrição: [Comparação das Ofertas do Rights Management Services (RMS)](https://technet.microsoft.com/dn858608)|
 
-## Instruções sobre a documentação do usuário
-Usando o modelo a seguir, copie e cole as instruções do usuário em uma comunicação para seus usuários finais e faça com que essas modificações reflitam o seu ambiente:
+## Instruções da documentação do utilizador
+Utilizando o modelo seguinte, copie e cole as instruções de utilizador numa comunicação destinada aos utilizadores finais e efetue estas alterações para refletir o seu ambiente:
 
-1.  Substitua o *&lt;nome do tipo de documento do Office&gt;* pelo tipo de documento que seus usuários estarão enviando. Use palavras específicas e conhecidas para seus fluxos de trabalho, como “lista de preços”, “tempo de entrega”, e “proposta de oferta” em vez de “Documento do Word” e “Planilha do Excel”. Essas palavras mais específicas ajudam a aumentar a probabilidade de que eles seguirão as instruções ao trabalhar com esses documentos.
+1.  Substitua *&lt;nome do tipo de documento do Office&gt;* pelo tipo de documento que os seus utilizadores enviarão. Utilize expressões específicas e familiares para os seus fluxos de trabalho, tais como “lista de preços”, “prazos de entrega” e “proposta de licitação”, em vez de “Documento do Word” e “Folha de cálculo do Excel”. A utilização de expressões mais específicas ajuda a aumentar a probabilidade de os utilizadores seguirem as instruções ao trabalhar com esses documentos.
 
-2.  Substitua *&lt;detalhes de contato&gt;* por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
+2.  Substitua *&lt;detalhes de contacto&gt;* por instruções sobre como os utilizadores podem contactar o suporte técnico, tais como uma ligação para um site, um endereço de e-mail ou um número de telefone.
 
-3.  **Modificações adicionais que talvez você queira fazer:**
+3.  **Modificações adicionais que poderá pretender efetuar:**
 
-    -   Na etapa 2, sugerimos **Visualizador - Somente Exibir** para as permissões, que torna o documento anexado (mas não o original) somente leitura para os destinatários. Se essa restrição não for adequada para suas necessidades de negócios, altere essa opção para outro conjunto de permissões, como **Revisor - Exibir e Editar**.
+    -   No passo 2, sugerimos **Visualizador – Ver Apenas** para as permissões, o que torna o documento anexado (mas não o original) só de leitura para os destinatários. Se esta restrição não for adequada para a sua necessidade comercial, altere esta opção para outro conjunto de permissões, tal como **Revisor – Ver e Editar**.
 
-    -   Na etapa 3, sugerimos **Permitir que eu revogue o acesso a esses documentos imediatamente** para que não exista nenhum atraso se os seus usuários revogarem o documento mais tarde, mas a definição desta opção requer que o destinatário sempre tenha uma conexão com a Internet para abrir o anexo. Esta etapa também requer que você tenha uma assinatura que ofereça suporte ao controle de documentos e revogação. Exclua esta etapa se ela não for adequada para seus usuários.
+    -   No passo 3, sugerimos **Revogar instantaneamente o acesso a estes documentos** para que não haja um atraso se os utilizadores revogarem o documento mais tarde. Contudo, a definição desta opção obriga a que o destinatário tenha sempre uma ligação à Internet para abrir o anexo. Este passo também requer que tenha uma subscrição que suporte o controlo de documentos e a revogação. Elimine este passo se não for adequado para os seus utilizadores.
 
-    -   Na etapa 4, sugerimos a opção **Envie-me um email quando alguém tentar abrir este documento**. Se os usuários controlarem seus documentos usando o portal de controle de documento, você pode decidir que a notificação por email não é necessária e excluir esta etapa.
+    -   No passo 4, sugerimos a opção **Enviar-me um e-mail quando alguém tentar abrir este documento**. Se os utilizadores controlarem os documentos através do portal de controlo de documentos, poderá decidir que a notificação por e-mail não é necessária e eliminar este passo.
 
-    -   As etapas não incluem a definição de uma data de expiração. Caso as informações não devam ser usadas após uma data específica, adicione outra etapa para definir um tempo de expiração apropriado, como 90 dias a partir do envio da mensagem de email.
+    -   Os passos não incluem a definição de uma data de expiração. Caso as informações não devam ser utilizadas após uma data específica, adicione outro passo para definir um prazo de expiração adequado, como 90 dias após o envio da mensagem de e-mail.
 
-    > [!NOTE] Para obter mais informações sobre cada uma das opções que os usuários podem selecionar, consulte [Opções da caixa de diálogo para o aplicativo de compartilhamento do Rights Management](https://technet.microsoft.com/library/dn574738.aspx)
+    > [!NOTE] Para mais informações sobre cada uma das opções que os utilizadores podem selecionar, consulte [Opções da caixa de diálogo para a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574738.aspx)
 
-4.  Faça outras modificações que deseje para este conjunto de instruções e, em seguida, envie-o para esses usuários.
+4.  Efetue quaisquer modificações adicionais que pretenda a este conjunto de instruções e, em seguida, envie-o aos utilizadores.
 
-A documentação de exemplo mostra como essas instruções pode parecer para os usuários, após as personalizações.
+A documentação de exemplo mostra que aspeto estas instruções poderão ter para os utilizadores depois das personalizações.
 
-![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
+![Modelo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Como compartilhar um &lt;nome de tipo de documento do Office&gt;
+### Como partilhar um &lt;nome do tipo de documento do Office&gt;
 
-1.  Crie a mensagem de email, especificando os endereços de email, digite sua mensagem e anexe o *&lt;nome do tipo de documento do Office&gt;* à mensagem de email. Depois, na guia **Message** no grupo do **RMS** , clique em **Compartilhamento Protegido** e clique em **Compartilhamento Protegido** novamente:
+1.  Crie a sua mensagem de e-mail ao especificar o endereço ou os endereços de e-mail, escreva a mensagem e anexe o *&lt;nome do tipo de documento do Office&gt;* à mesma. Em seguida, no separador **MENSAGEM**, no grupo **RMS**, clique em **Partilhar Protegido** e, em seguida, clique em **Partilhar Protegido** novamente:
 
-    ![Captura de tela de como compartilhar documentos do Office usando o Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![Captura de ecrã de como partilhar um documento do Office através do Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
-2.  Na caixa de diálogo **compartilhamento protegido** , selecione **Viewer – View Only**:
+2.  Na caixa de diálogo **partilhar protegido**, selecione **Visualizador – Ver Apenas**:
 
-    ![compartilhar caixa de diálogo protegida - Visualizador - Somente exibição](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![caixa de diálogo partilhar protegido – Visualizador – Ver Apenas](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
-3.  Selecione **Permitir que eu revogue o acesso a esses documentos imediatamente**.
+3.  Selecione **Revogar instantaneamente o acesso a estes documentos**:
 
-    ![compartilhar caixa de diálogo protegida - revogar instantaneamente](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![caixa de diálogo partilhar protegido – revogar instantaneamente](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
-4.  Selecione **Enviar-me um email quando alguém tentar abrir esses documentos**:
+4.  Selecione **Enviar-me um e-mail quando alguém tentar abrir estes documentos**:
 
-    ![compartilhar caixa de diálogo protegida - enviar email para mim](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![caixa de diálogo partilhar protegido – enviar-me um e-mail](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
-5.  Clique em **Enviar agora**.
+5.  Clique em **Enviar Agora**.
 
-Quando alguém nas linas **Para**, **Cc**, ou **Cco** linha recebe o email, vê uma mensagem que fornece instruções de como ler o arquivo anexado *&lt;nome do tipo de documento do Office&gt;*. Eles podem ler o documento em vários dispositivos, incluindo iPads, iPhones, tablets Android e telefones, computadores Mac e computadores com Windows.
+Quando as pessoas na linha **Para**, **CC** ou **Bcc** recebem este e-mail, veem uma mensagem com instruções sobre como ler o *&lt;nome do tipo de documento do Office&gt;* anexado. Podem ler o documento em vários dispositivos, incluindo iPads, iPhones, tablets e telemóveis Android, computadores Mac e computadores com o Windows.
 
-Use o [portal de acompanhamento de documento](https://track.azurerms.com/) para acompanhar se e quando o &lt;nome do tipo de documento do Office&gt; é aberto. Considere entrar em contato com eles com uma chamada por telefone de acompanhamento logo depois que eles abrirem o &lt;nome do tipo de documento do Office&gt;.
-
-**Precisa de ajuda?**
-
--   Para obter informações adicionais:
-
-    -   [Proteger um arquivo que você compartilha por email](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
-
-    -   [Rastrear e revogar seus documentos](https://technet.microsoft.com/library/dn986611.aspx)
-
--   Entre em contato com o suporte técnico:
-
-    -   *&lt;detalhes de contato&gt;*
-
-### Documentação do usuário personalizada de exemplo
-![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
-
-#### Como compartilhar uma lista de preços com o cliente
-
-1.  Crie a mensagem de email, especificando o endereço ou endereços de email do cliente, digite sua mensagem e anexe lista depreços mais recente à mensagem de email. Depois, na guia **Message** no grupo do **RMS** , clique em **Compartilhamento Protegido** e clique em **Compartilhamento Protegido** novamente:
-
-    ![Captura de tela de como compartilhar documentos do Office usando o Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
-
-2.  Na caixa de diálogo **compartilhamento protegido** , selecione **Viewer – View Only**:
-
-    ![compartilhar caixa de diálogo protegida - Visualizador - Somente exibição](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
-
-3.  Selecione **Permitir que eu revogue o acesso a esses documentos imediatamente**.
-
-    ![compartilhar caixa de diálogo protegida - revogar instantaneamente](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
-
-4.  Selecione **Enviar-me um email quando alguém tentar abrir esses documentos**:
-
-    ![compartilhar caixa de diálogo protegida - enviar email para mim](../media/AzRMS_SharedProtected_EmailMe.PNG)
-
-5.  Clique em **Enviar agora**.
-
-Quando alguém nos campos **Para**, **Cc**ou **Cco** receber este email, eles veem uma mensagem que fornece as instruções sobre como ler o a lista de preços anexa. Eles podem ler o documento em vários dispositivos, incluindo iPads, iPhones, tablets Android e telefones, computadores Mac e computadores com Windows.
-
-Use o [portal de controle de documento](https://track.azurerms.com/) para controlar se e quando abrirem lista de preços anexa. Considere entrar em contato com eles com uma chamada por telefone de acompanhamento logo depois que você vir que eles abriram a lista de preços.
+Utilize o [portal de controlo de documentos](https://track.azurerms.com/) para controlar se e quando abrem o &lt;nome do tipo de documento do Office&gt; anexado. Considere contactá-las através de uma chamada telefónica de acompanhamento logo depois de confirmar que abriram o &lt;nome do tipo de documento do Office&gt;.
 
 **Precisa de ajuda?**
 
 -   Para obter informações adicionais:
 
-    -   [Proteger um arquivo que você compartilha por email](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [Proteger um ficheiro que partilha por e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
 
-    -   [Rastrear e revogar seus documentos](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [Controlar e revogar os documentos](https://technet.microsoft.com/library/dn986611.aspx)
 
--   Entre em contato com o suporte técnico:
+-   Contactar o suporte técnico:
 
-    -   Email: helpdesk@vanarsdelltd.com
+    -   *&lt;detalhes de contacto&gt;*
+
+### Exemplo de documentação do utilizador personalizada
+![Exemplo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
+
+#### Como partilhar uma lista de preços com o seu cliente
+
+1.  Crie a sua mensagem de e-mail ao especificar o endereço ou os endereços de e-mail do cliente, escreva a mensagem e anexe a lista de preços mais recente à mesma. Em seguida, no separador **MENSAGEM**, no grupo **RMS**, clique em **Partilhar Protegido** e, em seguida, clique em **Partilhar Protegido** novamente:
+
+    ![Captura de ecrã de como partilhar um documento do Office através do Outlook](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+
+2.  Na caixa de diálogo **partilhar protegido**, selecione **Visualizador – Ver Apenas**:
+
+    ![caixa de diálogo partilhar protegido – Visualizador – Ver Apenas](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+
+3.  Selecione **Revogar instantaneamente o acesso a estes documentos**:
+
+    ![caixa de diálogo partilhar protegido – revogar instantaneamente](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+
+4.  Selecione **Enviar-me um e-mail quando alguém tentar abrir estes documentos**:
+
+    ![caixa de diálogo partilhar protegido – enviar-me um e-mail](../media/AzRMS_SharedProtected_EmailMe.PNG)
+
+5.  Clique em **Enviar Agora**.
+
+Quando as pessoas na linha **Para**, **CC** ou **Bcc** recebem este e-mail, veem uma mensagem com instruções sobre como ler a lista de preços anexada. Podem ler o documento em vários dispositivos, incluindo iPads, iPhones, tablets e telemóveis Android, computadores Mac e computadores com o Windows.
+
+Utilize o [portal de controlo de documentos](https://track.azurerms.com/) para controlar se e quando abrem a lista de preços anexada. Considere contactá-las através de uma chamada telefónica de acompanhamento logo depois de confirmar que abriram a lista de preços.
+
+**Precisa de ajuda?**
+
+-   Para obter informações adicionais:
+
+    -   [Proteger um ficheiro que partilha por e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+
+    -   [Controlar e revogar os documentos](https://technet.microsoft.com/library/dn986611.aspx)
+
+-   Contactar o suporte técnico:
+
+    -   E-mail: helpdesk@vanarsdelltd.com
 
 
 

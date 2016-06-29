@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "Cenário: proteger seus arquivos mais valiosos (alguns) | Azure RMS"
+title: Cenário – Proteger alguns dos seus ficheiros mais importantes | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,130 +25,130 @@ ms.suite: ems
 
 ---
 
-# Proteger seus arquivos mais valiosos (alguns)
+# Cenário – Proteger alguns dos seus ficheiros mais importantes
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Esse cenário e a documentação do usuário de suporte usam o Azure Rights Management para proteger manualmente e de maneira personalizada alguns arquivos que você identificou como sendo os mais valiosos, o que garante o mais alto nível de proteção contra acesso não autorizado. Geralmente, esses são arquivos que somente algumas pessoas devem poder acessar. Por exemplo, instruções de receita para o produto alimentício que é o carro-chefe da sua empresa ou planos de tomada de controle não devem se tornar públicos antes de uma data especificada.
+Este cenário e a documentação do utilizador associada utilizam o Azure Rights Management para proteger de forma manual e personalizada alguns ficheiros que tenha identificado como sendo os mais importantes e que requerem o mais elevado nível de proteção contra acesso não autorizado. Normalmente, são ficheiros a que apenas algumas pessoas devem conseguir aceder. Por exemplo, instruções da receita do produto alimentar de marca da sua empresa ou planos de aquisição que não devem ser tornados públicos antes de uma data especificada.
 
-As instruções são adequadas para o seguinte conjunto de circunstâncias:
+As instruções aplicam-se às seguintes circunstâncias:
 
--   Você identificou um pequeno conjunto de arquivos a serem protegidos.
+-   Identificou o pequeno conjunto de ficheiros que pretende proteger.
 
--   Os arquivos estão em um dos formatos de arquivo do Office que dão suporte ao Rights Management. Se os arquivos estiverem em outros formatos de arquivo (por exemplo, arquivos CAD), verifique se esses formatos dão suporte ao Azure RMS e implante aplicativos que dão suporte ao Azure RMS nativamente. Para saber mais, confira [Como os aplicativos dão suporte ao Azure Rights Management](https://technet.microsoft.com/library/jj585004.aspx).
+-   Os ficheiros estão num dos formatos de ficheiro do Office que suportam o Rights Management. Se os ficheiros estiverem noutros formatos de ficheiro (por exemplo, ficheiros CAD), certifique-se de que esses formatos suportam o Azure RMS e de que implementa aplicações que suportam nativamente o Azure RMS. Para mais informações, consulte [Como é que as Aplicações Suportam o Azure Rights Management](https://technet.microsoft.com/library/jj585004.aspx).
 
--   Os arquivos contêm informações altamente confidenciais que devem ficar acessíveis somente para algumas pessoas.
+-   Os ficheiros contêm informações delicadas e altamente confidenciais que devem estar acessíveis apenas para algumas pessoas.
 
--   Exigir uma conexão de Internet para autorizar cada acesso individual a um arquivo é uma compensação aceitável para essas pessoas, pois isso fornece maior segurança.
+-   Solicitar uma ligação à Internet para autorizar o acesso de cada indivíduo a um ficheiro é um compromisso aceitável para estas pessoas, uma vez que proporciona uma maior segurança.
 
--   Essas pessoas não têm a obrigação de compartilhar essas informações com outras pessoas, mas podem modificá-las e salvar suas alterações.
+-   Estas pessoas não necessitam de partilhar estas informações com outros, mas podem modificar as informações e guardar as alterações.
 
--   O administrador deve ser capaz de controlar quem está acessando os arquivos e quando, e de revogar o acesso, se necessário.
+-   O administrador deve poder controlar quem está a aceder aos ficheiros e quando, bem como revogar o acesso, se necessário.
 
-## Instruções de implantação
-![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
+## Instruções de implementação
+![Instruções do administrador para a Implementação Rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
-Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
+Certifique-se de que os seguintes requisitos são cumpridos e, em seguida, siga as instruções dos procedimentos de suporte antes de avançar para a documentação do utilizador.
 
 ## Requisitos para este cenário
-Para que este cenário funcione, faça o seguinte:
+Para este cenário, é necessário que os seguintes aspetos estejam implementados:
 
-|Requisito|Se você precisar de mais informações|
+|Requisito|Se precisar de mais informações|
 |---------------|--------------------------------|
-|Você preparou as contas e os grupos para o Office 365 ou o Active Directory do Azure:<br /><br />- Um grupo habilitado para email nomeado **Acesso privilegiado**, que contém as pessoas que devem ter acesso a esses documentos altamente confidenciais<br /><br />- Um grupo habilitado para email nomeado **Gerenciadores de conformidade de TI**, que contém as pessoas cujo trabalho inclui descoberta automática, monitoramento e auditoria<br /><br />- Um grupo habilitado para email nomeado **Administradores de RMS**, e todos os administradores que configuram o Azure RMS são membros desse grupo|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Você configurou um modelo personalizado conforme descrito a seguir|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|O aplicativo de compartilhamento Rights Management é implantado em seu computador Windows para que você possa proteger esses arquivos no local, conforme descrito na próxima seção|[Baixar e instalar o aplicativo Rights Management sharing](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
-|Os usuários autorizados têm uma versão mínima do Office 2013|Se os usuários têm o Office 2010, eles também devem instalar o aplicativo de compartilhamento Rights Management.|
-|Sua assinatura do Azure RMS inclui rastreamento de documento|Se a sua assinatura do Azure RMS não incluir revogação e acompanhamento de documento, não poderá usar o site de acompanhamento de documento para ver quem está acessando o documento e revogar o acesso, se necessário. Nesse caso, adquira uma assinatura que dê suporte a rastreamento de documentos ou aceite essa limitação. Você também pode considerar os recursos de [log de uso](https://technet.microsoft.com/library/dn529121.aspx) do Azure RMS, que fornece informações como quem acessou cada arquivo e quando, para ajudá-lo a detectar comportamentos potencialmente suspeitos.<br /><br />Para verificar o suporte de assinatura: [Comparação de Ofertas do Rights Management Services (RMS)](https://technet.microsoft.com/dn858608).|
+|Preparou contas e grupos para o Office 365 ou o Azure Active Directory:<br /><br />- Um grupo com capacidade de correio com o nome **Acesso privilegiado**, que inclui as poucas pessoas que devem ter acesso a estes documentos altamente confidenciais<br /><br />- Um grupo com capacidade de correio com o nome **Gestores de Conformidade de TI**, que inclui as pessoas cujo trabalho inclui a Deteção de Dados Eletrónicos, a monitorização e a auditoria<br /><br />- Um grupo com capacidade de correio com o nome **Administradores de RMS** e todos os administradores que irão configurar o Azure RMS são membros deste grupo|[Preparar para o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|O Azure Rights Management está ativado|[Ativar o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
+|Configurou um modelo personalizado, tal como descrito a seguir|[Configurar modelos personalizados para o Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|A aplicação de partilha Rights Management está implementada no seu computador Windows, para que possa proteger estes ficheiros no local, conforme descrito na secção seguinte|[Transferir e instalar a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|Os utilizadores autorizados têm o Office 2013 como a versão mínima|Se os utilizadores tiverem o Office 2010, também têm de instalar a aplicação de partilha Rights Management.|
+|A subscrição do Azure RMS inclui o controlo de documentos|Se a sua subscrição do Azure RMS não incluir o controlo de documentos e a revogação, não poderá utilizar o site de controlo de documentos para ver quem está a aceder a estes documentos e revogar o acesso, se necessário. Neste caso, compre uma subscrição que suporte o controlo de documentos ou aceite esta limitação. Também poderá considerar as capacidades de [registo de utilização](https://technet.microsoft.com/library/dn529121.aspx) do Azure RMS, que podem fornecer informações tais como quem acedeu a cada ficheiro e quando o fez, para o ajudar a detetar um potencial comportamento suspeito.<br /><br />Para verificar o suporte da subscrição: [Comparação das Ofertas do Rights Management Services (RMS)](https://technet.microsoft.com/dn858608)|
 
 ### Para configurar o modelo personalizado
 
-1.  No portal clássico do Azure: crie um novo modelo personalizado para o Azure Rights Management contendo estes valores e configurações:
+1.  No portal clássico do Azure: crie um novo modelo personalizado para o Azure Rights Management que contenha estes valores e definições:
 
-    -   Nome: **acesso privilegiado**
+    -   Nome: **Acesso privilegiado**
 
-    -   Direitos: conceder ao grupo habilitado para email **Acesso privilegiado** direitos de **Coautor**
+    -   Direitos: conceda ao grupo **Acesso privilegiado** com capacidade de correio direitos de **Coautor**
 
-    -   Escopo: selecionar o grupo habilitado para email **Acesso privilegiado**, o grupo habilitado para email **Gerenciadores de conformidade de TI** e o grupo habilitado para email **Administradores RMS**.
+    -   Âmbito: selecione o grupo **Acesso privilegiado** com capacidade de correio, o grupo **Gestores de Conformidade de TI** com capacidade de correio e o grupo **Administradores de RMS** com capacidade de correio.
 
-    -   Acesso offline: **o conteúdo está disponível apenas com conexão à Internet**
+    -   Acesso offline: **O conteúdo está disponível apenas com uma ligação à Internet**
 
 2.  Publique o novo modelo.
 
-### Para proteger o arquivos no local
+### Para proteger os ficheiros no local
 
-1.  No Explorador de Arquivos, navegue até a primeira pasta que contém os arquivos que serão protegidos:
+1.  No Explorador de Ficheiros, navegue para a primeira pasta que contém os ficheiros a proteger:
 
-    -   Se você deseja proteger todos os arquivos na pasta, selecione a pasta.
+    -   Se pretender proteger todos os ficheiros na pasta, selecione a pasta.
 
-    -   Se você deseja proteger apenas alguns arquivos na pasta, selecione os arquivos que serão protegidos.
+    -   Se pretender proteger apenas alguns ficheiros na pasta, selecione todos os ficheiros a proteger.
 
-2.  Clique com o botão direito do mouse, selecione **Proteger com RMS** e **Proteger in-loco**.
+2.  Clique com o botão direito do rato, selecione **Proteger com RMS** e, em seguida, selecione **Proteger no local**.
 
 3.  Selecione **Acesso privilegiado**.
 
-4.  Suas credenciais não serão solicitadas. Aguarde até que os arquivos sejam protegidos e clique em **Fechar** quando vir a página **Os arquivos foram protegidos**.
+4.  Poderão ser-lhe pedidas as credenciais. Aguarde que os ficheiros sejam protegidos e, em seguida, clique em **Fechar** quando for apresentada a página **os ficheiros foram protegidos**.
 
-5.  Se você tiver mais arquivos para proteger em outras pastas, repita as etapas 1 a 4 para cada pasta.
+5.  Se tiver mais ficheiros a proteger noutras pastas, repita os passos 1 a 4 para cada pasta.
 
-Para saber mais sobre como proteger os arquivos no local, confira [Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo de compartilhamento Rights Management](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
+Para obter mais informações sobre como proteger ficheiros no local, consulte [Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
 
-> [!TIP] Se o número de arquivos a proteger um for muito alto para fazê-lo manualmente, considere usar a [ferramenta de proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) a fim de proteger os arquivos em massa usando o modelo.
+> [!TIP] Se o número de ficheiros que pretende proteger for demasiado elevado para executar este processo manual, considere utilizar a [ferramenta de Proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) para proteger os ficheiros em volume com o modelo.
 
-### Para monitorar e, se necessário, revogar acesso aos arquivos
+### Para monitorizar e, se necessário, revogar o acesso aos ficheiros
 
-1.  No Explorador de Arquivos, clique com o botão direito do mouse, selecione **Proteger com RMS** e selecione **Controlar Uso**:
+1.  No Explorador de Ficheiros, clique com o botão direito do rato no ficheiro protegido, selecione **Proteger com RMS** e, em seguida, selecione **Controlar a Utilização**.
 
-2.  Se solicitado, entre para acessar o site de acompanhamento de documento.
+2.  Se lhe for solicitado, inicie sessão para aceder ao site de controlo de documentos.
 
-3.  Verifique quem acessou o arquivo e outros arquivos protegidos, prestando atenção especialmente em tentativas com falha se elas indicarem um comportamento suspeito. Se for apropriado, você pode revogar o acesso arquivo a arquivo.
+3.  Verifique quem acedeu a esse ficheiro e aos outros ficheiros que protegeu, prestando especial atenção a tentativas falhadas caso indiquem um comportamento suspeito. Se considerar adequado, pode revogar o acesso a cada ficheiro.
 
-## Instruções sobre a documentação do usuário
-Não há instruções específicas para dar aos usuários nesse cenário porque as bibliotecas protegidas não exigem ações especiais dos usuários. Os arquivos foram protegidos por você e serão monitorados por você. No entanto, talvez você tenha que informar aos usuários e aos seus canais de suporte quais arquivos estão protegidos e como isso pode restringir o uso dos documentos. Por exemplo, se um usuário autorizado não tiver uma conexão de Internet, ela não poderá abrir o arquivo.
+## Instruções da documentação do utilizador
+Não existem instruções específicas a dar aos utilizadores para este cenário, uma vez que estes ficheiros não requerem qualquer ação especial por parte deles. Os ficheiros foram protegidos por si e serão monitorizados por si. No entanto, poderá ter de informar os utilizadores e os canais de suporte sobre os ficheiros que estão protegidos e como esta proteção pode restringir a utilização dos documentos. Por exemplo, se um utilizador autorizado não tiver ligação à Internet, não conseguirá abrir o ficheiro.
 
-Usando o modelo a seguir, copie e cole o anúncio em uma comunicação para seus usuários finais e faça estas modificações:
+Utilizando o modelo seguinte, copie e cole o anúncio numa comunicação destinada aos utilizadores finais e efetue estas alterações:
 
-1.  Forneça os nomes reais dos arquivos ou use uma referência clara que os usuários autorizados irão entender.
+1.  Forneça os nomes reais dos ficheiros ou utilize uma referência clara que os utilizadores autorizados consigam compreender.
 
-2.  Substitua os *&lt;detalhes de contato&gt;* por instruções sobre como esses usuários podem contatar o suporte técnico ou o departamento de TI com um canal de suporte escalonado que corresponda à importância desses documentos. Por exemplo, forneça um número de telefone 24 horas para chamadas de suporte de severidade alta.
+2.  Substitua *&lt;detalhes de contacto&gt;* por instruções sobre a forma como estes utilizadores podem contactar o suporte técnico ou o departamento de TI com um canal de suporte escalado correspondente à importância destes documentos. Por exemplo, forneça um número de telefone com atendimento durante 24 horas por dia para as chamadas de suporte de elevada gravidade.
 
-3.  Faça modificações adicionais no anúncio, se desejar, e envie-o para esses usuários.
+3.  Efetue quaisquer modificações adicionais que pretenda ao anúncio e, em seguida, envie-o aos utilizadores.
 
-A documentação de exemplo mostra como esse anúncio pode parecer para os usuários depois das personalizações.
+A documentação de exemplo mostra que aspeto este anúncio poderá ter para os utilizadores depois das personalizações.
 
-![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
+![Modelo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Comunicado de TI: protegendo os documentos secretos da &lt;nome da organização&gt;
-Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a eles, para que somente &lt;usuários restritos&gt; possam acessá-los e alterá-los. Para ajudar a protegê-los contra acesso não autorizado, seu aplicativo solicitará autorização automaticamente cada vez que os arquivos forem abertos. Portanto, agora você precisa ter uma conexão com a Internet e suas credenciais poderão ser solicitadas:
+### Anúncio de TI: proteger os documentos confidenciais da &lt;nome da organização&gt;
+Os ficheiros seguintes estão agora sujeitos a um nível muito elevado de proteção, para que apenas os &lt;utilizadores restritos&gt; possam aceder a estes ficheiros e alterá-los. Para ajudar a protegê-los do acesso não autorizado, a aplicação solicitará automaticamente autorização sempre que abrir estes ficheiros, pelo que agora tem de ter uma ligação à Internet para os abrir, além de poderem ser-lhe pedidas as suas credenciais:
 
--   &lt;principal documento secreto, tipo ou local 1&gt;
+-   &lt;documento confidencial, tipo ou localização 1&gt;
 
--   &lt;principal documento secreto, tipo ou local 2&gt;
+-   &lt;documento confidencial, tipo ou localização 2&gt;
 
--   &lt;principal documento secreto, tipo ou local 3&gt;
-
-**Precisa de ajuda?**
-
--   Se você não consegue acessar esses arquivos ou observou alterações suspeitas nos arquivos &lt;detalhes de ação e contato&gt;.
-
-#### Documentação do usuário personalizada de exemplo
-![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
-
-##### Anúncio de TI: protegendo documentos secretos da VanArsdel
-Os arquivos a seguir agora têm um nível muito alto de proteção aplicado a eles, para que somente as pessoas na linha Para dessa mensagem de email possam acessá-los e alterá-los. Para ajudar a protegê-los contra acesso não autorizado, seus aplicativos solicitarão autorização automaticamente cada vez que os arquivos forem abertos. Portanto, agora você precisa ter uma conexão com a Internet para abri-los e suas credenciais poderão ser solicitadas:
-
--   Especificações de design para o nome do código "Mercury"
-
--   Especificações de design o nome do código "Jupiter"
-
--   Especificações de design para o nome do código "Saturn"
-
--   Especificações de design o nome do código "Neptune"
+-   &lt;documento confidencial, tipo ou localização 3&gt;
 
 **Precisa de ajuda?**
 
--   Se você não consegue acessar esses arquivos ou observou alterações suspeitas nos arquivos, ligue para a linha de escalonamento de suporte 24 horas que foi enviada a você em uma mensagem de email protegido pelo departamento de TI.
+-   Se não conseguir aceder a estes ficheiros ou se reparar em alterações suspeitas aos mesmos, &lt;ação e detalhes de contacto&gt;.
+
+#### Exemplo de documentação do utilizador personalizada
+![Exemplo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
+
+##### Anúncio de TI: proteger os documentos confidenciais da VanArsdel
+Os ficheiros seguintes estão agora sujeitos a um nível muito elevado de proteção, para que apenas as pessoas incluídas na linha Para desta mensagem de e-mail possam aceder a estes ficheiros e alterá-los. Para ajudar a protegê-los do acesso não autorizado, as aplicações solicitarão automaticamente autorização sempre que abrir estes ficheiros, pelo que agora tem de ter uma ligação à Internet para os abrir, além de poderem ser-lhe pedidas as suas credenciais:
+
+-   Especificações da conceção para o nome de código “Mercúrio”
+
+-   Especificações da conceção para o nome de código “Júpiter”
+
+-   Especificações da conceção para o nome de código “Saturno”
+
+-   Especificações da conceção para o nome de código “Neptuno”
+
+**Precisa de ajuda?**
+
+-   Se não conseguir aceder a estes ficheiros ou se reparar em alterações suspeitas aos mesmos, ligue para a linha do suporte disponível 24 horas por dia que o Departamento de TI lhe indicou numa mensagem de e-mail protegida.
 
 
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configurar o Azure RMS para autenticação de ADAL | Azure RMS
-description: Descreve as etapas para configurar a autenticação baseada no Azure ADAL
+title: Configurar o Azure RMS para autenticação ADAL | Azure RMS
+description: Descreve os passos para configurar a autenticação baseada no Azure ADAL
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
@@ -25,89 +25,89 @@ ms.suite: ems
 
 ---
 
-# Configurar o Azure RMS para autenticação de ADAL
+# Configurar o Azure RMS para autenticação ADAL
 
-Este tópico descreve as etapas para configurar a autenticação baseada no Azure ADAL.
+Este tópico descreve os passos para configurar a autenticação baseada no Azure ADAL.
 
-## Instalação da Autenticação do Azure
+## Configuração da Autenticação Azure
 
-Você precisará do seguinte:
+Será necessário o seguinte:
 
-- Uma [assinatura do Microsoft Azure](https://azure.microsoft.com/en-us/) (uma avaliação gratuita é suficiente). Para obter mais informações, consulte [How users sing up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) (Como usuários se inscrevem no RMS para as pessoas)
-- Uma assinatura do Microsoft Azure Rights Management (uma conta gratuita [RMS para pessoas físicas](https://technet.microsoft.com/en-us/library/dn592127.aspx) é suficiente).
+- Uma [subscrição do Microsoft Azure](https://azure.microsoft.com/en-us/) (uma avaliação gratuita é suficiente). Para obter mais informações, consulte o artigo [Como iniciar sessão no RMS para utilizadores](../understand-explore/rms-for-individuals-user-sign-up.md)
+- Uma subscrição do Microsoft Azure Rights Management (uma conta [RMS para Indivíduos](https://technet.microsoft.com/en-us/library/dn592127.aspx) gratuita é suficiente).
 
-> [!NOTE] Pergunte ao seu administrador de TI se você tem ou não uma assinatura do Microsoft Azure Rights Management e peça que ele execute as etapas abaixo. Se sua organização não tiver uma assinatura, peça que o administrador de TI crie uma. Além disso, seu administrador de TI deve assinar com uma *Conta corporativa ou de estudante*, em vez de uma *Conta da Microsoft* (por exemplo, Hotmail).
+> [!NOTE] Pergunte ao seu Administrador de TI se possui ou não uma subscrição do Microsoft Azure Rights Management e, em seguida, peça ao Administrador de TI para realizar os passos abaixo. Se a sua organização não tiver uma subscrição, deve pedir ao seu administrador de TI para criar uma. Além disso, o Administrador de TI deve subscrever com uma conta *Escolar ou profissional*, em vez de uma *conta Microsoft* (por exemplo, Hotmail).
 
-Após inscrever-se no Microsoft Azure:
+Após a inscrição no Microsoft Azure:
 
-- Faça logon no [Portal de Gerenciamento do Azure](https://manage.windowsazure.com) de sua organização usando uma conta com privilégios administrativos.
+- Inicie sessão no [Portal de Gestão do Azure](https://manage.windowsazure.com) para a organização que utiliza uma conta com privilégios administrativos.
 
-![Logon no Azure](../media/AzurePortalLogin.png)
+![Início de sessão no Azure](../media/AzurePortalLogin.png)
 
-- Navegue até o aplicativo **Active Directory** no lado esquerdo do portal.
+- Navegue para baixo até à aplicação do **Active Directory**, no lado esquerdo do portal.
 
-![Selecionar o Active Directory](../media/AzureADPick.png)
+![Selecionar Active Directory](../media/AzureADPick.png)
 
-- Se você ainda não tiver criado um diretório, escolha o botão **Novo** localizado no canto inferior esquerdo do portal.
+- Se ainda não tiver criado um diretório, escolha o botão **Novo**, situado no canto inferior esquerdo do portal.
 
 ![Selecionar NOVO](../media/AzureNewBtn.png)
 
-- Selecione a guia **Rights Management** e verifique se o **Status do Rights Management** é **Ativo**, **Desconhecido** ou **Não autorizado**. Se o status for **Inativo**, escolha o botão **Ativar** na parte inferior, na região central do portal, e confirme sua seleção.
+- Selecione o separador **Rights Management** e certifique-se de que o **Estado do Rights Management** é **Ativo**, **Desconhecido** ou **Não Autorizado**. Se o estado for **Inativo**, escolha o botão **Ativar** ,na parte inferior central do portal, e confirme a seleção.
 
 ![Escolher ATIVAR](../media/RMTab.png)
 
-- Agora, crie um novo *Aplicativo nativo* em seu diretório, selecionando o diretório e escolhendo Aplicativos.
+- Agora, crie uma nova *Aplicação Nativa* no diretório ao selecionar o diretório e ao escolher Aplicações.
 
-![Selecionar APLICATIVOS](../media/CreateNativeApp.png)
+![Selecionar APLICAÇÕES](../media/CreateNativeApp.png)
 
-- Escolha o botão **ADICIONAR** botão localizado na parte inferior, na região central do portal.
+- Em seguida, escolha o botão **Adicionar** situado na parte inferior central do portal.
 
 ![Selecionar ADICIONAR](../media/AddAppBtn.png)
 
-- No prompt, escolha **Adicionar um aplicativo que minha organização está desenvolvendo**.
+- Na linha de comandos, escolha **Adicionar uma aplicação que a minha organização está a desenvolver**.
 
-![Selecione Adicionar um aplicativo que minha organização está desenvolvendo](../media/AddAnAppPick.png)
+![Selecionar Adicionar uma aplicação que a minha organização está a desenvolver](../media/AddAnAppPick.png)
 
-- Nomeie o aplicativo selecionando **APLICATIVO CLIENTE NATIVO** e escolhendo o botão **AVANÇAR**.
+- Atribua um nome à aplicação ao selecionar **APLICAÇÃO CLIENTE NATIVA** e escolher o botão **Seguinte**.
 
-![Nomear seu aplicativo](../media/TellUsInput.png)
+![Atribuir um nome à aplicação](../media/TellUsInput.png)
 
-- Adicione um URI de redirecionamento e escolha Avançar.
-  O redirecionamento de URI deve ser um URI válido e exclusivo do diretório. Por exemplo, você pode usar algo como `com.mycompany.myapplication://authorize`.
+- Adicione um URI de redirecionamento e selecione seguinte.
+  O URI redirecionamento tem de ser um URI válido e exclusivo para o seu diretório. Por exemplo, pode utilizar algo como `com.mycompany.myapplication://authorize`.
 
 ![Adicionar URI de redirecionamento](../media/RedirectURI.png)
 
-- Selecione seu aplicativo no diretório e escolha **CONFIGURAR**.
+- Selecione a aplicação no diretório e escolha **CONFIGURAR**.
 
 ![Escolher CONFIGURAR](../media/ConfigYourApp.png)
 
->[!NOTE] Copie a **ID DO CLIENTE** e a **URI de REDIRECIONAMENTO** e armazene-os para uso futuro ao configurar o cliente RMS.
+>[!NOTE] Copie a **ID DE CLIENTE** e o **URI DE REDIRECIONAMENTO** e armazene-os para utilização futura quando configurar o cliente RMS.
 
-- Navegue até a parte inferior das configurações do aplicativo e escolha o botão **Adicionar aplicativo** em **Permissões para outros aplicativos**.
+- Navegue até à parte inferior das definições da aplicação e escolha o botão **Adicionar aplicação** em **permissões para outras aplicações**.
 
->[!NOTE] As **Permissões Delegadas** que são mostradas para o Microsoft Azure Active Directory estão corretas por padrão – somente uma opção deve ser selecionada e essa opção é **Entrar e ler o perfil do usuário**.
+>[!NOTE] As **Permissões de Delegado** apresentadas para o Windows Azure Active Directory estão corretas por predefinição – deve ser selecionada apenas a opção **Iniciar sessão e ler o perfil de utilizador**.
 
-![Selecionar Adicionar aplicativo](../media/PermissionsToOtherBtn.png)
+![Selecionar Adicionar aplicação](../media/PermissionsToOtherBtn.png)
 
-- Agora, adicione esse GUID `00000012-0000-0000-c000-000000000000` à caixa de edição **COMEÇANDO COM** e escolha o botão de seleção.
+- Agora, adicione este GUID `00000012-0000-0000-c000-000000000000` à caixa de edição **QUE INICIE COM** e selecione o botão de verificação.
 
 ![Adicionar GUID](../media/AddGUID.png)
 
-- Escolha o sinal de mais ao lado de **Microsoft Rights Management**.
+- Selecione o sinal de adição junto de **Microsoft Rights Management**.
 
 ![Selecionar o botão +](../media/ChoosePlusBtn.png)
 
-- Agora, escolha a marca de seleção localizada no canto inferior esquerdo da caixa de diálogo.
+- Agora, selecione a marca de verificação situada no canto inferior esquerdo da caixa de diálogo.
 
-![Escolher a marca de seleção](../media/ChooseCheck.png)
+![Escolher a marca de verificação](../media/ChooseCheck.png)
 
-- Agora você está pronto para adicionar uma dependência ao seu aplicativo para o Azure RMS. Para adicionar a dependência, selecione a nova entrada **Microsoft Rights Management Services** em **permissões para outros aplicativos** e marque a caixa de seleção **Criar e acessar conteúdo protegido para usuários** na caixa suspensa **Permissões Delegadas:**.
+- Está agora preparado para adicionar uma dependência à sua aplicação do Azure RMS. Para adicionar a dependência, selecione a nova entrada do **Microsoft Rights Management Services** em **permissões para outras aplicações** e escolha a caixa de verificação **Criar e aceder a conteúdo protegido para utilizadores** na pasta de depósito **Permissões delegadas:**.
 
-![Configurar permissões](../media/AddDependency.png)
+![Permissões de configuração](../media/AddDependency.png)
 
-- Salve seu aplicativo para manter as alterações, escolhendo o ícone **Salvar** localizado na parte inferior, na região central do portal.
+- Guarde a aplicação para manter as alterações escolhendo o ícone **Guardar** situado na parte inferior central do portal.
 
-![Selecionar SALVAR](../media/SaveApplication.png)
+![Selecionar GUARDAR](../media/SaveApplication.png)
 
 
 <!--HONumber=Jun16_HO2-->

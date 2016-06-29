@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Implantação de seu aplicativo | Azure RMS
-description: Este tópico descreve opções de implantação para seu aplicativo habilitado para direitos e orienta você sobre elas
+title: Implementar a aplicação | Azure RMS
+description: Este tópico descreve e serve de orientação nas opções de implementação da sua aplicação com capacidade para direitos
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,35 +24,35 @@ ms.suite: ems
 
 ---
 
-# Implantar na pré-produção
+# Implementar em pré-produção
 
 
-Este tópico descreve opções de implantação para seu aplicativo habilitado para direitos e orienta você sobre elas.
+Este tópico descreve e serve de orientação nas opções de implementação da sua aplicação com capacidade para direitos.
 
-## Solicitar um Contrato de Licença de Produção
+## Pedir um Contrato de Licença de Produção
 
- Antes de você poder lançar um aplicativo desenvolvido com o Rights Management Services SDK 2.1, você deve se inscrever para um Contrato de licença de produção a fim de obter um certificado de produção.
+ Para lançar uma aplicação desenvolvida utilizando o SDK Rights Management Services 2.1, tem de solicitar um Contrato de Licença de Produção para obter um certificado de produção.
 
 > [!IMPORTANT]
-> Se você for executar o aplicativo cliente com o RMS baseado no Azure, será necessário criar seus próprios locatários. Para obter mais informações, consulte [Requisitos do Azure RMS: assinaturas de nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).
-> Para saber mais sobre como executar com o Azure RMS, confira [Permitir que seu aplicativo de serviço funcione com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md).
+> Se executar a aplicação cliente com o RMS baseado no Azure, terá de solicitar os seus próprios inquilinos. Para mais informações, consulte [Requisitos do Azure RMS: Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).
+> Para obter mais informações sobre a execução com o Azure RMS, consulte [Permitir que a aplicação do serviço funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md).
 
-Você pode obter o certificado por meio da inscrição em um Contrato de licença de produção.
+Pode obter o certificado ao solicitar um Contrato de Licença de Produção.
 
-Envie uma mensagem de email para [RMLA@microsoft.com](mailto:rmla@microsoft.com) e inclua as seguintes informações:
+Envie uma mensagem de e-mail para [RMLA@microsoft.com](mailto:rmla@microsoft.com) e inclua as seguintes informações:
 
-- Nome completo da empresa
-- Endereços físico da empresa (inclua a cidade, estado, país ou região e CEP ou código postal)
-- Endereços de correspondência da empresa (inclua a cidade, estado, país ou região e CEP ou código postal)
-- Números de telefone e de fax da empresa
+- Nome da empresa completo
+- Endereço físico da empresa (inclua a cidade, o estado, o país ou a região e o código postal)
+- Morada de correio postal da empresa (inclua a cidade, o estado, o país ou a região e o código postal)
+- Números de telefone e fax da empresa
 - URL da empresa
-- País ou região de incorporação
-- Nome do aplicativo ou produto
-- Nome e sobrenome do solicitante
-- Cargo ou a posição do solicitante
-- Endereço de email do solicitante
+- País ou região de constituição
+- Nome da aplicação ou produto
+- Nome próprio e apelido do autor do pedido
+- Título ou cargo do autor do pedido
+- Endereço de e-mail do autor do pedido
 
-Embora uma conta de email não seja rigorosamente exigida, o processo de inscrição normalmente depende da comunicação por email. Você pode obter uma conta de email gratuita no Microsoft Outlook.com. Se você não tiver uma conta e não quiser uma, envie uma inscrição impressa para o endereço a seguir:
+Embora uma conta de e-mail não seja estritamente necessária, o processo de candidatura normalmente depende do e-mail para a comunicação. Pode obter uma conta de e-mail gratuita em Microsoft Outlook.com. Se não tiver uma conta e não pretender uma, pode enviar uma candidatura datilografada para o seguinte endereço:
 
       Active Directory Rights Management License Agreements (ADRMLA)
 
@@ -62,76 +62,76 @@ Embora uma conta de email não seja rigorosamente exigida, o processo de inscri�
 
       Redmond, WA 98052-6399
 
-Ao solicitar uma contrato, faça o seguinte:
-- Envie as informações, em inglês, como devem aparecer no contrato.
-- Envie todas as informações solicitadas. Informações incompletas ou ausentes podem atrasar o processamento da solicitação.
+Quando solicitar um contrato, efetue o seguinte:
+- Submeta as informações em inglês, conforme deve aparecer no contrato.
+- Envie todas as informações necessárias. As informações em falta ou incompletas podem atrasar o processamento do pedido.
 
-A equipe do ADRMLA (Contrato de licenciamento do Active Directory Rights Management) responderá à sua solicitação por email em até três dias úteis, ou em mais tempo se você enviou a solicitação usando um serviço postal. A resposta incluirá o formulário do contrato de licença e instruções adicionais. Leia, assine e devolva todas as páginas do contrato para a equipe do ADRMLA. Não altere as fontes ou reformate os parágrafos do contrato de licença.
+A equipa do Contrato de Licença do Active Directory Rights Management (ADRMLA) responderá ao seu pedido por e-mail no prazo de três dias úteis ou superior se enviar o pedido utilizando um serviço postal. A resposta irá incluir o formulário do contrato de licença e mais instruções. Leia, assine e devolva todas as páginas do contrato à equipa do ADRMLA. Não altere os tipos de letra nem reformate os parágrafos do contrato de licença.
 
-Siga as instruções recebidas da equipe do ADRMLA. As instruções listam os itens de informações digitais necessários para atender à sua solicitação de certificado. Seguindo as instruções passo a passo, você reduzirá qualquer atraso.
+Certifique-se de que segue as instruções que recebe da equipa do ADRMLA. As instruções listam os itens de informações digitais necessários para satisfazer o pedido de certificado. Ao seguir as instruções passo a passo, reduzirá os atrasos.
 
-A equipe do ADRMLA encaminhará o certificado de produção para você após sua criação. Observe que pode demorar até 15 dias úteis para a equipe do ADRMLA responder com seu certificado por email, ou mais tempo se a comunicação for pelo serviço postal.
+A equipa do ADRMLA irá reencaminhar o certificado de produção para si depois de ser criado. Tenha em atenção que poderá demorar até 15 dias úteis para a equipa do ADRMLA responder com o certificado por e-mail ou mais se a comunicação for pelo serviço postal.
 
 
-## Opções e requisitos de instalação do Rights Management Service Client 2.1
+## Opções de instalação e requisitos do Rights Management Service Client 2.1
 
-Considerando que você utilizou o RMS SDK 2.1, será necessário implantar o Active Directory Rights Management Services Client 2.1 no computador do usuário final.
+Dado que utilizou o SDK RMS 2.1, será necessário que o Cliente dos Serviços de Gestão de Direitos do Active Directory 2.1 seja implementado no computador do utilizador final.
 
 ### RMS Client 2.1
 
-O RMS Client 2.1 é um software projetado para seus computadores cliente para ajudar a proteger o acesso e uso das informações que passam por aplicativos que usam o RMS, seja instalado no seu local ou em um datacenter da Microsoft.
+O RMS Client 2.1 é um software concebido para computadores cliente para ajudar a proteger o acesso e a utilização de informações que circulam nas aplicações que utilizam o RMS, independentemente de estar instalado no local ou num centro de dados Microsoft.
 
-O RMS Client 2.1 não é um componente do sistema operacional Windows. O RMS Client 2.1 é enviado com um download opcional que pode ser, com a confirmação e aceitação do seu contrato de licença, distribuído gratuitamente com o software de terceiros para permitir ao cliente acessar o conteúdo que tenha sido protegidos por direitos pelo uso e a implantação de servidores RMS em seu ambiente.
+O RMS Client 2.1 não é um componente de sistema operativo Windows. O RMS Client 2.1 é incluído como uma transferência opcional que pode ser, com o reconhecimento e a aceitação do respetivo contrato de licença, distribuída gratuitamente com o seu software de terceiros para permitir o acesso de cliente a conteúdo que foi protegido por direitos através da utilização e implementação de servidores RMS no seu ambiente.
 
 
-> [!IMPORTANT] O AD RMS Client 2.1 é específico à arquitetura e deve corresponder à arquitetura de seu sistema operacional de destino.
+> [!IMPORTANT] O Cliente de AD RMS 2.1 é de arquitetura específica e tem de corresponder à arquitetura do seu sistema operativo de destino.
 
 
 ## Opções de instalação do RMS Client 2.1
 
--   **Redistribuição do RMS Client 2.1**
+-   **Redistribuir o RMS Client 2.1**
 
-    A abordagem recomendada é incluir o pacote do instalador do RMS Client com seu aplicativo ou solução usando sua tecnologia de instalação preferida. O RMS Client pode ser redistribuído livremente e agrupado com outros aplicativos e soluções de TI.
+    A abordagem recomendada é agrupar o pacote instalador do Cliente do RMS com a sua aplicação ou solução utilizando a sua tecnologia de instalação preferencial. O Cliente do RMS pode ser livremente redistribuído e agrupado com outras aplicações e soluções de TI.
 
-    Você pode optar por instalar o RMS Client 2.1 de forma interativa iniciando o instalador do RMS Client 2.1 ou instalando-o silenciosamente. As etapas de integração serão:
+    Pode optar por instalar o RMS Client 2.1 de forma interativa ao iniciar o instalador do RMS Client 2.1 ou ao instalá-lo silenciosamente. Os passos de integração serão:
 
-    -   Baixar o instalador do RMS Client 2.1
-    -   Integrar a execução do instalador do RMS Client 2.1 com o instalador de seu aplicativo
+    -   Transferir o instalador do Cliente do RMS 2.1
+    -   Integrar o instalador do RMS Client 2.1 executado com o instalador da sua aplicação
 
-    Dois bons exemplos de integração do RMS Client 2.1 com seu aplicativo são os pacotes de instalador do RMS SDK 2.1 e do Explorador de Pasta Protegido por Direitos. Tente instalá-los por conta para entender a abordagem.
+    Dois bons exemplos de integração do RMS Client 2.1 com a sua aplicação são o pacote instalador SDK RMS 2.1 e o pacote do Right Protected Folder Explorer. Tente instalá-los por si para compreender a abordagem.
 
--   **Tornar o RMS Client 2.1 um pré-requisito para a instalação do aplicativo**
+-   **Tornar o RMS Client 2.1 um pré-requisito para a instalação da sua aplicação**
 
-    Nesse caso, você criará um pré-requisito, de modo que a instalação do aplicativo falhará se o RMS Client 2.1 não estiver presente no computador do usuário final.
+    Neste caso, irá criar um pré-requisito de forma que a instalação da aplicação falhe se o RMS Client 2.1 não estiver presente no computador do utilizador final.
 
-    Se o cliente não estiver presente, forneça uma mensagem de erro informando ao usuário onde ele poderá baixar uma cópia do RMS Client 2.1
+    Se o cliente não estiver presente, forneça uma mensagem de erro a informar o utilizador onde pode transferir uma cópia do RMS Client 2.1
 
-    Se o cliente estiver presente, continue com a instalação do aplicativo.
+    Se o cliente estiver presente, prossiga com a instalação da aplicação.
 
-## Habilitação do Azure Rights Management Services com seu aplicativo
+## Ativar Serviços de Gestão de Direitos do Azure com a sua aplicação
 
 > [!NOTE]
-> Se você tiver migrado para o novo modelo do ADAL para autenticação, não será necessário instalar o SIA. Para saber mais, consulte [Autenticação ADAL para seu aplicativo habilitado para RMS](adal-auth.md).
-> Além disso, você pode **Certificar seu aplicativo para Windows 10** - Ao atualizar seu aplicativo para usar a autenticação de ADAL em vez do Assistente de Conexão do Microsoft Online, você e seus clientes poderão: utilizar a autenticação multifator e instalar o RMS Client 2.1 sem exigir privilégios administrativos do computador
+> Se tiver migrado para o novo modelo da ADAL para autenticação, não tem de instalar o SIA. Para obter mais informações, consulte [Autenticação ADAL para a aplicação com suporte RMS](adal-auth.md).
+> Além disso, pode **certificar a sua aplicação para o Windows 10** - através da atualização da sua aplicação para utilizar a autenticação ADAL em vez do Assistente de Início de Sessão do Microsoft Online, o utilizador e os seus clientes poderão: utilizar a autenticação multifator Instale o RMS Client 2.1 sem necessidade de privilégios administrativos para a máquina
 
 
-Para que seu usuário final tire proveito dos Azure Rights Management Services, você deve implantar o *SIA (Assistente de Conexão) do Online Services*. Como desenvolvedor de aplicativos, você não sabe se o usuário final usará RMS (local) ou o Azure Rights Management Services (serviço de nuvem).
+Para o utilizador final tirar partido dos serviços de Gestão de Direitos do Azure, tem de implementar o *Assistente de Início de Sessão do Online Services (SIA)*. Na qualidade de programador da aplicação, não sabe se o utilizador final irá utilizar o RMS (no local) ou os serviços de Gestão de Direitos do Azure (serviço em nuvem).
 
 
 > [!IMPORTANT]
-> A execução do aplicativo cliente do RMS SDK 2.1 com o Azure RMS exige que você crie seus próprios locatários. Para obter mais informações, consulte [Requisitos do Azure RMS: assinaturas de nuvem que dão suporte ao Azure RMS](../get-started/requirements-subscriptions.md).
+> Executar a aplicação de cliente SDK RMS 2.1 com o Azure RMS exige a criação dos seus próprios inquilinos. Para mais informações, consulte [Requisitos do Azure RMS: Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).
 
--   Baixe o [Assistente de Conexão do Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177) do Centro de Download da Microsoft.
--   Certifique-se de que a implantação de um aplicativo habilitado para direitos inclua uma verificação de pré-requisitos para a seleção de serviço.
--   Para seus próprios testes e para o uso do serviço online por seus usuários finais, veja o tópico da TechNet, [Configuring Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx) (Configuração do Rights Management).
+-   Transfira o [Assistente de Início de Sessão do Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177) do Centro de Transferências da Microsoft.
+-   Certifique-se de que a implementação de uma aplicação com capacidade para direitos inclui uma verificação de pré-requisitos para esta seleção de serviço.
+-   Para os seus próprios testes e para a utilização do serviço online por parte dos utilizadores finais, consulte o tópico da TechNet [Configurar o Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx).
 
-Para saber mais sobre como permitir que seu aplicativo use o RMS para o Azure Rights Management Services, confira [Permitir que seu aplicativo funcione com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md).
+Para obter mais informações sobre como permitir que a aplicação utilize o RMS para serviços de Gestão de Direitos do Azure, consulte [Permitir que a aplicação funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## Tópicos relacionados
 
-* [Assistente de Conexão do Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
-* [Configurando o Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
-* [Permitir que seu aplicativo funcione com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md)
+* [Assistente de Início de Sessão do Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
+* [Configurar o Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
+* [Permitir que a aplicação funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md)
  
 
  

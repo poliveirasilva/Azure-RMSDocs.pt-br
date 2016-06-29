@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Política de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS | Azure RMS
+title: Declaração de Privacidade do Microsoft Rights Management em Aplicações Otimizadas por RMS | Azure RMS
 description:
 keywords:
 author: msmbaldwin
@@ -25,43 +25,43 @@ ms.suite: ems
 
 ---
 
-# Declaração de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS
-Aplica-se a: Funcionalidade do Microsoft Rights Management inserida em aplicativos
+# Declaração de Privacidade do Microsoft Rights Management em Aplicações Otimizadas por RMS
+Aplica-se: à funcionalidade do Microsoft Rights Management incorporada em aplicações
 
 > [!NOTE]
-> Esta política de privacidade está disponível em idiomas adicionais usando o [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
+> Esta declaração de privacidade está disponível noutros idiomas no [Centro de Transferências da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
 
-A Microsoft está comprometida a proteger sua privacidade, oferecendo software que proporcione o desempenho, a potência e a conveniência desejados em computação pessoal. Esta declaração de privacidade explica muitas das práticas de uso e a coleta de dados de dados do serviço ou software cliente Microsoft Rights Management e outros produtos ou serviços da Microsoft vinculados a esta notificação.
+A Microsoft está empenhada em proteger a sua privacidade, enquanto fornece software que proporciona o desempenho, poder e conveniência pretendidos ao nível da informática pessoal. Esta declaração de privacidade explica muitas das práticas de recolha e utilização de dados do serviço ou software de cliente Microsoft Rights Management e quaisquer outros produtos ou serviços Microsoft que apresentam ou ligam a este aviso.
 
-A funcionalidade do Rights Management foi criada para computadores e dispositivos móveis cliente para ajudar a proteger o acesso e o uso das informações que passam por aplicativos habilitados que usam os serviços do Microsoft Rights Management, seja instalado no local ou em execução em um datacenter da Microsoft.
+A funcionalidade do Rights Management foi concebida para computadores cliente e dispositivos móveis para ajudar a proteger o acesso e a utilização de informações que circulam pelas aplicações ativadas que utilizam serviços Microsoft Rights Management, quer esteja instalada no local ou em execução num centro de dados da Microsoft.
 
-## Processando suas informações em nome do nosso cliente
-Para acessar arquivos protegidos, faça logon no Microsoft Rights Management e forneça seu nome de usuário e senha ("Credenciais"). A Microsoft pode coletar Informações de confirmação de leitura e "Informações padrão do dispositivo" que inclui informações como a versão do sistema operacional e ID de hardware, que indica o fabricante, o nome e a versão do dispositivo e o endereço IP.
+## Processar as suas Informações em Nome do nosso Cliente
+Para aceder aos ficheiros protegidos, será pedido que inicie sessão no Microsoft Rights Management e forneça o nome de utilizador e palavra-passe (“Credenciais”). A Microsoft poderá recolher Informações de Recibo de Leitura e “Informações Padrão do Dispositivo” que incluem informações como a versão do sistema operativo e ID de hardware, que indica o fabricante do dispositivo, o nome do dispositivo, a versão e o endereço IP.
 
 > [!IMPORTANT]
-> Podemos divulgar "Informações de confirmação de leitura" (como o endereço de email, local e carimbo de data/hora associado à abertura de um arquivo) e Informações padrão do dispositivo para a pessoa ou empresa que protegeu os arquivos.
+> Poderemos divulgar as “Informações de Recibo de Leitura” (tal como o endereço de e-mail, a localização e o carimbo de data/hora associados à abertura de um ficheiro) e as Informações Padrão do Dispositivo à pessoa ou empresa que protegeu os ficheiros.
 
-## Coleta e uso de informações da Microsoft
-As Credenciais e Informações padrão do dispositivo coletadas também podem ser usadas pela Microsoft e suas subsidiárias e afiliadas controladas para habilitar os recursos que você está usando e fornecer serviços adicionais ou executar transações solicitadas ou autorizadas. Essas informações também podem ser usadas para analisar e melhorar produtos e serviços da Microsoft.
+## Recolha e Utilização de Informações pela Microsoft
+As Credenciais e as Informações Padrão do Dispositivo que recolhemos sobre si também podem ser utilizadas pela Microsoft e pelas respetivas subsidiárias e afiliadas controladas para ativar as funcionalidades que utiliza e fornecer serviços adicionais ou realizar transações solicitadas ou autorizadas. As Informações Padrão do Dispositivo também podem ser utilizadas para analisar e melhorar os produtos e serviços da Microsoft.
 
-Não divulgaremos as Credenciais, Informações de confirmação de leitura e/ou Informações padrão do dispositivo coletadas fora da Microsoft ou suas subsidiárias e afiliadas, exceto mediante suas instruções ou conforme descrito em seus contratos ou nesta declaração de privacidade.
+Não divulgaremos as Credenciais, as Informações de Recibo de Leitura e/ou as Informações Padrão do Dispositivo que recolhemos sobre o utilizador fora da Microsoft ou das respetivas subsidiárias e afiliadas controladas, exceto após uma instrução sua nesse sentido ou conforme descrito nos seus contratos ou nesta declaração de privacidade.
 
-Ocasionalmente, contratamos outras empresas para fornecer serviços (como de suporte ao cliente) em seu nome. Podemos fornecer acesso a suas informações a essas empresas quando precisarem fazer seu trabalho. Essas empresas são obrigadas a manter a confidencialidade das suas informações e são proibidas de utilizá-las para qualquer outra finalidade que não seja aquela para a qual foram contratadas pela Microsoft.
+Contratamos ocasionalmente outras empresas para fornecerem serviços (tais como o suporte ao cliente) em nosso nome. Podemos fornecer a estas empresas o acesso às suas informações sempre que necessário para o respetivo envolvimento. Estas empresas são obrigadas a manter a confidencialidade das informações e estão proibidas de as utilizar para qualquer finalidade sem ser aquela que acordaram com a Microsoft.
 
-Não divulgaremos as Credenciais, Informações de confirmação de leitura e/ou Informações padrão do dispositivo (incluindo autoridades da lei, outra entidade governamental ou litigante civil; excluindo nossos subcontratados) exceto conforme suas instruções, conforme descrito nesta declaração de privacidade ou se exigido pela lei. Caso uma terceira parte entre em contato com você solicitando essas informações, tentaremos redirecionar essa parte para solicitá-las diretamente de você. Como parte disso, podemos fornecer informações básicas de contato a terceiros. Se formos obrigados a divulgar suas informações a terceiros, usaremos os esforços comercialmente razoáveis para lhe notificar com antecedência sobre uma divulgação, salvo por proibição legal.
+Não divulgaremos as Credenciais, as Informações de Recibo de Leitura e/ou as Informações Padrão do Dispositivo a terceiros (incluindo as autoridades policiais, outra entidade pública ou litigantes civis; excluindo os nossos subcontratantes), exceto mediante instruções suas, conforme descrito nesta declaração de privacidade, ou se exigido por lei. Se formos contactados por terceiros a solicitar essas informações, tentaremos redirecioná-los para que o pedido seja feito diretamente a si. Com parte desse processo, poderemos fornecer a terceiros as suas informações básicas de contacto. Se formos forçados a divulgar as suas informações a terceiros, envidaremos os esforços comercialmente razoáveis para o notificar antes desta divulgação, exceto se estivermos legalmente proibidos de o fazer.
 
-As informações coletadas ou enviadas à Microsoft por aplicativos compatíveis com o Microsoft Rights Management podem ser armazenadas e processadas nos Estados Unidos ou qualquer outro país em que a Microsoft ou suas afiliadas, subsidiárias ou provedores de serviço possuam instalações. A Microsoft segue a estrutura do Safe Harbor estabelecida pelo Departamento de Comércio dos EUA em relação à coleta, ao uso e à retenção de dados da União Europeia, Área Econômica Europeia e Suíça.
+As informações recolhidas ou enviadas para a Microsoft pelas aplicações com capacidade para o Microsoft Rights Management podem ser armazenadas e processadas nos Estados Unidos ou em qualquer outro país em que a Microsoft ou as respetivas filiais, subsidiárias ou prestadores de serviços possuam instalações. A Microsoft rege-se pelo Sistema de Porto Seguro, estabelecido pelo Departamento de Comércio dos EUA, no que diz respeito à recolha, utilização e retenção de dados provenientes da União Europeia, do Espaço Económico Europeu e da Suíça.
 
 ## Microsoft Update
-Ao usar aplicativos compatíveis com Microsoft Rights Management com o Windows, você pode optar por participar do Microsoft Update. O Microsoft Update (MU) é um serviço que fornece atualizações de software da Microsoft, incluindo o cliente Microsoft Rights Management para Windows. Para obter detalhes sobre quais informações são coletadas, como elas são usadas e como alterar suas configurações, consulte a [Declaração de privacidade do Update Services](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)).
+Quando utilizar aplicações com capacidade para o Microsoft Rights Management com o Windows, pode optar por participar no Microsoft Update. O Microsoft Update (MU) é um serviço que fornece atualizações para o software Microsoft, incluindo o cliente Microsoft Rights Management para o Windows. Para mais informações sobre como as informações são recolhidas, como são utilizadas e como alterar as suas definições, consulte a [Declaração de Privacidade do Update Services](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)).
 
-Opção/Controle: para a instalação silenciosa, os aplicativos habilitados para Microsoft Rights Management seguem as mesmas configurações do MU aplicadas à área de trabalho do Windows. Para instalações do usuário, se o MU não estiver ativado, você receberá um prompt durante a instalação permitindo-lhe ativar o MU. Se você optar por fazer isso, essas configurações do MU serão aplicadas a todos os aplicativos baseados no Windows.
+Escolha/Controlo: para uma instalação automática, as aplicações com capacidade para o Microsoft Rights Management seguem as mesmas definições do MU aplicadas ao ambiente de trabalho do Windows. Para obter instalações do utilizador, se o MU não estiver ativado, poderá receber uma mensagem durante a instalação, permitindo-lhe ativar o MU. Se optar por fazê-lo, estas definições do MU serão aplicadas em todas as aplicações baseadas no Windows.
 
-## Segurança de suas informações
-A Microsoft tem o compromisso de ajudar a proteger a segurança de suas informações. Usamos vários procedimentos e várias tecnologias de segurança para ajudar a proteger suas informações contra divulgação, acesso ou uso não autorizado. Por exemplo, armazenamos suas informações pessoais em sistemas de computadores com acesso limitado, localizados em instalações controladas.
+## Segurança das informações do utilizador
+A Microsoft está empenhada em ajudar a proteger a segurança das suas informações. Utilizamos uma variedade de tecnologias e procedimentos de segurança que ajudam a proteger as suas informações contra o acesso, utilização ou divulgação não autorizados. Por exemplo, armazenamos as informações que fornece em sistemas informáticos com acesso limitado, que estão localizados em instalações controladas.
 
-## Alterações nesta política de privacidade
-Ocasionalmente, atualizamos esta política de privacidade para refletir mudanças em nossos produtos, serviços e feedbacks de clientes. Quando publicamos as alterações, revisamos a data da "última atualização" no início da declaração. Se houver alterações materiais nesta declaração ou em como a Microsoft usará suas informações pessoais, você será notificado por meio da publicação de um aviso de tais alterações antes de implementá-las ou será enviada uma notificação diretamente a você. Para manter-se informado sobre como a Microsoft está protegendo suas informações, recomendamos que consulte periodicamente esta declaração.
+## Alterações à declaração de privacidade
+Ocasionalmente, atualizaremos esta declaração de privacidade para refletir alterações nos nossos produtos, serviços e o feedback dado pelos clientes. Sempre que publicarmos alterações, a data da "última atualização" será revista no início da declaração. Se existirem alterações essenciais a esta declaração ou à forma como a Microsoft irá utilizar as informações pessoais do utilizador, este será notificado, quer através da colocação de um aviso quanto à existência de tais alterações antes que estas sejam implementadas, quer através de uma notificação enviada diretamente para o utilizador. Aconselhamo-lo a rever periodicamente esta declaração de modo a se manter informado sobre a forma como a Microsoft está a proteger as suas informações.
 
 
 

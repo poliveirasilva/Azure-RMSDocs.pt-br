@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Verificando o Azure Rights Management | Azure RMS
+title: Verificar o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,22 +25,22 @@ ms.suite: ems
 
 ---
 
-# Verificando o Azure Rights Management
+# Verificar o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Após ativar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) e realizar todas as etapas de configuração adicionais que são necessárias para a sua organização, você pode verificar se o serviço está funcionando como esperado protegendo um arquivo ou uma mensagem de email usando uma conta de usuário e, em seguida, tentando abrir e utilizar o conteúdo protegido com outra conta de usuário.
+Depois de ter ativado o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) e executado quaisquer passos de configuração adicionais que sejam necessários para a sua organização, pode verificar se o serviço está a funcionar conforme o esperado protegendo um ficheiro ou uma mensagem de e-mail ao utilizar uma conta de utilizador e, em seguida, tentar abrir e utilizar esse conteúdo protegido a partir de outra conta de utilizador.
 
-Para fazer esse teste, você pode usar as informações em [Ajudando os usuários a proteger os arquivos usando o Azure Rights Management](help-users.md).
+Para fazer este teste, pode utilizar as informações em [Ajudar os utilizadores a proteger ficheiros ao Utilizar o Azure Rights Management](help-users.md).
 
-Se o teste falhar, releia as etapas de configuração em [Roteiro de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md), e use a [ferramenta Analisador de RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437) para ajudar a identificar e corrigir potenciais problemas. Você também pode executar essa ferramenta periodicamente, como uma verificação de integridade geral.
+Se o teste tiver sido bem-sucedido, reveja os passos de configuração no [Plano de implementação do Azure Rights Management](../plan-design/deployment-roadmap.md) e utilize a [Ferramenta RMS Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=46437) para ajudar a identificar e corrigir problemas potenciais. Também pode executar esta ferramenta periodicamente, como uma verificação de estado de funcionamento geral.
 
 > [!TIP]
-> Se você precisar de ajuda adicional, consulte a seção [Opções de suporte e recursos da comunidade](../get-started/information-support.md##support-options-and-community-resources) no artigo [Informações e suporte para o Azure Rights Management](../get-started/information-support.md).
+> Se precisar de mais ajuda, consulte a secção [Opções de suporte e recursos da comunidade](../get-started/information-support.md##support-options-and-community-resources) no artigo [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
 
-## Próximas etapas
+## Passos seguintes
 
-Você também pode monitorar a forma como a sua organização está usando a proteção de informações usando o registro de uso. Para obter mais informações, consulte [Registrando em log e analisando o uso do Azure Rights Management](log-analyze-usage.md).
+Pode monitorizar a forma como a sua organização está a utilizar a proteção de informações através da utilização do registo de utilização. Para obter mais informações, consulte [Registo e análise da utilização do Azure Rights Management](log-analyze-usage.md).
 
 
 

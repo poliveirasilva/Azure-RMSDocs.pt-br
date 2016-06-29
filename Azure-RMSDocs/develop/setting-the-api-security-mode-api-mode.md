@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como configurar o modo de segurança de API | Azure RMS
-description: Escolha o modo de segurança em que o seu aplicativo de API de arquivo é executado.
+title: Procedimentos para definir o modo de segurança da API | Azure RMS
+description: Escolha o modo de segurança em que é executada a sua aplicação de API de Ficheiros.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,19 +24,19 @@ ms.suite: ems
 
 ---
 
-# Como configurar o modo de segurança de API
+# Procedimentos: definir o modo de segurança da API
 
-Você pode escolher em que modo de segurança seu aplicativo de API do arquivo é executado usando a função [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
+Pode escolher em que modo de segurança a sua aplicação de API de Ficheiros é executada ao utilizar a função [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
 
-Para inicializar o aplicativo para que seja executado no *modo de servidor*, chame a função [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) e defina o modo de segurança como [**IPC\_API\_MODE\_SERVER**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER). Por padrão, o aplicativo será executado no *modo cliente*, **IPC\_API\_MODE\_CLIENT**.
+Para inicializar a aplicação de modo a ser executada no *modo de servidor*, chame a função [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) e defina o modo de segurança para [**IPC\_API\_MODE\_SERVER**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER). Por predefinição, a aplicação é executada no *modo de cliente*, **IPC\_API\_MODE\_CLIENT**.
 
-Para obter mais informações sobre *modo de servidor*, consulte [Tipos de aplicativos](application-types.md).
+Para obter mais informações sobre o *modo de servidor*, consulte [Tipos de aplicações](application-types.md).
 
-**Importante**  O modo de segurança deve ser definido antes que qualquer outra função do Rights Management Services SDK 2.1 seja chamada. Depois que o modo de segurança tiver sido definido, ele não pode ser alterado para o processo atual.
+**Importante** O modo de segurança deve ser definido antes de ser chamada qualquer outra função do SDK Rights Management Services 2.1. Depois de definir o modo de segurança, não o pode alterar para o processo atual.
 
 ## Tópicos relacionados
 
-* [Tipos de aplicativo](application-types.md)
+* [Tipos de aplicações](application-types.md)
 * [**Valores do modo de API**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
 * [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
  

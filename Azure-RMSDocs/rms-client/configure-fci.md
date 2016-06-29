@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proteção por RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server | Azure RMS
+title: Proteção RMS com Infraestrutura de Classificação de Ficheiros (FCI) do Windows Server | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,284 +25,284 @@ ms.suite: ems
 
 ---
 
-# Proteção por RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server
+# Proteção RMS com Infraestrutura de Classificação de Ficheiros (FCI) do Windows Server
 
 *Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Use este artigo para obter as instruções e um script para usar o cliente do Rights Management (RMS) com a ferramenta de Proteção por RMS para configurar o Gerenciador de Recursos de Servidor de Arquivos e a Infraestrutura de Classificação de Arquivos (FCI).
+Utilize este artigo para obter instruções e um script para utilizar o cliente de Rights Management (RMS) com a ferramenta RMS Protection para configurar o Gestor de Recursos do Servidor de Ficheiros e a infraestrutura de classificação de ficheiros (FCI).
 
-Esta solução permite proteger automaticamente todos os arquivos em uma pasta em um servidor de arquivos executando o Windows Server ou protege automaticamente os arquivos que atendem a critérios específicos. Por exemplo, os arquivos que foram classificados como contendo informações confidenciais ou sensíveis. Esta solução usa o Azure RMS (Azure Rights Management) para proteger os arquivos, portanto, você deve ter essa tecnologia implantada em sua organização.
+Esta solução permite-lhe proteger automaticamente todos os ficheiros numa pasta num servidor de ficheiros com o Windows Server ou proteger automaticamente ficheiros que cumpram critérios específicos. Por exemplo, ficheiros que tenham sido classificados como contendo informações confidenciais. Esta solução utiliza o Azure Rights Management (Azure RMS) para proteger os ficheiros, pelo que esta tecnologia tem de estar implementada na sua organização.
 
-> [!NOTE] Apesar de o Azure RMS incluir um [conector](../deploy-use/deploy-rms-connector.md) que dá suporte à infraestrutura de classificação de arquivos, essa solução dá suporte apenas à proteção nativa, por exemplo, arquivos do Office.
+> [!NOTE] Embora o Azure RMS inclua um [conector](../deploy-use/deploy-rms-connector.md) que suporta a infraestrutura de classificação de ficheiros, essa solução só suporta a proteção nativa — por exemplo, ficheiros do Office.
 > 
-> Para dar suporte a todos os tipos de arquivo com a infraestrutura de classificação de arquivos, você deve usar o módulo de **Proteção por RMS** do Windows PowerShell, conforme documentado neste artigo. Os cmdlets de Proteção por RMS, como o aplicativo de RMS sharing, dão suporte tanto à proteção genérica como à proteção nativa, o que significa que todos os arquivos podem ser protegidos. Para obter mais informações sobre os diferentes níveis de proteção, consulte a seção [Níveis de proteção - nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) do tópico [Guia do administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+> Para suportar todos os tipos de ficheiro com a infraestrutura de classificação de ficheiros, tem de utilizar o módulo **Proteção RMS** do Windows PowerShell, conforme documentado neste artigo. Os cmdlets da Proteção RMS, como a aplicação de partilha RMS, suportam a proteção genérica, bem como a proteção nativa, o que significa que todos os ficheiros podem ser protegidos. Para mais informações sobre estes níveis de proteção diferentes, consulte a secção [Níveis de proteção – nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no [Rights Management sharing application administrator guide (Guia do administrador da aplicação de partilha Rights Management – em inglês)](sharing-app-admin-guide.md).
 
-As instruções a seguir são para o Windows Server 2012 R2 ou o Windows Server 2012. Se você executar outras versões com suporte do Windows, talvez seja necessário adaptar algumas das etapas para as diferenças entre a versão do seu sistema operacional e o documentado neste artigo.
+As instruções que se seguem aplicam-se ao Windows Server 2012 R2 ou Windows Server 2012. Se utilizar outras versões suportadas do Windows, poderá ter de adaptar alguns dos passos devido às diferenças entre a versão do seu sistema operativo e a descrita neste artigo.
 
-## Pré-requisitos da proteção por Azure RMS com FCI do Windows Server
+## Pré-requisitos para a proteção Azure RMS com a FCI do Windows Server
 Pré-requisitos para estas instruções:
 
--   Em cada servidor de arquivos onde você executa o Gerenciador de Recursos de Arquivo com a infraestrutura de classificação de arquivos:
+-   Nos servidores de ficheiros em que executará o Gestor de Recursos de Ficheiros com a infraestrutura de classificação de ficheiros:
 
-    -   Você instalou o Gerenciador de Recursos do Servidor de Arquivos como um dos serviços de função para a função Serviços de Arquivo.
+    -   Instalou o Gestor de Recursos do Servidor de Ficheiros como um dos serviços de função para a função Serviços de Ficheiros.
 
-    -   Você identificou uma pasta local que contém os arquivos a serem protegidos com o Rights Management. Por exemplo, C:\FileShare.
+    -   Identificou uma pasta local que contém ficheiros que pretende proteger com a Rights Management. Por exemplo, C:\FileShare.
 
-    -   Você instalou a ferramenta de Proteção por RMS, incluindo os pré-requisitos da ferramenta (como o cliente RMS) e para o Azure RMS (como a conta de entidade de serviço). Para obter maiores informações, consulte [Cmdlets de Proteção do RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+    -   Instalou a ferramenta RMS Protection, incluindo os pré-requisitos da ferramenta (por exemplo, o cliente RMS) e do Azure RMS (por exemplo, a conta do principal de serviço). Para mais informações, consulte [Cmdlets da Proteção RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
-    -   Se você quiser alterar o nível padrão de proteção por RMS (nativa ou genérica) para extensões de nome de arquivo específico, você editou o Registro conforme descrito na página [Configuração da API de arquivo](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx).
+    -   Se quiser alterar o nível predefinido da proteção RMS (nativo ou genérico) para extensões de nome de ficheiro específicas e tiver editado o registo, conforme descrito na página [File API configuration (Configuração da API de Ficheiros – em inglês)](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx).
 
-    -   Você tem uma conexão com a Internet, com configurações de computador configurado se necessário para um servidor proxy. Por exemplo: `netsh winhttp import proxy source=ie`
+    -   Tem uma ligação à Internet, com as definições de computador configuradas, se tal for necessário para um servidor proxy. Por exemplo: `netsh winhttp import proxy source=ie`
 
--   Você configurou os pré-requisitos adicionais para sua implantação do Azure Rights Management, conforme descrito em [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). Especificamente, você tem os seguintes valores para se conectar ao Azure RMS usando uma entidade de serviço:
+-   Configurou os pré-requisitos adicionais para a sua implementação do Azure Rights Management, conforme descrito em [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). Especificamente, tem os seguintes valores para ligar ao Azure RMS através de um principal de serviço:
 
     -   BposTenantId
 
     -   AppPrincipalId
 
-    -   Chave simétrica
+    -   Symmetric key
 
--   Você sincronizou suas contas de usuário do Active Directory local com o Active Directory do Azure ou o Office 365, incluindo seu endereço de email. Isso é necessário para todos os usuários que talvez precisem acessar arquivos depois que eles foram protegidos pelo FCI e pelo Azure RMS. Se você não executar essa etapa (por exemplo, em um ambiente de teste), os usuários poderão ser impedidos de acessar esses arquivos. Se precisar de mais informações sobre essa configuração de conta, consulte [Preparando o Azure Rights Management](../plan-design/prepare.md).
+-   Sincronizou as suas contas de utilizador do Active Directory no local com o Azure Active Directory ou o Office 365, incluindo os respetivos endereços de e-mail. Isto é necessário para todos os utilizadores que possam precisar de aceder a ficheiros depois de estarem protegidos pela FCI e o Azure RMS. Se não efetuar este passo (por exemplo, num ambiente de teste), os utilizadores poderão ficar bloqueados de aceder a estes ficheiros. Se precisar de mais informações sobre esta configuração de conta, consulte [Preparing for Azure Rights Management (Preparar para o Azure Rights Management – em inglês)](../plan-design/prepare.md).
 
--   Identificar o modelo do Rights Management para uso, o qual protegerá os arquivos. Certifique-se de que você saiba a ID desse modelo usando o [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet.
+-   Identificou o modelo de Rights Management a utilizar, o que irá proteger os ficheiros. Certifique-se de que sabe o ID deste modelo. Para esse efeito, utilize o cmdlet [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx).
 
-## Instruções para configurar o Gerenciador de Recursos do Servidor de Arquivos FCI para proteção do Azure RMS
-Siga estas instruções para proteger automaticamente todos os arquivos em uma pasta, usando um script do Windows PowerShell como uma tarefa personalizada. Siga estes procedimentos nesta ordem:
+## Instruções para configurar a FCI do Gestor de Recursos do Servidor de Ficheiros FCI para a proteção Azure RMS
+Siga estas instruções para proteger automaticamente todos os ficheiros numa pasta, através de um script do Windows PowerShell como uma tarefa personalizada. Efetue estes procedimentos pela seguinte ordem:
 
-1.  Salvar o script do Windows PowerShell
+1.  Guardar o script do Windows PowerShell
 
-2.  Criar uma propriedade de classificação para o Rights Management (RMS)
+2.  Criar uma propriedade de classificação para a Rights Management (RMS)
 
 3.  Criar uma regra de classificação (Classificar para RMS)
 
-4.  Configurar o agendamento da classificação
+4.  Configurar a agenda de classificação
 
-5.  Criar uma tarefa de gerenciamento de arquivos personalizada (Proteger arquivos com o RMS)
+5.  Criar uma tarefa de gestão de ficheiros personalizada (Proteger ficheiros com o RMS)
 
-6.  Testar a configuração executando manualmente a regra e a tarefa
+6.  Testar a configuração ao executar manualmente a regra e a tarefa
 
-No final destas instruções, todos os arquivos na pasta selecionada serão classificados com a propriedade personalizada do RMS e esses arquivos, em seguida, estarão protegidos pelo Rights Management. Para uma configuração mais complexa que seletivamente protege alguns arquivos e outros não, você pode criar ou usar uma propriedade de classificação e uma regra diferente, com uma tarefa de gerenciamento de arquivos que protege apenas aqueles arquivos.
+No final destas instruções, todos os ficheiros na sua pasta selecionada serão classificados com a propriedade personalizada do RMS e estes ficheiros estarão assim protegidos pela Rights Management. Para uma configuração mais complexa que protege seletivamente alguns ficheiros e não outros, pode criar ou utilizar uma propriedade e regra de classificação diferente, com uma tarefa de gestão de ficheiros que protege apenas esses ficheiros.
 
-### Salvar o script do Windows PowerShell
+### Guardar o script do Windows PowerShell
 
-1.  Copie o conteúdo do [script do Windows PowerShell](fci-script.md) para proteção do Azure RMS usando o Gerenciador de Recursos de Servidor de Arquivos. Cole o conteúdo do script e nomeie o arquivo **RMS-Protect-FCI.ps1** no seu próprio computador.
+1.  Copie os conteúdos do [script do Windows PowerShell](fci-script.md) para a proteção Azure RMS através do Gestor de Recursos do Servidor de Ficheiros. Cole os conteúdos do script e atribua o nome **RMS-Protect-FCI.ps1** ao ficheiro no seu computador.
 
-2.  Examine o script e faça as seguintes alterações:
+2.  Reveja o script e efetue as seguintes alterações:
 
-    -   Pesquisar a seguinte cadeia de caracteres e substituí-la com seu próprio AppPrincipalId que você usa com o [conjunto RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet para se conectar ao Azure RMS:
+    -   Procure a seguinte cadeia e substitua-a pelo seu AppPrincipalId, que utiliza com o cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para estabelecer ligação ao Azure RMS:
 
         ```
         <enter your AppPrincipalId here>
         ```
-        Por exemplo, o script pode parecer com isso:
+        Por exemplo, o script poderá ter o seguinte aspeto:
 
         `[Parameter(Mandatory = $false)]`
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   Pesquisar a seguinte cadeia de caracteres e substituí-la com a sua própria chave simétrica que você usa com o [conjunto RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet para se conectar ao Azure RMS:
+    -   Procure a seguinte cadeia e substitua-a pela sua chave simétrica, que utiliza com o cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para estabelecer ligação ao Azure RMS:
 
         ```
         <enter your key here>
         ```
-        Por exemplo, o script pode parecer com isso:
+        Por exemplo, o script poderá ter o seguinte aspeto:
 
         `[Parameter(Mandatory = $false)]`
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   Pesquisar a seguinte cadeia de caracteres e substituí-la com seu próprio BposTenantId (Id do Locatário) que você usa com o [conjunto RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet para se conectar ao Azure RMS:
+    -   Procure a seguinte cadeia e substitua-a pelo seu BposTenantId (ID de inquilino), que utiliza com o cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) para estabelecer ligação ao Azure RMS:
 
         ```
         <enter your BposTenantId here>
         ```
-        Por exemplo, o script pode parecer com isso:
+        Por exemplo, o script poderá ter o seguinte aspeto:
 
         `[Parameter(Mandatory = $false)]`
 
         `[string]$BposTenantId = "23976bc6-dcd4-4173-9d96-dad1f48efd42",`
 
-    -   Se o servidor estiver executando o Windows Server 2012, você talvez precise carregar manualmente o módulo RMSProtection no início do script. Adicione o seguinte comando (ou equivalente, se a pasta "Arquivos de programas" estiver em uma unidade diferente da unidade C:
+    -   Se o seu servidor utiliza o Windows Server 2012, poderá ter de carregar manualmente o módulo RMSProtection no início do script. Adicione o seguinte comando (ou equivalente, se a pasta "Programas" estiver numa unidade que não seja a unidade C:):
 
         ```
         Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
         ```
 
-3.  Assinar o script. Se você não assinar o script (mais seguro), você deve configurar o Windows PowerShell nos servidores que o executam. Por exemplo, inicie uma sessão do Windows PowerShell com a opção **Executar como Administrador** e digite: **Set-ExecutionPolicy RemoteSigned**. No entanto, essa configuração permite que todos os scripts não assinados sejam executados quando estão armazenados nesse servidor (menos seguro).
+3.  Assine o script. Se não assinar o script (mais seguro), tem de configurar o Windows PowerShell nos servidores que o executam. Por exemplo, execute uma sessão do Windows PowerShell com a opção **Executar como Administrador** e escreva: **Set-ExecutionPolicy RemoteSigned**. No entanto, esta configuração permite executar todos os scripts não assinados quando estes estão armazenados neste servidor (menos seguro).
 
-    Para mais informações sobre a assinatura de scripts do Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) na biblioteca de documentação do PowerShell.
+    Para mais informações sobre como assinar os scripts do Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) na biblioteca de documentação do PowerShell.
 
-4.  Salve o arquivo localmente em cada servidor que executará o Gerenciador de Recursos de Arquivo com a infraestrutura de classificação de arquivos. Por exemplo, salve o arquivo em **C:\RMS-Protection**. Proteja esse arquivo usando as permissões NTFS para que usuários não autorizados não possam modificá-lo.
+4.  Guarde o ficheiro localmente em cada um dos servidores de ficheiros que irão executar o Gestor de Recursos de Ficheiros com a infraestrutura de classificação de ficheiros. Por exemplo, guarde o ficheiro em **C:\RMS-Protection**. Proteja este ficheiro com permissões NTFS para que os utilizadores não autorizados não o possam modificar.
 
-Agora você está pronto para começar a configurar o Gerenciador de Recursos do Servidor de Arquivos.
+Agora está pronto para iniciar a configuração do Gestor de Recursos do Servidor de Ficheiros.
 
-### Criar uma propriedade de classificação para o Rights Management (RMS)
+### Criar uma propriedade de classificação para a Rights Management (RMS)
 
--   No Gerenciador de Recursos do Servidor de Arquivos, Gerenciamento de Classificação, crie uma nova propriedade local:
+-   No Gestor de Recursos do Servidor de Ficheiros, em Gestão de Classificação, crie uma nova propriedade local:
 
-    -   **Nome**: Tipo **RMS**
+    -   **Nome**: escreva **RMS**
 
-    -   **Descrição**:   Tipo **proteção por Rights Management**
+    -   **Descrição**:   escreva **Proteção da Rights Management**
 
-    -   **Tipo de propriedade**: selecione **Sim/Não**
+    -   **Tipo de Propriedade**: selecione **Sim/Não**
 
-    -   **Valor**: Selecione **Sim**
+    -   **Valor**: selecione **Sim**
 
-Agora podemos criar uma regra de classificação que usa essa propriedade.
+Agora podemos criar uma regra de classificação que utiliza esta propriedade.
 
 ### Criar uma regra de classificação (Classificar para RMS)
 
 -   Crie uma nova regra de classificação:
 
-    -   Na guia **Geral** :
+    -   No separador **Geral**:
 
-        -   **Nome**: Tipo **Classificar para RMS**
+        -   **Nome**: escreva **Classificar para RMS**
 
-        -   **Habilitado**: Mantenha o padrão, que é essa caixa de seleção estar selecionada.
+        -   **Ativado**: mantenha esta caixa de verificação selecionada, que é a predefinição.
 
-        -   **Descrição**: digite **Classificar todos os arquivos em &lt;nome da pasta&gt; para o Rights Management**.
+        -   **Descrição**: escreva **Classificar todos os ficheiros na pasta &lt;nome da pasta&gt; para a Rights Management**.
 
-            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta escolhida. Por exemplo, **classifique todos os arquivos na pasta C:\FileShare para Rights Management**
+            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta que escolheu. Por exemplo, **Classificar todos os ficheiros na pasta C:\FileShare para a Rights Management**
 
-        -   **Escopo**: Adicione a sua pasta escolhida. Por exemplo, **C:\FileShare**.
+        -   **Âmbito**: adicione a pasta escolhida. Por exemplo, **C:\FileShare**.
 
-            Não marque as caixas de seleção.
+            Não selecione as caixas de verificação.
 
-    -   Na guia **classificação** :
+    -   Clique no separador **Classificação**:
 
-    -   **Método de classificação**: Selecione **Classificador de Pasta**
+    -   **Método de classificação**: selecione **Classificador de Pastas**
 
-    -   **Property** : Selecione **RMS**
+    -   Nome da **Propriedade**: selecione **RMS**
 
-    -   Valor da **propriedade**: Selecione **Sim**.
+    -   Valor da **Propriedade**: selecione **Sim**
 
-Embora você possa executar as regras de classificação manualmente, para operações contínuas, você desejará que esta regra seja executada em uma agenda para que os novos arquivos serão classificados com a propriedade do RMS.
+Pode executar as regras de classificação manualmente, mas para operações em curso é aconselhável agendar a execução desta regra, para que os novos ficheiros sejam classificados com a propriedade do RMS.
 
-### Configurar o agendamento da classificação
+### Configurar a agenda de classificação
 
--   Na guia **Classificação Automática** :
+-   No separador **Classificação Automática**:
 
-    -   **Habilitar agendamento fixo**: Selecione essa caixa de seleção.
+    -   **Ativar agenda fixa**: selecione esta caixa de verificação.
 
-    -   Configure o agendamento para todas as regras de classificação a serem executadas, que inclui a nossa nova regra para classificar arquivos com a propriedade do RMS.
+    -   Configure a agenda para todas as regras de classificação a executar, o que inclui a nossa nova regra para classificar ficheiros com a propriedade do RMS.
 
-    -   **Permite classificação contínua para novos arquivos**: Selecione essa caixa de seleção para que os novos arquivos serão classificados.
+    -   **Permitir classificação contínua para novos ficheiros**: selecione esta caixa de verificação para classificar os novos ficheiros.
 
-    -   Opcional: Faça outras alterações desejadas, como configurar opções para relatórios e notificações.
+    -   Opcional: faça todas as alterações que quiser, como configurar as opções de relatórios e notificações.
 
-Agora você concluiu a configuração de classificação, você estará pronto para configurar uma tarefa de gerenciamento para aplicar a proteção de RMS para os arquivos.
+Agora que concluiu a configuração de classificação, está pronto para configurar uma tarefa de gestão para aplicar a proteção RMS aos ficheiros.
 
-### Criar uma tarefa de gerenciamento de arquivos personalizada (Proteger arquivos com o RMS)
+### Criar uma tarefa de gestão de ficheiros personalizada (Proteger ficheiros com o RMS)
 
--   Em **Tarefas de Gerenciamento de Arquivos**, crie uma nova tarefa de gerenciamento de arquivo:
+-   Em **Tarefas de Gestão de Ficheiros**, crie uma nova tarefa de gestão de ficheiros:
 
-    -   Na guia **Geral** :
+    -   No separador **Geral**:
 
-        -   **Nome da tarefa**: Tipo **Proteger arquivos com o RMS**
+        -   **Nome da tarefa**: escreva **Proteger ficheiros com RMS**
 
-        -   Manter a caixa de seleção **Habilitar** selecionada.
+        -   Mantenha a caixa de verificação **Ativar** selecionada.
 
-        -   **Descrição**: tipo **Proteger arquivos em &lt;nome da pasta&gt; com Rights Management e um modelo usando um script do Windows PowerShell.**
+        -   **Descrição**: escreva **Proteger ficheiros em &lt;nome da pasta&gt; com a Rights Management e um modelo ao utilizar um script do Windows PowerShell.**
 
-            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta escolhida. Por exemplo, **proteger arquivos em C:\FileShare com Rights Management e um modelo usando um script do Windows PowerShell**
+            Substitua *&lt;nome da pasta&gt;* pelo nome da pasta que escolheu. Por exemplo, **Proteger ficheiros em C:\FileShare com a Rights Management e um modelo ao utilizar um script do Windows PowerShell**
 
-        -   **Escopo**: Selecione a sua pasta escolhida. Por exemplo, **C:\FileShare**.
+        -   **Âmbito**: selecione a pasta à sua escolha. Por exemplo, **C:\FileShare**.
 
-            Não marque as caixas de seleção.
+            Não selecione as caixas de verificação.
 
-    -   Na guia **Ação** :
+    -   No separador **Ação**:
 
-        -   **Tipo**: Selecionar **Personalizado**
+        -   **Tipo**: selecione **Personalizado**
 
         -   **Executável**: Especifique o seguinte:
 
             ```
             C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
             ```
-            Se o Windows não estiver na unidade C:, modifique esse caminho ou navegue até o arquivo.
+            Se o Windows não estiver na sua unidade C:, modifique este caminho ou navegue até este ficheiro.
 
-        -   **Argumento**: especifique o seguinte, fornecendo seus próprios valores para &lt;caminho&gt; e &lt;ID do modelo&gt;:
+        -   **Argumento**: Especifique o seguinte, fornecendo os seus próprios valores para &lt;path&gt; e &lt;template ID&gt;:
 
             ```
             -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail [Source File Owner Email]"
             ```
-            Por exemplo, se você copiou o script para C:\RMS-Protection e a ID do modelo identificado dos pré-requisitos é e6ee2481-26b9-45e5-b34a-f744eacd53b0, especifique o seguinte:
+            Por exemplo, se tiver copiado o script para C:\RMS-Protection e o ID de modelo que identificou a partir dos pré-requisitos for e6ee2481-26b9-45e5-b34a-f744eacd53b0, especifique o seguinte:
 
             `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail [Source File Owner Email]"`
 
-            Neste comando, as variáveis **[Caminho do Arquivo de Origem]** e **[Email do Proprietário do Arquivo de Origem]** são ambas específicas da FCI. Sendo assim, digite-as exatamente como aparecem no comando acima. O primeiro é usado por FCI para especificar o arquivo identificado automaticamente na pasta e o segundo é para FCI recuperar automaticamente o endereço de e-mail do Proprietário do arquivo identificado. Esse comando é repetido para cada arquivo na pasta, que, em nosso exemplo, é cada arquivo na pasta C:\FileShare que além disso, tem o RMS como uma propriedade de classificação do arquivo.
+            Neste comando, **[Source File Path]** e **[Source File Owner Email]** são ambas variáveis específicas da FCI, por isso escreva-as exatamente tal como aparecem no comando acima. A primeira é utilizada pela FCI para especificar automaticamente o ficheiro identificado na pasta e a segunda serve para que a FCI obtenha automaticamente o endereço de e-mail do Proprietário mencionado do ficheiro identificado. Este comando é repetido para cada ficheiro na pasta, o que, no nosso exemplo, significa cada ficheiro que se encontre na pasta C:\FileShare e tenha o RMS como uma propriedade de classificação de ficheiros.
 
             > [!NOTE]
-            > O parâmetro e valor **-OwnerMail [email do proprietário do arquivo de origem]** garantem que o proprietário original do arquivo receba o status de proprietário de Rights Management do arquivo depois que este estiver protegido. Isso garante que o dono do arquivo original terá todos os direitos de Rights Management de seus próprios arquivos. Quando arquivos são criados por um usuário de domínio, o endereço de email é recuperado automaticamente do Active Directory usando o nome de conta de usuário na propriedade do proprietário do arquivo. Para fazer isso, o servidor de arquivo deverá estar no mesmo domínio ou domínio confiável que o usuário.
+            > O valor e o parâmetro **-OwnerMail [Source File Owner Email] (E-mail do Proprietário do Ficheiro de Origem)** garantem que os direitos de proprietário de Rights Management do ficheiro são concedidos ao proprietário original do ficheiro após este ser protegido. Isto garante que o proprietário do ficheiro original tem todos os direitos de Rights Management dos seus ficheiros. Quando os ficheiros são criados por um utilizador de domínio, o endereço de e-mail é obtido automaticamente a partir do Active Directory através do nome de conta de utilizador na propriedade Proprietário do ficheiro. Para fazer isto, o servidor de ficheiros tem de se encontrar no mesmo domínio ou domínio fidedigno que o utilizador.
             > 
-            > Sempre que possível, atribua os proprietários originais para documentos protegidos, para garantir que esses usuários continuem a ter controle total sobre os arquivos que criaram. No entanto, se você usar a variável [Email do Proprietário do Arquivo de Origem], como acima, e um arquivo não tiver um usuário de domínio definido como o proprietário (por exemplo, uma conta local foi usada para criar o arquivo, assim o proprietário exibe SYSTEM), o script falhará.
+            > Sempre que possível, atribua os proprietários originais aos documentos protegidos, para garantir que estes utilizadores continuam a ter controlo total sobre os ficheiros que criaram. No entanto, se utilizar a variável [Source File Owner Email] (E-mail do Proprietário do Ficheiro de Origem) conforme apresentado acima e um ficheiro não tiver um utilizador de domínio definido como o proprietário (por exemplo, se tiver sido utilizada uma conta local para criar o ficheiro e, por isso, o nome de proprietário apresentado for SYSTEM), o script irá falhar.
             > 
-            > Para arquivos que não possuem um usuário de domínio como proprietário, você pode copiar e salvar esses arquivos por conta própria como usuário de domínio, para que você se torne o proprietário para apenas esses arquivos. Ou, se tiver permissões, você poderá alterar o proprietário manualmente.  Ou, como alternativa, você poderá fornecer um endereço de email específico (como o seu próprio ou um endereço de grupo para o departamento de TI) em vez da variável [Email do Proprietário do Arquivo de Origem], o que significa que todos os arquivos que você proteger usando esse email usarão esse endereço de email para definir o novo proprietário.
+            > Para ficheiros que não dispõem de um utilizador de domínio como proprietário, pode copiar e guardá-los como um utilizador de domínio, de modo a ser o proprietário apenas destes ficheiros. Em alternativa, se tiver as permissões, pode alterar manualmente o proprietário.  Outra alternativa é fornecer um endereço de e-mail específico (tal como o seu próprio endereço ou um endereço de grupo do departamento de TI) em vez da variável [Source File Owner Email] (E-mail do Proprietário do Ficheiro de Origem), o que significa que todos os ficheiros que proteger com este script irão utilizar este endereço de e-mail para definir o novo proprietário.
 
-    -   **Execute o comando como**: Selecione **Sistema Local**
+    -   **Executar o comando como**: selecione **Sistema Local**
 
-    -   Na guia **Condição** :
+    -   No separador **Condição**:
 
-        -   **Property**: Selecione **RMS**
+        -   **Propriedade**: selecione **RMS**
 
-        -   **Operador**: Selecione **Igual**
+        -   Em **Operador**, selecione **Igual**
 
-        -   **Valor**: Selecione **Sim**
+        -   **Valor**: selecione **Sim**
 
-    -   Na guia **Agenda** .
+    -   No separador **Agenda**:
 
-        -   **Executar em**: Configure a agenda desejada.
+        -   **Executar em**: configure o horário da sua preferência.
 
-            Permitir bastante tempo para concluir o script. Embora essa solução proteja todos os arquivos na pasta, o script é executado uma vez para cada arquivo, cada vez. Embora isso demore mais do que proteger todos os arquivos ao mesmo tempo, o que é suportado pela ferramenta de proteção RMS, essa configuração de arquivo por arquivo para FCI é mais eficiente. Por exemplo, os arquivos protegidos podem ter proprietários diferentes (manter o proprietário original) quando você usar a variável [Email do Proprietário do Arquivo de Origem], e esta ação de arquivo por arquivo será necessária se você alterar posteriormente a configuração para proteger seletivamente arquivos em vez de todos os arquivos em uma pasta.
+            Reserve bastante tempo para que o script seja concluído. Embora esta solução proteja todos os ficheiros na pasta, o script é executado uma vez para cada ficheiro, de cada vez. Apesar de este processo ser mais demorado do que proteger todos os ficheiros ao mesmo tempo, o que é suportado pela ferramenta RMS Protection, esta configuração ficheiro-a-ficheiro para a FCI é mais eficiente. Por exemplo, os ficheiros protegidos podem ter diferentes proprietários (manter o proprietário original) quando utiliza a variável [Source File Owner Email] (E-mail do Proprietário do Ficheiro de Origem) e esta ação ficheiro-a-ficheiro será necessária se posteriormente alterar a configuração para proteger ficheiros de forma seletiva, em vez de todos os ficheiros numa pasta.
 
-        -   **Executar continuamente nos novos arquivos**: Selecione essa caixa de seleção.
+        -   **Executar continuamente em ficheiros novos**: selecione esta caixa de verificação.
 
-### Testar a configuração executando manualmente a regra e a tarefa
+### Testar a configuração ao executar manualmente a regra e a tarefa
 
 1.  Executar a regra de classificação:
 
-    1.  Clique em **Regras de Classificação** &gt; **Executar Classificação com Todas as Regras Agora**
+    1.  Clique em **Regras de Classificação** &gt; **Executar Classificação Com Todas as Regras Agora**
 
-    2.  Clique em **Aguardar a conclusão da classificação**, e, em seguida, clique em **OK**.
+    2.  Clique em **Aguardar conclusão da classificação** e, em seguida, clique em **OK**.
 
-2.  Aguarde até que a caixa de diálogo **Executando Classificação** feche e, em seguida, veja os resultados no relatório exibido automaticamente. Você deve ver **1** para o campo **Propriedades** e o número de arquivos na pasta. Confirme usando o Explorador de Arquivos e verificando as propriedades de arquivos na pasta escolhida. Na guia **Classificação** , você deve ver **RMS** como um nome de propriedade e **Sim** para o seu **valor**.
+2.  Aguarde que a caixa de diálogo **A Executar Classificação** seja fechada e, em seguida, veja os resultados no relatório que é automaticamente apresentado. Deverá ver **1** no campo **Propriedades** e o número de ficheiros existentes na sua pasta. Utilize o Explorador de Ficheiros para confirmar e verificar as propriedades dos ficheiros na pasta escolhida. No separador **Classificação**, deverá ver **RMS** como um nome de propriedade e **Sim** para o respetivo **Valor**.
 
-3.  Execute a tarefa de gerenciamento de arquivos:
+3.  Execute a tarefa de gestão de ficheiros:
 
-    1.  Clique em **Tarefas de Gerenciamento de Arquivos** &gt; **Proteger Arquivos com o RMS** &gt; **Executar Tarefa de Gerenciamento de Arquivo Agora**
+    1.  Clique em **Tarefas de Gestão de Ficheiros** &gt; **Proteger os ficheiros com RMS** &gt; **Executar Ficheiro de Gestão de Tarefas Agora**
 
-    2.  Clique em **Aguardar a conclusão da tarefa**, e, em seguida, clique em **OK**.
+    2.  Clique em **Aguardar a conclusão da tarefa** e, em seguida, clique em **OK**.
 
-4.  Aguarde até que a caixa de diálogo **Executando Tarefa de Gerenciamento de Arquivo** feche e, em seguida, veja os resultados no relatório exibido automaticamente. Você deve ver o número de arquivos que estão na pasta escolhida no campo **Arquivos** . Confirme que os arquivos na pasta escolhida estão agora protegidos pelo RMS. Por exemplo, se sua pasta escolhida for C:\FileShare, digite o seguinte em uma sessão do Windows PowerShell e assegure que nenhum arquivo tem o status **Desprotegido**:
+4.  Aguarde que a caixa de diálogo **A Executar Tarefa de Gestão de Ficheiros** seja fechada e, em seguida, veja os resultados no relatório que é automaticamente apresentado. Deverá ver o número de ficheiros que estão na pasta selecionada no campo **Ficheiros**. Certifique-se de que os ficheiros na pasta escolhida estão agora protegidos pelo RMS. Por exemplo, se a pasta que escolheu for C:\FileShare, escreva o seguinte numa sessão do Windows PowerShell e confirme que não existem ficheiros com um estado **Desprotegido**:
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] Algumas dicas de solução de problemas:
+    > [!TIP] Algumas dicas para a resolução de problemas:
     > 
-    > -   Se você vir **0** no relatório, em vez do número de arquivos na pasta, isso indica que o script não foi executado. Primeiro, verifique o script propriamente dito, carregndo-o no ISE do Windows PowerShell para validar o conteúdo do script e tente executá-lo para ver se algum erro é exibido. Sem argumentos especificados, o script tentará se conectar e autenticar para o Azure RMS.
+    > -   Se vir **0** no relatório, em vez do número de ficheiros na sua pasta, isto indica que o script não foi executado. Em primeiro lugar, verifique o próprio script ao carregá-lo no ISE do Windows PowerShell para validar os conteúdos do script e tente executá-lo para ver se são apresentados erros. Sem especificar argumentos, o script irá tentar estabelecer ligação e autenticar para o Azure RMS.
     > 
-    >     -   Se o script reporta que ele não pôde se conectar ao Azure RMS, verifique os valores exibidos na conta de entidade de serviço, que você especificou no script.  Para obter mais informações sobre como criar essa conta de entidade de serviço, consulte o segundo pré-requisito no [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)
-    >     -   Se o script reportar que ele pode se conectar ao Azure RMS, em seguida, verifique que ele pode encontrar o modelo especificado, executando [Get-RMSTemplate](https://msdn.microsoft.com/library/mt433197.aspx) diretamente do Windows PowerShell no servidor. Você deverá ver o modelo especificado retornar nos resultados.
-    > -   Se o script por si só é executado no Windows PowerShell ISE sem erros, tente executá-lo da seguinte maneira de uma sessão do PowerShell, especificando um nome de arquivo para proteger e sem o parâmetro - OwnerEmail:
+    >     -   Se o script anunciar que não foi possível ligar ao Azure RMS, verifique os valores que este apresenta para a conta do principal do serviço que especificou no script.  Para mais informações sobre como criar esta conta do principal de serviço, consulte o segundo pré-requisito em [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)
+    >     -   Se o script anunciar que pode ligar ao Azure RMS, em seguida verifique se pode encontrar o modelo especificado ao executar [Get-RMSTemplate](https://msdn.microsoft.com/library/mt433197.aspx) diretamente a partir do Windows PowerShell no servidor. Deverá ver o modelo que especificou devolvido nos resultados.
+    > -   Se o script for automaticamente executado no ISE do Windows PowerShell sem erros, tente executá-lo da seguinte maneira a partir de uma sessão do PowerShell, especificando um nome de ficheiro a proteger e sem o parâmetro -OwnerEmail:
     > 
     >     ```
     >     powershell.exe -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '<full path and name of a file>' -TemplateID <template GUID>"
     >     ```
-    >     -   Se o script for executado com êxito nesta sessão do Windows PowerShell, verifique as entradas para **Executivo** e **Argumento** na ação de tarefas de gerenciamento de arquivo.  Se você tiver especificado **-OwnerEmail [email do proprietário do arquivo de origem]**, tente remover esse parâmetro.
+    >     -   Se o script for executado com êxito nesta sessão do Windows PowerShell, verifique as suas entradas para **Executivo** e **Argumento** na ação de tarefa de gestão de ficheiros.  Se tiver especificado **-OwnerEmail [Source File Owner Email] (E-mail de Proprietário do Ficheiro de Origem)**, experimente remover este parâmetro.
     > 
-    >         Se a tarefa de gerenciamento de arquivo funcionar com êxito sem o **-OwnerEmail [Email do proprietário do arquivo de origem]**, verifique se os arquivos desprotegidos têm um usuário de domínio listado como o proprietário do arquivo, em vez de **SYSTEM**.  Para fazer isso, use a guia **Segurança** para as propriedades do arquivo e clique em **Avançado**. O valor de **Proprietário** é exibido imediatamente após o **Nome** do arquivo. Além disso, verifique se o servidor de arquivos está no mesmo domínio ou em um domínio confiável para pesquisar o endereço de email do usuário dos Serviços de Domínio do Active Directory.
-    > -   Se você vir o número correto de arquivos no relatório, mas os arquivos não estão protegidos, tente proteger os arquivos manualmente usando o cmdlet [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) , para ver se algum erro é exibido.
+    >         Se a tarefa de gestão de ficheiros funcionar com êxito sem **-OwnerEmail [Source File Owner Email] (E-mail de Proprietário do Ficheiro de Origem)**, verifique se os ficheiros não protegidos têm um utilizador de domínio listado como o proprietário do ficheiro, em vez de **SYSTEM**.  Para o fazer, utilize o separador **Segurança** nas propriedades do ficheiro e, em seguida, clique em **Avançadas**. O valor **Proprietário** é apresentado imediatamente a seguir ao **Nome** do ficheiro. Além disso, certifique-se de que o servidor de ficheiros está no mesmo domínio ou num domínio fidedigno para procurar o endereço de e-mail do utilizador a partir dos Serviços de Domínio do Active Directory.
+    > -   Se vir o número correto de ficheiros no relatório, mas os ficheiros não estiverem protegidos, experimente proteger os ficheiros manualmente com o cmdlet [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx), para ver se são apresentados erros.
 
-Quando tiver confirmado que essas tarefas foram executadas com êxito, você poderá fechar o Gerenciador de recursos de arquivo. Os novos arquivos serão automaticamente protegidos e todos os arquivos serão protegidos novamente quando a agenda for executada. Proteger os arquivos novamente garante que quaisquer alterações no modelo serão aplicadas nos arquivos.
+Após confirmar que estas tarefas foram executadas com êxito, pode fechar o Gestor de Recursos de Ficheiros. Os novos ficheiros serão protegidos automaticamente e todos os ficheiros serão protegidos novamente quando os agendamentos forem executados. Voltar a proteger os ficheiros garante que todas as alterações ao modelo são aplicadas aos ficheiros.
 
 
-## Modificando as instruções para proteger os arquivos de forma seletiva
-Quando você tiver as instruções anteriores trabalhando, é então muito fácil modificá-los para uma configuração mais sofisticada. Por exemplo, proteger os arquivos usando o mesmo script, mas apenas para arquivos que contêm Informações de Identificação Pessoal e, talvez, selecione um modelo que tenha direitos mais restritivos.
+## Modificar as instruções para proteger ficheiros de forma seletiva
+Quando tiver implementado as instruções anteriores, será muito fácil modificá-las para uma configuração mais complexa. Por exemplo, pode proteger ficheiros com o mesmo script, mas apenas para ficheiros que contenham informações pessoais, e talvez selecionar um modelo que possua direitos mais restritivos.
 
-Para fazer isso, use uma das propriedades internas de classificação (por exemplo, **Informações de Identificação Pessoal**) ou crie uma nova propriedade de sua própria autoria. Em seguida, crie uma nova regra que usa essa propriedade. Por exemplo, você pode selecionar o **Classificador de Conteúdo**, escolha o **Informações de Identificação Pessoal** propriedade com um valor de **Alto**, e configure o padrão de cadeia de caracteres ou expressão que identifica o arquivo a ser configurado para essa propriedade (como a cadeia de caracteres "**Data de nascimento**").
+Para tal, utilize uma das propriedades de classificação incorporadas (por exemplo, **Informações Pessoais**) ou crie uma nova propriedade. Em seguida, crie uma nova regra que utilize esta propriedade. Por exemplo, poderá selecionar o **Classificador de Conteúdos**, selecionar a propriedade **Informações Pessoais** com o valor **Elevado** e configurar o padrão de expressão ou cadeia que identifica o ficheiro a ser configurado para esta propriedade (tais como a cadeia "**Data de Nascimento**").
 
-Agora tudo o que você precisa fazer é criar uma nova tarefa de gerenciamento de arquivo que usa o mesmo script mas talvez com um modelo diferente e configure a condição para a propriedade de classificação que você configurou. Por exemplo, em vez da condição que configuramos anteriormente (**RMS** propriedade **Igual**, **Sim**), selecione o **Informações de Identificação Pessoal** propriedade com o **Operador** valor definido como **igual** e **Valor** **Alto**.
+Agora, tudo o que precisa de fazer é criar uma nova tarefa de gestão de ficheiros que utilize o mesmo script, mas talvez com um modelo diferente, e configurar a condição da propriedade de classificação que acabou de configurar. Por exemplo, em vez da condição que configurámos anteriormente (propriedade **RMS**, **Igual**, **Sim**), selecione a propriedade **Informações Pessoais** com o valor **Operador** definido como **Igual** e o **Valor** **Elevado**.
 
 
 

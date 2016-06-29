@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Baixar e instalar o aplicativo de compartilhamento Rights Management | Azure RMS
+title: Transferir e instalar a aplicação de partilha Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,53 +25,53 @@ ms.suite: ems
 
 ---
 
-# Baixar e instalar o aplicativo Rights Management sharing
+# Transferir e instalar a aplicação de partilha Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-Você não precisa ser administrador local para instalar o aplicativo RMS sharing. No entanto, se você não é administrador e usa o Office 2010, existem algumas limitações. Para obter mais informações, consulte a seção [Se você não for um administrador local e usar o Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) nesta página.
+Não é necessário ser um administrador local para instalar a aplicação de partilha RMS. No entanto, se não for e utilizar o Office 2010, existem algumas limitações. Para obter mais informações, consulte a secção [Se não for um administrador local e utilizar o Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) nesta página.
 
-## Para baixar e instalar o aplicativo de compartilhamento do Rights Management
+## Para transferir e instalar a aplicação de partilha Rights Management
 
-1.  Vá à página do [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) no site da Web da Microsoft.
+1.  Aceda à página do [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) no site da Microsoft.
 
-2.  Na seção **Computadores** , clique no ícone do **aplicativo RMS para Windows** e salve o arquivo **Setup.exe** para instalar o aplicativo de compartilhamento Microsoft Rights Management.
+2.  Na secção **Computadores**, clique no ícone da **aplicação RMS para Windows** e guarde o ficheiro **Setup.exe** para instalar a aplicação de partilha Microsoft Rights Management.
 
-3.  Clique duas vezes no arquivo Setup.exe que foi baixado. Se aparecer uma solicitação para continuar, clique em **Sim**.
+3.  Faça duplo clique no ficheiro Setup.exe transferido. Se lhe for pedido para continuar, clique em **Sim**..
 
-4.  Na página de **Instalação do Microsoft RMS** , clique em **Próximo**e aguarde a conclusão da instalação.
+4.  Na página **Configurar o Microsoft RMS**, clique em **Seguinte** e aguarde até que a instalação esteja concluída.
 
     > [!NOTE]
-    > O aplicativo RMS sharing requer o Microsoft .NET Framework versão mínima 4.0. A instalação verifica se ele está instalado e, se não estiver, você verá uma mensagem com um link para instalá-lo.
+    > A aplicação de partilha RMS requer o Microsoft .NET Framework, versão mínima 4.0. A configuração verifica se isto foi instalado e, em caso negativo, verá uma mensagem com uma ligação para a instalação.
 
-5.  Ao final da instalação, clique em **Reiniciar** para reiniciar o computador e concluir a instalação. Ou, clique em **Fechar** e reinicie o computador posteriormente para concluir a instalação.
+5.  Quando a instalação estiver concluída, clique em **Reiniciar** para reiniciar o computador e concluir a instalação. Em alternativa, pode clicar em **Fechar** e reiniciar o computador mais tarde para concluir a instalação.
 
-Agora que a sua conta foi criada, você pode começar a proteger ou ler arquivos que outras pessoas protegeram.
+Agora, está pronto para começar a proteger os ficheiros ou ler ficheiros que outras pessoas protegeram.
 
-## Se você não é um administrador local e usa o Office 2010
-Se você entrar no seu computador e não tiver direitos administrativos locais, e a instalação detecta que você tem o Office 2010 instalado, verá uma mensagem de aviso de que alguns cenários não funcionarão com essa configuração. Esses cenários são:
+## Se não for um administrador local e utilizar o Office 2010
+Se iniciar sessão no computador e não tiver direitos administrativos locais e a Configuração detetar que tem o Office 2010 instalado, verá uma mensagem de aviso a indicar que alguns cenários não funcionarão com esta configuração. Os cenários são:
 
--   Se sua organização usar o Azure RMS em vez de uma versão local do RMS:
+-   Se a sua organização utilizar o Azure RMS em vez de uma versão no local do RMS:
 
-    -   Os recursos do IRM (Gerenciamento de Direitos de Informação) do Office não estarão disponíveis. Por exemplo, a opção **Não Encaminhar** para emails e as permissões **Restringir Acesso** que você pode definir no menu **Arquivo** do Word e do Excel. Você pode usar a opção Compartilhamento Protegido na faixa de opções e as opções do botão direito do Explorador de Arquivos.
+    -   As funcionalidades da Gestão de Direitos de Informação (IRM) do Office não estarão disponíveis. Por exemplo, a opção **Não Reencaminhar** para e-mails e as permissões **Restringir Acesso** que pode definir no menu **Ficheiro** no Word e Excel. Pode utilizar a opção Partilhar Protegido no friso e as opções de clique com o botão direito do rato do Explorador de Ficheiros.
 
--   Se sua organização usa uma versão local do RMS em vez do Azure RMS:
+-   Se a sua organização utilizar uma versão no local do RMS em vez do Azure RMS:
 
-    -   Você não pode ler um documento protegido enviado a você por alguém de outra organização que está usando o Azure RMS.
+    -   Não será possível ler um documento protegido que lhe foi enviado por alguém de outra organização que esteja a utilizar o Azure RMS.
 
-Se você não é um administrador local e usa o Office 365 ou Office 2013, você não vê essa mensagem e esses cenários são suportados.
+Se não for um administrador local e utilizar o Office 365 ou Office 2013, não verá esta mensagem e estes cenários serão suportados.
 
-Você pode continuar a instalação com essas limitações conhecidas. Ou você pode parar a instalação e executar novamente com a opção **Executar como administrador** ao executar Setup.exe na etapa 3, ou pedir para um administrador instalar para você. Os administradores podem [fazer o script desta instalação](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) para você de modo que ela seja instalada automaticamente.
+Pode continuar a instalação com estas limitações conhecidas. Em alternativa, pode interromper a instalação e voltar a executá-la com a opção **Executar como administrador** quando executar Setup.exe no passo 3 ou pedir a um administrador que o instale por si. Os administradores podem [efetuar o script desta instalação](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) para instalar automaticamente.
 
 ## Exemplos e outras instruções
-Para obter exemplos de como você pode usar o aplicativo Rights Management sharing e instruções, consulte as seguintes seções do guia de usuário do aplicativo Rights Management sharing:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
--   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que pretende fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
-## Consulte também
-[Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+## Consulte Também
+[Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
 

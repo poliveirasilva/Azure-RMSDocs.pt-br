@@ -1,35 +1,35 @@
-![Etapa 4 do início rápido do Azure RMS](../media/AzRMS_QuickStartSteps4.PNG)
+![Passo 4 do início rápido do Azure RMS](../media/AzRMS_QuickStartSteps4.PNG)
 
-Os destinatários podem usar vários dispositivos para ler o documento protegido enviado como anexo de email. Os dispositivos incluem iPads, iPhones, telefones e tablets Android, computadores Mac, bem como computadores Windows.
+Os destinatários podem utilizar vários dispositivos para ler o documento protegido que enviou como anexo de e-mail. Os dispositivos incluem iPads, iPhones, tablets e telemóveis Android, computadores Mac, bem como computadores Windows.
 
-Peça que eles leiam a mensagem de email que você enviou. Eles verão a mensagem de email e, antes disso, o seguinte texto:
+Peça-lhes para lerem a mensagem de e-mail que enviou. Os destinatários verão a sua mensagem de e-mail e, antes disso, o seguinte texto:
 
-**O remetente protegeu os anexos com o Microsoft RMS. Você deve** [entrar](http://aka.ms/rms)
-      **para abri-los.**
+**O remetente protegeu os anexos com o Microsoft RMS. Tem de** [iniciar sessão](http://aka.ms/rms)
+      **para os abrir.**
 
-Ao clicarem no link, eles acessarão as instruções para instalação do aplicativo RMS sharing e, caso necessário, inscrição de uma conta gratuita. A conta gratuita concederá uma assinatura do RMS para indivíduos, que garante que os usuários autorizados sempre possam ler um documento protegido, mesmo se a organização deles não tiver o Azure RMS. Assim, eles estarão prontos para ler o anexo protegido usando as instruções a seguir.
+Quando clicam na ligação, são encaminhados para as instruções de instalação da aplicação de partilha RMS e, se necessário, para se inscreverem numa conta gratuita. A conta gratuita concede-lhes uma subscrição do RMS para indivíduos, que garante que os utilizadores autorizados podem sempre ler um documento protegido, mesmo que a organização não tenha o Azure RMS. Em seguida, podem ler o anexo protegido ao utilizar as instruções seguintes.
 
-![Capturas de tela do tutorial do RM](../media/AzRMS_Tutorial_4_Screenshots.png)
+![Capturas de ecrã do tutorial do RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### Para exibir o documento protegido do anexo
+#### Para ver o anexo do documento protegido
 
-1.  Como o Azure Rights Management protegeu um documento do Word, existem dois anexos na mensagem de email. Eles são, na verdade, duas versões do mesmo arquivo, mas com diferentes extensões de nome de arquivo. Abra a versão que tem a extensão de nome de arquivo **.ppdf** (**Confidential.ppdf**).
+1.  Uma vez que o Azure Rights Management protegeu um documento do Word, existem dois anexos na mensagem de e-mail. Estes anexos são, na verdade, duas versões do mesmo ficheiro, mas com extensões de nomes de ficheiro diferentes. Abra a versão que tem a extensão de nome de ficheiro **.ppdf** (**Confidencial.ppdf**).
 
-    Se você tiver uma versão do [Office no seu dispositivo que dá suporte ao Rights Management](https://technet.microsoft.com/library/dn655136.aspx), você poderá abrir a outra versão do arquivo (**Confidential.docx**) para abri-lo no Word.
+    Se tiver uma versão do [Office no dispositivo que suporte o Rights Management](https://technet.microsoft.com/library/dn655136.aspx), pode abrir a outra versão do ficheiro (**Confidencial.docx**) no Word.
 
-2.  Se for solicitado seu nome de usuário e senha, insira seu nome de usuário no mesmo formato do endereço de email usado para enviar o email e os anexos. Por exemplo, **janetm@contoso.com** ou **p.dover@fabrikam.com**. Para sua senha, digite a senha que você forneceu ao se inscrever para o RMS para indivíduos. Ou, se sua organização tiver o Azure RMS, digite sua senha de trabalho normal.
+2.  Se lhe for pedido o nome de utilizador e a palavra-passe, introduza o nome de utilizador no mesmo formato que o endereço de e-mail que foi utilizado para lhe enviar a mensagem de e-mail e o anexo. Por exemplo, **juliam@contoso.com** ou **p.barbosa@fabrikam.com**. Para a palavra-passe, escreva a que especificou quando se inscreveu no RMS para indivíduos. Em alternativa, se a sua organização tiver o Azure RMS, introduza a palavra-passe habitual do trabalho.
 
-O documento será aberto, e você poderá ler o conteúdo. Por exemplo, pode ser que esteja escrito **Se você conseguiu ler este documento de seu anexo de email, o remetente compartilhou com êxito um arquivo que foi protegido com o Azure RMS.** Por ser somente leitura, o conteúdo não pode ser alterado.
+O documento é aberto e já pode ler o conteúdo. Por exemplo, pode dizer **Se conseguir ler isto no anexo de e-mail, significa que o remetente partilhou com êxito um ficheiro que foi protegido com o Azure RMS.** Uma vez que é só de leitura, não é possível alterar o conteúdo.
 
-Como uma etapa opcional, você pode pedir que seu destinatário encaminhe o email a outras pessoas que você não incluiu em seu email original. Mesmo que as outras pessoas trabalhem para uma organização que possui o Azure Rights Management ou inscrevam suas próprias assinaturas do RMS para indivíduos, não poderão abrir o anexo. Quando o nome de usuário for solicitado, será negado o acesso ao documento para elas.
+Como passo opcional, pode pedir ao destinatário para reencaminhar o e-mail para outras pessoas que não tenha incluído no e-mail original. Mesmo que essas pessoas trabalhem numa organização que tenha o Azure Rights Management ou que se candidatem à própria subscrição do RMS para indivíduos, não vão poder abrir o anexo. Quando lhes for solicitado o respetivo nome de utilizador, o acesso ao documento será negado.
 
-Agora que o destinatário abriu o anexo e, opcionalmente, encaminhou o mesmo para outra pessoa, espere receber uma notificação por email relatando essa atividade. Como é muito fácil perder mensagens de email com o passar do tempo, uma maneira ainda melhor de controlar quem acessou o documento é usar o site de controle de documentos, abordado na etapa final.
+Agora que o destinatário abriu o anexo e, opcionalmente, o reencaminhou para outra pessoa, aguarde a receção de uma notificação de e-mail a comunicar esta atividade. No entanto, é fácil perder mensagens de e-mail ao longo do tempo. Como tal, para melhor controlar quem acede ao documento, utilize o site de controlo de documentos (descrito no último passo).
 
-|Se deseja obter mais informações|Informações adicionais|
+|Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
-|Instruções completas para exibir os arquivos protegidos pelo Azure Rights Management   →|[Exiba e use os arquivos que foram protegidos pelo Rights Management](../rms-client/sharing-app-view-use-files.md)|
-|Sobre a assinatura gratuita do RMS para indivíduos   →|[RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Sobre as duas versões do arquivo que você vê anexados à mensagem de email   →|[O que é o arquivo .ppdf, criado automaticamente?](../rms-client/sharing-app-dialog-box.md)|
+|Instruções completas para visualizar ficheiros que estão protegidos pelo Azure Rights Management   →|[Ver e utilizar ficheiros que foram protegidos pelo Rights Management](../rms-client/sharing-app-view-use-files.md)|
+|Acerca da subscrição gratuita, RMS para indivíduos   →|[RMS para Indivíduos e Azure Rights Management](../understand-explore/rms-for-individuals.md)|
+|Acerca das duas versões do ficheiro que vê anexado à mensagem de e-mail   →|[O que é o ficheiro .ppdf criado automaticamente?](../rms-client/sharing-app-dialog-box.md)|
 
 
 

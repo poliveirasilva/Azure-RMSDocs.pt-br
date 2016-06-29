@@ -2,7 +2,7 @@
 # required metadata
 
 title: Exemplos de código | Azure RMS
-description: O RMS SDK 4.2 inclui código de exemplo e projetos de trabalho para alguns sistemas operacionais com suporte.
+description: O SDK RMS 4.2 inclui código de exemplo e projetos de trabalho para alguns sistemas operativos suportados.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,20 +26,20 @@ ms.suite: ems
 
 # Exemplos de código
 
-O Microsoft Rights Management SDK 4.2 inclui código de exemplo e projetos de trabalho para alguns sistemas operacionais com suporte.
+O SDK Microsoft Rights Management 4.2 inclui código de exemplo e projetos de trabalho para alguns sistemas operativos suportados.
 
-## Disponível por meio do GitHub ##
-Nossa biblioteca de interface do usuário fornece uma interface do usuário reutilizável para operações de consumo e proteção para desenvolvedores que não querem criar sua própria interface do usuário personalizada:
+## Disponível através do GitHub ##
+A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para operações de consumo e proteção para programadores que não pretendem criar a sua IU personalizada:
 
-- Android - [Biblioteca de interface do usuário e aplicativo de exemplo para Android](https://github.com/AzureAD/rms-sdk-ui-for-android)
-- iOS - [Biblioteca de interface do usuário e aplicativo de exemplo para iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios)
-- Aplicativos da Windows Store - [biblioteca da interface do usuário para aplicativos da Windows Store](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore) e [aplicativo de exemplo para a Windows Store](https://github.com/AzureADSamples/rms-samples-for-windowsstore).
+- Android – [Biblioteca da IU e Aplicação de exemplo para Android](https://github.com/AzureAD/rms-sdk-ui-for-android)
+- iOS – [Biblioteca da IU e Aplicação de exemplo para iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios)
+- Aplicações da Loja Windows – [Biblioteca da IU para aplicações da Loja Windows](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore) e [Aplicação de exemplo para a Loja Windows](https://github.com/AzureADSamples/rms-samples-for-windowsstore).
 
 ## Exemplos ##
-Este tópico apresentará elementos de código importantes para a versão associada do RMS SDK.
+Estes tópicos apresentam-lhe elementos de código importantes para a versão associada do SDK RMS.
 - [Exemplos de código do Android](android-code.md)
 - [Exemplos de código do Linux](linux-c-code-examples.md)
-- [Exemplos de código do iOS/OS X](ios-os-x-code-examples.md)
+- [Exemplos de código do iOS/OS X](ios-os-x-code-examples.md)
 
 
  

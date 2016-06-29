@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como trabalhar com configurações de criptografia | Azure RMS
-description: Esse artigo orienta você para nossos pacotes de criptografia
+title: Procedimentos sobre como trabalhar com definições de encriptação | Azure RMS
+description: Este artigo descreve os nossos pacotes de encriptação
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,39 +24,39 @@ ms.suite: ems
 
 ---
 
-# Como trabalhar com configurações de criptografia
+# Procedimentos: trabalhar com definições de encriptação
 
-Este tópico orienta você sobre nossos pacotes de criptografia e mostra alguns trechos de código para o uso desses pacotes.
+Este tópico descreve os nossos pacotes de encriptação e mostra como é possível utilizar alguns recortes de código.
 
-## Suporte a AES 256, o novo padrão
+## Suporte para AES 256, a nova predefinição
 
-Nenhum código adicional é necessário para usar o *AES 256* baseado em criptografia visto que este é o novo padrão, supondo que você crie na atualização de março de 2015 ou posterior do RMS SDK 2.1. Incentivamos você a considerar seriamente atualizar seus aplicativos com esta versão para os benefícios de segurança adicionais do *AES 256*.
+Nenhum código adicional é necessário para utilizar a encriptação baseada em *AES 256*, dado que se trata da nova predefinição, partindo do princípio de que compila com o SDK RMS 2.1, atualização de março de 2015, ou posterior. Aconselhamo-lo a considerar a atualização das suas aplicações com esta versão devido às vantagens de segurança adicionais da *AES 256*.
 
 > [!IMPORTANT]
-> O suporte para consumo de arquivos protegidos por *AES 256* existe desde a [versão de outubro de 2014](release-notes-rtm.md). Se você estiver executando aplicativos criados com uma versão do SDK anterior a outubro de 2014, essa atualização interromperá seu aplicativo. Verifique se os clientes dos aplicativos que você está compilando estão usando o SDK atualizado ou estão dispostos a atualizar imediatamente para a versão mais recente do seu aplicativo.
+> O suporte para consumo de ficheiros protegidos por *AES 256* já existia desde a [versão de outubro de 2014](release-notes-rtm.md). Se estiver a executar aplicações criadas com uma versão do SDK anterior à de outubro de 2014, esta atualização irá interromper a sua aplicação. Certifique-se de que os clientes das aplicações que está a criar estão a utilizar o SDK atualizado ou estão dispostos a atualizar imediatamente para a versão mais recente da aplicação.
 
  
-## Suporte à criptografia de API
+## Suporte de encriptação de API
 
-Da [atualização de março de 2015](release-notes-rtm.md) em diante, nós incorporamos três sinalizadores em nossa API e seus pacotes de criptografia associados:
+A partir da [atualização de março de 2015](release-notes-rtm.md), incorporamos os três sinalizadores seguintes na nossa API e nos respetivos pacotes de encriptação associados:
 
 -   IPC\_ENCRYPTION\_PACKAGE\_AES256\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
--   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (também conhecidos como algoritmos preteridos)
+-   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (também conhecido como Algoritmos Preteridos)
 
-Os sinalizadores de pacote de criptografia, consulte [**Preferred encryption**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption) (Criptografia preferencial), podem ser usados em conjunto com nosso novo sinalizador de Propriedade de Licença **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Os sinalizadores de pacote de encriptação (consulte [**Encriptação Preferencial**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)) podem ser utilizados em conjunto com o nosso novo sinalizador de Propriedade da Licença **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
-A seguir estão alguns trechos de código simples que demonstram como usar a nova propriedade de licença.
+Seguem-se alguns fragmentos de código simples que demonstram como utilizar a nova propriedade de licença.
 
-## Algoritmos preteridos
+## Algoritmos Preteridos
 
-Não estamos mais expondo o sinalizador **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** na nossa API. Isso significa que aplicativos futuros não serão mais compilados se eles fizerem referência a esse sinalizador, mas os aplicativos já compilados utilizando-o continuarão a funcionar, já que respeitamos o sinalizador em particular no código de API.
+Já não expomos o sinalizador **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** na nossa API. Isto significa que as aplicações futuras vão deixar de compilar se fizerem referência a este sinalizador, mas as aplicações já criadas que o utilizam vão continuar a funcionar, uma vez que respeitamos o sinalizador em privado no código de API.
 
-Ainda é possível obter o benefício do sinalizador de algoritmos de criptografia antigo preterido simplesmente alterando um sinalizador. Consulte os trechos de código a seguir para um exemplo.
+Para aproveitar ainda as vantagens do sinalizador de algoritmos de encriptação preterido antigo, basta alterar um sinalizador. Consulte os seguintes fragmentos de código para obter exemplos.
 
-## Proteger arquivos com AES 256 CBC4K
+## Proteger Ficheiros com AES 256 CBC4K
 
-Nenhuma alteração no código necessária, *AES 256* CBC4K é o padrão.
+Não são necessárias alterações no código, *AES 256* CBC4K é a predefinição.
 
     C++
 
@@ -66,7 +66,7 @@ Nenhuma alteração no código necessária, *AES 256* CBC4K é o padrão.
                                     &amp;pLicenseHandle);
 
 
-## Proteger arquivos com AES-128 CBC4K
+## Proteger Ficheiros com AES 128 CBC4K
 
     C++
 
@@ -83,9 +83,9 @@ Nenhuma alteração no código necessária, *AES 256* CBC4K é o padrão.
                            &amp;dwEncryptionMode);
 
 
-## Proteger arquivos com o AES-128 ECB (algoritmos preteridos)
+## Proteger Ficheiros com AES-128 ECB (Algoritmos Preteridos)
 
-Este exemplo também mostra a nova maneira de dar suporte a *algoritmos preteridos*.
+Este exemplo mostra também a nova forma de suportar *algoritmos preteridos*.
 
     C++
     

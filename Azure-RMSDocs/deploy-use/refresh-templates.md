@@ -26,39 +26,39 @@ ms.suite: ems
 ---
 
 
-# Atualizando modelos para usuários
+# Atualizar modelos para os utilizadores
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Ao usar o Azure RMS, os modelos são baixados automaticamente para os computadores clientes para que os usuários possam selecioná-los em seus aplicativos. No entanto, talvez seja necessário tomar medidas adicionais se forem feitas alterações nos modelos:
+Quando utiliza o Azure RMS, os modelos são automaticamente transferidos para computadores cliente para os utilizadores poderem selecioná-los a partir das suas aplicações. No entanto, poderá ter de efetuar passos adicionais se fizer alterações aos modelos:
 
-|Aplicativo ou serviço|Como os modelos são atualizados após as alterações|
+|Aplicação ou serviço|Como os modelos são atualizados depois das alterações|
 |--------------------------|---------------------------------------------|
-|Exchange Online|Configuração manual necessária para atualizar os modelos.<br /><br />Para as etapas de configuração, consulte a seção a seguir, [Exchange Online somente: como configurar o Exchange para baixar modelos personalizados alterados](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
-|Office 365|Atualizado automaticamente, não são necessários outros procedimentos.|
-|Office 2016 e Office 2013<br /><br />Aplicativo de compartilhamento RMS para Windows|Atualizado automaticamente, por agendamento:<br /><br />Para essas versões posteriores do Office: o intervalo de atualização padrão é a cada 7 dias.<br /><br />Para o aplicativo RMS sharing para Windows: da versão 1.0.1784.0 em diante, o intervalo de atualização padrão é a cada 1 dia. As versões anteriores têm um intervalo de atualização padrão de a cada 7 dias.<br /><br />Para forçar uma atualização antes desse agendamento, expanda a seção a seguir, [Office 2016, Office 2013 e Aplicativo de compartilhamento do RMS para Windows: como forçar uma atualização de um modelo personalizado alterado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Office 2010|Atualizado quando os usuários fazem logon.<br /><br />Para forçar uma atualização, peça ou force os usuários a fazerem logoff e logon novamente. Ou, consulte a seção a seguir: [Somente Office 2010: Como forçar uma atualização para um modelo personalizado alterado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
-Para dispositivos móveis que usam o aplicativo RMS sharing, os modelos são baixados (e atualizados, se necessário) automaticamente sem configuração adicional necessária.
+|Exchange Online|Configuração manual necessária para atualizar os modelos.<br /><br />Para obter os passos de configuração, consulte a secção [Apenas para o Exchange Online: como configurar o Exchange para transferir modelos personalizados modificados](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)..|
+|Office 365|Atualizados automaticamente – não existem passos adicionais necessários.|
+|Office 2016 e Office 2013<br /><br />Aplicação de partilha RMS para Windows|Atualizados automaticamente – com base numa agenda:<br /><br />Para estas versões posteriores do Office: o intervalo de atualização predefinido é de 7 dias.<br /><br />Para a aplicação de partilha RMS para Windows: a partir da versão 1.0.1784.0, o intervalo de atualização predefinido é de 1 dia. As versões anteriores têm um intervalo de atualização predefinido de 7 dias.<br /><br />Para forçar uma atualização mais cedo do que a agendada, consulte a secção [Office 2016, Office 2013 e aplicação de partilha RMS para Windows: como forçar uma atualização de um modelo personalizado modificado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2010|Atualizado quando os utilizadores iniciam sessão.<br /><br />Para forçar uma atualização, peça ou force os utilizadores a terminarem e a iniciarem a sessão novamente. Em alternativa, consulte a secção [Apenas para Office 2010: como forçar uma atualização de um modelo personalizado modificado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
+Para dispositivos móveis que utilizam a aplicação de partilha RMS, os modelos são automaticamente transferidos (e atualizados se necessário) sem ser necessária uma configuração adicional.
 
-## Somente Exchange Online: como configurar o Exchange para baixar modelos personalizados alterados
-Se você já configurou o IRM (Gerenciamento de Direitos de Informação) para o Exchange Online, os modelos personalizados não serão baixados para os usuários até que as alterações a seguir sejam feitas usando o Windows PowerShell no Exchange Online.
+## Apenas para Exchange Online: como configurar o Exchange para transferir modelos personalizados modificados
+Se já tiver configurado a Gestão de Direitos de Informação (IRM) para o Exchange Online, os utilizadores não poderão transferir os modelos personalizados até fazer as seguintes alterações com o Windows PowerShell no Exchange Online.
 
 > [!NOTE]
-> Para obter mais informações sobre como usar o Windows PowerShell no Exchange Online, consulte [Usar o PowerShell com o Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
+> Para mais informações sobre como utilizar o Windows PowerShell no Exchange Online, consulte [Utilizar o PowerShell com o Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
 
-Esse procedimento deve ser feito cada vez que um modelo for alterado.
+Tem de efetuar este procedimento sempre que alterar um modelo.
 
 ### Para atualizar modelos para o Exchange Online
 
-1.  Usando o Windows PowerShell no Exchange Online, conecte-se ao serviço:
+1.  Com o Windows PowerShell no Exchange Online, ligue-se ao serviço:
 
-    1.  Forneça seu nome de usuário e senha do Office 365:
+    1.  Forneça o nome de utilizador e a palavra-passe do Office 365:
 
         ```
         $Cred = Get-Credential
         ```
 
-    2.  Conecte-se ao serviço Exchange Online executando os seguintes dois comandos:
+    2.  Execute os dois comandos seguintes para ligar ao serviço do Exchange Online:
 
         ```
         $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
@@ -68,129 +68,129 @@ Esse procedimento deve ser feito cada vez que um modelo for alterado.
         Import-PSSession $Session
         ```
 
-2.  Use o cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) para importar novamente o TPD (domínio de publicação confiável) do Azure RMS:
+2.  Utilize o cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) para voltar a importar o domínio de publicação fidedigno (TPD) do Azure RMS:
 
     ```
     Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
     ```
-    Por exemplo, se seu nome TPD for **RMS Online - 1** (um nome comum para muitas organizações), digite: **Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates -RMSOnline**
+    Por exemplo, se o nome TPD for **RMS Online – 1** (nome típico para muitas organizações), introduza: **Import-RMSTrustedPublishingDomain -Name "RMS Online – 1" -RefreshTemplates -RMSOnline**
 
     > [!NOTE]
-    > Para verificar seu nome TPD, você pode usar o cmdlet [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200707%28v=exchg.160%29.aspx).
+    > Para verificar o seu nome TPD, pode utilizar o cmdlet [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200707%28v=exchg.160%29.aspx).
 
-3.  Para confirmar se os modelos foram importados com sucesso, espere alguns minutos e, em seguida, execute o cmdlet [Get-RMSTemplate](http://technet.microsoft.com/library/dd297960%28v=exchg.160%29.aspx) e defina o Tipo como Todos. Por exemplo:
+3.  Para confirmar que os modelos foram importados com êxito, aguarde alguns minutos e, em seguida, execute o cmdlet [Get-RMSTemplate](http://technet.microsoft.com/library/dd297960%28v=exchg.160%29.aspx) e defina o Tipo para Todos. Por exemplo:
 
     ```
     Get-RMSTemplate -TrustedPublishingDomain "RMS Online - 1" -Type All
     ```
     > [!TIP]
-    > É útil manter uma cópia da saída para que você possa facilmente copiar os nomes de modelo ou GUIDs se você arquivar um modelo mais tarde.
+    > É útil guardar uma cópia do ficheiro de saída para poder copiar facilmente os nomes dos modelos ou os GUIDs se arquivar um modelo posteriormente.
 
-4.  Para cada modelo importado que você deseja disponibilizar no Outlook Web App, você deve usar o cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) e definir o Tipo a ser distribuído:
+4.  Para cada modelo importado que pretenda disponibilizar no Outlook Web App, tem de utilizar o cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) e definir o Tipo para Distribuído:
 
     ```
     Set-RMSTemplate -Identity "<name  or GUID of the template>" -Type Distributed
     ```
-    Visto que o Outlook Web Access armazena a interface do usuário por 24 horas, os usuários não poderão ver o novo modelo por até um dia.
+    Como o Outlook Web Access coloca a IU em cache durante 24 horas, os utilizadores não poderão ver o novo modelo até ao dia seguinte.
 
-Além disso, se você arquivar um modelo (personalizado ou padrão) e usar o Exchange Online com o Office 365, os usuários continuarão vendo os modelos arquivados se usarem o aplicativo Web Outlook ou dispositivos móveis que utilizam o protocolo ActiveSync Exchange.
+Além disso, se arquivar um modelo (personalizado ou predefinido) e utilizar o Exchange Online com o Office 365, os utilizadores irão continuar a ver os modelos arquivados se utilizarem o Outlook Web App ou os dispositivos móveis que utilizam o Protocolo do Exchange ActiveSync.
 
-Para que os usuários não vejam esses modelos, conecte-se ao serviço usando o Windows PowerShell no Exchange Online, em seguida, use o cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) executando o seguinte comando:
+Para os utilizadores deixarem de ver estes modelos, ligue-se ao serviço com o Windows PowerShell no Exchange Online e, em seguida, utilize o cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) ao executar o seguinte comando:
 
 ```
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## Office 2016, Office 2013 e aplicativo RMS sharing para Windows: como forçar uma atualização de um modelo personalizado alterado
-Editando o registro nos computadores que executam o Office 2016, o Office 2013 ou o aplicativo Rights Management (RMS) sharing para Windows, você pode alterar o agendamento automático para que os modelos alterados sejam atualizados em computadores com mais frequência do que seus valores padrão. Você também pode forçar uma atualização imediata excluindo os dados existentes em um valor de registro.
+## Office 2016, Office 2013 e aplicação de partilha RMS para Windows: como forçar uma atualização de um modelo personalizado modificado
+Ao editar o registo nos computadores ao executar o Office 2016, Office 2013 ou a aplicação de partilha Rights Management (RMS) para Windows, pode alterar o agendamento automático para os modelos modificados serem atualizados nos computadores com mais frequência do que o respetivo valor predefinido. Também pode forçar uma atualização imediata ao eliminar os dados existentes num valor de registo.
 
 > [!WARNING]
-> Se o Editor de Registro for usado de forma incorreta, podem ocorrer problemas graves que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que seja possível solucionar problemas resultantes do uso incorreto do Editor de Registro. Use o Editor de Registro por sua conta e risco.
+> A utilização incorreta do Editor de Registo poderá causar problemas graves que exijam a reinstalação do sistema operativo. A Microsoft não garante que consiga resolver os problemas resultantes da utilização incorreta do Editor de Registo. A utilização do Editor de Registo é da exclusiva responsabilidade do utilizador.
 
 ### Para alterar o agendamento automático
 
-1.  Ao utilizar um editor de registro, crie e defina um dos seguintes valores de registro:
+1.  Através de um editor de registo, crie e defina um dos seguintes valores do registo:
 
-    - Para definir uma frequência de atualização em dias (mínimo de 1 dia):  Crie um novo valor de registro denominado **TemplateUpdateFrequency** e defina um valor inteiro para os dados que especifica a frequência em dias para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do Registro para criar esse novo valor de Registro.
+    - Para definir uma frequência de atualização em dias (mínimo de 1 dia): crie um novo valor de registo com o nome **TemplateUpdateFrequency** e defina um valor inteiro para os dados, que especifica a frequência em dias para transferir quaisquer alterações a um modelo transferido. Utilize as seguintes informações para localizar o caminho do registo para criar este novo valor de registo.
 
-        **Caminho de Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **Caminho do registo:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
         **Tipo:** REG_DWORD
 
         **Valor:** TemplateUpdateFrequency
 
-    - Para definir uma frequência de atualização em segundos (mínimo de 1 segundo):  Crie um novo valor de registro denominado **TemplateUpdateFrequencyInSeconds** e definir um valor inteiro para os dados que especifica a frequência em segundos para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do Registro para criar esse novo valor de Registro.
+    - Para definir uma frequência de atualização em segundos (mínimo de 1 segundo): crie um novo valor de registo com o nome **TemplateUpdateFrequencyInSeconds** e defina um valor inteiro para os dados, que especifica a frequência em segundos para transferir alterações para um modelo transferido. Utilize as seguintes informações para localizar o caminho do registo para criar este novo valor de registo.
 
-        **Caminho de Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **Caminho do registo:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
         **Tipo:** REG_DWORD
 
         **Valor:** TemplateUpdateFrequencyInSeconds
 
-    Certifique-se de criar e definir um desses valores de registro, não ambos. Se ambos estiverem presentes, **TemplateUpdateFrequency** será ignorado.
+    Certifique-se de que cria e configura um destes valores do registo, não ambos. Se ambos estiverem presentes, o **TemplateUpdateFrequency** será ignorado.
 
-2.  Se você quiser forçar uma atualização imediata dos modelos, vá para o próximo procedimento. Caso contrário, reinicie seus aplicativos do Office e instâncias do Explorador de arquivos agora.
+2.  Se quiser forçar uma atualização imediata dos modelos, avance para o procedimento seguinte. Caso contrário, reinicie as suas aplicações do Office e instâncias do Explorador de Ficheiros agora.
 
 ### Para forçar uma atualização imediata
 
-1.  Usando um editor de registro, exclua os dados do valor **LastUpdatedTime** . Por exemplo, os dados poderão exibir **2015-04-20T15:52**; exclua 2015-04-20T15:52 para que nenhum dado seja exibido. Use as informações a seguir para localizar o caminho do Registro de forma a excluir esses dados de valor de registro.
+1.  Através de um editor de registo, elimine os dados do valor **LastUpdatedTime**. Por exemplo, os dados poderão apresentar **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para não serem apresentados dados. Utilize as seguintes informações para localizar o caminho do registo para eliminar os dados deste valor de registo.
 
-    **Caminho de Registro:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **Caminho do registo:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
 
     **Tipo:** REG_SZ
 
     **Valor:** LastUpdatedTime
 
     > [!TIP]
-        > No caminho do Registro, <*MicrosoftRMS_FQDN*> refere-se ao FQDN do serviço Microsoft RMS. Se você quiser verificar este valor:
+        > No caminho do registo, *MicrosoftRMS_FQDN*> refere-se ao seu FQDN do serviço Microsoft RMS. Se quiser verificar este valor:
 
-    > 1.  Execute o cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
-    > 2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**
+    > 1.  Execute o cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se ainda não instalou o módulo do Windows PowerShell para o Azure RMS, consulte [Instalar o Windows PowerShell para o Azure Rights Management](install-powershell.md).
+    > 2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**.
     > 
     >     Por exemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
-    > 3.  No valor, remova **https://** e **/_wmcs/licensing** dessa cadeia de caracteres. O valor restante é o FQDN do serviço Microsoft RMS. Em nosso exemplo, o FQDN do serviço Microsoft RMS seria o seguinte valor:
+    > 3.  No valor, remova **https://** e **/_wmcs/licensing** desta cadeia. O valor restante é o seu FQDN do serviço Microsoft RMS. No nosso exemplo, o FQDN do serviço Microsoft RMS teria o seguinte valor:
     > 
     >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-2.  Exclua a seguinte pasta e todos os arquivos que ela contém: **%localappdata%\Microsoft\MSIPC\Templates**
+2.  Elimine a seguinte pasta e todos os ficheiros nela contidos: **%localappdata%\Microsoft\MSIPC\Templates**
 
-3.  Reinicie seus aplicativos do Office e instâncias do Explorador de arquivos.
+3.  Reinicie as suas aplicações do Office e instâncias do Explorador de Ficheiros.
 
-## Somente Office 2010: como forçar uma atualização de um modelo personalizado alterado
-Ao editar o registro nos computadores que executam o Office 2010, você pode definir um valor para que os modelos alterados sejam atualizados em computadores sem esperar que os usuários façam logoff e logon novamente. Você também pode forçar uma atualização imediata excluindo os dados existentes em um valor de registro.
+## Apenas para Office 2010: como forçar uma atualização de um modelo personalizado modificado
+Ao editar o registo nos computadores ao executar o Office 2010, pode definir um valor para que os modelos alterados sejam atualizados em computadores sem ter de esperar que os utilizadores terminem sessão e voltem a iniciá-la. Também pode forçar uma atualização imediata ao eliminar os dados existentes num valor de registo.
 
 > [!WARNING]
-> Se o Editor de Registro for usado de forma incorreta, podem ocorrer problemas graves que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que seja possível solucionar problemas resultantes do uso incorreto do Editor de Registro. Use o Editor de Registro por sua conta e risco.
+> A utilização incorreta do Editor de Registo poderá causar problemas graves que exijam a reinstalação do sistema operativo. A Microsoft não garante que consiga resolver os problemas resultantes da utilização incorreta do Editor de Registo. A utilização do Editor de Registo é da exclusiva responsabilidade do utilizador.
 
 ### Para alterar a frequência de atualização
 
-1.  Usando um editor de registro, crie um novo valor de registro denominado **UpdateFrequency** e defina um valor inteiro para os dados que especifica a frequência em dias para baixar todas as alterações para um modelo baixado. Use a tabela a seguir para localizar o caminho do registro para criar esse novo valor de registro.
+1.  Através de um editor de registo, crie um novo valor de registo com o nome **UpdateFrequency** e defina um valor inteiro para os dados, que especifica a frequência em dias para transferir alterações para um modelo transferido. Utilize a seguinte tabela para localizar o caminho do registo para criar este novo valor de registo.
 
-    **Caminho de Registro:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
+    **Caminho do registo:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
 
     **Tipo:** REG_DWORD
 
     **Valor:** UpdateFrequency
 
-2.  Se você quiser forçar uma atualização imediata dos modelos, vá para o próximo procedimento. Caso contrário, reinicie os aplicativos do Office agora.
+2.  Se quiser forçar uma atualização imediata dos modelos, avance para o procedimento seguinte. Caso contrário, reinicie as aplicações do Office agora.
 
 ### Para forçar uma atualização imediata
 
-1.  Usando um editor de registro, exclua os dados do valor **LastUpdatedTime** . Por exemplo, os dados poderão exibir **2015-04-20T15:52**; exclua 2015-04-20T15:52 para que nenhum dado seja exibido. Use a tabela a seguir para localizar o caminho do registro de forma a excluir esses dados de valor de registro.
+1.  Através de um editor de registo, elimine os dados do valor **LastUpdatedTime**. Por exemplo, os dados poderão apresentar **2015-04-20T15:52**. Elimine 2015-04-20T15:52 para não serem apresentados dados. Utilize a seguinte tabela para localizar o caminho do registo para eliminar os dados deste valor de registo.
 
-    **Caminho de Registro:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
+    **Caminho do registo:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
 
     **Tipo:** REG_SZ
 
     **Valor:** lastUpdatedTime
 
 
-2.  Exclua a seguinte pasta e todos os arquivos que ela contém: **%localappdata%\Microsoft\MSIPC\Templates**
+2.  Elimine a seguinte pasta e todos os ficheiros nela contidos: **%localappdata%\Microsoft\MSIPC\Templates**
 
-3.  Reinicie seus aplicativos do Office.
+3.  Reinicie as aplicações do Office.
 
-## Consulte também
-[Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
+## Consulte Também
+[Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
 <!--HONumber=May16_HO1-->
 

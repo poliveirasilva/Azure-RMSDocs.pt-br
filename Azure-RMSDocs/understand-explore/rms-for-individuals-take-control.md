@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Como os administradores podem controlar as contas criadas para o RMS para pessoas físicas | Azure RMS
+title: Como os administradores podem controlar as contas criadas para o RMS para indivíduos | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -27,29 +27,29 @@ ms.suite: ems
 
 
 
-# Como os administradores podem controlar as contas criadas para o RMS para pessoas físicas
+# Como os administradores podem controlar as contas criadas para o RMS para indivíduos
 
 *Aplica-se a: Azure Rights Management*
 
 
-Se você não deseja converter o RMS de assinatura para pessoas físicas da sua organização em uma assinatura paga, você ainda pode controlar as contas de usuário no diretório do Azure que foi criado para a sua organização das seguintes maneiras:
+Se não pretender converter a subscrição do RMS para indivíduos da sua organização para uma subscrição paga, pode continuar a controlar as contas de utilizadores no diretório do Azure que foi criado para a sua organização das seguintes formas:
 
--   Implemente soluções de integração de diretório para o Azure Active Directory e sua infraestrutura de Serviços de Domínio do Active Directory. É possível sincronizar contas e senhas para que os usuários não precisem criar novas contas para usar o Rights Management, e suas políticas de senha no local serão aplicáveis ​​às novas contas de usuário do Azure. Também é possível sincronizar senhas para que os usuários não precisem se lembrar de uma senha diferente para usar o Rights Management.
+-   Implemente soluções de integração de diretórios para o Azure Active Directory e a sua infraestrutura dos Serviços de Domínio do Active Directory. Pode sincronizar as contas e as palavras-passe para que os utilizadores não tenham de criar novas contas para utilizar o Rights Management e as políticas de palavra-passe no local serão aplicadas às novas contas de utilizadores do Azure. De igual modo, pode sincronizar as palavras-passe para que os utilizadores não tenham de memorizar uma palavra-passe diferente para utilizar o Rights Management.
 
--   Você pode impedir que os usuários se inscrevam para usar o Azure Rights Management com a assinatura do RMS para pessoas físicas. Na maioria dos casos, há pouca vantagem em fazer isso, porque os usuários compartilharão arquivos sem proteção (o que poderia colocar sua empresa em risco) ou usarão outro mecanismo de proteção de arquivos que não dá ao departamento de TI a opção de acessar os dados. No entanto, se você quiser impedir que usuários se inscrevam para usar o RMS para pessoas físicas, efetue uma das ações a seguir após assumir a propriedade do diretório da sua organização no Azure:
+-   Pode impedir que os utilizadores se inscrevam para utilizar o Azure Rights Management com a subscrição do RMS para indivíduos. Na maioria dos casos, esta ação não traz grandes vantagens porque os utilizadores partilharão ficheiros sem proteção (o que pode colocar a sua empresa em risco) ou utilizarão outro mecanismo de proteção de ficheiros que não proporciona ao departamento de TI a opção de aceder aos dados. No entanto, se pretender impedir que os utilizadores se inscrevam para utilizar o RMS para indivíduos, efetue uma das seguintes ações depois de se tornar o proprietário do diretório da sua organização no Azure:
 
-    -   Impedir todos os usuários de obterem assinaturas de autoatendimento, que inclui o RMS para pessoas físicas.  No momento, não é possível definir isto por serviço; a configuração se aplica a todas as assinaturas do Azure que usam o processo de autoatendimento. Para fazer isso, defina o parâmetro **AllowAdHocSubscriptions** como falso com o cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) do módulo do Windows PowerShell para o Azure Active Directory. Por exemplo, **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
+    -   Impeça todos os utilizadores de se inscreverem em subscrições self-service, incluindo o RMS para indivíduos.  Atualmente, não é possível configurar esta opção por serviço; a definição aplica-se a todas as subscrições do Azure que utilizam o processo self-service. Para o fazer, defina o parâmetro **AllowAdHocSubscriptions** como false com o cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) do módulo do Windows PowerShell para o Azure Active Directory. Por exemplo: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   Impedir os usuários de criarem uma nova conta no Azure, o que significa que somente os usuários que já têm uma conta no Azure podem obter assinaturas de autoatendimento, que inclui o RMS para pessoas físicas.  Para fazer isso, defina o parâmetro **AllowEmailVerifiedUsers** como falso com o cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) do módulo do Windows PowerShell para o Azure Active Directory. Por exemplo, **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
+    -   Impeça que os utilizadores criem uma nova conta no Azure, o que significa que apenas os utilizadores que já têm uma conta no Azure podem inscrever-se em subscrições self-service, incluindo o RMS para indivíduos.  Para o fazer, defina o parâmetro **AllowEmailVerifiedUsers** como false com o cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) do módulo do Windows PowerShell para o Azure Active Directory. Por exemplo: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
-    -   Sincronize sua infraestrutura de serviços de domínio do Active Directory com o Active Directory do Azure. Essa ação impede que novas contas sejam criadas quando os usuários obtêm assinaturas de autoatendimento, como o RMS para pessoas físicas, e você pode excluir ou desativar contas que foram criadas anteriormente no diretório do Azure.
+    -   Sincronize a sua infraestrutura dos Serviços de Domínio do Active Directory com o Azure Active Directory. Esta ação impede que novas contas sejam criadas quando os utilizadores se inscrevem em subscrições self-service, tais como o RMS para indivíduos, e pode eliminar ou desativar contas que foram anteriormente criadas no diretório do Azure.
 
-Para controlar as contas de usuário no diretório do Azure ou para impedir que os usuários se inscrevam no RMS para indivíduos, você deve ter uma assinatura do Azure e possuir o diretório. Se você ainda não tiver uma assinatura do Azure, você poderá obtê-la sem custos adicionais. Se um diretório foi criado automaticamente para você durante o processo de autoatendimento, aproprie-se do domínio que foi usado para criá-lo. Se você já possui um diretório no Azure, mas os usuários especificaram um novo domínio que você usa em sua organização, mescle esse domínio em seu diretório existente. Para obter mais informações, consulte as instruções em [O que é a inscrição de autoatendimento para o Azure?](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)
+Para controlar as contas de utilizador no diretório do Azure ou impedir que os utilizadores se inscrevam no RMS para indivíduos, tem de ter uma subscrição do Azure e ser o proprietário do diretório. Se ainda não tiver uma subscrição do Azure, pode obter uma gratuitamente. Se um diretório foi criado automaticamente durante o processo self-service, torne-se o proprietário do domínio que foi sido utilizado para o criar. Se já possui um diretório no Azure, mas os utilizadores especificaram um novo domínio que utiliza na sua organização, intercale esse domínio com o seu diretório existente. Para mais informações, consulte as instruções em [O que é a Inscrição Self-Service para o Azure?](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)
 
 
-## Próximas etapas
+## Passos seguintes
 
-Se os usuários, em vez dos administradores, podem criar suas contas no Azure Active Directory para o RMS para pessoas físicas, como você pode saber se eles fizeram isso?  Consulte [Como saber se os usuários se inscreveram para o RMS para pessoas físicas](rms-for-individuals-identify-sign-up.md).
+Se os utilizadores, em vez dos administradores, puderem criar as respetivas contas no Azure Active Directory para o RMS para indivíduos, como pode descobrir se fizeram isto?  Consulte [Como saber se os utilizadores se inscreveram no RMS para indivíduos](rms-for-individuals-identify-sign-up.md).
 
 
 <!--HONumber=Apr16_HO4-->

@@ -29,36 +29,36 @@ ms.suite: ems
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Como o Office 365 oferece suporte nativo ao Azure RMS, nenhuma configuração do computador cliente é necessária para oferecer suporte aos recursos do gerenciamento de direitos de informação (IRM) para aplicativos como Word, Excel, PowerPoint, Outlook e o Outlook Web App. Tudo o que os usuários precisam fazer é entrar em seus aplicativos do Office com suas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] e eles poderão proteger arquivos e emails, e usar arquivos e emails que foram protegidos por outras pessoas.
+Como o Office 365 suporta nativamente o Azure RMS, não é necessária nenhuma configuração de computador cliente para suportar as funcionalidades de gestão de direitos de informação (IRM) em aplicações como o Word, o Excel, o PowerPoint, o Outlook e o Outlook Web App. Os utilizadores só têm de iniciar sessão nas aplicações do Office com as respetivas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] para poderem proteger ficheiros e e-mails e utilizar ficheiros e e-mails protegidos por outras pessoas.
 
-No entanto, recomendamos que você complemente esses aplicativos com o aplicativo de compartilhamento do Rights Management, de modo que os usuários se beneficiem do suplemento do Office. Para mais informações, consulte [Aplicativo de compartilhamento do Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
+No entanto, recomendamos que complemente estas aplicações com a aplicação de partilha Rights Management, para que os utilizadores possam beneficiar do suplemento do Office. Para mais informações, consulte [Rights Management sharing application: Installation and configuration for clients (Aplicação de partilha Rights Management: instalação e configuração para clientes – em inglês)](configure-sharing-app.md).
 
-## Exchange Online: Configuração do IRM
-Para configurar o Exchange Online para suportar o Azure RMS, é necessário configurar o gerenciamento de direitos de informação (IRM) para o Exchange Online. Para fazer isso, use o Windows PowerShell (sem necessidade de instalar um módulo separado) e execute os [comandos do PowerShell para Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
+## Exchange Online: Configuração da IRM
+Para configurar o Exchange Online para suportar o Azure RMS, tem de configurar o serviço de gestão de direitos de informação (IRM) para o Exchange Online. Para isso, tem de utilizar o Windows PowerShell (não é necessário instalar um módulo separado) e executar os [comandos do PowerShell para o Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
 
 > [!NOTE]
-> No momento não é possível configurar o Exchange Online para suportar o Azure RMS se você estiver usando uma chave de locatário gerenciada pelo cliente (BYOK) para o Azure RMS, em vez da configuração padrão de uma chave de locatário gerenciada pela Microsoft. Para obter mais informações, consulte [Preços e restrições do BYOK](../plan-design/byok-price-restrictions.md).
+> Atualmente, não pode configurar o Exchange Online para suportar o Azure RMS caso esteja a utilizar uma chave de inquilino gerida pelo cliente (BYOK) para o Azure RMS, em vez da configuração predefinida de uma chave de inquilino gerida pela Microsoft. Para mais informações, consulte [BYOK pricing and restrictions (Preços e restrições do BYOK – em inglês)](../plan-design/byok-price-restrictions.md).
 >
-> Se você tentar configurar o Exchange Online quando o Azure RMS estiver usando o BYOK, o comando para importar a chave (etapa 5, no seguinte procedimento) falhará com a mensagem de erro **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
+> Se tentar configurar o Exchange Online quando o Azure RMS está a utilizar uma BYOK, o comando para importar a chave (passo 5 no procedimento seguinte) falha com a mensagem de erro **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
 
-As seguintes etapas fornecem um conjunto comum de comandos que você executaria para habilitar o Exchange Online para usar o Azure RMS:
+Os passos seguintes fornecem um conjunto típico de comandos que executaria para ativar o Exchange Online de forma a utilizar o Azure RMS:
 
-1.  Se esta for a primeira vez que você usou o Windows PowerShell para o Exchange Online no seu computador, você deve configurar o Windows PowerShell para executar scripts assinados. Iniciar sessão do Windows PowerShell usando a opção **Executar como administrador** e em seguida, digite:
+1.  Se esta é a primeira vez que utiliza o Windows PowerShell para o Exchange Online no seu computador, tem de configurar o Windows PowerShell para executar scripts assinados. Inicie sessão do Windows PowerShell através da opção **Executar como administrador** e, em seguida, escreva:
 
     ```
     Set-ExecutionPolicy RemoteSigned
     ```
 
-2.  Na sua sessão do Windows PowerShell, entre no Exchange Online usando uma conta que está habilitada para acesso remoto do Shell. Por padrão, todas as contas criadas no Exchange Online são ativadas para acesso remoto do Shell, mas essa função pode ser desabilitada (e habilitada) usando o comando [Set-User &lt;UserIdentity&gt; -RemotePowerShellEnabled](https://technet.microsoft.com/library/jj984292%28v=exchg.160%29.aspx).
+2.  Na sessão do Windows PowerShell, inicie sessão no Exchange Online com uma conta ativada para acesso remoto à Shell. Por predefinição, todas as contas criadas no Exchange Online têm o acesso remoto à Shell ativado, embora possa desativar (e ativar) esta funcionalidade através do comando [Set-User &lt;UserIdentity&gt; -RemotePowerShellEnabled](https://technet.microsoft.com/library/jj984292%28v=exchg.160%29.aspx).
 
-    Para entrar, digite:
+    Para iniciar sessão, escreva:
 
     ```
     $Cred = Get-Credential
     ```
-    Na caixa de diálogo de **solicitação de credencial do Windows PowerShell** , forneça seu nome e senha de usuário do Office 365.
+    Na caixa de diálogo **Pedido de Credencial do Windows PowerShell**, forneça o seu nome de utilizador e palavra-passe do Office 365.
 
-3.  Conecte-se ao serviço Exchange Online executando os seguintes dois comandos:
+3.  Execute os dois comandos seguintes para ligar ao serviço Exchange Online:
 
     ```
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
@@ -68,9 +68,9 @@ As seguintes etapas fornecem um conjunto comum de comandos que você executaria 
     Import-PSSession $Session
     ```
 
-4.  Especifique a localização da chave de locatário do Azure RMS de acordo com o local em que foi criado o locatário da sua organização:
+4.  Especifique a localização da chave de inquilino do Azure RMS, em conformidade com a localização onde foi criado o inquilino da sua empresa:
 
-    Para a América do Norte (e assinaturas do governo):
+    Para a América do Norte (e subscrições para a administração pública):
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
@@ -91,102 +91,102 @@ As seguintes etapas fornecem um conjunto comum de comandos que você executaria 
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
-5.  Importar dados de configuração do Azure RMS para o Exchange Online, na forma de domínio de publicação confiável (TPD). Isso inclui a chave de locatário do Azure RMS e modelos do Azure RMS:
+5.  Importe dados de configuração a partir do Azure RMS para o Exchange Online sob a forma de um domínio de publicação fidedigno (TPD). Isto inclui a chave de inquilino do Azure RMS e modelos do Azure RMS:
 
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -name "RMS Online"
     ```
-    Neste comando, usamos o nome de **RMS Online** para o nome base do TPD para o Azure RMS no Exchange Online. Depois que o TPD é importado, ele é nomeado **RMS Online - 1** no Exchange Online.
+    Neste comando, utilizámos o nome **RMS Online** como nome de base do TPD para o Azure RMS no Exchange Online. Após a importação do TPD, terá o nome **RMS Online – 1** no Exchange Online.
 
-6.  Habilite a funcionalidade do Azure RMS para que os recursos do IRM estejam disponíveis para o Exchange Online:
+6.  Ative a funcionalidade do Azure RMS para que as funcionalidades da IRM estejam disponíveis no Exchange Online:
 
     ```
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
-    Após executar esse comando, o gerenciamento de direitos é habilitado automaticamente para o cliente do Outlook, Outlook Web app e Exchange Active Sync.
+    Após executar este comando, o Rights Management é automaticamente ativado para o cliente do Outlook, o Outlook Web App e o Exchange Active Sync.
 
-7.  Opcionalmente, teste se essa configuração é bem-sucedida, usando o seguinte comando:
+7.  Opcionalmente, pode testar se esta configuração tem êxito através do seguinte comando:
 
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    Por exemplo, **Test-IRMConfiguration -Sender  adams@contoso.com**
+    Por exemplo: **Test-IRMConfiguration -Sender andrade@contoso.com**
 
-    Esse comando executa uma série de verificações que inclui verificação da conectividade ao serviço, recuperação da configuração, recuperação de todos os modelos, licenças e URIs. Na sessão do Windows PowerShell, você verá os resultados de cada um e no final, se tudo passa essas verificações: **RESULTADO GERAL: PASSAGEM**
+    Este comando executa um conjunto de verificações que inclui a verificação da conectividade ao serviço, a obtenção da configuração, a obtenção de URIs, licenças e modelos. Na sessão do Windows PowerShell, verá os resultados de cada verificação e, no final, se nenhuma delas encontrar problemas, verá a mensagem: **RESULTADO GERAL: APROVADO**
 
-8.  Desconecte a sua sessão remota do PowerShell:
+8.  Desligue a sua sessão remota do PowerShell:
 
     ```
     Remove-PSSession $Session
     ```
 
-Os usuários agora podem proteger suas mensagens de email usando o Azure RMS. Por exemplo, no Outlook Web App, selecione **Definir permissões** no menu estendido (**...**) e, em seguida, escolha **Não Encaminhar** ou um dos modelos disponíveis para aplicar a proteção de informações para mensagem de email e anexos. No entanto, como o Outlook Web App armazena em cache a interface do usuário por um dia, aguarde esse período de tempo de espera antes de tentar aplicar proteção de informações para mensagens de email e depois de executar estes comandos de configuração. Antes que a interface do usuário seja atualizada para refletir a nova configuração, você não verá as opções do menu **definir permissões** .
+Agora, os utilizadores podem proteger as suas mensagens de email através do Azure RMS. Por exemplo, no Outlook Web App, selecione **Definir permissões** no menu expandido (**...**) e, em seguida, selecione **Não Reencaminhar** ou um dos modelos disponíveis para aplicar a proteção da informação à mensagem de e-mail e respetivos anexos. Contudo, como o Outlook Web App coloca a IU em cache durante um dia, espere que este período de tempo termine antes de tentar aplicar a proteção da informação às mensagens de e-mail e depois de executar estes comandos de configuração. Antes da atualização da IU para refletir a nova configuração, não verá nenhuma opção no menu **Definir permissões**.
 
 > [!IMPORTANT]
-> Se você criar novos [modelos personalizados](configure-custom-templates.md) para o Azure RMS ou atualizar os modelos, todas as vezes, você deverá executar o seguinte comando do PowerShell do Exchange Online (se necessário, execute as etapas 2 e 3 primeiro) para sincronizar essas alterações para o Exchange Online: `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> Se criar novos [modelos personalizados](configure-custom-templates.md) para o Azure RMS ou atualizar os modelos, de cada vez que o fizer, terá de executar o seguinte comando do Exchange Online PowerShell (se for necessário, execute primeiro os passos 2 e 3) para sincronizar estas alterações com o Exchange Online: `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
-Como um administrador do Exchange, agora você pode configurar recursos que se aplicam à proteção de informações automaticamente, como [regras de transporte](https://technet.microsoft.com/library/dd302432.aspx), [políticas de DLP (prevenção de perda de dados)](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) e [caixa postal protegida](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unificação de Mensagens).
+Como administrador do Exchange, já pode configurar funcionalidades que apliquem automaticamente a proteção da informação, como, por exemplo, [regras de transporte](https://technet.microsoft.com/library/dd302432.aspx), [políticas de prevenção de perda de dados (DLP)](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) e [voice mail protegido](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
 
-Para obter instruções detalhadas sobre como configurar o Exchange Online para habilitar a funcionalidade do IRM, consulte a documentação na biblioteca do Exchange. Por exemplo:
+Para obter instruções detalhadas para configurar o Exchange Online de forma a ativar a funcionalidade IRM, consulte a documentação na biblioteca do Exchange. Por exemplo:
 
--   [Conexão com o Exchange Online usando o PowerShell remoto](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
+-   [Connect to Exchange Online using remote PowerShell (Ligar ao Exchange Online através do PowerShell remoto – em inglês)](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
 
--   [Configurar o IRM para usar o Azure Rights Management](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)
+-   [Configure IRM to use Azure Rights Management (Configurar a IRM para utilizar o Azure Rights Management – em inglês)](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)
 
-### Criptografia de mensagens do Office 365
-Execute as mesmas etapas, conforme documentado na seção anterior, mas se você não quiser que os modelos sejam exibidos, antes da etapa 6, execute o seguinte comando para impedir que os modelos IRM estejam disponíveis no cliente do Outlook e no Outlook Web App: `Set-IRMConfiguration -ClientAccessServerEnabled $false`
+### Encriptação de Mensagens do Office 365
+Execute os mesmos passos conforme indicado na secção anterior. Contudo, se não pretender que os modelos sejam apresentados, antes de chegar ao passo 6, execute o comando seguinte para impedir que os modelos IRM estejam disponíveis no Outlook Web App e no cliente do Outlook: `Set-IRMConfiguration -ClientAccessServerEnabled $false`
 
-Em seguida, você está pronto para configurar [regras de transporte](https://technet.microsoft.com/library/dd302432.aspx) para modificar automaticamente a segurança da mensagem quando os destinatários estão localizados fora da organização e selecione a opção **Apply Office 365 Message Encryption** .
+Em seguida, estará pronto para configurar [regras de transporte](https://technet.microsoft.com/library/dd302432.aspx), para modificar automaticamente a segurança da mensagem quando os destinatários estão fora da organização, e selecionar a opção **Aplicar a Encriptação de Mensagens do Office 365**.
 
-Para obter mais informações sobre criptografia de mensagem, consulte [criptografia no Office 365](https://technet.microsoft.com/library/dn569286.aspx) na biblioteca do Exchange.
+Para mais informações sobre a encriptação de mensagens, consulte [Encryption in Office 365 (Encriptação no Office 365 – em inglês)](https://technet.microsoft.com/library/dn569286.aspx) na biblioteca do Exchange.
 
-## SharePoint Online e OneDrive para a empresa: Configuração do IRM
-Para configurar o SharePoint Online para oferecer suporte ao One Drive para Empresas, primeiro deve ativar o serviço de gerenciamento de direitos de informação (IRM) para o SharePoint Online através do centro de administração do SharePoint Online. Em seguida, os proprietários de sites podem proteger por IRM as suas listas do SharePoint e as bibliotecas de documentos e os usuários podem proteger por IRM sua biblioteca do OneDrive para Empresas para que os documentos que são guardados na mesma e compartilhados com outras pessoas, sejam automaticamente protegidos pelo Azure RMS.
+## SharePoint Online e OneDrive para Empresas: configuração de IRM
+Para configurar o SharePoint Online e o OneDrive para Empresas para suportar o Azure RMS, primeiro tem de ativar o serviço de gestão de direitos de informação (IRM) para o SharePoint Online através do centro de administração do SharePoint. Em seguida, os proprietários de sites podem proteger as respetivas listas e bibliotecas de documentos do SharePoint com IRM e, além disso, os utilizadores podem proteger a respetiva biblioteca do OneDrive para Empresas com a IRM para que os documentos aí guardados e partilhados com outras pessoas, sejam automaticamente protegidos pelo Azure RMS.
 
-Para habilitar o serviço de gestão de direito de informação (IRM) para o SharePoint Online, consulte as seguintes instruções no site do Office:
+Para ativar o serviço de gestão de direitos de informação (IRM) para o SharePoint Online, consulte as instruções seguintes a partir do site do Office:
 
--   [Configurar o Gerenciamento de Direitos de Informação (IRM) no centro de administração do SharePoint](http://office.microsoft.com/office365-sharepoint-online-enterprise-help/set-up-information-rights-management-irm-insharepoint-online-HA102895193.aspx)
+-   [Configurar a Gestão de Direitos de Informação (IRM) no centro de administração do SharePoint](http://office.microsoft.com/office365-sharepoint-online-enterprise-help/set-up-information-rights-management-irm-insharepoint-online-HA102895193.aspx)
 
-Essa configuração é feita pelo administrador do Office 365.
+Esta configuração é efetuada pelo administrador do Office 365.
 
-### Configurando o IRM para bibliotecas e listas
-Depois que você tiver ativado o serviço IRM para SharePoint, os proprietários de sites podem proteger por IRM suas bibliotecas de documentos e listas do SharePoint. Para obter instruções, consulte o seguinte no site do Office:
+### Configurar a IRM para listas e bibliotecas
+Após ativar o serviço de IRM para o SharePoint, os proprietários de sites podem proteger as respetivas listas e bibliotecas de documentos do SharePoint com a IRM. Para obter instruções, consulte o seguinte a partir do site do Office:
 
--   [Aplicar o Gerenciamento de Direitos de Informação a uma lista ou biblioteca](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
+-   [Aplicar a Gestão de Direitos de Informação a uma lista ou biblioteca](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
 
-Essa configuração é feita pelo administrador local do SharePoint.
+Esta configuração é efetuada pelo administrador do site do SharePoint.
 
-### Configurando o IRM para OneDrive para Empresas
-Depois que você tiver ativado o serviço IRM para o SharePoint Online, a biblioteca de documentos OneDrive for Business dos usuários poderá, então, ser configurada para proteção do Rights Management.  Os usuários podem configurá-la para si mesmos usando o ícone **Configurações** em seu OneDrive. Embora os administradores não possam configurar o Rights Management para os usuários do OneDrive for Business usando o centro de administração do SharePoint, você pode fazê-lo usando o Windows PowerShell.
+### Configurar a IRM para o OneDrive para Empresas
+Após ativar o serviço de IRM para o SharePoint Online, a biblioteca de documentos do OneDrive para Empresas dos utilizadores pode ser configurada para a proteção Rights Management.  Os próprios utilizadores podem configurar isto através do ícone **Definições** no respetivo OneDrive. Embora os administradores não possam configurar o Rights Management para o OneDrive para Empresas dos utilizadores através do centro de administração do SharePoint, o utilizador pode fazê-lo através do Windows PowerShell.
 
 > [!NOTE]
-> Para mais informações sobre como configurar o OneDrive for Business, consulte a documentação do Office, [Configurar o OneDrive for Business no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
+> Para mais informações sobre como configurar o OneDrive para Empresas, consulte a documentação do Office, [Configurar o OneDrive para Empresas no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
 
-#### Configuração para usuários
-Dê essas instruções aos usuários para que eles possam configurar o OneDrive for Business e proteger seus arquivos corporativos por IRM.
+#### Configuração para os utilizadores
+Dê estas instruções aos utilizadores para que possam configurar o OneDrive para Empresas e proteger os respetivos ficheiros empresariais com IRM.
 
-1.  No OneDrive, clique no ícone **Configurações** para abrir o menu Configurações e, em seguida, clique em **Conteúdo do Site**.
+1.  No OneDrive, clique no ícone **Definições** para abrir o menu Definições e, em seguida, clique em **Conteúdos do Site**.
 
-2.  Passe o mouse sobre o bloco **Documentos**, selecione as reticências (**...**) e, em seguida, clique em **CONFIGURAÇÕES.**
+2.  Paire o rato sobre o mosaico **Documentos**, selecione as reticências (**...**) e, em seguida, clique em **DEFINIÇÕES**.
 
-3.  Na página **Configurações**, na seção **Permissões e Gerenciamento**, clique em **Gerenciamento de Direitos de Informação**.
+3.  Na página **Definições**, na secção **Permissões e Gestão**, clique em **Gestão de Direitos de Informação**.
 
-4.  Na página **Configurações de Gerenciamento de Direitos de Informação**, marque a caixa de seleção **Restringir permissões nesta biblioteca no download**, especifique sua opção de nome e uma descrição para as permissões e, opcionalmente, clique em **MOSTRAR OPÇÕES** para configurar opções adicionais e depois clique em **OK**.
+4.  Na página **Definições de Gestão de Direitos de Informação**, selecione a caixa de verificação **Restringir as permissões nesta biblioteca durante a transferência**, especifique a sua escolha de nome e uma descrição para as permissões e, opcionalmente, clique em **MOSTRAR OPÇÕES** para definir configurações opcionais e, em seguida, clique em **OK**.
 
-    Para obter mais informações sobre as opções de configuração, consulte as instruções em [Aplicar Gerenciamento de Direitos de Informações para uma lista ou biblioteca](https://support.office.com/article/Apply-Information-Rights-Management-to-a-list-or-library-3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1) na documentação do Office.
+    Para mais informações sobre as opções de configuração, consulte as instruções em [Aplicar a Gestão de Direitos de Informação a uma lista ou biblioteca](https://support.office.com/article/Apply-Information-Rights-Management-to-a-list-or-library-3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1) na documentação do Office.
 
-Como esta configuração confia nos usuários em vez de confiar em um administrador para proteger a biblioteca do OneDrive for Business  por IRM, instrua os usuários sobre os benefícios de proteger seus arquivos e como fazê-lo. Por exemplo, explique que quando compartilham um documento do OneDrive para Empresas, somente as pessoas autorizadas podem acessá-lo com quaisquer restrições que forem configuradas, mesmo se o arquivo é renomeado e copiado em outro lugar.
+Como esta configuração se baseia nos utilizadores em vez de num administrador para proteger a respetiva biblioteca do OneDrive para Empresas com a IRM, informe os utilizadores sobre os benefícios de proteger os seus ficheiros e sobre como proceder nesse sentido. Por exemplo, explique que quando partilham um documento do OneDrive para Empresas, apenas as pessoas a quem concederem autorização poderão aceder ao mesmo, com as restrições que configurarem, mesmo que o nome e a localização do ficheiro tenham sido alterados.
 
-#### Configurações para administradores
-Embora você não possa configurar o IRM para usuários do OneDrive for Business usando o centro de administração do SharePoint, você pode fazê-lo usando o Windows PowerShell. Para ativar o IRM para essas bibliotecas, siga estas etapas:
+#### Configuração para administradores
+Embora não possa configurar a IRM para o OneDrive para Empresas dos utilizadores através do centro de administração do SharePoint, pode fazê-lo através do Windows PowerShell. Para ativar a IRM para estas bibliotecas, siga estes passos:
 
-1.  Baixe e instale o [SDK de componentes do cliente SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
+1.  Transfira e instale o [SDK de Componentes de Cliente do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
 
-2.  Baixe e instale o [Shell de gerenciamento do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
+2.  Transfira e instale a [Shell de Gestão do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
-3.  Copie o conteúdo do script a seguir e nomeie o arquivo Set-IRMOnOneDriveForBusiness.ps1 no seu computador.
+3.  Copie o conteúdo do seguinte script e, no seu computador, dê ao ficheiro o nome Set-IRMOnOneDriveForBusiness.ps1.
 
-    *&#42;&#42;Aviso de isenção de responsabilidade&#42;&#42;*: não há suporte para esse script de exemplo em qualquer serviço ou programa de suporte padrão da Microsoft. Esse script de exemplo é fornecido como está sem garantias de qualquer tipo.
+    *&#42;&#42;Exclusão de responsabilidade&#42;&#42;*: este script de exemplo não é suportado por qualquer serviço ou programa de suporte padrão da Microsoft. Este script de exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantia.
 
     ```
     # Requires Windows PowerShell version 3
@@ -549,51 +549,51 @@ Embora você não possa configurar o IRM para usuários do OneDrive for Business
     Disconnect-SPOService -ErrorAction SilentlyContinue
     ```
 
-4.  Examine o script e faça as seguintes alterações:
+4.  Reveja o script e efetue as seguintes alterações:
 
-    1.  Procure `$sharepointAdminCenterUrl` e substitua o valor de exemplo por sua própria URL do centro de administração do SharePoint.
+    1.  Procure o `$sharepointAdminCenterUrl` e substitua o valor de exemplo pelo seu próprio URL do centro de administração do SharePoint.
 
-        Você encontrará este valor como a URL base quando for ao centro de administração do SharePoint, e ele terá seguinte formato: https://*&lt;tenant_name&gt;*-admin.sharepoint.com
+        Pode encontrar este valor como o URL de base ao aceder ao centro de administração do SharePoint, com o seguinte formato: https://*&lt;nome_de_inquilino&gt;*-admin.sharepoint.com
 
-        Por exemplo, se o nome do locatário for "contoso", então, você deverá especificar: **https://contoso-admin.sharepoint.com**
+        Por exemplo, se o nome do inquilino for "contoso", tem de especificar: **https://contoso-admin.sharepoint.com**
 
-    2.  Procure `$tenantAdmin` e substitua o valor de exemplo por sua própria conta de administrador global totalmente qualificado para o Office 365.
+    2.  Procure o `$tenantAdmin` e substitua o valor de exemplo pela sua própria conta de administrador global completamente qualificado do Office 365.
 
-        Esse valor é o mesmo que você usa para entrar no portal de administrador do Office 365 como o administrador global e tem o seguinte formato: user_name@*&lt;tenant domain name&gt;*.com
+        Este valor é o mesmo que utiliza para iniciar sessão no portal de administração do Office 365 como administrador global e tem o seguinte formato: nome_de_utilizador@*&lt;nome de domínio do inquilino&gt;*.com
 
-        Por exemplo, se o nome de usuário do administrador global do Office 365 for "admin" para o domínio de locatário "contoso.com", você deverá especificar: **admin@contoso.com**
+        Por exemplo, se o nome de utilizador de administrador global do Office 365 for "admin" para o domínio de inquilino "contoso.com", tem de especificar: **admin@contoso.com**
 
-    3.  Procure `$webUrls` e substitua os valores de exemplo pelas URLs da web do OneDrive for Business dos seus usuários, adicionando ou excluindo quantas entradas forem necessárias.
+    3.  Procure os `$webUrls` e substitua os valores de exemplo pelos URLs da Web do OneDrive para Empresas dos seus utilizadores, adicionando ou eliminando tantas entradas quantas for necessário.
 
-        Como alternativa, consulte os comentários no script sobre como substituir essa matriz através da importação de um arquivo .CSV que contenha todas as URLs que você precisa configurar.  Fornecemos outro script de amostra para pesquisar automaticamente e extrair as URLs para preencher este arquivo .CSV. Quando você estiver pronto para fazer isso, expanda a seção [Script adicional para enviar todas as URLs do OneDrive for Business para um arquivo .CSV](#BKMK_Script_OD4B_URLS) imediatamente após estas etapas.
+        Em alternativa, veja os comentários no script sobre como substituir esta matriz ao importar um ficheiro .CSV que contenha todos os URLs que tem de configurar.  Fornecemos outro script de exemplo que permite procurar e extrair automaticamente os URLs para popular este ficheiro .CSV. Quando estiver pronto para efetuar este procedimento, expanda a secção [Script adicional para exportar todos os URLs do OneDrive para Empresas para um ficheiro .CSV](#BKMK_Script_OD4B_URLS) imediatamente após estes passos.
 
-        A URL da Web do OneDrive for Business do usuário tem o seguinte formato: https://*&lt;tenant name&gt;*-my.sharepoint.com/personal/*&lt;user_name&gt;*_*&lt;tenant name&gt;*_com
+        O URL da Web do OneDrive para Empresas do utilizador tem o seguinte formato: https://*&lt;nome do inquilino&gt;*-my.sharepoint.com/personal/*&lt;nome_de_utilizador&gt;*_*&lt;nome do inquilino&gt;*_com
 
-        Por exemplo, se o usuário no locatário contoso tiver um nome de usuário de "rsimone", você deverá especificar: **https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
+        Por exemplo, se o utilizador no inquilino contoso tiver o nome de utilizador "sferreira", tem de especificar: **https://contoso-my.sharepoint.com/personal/sferreira_contoso_com**
 
-    4.  Visto que estamos usando o script para configurar o OneDrive for Business, não altere o valor de **Documentos** para a variável `$listTitle`.
+    4.  Uma vez que estamos a utilizar o script para configurar o OneDrive para Empresas, não altere o valor da variável de **Documentos**`$listTitle`.
 
-    5.  Pesquise por `ADMIN INSTRUCTIONS`. Se você não fizer nenhuma alteração nesta seção, o OneDrive for Business do usuário será configurado para IRM com o título de política "Arquivos Protegidos" e a descrição "Esta política restringe o acesso a usuários autorizados".  Nenhuma outra opção de IRM será definida, o que provavelmente é apropriado para a maioria dos ambientes. No entanto, você poderá mudar o título da política e a descrição sugeridos e também adicionar outras opções de IRM que sejam apropriadas para seu ambiente. Consulte o exemplo comentado no script para ajudá-lo a construir seu próprio conjunto de parâmetros para o comando Set-IrmConfiguration.
+    5.  Procure as `ADMIN INSTRUCTIONS`. Se não efetuar alterações nesta secção, o OneDrive para Empresas do utilizador será configurado para a IRM com o título de política "Ficheiros Protegidos" e a descrição "Esta política restringe o acesso a utilizadores autorizados".  Não serão definidas outras opções de IRM, o que provavelmente será o mais adequado para a maioria dos ambientes. No entanto, pode alterar o título e a descrição sugeridos para a política, bem como adicionar outras opções de IRM que se adequem ao seu ambiente. Consulte o exemplo comentado no script para o ajudar a criar o seu próprio conjunto de parâmetros para o comando Set-IrmConfiguration.
 
-5.  Salve o script e assine-o. Se você não assinar o script (mais seguro), o Windows PowerShell deverá ser configurado em seu computador para executar scripts não assinados. Por exemplo, inicie uma sessão do Windows PowerShell com a opção **Executar como Administrador** e, em seguida, digite: **Set-ExecutionPolicy Unrestricted**. No entanto, essa configuração permite que todos os scripts não assinados sejam executados (menos seguro).
+5.  Guarde o script e assine-o. Se não assinar o script (mais seguro), tem de configurar o Windows PowerShell no seu computador para executar scripts não assinados. Para o fazer, execute uma sessão do Windows PowerShell com a opção **Executar como Administrador** e escreva: **Set-ExecutionPolicy Unrestricted**. No entanto, esta configuração permite executar todos os scripts não assinados (menos seguro).
 
-    Para mais informações sobre a assinatura de scripts do Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) na biblioteca de documentação do PowerShell.
+    Para mais informações sobre como assinar os scripts do Windows PowerShell, consulte [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) na biblioteca de documentação do PowerShell.
 
-6.  Execute o script e, se solicitado, forneça a senha para a conta de administrador do Office 365. Se você modificar o script e executá-lo na mesma sessão do Windows PowerShell, você não receberá uma solicitação para inserir suas credenciais.
+6.  Execute o script e, se lhe for pedido, forneça a palavra-passe da conta de administrador do Office 365. Se modificar o script e o executar na mesma sessão do Windows PowerShell, não lhe serão pedidas credenciais.
 
 > [!TIP]
-> Você também poderá usar este script para configurar o IRM para uma biblioteca do SharePoint Online. Para essa configuração, você provavelmente desejará habilitar a opção adicional **Não permitir que os usuários carreguem documentos sem suporte ao IRM** para garantir que a biblioteca contenha somente documentos protegidos.    Para isso, adicione o parâmetro `-IrmReject` ao comando Set-IrmConfiguration no script.
+> Também pode utilizar este script para configurar a IRM para uma biblioteca do SharePoint Online. Para esta configuração, recomenda-se que ative a opção adicional **Não permitir que os utilizadores carreguem documentos que não suportem a IRM**, para se certificar de que a biblioteca contém apenas documentos protegidos.    Para tal, adicione o parâmetro `-IrmReject` ao comando Set-IrmConfiguration no script.
 >
-> Você também precisará modificar a variável `$webUrls` (por exemplo, **https://contoso.sharepoint.com**) e a `$listTitle` variável (por exemplo, **$Reports**).
+> Também terá de modificar a variável `$webUrls` (por exemplo, **https://contoso.sharepoint.com**) e a variável `$listTitle` (por exemplo, **$Reports**).
 
-Se você precisar desabilitar o IRM para as bibliotecas do OneDrive for Business do usuário, consulte a seção [Script para desabilitar o IRM para OneDrive for Business](#script-to-disable-irm-for-onedrive-for-business).
+Se precisar de desativar a IRM para as bibliotecas do OneDrive para Empresas do utilizador, consulte a secção [Script para desativar a IRM para o OneDrive para Empresas](#script-to-disable-irm-for-onedrive-for-business).
 
-##### Script adicional para fornecer todas as URLs do OneDrive for Business em um arquivo .CSV
-Para a etapa 4c acima, você poderá usar o seguinte script do Windows PowerShell para extrair as URLs para todas as bibliotecas de usuários do OneDrive for Business, as quais você poderá, então, conferir, editar, se necessário, e depois importar para o script principal.
+##### Script adicional para exportar todos os URLs do OneDrive para Empresas para um ficheiro .CSV
+No passo 4c acima, pode utilizar o seguinte script do Windows PowerShell para extrair os URLs de todas as bibliotecas do OneDrive para Empresas dos utilizadores, os quais pode verificar e, se necessário, editar e, em seguida, importar para o script principal.
 
-Este script também requer o [SDK do SharePoint Online Client Components](http://www.microsoft.com/en-us/download/details.aspx?id=42038) e o [SharePoint Online Management Shell](http://www.microsoft.com/en-us/download/details.aspx?id=35588). Siga as mesmas instruções para copiá-lo e colá-lo, salve o arquivo localmente (por exemplo, "Report-OneDriveForBusinessSiteInfo.ps1"), modifique os valores `$sharepointAdminCenterUrl` e `$tenantAdmin` como antes e, em seguida, execute o script.
+Este script também requer o [SDK de Componentes de Cliente do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038) e a [Shell de Gestão do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=35588). Siga as mesmas instruções para o copiar e colar, guarde o ficheiro localmente (por exemplo, "Report-OneDriveForBusinessSiteInfo.ps1"), modifique os valores `$sharepointAdminCenterUrl` e `$tenantAdmin` como fez anteriormente e, em seguida, execute o script.
 
-*&#42;&#42;Aviso de isenção de responsabilidade&#42;&#42;*: não há suporte para esse script de exemplo em qualquer serviço ou programa de suporte padrão da Microsoft. Esse script de exemplo é fornecido como está sem garantias de qualquer tipo.
+*&#42;&#42;Exclusão de responsabilidade&#42;&#42;*: este script de exemplo não é suportado por qualquer serviço ou programa de suporte padrão da Microsoft. Este script de exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantia.
 
 ```
 # Requires Windows PowerShell version 3
@@ -813,12 +813,12 @@ function Add-CredentialToCredentialCache
 $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ```
 
-##### Script para desativar o IRM do OneDrive for Business
-Use o seguinte script de amostra se você precisar desativar o IRM do OneDrive for Business para usuários.
+##### Script para desativar a IRM para o OneDrive para Empresas
+Utilize o seguinte script de exemplo caso precise de desativar a IRM do OneDrive para Empresas dos utilizadores.
 
-Este script também requer o [SDK do SharePoint Online Client Components](http://www.microsoft.com/en-us/download/details.aspx?id=42038) e o [SharePoint Online Management Shell](http://www.microsoft.com/en-us/download/details.aspx?id=35588). Copie e cole o conteúdo, salve o arquivo localmente (por exemplo,"Disable-IRMOnOneDriveForBusiness.ps1") e modifique os valores `$sharepointAdminCenterUrl` e `$tenantAdmin`. Especifique as URLs do OneDrive for Business manualmente ou use o script na seção anterior para que você possa importá-las e, em seguida, execute o script.
+Este script também requer o [SDK de Componentes de Cliente do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038) e a [Shell de Gestão do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=35588). Copie e cole o conteúdo, guarde o ficheiro localmente (por exemplo, "Disable-IRMOnOneDriveForBusiness.ps1") e modifique os valores `$sharepointAdminCenterUrl` e `$tenantAdmin`. Especifique manualmente os URLs do OneDrive para Empresas ou utilize o script da secção anterior para poder importar os mesmos e, em seguida, execute o script.
 
-*&#42;&#42;Aviso de isenção de responsabilidade&#42;&#42;*: não há suporte para esse script de exemplo em qualquer serviço ou programa de suporte padrão da Microsoft. Esse script de exemplo é fornecido como está sem garantias de qualquer tipo.
+*&#42;&#42;Exclusão de responsabilidade&#42;&#42;*: este script de exemplo não é suportado por qualquer serviço ou programa de suporte padrão da Microsoft. Este script de exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantia.
 
 ```
 # Requires Windows PowerShell version 3

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Como os aplicativos dão suporte ao Azure Rights Management | Azure RMS
+title: Como é que as aplicações suportam o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,44 +25,44 @@ ms.suite: ems
 
 ---
 
-# Como os aplicativos dão suporte ao Azure Rights Management
+# Como é que as aplicações suportam o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Use as informações a seguir para ajudar a entender como os aplicativos de usuário final usados com mais frequência (como os aplicativos Office, Word, Excel, PowerPoint e Outlook) e serviços (como o Exchange e SharePoint) podem usar a Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para ajudar a proteger os dados da sua organização. 
-> [!NOTE] Para verificar os aplicativos e as versões aos quais o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) dá suporte, consulte [Requisitos para o Azure Rights Management](../get-started/requirements-azure-rms.md).
+Utilize as informações que se seguem para compreender melhor como as aplicações de utilizador final (como as aplicações do Office, Word, Excel, PowerPoint e Outlook) e serviços (como o Exchange e o SharePoint) utilizados mais frequentemente podem utilizar o Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para ajudar a proteger dados da sua organização. 
+> [!NOTE] Para verificar as aplicações e versões que o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) suporta, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
-Em alguns casos, a proteção de informações é aplicada automaticamente, de acordo com as políticas que você configurar. Por exemplo, esse é o caso de bibliotecas do SharePoint, arquivos confidenciais e regras de transporte do Exchange. Em outros casos, os usuários devem aplicar a proteção das informações diretamente em seus aplicativos, seja selecionando um modelo ou opções específicas. Por exemplo, este é o caso quando os usuários compartilham um arquivo por email ou protegem um arquivo no local, restringindo o acesso ou o uso a usuários selecionados ou usuários fora da organização.
+Em certos casos, a proteção de informações é aplicada automaticamente, de acordo com as políticas que configurar. Por exemplo, é este o caso com bibliotecas do SharePoint, ficheiros classificados e regras de transporte do Exchange. Noutros casos, os utilizadores têm de aplicar proteção de informações por si próprios nas respetivas aplicações, seja ao selecionar um modelo ou ao selecionar opções específicas. Por exemplo, é este o caso quando os utilizadores partilham um ficheiro por e-mail ou protegem um ficheiro no local ao restringir o acesso ou a utilização a utilizadores selecionados ou a utilizadores fora da organização.
 
-Os modelos facilita para os usuários (e administradores que configuram políticas) a aplicação do nível correto de proteção e restringir o acesso a pessoas dentro de sua organização. Embora o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] seja fornecido com dois modelos padrão, é recomendável criar modelos personalizados para reduzir as ocasiões em que eles precisam especificar as opções individuais. Para obter mais informações, consulte [Configurando modelos personalizados do Azure Rights Management](../deploy-use/configure-custom-templates.md).
+Os modelos fazem com que seja mais fácil para os utilizadores (e administradores que configuram políticas) aplicar o nível correto de proteção e restringir o acesso a pessoas dentro da sua organização. Embora o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] inclua dois modelos predefinidos, é provável que pretenda criar modelos personalizados para reduzir as vezes em que é necessário especificar opções individuais. Para mais informações, consulte [Configurar modelos personalizados para o Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-Para os casos em que os próprios usuários devem aplicar as informações de proteção, lembre-se de dar orientações e instruções sobre como e quando fazer isso. As instruções devem ser específicas para o aplicativo e as versões que eles usam e como usam, e as orientações sobre quando e como aplicar as informações de proteção devem ser adequadas para seu negócio. Para obter mais informações, consulte [Ajudar os usuários a proteger os arquivos usando o Azure Rights Management](../deploy-use/help-users.md).
+Para os casos em que os utilizadores têm de aplicar a proteção de informações por si próprios, certifique-se de que lhes faculta instruções e orientações sobre como e quando devem efetuá-la. As instruções devem ser específicas da aplicação e das versões que utilizarem e de como as utilizam, e a orientação para quando e como a proteção de informações deve ser aplicada adequadamente na sua empresa. Para mais informações, consulte [Ajudar os utilizadores a proteger ficheiros ao utilizar o Azure Rights Management](../deploy-use/help-users.md).
 
-Para obter informações de como configurar esses aplicativos para o Azure RMS, consulte [Configurando aplicativos para o Azure Rights Management](../deploy-use/configure-applications.md).
+Para obter informações acerca de como configurar estas aplicações para o Azure RMS, consulte [Configurar aplicações para o Azure Rights Management](../deploy-use/configure-applications.md).
 
-> [!TIP] Para obter exemplos e capturas de tela de aplicativos usando o Azure RMS, consulte [Azure RMS em ação: o que administradores e usuários veem](what-admins-users-see.md).
+> [!TIP] Para exemplos e capturas de ecrã das aplicações a utilizar o Azure RMS, consulte [O Azure RMS em ação: conteúdo visto pelos administradores e utilizadores](what-admins-users-see.md).
 
-Serviços de pesquisa podem se integrar ao Rights Management de maneiras diferentes. Por exemplo: 
+Os serviços de pesquisa podem ser integrados no Rights Management de diferentes formas. Por exemplo: 
 
-- Exchange Online e o Exchange Server usam indexação de serviço de indexação para que os emails protegidos do RMS de um usuário sejam automaticamente exibidos nos resultados da pesquisa. 
+- O Exchange Online e o Exchange Server utilizam a indexação do lado do serviço para que os e-mails protegidos por RMS de um utilizador sejam apresentados automaticamente nos respetivos resultados de pesquisa. 
 
-- O SharePoint Online e o SharePoint Server aplicam proteção RMS ao arquivos somente no download, o que significa que a indexação e os resultados da pesquisa no SharePoint não são afetados por essa solução de proteção de documento. No entanto, se você tiver um documento que deseja armazenar no SharePoint e não deve ser retornado nos resultados da pesquisa, o RMS protegerá o arquivo antes de carregá-lo no SharePoint.
+- O SharePoint Online e o SharePoint Server aplicam a proteção RMS aos ficheiros apenas durante a transferência, o que significa que a indexação e os resultados da pesquisa no SharePoint não são afetados por esta solução de proteção de documentos. No entanto, se tiver um documento que pretende armazenar no SharePoint e não deva ser devolvido nos resultados da pesquisa, proteja o ficheiro por RMS antes de o carregar para o SharePoint.
 
-- O Windows Desktop Search usa um índice compartilhado entre diferentes usuários do dispositivo e para manter os dados de documentos protegidos seguros, ele não indexa arquivos protegidos por RMS. Isso significa que embora os resultados da pesquisa não incluam arquivos protegidos, você pode ter certeza de que os arquivos que contêm dados confidenciais não serão exibidos nos resultados da pesquisa para outros usuários que podem entrar ou se conectar ao seu computador. 
+- A pesquisa do ambiente de trabalho do Windows utiliza um índice partilhado entre os diferentes utilizadores do dispositivo, pelo que, para manter a segurança dos dados nos documentos protegidos, não indexa os ficheiros protegidos por RMS. Isto significa que, apesar de os resultados da pesquisa não incluírem ficheiros que tenha protegido, pode ter a certeza de que os ficheiros com dados confidenciais não serão apresentados nos resultados da pesquisa para outros utilizadores que possam iniciar sessão ou ligar-se ao seu PC. 
 
 
 
-## Próximas etapas
+## Passos seguintes
 
-Saiba mais sobre como cada um dos seguintes aplicativos dá suporte para o Azure RMS:
+Saiba mais acerca de como cada um dos seguintes suporta o Azure RMS:
 
--   [Aplicativo de compartilhamento RMS para Windows e plataformas móveis](sharing-app-support.md)
+-   [Aplicação de partilha RMS para Windows e plataformas móveis](sharing-app-support.md)
 
--   [Aplicativos e serviços do Office](office-apps-services-support.md)
+-   [Aplicações e serviços do Office](office-apps-services-support.md)
 
--   [Servidores de arquivos que executam o Windows Server e usam o File Classification Infrastructure (FCI)](file-server-support.md)
+-   [Servidores de ficheiros que executam o Windows Server e utilizam a Infraestrutura de Classificação de Ficheiros (FCI)](file-server-support.md)
 
--   [Outros aplicativos que dão suporte às APIs do RMS](api-support.md)
+-   [Outras aplicações que suportam as APIs de RMS](api-support.md)
 
 
 

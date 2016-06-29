@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Outros aplicativos que dão suporte às APIs do RMS - Instalação e configuração | Azure RMS
+title: Outras aplicações que suportam as APIs de RMS – Instalação e configuração | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,19 +25,19 @@ ms.suite: ems
 
 ---
 
-# Outros aplicativos que dão suporte às APIs do RMS
+# Outras aplicações que suportam as APIs de RMS
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Use as seguintes informações para ajudá-lo a entender como Azure Rights Management (Azure RMS) pode dar suporte a outros aplicativos para proteger os dados da sua organização.
+Utilize as seguintes informações para compreender melhor como o Azure Rights Management (Azure RMS) pode suportar outras aplicações para proteger os dados da sua organização.
 
-Usando o SDK do RMS, os desenvolvedores podem gravar seus aplicativos internos de linha de negócios com suporte nativo do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. A integração da proteção de informações com esses aplicativos depende de como eles são gravados. Por exemplo, a integração pode ser automaticamente aplicada com uma exigência de interação mínima do usuário, ou, para uma experiência mais personalizada, os usuários podem ser solicitados a definir configurações para aplicar proteção de informações a arquivos. Para obter mais informações sobre o SDK, consulte o [Guia do desenvolvedor](../develop/developers-guide.md).
+Ao utilizar o SDK RMS, os programadores internos podem escrever as aplicações de linha de negócio para suportarem nativamente o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. A forma como a proteção de informações é integrada com estas aplicações depende da forma como estas são escritas. Por exemplo, a integração poderá ser automaticamente aplicada com interação do utilizador mínima necessária ou, para uma experiência mais personalizada, os utilizadores podem ser solicitados a configurar definições para aplicar proteção de informações aos ficheiros. Para mais informações sobre o SDK, consulte o [Guia para Programadores](../develop/developers-guide.md).
 
-Da mesma forma, muitos fornecedores de software oferecem aplicativos para dar soluções de proteção de informações, também conhecidos como produtos de gerenciamento de direitos corporativos (ERM). Um exemplo conhecido é um leitor de PDF que suporta o [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] para plataformas específicas. Você pode usar a tabela na seção [Requisitos do Azure RMS: aplicativos](../get-started/requirements-applications.md) para identificar os aplicativos que dão suporte ao RMS (aplicativos aprimorados pelo RMS) e, em seguida, usar uma pesquisa na Web para comprar ou baixar o aplicativo.
+Da mesma forma, muitos fornecedores de software fornecem aplicações para proporcionar soluções de proteção de informações, também conhecidos como produtos de gestão de direitos de empresa (ERM). Um exemplo popular é um leitor de PDF que suporte o [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] para plataformas específicas. Pode utilizar a tabela em [Requisitos do Azure RMS: aplicações](../get-started/requirements-applications.md) para identificar as aplicações que suportam RMS (aplicações otimizadas por RMS) e, em seguida, efetuar uma pesquisa na Web para comprar ou transferir a aplicação.
 
-## Próximas etapas
+## Passos seguintes
 
-Para ver como outros aplicativos e serviços dão suporte ao Azure Rights Management, consulte [Como os aplicativos dão suporte ao Azure Rights Management](applications-support.md).
+Para ver como outras aplicações e serviços suportam o Azure Rights Management, consulte [Como as Aplicações Suportam o Azure Rights Management](applications-support.md).
 
 <!--HONumber=Apr16_HO4-->
 

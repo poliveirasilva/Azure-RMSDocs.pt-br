@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurando modelos personalizados do Azure Rights Management | Azure RMS
+title: Configurar modelos personalizados para o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,39 +25,39 @@ ms.suite: ems
 
 ---
 
-# Configurando modelos personalizados do Azure Rights Management
+# Configurar modelos personalizados para o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Depois da [ativação do Azure Rights Management](activate-service.md) (Azure RMS), os usuários podem usar automaticamente dois modelos padrão que facilitam a aplicação de políticas a arquivos confidenciais que restringem o acesso a usuários autorizados em sua organização. Esses dois modelos têm as seguintes restrições de política de direitos:
+Depois de [ativar o Azure Rights Management](activate-service.md) (Azure RMS), os utilizadores podem utilizar automaticamente dois modelos predefinidos que facilitam a aplicação de políticas a ficheiros confidenciais que restringem o acesso aos utilizadores autorizados na sua organização. Estes dois modelos têm as seguintes restrições de política de direitos:
 
--   Visualização de somente leitura para o conteúdo protegido
+-   Visualização só de leitura dos conteúdos protegidos
 
-    -   Nome de exibição: **&lt;nome da organização&gt; - Somente exibição confidencial**
+    -   Nome a apresentar: **&lt;nome da organização&gt; – Apenas Visualização Confidencial**
 
-    -   Permissão específica: Exibir Conteúdo
+    -   Permissão específica: Ver Conteúdo
 
--   As permissões de leitura ou modificação do conteúdo protegido
+-   Permissões Ler ou Modificar para o conteúdo protegido
 
-    -   Nome de exibição: **&lt;nome da organização&gt; - Confidencial**
+    -   Nome a apresentar: **&lt;nome da organização&gt; – Confidencial**
 
-    -   Permissões específicas: Exibir Conteúdo, Salvar Arquivo, Editar Conteúdo, Exibir Direitos Atribuídos, Permitir Macros, Encaminhar, Responder e Responder a Todos
+    -   Permissões específicas: Ver Conteúdo, Guardar Ficheiro, Editar Conteúdo, Ver Direitos Atribuídos, Permitir Macros, Reencaminhar, Responder, Responder A Todos
 
-Além disso, o [aplicativo RMS sharing](../rms-client/sharing-app-windows.md) permite que os usuários definam seu próprio conjunto de permissões. E, para o cliente Outlook e o Outlook Web Access, os usuários podem selecionar a opção [Não Encaminhar](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
+Além disso, a [aplicação de partilha RMS](../rms-client/sharing-app-windows.md) permite que os utilizadores definam o seu próprio conjunto de permissões. E, para o cliente do Outlook e o Outlook Web Access, os utilizadores podem selecionar a [opção Não Reencaminhar](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
 
-Para muitas organizações, os modelos padrão podem ser suficientes. Porém, se você quiser criar seus próprios modelos personalizados de política de direitos, isso é possível. Os motivos para criar um modelo personalizado incluem o seguinte:
+Para muitas organizações, os modelos predefinidos poderão ser suficientes. No entanto, se quiser criar os seus próprios modelos de políticas de direitos personalizados, pode fazê-lo. Seguem-se algumas das razões para criar um modelo personalizado:
 
--   Você quer um modelo para conceder direitos a um subconjunto de usuários na organização, ao invés de todos os usuários.
+-   Quer um modelo que conceda direitos a um subconjunto de utilizadores na organização em vez de os conceder a todos os utilizadores.
 
--   Você deseja que apenas um subconjunto de usuários possa ver e selecionar um modelo (modelo departamental) de aplicativos, e não que todos os usuários da organização possam ver e selecionar o modelo.
+-   Quer que apenas um subconjunto de utilizadores possa ver e selecionar um modelo (modelo departamental) a partir de aplicações, em vez de todos os utilizadores na organização poderem ver e selecionar o modelo.
 
--   Você quer definir um direito personalizado para um modelo, como Exibir e Editar, mas não Copiar e Imprimir.
+-   Quer definir um direito personalizado para um modelo, como Ver e Editar, mas não Copiar e Imprimir.
 
--   Você quer configurar opções adicionais em um modelo que incluem uma data de validade e se o conteúdo pode ser acessado sem uma conexão com a Internet.
+-   Quer configurar opções adicionais num modelo que inclua uma data de expiração e definir se os conteúdos pode ser acedidos sem uma ligação à Internet.
 
-Para que os usuários possam selecionar um modelo personalizado que contenha definições como essas, é necessário primeiro criar um modelo personalizado, configurá-lo e depois publicá-lo. Embora provavelmente você venha a exigir apenas alguns modelos, você pode ter um máximo de 500 modelos personalizados salvos no Azure. 
+Para os utilizadores poderem selecionar um modelo personalizado com definições como estas, primeiro tem de criar um modelo personalizado, configurá-lo e, em seguida, publicá-lo. Embora provavelmente venha a necessitar de apenas alguns modelos, pode ter um máximo de 500 modelos personalizados guardados no Azure. 
 
-Use as informações a seguir para ajudar a configurar e usar modelos personalizados:
+Utilize as informações seguintes para configurar e utilizar modelos personalizados:
 
 -   [Como criar, configurar e publicar um modelo personalizado](create-template.md)
 
@@ -65,9 +65,9 @@ Use as informações a seguir para ajudar a configurar e usar modelos personaliz
 
 -   [Como remover (arquivar) modelos](remove-template.md)
 
--   [Como atualizar modelos para usuários](refresh-templates.md)
+-   [Como atualizar modelos para utilizadores](refresh-templates.md)
 
--   [Usar o PowerShell para gerenciar modelos](configure-templates-with-powershell.md)
+-   [Utilizar o PowerShell para gerir modelos](configure-templates-with-powershell.md)
 
 
 

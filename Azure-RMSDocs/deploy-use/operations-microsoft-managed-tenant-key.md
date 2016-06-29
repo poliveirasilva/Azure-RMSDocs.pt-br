@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gerenciado pela Microsoft - operações de ciclo de vida da chave de locatário | Azure RMS
+title: Operações de ciclo de vida das chaves de inquilino – geridas pela Microsoft | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,80 +26,80 @@ ms.suite: ems
 ---
 
 
-# Gerenciado pela Microsoft: operações de ciclo de vida da chave de locatário
+# Operações de ciclo de vida das chaves de inquilino: geridas pela Microsoft
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Se a Microsoft gerencia sua chave de locatário para o Azure Rights Management (o padrão), use as seções a seguir para obter mais informações sobre as operações do ciclo de vida que são relevantes para esta topologia.
+Se a Microsoft gerir a sua chave de inquilino para o Azure Rights Management (a predefinição), utilize as secções seguintes para obter mais informações sobre as operações de ciclo de vida que são relevantes para esta topologia.
 
-## Revogue sua chave de locatário
-Ao cancelar a assinatura do Azure RMS, o Azure RMS para de usar sua chave de locatário e não precisa realizar nenhuma ação.
+## Revogar a chave de inquilino
+Quando anular a subscrição do Azure RMS, o Azure RMS deixa de utilizar a chave de inquilino e não é necessária qualquer ação por parte do utilizador.
 
-## Crie novamente sua chave de locatário
-A Criação repetida de chaves também é conhecida como geração repetida de sua chave. Não crie novamente sua chave de locatário a menos que seja realmente necessário. Clientes antigos, tais como Office 2010, não foram projetados para manipular normalmente as alterações de chave. Neste cenário, você deve limpar o estado do RMS nos computadores usando uma Política de grupo ou um mecanismo equivalente. Entretanto, há alguns eventos legítimos que podem lhe forçar a criar novamente sua chave de locatário. Por exemplo:
+## Efetuar o rechaveamento da chave de inquilino
+O rechaveamento também é conhecido como implementar a chave. Não efetue o rechaveamento da chave de inquilino, a menos que seja realmente necessário. Os clientes antigos, tal como o Office 2010, não foram concebidos para processar alterações de chave corretamente. Neste cenário, tem de limpar o estado do RMS nos computadores utilizando a Política de Grupo ou um mecanismo equivalente. No entanto, existem alguns eventos legítimos que poderão forçá-lo a efetuar o rechaveamento da chave de inquilino. Por exemplo:
 
--   Sua empresa se dividiu em duas ou mais empresas. Ao criar novamente sua chave de locatário, a nova empresa não terá acesso ao novo conteúdo que seus empregados publiquem. Eles podem acessar o conteúdo antigo se tiverem uma cópia da chave de locatário antiga.
+-   A sua empresa foi dividida em duas ou mais empresas. Quando efetua o rechaveamento da chave de inquilino, a nova empresa não terá acesso ao conteúdo novo que os seus funcionários publicam. Estes podem aceder ao conteúdo antigo se tiverem uma cópia da chave de inquilino antiga.
 
--   Você acredita que a cópia mestre da sua chave de locatário (a cópia em sua posse) foi comprometida.
+-   Considera que a cópia principal da sua chave de inquilino (a cópia na sua posse) foi comprometida.
 
-Você pode criar novamente sua chave de locatário [entrando em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com uma solicitação para criar novamente sua chave de locatário do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam; recriar a chave de locatário não é um serviço de suporte gratuito.
+Pode executar o rechaveamento da chave do inquilino [contactando o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com um pedido de rechaveamento da chave de inquilino do Azure RMS**. Tem de provar que é um administrador do inquilino do Azure RMS e compreender que este processo demorará alguns dias a ser confirmado. São aplicáveis encargos de suporte padrão; o rechaveamento da chave de inquilino não é um serviço de suporte gratuito.
 
-Ao criar novamente sua chave de locatário, o novo conteúdo é protegido usando a nova chave de locatário. Isto acontece em uma maneira em fases, para que em um período de tempo, algum conteúdo novo continuará sendo protegido com a chave de locatário antiga. O conteúdo previamente protegido permanece protegido com sua chave de locatário antiga. Para oferecer suportes a este cenário, o Azure RMS retém sua chave de locatário antiga de modo que possa emitir licenças para conteúdo antigo.
+Quando efetua o rechaveamento da chave de inquilino, o novo conteúdo é protegido através da utilização da nova chave de inquilino. Isto acontece de forma faseada, pelo que, durante um período de tempo, algum conteúdo novo irá continuar a ser protegido com a chave de inquilino antiga. O conteúdo previamente protegido permanece protegido para a sua chave de inquilino antiga. Para suportar este cenário, o Azure RMS retém a chave de inquilino antiga para poder emitir licenças para o conteúdo antigo.
 
-## Faça backup e recupere sua chave de locatário
-A Microsoft é responsável por fazer o backup da sua chave de locatário e nenhuma ação sua é requerida.
+## Efetuar cópia de segurança e recuperar a chave de inquilino
+A Microsoft é responsável pela cópia de segurança da sua chave de inquilino e não é necessária qualquer ação da sua parte.
 
-## Exportar sua chave de locatário
-Você pode exportar sua configuração do Azure RMS e a chave do locatário seguindo as instruções nestas três etapas:
+## Exportar a chave de inquilino
+Pode exportar a configuração do Azure RMS e a chave de inquilino ao seguir as instruções nestes três passos:
 
-### Etapa 1: Iniciar exportação
+### Passo 1: iniciar a exportação
 
--   Para fazer isso, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **Caso de suporte do Azure Rights Management com uma solicitação de exportação de chave do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte padrão se aplicam. Exportar sua chave de locatário não é um serviço de suporte gratuito.
+-   Para tal, [contacte o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **Incidente de suporte do Azure Rights Management com um pedido de exportação de chave do Azure RMS**. Tem de provar que é um administrador do inquilino do Azure RMS e compreender que este processo demorará alguns dias a ser confirmado. São aplicáveis encargos de suporte padrão; a exportação da chave do inquilino não é um serviço de suporte gratuito.
 
-### Etapa 2: Espere a verificação
+### Passo 2: aguardar pela verificação
 
--   A Microsoft verifica se sua solicitação de liberação da chave de locatário do RMS é legítima. Esse processo pode levar até três semanas.
+-   A Microsoft verifica se o seu pedido para libertar a chave de inquilino do RMS é legítimo. Este processo pode demorar até 3 semanas.
 
-### Etapa 3: Receber instruções de chave do CSS
+### Passo 3: receber instruções relativamente à chave do CSS
 
--   Os Serviços de Atendimento ao Cliente da Microsoft (CSS) lhe enviarão sua configuração do Azure RMS e a chave de locatário criptografada em um arquivo protegido por senha que tem a extensão de nome de arquivo .tpd. Para fazer isto, o CSS primeiro lhe envia (como a pessoa que inicia a exportação) uma ferramenta por e-mail. Você deve executar a ferramenta desde um prompt de comando da seguinte forma:
+-   O Suporte ao Cliente da Microsoft (CSS) enviar-lhe-á a configuração do Azure RMS e a chave de inquilino encriptadas num ficheiro protegido por palavra-passe que tem uma extensão de nome de ficheiro .tpd. Para o fazer, o CSS primeiro envia-lhe (como a pessoa que iniciou a exportação) uma ferramenta por e-mail. Tem de executar a ferramenta numa linha de comandos da seguinte forma:
 
     ```
     AadrmTpd.exe -createkey
     ```
-    Isso gera um par de chaves do RSA e salva as metades pública e privada como arquivos na pasta atual. Por exemplo: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** e **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
+    Isto gera um par de chaves RSA e guarda os meios públicos e privados como ficheiros na pasta atual. Por exemplo: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** e **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
 
-    Responda a este email do CSS, anexando o arquivo que tem um nome que começa com **PublicKey**. O CSS enviará um arquivo TPD como um arquivo .xml que é criptografado com sua chave RSA. Copie esse arquivo na mesma pasta em que você executou a ferramenta AadrmTpd originalmente e execute-a novamente, usando o arquivo que começa com **PrivateKey** e o arquivo de CSS. Por exemplo:
+    Responda ao e-mail a partir do CSS, anexando o ficheiro que tem um nome que começa com **PublicKey**. Em seguida, o CSS enviar-lhe-á um ficheiro TPD como um ficheiro .xml que está encriptado com a sua chave RSA. Copie este ficheiro para a mesma pasta que executou a ferramenta AadrmTpd originalmente e execute a ferramenta novamente, utilizando o ficheiro que começa com **PrivateKey** e o ficheiro do CSS. Por exemplo:
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    A saída desse comando deve ser dois arquivos: um contém a senha em texto sem formatação para o TDP protegido por senha e o outro é o TPD protegido por senha próprio. Para propósitos de referências cruzadas, ambos devem ter o mesmo GUID que os arquivos de chave públicos e privados no momento em que você executou o comando AadrmTpd.exe -createkey:
+    A saída deste comando deve ser dois ficheiros: um contém a palavra-passe de texto simples para o TPD protegido por palavra-passe e o outro é o próprio TPD protegido por palavra-passe. Para fins de referência cruzada, ambos devem ter o mesmo GUID que os ficheiros de chaves públicas e privadas de quando executou o comando AadrmTpd.exe -createkey:
 
     -   Password-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt
 
     -   ExportedTPD-FA29D0FE-5049-4C8E-931B-96C6152B0441.xml
 
-    Faça backup destes arquivos e armazene-os com segurança para garantir que você possa continuar descriptografando conteúdo protegido com esta chave de locatário. Além disso, se você estiver migrando para o AD RMS, poderá importar esse arquivo TPD (o arquivo que começa com **ExportedTDP**) para seu servidor do AD RMS.
+    Efetue uma cópia de segurança destes ficheiros e armazene-os de forma segura para se certificar de que pode continuar a desencriptar o conteúdo que está protegido com esta chave de inquilino. Além disso, se está a migrar para o AD RMS, pode importar este ficheiro TPD (o ficheiro que começa com **ExportedTDP**) para o seu servidor AD RMS.
 
-### Etapa 4: Contínua: proteger sua chave de locatário
+### Passo 4: em curso: proteger a chave de inquilino
 
--   Após receber sua chave de locatário, guarde-a em local seguro, pois se alguém tiver acesso a ela será possível descriptografar todos os documentos protegidos usando essa chave.
+-   Depois de receber a chave de inquilino, mantenha-a bem protegida, uma vez que se alguém obter acesso à mesma, pode desencriptar todos os documentos que estão protegidos através dessa chave.
 
-    Caso queira exportar sua chave de locatário porque não deseja mais usar o Azure RMS, a prática recomendada é desativar seu locatário do RMS. Não demore para fazer isso após receber sua chave de locatário, pois isso o ajudará a minimizar as consequências se sua chave for acessada por alguém que não deveria ter acesso a ela. Para instruções, consulte [Encerramento e desativação do Azure Rights Management](decommission-deactivate.md).
+    Se o motivo para exportar a chave de inquilino se prender com facto de não pretender utilizar mais o Azure RMS, como melhor prática, desative o inquilino do RMS. Não adie esta ação depois de receber a sua chave de inquilino porque esta precaução ajuda a minimizar as consequências se a sua chave de inquilino for acedida por alguém que não a deve ter. Para obter mais informações, consulte [Desativar o Azure Rights Management](decommission-deactivate.md).
 
 ## Responder a uma violação
-Nenhum sistema de segurança, sem importar o forte que seja, está completo sem um processo de resposta de violação. Sua chave de locatário pode estar comprometida ou roubada. Ainda quando estiver bem protegido, as vulnerabilidades podem ser encontradas na tecnologia HSM da geração atual ou em comprimentos e algoritmos da chave atual.
+Nenhum sistema de segurança, por mais forte que seja, está completo sem um processo de resposta a violações. A sua chave de inquilino pode estar comprometida ou ter sido roubada. Mesmo quando está bem protegida, podem existir vulnerabilidades na tecnologia HSM da geração atual ou nos algoritmos e comprimentos de chaves atuais.
 
-A Microsoft tem uma equipe dedicada para responder a incidentes de segurança nos seus produtos e serviços. Assim que houver um relatório confiável de um incidente, esta equipe se ocupa de investigar o escopo, a causa raiz e as atenuações. Se este incidente afeta seus ativos, então a Microsoft notificará seus administradores de locatário do Azure RMS por e-mail usando o endereço que você forneceu quando assinou.
+A Microsoft tem uma equipa dedicada para responder a incidentes de segurança nos seus produtos e serviços. Assim que existir um relatório credível de um incidente, esta equipa investiga o âmbito, a causa raiz e as resoluções. Se este incidente afetar os recursos, a Microsoft irá notificar os administradores de inquilinos do Azure RMS por e-mail utilizando o endereço que especificou aquando da subscrição.
 
-Se você detectar uma violação, a melhor ação que você ou a Microsoft pode efetuar depende do escopo da violação; a Microsoft trabalhará com você ao longo deste processo. A seguinte tabela mostra algumas situações típicas e a resposta provável, embora a resposta exata dependerá de todas as informações que sejam reveladas durante a investigação.
+Se ocorrer uma violação, a melhor ação que o utilizador ou a Microsoft pode efetuar depende do âmbito da violação; a Microsoft irá trabalhar consigo ao longo deste processo. A tabela seguinte mostra algumas situações típicas e a resposta provável, embora a resposta exata dependa de todas as informações que são reveladas durante a investigação.
 
 |Descrição do incidente|Resposta provável|
 |------------------------|-------------------|
-|Sua chave de locatário vazou.|Crie novamente sua chave de locatário. Consulte a seção [Criar novamente sua chave de locatário](operations-tenant-key#re-key-your-tenant-key) nesse artigo.|
-|Um indivíduo não autorizado ou malware obteve direitos para usar sua chave de locatário mas a chave em si não vazou.|Criar novamente sua chave de locatário não ajuda aqui e necessita um análises da causa raiz. Se um processo ou bug do software foi responsável para que o indivíduo não autorizado obtenha acesso, aquela situação deve ser resolvida.|
-|Vulnerabilidade descoberta no algoritmo RSA, ou comprimento da chave, ou ataques de força bruta se tornam possíveis em termos computacionais.|A Microsoft deve atualizar o Azure RMS para oferecer suporte de novos algoritmos e comprimentos de chave maiores que sejam resilientes, e instruir a todos os usuários a renovar suas chaves de locatário.|
+|Ocorreu uma fuga da chave de inquilino.|Efetue o rechaveamento da chave de inquilino. Consulte a secção [Efetuar o rechaveamento da chave de inquilino](operations-tenant-key#re-key-your-tenant-key) neste artigo.|
+|Um indivíduo não autorizado ou um software maligno obteve direitos para utilizar a sua chave de inquilino, mas não houve uma fuga da própria chave.|Efetuar o rechaveamento da chave de inquilino não ajuda neste caso e requer a análise da causa raiz. Se um erro no processo ou software tiver sido responsável pelo acesso que o indivíduo não autorizado obteve, essa situação tem de ser resolvida.|
+|Foi detetada uma vulnerabilidade no algoritmo RSA, ou no comprimento da chave, ou ataques de força bruta tornaram-se exequíveis a nível informático.|A Microsoft tem de atualizar o Azure RMS para suportar os novos algoritmos e maiores comprimentos de chaves para serem resilientes e instruir todos os clientes a renovarem as respetivas chaves de inquilino.|
 
 
 

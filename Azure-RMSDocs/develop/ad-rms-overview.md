@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Visão geral | Azure RMS
-description: O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado.
+title: Descrição geral | Azure RMS
+description: O Rights Management Services (RMS) é uma tecnologia de proteção de informações que ajuda a salvaguardar as informações digitais contra a utilização não autorizada.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,43 +24,43 @@ ms.suite: ems
 
 ---
 
-# Visão geral
+# Descrição Geral
 
-O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado. Por meio do aplicativo habilitado para direitos, os proprietários de conteúdo poderão definir quem pode abrir, modificar, imprimir, encaminhar ou executar outras ações no conteúdo.
+O Rights Management Services (RMS) é uma tecnologia de proteção de informações que ajuda a salvaguardar as informações digitais contra a utilização não autorizada. Através da aplicação com capacidade para direitos, os proprietários de conteúdo conseguirão definir quem pode abrir, modificar, imprimir, reencaminhar ou efetuar outras ações no conteúdo.
 
-## Visão geral
+## Descrição Geral
 
-O AD RMS consiste em dois componentes de [servidor](ad-rms-server.md) e [cliente](ad-rms-client.md). O servidor, em execução no Azure ou no Windows Server, consiste em diversos serviços Web.
+O AD RMS consiste em componentes de [servidor](ad-rms-server.md) e de [cliente](ad-rms-client.md). O servidor, em execução no Azure ou no Windows Server, é constituído por vários serviços web.
 
-O componente do [cliente](ad-rms-client.md) pode ser executado em um cliente ou servidor de sistema operacional e contém funções que permitem a um aplicativo criptografar e descriptografar o conteúdo, recuperar modelos e listas de revogação, adquirir licenças e certificados de um servidor e outras tarefas relacionadas ao gerenciamento de direitos.
+O componente de [cliente](ad-rms-client.md) pode ser executado num sistema operativo de cliente ou de servidor e contém funções que permitem que uma aplicação encripte e desencripte conteúdo, obtenha modelos e listas de revogação, adquira licenças e certificados a partir de um servidor e outras tarefas de gestão de direitos relacionadas.
 
-Para saber mais, confira [Tipos de aplicativo](application-types.md).
+Para mais informações, consulte [Tipos de aplicações](application-types.md).
 
-A seguir estão apenas alguns dos cenários ao qual os aplicativos criados com o Rights Management Services SDK 2.1 podem ser aplicados.
+Seguem-se alguns dos cenários em que podem ser aplicadas aplicações incorporadas no SDK Rights Management Services 2.1.
 
--   Uma firma de advocacia quer impedir que mensagens de email confidenciais sejam impressas ou encaminhadas.
--   Os desenvolvedores de projetos auxiliados por computador e softwares de fabricação desejam limitar o acesso ao desenho a um grupo pequeno de usuários dentro da divisão de pesquisa, sem exigir o uso de senhas.
--   Os proprietários de um site de design gráfico desejam usar uma única licença que permita a visualização livre de cópias de baixa resolução das imagens, mas que exija o pagamento para acessar as versões em alta resolução.
--   Os proprietários de uma biblioteca de documentos online desejam habilitar direitos exibir, imprimir ou editar documentos com base na identidade do usuário.
--   Uma empresa deseja publicar informações confidenciais de funcionários em um site interno que restrinja os privilégios de visualização e edição para determinados usuários.
+-   Uma firma de advogados pretende impedir que as mensagens de e-mail confidenciais sejam impressas ou reencaminhadas.
+-   Os programadores do projeto assistido por computador e software de fabrico pretendem limitar o acesso de desenho a um pequeno grupo de utilizadores dentro da divisão de pesquisa sem a necessidade da utilização de palavras-passe.
+-   Os proprietários de um site de design gráfico pretendem utilizar uma única licença que permita a livre visualização de cópias de baixa resolução das suas imagens, mas requer o pagamento para o acesso a versões de alta resolução.
+-   Os proprietários de uma biblioteca de documentos online pretendem ativar direitos para ver, imprimir ou editar documentos com base na identidade do utilizador.
+-   Uma empresa pretende publicar informações confidenciais sobre os funcionários para um Web site interno que restringe a visualização e edição de privilégios a determinados utilizadores.
 
-Para obter mais informações sobre o servidor AD RMS, o cliente AD RMS e sua funcionalidade, consulte o conteúdo do TechNet para [Documentação do profissional de TI para AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx).
+Para obter mais informações sobre o servidor AD RMS, o cliente de AD RMS e a respetiva funcionalidade, consulte o conteúdo da TechNet [Documentação de profissionais de TI para o AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx).
 
-Os tópicos restantes nesta seção abordam a Arquitetura do RMS e suas implementações.
+Os tópicos restantes desta secção a Arquitetura RMS e as suas implementações.
 
-## Nesta seção
+## Nesta secção
 
 | Tópico | Descrição |
 |-------|-------------|
-|[Cliente](ad-rms-client.md) |Este tópico descreve a finalidade e a função do Rights Management Services Client 2.1 |
-|[Servidor](ad-rms-server.md) | Este tópico descreve o a finalidade e as funções do Servidor RMS para Azure e Windows Server.|
+|[Cliente](ad-rms-client.md) |Este tópico descreve a finalidade e a função do Rights Management Service Client 2.1 |
+|[Servidor](ad-rms-server.md) | Este tópico descreve a finalidade e as funções do RMS Server para o Azure e Windows Server.|
 
 
 ## Tópicos relacionados
 
 * [Conceitos do RMS](application-types.md)
 * [Introdução](getting-started-with-ad-rms-2-0.md)
-* [Documentação do IT Pro para AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
+* [Documentação de profissionais de TI para o AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
  
 
  

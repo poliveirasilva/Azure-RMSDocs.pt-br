@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuração do Linux | Azure RMS
-description: Vários tipos de sistemas operacionais Linux agora podem fazer uso do Microsoft Rights Management SDK 4.2.
+description: Agora, várias versões dos sistemas operativos Linux podem utilizar o SDK Microsoft Rights Management 4.2.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -27,36 +27,36 @@ ms.suite: ems
 # Configuração do Linux
 
 
-Vários tipos de sistemas operacionais Linux podem agora fazer uso do Microsoft Rights Management SDK 4.2 para habilitar a proteção de informações integrada em seus aplicativos usando o AAD RM (Azure Active Directory Rights Management).
+Agora, várias versões dos sistemas operativos Linux podem utilizar o SDK Microsoft Rights Management 4.2. para ativar a proteção de informações integrada na respetiva aplicação utilizando o Azure Active Directory Rights Management (AAD RM).
 
--   [Sistemas operacionais suportados](#supported_operating_systems)
--   [Como criar e usar](#how_to_build_and_use)
--   [Consulte também](#see_also)
+-   [Sistemas operativos suportados](#supported_operating_systems)
+-   [Como criar e utilizar](#how_to_build_and_use)
+-   [Consulte Também](#see_also)
 
-## Sistemas operacionais suportados
+## Sistemas operativos suportados
 
 
 Ubuntu 14.04
 OpenSUSE 13.2
 CentOS 7
-**Nata**: os exemplos e as bibliotecas foram compilados com êxito no Windows e OSX, mas eles não têm suporte completo no momento.
+**Nota** Foram compiladas bibliotecas e amostras com êxito no Windows e no OSX, mas estas não são totalmente suportadas neste momento.
 
  
 
-## Como criar e usar
+## Como criar e utilizar
 
-Dois tópicos de orientação para esse SDK estão hospedados no Github para orientações de criação e uso do SDK.
+Estão alojados no Github dois tópicos de orientação para este SDK para obter orientações básicas de criação e a utilização do SDK.
 
--   [Como criar bibliotecas e aplicativos de exemplo](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
--   [Como instalar e usar o aplicativo em sistemas de usuário](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
+-   [Como criar bibliotecas e exemplos de aplicações](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
+-   [Como instalar e utilizar a aplicação em sistemas de utilizador](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
 
-## Consulte também
+## Consulte Também
 
 * [Introdução](get-started.md)
 
 * [Novidades](release-notes.md)
 
-* [Termos e conceitos de desenvolvedor](core-concepts.md)
+* [Conceitos e termos de programação](core-concepts.md)
 
  
 

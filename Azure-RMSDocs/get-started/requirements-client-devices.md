@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Requisitos do Azure RMS&#58; Dispositivo cliente | Azure RMS
+title: Requisitos do Azure RMS&#58; dispositivo cliente | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,39 +26,39 @@ ms.suite: ems
 ---
 
 
-# Requisitos do Azure RMS: dispositivos cliente que dão suporte ao Azure RMS
+# Requisitos do Azure RMS: dispositivos cliente que suportam o Azure RMS
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Use as seguintes seções para identificar quais dispositivos dão suporte ao Azure Rights Management (Azure RMS).
+Utilize as secções seguintes para identificar quais os dispositivos que suportam o Azure Rights Management (Azure RMS).
 
 ## Computadores
-Os seguintes sistemas operacionais de computador dão suporte ao Azure Rights Management:
+Os seguintes sistemas operativos de computador suportam o Azure Rights Management:
 
--   **Windows 7** (x86, x64)
+-   **Windows 7** (x86, x64)
 
--   **Windows 8** (x86, x64)
+-   **Windows 8** (x86, x64)
 
--   **Windows 8.1** (x86, x64)
+-   **Windows 8.1** (x86, x64)
 
--   **Windows 10** (x86, x64)
+-   **Windows 10** (x86, x64)
 
--   **Mac OS X**: versão mínima do Mac OS X 10.8 (Mountain Lion)
+-   **Mac OS X**: versão mínima do Mac OS X 10.8 (Mountain Lion)
 
 ## Dispositivos móveis
-Os seguintes sistemas operacionais de dispositivos móveis dão suporte ao Azure Rights Management:
+Os seguintes sistemas operativos de dispositivos móveis suportam o Azure Rights Management:
 
--   **Windows Phone**: Windows Phone 8.1
+-   **Windows Phone**: Windows Phone 8.1
 
--   **Telefones e tablets Android**: versão mínima do Android 4.0.3
+-   **Telemóveis e tablets Android**: versão mínima do Android 4.0.3
 
--   **iPhone e iPad**: versão mínima do iOS 7.0
+-   **iPhone e iPad**: versão mínima do iOS 7.0
 
--   **Tablets Windows**: Windows 10 Mobile e Windows 8.1 RT
+-   **Tablets Windows**: Windows 10 Mobile e Windows 8.1 RT
 
 
-## Próximas etapas
-Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
+## Passos seguintes
+Para verificar outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
 
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Requisitos do Azure RMS& #58; Diretório do Azure AD | Azure RMS
+title: Requisitos do Azure RMS&#58; Diretório do Azure AD | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,58 +25,58 @@ ms.suite: ems
 
 ---
 
-# Requisitos do Azure RMS: diretório do Azure AD
+# Requisitos do Azure RMS: Diretório do Azure AD
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-É necessário ter um diretório do Azure AD para usar o Azure RMS (Azure Rights Management). Você pode usar a conta da sua organização deste diretório para acessar o Portal clássico do Azure, onde, por exemplo, é possível configurar e gerenciar modelos do Rights Management.
+Para utilizar o Azure Rights Management (Azure RMS), é necessário ter um diretório do Azure AD. A conta da sua organização é utilizada para este diretório de modo a iniciar sessão no portal clássico do Azure onde, por exemplo, pode configurar e gerir modelos de Rights Management.
 
-Se você ainda não tiver uma assinatura do Azure para sua organização, poderá obtê-la se inscrevendo em uma avaliação gratuita: vá para a página [Introdução ao Azure](https://account.windowsazure.com/organization) e siga as instruções.
+Se ainda não tiver uma subscrição do Azure para a sua organização, pode obter uma ao inscrever-se para uma versão de avaliação gratuita. Aceda à página [Introdução ao Azure](https://account.windowsazure.com/organization) e siga as instruções.
 
-Para obter mais informações, consulte os seguintes recursos na documentação do Azure Active Directory:
+Para obter mais informações, consulte os recursos seguintes na documentação do Azure Active Directory:
 
--   [O que é um diretório do Azure AD?](/active-directory/active-directory-whatis)
+-   [O que é um Diretório do Azure AD?](/active-directory/active-directory-whatis)
 
--   [Como as assinaturas do Azure estão associadas ao Azure Active Directory](/active-directory/active-directory-how-subscriptions-associated-directory)
+-   [De que forma as subscrições do Azure são associadas ao Azure Active Directory](/active-directory/active-directory-how-subscriptions-associated-directory)
 
-Se deseja integrar seu diretório do Azure AD com as florestas do AD local, consulte [Integração de entidades locais com o Azure Active Directory](/active-directory/active-directory-aadconnect).
+Se pretender integrar o seu diretório do Azure AD com as suas florestas do AD no local, consulte [Integrar as identidades no local com o Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE] Se você tiver dispositivos móveis ou computadores Mac que autenticam localmente usando AD FS ou um provedor de autenticação equivalente:
+> [!NOTE]Se tiver dispositivos móveis ou computadores Mac que autenticam no local ao utilizar o AD FS ou um fornecedor de autenticação equivalente:
 > 
-> -   Você deve usar o AD FS na versão mínima do servidor **Windows Server 2012 R2** ou um provedor de autenticação alternativo que dê suporte ao protocolo OAuth 2.0.
+> -   É necessário utilizar o AD FS na versão mínima de servidor do **Windows Server 2012 R2** ou num fornecedor de autenticação alternativo que suporte o protocolo OAuth 2.0.
 
 ## Multi-Factor Authentication (MFA) e Azure RMS
-Para usar o Multi-Factor Authentication (MFA) com o Azure RMS, é necessária uma das seguintes opções:
+A utilização da Multi-Factor Authentication (MFA) com o Azure RMS requer pelo menos um dos seguintes:
 
 -   Office 2013 (versão mínima):
 
-    -   Se você tiver o Office 2013, instale também a [atualização para o Office 2013 (KB3054853) de 9 de junho de 2015](https://support.microsoft.com/kb/3054853). Para obter mais informações sobre esta atualização e sobre como a autenticação moderna traz a conexão baseada na ADAL (Active Directory Authentication Library) para o Office 2013, consulte [Preview pública de autenticação moderna do Office 2013 anunciada](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) no blog do Office.
+    -   Se tiver o Office 2013, também tem de instalar a [Atualização do Office 2013 de 9 de junho de 2015 (KB3054853)](https://support.microsoft.com/kb/3054853). Para obter mais informações acerca desta atualização e de como a autenticação moderna proporciona ao Office 2013 o início de sessão baseado na Active Directory Authentication Library (ADAL), consulte [Pré-visualização pública da autenticação moderna do Office 2013 comunicada](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) no blogue do Office.
 
--   Aplicativo Rights Management sharing para Windows:
+-   Aplicação de partilha Rights Management para Windows:
 
-    -   Você deve ter instalada a versão mínima do 1.0.1908.0, que pode ser confirmada através do Painel de controle, Programas e Recursos. Para obter mais informações sobre o aplicativo de compartilhamento, consulte [Aplicativo de compartilhamento do Rights Management para Windows](../rms-client/sharing-app-windows.md).
+    -   Tem de ter instalada a versão mínima 1.0.1908.0, que pode ser confirmada ao aceder ao Painel de Controlo, Programas e Funcionalidades. Para obter mais informações acerca da aplicação de partilha, consulte [Aplicação de partilha Rights Management para Windows](../rms-client/sharing-app-windows.md).
 
--   Aplicativo Rights Management sharing para dispositivos móveis e computadores Mac:
+-   Aplicação de partilha Rights Management para dispositivos móveis e computadores Mac:
 
-    -   Certifique-se de que tenha a versão mais recente instalada. O suporte a MFA entrou em vigor na versão de setembro de 2015 do aplicativo RMS sharing.
+    -   Certifique-se de que tem a versão mais recente instalada. O suporte à MFA foi introduzido na versão de setembro de 2015 da aplicação de partilha RMS.
 
-Em seguida, configure sua solução MFA:
+Em seguida, configure a sua solução de MFA:
 
--   Para locatários gerenciados pela Microsoft (necessário Active Directory do Azure ou Office 365):
+-   Para inquilinos geridos pela Microsoft (que possuem o Azure Active Directory ou Office 365):
 
-    -   Configure o Azure MFA para impor o MFA para usuários. Para obter instruções, consulte [Introdução ao Azure Multi-Factor Authentication na nuvem](/multi-factor-authentication/multi-factor-authentication-get-started-cloud) na documentação do Multi-factor Authentication.
+    -   Configure a Azure MFA para impor a MFA aos utilizadores. Para obter instruções, consulte [Introdução à Multi-Factor Authentication do Azure na nuvem](/multi-factor-authentication/multi-factor-authentication-get-started-cloud) na documentação da Multi-factor Authentication.
 
-        Para obter mais informações sobre o Azure MFA, consulte [O que é o Azure Multi-Factor Authentication?](/multi-factor-authentication/multi-factor-authentication)
+        Para obter mais informações acerca da Azure MFA, consulte [O que é a Multi-Factor Authentication do Azure?](/multi-factor-authentication/multi-factor-authentication)
 
--   Para locatários federados (você opera servidores de federação no local):
+-   Para inquilinos federados (que operam servidores de federação no local):
 
-    -   Configure seus servidores de federação para o Active Directory do Azure ou o Office 365. Por exemplo, se você estiver usando o AD FS, consulte [Configurar métodos de autenticação adicionais do AD FS](https://technet.microsoft.com/library/dn758113.aspx) no TechNet.
+    -   Configure os servidores de federação para o Azure Active Directory ou Office 365. Por exemplo, se estiver a utilizar o AD FS, consulte [Configurar Métodos de Autenticação Adicionais para o AD FS](https://technet.microsoft.com/library/dn758113.aspx) na TechNet.
 
-        Para obter mais informações sobre esse cenário, consulte [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (O Works with Office 365 – Programa de identidade agora simplificado) no blog do Office.
+        Para obter mais informações acerca deste cenário, consulte [Trabalhos no Office 365 – o programa de identidade está mais simples](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) no blogue do Office.
 
-## Próximas etapas
-Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
+## Passos seguintes
+Para verificar outros requisitos, consulte [Requisitos do Azure Rights Management](requirements-azure-rms.md).
 
 
 

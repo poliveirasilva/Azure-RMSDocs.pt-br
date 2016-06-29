@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Visão geral técnica do aplicativo de compartilhamento Microsoft Rights Management | Azure RMS
+title: Descrição geral técnica da aplicação de partilha Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,49 +26,49 @@ ms.suite: ems
 ---
 
 
-# Visão geral técnica do aplicativo de compartilhamento Microsoft Rights Management
+# Descrição geral técnica da aplicação de partilha Microsoft Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
 
-O aplicativo de compartilhamento Microsoft Rights Management é um aplicativo para download opcional do Microsoft Windows e outras plataformas que oferece os seguintes recursos:
+A aplicação de partilha Microsoft Rights Management é uma aplicação transferível e opcional para o Microsoft Windows e outras plataformas que fornece o seguinte:
 
--   Proteção de um único arquivo, ou múltiplos arquivos em massa, ou ainda todos os arquivos em uma pasta selecionada.
+-   Proteção de um único ficheiro ou proteção em volume de vários ficheiros, bem como de todos os ficheiros numa pasta selecionada.
 
--   Suporte completo para a proteção de qualquer tipo de arquivo e um visualizador nativo para os tipos de arquivos de texto e imagem mais comuns.
+-   Suporte integral para proteção de qualquer tipo de ficheiro e um visualizador incorporado para tipos de ficheiro de texto e imagem utilizados frequentemente.
 
--   Proteção genérica para arquivos que não dão suporte à proteção de RMS.
+-   Proteção genérica para ficheiros que não suportam a proteção RMS.
 
--   Total interoperabilidade com arquivos protegidos usando o Office Information Rights Management (IRM).
+-   Interoperabilidade completa com ficheiros protegidos através da Gestão de Direitos de Informação (IRM) do Office.
 
--   Total interoperabilidade com arquivos PDF protegidos usando a FCI (Infraestrutura de Classificação de Arquivos) e as ferramentas de criação de PDF com suporte.
+-   Interoperabilidade completa com ficheiros PDF protegidos através da Infraestrutura de Classificação de Ficheiros (FCI) e ferramentas de criação de PDFs suportadas.
 
-O aplicativo de compartilhamento Microsoft Rights Management usa o novo [AD RMS 2.1 runtime](http://www.microsoft.com/download/details.aspx?id=38396). Usando a funcionalidade do AD RMS 2.1, o aplicativo de compartilhamento Microsoft Rights Management fornece aos usuários finais uma experiência simples de proteção e de consumo.
+A aplicação de partilha Microsoft Rights Management utiliza o novo [runtime do Cliente de AD RMS 2.1](http://www.microsoft.com/download/details.aspx?id=38396). Ao utilizar a funcionalidade do AD RMS 2.1, a aplicação de partilha Microsoft Rights Management proporciona aos utilizadores finais uma experiência de proteção e consumo simples.
 
-Com o lançamento de outubro de 2013 do RMS, você pode nativamente proteger documentos usando o Office 2010 e enviá-los para pessoas de outra empresa, que pode, em seguida, consumi-los usando o Azure RMS. Além disso, com esta versão, se você usar o AD RMS em Modo Criptográfico 2, você pode usar o RMS para indivíduos e consumir conteúdo de pessoas de outra empresa que usam o Azure RMS. Para obter mais informações sobre o modo criptográfico 2, consulte [Modos de criptografia do AD RMS](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
+Com a versão de outubro de 2013 do RMS, pode proteger documentos nativamente com o Office 2010 e enviá-los para pessoas noutra empresa, que, depois, podem aceder aos mesmos através do Azure RMS. Além disso, com esta versão, se utilizar o AD RMS no Modo Criptográfico 2, pode utilizar RMS para utilizadores e consumir conteúdo de pessoas noutra empresa que utiliza o Azure RMS. Para mais informações sobre o Modo Criptográfico 2, consulte [Modos Criptográficos do AD RMS](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
 
-Para obter informações de implantação, consulte [Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
+Para obter mais informações sobre a implementação, consulte [Implementação automática da aplicação de partilha Microsoft Rights Management](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
-## Níveis de proteção - nativo e genérico
-Aplicativo de compartilhamento Microsoft Rights Management oferece suporte a proteção em dois níveis diferentes, conforme descrito na tabela a seguir.
+## Níveis de proteção – nativa e genérica
+A aplicação de partilha Microsoft Rights Management suporta proteção a dois níveis diferentes, conforme descrito na tabela seguinte.
 
-|Tipo de proteção|Nativo|Genérico|
+|Tipo de proteção|Nativa|Genérico|
 |----------------------|----------|-----------|
-|Descrição|Para arquivos de texto, imagem, do Microsoft Office (Word, Excel, PowerPoint), .pdf e para tipos de arquivo de outros aplicativos que suportam o AD RMS, a proteção nativa fornece um alto nível de proteção que inclui criptografia e aplicação de direitos (permissões).|Para todos os outros aplicativos e tipos de arquivo, a proteção genérica oferece um nível de proteção que inclui tanto o encapsulamento de arquivos o tipo de arquivo .pfile e autenticação para verificar se um usuário está autorizado a abrir o arquivo.|
-|Proteção|Os arquivos estão completamente criptografados e a proteção é imposta das seguintes maneiras:<br /><br />- Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que recebem o arquivo por email ou recebem acesso a ele por meio de permissões de arquivo ou compartilhamento.<br /><br />- Além disso, direitos de uso e a política definida pelo proprietário do conteúdo quando os arquivos são protegidos são totalmente aplicadas quando o conteúdo é renderizado no Visualizador de IP (para arquivos de texto e imagem protegidos) ou o aplicativo associado (para todos os outros tipos de arquivo com suporte).|A proteção de arquivos é imposta das seguintes maneiras:<br /><br />- Para que conteúdo protegido seja processado, autenticação bem-sucedida deve ocorrer para aqueles que estão autorizados a abrir o arquivo e recebem acesso a ele. Se a autorização falhar, o arquivo não abre.<br /><br />- Direitos de uso e a política definida pelo proprietário do conteúdo são exibidos para informar aos usuários autorizados a política de uso pretendido.<br /><br />- Log de auditoria de usuários autorizados a abrir e acessar arquivos ocorre, no entanto, nenhum direito de uso é aplicado por aplicativos sem suporte.|
-|Padrão para tipos de arquivo|Isso é o nível de proteção padrão para os seguintes tipos de arquivo:<br /><br />- Arquivos de texto e imagem<br /><br />- Arquivos do Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato de documento portátil (.pdf)<br /><br />Para obter mais informações, consulte a seção a seguir, [Tipos de arquivo com suporte e extensões de nome de arquivo](#supported-file-types-and-file-name-extensions).|Isso é a proteção padrão para todos os outros tipos de arquivo (como .vsdx, .rtf e assim por diante) que não têm suporte pela proteção completa.|
-Você pode alterar o nível de proteção padrão que o aplicativo de RMS sharing aplica. Você pode alterar o nível padrão de nativo para genérico, de genérico para nativo e até mesmo impedir que o aplicativo de aplicar proteção de compartilhamento do RMS. Para obter mais informações, consulte a seção [Alterando o nível de proteção padrão de arquivos](#changing-the-default-protection-level-of-files) neste artigo.
+|Descrição|Para texto, imagem, ficheiros do Microsoft Office (Word, Excel, PowerPoint), ficheiros .pdf e outros tipos de ficheiro de aplicação que suportam o AD RMS, a proteção nativa fornece um elevado nível de proteção que inclui encriptação e imposição dos direitos (permissões).|Para todas as outras aplicações e tipos de ficheiro, a proteção genérica fornece um nível de segurança que inclui encapsulamento de ficheiro com o tipo de ficheiro .pfile e autenticação para verificar se um utilizador tem autorização para abrir o ficheiro.|
+|Protection|Os ficheiros são totalmente encriptados e a proteção é imposta das seguintes formas:<br /><br />- Antes da composição do conteúdo protegido, os utilizadores que recebem o ficheiro por e-mail ou aos quais é dado acesso ao mesmo através de permissões de ficheiro ou de partilha têm de se autenticar com êxito.<br /><br />- Além disso, a política e os direitos de utilização definidos pelo proprietário do conteúdo durante a proteção dos ficheiros são impostos na totalidade quando o conteúdo é composto no Visualizador de IP (para os ficheiros de texto e imagem protegidos) ou na aplicação associada (para todos os outros tipos de ficheiro suportados).|A proteção de ficheiros é imposta das seguintes formas:<br /><br />- Antes da composição do conteúdo protegido, os utilizadores com autorização para abrir o ficheiro e aos quais é dado acesso ao mesmo têm de se autenticar com êxito. Se a autorização falhar, o ficheiro não abre.<br /><br />- A política e os direitos de utilização definidos pelo proprietário do conteúdo são apresentados para informar os utilizadores autorizados acerca da política de utilização prevista.<br /><br />- Existe um registo de auditoria dos utilizadores autorizados que abrem e acedem aos ficheiros. No entanto, não são impostos direitos de utilização por aplicações sem suporte.|
+|Predefinição para tipos de ficheiro|Este é o nível de proteção predefinido para os seguintes tipos de ficheiro:<br /><br />- Ficheiros de texto e imagem<br /><br />- Ficheiros do Microsoft Office (Word, Excel, PowerPoint)<br /><br />- Formato Portable Document Dormat (.pdf)<br /><br />Para mais informações, consulte a secção seguinte [Tipos de ficheiro suportados e extensões de nome de ficheiro](#supported-file-types-and-file-name-extensions).|Esta é a proteção predefinida para todos os outros tipos de ficheiro (tal como .vsdx, .rtf e etc.) que não são suportados pela proteção completa.|
+Pode alterar o nível de proteção predefinido aplicado pela aplicação de partilha RMS. Pode alterar o nível predefinido de nativa para genérica, de genérica para nativa e até mesmo impedir que a aplicação de partilha RMS aplique proteção. Para obter mais informações, consulte a secção [Alterar o nível de proteção predefinido dos ficheiros](#changing-the-default-protection-level-of-files) neste artigo.
 
-## Tipos de arquivo com suporte e extensões de nome de arquivo
-A tabela a seguir lista os tipos de arquivos que são suportados nativamente pelo aplicativo de compartilhamento Microsoft Rights Management. Para esses tipos de arquivo, a extensão de nome de arquivo original é alterada quando a proteção nativa é aplicada, e esses arquivos se tornam somente leitura.
+## Tipos de ficheiro suportados e extensões de nome de ficheiro
+A tabela seguinte apresenta uma lista dos tipos de ficheiro que são suportados nativamente pela aplicação de partilha Microsoft Rights Management. Para estes tipos de ficheiro, a extensão de nome de ficheiro original é alterada quando a proteção nativa é aplicada e esses ficheiros passam a ser só de leitura.
 
-Além disso, quando o aplicativo RMS sharing nativamente protege um arquivo do Word, Excel ou PowerPoint cujos usuários protegem compartilhando, essa ação cria automaticamente um segundo arquivo que é uma cópia do original com o mesmo nome, mas com **.ppdf** de extensão de nome de arquivo¹. Esta versão do arquivo garante que os destinatários que instalem o aplicativo de RMS sharing sempre possam abrir o arquivo que tenha proteção nativa aplicada.
+Além disso, quando a aplicação de partilha RMS protege nativamente um ficheiro do Word, Excel ou PowerPoint que os utilizadores protegem através da partilha, esta ação cria automaticamente um segundo ficheiro que é uma cópia do original com o mesmo nome de ficheiro, mas com uma extensão de nome de ficheiro **.ppdf**¹. Esta versão do ficheiro garante que os destinatários que instalem a aplicação de partilha RMS podem abrir sempre o ficheiro ao qual foi aplicada proteção nativa.
 
-Para arquivos protegidos genericamente, a extensão de nome de arquivo original sempre é alterada para. pfile.
+Para os ficheiros que são protegidos genericamente, a extensão de nome de ficheiro original é sempre alterada para .pfile.
 
-> [!WARNING] Se você tiver firewalls, proxies da web ou software de segurança que inspecionem e atuem de acordo com as extensões de nome de arquivo, talvez seja necessário reconfigurá-los para dar suporte a essas novas extensões de nome de arquivo.
+> [!WARNING] Se tiver firewalls, proxies Web ou software de segurança que inspecionem e tomem medidas de acordo com as extensões de nome de ficheiro, poderá ter de os reconfigurar para suportar estas novas extensões de nome de ficheiro.
 
-|Extensão de nome de arquivo original|Extensão protegida por RMS|
+|Extensão de nome de ficheiro original|Extensão de nome de ficheiro protegido pelo RMS|
 |--------------------------------|-------------------------------------|
 |.txt|.ptxt|
 |.xml|.pxml|
@@ -84,63 +84,63 @@ Para arquivos protegidos genericamente, a extensão de nome de arquivo original 
 |.jpe|.pjpe|
 |.jfif|.pjfif|
 |.jt|.pjt|
-¹ Renderização de PDF fornecida pela Foxit. Copyright © 2003–2014 by Foxit Coupouation.
+¹ Composição de PDF com tecnologia da Foxit. Copyright © 2003–2014 por Foxit Corporation.
 
-A tabela a seguir lista os tipos de arquivo para os quais o aplicativo de compartilhamento Microsoft Rights Management oferece suporte nativo em Microsoft Office 2016, Office 2013 e Office 2010. Para esses arquivos, a extensão de nome de arquivo permanece o mesmo depois que o arquivo está protegido pelo RMS.
+A tabela seguinte apresenta uma lista dos tipos de ficheiro que a aplicação de partilha Microsoft Rights Management suporta nativamente no Microsoft Office 2016, Office 2013 e Office 2010. Para estes ficheiros, a extensão de nome de ficheiro permanece igual depois de o ficheiro ser protegido pelo RMS.
 
-|Tipos de arquivo compatíveis com o Office|Tipos de arquivo compatíveis com o Office|
+|Tipos de ficheiro suportados pelo Office|Tipos de ficheiro suportados pelo Office|
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### Alterando o nível de proteção padrão de arquivos
-Você pode alterar como o aplicativo de compartilhamento RMS protege arquivos editando o registro. Por exemplo, você pode forçar os arquivos que oferecem suporte a proteção nativa a serem genericamente protegidos pelo aplicativo de RMS sharing.
+### Alterar o nível de proteção predefinido dos ficheiros
+Pode alterar a forma como a aplicação de partilha RMS protege os ficheiros ao editar o registo. Por exemplo, pode forçar os ficheiros que suportam a proteção nativa a serem protegidos genericamente pela aplicação de partilha RMS.
 
-Razões para que você talvez queira fazer isso.
+Seguem-se alguns motivos pelos quais poderá pretender fazê-lo:
 
--   Para garantir que todos os usuários possam abri-lo em seus dispositivos móveis.
+-   Para garantir que todos os utilizadores podem abrir o ficheiro nos seus dispositivos móveis.
 
--   Para garantir que todos os usuários possam abrir o arquivo que não tenha um aplicativo que oferece suporte à proteção nativa.
+-   Para garantir que todos os utilizadores podem abrir o ficheiro se não tiverem uma aplicação que suporte a proteção nativa.
 
--   Para acomodar sistemas de segurança que atuam em arquivos por sua extensão de nome de arquivo e podem ser reconfigurados para acomodar a extensão de nome de arquivo. pfile, mas não podem ser reconfigurados para acomodar várias extensões de nome de arquivo para proteção nativa.
+-   Para acomodar os sistemas de segurança que tomam medidas em relação aos ficheiros com base na sua extensão de nome de ficheiro e que podem ser reconfigurados para acomodar a extensão de nome de ficheiro .pfile, mas não podem ser reconfigurados para acomodar várias extensões de nome de ficheiro para a proteção nativa.
 
-Igualmente, você pode forçar o aplicativo RMS sharing a aplicar a proteção nativa a arquivos como padrão, que teriam a proteção genérica aplicada. Isso pode ser apropriado se você tiver um aplicativo que oferece suporte a RMS APIs – por exemplo, um aplicativo de linha de negócios escrito por seus desenvolvedores internos ou um aplicativo comprado de um fornecedor de software independente (ISV).
+Da mesma forma, pode forçar a aplicação de partilha RMS a aplicar proteção nativa aos ficheiros aos quais seria aplicada proteção genérica por predefinição. Este procedimento poderá ser apropriado se tiver uma aplicação que suporta as APIs de RMS, por exemplo, uma aplicação de linha de negócio criada por programadores internos ou uma aplicação comprada a um fabricante independente de software (ISV).
 
-Você também pode forçar o aplicativo RMS sharing a bloquear a proteção de arquivos (não aplicar proteção nativa ou proteção genérica). Por exemplo, isso pode ser necessário se você tiver um aplicativo automatizado ou serviço que deve ser capaz de abrir um arquivo específico para processar seu conteúdo. Quando você bloqueia a proteção para um tipo de arquivo, os usuários não podem usar o aplicativo de compartilhamento RMS para proteger um arquivo com esse tipo de arquivo. Quando eles tentam, eles veem uma mensagem informando que o administrador impediu a proteção e precisam cancelar suas ações para proteger o arquivo.
+Pode também forçar a aplicação de partilha RMS a bloquear a proteção dos ficheiros (ou seja, não aplicar proteção nativa nem proteção genérica). Por exemplo, tal poderá ser necessário se tiver uma aplicação ou um serviço automatizado que tem de conseguir abrir um ficheiro específico para processar os respetivos conteúdos. Quando bloqueia a proteção de um tipo de ficheiro, os utilizadores não podem utilizar a aplicação de partilha RMS para proteger um ficheiro desse tipo. Quando o tentam fazer, é apresentada uma mensagem que indica que o administrador impediu a proteção e têm de cancelar a ação para proteger o ficheiro.
 
-Para configurar o aplicativo RMS sharing a aplicar a proteção genérica a todos os arquivos como padrão, que teriam a proteção nativa aplicada, faça as seguintes edições no registro:
+Para configurar a aplicação de partilha RMS para aplicar proteção nativa a todos os ficheiros aos quais seria aplicada proteção genérica por predefinição, efetue as seguintes edições de registo:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: crie uma nova chave nomeada *.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: crie uma nova chave com o nome *.
 
-    Essa configuração denota arquivos com qualquer extensão de nome de arquivo.
+    Esta definição indica ficheiros com qualquer extensão de nome de ficheiro.
 
-2.  Na chave recém adicionada de HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\*, crie um novo valor de cadeia (REG_SZ) nomeada **Criptografia** que possua o valor de dados de **Pfile**.
+2.  Na chave recém-adicionada HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\*, crie um novo valor de cadeia (REG_SZ) com o nome **Encriptação** e com o valor de dados **Pfile**.
 
-    Essa configuração resulta no aplicativo RMS sharing aplicando proteção genérica.
+    Esta definição faz com que a aplicação de partilha RMS aplique proteção genérica.
 
-Essas duas configurações resultam no aplicativo RMS sharing aplicando proteção genérica para todos os arquivos que têm uma extensão de nome de arquivo. Se esse for o seu objetivo, nenhuma configuração adicional será necessária. No entanto, você pode definir exceções para tipos de arquivo específicos, para que eles ainda sejam protegidos nativamente. Para fazer isso, você deve fazer três edições adicionais do registro para cada tipo de arquivo:
+Estas duas definições fazem com que a aplicação de partilha RMS aplique proteção genérica a todos os ficheiros que tenham uma extensão de nome de ficheiro. Se for este o seu objetivo, não é necessário efetuar mais configurações. No entanto, pode definir exceções para tipos de ficheiro específicos, de modo a que estes continuem a ser protegidos nativamente. Para tal, tem de efetuar três edições de registo adicionais para cada tipo de ficheiro:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: adicionar uma nova chave com o nome da extensão de nome de arquivo (sem o ponto anterior).
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: adicione uma nova chave com o nome da extensão de nome de ficheiro (sem o ponto final precedente).
 
-    Por exemplo, para arquivos que têm uma extensão .docx de nome de arquivo, crie uma chave chamada **DOCX**.
+    Por exemplo, para os ficheiros que tenham uma extensão de nome de ficheiro .docx, crie uma chave denominada **DOCX**.
 
-2.  Na chave de tipo de arquivo recém adicionada (por exemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**), crie um novo valor DWORD chamado **AllowPFILEEncryption**, com o valor **0**.
+2.  Na chave do tipo de ficheiro recém-adicionada (por exemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**), crie um novo Valor DWORD denominado **AllowPFILEEncryption** com um valor de **0**.
 
-3.  Na chave de tipo de arquivo recém adicionada (por exemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**), crie um novo valor de cadeia de caracteres chamado **Criptografia**, com o valor **Nativo**.
+3.  Na chave do tipo de ficheiro recém-adicionada (por exemplo, **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**), crie um novo valor de cadeia denominado **Encriptação** com o valor **Nativo**.
 
-Como resultado dessas configurações, todos os arquivos são genericamente protegidos exceto os arquivos que têm uma extensão de nome de arquivo. docx, que são protegidos nativamente pelo aplicativo RMS sharing.
+Como resultado destas definições, todos os ficheiros são protegidos genericamente, exceto os ficheiros que tenham uma extensão de nome de ficheiro .docx, que são protegidos nativamente pela aplicação de partilha RMS.
 
-Repita estes três passos para outros tipos de arquivos que você queira definir como exceções porque eles suportam proteção nativa e você não quer que eles sejam genericamente protegidos pelo aplicativo RMS sharing.
+Repita estes três passos para os outros tipos de ficheiro que pretenda definir como exceções, uma vez que suportam a proteção nativa e não pretende que sejam protegidos genericamente pela aplicação de partilha RMS.
 
-Você pode fazer edições de registro semelhantes para outros cenários, alterando o valor da cadeia **criptografia** que aceita os seguintes valores:
+Pode efetuar edições de registo semelhantes para outros cenários ao alterar o valor da cadeia **Encriptação** que suporta os seguintes valores:
 
--   **Pfile**: Proteção genérica
+-   **Pfile**: proteção genérica
 
--   **Nativo**: Proteção nativa
+-   **Nativo**: proteção nativa
 
--   **Desativado**: Bloquear proteção
+-   **Desativado**: bloquear proteção
 
-## Consulte também
-[Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+## Consulte Também
+[Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
 

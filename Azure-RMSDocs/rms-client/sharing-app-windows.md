@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aplicativo de compartilhamento Rights Management para Windows | Azure RMS
+title: Aplicação de Partilha Rights Management para Windows | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,23 +25,23 @@ ms.suite: ems
 
 ---
 
-# Aplicativo de compartilhamento Rights Management para Windows
+# Aplicação de Partilha Rights Management para Windows
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management*
 
-O aplicativo de compartilhamento Rights Management para Windows (também conhecido como "o aplicativo RMS sharing") é um aplicativo gratuito que pode ser baixado para organizações que usam o AD RMS([Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx)) ou o Azure RMS ([Azure Rights Management](../understand-explore/azure-rights-management.md)) e para organizações que não têm sua própria infraestrutura de proteção de informações mas que desejam consumir conteúdo protegido por outras organizações que usam o Azure RMS.
+A aplicação de partilha Rights Management para Windows (também conhecida apenas como “a aplicação de partilha RMS”) é uma aplicação gratuita e transferível para organizações que utilizam os [Serviços de Gestão de Direitos do Active Directory](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) ou o [Azure Rights Management](../understand-explore/azure-rights-management.md) (Azure RMS) e para as organizações que não têm a sua própria infraestrutura de proteção de informações, porém pretendem consumir conteúdo que foi protegido por outras organizações que utilizam o Azure RMS.
 
--   [Aplicativo de compartilhamento do Rights Management: histórico de lançamento de versão](sharing-app-version-release-history.md)
+-   [Aplicação de partilha Rights Management: histórico de lançamento de versões](sharing-app-version-release-history.md)
 
--   [Guia do administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md)
+-   [Guia do administrador da aplicação de partilha Rights Management](sharing-app-admin-guide.md)
 
--   [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+-   [Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 > [!TIP]
-> Também é um aplicativo de compartilhamento do Rights Management para computadores Mac e para dispositivos móveis. Para obter mais informações, veja a [FAQ for Microsoft Rights Management Sharing Application](http://technet.microsoft.com/dn451248) (Perguntas frequentes sobre o aplicativo de compartilhamento do Rights Management para plataformas móveis e Mac).
+> Existe também uma aplicação de partilha Rights Management para dispositivos móveis e computadores Mac. Para obter mais informações, consulte [FAQ acerca da Aplicação de Partilha Rights Management para Plataformas Móveis e Mac](http://technet.microsoft.com/dn451248).
 
-## Consulte também
-[FAQ do aplicativo de compartilhamento do Rights Management para Windows](http://technet.microsoft.com/dn467883)
+## Consulte Também
+[FAQ acerca da Aplicação de Partilha Rights Management para Windows](http://technet.microsoft.com/dn467883)
 
 
 

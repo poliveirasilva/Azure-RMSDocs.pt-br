@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Guia do administrador do aplicativo de compartilhamento Rights Management | Azure RMS
+title: Guia do administrador da aplicação de partilha Rights Management|Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,88 +26,88 @@ ms.suite: ems
 ---
 
 
-# Guia do administrador do aplicativo de compartilhamento Rights Management
+# Guia do administrador da aplicação de partilha Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
 
-Use as seguintes informações se você for responsável pelo aplicativo de compartilhamento Microsoft Rights Management em uma rede corporativa, ou se quiser obter mais informações técnicas do que há no [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md) ou [Perguntas frequentes para aplicativo de compartilhamento Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
+Utilize as seguintes informações se for o responsável pela aplicação de partilha Microsoft Rights Management numa rede empresarial ou se quiser obter mais informações técnicas além das que se encontram no [Rights Management sharing application user guide (Guia do utilizador da aplicação de partilha Rights Management – em inglês)](sharing-app-user-guide.md) ou na [FAQ for Microsoft Rights Management Sharing Application for Windows (FAQ sobre a Aplicação de Partilha Microsoft Rights Management do Windows – em inglês)](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-O aplicativo de RMS sharing é ideal para trabalhar com o Azure RMS, porque essa configuração de implantação oferece suporte ao envio de anexos protegidos aos usuários de outra organização, e opções como notificações por email e controle de documento com revogação.  No entanto, com algumas limitações, também funciona com a versão local, AD RMS. Para obter uma comparação abrangente dos recursos que têm suporte pelo Azure RMS e pelo AD RMS, consulte [Comparando o Azure Rights Management e o AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Se você tiver o AD RMS e quiser migrar para o Azure RMS, consulte [Migrando do AD RMS para o Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+A aplicação de partilha RMS funciona melhor com o Azure RMS, porque esta configuração de implementação suporta o envio de anexos protegidos para utilizadores de outra organização e opções como notificações por e-mail e o controlo de documentos com revogação.  No entanto, a aplicação também funciona com a versão no local, o AD RMS, embora com algumas limitações. Para ver uma comparação detalhada das funcionalidades suportadas pelo Azure RMS e pelo AD RMS, consulte [Comparing Azure Rights Management and AD RMS (Comparação entre o Azure Rights Management e o AD RMS – em inglês)](../understand-explore/compare-azure-rms-ad-rms.md). Se tiver o AD RMS e quiser migrar para o Azure RMS, consulte [Migrating from AD RMS to Azure Rights Management (Migrar do AD RMS para o Azure Rights Management – em inglês)](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
-## Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management
-A versão do Windows do aplicativo de RMS sharing oferece suporte a uma instalação com script, o que a torna adequada para implantações corporativas.
+## Implementação automática da aplicação de partilha Microsoft Rights Management
+A versão para Windows da aplicação de partilha RMS suporta uma instalação com script, o que a torna adequada para implementações empresariais.
 
-Os únicos pré-requisitos para as instalações são que os computadores executem uma versão mínima do Windows 7 Service Pack 1 e o Microsoft Framework, versão mínima 4.0 esteja instalada. Se você precisar instalar o Microsoft .NET Framework 4.0, poderá [baixá-lo para instalação do Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=17718)..
+Os únicos pré-requisitos de instalação são que os computadores consigam executar pelo menos o Windows 7 Service Pack 1 ou superior e que esteja instalada a versão 4.0 ou superior do Microsoft Framework. Se precisar de instalar o Microsoft .NET Framework 4.0, pode [transferi-lo no Centro de Transferências da Microsoft](http://www.microsoft.com/download/details.aspx?id=17718).
 
-### Para baixar o aplicativo RMS sharing para implantação automática
+### Para transferir a aplicação de partilha RMS para implementações automáticas
 
-1.  Vá para a página [Aplicativo de compartilhamento Microsoft Rights Management para Windows](http://www.microsoft.com/download/details.aspx?id=40857) no Centro de Download da Microsoft e clique em **Baixar**.
+1.  Aceda à página da [aplicação de partilha Microsoft Rights Management para Windows](http://www.microsoft.com/download/details.aspx?id=40857) no Centro de Transferências da Microsoft e clique em **Transferir**.
 
-2.  Selecione e baixe os arquivos que você precisa. Existem dois pacotes de instalação de cliente: um para Windows de 64 bits (Microsoft Rights Management sharing application x64.zip) e outro para Windows de 32 bits (Microsoft Rights Management sharing application x86.zip).
+2.  Selecione e transfira os ficheiros de que precisa. Existem dois pacotes de instalação de clientes: um para o Windows de 64 bits (Microsoft Rights Management sharing application x64.zip) e outro para o Windows de 32 bits (Microsoft Rights Management sharing application x86.zip).
 
-3.  Extraia os arquivos dos pacotes de instalação compactados, por exemplo, ao clicar duas vezes neles. Depois, copie os arquivos extraídos para um local de rede que os computadores cliente possam acessar.
+3.  Pode extrair os ficheiros dos pacotes de instalação comprimidos ao fazer duplo clique sobre os mesmos, por exemplo. Em seguida, copie os ficheiros extraídos para uma localização na rede à qual os computadores cliente possam aceder.
 
-Os pacotes de instalação para o aplicativo de RMS sharing oferece suporte a diferentes cenários de implantação e inclui o seguinte:
+Os pacotes de configuração para a aplicação de partilha RMS suportam diferentes cenários de implementação e incluem o seguinte:
 
-|Descrição|Cenário de implantação|
+|Descrição|Cenário de implementação|
 |---------------|-----------------------|
-|Assistente de Conexão do Microsoft Online|Office 2010 e Azure RMS<br /><br />Office 2013 e Azure RMS se você não tiver instalado a [atualização para o Office 2013 de 9 de junho de 2015](https://support.microsoft.com/kb/3054853) (KB3054853)|
-|Hotfix para Office (KB 2596501)|Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS|
-|Hotfix para habilitar o cliente AD RMS 1.0 para trabalhar com o Azure RMS (2843630 KB)|Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS|
-|Cliente AD RMS e o aplicativo RMS sharing|Office 2016 ou Office 2013 e Azure RMS ou Active Directory RMS<br /><br />Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS<br /><br />Apenas o aplicativo RMS sharing e suplemento do Office|
-|Suplemento do Office para a faixa de opções|Office 2016 ou Office 2013 e Azure RMS ou Active Directory RMS<br /><br />Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS<br /><br />Apenas o aplicativo RMS sharing e suplemento do Office|
-|Ferramenta de Preparação do Rights Management do Active Directory do Azure|Office 2010 e Azure RMS|
-Use os procedimentos a seguir para identificar os comandos necessários para implantar o aplicativo RMS sharing para esses cenários de implantação:
+|Assistente de Início de Sessão Online da Microsoft|Office 2010 e Azure RMS<br /><br />Office 2013 e Azure RMS se não tiver instalado a [atualização do Office 2013 de 9 de junho de 2015](https://support.microsoft.com/kb/3054853) (KB3054853)|
+|Correção para o Office (KB 2596501)|Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS|
+|Correção para permitir que o AD RMS Client 1.0 funcione com o Azure RMS (KB 2843630)|Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS|
+|Cliente de AD RMS e a aplicação de partilha RMS|Office 2016 ou 2013 e Azure RMS ou Active Directory RMS<br /><br />Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS<br /><br />Apenas a aplicação de partilha RMS e o suplemento do Office|
+|Suplemento do Office para o friso|Office 2016 ou 2013 e Azure RMS ou Active Directory RMS<br /><br />Office 2010 e Azure RMS<br /><br />Office 2010 e Active Directory RMS<br /><br />Apenas a aplicação de partilha RMS e o suplemento do Office|
+|Ferramenta de preparação do Azure Active Directory Rights Management|Office 2010 e Azure RMS|
+Utilize os seguintes procedimentos para identificar os comandos necessários para implementar a aplicação de partilha RMS nestes cenários de implementação:
 
--   **Office 2016 ou Office 2013 e Azure RMS ou Active Directory RMS**
+-   **Office 2016 ou 2013 e Azure RMS ou Active Directory RMS**
 
-    Seus usuários estão executando o Office 2016 ou Office 2013, sua organização usa o Azure RMS ou o Active Directory RMS e os usuários colaboram com outras organizações que usam o Azure RMS ou Active Directory RMS.
+    Os seus utilizadores estão a utilizar o Office 2016 ou 2013, a sua organização utiliza o Azure RMS ou o Active Directory RMS e os utilizadores colaboram com outras organizações que utilizam o Azure RMS ou o Active Directory RMS.
 
 -   **Office 2010 e Azure RMS**
 
-    Seus usuários estão executando o Office 2010, sua organização usa o Azure RMS, e os usuários colaboram com outras organizações que usam o Azure RMS ou Active Directory RMS.
+    Os seus utilizadores estão a executar o Office 2010, a sua organização utiliza o Azure RMS e os utilizadores colaboram com outras organizações que utilizam o Azure RMS ou o Active Directory RMS.
 
 -   **Office 2010 e Active Directory RMS**
 
-    Seus usuários estão executando o Office 2010, sua organização usa o AD RMS, e os usuários colaboram com outras organizações que usam o Azure RMS.
+    Os seus utilizadores estão a utilizar o Office 2010, a sua organização utiliza o AD RMS e os utilizadores colaboram com outras organizações que utilizam o Azure RMS.
 
--   **Apenas o aplicativo RMS sharing e suplemento do Office**
+-   **Apenas a aplicação de partilha RMS e o suplemento do Office**
 
-    Seus usuários estão executando o Office 2016, Office 2013 ou o Office 2010, sua organização usa o AD RMS, e os usuários não precisam colaborar com outras organizações que usam o Azure RMS. Essa instalação permite que você instale apenas o aplicativo de compartilhamento e o suplemento do Office.
+    Os seus utilizadores estão a utilizar o Office 2016, o Office 2013 ou o Office 2010, a sua organização utiliza o AD RMS e os utilizadores não precisam de colaborar com outras organizações que utilizam o Azure RMS. Esta instalação permite-lhe instalar apenas a aplicação de partilha e o suplemento do Office.
 
 > [!NOTE]
-> Nesses cenários, se a sua organização está executando o AD RMS, seus usuários poderão receber conteúdo protegido de outras organizações que usam o Azure RMS, mas os seus usuários não podem enviar conteúdos protegidos aos usuários em uma organização que usa o Azure RMS. No entanto, se sua organização estiver executando o Azure RMS, os seus usuários podem enviar e receber conteúdo protegido de outras organizações.
+> Nestes cenários, se a sua organização estiver a executar o AD RMS, os seus utilizadores podem receber conteúdos protegidos de outras organizações que utilizam o Azure RMS, mas não podem enviar conteúdos protegidos para outros utilizadores de uma organização que utiliza o Azure RMS. No entanto, se a sua organização estiver a executar o Azure RMS, os seus utilizadores podem enviar e receber conteúdos protegidos de outras organizações.
 
-Para concluir a instalação para cada procedimento, o computador deve ser reiniciado. Você pode iniciar uma reinicialização automática usando um comando como **shutdown /i**.
+Para concluir a instalação em cada procedimento, é necessário reiniciar o computador. Pode efetuar um reinício automático através de um comando como o **shutdown /i**.
 
-### Para implantar o aplicativo RMS sharing para Office 2016 ou o Office 2013 e o Azure RMS ou Active Directory RMS
+### Para implementar a aplicação de partilha RMS para o Office 2016 ou Office 2013 e Azure RMS ou Active Directory RMS
 
--   Em cada computador no qual você deseja instalar o aplicativo RMS sharing e componentes relacionados, execute o seguinte comando com privilégios elevados:
+-   Nos computadores em que pretende instalar a aplicação de partilha RMS e os componentes relacionados, execute o seguinte comando com privilégios elevados:
 
     ```
     setup.exe /s
     ```
 
-Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalação](#verifying-installation-success) neste artigo.
+Para confirmar o êxito da operação, consulte a secção [Confirmar o êxito da instalação](#verifying-installation-success) neste artigo.
 
-### Para implantar o aplicativo RMS sharing para Office 2010 e o Azure RMS
+### Para implementar a aplicação de partilha RMS para o Office 2010 e o Azure RMS
 
-1.  Você deve ser o administrador global para seu locatário Office 365 ou Azure Active Directory para que você possa obter a URL do serviço de certificação da sua organização, executando a ferramenta de preparação do Azure Active Directory Rights Management. Você precisa executar essa ferramenta apenas uma vez em um único computador. Você usará a URL do serviço de certificação em cada computador em que instalar o aplicativo de RMS sharing:
+1.  Tem de ser o administrador global do seu inquilino do Office 365 ou do Azure Active Directory para obter o URL do serviço de certificação da sua organização ao executar a ferramenta de preparação do Azure Active Directory Rights Management. Só precisa de executar esta ferramenta uma única vez num computador. O URL do serviço de certificação será utilizado quando instalar a aplicação de partilha RMS em cada computador:
 
-    1.  Fazer logon em um computador usando uma conta de administrador local.
+    1.  Inicie sessão num computador com uma conta de administrador local.
 
-    2.  Nesse computador, [baixe e instale o Assistente de Conexão do Microsoft Online](http://www.microsoft.com/download/details.aspx?id=28177).
+    2.  Nesse computador, [transfira e instale o Assistente de Início de Sessão Online da Microsoft](http://www.microsoft.com/download/details.aspx?id=28177).
 
-    3.  Execute o seguinte comando para ver exibida na tela a URL de serviço de certificação, que você pode copiar e salvar para a próxima etapa:
+    3.  Execute o seguinte comando para apresentar no ecrã o URL do serviço de certificação, que poderá copiar e guardar para o próximo passo:
 
-        -   Para Windows 8.1 e Windows 8, 64 bits:
+        -   Para o Windows 8.1 e o Windows 8 de 64 bits:
 
             ```
             x64\aadrmprep.exe /findCertificationUrl /logfile "<log file path and name>"
             ```
 
-        -   Para Windows 8.1 e Windows 8, 32 bits:
+        -   Para o Windows 8.1 e o Windows 8 de 32 bits:
 
             ```
             X86\aadrmprep.exe /findCertificationUrl /logfile "<log file path and name>"
@@ -120,39 +120,39 @@ Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalaç
             ```
 
         > [!NOTE]
-        > Esse comando pode solicitar que você insira suas credenciais do Azure. Se o computador não tiver ingressado em um domínio, você será solicitado. Se o computador tiver ingressado em um domínio, a ferramenta poderá usar credenciais armazenadas em cache.
+        > Este comando poderá pedir-lhe para introduzir as suas credenciais do Azure. Se o computador não estiver associado a um domínio, o pedido será apresentado. Se o computador estiver associado a um domínio, a ferramenta poderá utilizar credenciais em cache.
 
-2.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, execute o seguinte comando com privilégios elevados:
+2.  Nos computadores em que pretende instalar a aplicação de partilha RMS, execute o seguinte comando com privilégios elevados:
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, os usuários devem executar o seguinte comando (não necessita de privilégios elevados). Há diferentes maneiras de alcançar isso, incluindo pedir aos usuários para executar o comando (por exemplo, um link em uma mensagem de email ou um link no portal help desk) ou você pode adicioná-lo para o script de logon:
+3.  Nos computadores em que pretende instalar a aplicação de partilha RMS, os utilizadores têm de executar o seguinte comando (não são necessários privilégios elevados). Existem várias formas de realizar esta operação. Pode pedir aos utilizadores para executarem o comando (por exemplo, através de uma ligação numa mensagem de e-mail ou de uma ligação no portal de suporte técnico) ou pode adicioná-lo ao script de início de sessão dos mesmos:
 
     ```
     bin\RMSSetup.exe /configureO2010Only
     ```
 
-Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalação](#verifying-installation-success) neste artigo.
+Para confirmar o êxito da operação, consulte a secção [Confirmar o êxito da instalação](#verifying-installation-success) neste artigo.
 
-### Para implantar o aplicativo RMS sharing para Office 2010 e o Active Directory RMS
+### Para implementar a aplicação de partilha RMS para o Office 2010 e o Active Directory RMS
 
-1.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, execute o seguinte comando com privilégios elevados:
+1.  Nos computadores em que pretende instalar a aplicação de partilha RMS, execute o seguinte comando com privilégios elevados:
 
     ```
     setup.exe /s /configureO2010Admin
     ```
 
-2.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, os usuários devem executar o seguinte comando (não necessita de privilégios elevados). Há diferentes maneiras de alcançar isso, incluindo pedir aos usuários para executar o comando (por exemplo, um link em uma mensagem de email ou um link no portal help desk) ou você pode adicioná-lo para o script de logon:
+2.  Nos computadores em que pretende instalar a aplicação de partilha RMS, os utilizadores têm de executar o seguinte comando (não são necessários privilégios elevados). Existem várias formas de realizar esta operação. Pode pedir aos utilizadores para executarem o comando (por exemplo, através de uma ligação numa mensagem de e-mail ou de uma ligação no portal de suporte técnico) ou pode adicioná-lo ao script de início de sessão dos mesmos:
 
-    -   Para Windows 10, Windows 8.1 e Windows 8, 64 bits:
+    -   Para o Windows 10, Windows 8.1 e Windows 8 de 64 bits:
 
         ```
         x64\aadrmprep.exe /configureO2010
         ```
 
-    -   Para Windows 10, Windows 8.1 e Windows 8, 32 bits:
+    -   Para o Windows 10, Windows 8.1 e Windows 8 de 32 bits:
 
         ```
         X86\aadrmprep.exe /configureO2010
@@ -164,19 +164,19 @@ Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalaç
         x64\win7\aadrmpep.exe /configureO2010
         ```
 
-Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalação](#verifying-installation-success) neste artigo.
+Para confirmar o êxito da operação, consulte a secção [Confirmar o êxito da instalação](#verifying-installation-success) neste artigo.
 
-### Para instalar apenas o aplicativo RMS sharing e suplemento do Office
+### Para instalar apenas a aplicação de partilha RMS e o suplemento do Office
 
-1.  Instale o cliente AD RMS e o aplicativo RMS sharing usando o seguinte comando:
+1.  Instale o Cliente do AD RMS e a aplicação de partilha RMS através do seguinte comando:
 
-    -   Para Windows de 64 bits:
+    -   Para o Windows de 64 bits:
 
         ```
         x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "<log file path and name>"
         ```
 
-    -   Para Windows de 32 bits:
+    -   Para o Windows de 32 bits:
 
         ```
         X86\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "<log file path and name>"
@@ -184,15 +184,15 @@ Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalaç
 
     Por exemplo: `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
 
-2.  Instale o suplemento do Office usando os seguintes comandos:
+2.  Instale o suplemento do Office através dos seguintes comandos:
 
-    -   Para as versões de 64 bits do Office:
+    -   Para a versão de 64 bits do Office:
 
         ```
         msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "<log file path and name>"
         ```
 
-    -   Para as versões de 32 bits do Office:
+    -   Para a versão de 32 bits do Office:
 
         ```
         msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x86\Setup.msi" /L*v "<log file path and name>"
@@ -200,28 +200,28 @@ Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalaç
 
     Por exemplo: `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
 
-Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalação](#verifying-installation-success) neste artigo.
+Para confirmar o êxito da operação, consulte a secção [Confirmar o êxito da instalação](#verifying-installation-success) neste artigo.
 
-## Verificando o sucesso da instalação
-Você pode usar os arquivos de log da instalação para verificar uma instalação bem-sucedida.
+## Confirmar o êxito da instalação
+Pode utilizar os ficheiros de registo da instalação para verificar se a instalação foi concluída com êxito.
 
-### Para verificar o sucesso da instalação para o aplicativo RMS sharing para Office 2016 ou o Office 2013 e o Azure RMS ou Active Directory RMS
+### Para confirmar o êxito da instalação da aplicação de partilha RMS para o Office 2016 ou o Office 2013 e o Azure RMS ou o Active Directory RMS
 
--   Para verificar o sucesso do comando Setup.exe, em cada computador, procure o arquivo de log da instalação **RMInstaller.log** na pasta *%temp%\RMS_installer_&lt;guid&gt;* e identifique o código de saída.
+-   Para confirmar o êxito do comando Setup.exe, em cada computador, procure o ficheiro de registo de instalação **RMInstaller.log** na pasta *%temp%\RMS_installer_&lt;guid&gt;* e, em seguida, identifique o código de saída.
 
-    Uma instalação bem sucedida tem o código de saída 0 e qualquer outro número indica uma falha na instalação.
+    Uma instalação com êxito apresenta um código de saída com o valor 0 e todos os outros números indicam uma falha na instalação.
 
-    Exemplo de nome do arquivo de log: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
+    Exemplo de nome de ficheiro de registo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### Para verificar o sucesso da instalação para o aplicativo RMS sharing para Office 2010 e Azure RMS
+### Para confirmar o êxito da instalação da aplicação de partilha RMS para o Office 2010 e o Azure RMS
 
-1.  Para verificar o sucesso do comando Setup.exe, em cada computador, procure o arquivo de log da instalação **RMInstaller.log** na pasta *%temp%\RMS_installer_&lt;guid&gt;* e identifique o código de saída.
+1.  Para confirmar o êxito do comando Setup.exe, em cada computador, procure o ficheiro de registo de instalação **RMInstaller.log** na pasta *%temp%\RMS_installer_&lt;guid&gt;* e, em seguida, identifique o código de saída.
 
-    Uma instalação bem sucedida tem o código de saída 0 e qualquer outro número indica uma falha na instalação.
+    Uma instalação com êxito apresenta um código de saída com o valor 0 e todos os outros números indicam uma falha na instalação.
 
-    Exemplo de nome do arquivo de log: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    Exemplo de nome de ficheiro de registo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
-2.  Para verificar o sucesso do comando RMSSetup.exe, o usuário deve ter os seguintes arquivos criados na sua pasta *%localappdata%\microsoft\drm*:
+2.  Para confirmar o êxito do comando RMSSetup.exe, o utilizador deve ter os seguintes ficheiros criados na pasta *%localappdata%\microsoft\drm*:
 
     -   CERT-Machine-2048.drm
 
@@ -231,24 +231,24 @@ Você pode usar os arquivos de log da instalação para verificar uma instalaç�
 
     -   GIC-&#42;.drm
 
-    Exemplo de um arquivoCLC-&#42;.drm:
+    Exemplo de um ficheiro CLC-&#42;.drm:
 
-    **CLC-alice@isvtenant999.onmicrosoft.com-{1b9cfccf;k5b11;k4a10;kac15;k29b2b6980f4c}.drm**
+    **CLC-ines@isvtenant999.onmicrosoft.com-{1b9cfccf;k5b11;k4a10;kac15;k29b2b6980f4c}.drm**
 
-### Para verificar o sucesso da instalação para o aplicativo RMS sharing para Office 2010 e Active Directory RMS
+### Para confirmar o êxito da instalação da aplicação de partilha RMS para o Office 2010 e o Active Directory RMS
 
-1.  Para verificar o sucesso do comando Setup.exe, em cada computador, procure o arquivo de log da instalação na pasta *%temp%\RMS_installer_&lt;guid&gt;* e identifique o código de saída.
+1.  Para confirmar o êxito do comando Setup.exe, em cada computador, procure o ficheiro de registo de instalação na pasta *%temp%\RMS_installer_&lt;guid&gt;* e identifique o código de saída.
 
-    Uma instalação bem sucedida tem o código de saída 0 e qualquer outro número indica uma falha na instalação.
+    Uma instalação com êxito apresenta um código de saída com o valor 0 e todos os outros números indicam uma falha na instalação.
 
-    Exemplo de nome do arquivo de log: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
+    Exemplo de nome de ficheiro de registo: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0**
 
-2.  Para verificar o êxito do comando aadrmprep.exe, em cada computador, procure o seguinte texto no arquivo de log da instalação: **aadrmprep.exe foi encerrado com o status de SUCESSO**
+2.  Para confirmar o êxito do comando aadrmprep.exe, em cada computador, procure o seguinte texto no ficheiro de registo de instalação: **aadrmprep.exe saiu com o estado ÊXITO**
 
     > [!NOTE]
-    > Às vezes, a instalação pode executar duas vezes; a primeira ocorrência falhará e a segunda é bem-sucedida.
+    > Por vezes, a instalação pode ser executada duas vezes; a primeira ocorrência resulta em falha e a segunda é concluída com êxito.
 
-    Se você quiser verificar manualmente as alterações no registro realizadas por essa ferramenta, são os seguintes:
+    Se quiser verificar manualmente as alterações de registo feitas pela ferramenta, estas são as seguintes:
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\Federation]
 
@@ -260,44 +260,44 @@ Você pode usar os arquivos de log da instalação para verificar uma instalaç�
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation]
 
-        @="&lt;url de certificação&gt;"
+        @="&lt;certification url&gt;"
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM]
 
         DefaultUser="&lt;default_user&gt;"
 
-### Para verificar o sucesso da instalação apenas para o aplicativo RMS sharing e suplemento Office
+### Para confirmar o êxito da instalação apenas para a aplicação de partilha RMS e o suplemento do Office
 
-1.  Para verificar o êxito do comando Setup_ipviewer.exe, pesquise pelo seguinte texto no arquivo de log da instalação: **Status de êxito ou erro de instalação: 0**
+1.  Para confirmar o êxito do comando Setup_ipviewer.exe, procure o seguinte texto no ficheiro de registo de instalação: **Installation success or error status: 0**
 
-    Linhas de exemplo de uma instalação bem-sucedida:
+    Exemplos de linhas de uma instalação concluída com êxito:
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Produto: Active Directory Rights Management Services Client 2.1 - Instalação concluída com êxito.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Product: Active Directory Rights Management Services Client 2.1 -- Installation completed successfully.**
 
-    **MSI (s) (F0:B8) [14:19:57:854]: O Windows Installer instalou o produto. Nome do Produto: Active Directory Rights Management Services Client 2.1. Versão do produto: 1.0.1179.1. Idioma do produto: 1033. Fabricante: Microsoft Corporation. Status de sucesso ou erro na instalação: 0.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer installed the product. Product Name: Active Directory Rights Management Services Client 2.1. Product Version: 1.0.1179.1. Product Language: 1033. Manufacturer: Microsoft Corporation. Installation success or error status: 0.**
 
-2.  Para verificar o êxito do suplemento do Office, pesquise cada computador pelo seguinte texto no arquivo de log da instalação: **Status de êxito ou erro de instalação: 0**
+2.  Para confirmar o êxito da instalação do suplemento do Office, procure em cada computador o seguinte texto no ficheiro de registo de instalação: **Installation success or error status: 0**
 
-    Linhas de exemplo de uma instalação bem-sucedida:
+    Exemplos de linhas de uma instalação concluída com êxito:
 
-    **MSI (s) (9C:88) [18:49:04:007]: Produto: Suplementos do Microsoft RMS Office - Instalação concluída com êxito.**
+    **MSI (s) (9C:88) [18:49:04:007]: Product: Microsoft RMS Office Addins -- Installation completed successfully.**
 
-    **MSI (s) (9C:88) [18:49:04:007]: O Windows Installer instalou o produto. Nome do Produto: Suplementos do Microsoft Office RMS. Versão do produto: 1.0.7. Idioma do produto: 1033. Fabricante: Microsoft. Status de sucesso ou erro na instalação: 0.**
+    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer installed the product. Product Name: Microsoft RMS Office Addins. Product Version: 1.0.7. Product Language: 1033. Manufacturer: Microsoft. Installation success or error status: 0.**
 
 ## Comandos de desinstalação
-Nem todos os comandos de instalação que são necessários para essas implantações oferecem suporte a um comando de desinstalação. Você pode desinstalar o cliente AD RMS e o aplicativo de compartilhamento, e você pode desinstalar o suplemento do Office. Use os seguintes comandos para desinstalar esses elementos.
+Nem todos os comandos de instalação necessários para efetuar estas implementações suportam um comando de desinstalação. Pode desinstalar o cliente e a aplicação de partilha AD RMS, bem como o suplemento do Office. Utilize os seguintes comandos para desinstalar estes elementos.
 
-### Para desinstalar o Cliente AD RMS e o aplicativo RMS sharing
+### Para desinstalar o Cliente AD RMS e a aplicação de partilha RMS
 
--   Use os seguintes comandos:
+-   Utilize os seguintes comandos:
 
-    -   Para Windows de 64 bits:
+    -   Para o Windows de 64 bits:
 
         ```
         x64\setup_ipviewer.exe /uninstall /quiet
         ```
 
-    -   Para Windows de 32 bits:
+    -   Para o Windows de 32 bits:
 
         ```
         x86\setup_ipviewer.exe /uninstall /quiet
@@ -305,70 +305,70 @@ Nem todos os comandos de instalação que são necessários para essas implanta�
 
 ### Para desinstalar o suplemento do Office
 
--   Use os seguintes comandos:
+-   Utilize os seguintes comandos:
 
-    -   Para as versões de 64 bits do Office:
+    -   Para a versão de 64 bits do Office:
 
         ```
         msiexec /x \x64\Setup[64].msi /quiet
         ```
 
-    -   Para versões 32 bits do Office:
+    -   Para a versão de 32 bits do Office:
 
         ```
         msiexec /x \x86\Setup.msi /quiet
         ```
 
-## Suprimindo atualizações automáticas
-Como padrão, os usuários são notificados se houver uma versão posterior do aplicativo de compartilhamento do RMS e solicitados a baixá-lo. Você pode suprimir esta notificação fazendo a seguinte edição no registro:
+## Suprimir as atualizações automáticas
+Por predefinição, os utilizadores recebem uma notificação quando existe uma versão mais recente da aplicação de partilha RMS e é-lhes pedido que a transfiram. Pode suprimir esta notificação ao fazer a seguinte edição de registo:
 
-1.  Navegue até **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** e crie uma nova chave nomeada **RmsSharingApp** se ela ainda não estiver presente.
+1.  Navegue para **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** e, se esta ainda não existir, crie uma nova chave com o nome **RmsSharingApp**.
 
-2.  Selecione **RmsSharingApp**, crie um novo valor DWORD de **AllowUpdatePrompt**, e defina o valor como **0**.
+2.  Selecione **RmsSharingApp**, crie um novo Valor DWORD para **AllowUpdatePrompt** e defina o valor para **0**.
 
-Embora o aplicativo RMS sharing não seja suportado pelo WSUS, você pode usar a técnica a seguir para testar qualquer novas versões do aplicativo RMS sharing antes de implantá-lo em todos os usuários:
+Dado que a aplicação de partilha RMS não é suportada pelo WSUS, pode utilizar o seguinte método para testar as novas versões da aplicação de partilha RMS antes de as implementar para todos os utilizadores:
 
-1.  Nos computadores de todos os usuários, execute um script para suprimir as atualizações automáticas. Nos computadores usados pelos administradores para testar as novas versões, não execute esse script.
+1.  Execute um script nos computadores de todos os utilizadores para suprimir as atualizações automáticas. Não execute este script nos computadores utilizados pelos administradores para testar novas versões.
 
-2.  Quando uma nova versão estiver disponível, os administradores a baixarão e a testarão.
+2.  Quando uma nova versão se encontra disponível, os administradores devem transferi-la e testá-la.
 
-3.  Quando o teste for concluído e quaisquer problemas resolvidos, implante a versão mais recente para todos os usuários usando as instruções de implantação automática neste guia.
+3.  Após a conclusão dos testes e a resolução de eventuais problemas, implemente a versão mais recente para todos os utilizadores através das instruções de implementação automática existentes neste guia.
 
-## Apenas Azure RMS: Configurando o controle de documentos
-Se você tiver uma [assinatura que dá suporte a rastreamento de documentos](https://technet.microsoft.com/en-us/dn858608), o site de rastreamento de documentos estará habilitado por padrão para todos os usuários em sua organização.  O controle de documento mostra informações como os endereços de email das pessoas que tentaram acessar documentos protegidos que os usuários compartilharam, quando essas pessoas tentavam acessá-los e sua localização. Se exibir essas informações for proibido em sua organização devido aos requisitos de privacidade, você poderá desabilitar o acesso ao site de rastreamento de documentos usando o cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Você pode reabilitar o acesso ao site a qualquer momento usando [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037), e pode verificar se o acesso está habilitado ou desabilitado atualmente usando [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
+## Apenas Azure RMS: configurar o controlo de documentos
+Se tiver uma [subscrição que suporta o controlo de documentos](https://technet.microsoft.com/en-us/dn858608), o site de controlo de documentos é ativado por predefinição para todos os utilizadores da sua organização.  O controlo de documentos apresenta informações como os endereços de e-mail das pessoas que tentaram aceder a documentos protegidos partilhados por utilizadores, quando essas pessoas tentaram aceder aos mesmos e a sua localização. Se a apresentação deste tipo de informações é proibida dentro da sua organização devido a requisitos de privacidade, pode desativar o acesso ao site de controlo de documentos através do cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Pode reativar o acesso ao site em qualquer altura, através do cmdlet [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) e ainda verificar se o acesso ao site está ativado ou desativado, com o cmdlet [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
 
-Para executar esses cmdlets, você deve ter pelo menos a versão **2.3.0.0** do módulo Azure RMS para Windows PowerShell.  Para instruções de instalação, consulte [Instalando o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md)..
+Para executar estes cmdlets, tem de ter no mínimo a versão **2.3.0.0** do módulo do Azure RMS para o Windows PowerShell.  Para obter instruções de instalação, consulte [Installing Windows PowerShell for Azure Rights Management (Instalar o Windows PowerShell para o Azure Rights Management – em inglês)](../deploy-use/install-powershell.md).
 
 > [!TIP]
-> Se você tiver baixado e instalado o módulo anteriormente, verifique o número da versão executando: `(Get-Module aadrm –ListAvailable).Version`
+> Se já transferiu e instalou o módulo, verifique o número da versão ao executar: `(Get-Module aadrm –ListAvailable).Version`
 
-As seguintes URLs são usadas para controle de documentos e devem ser permitidas (por exemplo, adicioná-los aos seus Sites Confiáveis se você estiver usando o Internet Explorer com Segurança Reforçada):
+Os URLs seguintes são utilizados para o controlo de documentos e têm de ser permitidos (por exemplo, adicione-os à sua lista de Sites Fidedignos se estiver a utilizar o Internet Explorer com Segurança Avançada):
 
 -   https://&#42;.azurerms.com
 
 -   https://ecn.dev.virtualearth.net
 
     > [!NOTE]
-    > Esta URL é para o Bing maps.
+    > Este URL é destinado aos mapas Bing.
 
 -   https://&#42;.microsoftonline.com
 
 -   https://&#42;.microsoftonline-p.com
 
-## Somente AD RMS: Suporte para vários domínios de email dentro de sua organização
-Se você usa o AD RMS e usuários em sua organização tem vários domínios de email, talvez como resultado de uma fusão ou aquisição, você deve fazer a seguinte edição no registro:
+## Apenas AD RMS: suporte para múltiplos domínios de e-mail dentro da sua organização
+Se utilizar o AD RMS e os utilizadores da sua organização tiverem múltiplos domínios de e-mail, possivelmente como resultado de uma fusão ou aquisição, tem de criar a seguinte edição de registo:
 
-1.  Navegue até **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** e crie uma nova chave nomeada **RmsSharingApp** se ela ainda não estiver presente.
+1.  Navegue para **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** e, se esta ainda não existir, crie uma nova chave com o nome **RmsSharingApp**.
 
-2.  Selecione **RmsSharingApp**, crie um novo valor de cadeia múltipla de caracteres chamado **FederatedDomains**, e adicione os domínios e todos os subdomínios que sua organização usa. Não há suporte caracteres curinga.
+2.  Selecione **RmsSharingApp**, crie um novo Valor de Múltiplas Cadeias com o nome **FederatedDomains** e, em seguida, adicione todos os domínios e subdomínios utilizados pela sua organização. Os carateres universais não são suportados.
 
-    Por exemplo: a empresa Coho Vineyard &amp; Winery tem um domínio de email padrão de **cohovineyardandwinery.com**, mas devido a fusões, eles também usam os domínios de email **cohowinery.com**, **eastcoast.cohowinery.com**, e **cohovineyard**. Para o valor de dados **FederatedDomains**, o administrador insere: **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**
+    Por exemplo: a empresa Coho Vineyard &amp; Winery tem o domínio de e-mail padrão **cohovineyardandwinery.com** mas, devido a fusões, também utilizam os domínios de e-mail **cohowinery.com**, **eastcoast.cohowinery.com** e **cohovineyard**. Para os dados do valor **FederatedDomains**, o administrador deve introduzir: **cohowinery.com;eastcoast.cohowinery.com;cohovineyard**
 
-Se você não alterar esse registro, os usuários não poderão consumir conteúdo protegido por outros usuários em sua organização. Esta edição do registro não é necessária se você usar o Azure RMS.
+Se não fizer esta alteração de registo, é possível que os utilizadores não consigam consumir conteúdos que foram protegidos por outros utilizadores da organização. Esta edição de registo não é necessária se utilizar o Azure RMS.
 
 
-## Próximas etapas
-Para obter informações técnicas adicionais que incluem a explicação da diferença entre os níveis de proteção (nativa e genérica), os tipos de arquivo e extensões de nome do arquivo com suporte e como alterar o nível de proteção padrão, consulte [Visão geral técnica do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide-technical.md).
+## Passos seguintes
+Para informações técnicas adicionais com explicações sobre os diferentes níveis de proteção (nativa e genérica), os tipos de ficheiro e as extensões de nome de ficheiro suportados e como pode alterar o nível de proteção predefinido, consulte [Technical overview for the Rights Management sharing application (Descrição geral técnica da aplicação de partilha Rights Management – em inglês)](sharing-app-admin-guide-technical.md).
 
 
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Plataformas com suporte | Azure RMS
-description: Este tópico identifica as plataformas de cliente e servidor do Rights Management Services SDK 2.1 com suporte.
+title: Plataformas suportadas | Azure RMS
+description: Este tópico identifica as plataformas de cliente e de servidor suportadas pelo SDK Rights Management Services 2.1.
 
 keywords:
 author: bruceperlerms
@@ -25,20 +25,20 @@ ms.suite: ems
 
 ---
 
-# Plataformas com suporte
+# Plataformas suportadas
 
-Este tópico identifica as plataformas de cliente e servidor do Rights Management Services SDK 2.1 com suporte.
+Este tópico identifica as plataformas de cliente e de servidor suportadas pelo SDK Rights Management Services 2.1.
 
-## Plataformas com suporte
+## Plataformas suportadas
 
 -   Windows 10
 -   Windows Server 2012 R2
--   Windows Server 2012
+-   Windows Server 2012
 -   Windows 8
 -   Windows Server 2008 R2 SP1
 -   Windows 7 + SP1
 
-**Observação**  Há suporte para o uso do recurso de modelos do Windows Server 2008 em diante.
+**Nota** A utilização da funcionalidade de modelos é suportada a partir do Windows Server 2008.
 
  
 

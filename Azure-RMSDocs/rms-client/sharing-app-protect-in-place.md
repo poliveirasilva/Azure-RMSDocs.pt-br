@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo de compartilhamento Rights Management | Azure RMS
+title: Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,49 +25,49 @@ ms.suite: ems
 
 ---
 
-# Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo Rights Management sharing
+# Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-Quando você protege um arquivo in-loco, ele substitui o arquivo original, desprotegido. Em seguida, você pode deixar o arquivo onde ele está, copiar para outra pasta ou dispositivo ou compartilhar a pasta em que ele se encontra e o arquivo continuará protegido. Você também pode anexar o arquivo protegido a uma mensagem de email, embora a maneira recomendada para compartilhar um arquivo protegido por email seja diretamente do Explorador de arquivos ou de um aplicativo do Office (consulte [Proteger um arquivo que você compartilha por email usando o aplicativo de compartilhamento do Rights Management](sharing-app-protect-by-email.md))).
+Quando protege um ficheiro no local, este substitui o ficheiro original, que está desprotegido. Em seguida, pode deixar o ficheiro onde se encontra, copiá-lo para outra pasta ou dispositivo ou partilhar a pasta onde está e o ficheiro permanece protegido. Também pode anexar o ficheiro protegido a uma mensagem de e-mail, embora a forma recomendada para partilhar um ficheiro protegido por e-mail seja diretamente a partir do Explorador de Ficheiros ou de uma aplicação do Office (consulte [Proteger um ficheiro que partilha por e-mail ao utilizar a aplicação de partilha Rights Management](sharing-app-protect-by-email.md)).
 
 > [!TIP]
-> Se você encontrar erros ao tentar proteger arquivos, consulte [Perguntas frequentes sobre o aplicativo de compartilhamento Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
+> Se vir algum erro ao tentar proteger ficheiros, consulte a [FAQ acerca da Aplicação de Partilha Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-## Para proteger um arquivo em um dispositivo (proteger in-loco)
+## Para proteger um ficheiro num dispositivo (proteger no local)
 
-1.  No Explorador de arquivos, selecione um arquivo para proteger. Clique com o botão direito do mouse, selecione **Proteger com RMS** e, em seguida, selecione **Proteger in-loco**. Por exemplo:
+1.  No Explorador de Ficheiros, selecione um ficheiro a proteger. Clique com o botão direito do rato, selecione **Proteger com RMS** e, em seguida, selecione **Proteger no local**. Por exemplo:
 
-    ![Opção de menu Proteger in-loco](../media/ADRMS_MSRMSApp_SP_CompanyDefined.png)
+    ![Opção de menu Proteger no local](../media/ADRMS_MSRMSApp_SP_CompanyDefined.png)
 
     > [!NOTE]
-    > Se você não vir a opção **Proteger com RMS** , é provável que o aplicativo RMS sharing não esteja instalado no seu computador ou que o computador tenha de ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento RMS, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+    > Se não vir a opção **Proteger com RMS**, é provável que a aplicação de partilha RMS não esteja instalada no seu computador ou que seja necessário reiniciar o computador para concluir a instalação. Para obter mais informações sobre como instalar a aplicação de partilha RMS, consulte [Transferir e instalar a aplicação de partilha Rights Management](install-sharing-app.md).
 
-2.  Realize um dos seguintes procedimentos:
+2.  Efetue uma das seguintes ações:
 
-    -   Selecione um modelo de política: essas são permissões predefinidas que normalmente restringem o acesso e o uso para as pessoas em sua organização. Por exemplo, se o nome da sua organização é “Contoso, Ltd”, você deverá encontrar **Contoso, Ltd - Somente Exibição Confidencial**. Se esta for a primeira vez que protege um arquivo neste computador, você primeiro precisará selecionar **Proteção definida pela empresa** para baixar os modelos.
+    -   Selecione um modelo de política: estas são permissões predefinidas que, normalmente, restringem o acesso e a utilização a pessoas na sua organização. Por exemplo, se o nome da sua organização for “Contoso, Lda.”, poderá ver **Contoso, Lda. – Apenas Visualização Confidencial**. Se for a primeira vez que protege um ficheiro neste computador, primeiro terá de selecionar **Proteção Definida pela Empresa** para transferir os modelos.
 
-        Da próxima vez que você clicar na opção **Proteger in-loco**, você verá até 10 modelos dentre os quais escolher. Se houver mais de 10 modelos disponíveis e o que você quiser não for exibido, clique em **Proteção Definida pela Empresa** para baixar e ver todos os modelos.
+        Da próxima vez que clicar na opção **Proteger no local**, irá ver até 10 modelos à escolha. Se existirem mais de 10 modelos disponíveis e aquele que pretende não for apresentado, clique em **Proteção Definida pela Empresa** para transferir e ver todos os modelos.
 
-        Quando seleciona um modelo de política, você também pode proteger vários arquivos e uma pasta. Quando você seleciona uma pasta, todos os arquivos nessa pasta serão automaticamente selecionados para proteção, mas novos arquivos criados nessa pasta não serão automaticamente protegidos.
+        Quando seleciona um modelo de política, também pode proteger vários ficheiros e uma pasta. Quando seleciona uma pasta, todos os ficheiros nessa pasta são selecionados automaticamente para proteção, mas os novos ficheiros que criar nessa pasta não serão automaticamente protegidos.
 
-    -   Selecione **Permissões personalizadas**: escolha esta opção se os modelos não fornecerem o nível de proteção que você precisa ou se você deseja definir explicitamente as opções de proteção por conta própria. Especifique as opções que você deseja para esse arquivo na [caixa de diálogo Adicionar Proteção](sharing-app-dialog-box.md) e, em seguida, clique em **Aplicar**.
+    -   Selecione **Permissões Personalizadas**: escolha esta opção se os modelos não fornecerem o nível de proteção de que necessita ou se pretender definir explicitamente as opções de proteção. Especifique as opções que pretende para este ficheiro na [caixa de diálogo adicionar proteção](sharing-app-dialog-box.md) e, em seguida, clique em **Aplicar**.
 
-3.  Você pode ver rapidamente uma caixa de diálogo para informar que o arquivo está sendo protegido e, em seguida, retorna o foco para o Explorador de arquivos. O(s) arquivo(s) selecionado(s) agora está(ão) protegido(s). Em alguns casos (quando a adição de proteção altera a extensão de nome de arquivo), o arquivo original no Explorador de arquivos é substituído por um novo arquivo com o ícone de bloqueio de proteção do Rights Management. Por exemplo:
+3.  Poderá ver momentaneamente uma caixa de diálogo que lhe indica que o ficheiro está a ser protegido e, em seguida, o foco regressa ao Explorador de Ficheiros. O ficheiro ou ficheiros selecionados estão agora protegidos. Em alguns casos (quando a adição de proteção altera a extensão de nome de ficheiro), o ficheiro original no Explorador de Ficheiros é substituído por um novo ficheiro que tem o ícone de cadeado de proteção do Rights Management. Por exemplo:
 
-    ![Arquivo protegido com ícone de bloqueio para o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_Pfile.png)
+    ![Ficheiro protegido com ícone de cadeado da aplicação de partilha RMS](../media/ADRMS_MSRMSApp_Pfile.png)
 
-Se você precisar posteriormente remover a proteção de um arquivo, consulte [Remover a proteção de um arquivo usando o aplicativo de compartilhamento do Rights Management](sharing-app-remove-protection.md).
+Se precisar de remover a proteção de um ficheiro mais tarde, consulte [Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management](sharing-app-remove-protection.md).
 
 ## Exemplos e outras instruções
-Para obter exemplos de como você pode usar o aplicativo Rights Management sharing e instruções, consulte as seguintes seções do guia de usuário do aplicativo Rights Management sharing:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
--   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que pretende fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
-## Consulte também
-[Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+## Consulte Também
+[Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
 <!--HONumber=May16_HO2-->

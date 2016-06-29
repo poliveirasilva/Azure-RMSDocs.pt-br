@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Como saber se os usuários se inscreveram para o RMS para pessoas físicas | Azure RMS
+title: Como saber se os utilizadores se inscreveram no RMS para indivíduos | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,19 +26,19 @@ ms.suite: ems
 ---
 
 
-# Como saber se os usuários se inscreveram para o RMS para pessoas físicas
+# Como saber se os utilizadores se inscreveram no RMS para indivíduos
 
 *Aplica-se a: Azure Rights Management*
 
-Como administrador, como você sabe se os usuários se inscreveram para o RMS para pessoas físicas? Você pode usar qualquer um dos seguintes métodos ou uma combinação deles:
+Como administrador, como sabe se os seus utilizadores se inscreveram no RMS para indivíduos? Pode utilizar qualquer um ou uma combinação dos seguintes métodos:
 
--   Pergunte aos usuários como eles protegem arquivos altamente confidenciais, especialmente quando colaboram com pessoas de fora da organização.
+-   Pergunte aos utilizadores como protegem os ficheiros altamente confidenciais, especialmente quando estão a colaborar com outras pessoas fora da organização.
 
--   Se você tiver uma assinatura do Azure para sua organização, use o cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) para ver se **RIGHTSMANAGEMENT_ADHOC** é retornado como uma das assinaturas. Se for, essa é a assinatura do RMS para pessoas físicas que foi concedida para a empresa, com um pool de unidades ativas disponível para os usuários usarem o processo de inscrição de autoatendimento.
+-   Quando tiver uma subscrição do Azure para a sua organização, utilize o cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx) para ver se **RIGHTSMANAGEMENT_ADHOC** é devolvido como uma das subscrições. Em caso afirmativo, esta é a subscrição do RMS para indivíduos que foi concedida à organização, com um conjunto de unidades ativas disponíveis para os utilizadores utilizarem o processo de inscrição self-service.
 
--   Use uma solução de gerenciamento do sistema, como o System Center Configuration Manager, para o software de inventário instalado e o software em uso. O aplicativo de compartilhamento Rights Management é executado usando o programa **ipviewer.exe** e você pode [Baixar e instalar o aplicativo](http://go.microsoft.com/fwlink/?LinkId=303970) gratuitamente para identificar outras características desse aplicativo que é usado para o inventário de software.
+-   Utilize uma solução de gestão do sistema, tal como o System Center Configuration Manager, para o software de inventário instalado e o software em utilização. A aplicação de partilha Rights Management é executada através do programa **ipviewer.exe** e pode [transferir e instalar a aplicação](http://go.microsoft.com/fwlink/?LinkId=303970) gratuitamente para identificar outras caraterísticas sobre esta aplicação que utiliza, em seguida, para o inventário de software.
 
--   Esteja atento às extensões de nome de arquivo que criadas pelo aplicativo de compartilhamento Rights Management. As extensões de nome de arquivo .pfile e .ppdf são os exemplos mais óbvios, mas há outros arquivos que alteram sua extensão de nome de arquivo quando são protegidos nativamente pelo Rights Management. Para obter mais informações, consulte a seção [Tipos de arquivo e extensões de nome de arquivo com suporte](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) no [Guia de administrador do aplicativo de compartilhamento Rights Management](http://technet.microsoft.com/library/dn339003.aspx).
+-   Esteja atento às extensões dos nomes dos ficheiros que são criadas pela aplicação de partilha Rights Management. As extensões dos nomes dos ficheiros .pfile e .ppdf são os exemplos mais óbvios, mas existem outros ficheiros que alteram as respetivas extensões dos nomes dos ficheiros quando estes estão protegidos nativamente pelo Rights Management. Para obter mais informações, consulte a secção [Tipos de ficheiros e extensões dos nomes dos ficheiros suportados](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) do [Guia do administrador da aplicação de partilha Rights Management](http://technet.microsoft.com/library/dn339003.aspx).
 
 
 

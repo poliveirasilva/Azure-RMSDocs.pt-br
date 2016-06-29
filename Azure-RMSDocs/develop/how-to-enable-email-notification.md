@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Habilitar a notificação por email | Azure RMS
-description: A notificação por email permite que um proprietário de conteúdo protegido seja notificado quando seu conteúdo for acessado.
+title: Ativar notificação por e-mail | Azure RMS
+description: A notificação por e-mail permite que um proprietário de conteúdo protegido seja notificado quando o respetivo conteúdo for acedido.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,11 +24,11 @@ ms.suite: ems
 
 ---
 
-# Como habilitar a notificação por email
+# Procedimentos: ativar notificação por e-mail
 
-A notificação por email permite que um proprietário de conteúdo protegido seja notificado quando seu conteúdo for acessado.
+A notificação por e-mail permite que um proprietário de conteúdo protegido seja notificado quando o respetivo conteúdo for acedido.
 
-Para configurar a notificação por email para uma licença determinada, use [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com o parâmetro de tipo de propriedade, *dwPropID*, como [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) e os campos de dados de aplicativo formatados como [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
+Para configurar a notificação por e-mail para uma determinada licença, utilize [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com o parâmetro de tipo de propriedade *dwPropID* como [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) e os campos de dados da aplicação formatados como [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
 
     C++
 
@@ -47,18 +47,18 @@ Para configurar a notificação por email para uma licença determinada, use [**
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
         
 
-A tabela a seguir contém os campos de dados do aplicativo, pares de nome e valor da propriedade, para notificação por email do RMS.
+A tabela seguinte contém os campos de dados da aplicação, o nome da propriedade e os pares de valor para a notificação por e-mail do RMS.
 
 
-|Nome da propriedade | Tipo de dados | Exemplo de valor | Anotações |
+|Nome da Propriedade | Tipo de Dados | Valor de Exemplo | Notas |
 |--------------|-----------|---------------|-------|
-|MS.Content.Name|cadeia de caracteres|"FinancialReport.docx"|Esse é um identificador associado ao conteúdo protegido.<br><br> Para arquivos protegidos, esse valor deve ser o nome do arquivo sem qualquer informação de caminho.<br><br> Para outros tipos de conteúdo, como uma mensagem de email, pode ser o assunto do email ou pode estar vazio.|
-|MS.Notify.Enabled|cadeia de caracteres|“true” &#124; “false”|Se esse valor for definido como "true", uma notificação de email será enviado ao proprietário da licença de publicação quando alguém tentar usá-la para obter uma licença de usuário final.|
-|MS.Notify.Culture|cadeia de caracteres|“pt-BR”| **Fonte:** System.Globalization.CultureInfo.CurrentUICulture.Name <br><br>Esse valor é usado para determinar o idioma localizado do email de notificação, e a data/hora e a formatação de número que devem ser usadas na mensagem de email.<br><br>Ele deve ser definido com base nas configurações do usuário da máquina na qual a licença de publicação será criada, ou com base na cultura preferencial do proprietário da licença de publicação.|
-|MS.Notify.TZID|cadeia de caracteres|“Hora padrão do Pacífico”|**Fonte:** TimeZoneInfo.Local.Id - ID do fuso horário do Windows.<br><br>Esse valor é o identificador de fuso horário do sistema operacional Microsoft Windows, descrevendo um determinado fuso horário e suas características.|
-|MS.Notify.TZO|cadeia de caracteres|“-480”|Esse é o deslocamento de fuso horário do proprietário de licença de publicação em relação aos minutos da hora UTC.<br><br>Se um valor válido de TZID for fornecido, o deslocamento do fuso horário especificado por ele será usado e este valor será ignorado.<br><br>Há uma probabilidade muito grande de esse valor ser usado por plataformas de publicação que não são baseadas no Windows e que não têm acesso à lista de valores de ID de fuso horário do sistema operacional Windows.<br><br>Caso um valor de TZID não seja fornecido, esse valor será usado para calcular o deslocamento de tempo em mensagens de notificação, e o TZSN será usado (independentemente do valor de fuso horário) para indicar o nome do fuso horário. Isso resultará em um fuso horário fixo, sem uma atualização para o horário de verão quando for aplicável.<br><br>Por exemplo:<br><br>Se o TXID estiver em branco, e o TZ0 for definido como "-420", e o TZSN for definido como "Horário de Verão do Pacífico", todos os valores mostrados no email de notificação serão ajustados para "Horário de Verão do Pacífico" e exibidos dessa forma, mesmo se o horário de verão não estiver mais em vigor no momento.<br><br>Por outro lado, se um TZID for fornecido junto com o TZSN e o TZDN, as horas especificadas no email de notificação serão ajustadas e exibidas com base na exibição da data e hora no modo Horário de verão ou Padrão.|
-|MS.Notify.TZSN|cadeia de caracteres|“Hora padrão do Pacífico”|**Fonte:** TimeZoneInfo.Local.StandardName - Nome do fuso horário padrão.<br><br>Esse deve ser o nome localizado do fuso horário padrão.|
-|MS.Notify.TZDN|cadeia de caracteres|"Horário de Verão do Pacífico"|**Fonte:** TimeZoneInfo.Local.DaylightName - Nome do Fuso horário de verão.<br><br>Esse deve ser o nome localizado do horário de verão do fuso horário. Pode ser igual ao nome padrão, se o fuso horário não oferecer suporte ao horário de verão.|
+|MS.Content.Name|cadeia|“FinancialReport.docx”|Este é um identificador associado ao conteúdo protegido.<br><br> Para ficheiros protegidos, este valor deverá ser o nome do ficheiro sem quaisquer informações de caminho.<br><br> Para outros tipos de conteúdo, tal como uma mensagem de e-mail, poderá ser o assunto do e-mail ou poderá estar vazio.|
+|MS.Notify.Enabled|cadeia|“true” &#124; “false”|Se este valor for definido como “true”, será enviado um e-mail de notificação para o proprietário da licença de publicação quando alguém tenta utilizá-la para obter uma licença de utilizador final.|
+|MS.Notify.Culture|cadeia|“pt-PT”| **Origem:** System.Globalization.CultureInfo.CurrentUICulture.Name <br><br>Este valor é utilizado para determinar o idioma localizado do e-mail de notificação e a formatação de números e data/hora que devem ser utilizados na mensagem de e-mail.<br><br>Deve ser definido com base nas definições do utilizador do computador no qual a licença publicada é criada ou com base na cultura preferencial do proprietário da licença publicada.|
+|MS.Notify.TZID|cadeia|“Hora Padrão do Pacífico”|**Origem:** TimeZoneInfo.Local.Id – ID de fuso horário do Windows.<br><br>Este valor é o identificador de fuso horário do sistema operativo do Microsoft Windows que descreve um fuso horário específico e as respetivas caraterísticas.|
+|MS.Notify.TZO|cadeia|“-480”|Este é o desvio de fuso horário do proprietário da licença publicada em termos de minutos da hora UTC.<br><br>Se um valor de TZID válido for fornecido, o desvio do fuso horário especificado pelo mesmo será utilizado e este valor será ignorado.<br><br>O mais provável é que este valor seja utilizado por plataformas de publicação não baseadas no Windows que não têm acesso à lista de valores de ID de fuso horário do sistema operativo Windows.<br><br>Se um valor TZID não for fornecido, este valor será utilizado para calcular o desvio do tempo nas mensagens de notificação e o TZSN será utilizado (independentemente do valor de fuso horário) para indicar o nome do fuso horário. Isto fará com que o fuso horário seja fixo e não atualize para a hora de verão quando for aplicável.<br><br>Por exemplo:<br><br>Se TXID estiver em branco, TZ0 estiver definido como “-420” e TZSN estiver definido como “Hora de Verão do Pacífico”, todos os valores apresentados no e-mail de notificação serão ajustados para “Hora de Verão do Pacífico” e apresentados como tal, mesmo que a hora de Verão já não esteja atualmente em vigor.<br><br>Por outro lado, se um TZID for fornecido juntamente com TZSN e TZDN, as horas especificadas no e-mail de notificação serão ajustadas e apresentadas com base na apresentação da data e hora no Modo de verão ou Modo padrão.|
+|MS.Notify.TZSN|cadeia|“Hora Padrão do Pacífico”|**Origem:** TimeZoneInfo.Local.StandardName – nome do Fuso Horário Padrão.<br><br>Isto deve ser o nome localizado do nome do fuso horário padrão do fuso horário.|
+|MS.Notify.TZDN|cadeia|“Hora de Verão do Pacífico”|**Origem:** TimeZoneInfo.Local.DaylightName – nome do Fuso Horário de Verão.<br><br>Isto deve ser o nome localizado do nome da hora de verão do fuso horário. Pode ser igual ao nome padrão se o fuso horário não suportar a hora de verão.|
 
 ## Tópicos relacionados
 

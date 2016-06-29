@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: O cliente Azure RMS| Azure RMS
+title: O Cliente do Azure RMS | Azure RMS
 description:
 keywords:
 author: msmbaldwin
@@ -25,9 +25,9 @@ ms.reviewer: mbaldwin
 
 ---
 
-# O cliente Azure RMS
+# O Cliente do Azure RMS
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
 
 

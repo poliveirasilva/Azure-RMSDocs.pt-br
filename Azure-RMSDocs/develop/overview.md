@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Visão geral | Azure RMS
-description: O AD RMS e o Azure RMS são uma tecnologia de proteção de informações que ajuda a proteger informações digitais do uso não autorizado.
+title: Descrição geral | Azure RMS
+description: O AD RMS e o Azure RMS são uma tecnologia de proteção de informações que ajudam a salvaguardar as informações digitais contra a utilização não autorizada.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,43 +24,43 @@ ms.suite: ems
 
 ---
 
-# Visão geral
+# Descrição Geral
 
 
-O AD RMS e o Azure RMS (Microsoft Rights Management Services) são uma tecnologia de proteção de informações que ajuda a proteger informações digitais do uso não autorizado. Por meio de seus aplicativos habilitados para direitos, os proprietários de conteúdo poderão definir quem pode abrir, modificar, imprimir, encaminhar ou executar outras ações em seu conteúdo.
+O Microsoft Rights Management Services (AD RMS e Azure RMS) é uma tecnologia de proteção de informações que ajuda a salvaguardar as informações digitais contra a utilização não autorizada. Através das aplicações com capacidade para direitos, os proprietários de conteúdo conseguirão definir quem pode abrir, modificar, imprimir, reencaminhar ou efetuar outras ações no conteúdo.
 
-Microsoft Rights Management SDK 4.2 está disponível para várias plataformas e é um SDK (Kit de desenvolvedor de software), ou estrutura, projetado para computadores e dispositivos cliente com o objetivo de ajudar a proteger o acesso e o uso de informações que passam por aplicativos "habilitados para direitos". Os SDKs para essas plataformas fornecem uma API simples para um desenvolvedor de aplicativos proteger ou consumir conteúdo digital, recuperar modelos e adquirir políticas de um servidor, além de outras tarefas de gerenciamento de direitos relacionadas.
+O SDK Microsoft Rights Management 4.2 está disponível para várias plataformas e é uma arquitetura ou um SDK (Software Development Kit), que foi concebido para computadores cliente e dispositivos para ajudar a proteger o acesso e utilização das informações que circulam pelas aplicações com “capacidade para direitos”. Os SDKs para estas plataformas fornecem uma API simples para um programador de aplicações proteger ou consumir conteúdos digitais, obter modelos e adquirir políticas de um servidor e outras tarefas de gestão de direitos relacionados.
 
-Para saber mais sobre as plataformas com suporte no momento, consulte nosso portal de documentação do desenvolvedor para o [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md).
+Para obter mais informações sobre as plataformas atualmente suportadas, consulte o nosso portal de documentação para programadores do [SDK Microsoft Rights Management](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md).
 
-Veja a seguir alguns cenários possíveis:
+Seguem-se alguns dos possíveis cenários:
 
--   Uma firma de advocacia quer impedir que mensagens de email confidenciais sejam impressas ou encaminhadas em um dispositivo móvel.
--   Os desenvolvedores de projetos auxiliados por computador e softwares de fabricação desejam limitar o acesso ao desenho a um grupo pequeno de usuários dentro da divisão de pesquisa, sem exigir o uso de senhas.
--   Os proprietários de um aplicativo móvel de design gráfico desejam usar uma única licença que permita a visualização livre de cópias de baixa resolução das imagens, mas que exija o pagamento para acessar as versões em alta resolução.
--   Os proprietários de uma biblioteca de documentos online desejam habilitar direitos para exibir, imprimir ou editar documentos com base na identidade do usuário, quando os documentos são baixados em um dispositivo móvel.
--   Uma empresa deseja publicar informações confidenciais de funcionários em um site interno que restrinja os privilégios de visualização e edição para determinados usuários.
+-   Uma firma de advogados pretende impedir que as mensagens de e-mail confidenciais sejam impressas ou reencaminhadas num dispositivo móvel.
+-   Os programadores do projeto assistido por computador e software de fabrico pretendem limitar o acesso de desenho a um pequeno grupo de utilizadores dentro da divisão de pesquisa sem a necessidade da utilização de palavras-passe.
+-   Os proprietários de uma aplicação móvel de design gráfico pretendem utilizar uma única licença que permita a livre visualização de cópias de baixa resolução das suas imagens, mas requer o pagamento para o acesso a versões de alta resolução.
+-   Os proprietários de uma biblioteca de documentos online pretendem ativar direitos para ver, imprimir ou editar documentos com base na identidade do utilizador quando os documentos são transferidos para um dispositivo móvel.
+-   Uma empresa pretende publicar informações confidenciais sobre os funcionários num Web site interno que restringe a visualização e edição de privilégios a determinados utilizadores.
 
-O MS RMS SDK 4.2 pode ser baixado, mediante confirmação e aceitação do seu contrato de licença, distribuído gratuitamente com o software de terceiros para permitir ao cliente acessar o conteúdo que tenha sido protegidos por direitos pelo uso e implantação de servidores do AD RMS em seu ambiente ou pelos Serviços do Azure RMS. Para saber mais, confira [Introdução](get-started.md).
+O SDK MS RMS 4.2 pode ser transferido, com o reconhecimento e a aceitação do respetivo contrato de licença, distribuído gratuitamente com o seu software de terceiros para permitir o acesso de cliente ao conteúdo que foi protegido por direitos através da utilização e implementação de servidores AD RMS no seu ambiente ou serviços do Azure RMS. Para obter mais informações, consulte [Introdução](get-started.md).
 
 ## Destaques do SDK
 
 
-O SDK do MS RMS SDK 4.2 oferece alguns recursos novos e interessantes que incluem o seguinte:
+O SDK MS RMS 4.2 oferece algumas funcionalidades novas que incluem o seguinte:
 
--   **API reprojetada** – A API do MS RMS SDK 4.2 foi reformulada para manter a simplicidade máxima, de modo que os desenvolvedores possam aproveitar uma API simples e transparente de criptografia e descriptografia que forneça comportamentos consistentes de RMS com o mínimo de esforço.
--   **Suporte híbrido para AD RMS e Azure RMS** – um único aplicativo habilitado para RMS pode consumir e proteger o conteúdo do servidor do AD RMS (usando a extensão de dispositivo móvel do AD RMS) e do serviço do Azure RMS. O MS RMS SDK 4.2 descobre de forma transparente o ponto de extremidade relevante que os administradores de TI podem configurar.
--   **Traga sua própria biblioteca de autenticação** – como desenvolvedor de aplicativos você pode escolher qual biblioteca de autenticação é usada com o MS RMS SDK 4.2. Quer seja a [Biblioteca de Autenticação do Azure AD](https://msdn.microsoft.com/en-us/library/jj573266.aspx) ou a biblioteca personalizada de sua organização,o MS RMS SDK 4.2 separa a pilha de autenticação para que você possa escolher a biblioteca mais adequada às suas necessidades.
--   **Traga sua própria interface de usuário** - agora, o MS RMS SDK 4.2 permite que você implemente a interface de usuário personalizada. Desde a proteção do conteúdo e escolha dos modelos até a exibição e alteração de permissões ao consumir conteúdo protegido, o MS RMS SDK 4.2 não impõe qualquer interface interna em seus aplicativos. No entanto, se você quiser, use as bibliotecas de interface de usuário do Microsoft RMS para todas as plataformas por meio de nossa [conta do GitHub](https://github.com/AzureAD/).
--   **Acessar o conteúdo protegido offline** – O MS RMS SDK 4.2 permite que os usuários de seu aplicativo acessem o conteúdo protegido, mesmo quando não houver conectividade com a internet. O MS RMS SDK 4.2 armazena com segurança em cache as políticas de consumo de conteúdo protegido, para que os usuários possam acessar dados protegido do RMS no modo offline.
+-   **API reformulada** – a API do SDK MS RMS 4.2 foi reformulada para uma simplicidade máxima para que os programadores possam desfrutar de uma API de encriptação e desencriptação simples e transparente, que forneça comportamentos de RMS consistentes com esforços mínimos.
+-   **Suporte híbrido para o AD RMS e o Azure RMS** – uma única aplicação com suporte RMS pode consumir e proteger conteúdo do servidor AD RMS (utilizando a extensão do dispositivo móvel do AD RMS) e do serviço do Azure RMS. O SDK MS RMS 4.2 deteta de forma transparente o ponto final relevante que os administradores de TI podem configurar.
+-   **Traga a sua própria biblioteca de autenticação** – como um programador de aplicações, pode escolher que biblioteca de autenticação é utilizada com o SDK MS RMS 4.2. Quer seja a [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx) ou a biblioteca personalizada da sua organização, o SDK MS RMS 4.2 divide a pilha de autorização para que possa escolher a biblioteca que mais se adequa às suas necessidades.
+-   **Traga a sua própria interface de utilizador** – o SDK MS RMS 4.2 agora permite-lhe implementar a sua interface de utilizador personalizada. Desde proteger conteúdo e escolher modelos, a mostrar e alterar as permissões enquanto é consumido conteúdo protegido, o SDK MS RMS 4.2 não impõe qualquer IU incorporada nas suas aplicações. Se quiser, no entanto, pode utilizar bibliotecas da IU do Microsoft RMS para todas as plataformas através da nossa [Conta do GitHub](https://github.com/AzureAD/).
+-   **Aceder aos conteúdos protegidos offline** – o SDK MS RMS 4.2 permite aos utilizadores de aplicações aceder aos conteúdos protegidos, mesmo quando não existe acesso à Internet. O SDK MS RMS 4.2 coloca em cache as políticas de consumo dos conteúdos protegidos em segurança para que os utilizadores possam aceder aos dados protegidos do RMS offline.
 
-Use o guia de [Introdução](get-started.md) para iniciar seu projeto de aplicativo para dispositivo com informações protegidas.
+Utilize o guia de [Introdução](get-started.md) para iniciar o projeto de aplicação do dispositivo de informações protegidas.
 
 ## Tópicos relacionados
 
-* [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
+* [SDK Microsoft Rights Management](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 * [Introdução](get-started.md)
-* [Biblioteca de Autenticação do Azure AD](https://msdn.microsoft.com/en-us/library/jj573266.aspx)
+* [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx)
 * [Conta do GitHub](https://github.com/AzureAD/)
  
 

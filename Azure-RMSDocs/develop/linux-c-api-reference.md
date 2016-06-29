@@ -2,7 +2,7 @@
 # required metadata
 
 title: Referência da API do Linux | Azure RMS
-description: A referência da API para o nosso suporte de sistema operacional Linux está hospedada no Github de Linux.
+description: A referência da API para o nosso suporte do sistema operativo caraterístico de Linux está alojada no Github.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 # Referência da API do Linux
 
-A referência da API para nosso suporte de sistema operacional Linux está hospedado no Github - [RMS SDK para C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html). Para saber mais, confira [Introdução](get-started.md).
+A referência da API para o nosso suporte do sistema operativo caraterístico de Linux está alojada no Github – [SDK RMS para C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html). Para obter mais informações, consulte [Introdução](get-started.md).
 
  
 

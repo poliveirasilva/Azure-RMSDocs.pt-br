@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurações de Registro para o conector RMS | Azure RMS
+title: Definições de registo para o conetor RMS | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,62 +26,62 @@ ms.suite: ems
 ---
 
 
-# Configurações de Registro para o conector do Rights Management
+# Definição de registo para o conetor Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-Use as tabelas das seções a seguir apenas se quiser adicionar manualmente ou verificar as configurações do Registro nos servidores que executam o Exchange, SharePoint ou Windows Server, que configuram os servidores para usar o [conector RMS](deploy-rms-connector.md). O método recomendado para configurar esses servidores é usar a ferramenta de configuração do servidor para o conector Microsoft RMS.
+Utilize as tabelas nas secções seguintes apenas se pretender adicionar manualmente ou verificar as definições de registo nos servidores a executar o Exchange, o SharePoint ou o Windows Server, que configura os servidores a utilizar o [conetor RMS](deploy-rms-connector.md). O método recomendado para configurar estes servidores é utilizar a ferramenta de configuração do servidor do conetor Microsoft RMS.
 
-Instruções para quando você usar essas configurações:
+Instruções ao utilizar estas definições:
 
--   *MicrosoftRMSURL* é a URL de serviço do Microsoft RMS da sua organização. Para encontrar esse valor:
+-   *MicrosoftRMSURL* é o URL do serviço do Microsoft RMS da sua organização. Para localizar este valor:
 
-    1.  Execute o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se você ainda não instalou o módulo Windows PowerShell para o Azure RMS, consulte [Instalando o Windows PowerShell para Azure Rights Management](install-powershell.md).
+    1.  Execute o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para o Azure RMS. Se ainda não instalou o módulo do Windows PowerShell para o Azure RMS, consulte [Instalar o Windows PowerShell para o Azure Rights Management](install-powershell.md).
 
-    2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**
+    2.  A partir da saída, identifique o valor **LicensingIntranetDistributionPointUrl**.
 
         Por exemplo: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-    3.  No valor, remova **/_wmcs/licensing** desta cadeia de caracteres. A cadeia de caracteres restante é sua URL do Microsoft RMS. No nosso exemplo, a URL do Microsoft RMS teria o seguinte valor:
+    3.  No valor, remova **/_wmcs/licensing** desta cadeia. A cadeia restante é o URL do Microsoft RMS. No nosso exemplo, o URL do Microsoft RMS seria o seguinte valor:
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
--   *ConnectorFQDN* é o nome de balanceamento de carga que você definiu no DNS para o conector. Por exemplo, **rmsconnector.contoso.com**.
+-   *ConnectorFQDN* é o nome de balanceamento de carga que definiu no DNS para o conetor. Por exemplo, **rmsconnector.contoso.com**.
 
--   Use o prefixo HTTPS para a URL de conector se você tiver configurado o conector para usar HTTPS para se comunicar com os servidores locais. Para obter mais informações, consulte a seção [Configurando o conector RMS para usar HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) neste tópico. As URLs do Microsoft RMS sempre usam HTTPS.
+-   Utilize o prefixo HTTPS para o URL do conetor se configurou o conetor para utilizar o HTTPS para comunicar com os servidores no local. Para obter mais informações, consulte a secção [Configurar o conetor RMS para utilizar HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) deste tópico. Os URLs do Microsoft RMS utilizam sempre HTTPS.
 
 
-## Configurações de Registro do Exchange 2016 ou Exchange 2013
+## Definições de registo do Exchange 2016 ou Exchange 2013
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
+**Caminho do registo:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** https://*MicrosoftRMSURL*/_wmcs/certification
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+**Caminho do registo:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** https://*MicrosoftRMSURL*/_wmcs/Licensing
 
 ---
 
-**Caminho do Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\CertificationServerRedirection
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\CertificationServerRedirection
 
 **Tipo:** Reg_SZ
 
 **Valor:** https://*MicrosoftRMSURL*
 
 
-**Dados:** um dos seguintes, dependendo se você estiver usando HTTP ou HTTPS do servidor Exchange para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no Exchange server para o conetor RMS:
 
 - http://*ConnectorFQDN*
 
@@ -89,49 +89,49 @@ Instruções para quando você usar essas configurações:
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **Tipo:** Reg_SZ
 
 **Valor:** https://*MicrosoftRMSURL*
 
 
-**Dados:** um dos seguintes, dependendo se você estiver usando HTTP ou HTTPS do servidor Exchange para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no Exchange server para o conetor RMS:
 
 - http://*ConnectorFQDN*
 
 - https://*ConnectorFQDN*
 
 
-## Configurações de Registro do Exchange 2010
+## Definições de registo do Exchange 2010
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
+**Caminho do registo:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** https://*MicrosoftRMSURL*/_wmcs/certification
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+**Caminho do registo:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** https://*MicrosoftRMSURL*/_wmcs/Licensing
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\CertificationServerRedirection
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\CertificationServerRedirection
 
 **Tipo:** Reg_SZ
 
 **Valor:** https://*MicrosoftRMSURL*
 
-**Dados:** um dos seguintes, dependendo se você estiver usando HTTP ou HTTPS do servidor Exchange para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no Exchange server para o conetor RMS:
 
 - http://*ConnectorFQDN*
 
@@ -139,29 +139,29 @@ Instruções para quando você usar essas configurações:
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **Tipo:** Reg_SZ
 
 **Valor:** https://*MicrosoftRMSURL*
 
-**Dados:** um dos seguintes, dependendo se você estiver usando HTTP ou HTTPS do servidor Exchange para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no Exchange server para o conetor RMS:
 
 - http://*ConnectorFQDN*
 
 - https://*ConnectorFQDN*
 
 
-## Tabela para configurações de registro do SharePoint 2016 ou SharePoint 2013
+## Definições de registo do SharePoint 2016 ou SharePoint 2013
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
 **Tipo:** Reg_SZ
 
 **Valor:** https://*MicrosoftRMSURL*/_wmcs/licensing
 
 
-**Dados:** uma das seguintes opções, dependendo da utilização de HTTP ou HTTPS do servidor do SharePoint para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no SharePoint server para o conetor RMS:
 
 - http://*ConnectorFQDN*/_wmcs/licensing
 
@@ -169,13 +169,13 @@ Instruções para quando você usar essas configurações:
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
-**Dados:** uma das seguintes opções, dependendo da utilização de HTTP ou HTTPS do servidor do SharePoint para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no SharePoint server para o conetor RMS:
 
 - http://*ConnectorFQDN*/_wmcs/certification
 
@@ -183,14 +183,14 @@ Instruções para quando você usar essas configurações:
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 
-**Dados:** uma das seguintes opções, dependendo da utilização de HTTP ou HTTPS do servidor do SharePoint para o conector RMS:
+**Dados:** um dos seguintes, dependendo se está a utilizar HTTP ou HTTPS no SharePoint server para o conetor RMS:
 
 - http://*ConnectorFQDN*/_wmcs/licensing
 
@@ -199,28 +199,28 @@ Instruções para quando você usar essas configurações:
 
 
 
-## Configurações de Registro da Infraestrutura de Classificação de Arquivos e servidor de arquivo
+## Servidor de ficheiros e definições de registo de Infraestrutura de Classificação de Ficheiros
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** http://*ConnectorFQDN*/_wmcs/licensing
 
 ---
 
-**Caminho de Registro:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
+**Caminho do registo:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 **Tipo:** Reg_SZ
 
-**Valor:** padrão
+**Valor:** predefinido
 
 **Dados:** http://*ConnectorFQDN*/_wmcs/certification
 
 
-Volte para [Implantando o conector do Azure Rights Management](deploy-rms-connector.md)
+Voltar a [Implementar o conetor Azure Rights Management](deploy-rms-connector.md)
 
 <!--HONumber=Apr16_HO4-->
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Guia do usuário do aplicativo compartilhamento Rights Management | Azure RMS
+title: Guia do utilizador da aplicação de partilha Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,47 +25,47 @@ ms.suite: ems
 
 ---
 
-# Guia do usuário do aplicativo de compartilhamento Rights Management
+# Guia do utilizador da aplicação de partilha Rights Management
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-O aplicativo de compartilhamento Microsoft Rights Management (RMS) do Windows lhe ajuda a proteger imagens e documentos importantes contra pessoas que não devem vê-los, mesmo se você os enviar por email ou salvá-los em outro dispositivo. Use também esse aplicativo para abrir e usar arquivos que outras pessoas tenham protegido usando a mesma tecnologia do Rights Management.
+A aplicação de partilha Microsoft Rights Management (RMS) para Windows ajuda a manter os documentos e imagens importantes protegidos das pessoas que não os deveriam ver, mesmo que os envie por e-mail ou guarde noutro dispositivo. Também pode utilizar esta aplicação para abrir e utilizar ficheiros que tenham sido protegidos por outras pessoas com a mesma tecnologia de Rights Management.
 
-Tudo de que você precisa é um computador que executa pelo menos Windows 7 com Service Pack 1. Em seguida, [baixe e instale o](http://go.microsoft.com/fwlink/?LinkId=303970) este aplicativo gratuito da Microsoft.
+Tudo o que precisa é de um computador que execute, pelo menos, o Windows 7 com Service Pack 1. Em seguida, [transfira e instale](http://go.microsoft.com/fwlink/?LinkId=303970) esta aplicação gratuita da Microsoft.
 
-Se você tiver dúvidas não foram respondidas por este guia, consulte [Perguntas frequentes do aplicativo de compartilhamento Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971). Essa página também contém algumas informações de solução de problemas, caso você tenha problemas.
+Se tiver questões que não sejam abordadas neste guia, consulte [FAQ acerca da Aplicação de Partilha Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971). Esta página também inclui algumas informações de resolução de problemas, caso se depare com algum problema.
 
-## Exemplos de uso do aplicativo RMS sharing
-Estes são apenas alguns exemplos de como você pode usar o aplicativo RMSsharing para ajudar a proteger seus arquivos.
+## Exemplos de utilização da aplicação de partilha RMS
+Seguem-se apenas alguns exemplos de como pode utilizar a aplicação de partilha RMS para ajudar a proteger os seus ficheiros.
 
-|Eu quero...|Como fazer isso|
+|Pretendo...|Como proceder|
 |----------------|------------------|
-|**… compartilhar com segurança as informações financeiras com alguém de confiança que trabalhe em outra organização**<br /><br />Você trabalhar com uma empresa parceira e deseja enviar-lhes por email uma planilha do Excel que contém os dados de projeção de vendas. Você quer que eles possam ver os dados, mas não alterá-los.|Use o botão **Compartilhamento Protegido** na faixa de opções no Excel, digite os endereços de email das duas pessoas que trabalham com a empresa parceira, selecione **Visualizador – Somente Exibição**, e clique em **Enviar**.<br /><br />Quando o email chega na empresa do parceiro, apenas os destinatários de email podem ver a planilha e não podem salvá-la, editá-la, imprimi-la ou encaminhá-la.<br /><br />Passo a passo: [Proteger um arquivo que você compartilha por email usando o aplicativo de compartilhamento do Rights Management](sharing-app-protect-by-email.md).|
-|**… enviar com segurança um documento por email para alguém que usa um dispositivo iOS**<br /><br />Você quer enviar por email um documento do Word altamente confidencial para uma colega de trabalho que você sabe que verifica os emails regularmente em um dispositivo iOS.|Usando o Explorador de Arquivos, clique com o botão direito do mouse no arquivo e selecione **Compartilhamento Protegido**. envie o arquivo como um anexo para sua colega.<br /><br />O destinatário recebe um email em seu dispositivo iOS. Já que ela não tem o Office para iPad e iPhone, ela clica no link no email que a instrui sobre como baixar o aplicativo de compartilhamento, instala a versão para dispositivos iOS e exibe o documento¹.<br /><br />Passo a passo: [Proteger um arquivo que você compartilha por email usando o aplicativo de compartilhamento do Rights Management](sharing-app-protect-by-email.md).|
-|**… verificar quem abriu meus documentos protegidos e quando revogar o acesso se necessário**<br /><br />Você compartilhou com segurança um documento de um projeto confidencial com fornecedores potenciais, e agora quer ver quem acessou, quando e de onde. Depois, quando um dos fornecedores receber o negócio, é recomendável revogar o acesso ao documento original para que as pessoas com quem você compartilhou não possam mais acessá-lo.|Depois de compartilhar um documento por email, acesse o [site de rastreamento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562) para verificar quem acessou esse documentos e quando. Quando precisar parar de compartilhá-lo, selecione a opção de revogar acesso.<br /><br />Passo a passo: [Acompanhar e revogar seus documentos ao usar o aplicativo de compartilhamento RMS](sharing-app-track-revoke.md)..|
-|**… ler um anexo que recebi em uma mensagem de email com um anexo de arquivo compartilhado com segurança, mas não consigo lê-lo porque minha empresa não usa o Rights Management**<br /><br />O remetente do email é alguém de sua confiança, pois vocês já fez negócios juntos antes, e você suspeita de que ele pode enviar informações sobre uma nova oportunidade de negócios potenciais.|Siga as instruções no email e clique no link para inscrever-se no Microsoft Rights Management. A Microsoft confirma que sua organização não tem uma assinatura que inclui o Azure Rights Management, envia um email a você para concluir o processo de inscrição gratuita e você faz logon com sua nova conta. Clique no segundo link no email para instalar o aplicativo de compartilhamento Rights Management e abra o anexo de email para ler sobre as novas oportunidades de negócios.<br /><br />Passo a passo: [Exibir e usar arquivos que foram protegidos pelo Rights Management](sharing-app-view-use-files.md).|
-|**… proteger arquivos confidenciais de empresa no meu laptop para que eles não possam ser acessados por pessoas fora da minha empresa**<br /><br />Você viaja muito e usa seu laptop para acessar e atualizar arquivos em uma pasta que deve ser protegida contra acesso não autorizado.|Você tem o aplicativo RMS sharing instalado no seu laptop. Use o Explorador de Arquivos para proteger os arquivos usando um modelo, o que protege rapidamente os arquivos. Se seu laptop for roubado, você terá a tranquiliddade de que ninguém fora da sua empresa pode acessar esses documentos.<br /><br />Passo a passo: [Proteger um arquivo em um dispositivo &#40;protect in-place&#41; usando o aplicativo de compartilhamento Rights Management](sharing-app-protect-in-place.md).|
-¹ Renderização de PDF por Foxit. Copyright © 2003–2014 by Foxit Corporation.
+|**… partilhar de forma segura informações financeiras com alguém em quem confio e que trabalha noutra organização**<br /><br />Trabalha com uma empresa parceira e pretende enviar-lhe por e-mail uma folha de cálculo do Excel que contém uma estimativa do volume de vendas. Pretende que essas pessoas possam ver os valores, mas não alterá-los.|Utilize o botão **Partilhar Protegido** no friso do Excel, escreva os endereços de e-mail das duas pessoas com quem trabalha na empresa parceira, selecione **Visualizador – Ver Apenas** e clique em **Enviar**.<br /><br />Quando os e-mails são recebidos na empresa parceira, apenas os destinatários no e-mail podem ver a folha de cálculo e não podem guardar, editar, imprimir ou reencaminhá-la.<br /><br />Passo a passo: [Proteger um ficheiro que partilha por e-mail ao utilizar a aplicação de partilha Rights Management](sharing-app-protect-by-email.md).|
+|**… enviar em segurança um documento por e-mail para uma pessoa que utiliza um dispositivo iOS**<br /><br />Pretende enviar por e-mail um documento do Word altamente confidencial a uma colega que sabe que verifica regularmente o e-mail no dispositivo iOS.|Utilize o Explorador de Ficheiros, clique com o botão direito do rato no ficheiro e selecione **Partilhar Protegido** para enviar o ficheiro como um anexo à sua colega.<br /><br />A destinatária recebe o e-mail no dispositivo iOS. Uma vez que ela não tem o Office para iPad e iPhone, clica na ligação do e-mail que lhe indica como transferir a aplicação de partilha, instala a versão para dispositivos iOS e, em seguida, visualiza o documento¹.<br /><br />Passo a passo: [Proteger um ficheiro que partilha por e-mail ao utilizar a aplicação de partilha Rights Management](sharing-app-protect-by-email.md).|
+|**… verificar quem abriu os meus documentos protegidos e quando o fez, bem como revogar o acesso, se necessário**<br /><br />Partilhou de forma segura um documento de design confidencial com potenciais fornecedores e agora pretende ver quem acedeu ao mesmo, quando o fez e a partir de onde. Mais tarde, quando um dos fornecedores ganhar o contrato, pretende revogar o acesso ao documento original para que as pessoas com quem o partilhou já não o possam ler.|Depois de partilhar um documento por e-mail, aceda ao [site de controlo de documentos](http://go.microsoft.com/fwlink/?LinkId=529562) para verificar quem acedeu a esse documento e quando o fez. Quando precisar de deixar de o partilhar, selecione a opção para revogar o acesso.<br /><br />Passo a passo: [Controlar e revogar os documentos quando utiliza a aplicação de partilha RMS](sharing-app-track-revoke.md).|
+|**… ler um anexo que recebi numa mensagem de e-mail com um anexo de ficheiro partilhado de forma segura, mas que não consigo ler porque a minha empresa não utiliza o Rights Management**<br /><br />O remetente do e-mail é uma pessoa em quem confia porque fez negócios com ele anteriormente e suspeita que este está a enviar-lhe informações sobre uma potencial nova oportunidade de negócio.|Siga as instruções do e-mail e clique na ligação para se inscrever no Microsoft Rights Management. A Microsoft confirma que a sua organização não tem uma subscrição que inclui o Azure Rights Management, envia-lhe uma mensagem de e-mail para concluir o processo de inscrição gratuito e, em seguida, deverá iniciar sessão com a sua nova conta. Clique na segunda ligação do e-mail para instalar a aplicação de partilha Rights Management e, em seguida, pode abrir o anexo do e-mail para ler mais sobre a nova oportunidade de negócio.<br /><br />Passo a passo: [Ver e utilizar ficheiros que foram protegidos pelo Rights Management](sharing-app-view-use-files.md).|
+|**… proteger ficheiros confidenciais da empresa no meu portátil, para que pessoas exteriores à minha empresa não possam aceder aos mesmos**<br /><br />Viaja muito e utiliza o portátil para aceder e atualizar ficheiros numa pasta que tem de estar protegida contra acesso não autorizado.|Tem a aplicação de partilha RMS instalada no seu portátil. Utilize o Explorador de Ficheiros para proteger os ficheiros através da utilização de um modelo, o que protege rapidamente os ficheiros. Se o portátil for roubado, pode ficar tranquilo, uma vez que ninguém fora da sua empresa pode aceder a esses documentos.<br /><br />Passo a passo: [Proteger um ficheiro num dispositivo &#40;proteger no local&#41; ao utilizar a aplicação de partilha Rights Management](sharing-app-protect-in-place.md).|
+¹ Composição de PDF com tecnologia da Foxit. Copyright © 2003–2014 por Foxit Corporation.
 
-## O que você deseja fazer?
+## O que pretende fazer?
 > [!NOTE]
-> Para obter informações técnicas, como tipos de arquivo com suporte e como instalar esse aplicativo em uma rede corporativa, consulte o [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+> Para obter mais informações técnicas, tais como os tipos de ficheiro suportados e como instalar esta aplicação numa rede empresarial, consulte o [Guia do administrador da aplicação de partilha Rights Management](sharing-app-admin-guide.md).
 
--   [Baixar e instalar o aplicativo de compartilhamento](install-sharing-app.md)
+-   [Transferir e instalar a aplicação de partilha](install-sharing-app.md)
 
--   [Proteger um arquivo em um dispositivo (proteger in-loco)](sharing-app-protect-in-place.md)
+-   [Proteger um ficheiro num dispositivo (proteger no local)](sharing-app-protect-in-place.md)
 
--   [Proteger um arquivo que você compartilha por email](sharing-app-protect-by-email.md)
+-   [Proteger um ficheiro que partilha por e-mail](sharing-app-protect-by-email.md)
 
--   [Rastrear e revogar seus documentos](sharing-app-track-revoke.md)
+-   [Controlar e revogar os documentos](sharing-app-track-revoke.md)
 
--   [Exibir e usar os arquivos que foram protegidos](sharing-app-view-use-files.md)
+-   [Ver e utilizar ficheiros que foram protegidos](sharing-app-view-use-files.md)
 
--   [Remover a proteção de um arquivo](sharing-app-remove-protection.md)
+-   [Remover a proteção de um ficheiro](sharing-app-remove-protection.md)
 
--   [Usar atalhos de teclado](sharing-app-keyboard-shortcuts.md)
+-   [Utilizar atalhos de teclado](sharing-app-keyboard-shortcuts.md)
 
--   [Especificar as configurações na caixa de diálogo](sharing-app-dialog-box.md)
+-   [Especificar definições na caixa de diálogo](sharing-app-dialog-box.md)
 
 
 

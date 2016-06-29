@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aplicativo de compartilhamento Rights Management&colon; Histórico de lançamento de versão | Azure RMS
+title: Aplicação de partilha Rights Management&colon; histórico de lançamento de versões | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,91 +25,91 @@ ms.suite: ems
 
 ---
 
-# Aplicativo de compartilhamento do Rights Management: histórico de lançamento de versão
+# Aplicação de partilha Rights Management: histórico de lançamento de versões
 
-*Aplica-se a: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-A equipe do Rights Management atualiza o aplicativo Rights Management sharing regularmente para correções e novas funcionalidades. Use as informações a seguir para ver o que há de novo ou o que foi alterado em uma versão. A versão mais recente é listada primeiro.
+A equipa do Rights Management atualiza regularmente a aplicação de partilha Rights Management com correções e novas funcionalidades. Utilize as seguintes informações para ver o que há de novo ou o que foi alterado num lançamento. A versão mais atual aparece em primeiro na lista.
 
-As versões anteriores a 1º de janeiro de 2015 não são listadas.
+As versões anteriores a 1 de janeiro de 2015 não estão listadas.
 
 > [!NOTE]
-> Se você tiver comentários ou uma pergunta sobre o aplicativo RMS sharing, envie uma mensagem de email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> Se tiver comentários ou uma pergunta sobre a aplicação de partilha RMS, envie uma mensagem de e-mail para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
 ## Versão 1.0.2004.0
 **Lançada**: 11/12/2015
 
 **Correções**:
 
--   Somente o proprietário do arquivo e as pessoas com níveis de permissões de **Coproprietário** podem desproteger os arquivos. Anteriormente, o proprietário e as pessoas com os níveis de permissões **Coautor** e **Coproprietário** podiam desproteger arquivos.
+-   Apenas o proprietário do ficheiro e as pessoas com níveis de permissões de **Coproprietário** podem desproteger ficheiros. Anteriormente, o proprietário e as pessoas com níveis de permissões de **Coautor** e **Coproprietário** podiam desproteger ficheiros.
 
--   Proteção nativa para arquivos **.tif** (além de arquivos .tiff), para produzir um arquivo **.ptif** protegido por RMS e somente leitura.
+-   Proteção nativa para ficheiros **.tif** (além de ficheiros .tiff), para produzir um ficheiro **.ptif** só de leitura protegido pelo RMS.
 
--   Melhorias para as mensagens de erro (precisão e clareza).
+-   Melhoramentos nas mensagens de erro (precisão e clareza).
 
--   Melhorias de desempenho para criptografar e descriptografar conteúdo.
+-   Melhoramentos de desempenho para a encriptação e desencriptação de conteúdo.
 
-**Novos recursos**:
+**Novas funcionalidades**:
 
--   Suporte para instalação de não-administrador, para que os usuários padrão possam instalar o aplicativo RMS sharing.
+-   Suporte para a instalação por não administradores, para que os utilizadores padrão possam instalar a aplicação de partilha RMS.
 
-    Existem algumas restrições para usuários padrão que executam o Office 2010. Para obter mais informações, consulte a seção [Se você não for um administrador local e usar o Office 2010](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) nas instruções para o usuário [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+    Existem algumas restrições para os utilizadores padrão que executam o Office 2010. Para obter mais informações, consulte a secção [Se não for um administrador local e utilizar o Office 2010](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) nas instruções do utilizador para [Transferir e instalar a aplicação de partilha Rights Management](install-sharing-app.md).
 
 ## Versão 1.0.1908.0
-**Lançada**: 16/9/2015
+**Lançada**: 16/09/2015
 
 **Correções**:
 
--   Suporte para Multi-Factor Authentication (MFA) para o Azure RMS, que também remove a dependência do assistente de conexão da Microsoft que usa autenticação moderna.
+-   Suporte para a autenticação multifator (MFA) para o Azure RMS, que também remove a dependência do Assistente de Início de Sessão do Microsoft para as aplicações que utilizam autenticação moderna.
 
-    Para obter mais informações, consulte a seção [MFA (Multi-Factor Authentication) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) de [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Para obter mais informações, consulte a secção [Multi-Factor Authentication (MFA) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) em [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
 ## Versão 1.0.1784.0
-**Lançada**: 30/7/2015
+**Lançada**: 30/07/2015
 
 **Correções**:
 
--   O intervalo de atualização padrão para modelos de política de direitos foi reduzido de 7 dias para 1 dia.
+-   O intervalo de atualização predefinido dos modelos de política de direitos foi reduzido de 7 dias para 1 dia.
 
--   Pequeno número de bugs menores e regressões.
+-   Um pequeno número de regressões e erros secundários.
 
 ## Versão 1.0.1770.0
-**Lançada**: 25/4/2015
+**Lançada**: 25/04/2015
 
 **Correções**:
 
--   Agora, somente o proprietário e os coproprietários podem remover a proteção. Co-autores não podem remover a proteção.
+-   Agora, apenas o proprietário e os coproprietários podem remover a proteção. Os coautores não podem remover a proteção.
 
--   Os arquivos que estão em um compartilhamento de rede agora podem ser protegidos.
+-   Agora, os ficheiros que se encontram numa partilha de rede podem ser protegidos.
 
-**Novos recursos**:
+**Novas funcionalidades**:
 
--   Suporte para rastreamento e revogação de documentos. Para obter mais informações, consulte [Acompanhar e revogar seus documentos ao usar o aplicativo de compartilhamento RMS](sharing-app-track-revoke.md)..
+-   Suporte para revogação e controlo de documentos. Para obter mais informações, consulte [Controlar e revogar os documentos quando utiliza a aplicação de partilha RMS](sharing-app-track-revoke.md).
 
--   Suporte de modelo quando você escolhe **Compartilhamento protegido**:
+-   Suporte para modelos quando escolhe **Partilhar Protegido**:
 
-    -   Agora você pode selecionar modelos.
+    -   Agora, pode selecionar modelos.
 
-    -   Em vez do controle deslizante, você verá uma caixa de listagem que inclui modelos e permissões personalizadas.
+    -   Em vez do controlo de deslize, verá uma caixa de listagem que inclui modelos e permissões personalizadas.
 
-    -   Você não verá mais opções para **Permitir consumo em todos os dispositivos** e **Impor restrições de uso**. Em vez disso, **Proteção genérica** é selecionada automaticamente, dependendo do tipo de arquivo.
+    -   Já não vê opções para **Permitir consumo em todos os dispositivos** e **Impor restrições de utilização**. Em vez disso, a **Proteção Genérica** é automaticamente selecionada, dependendo do tipo de ficheiro.
 
-    Para obter mais informações, consulte [Opções de caixa de diálogo para o aplicativo de compartilhamento Rights Management](sharing-app-dialog-box.md).
+    Para obter mais informações, consulte [Opções da caixa de diálogo para a aplicação de partilha Rights Management](sharing-app-dialog-box.md).
 
 ## Versão 1.0.1667.0
-**Lançada**: 19/1/2015
+**Lançada**: 19/01/2015
 
 **Correções**:
 
--   Suporte a fontes do idioma chinês no visualizador PPDF do aplicativo RMS sharing.
+-   Suporte para tipos de letra do idioma chinês no visualizador de PPDF da aplicação de partilha RMS.
 
--   Melhor manipulação de erros e mensagens.
+-   Tratamento de erros e mensagens melhorados.
 
--   Correção para um problema com a notificação de atualização automática quando uma versão mais recente do aplicativo está disponível para download.
+-   Correção de um problema com a notificação de atualização automática quando uma versão mais recente da aplicação está disponível para transferência.
 
-**Novos recursos**:
+**Novas funcionalidades**:
 
--   **Suporte para vários domínios de email dentro de sua organização**: se você usa o AD RMS e os usuários em sua organização têm vários domínios de email, essa atualização permite que os usuários consumam conteúdo protegido por usuários em sua organização em outros domínios. Para obter mais informações, consulte a seção [Somente AD RMS: suporte para vários domínios de email dentro de sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+-   **Suporte para múltiplos domínios de e-mail dentro da sua organização**: se utilizar o AD RMS e os utilizadores da sua organização tiverem múltiplos domínios de e-mail, esta atualização permite que os seus utilizadores consumam conteúdo que foi protegido por utilizadores da sua organização noutros domínios. Para obter mais informações, consulte a secção [Apenas AD RMS: suporte para múltiplos domínios de e-mail dentro da sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [Guia do administrador da aplicação de partilha Rights Management](sharing-app-admin-guide.md).
 
 
 

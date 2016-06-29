@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Rastrear e revogar seus documentos ao usar o aplicativo RMS sharing | Azure RMS
+title: Controlar e revogar os documentos quando utiliza a aplicação de partilha RMS | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,84 +25,84 @@ ms.suite: ems
 
 ---
 
-# Rastreie e revogue seus documentos ao usar o aplicativo RMS sharing
+# Controlar e revogar os documentos quando utiliza a aplicação de partilha RMS
 
-*Aplica-se a: Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
-Depois de ter protegido seus documentos usando o aplicativo RMS sharing, se sua organização usar o Azure Rights Management e não o Active Directory Rights Management Services, será possível acompanhar quantas pessoas estão usando seus documentos protegidos. Se necessário, você também pode revogar acesso a estes documentos quando quiser parar de compartilhá-los. Para fazer isso, use o **site de rastreamento de documentos**, que pode ser acessado de computadores Windows, Mac e até mesmo de tablets e celulares.
+Depois de proteger os documentos com a aplicação de partilha RMS, se a sua organização utilizar o Azure Rights Management em vez dos Serviços de Gestão de Direitos do Active Directory, pode controlar a forma como as pessoas utilizam os documentos protegidos. Se necessário, também pode revogar o acesso a esses documentos quando pretender deixar de os partilhar. Para tal, utilize o **site de controlo de documentos**, ao qual pode aceder a partir de computadores com o Windows, computadores Mac e até mesmo telemóveis e tablets.
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Ao acessar esse site, basta conectar para acompanhar seus documentos. Levando em conta que sua organização tem uma [assinatura que dá suporte a rastreamento e revogação de documentos](https://technet.microsoft.com/dn858608.aspx) e que você tenha sido atribuído a uma licença para esta assinatura, você poderá, então, ver quem tentou abrir os arquivos protegidos e se obteve êxito (se eles foram autenticados com êxito) ou não. Cada vez que tentaram acessar o documento e sua localização na ocasião. Além disso:
+Ao aceder a este site, inicie sessão para controlar os seus documentos. Desde que a sua organização tenha uma [subscrição que suporte a revogação e o controlo de documentos](https://technet.microsoft.com/dn858608.aspx) e lhe tenha sido atribuída uma licença para esta subscrição, pode ver quem tentou abrir os ficheiros que protegeu e se o fizeram com êxito (se a autenticação foi efetuada com êxito) ou não. Também pode ver todas as vezes que alguém tentou aceder ao documento e a respetiva localização nesse momento. Além disso:
 
--   Se você precisar interromper o compartilhamento de um documento: Clique em **Revogar acesso**, observe o período de tempo em que o documento continuará disponível e decida se quer informar às pessoas que você está revogando o acesso ao documento antes compartilhado e forneça uma mensagem personalizada. Quando você revoga um documento, o documento que você compartilhou não é excluído, mas usuários autorizados já não serão capazes de abri-lo.
+-   Se precisar deixar de partilhar um documento: clique em **Revogar acesso**, tome nota do período de tempo durante o qual o documento continuará disponível, decida se pretende informar as pessoas de que está a revogar o acesso ao documento partilhado anteriormente e forneça uma mensagem personalizada. Ao revogar um documento, não elimina o documento que partilhou, mas os utilizadores autorizados deixam de o poder abrir.
 
--   Se quiser exportar para o Excel: Clique em **Abrir no Excel**, de modo que você possa modificar os dados e criar seus próprios modos de exibição e gráficos.
+-   Se pretender exportar para Excel: clique em **Abrir no Excel**, para que possa modificar os dados e criar as suas próprias vistas e gráficos.
 
--   Se quiser configurar notificações por email: Clique em **Configurações** e selecione como e se deseja enviar um email quando o documento for acessado.
+-   Se pretender configurar notificações por e-mail: clique em **Definições** e selecione como e se deve receber um e-mail quando alguém aceder ao documento.
 
--   Se você tiver dúvidas ou quiser fazer comentários sobre o site de acompanhamento de documentos: clique no ícone Ajuda para acessar as [Perguntas frequentes sobre acompanhamento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
+-   Se tiver dúvidas ou pretender fornecer comentários sobre o site de controlo de documentos: clique no ícone de Ajuda para aceder à [FAQ acerca do Controlo de Documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
-## Usando o Office para acessar o site de rastreamento de documentos
+## Utilizar o Office para aceder ao site de controlo de documentos
 
--   Para aplicativos do Office, Word, Excel e PowerPoint: na guia **Página Inicial**, no grupo **RMS**, clique em **Compartilhamento Protegido**e em **Acompanhar Uso**.
+-   Para as aplicações do Office, Word, Excel e PowerPoint: no separador **Base**, no grupo **RMS**, clique em **Partilhar Protegido** e, em seguida, clique em **Controlar a Utilização**.
 
-    ![Acompanhar o uso de aplicativos do Office ao usar o aplicativo de compartilhamento RMS ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
+    ![Controlar a utilização de aplicações do Office ao utilizar a aplicação de partilha RMS ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
--   Para o Outlook: Na guia **Página Inicial** , no grupo  **RMS** , clique em **Acompanhar Uso**:
+-   Para o Outlook: no separador **Base**, no grupo **RMS**, clique em **Controlar a Utilização**:
 
-    ![Selecione Acompanhar Uso do Outlook ao usar o aplicativo de compartilhamento RMS ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
+    ![Selecionar Controlar a Utilização do Outlook ao utilizar a aplicação de partilha RMS ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-Se você não vir essas opções para o RMS, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
+Se não vir estas opções do RMS, é provável que a aplicação de partilha RMS não esteja instalada no seu computador, que a versão mais recente não esteja instalada ou que seja necessário reiniciar o computador para concluir a instalação. Para obter mais informações sobre como instalar a aplicação de partilha, consulte [Transferir e instalar a aplicação de partilha Rights Management](install-sharing-app.md).
 
-### Outras maneiras de rastrear e revogar seus documentos
-Além de controlar seus documentos em computadores Windows usando aplicativos do Office, você também pode usar estas alternativas:
+### Outras formas de controlar e revogar os documentos
+Além de controlar os seus documentos em computadores com o Windows através da utilização de aplicações do Office, também pode utilizar estas alternativas:
 
--   **Usando um navegador da Web**: Esse método funciona para todos os arquivos compatíveis.
+-   **Utilizar um browser**: este método funciona para todos os dispositivos suportados.
 
--   **Utilizando o Explorador de Arquivos**: Esse método funciona para computadores Windows.
+-   **Utilizar o Explorador de Ficheiros**: este método funciona para os computadores com o Windows.
 
--   **Usando uma mensagem de email do Outlook**: Esse método funciona para computadores Windows.
+-   **Utilizar uma mensagem de e-mail do Outlook**: este método funciona para os computadores com o Windows.
 
-#### Usando um navegador da Web para acessar o site de rastreamento de documentos
+#### Utilizar um browser para aceder ao site de controlo de documentos
 
--   Usando um navegador com suporte, vá para o [site de acompanhamento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
+-   Num browser suportado, aceda ao [site de controlo de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
 
-    Navegadores compatíveis: É recomendável usar o Internet Explorer, no mínimo a versão 10, mas você pode usar qualquer um dos seguintes navegadores para usar o site de rastreamento de documentos:
+    Browsers suportados: recomendamos que utilize, pelo menos, a versão 10 do Internet Explorer, mas pode utilizar qualquer um dos seguintes browsers para aceder ao site de controlo de documentos:
 
-    -   Internet Explorer: No mínimo a versão 10
+    -   Internet Explorer: pelo menos, versão 10
 
-    -   Internet Explorer 9 com, no mínimo, MS12-037: atualização de segurança cumulativa para o Internet Explorer: 12 de junho de 2012
+    -   Internet Explorer 9 com, pelo menos, MS12-037: Atualização de Segurança Cumulativa para o Internet Explorer: 12 de junho de 2012
 
-    -   Mozilla Firefox: No mínimo a versão 12
+    -   Mozilla Firefox: pelo menos, versão 12
 
-    -   Apple Safari 5: No mínimo a versão 5
+    -   Apple Safari 5: pelo menos, versão 5
 
-    -   Google Chrome: No mínimo a versão 18
+    -   Google Chrome: pelo menos, versão 18
 
-#### Usando o Explorador de Arquivos para acessar o site de rastreamento de documentos
+#### Utilizar o Explorador de Ficheiros para aceder ao site de controlo de documentos
 
--   Clique com o botão direito do mouse no arquivo, selecione **Proteger com RMS** e, em seguida, selecione **Acompanhar Uso**:
+-   Clique com o botão direito do rato no ficheiro, selecione **Proteger com RMS** e, em seguida, selecione **Controlar a Utilização**:
 
-    ![Selecione Acompanhar Uso do Explorer ao usar o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
+    ![Selecionar Controlar a Utilização do Explorador ao utilizar a aplicação de partilha RMS](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
 
-#### Usando uma mensagem de email do Outlook para acessar o site de rastreamento de documentos
+#### Utilizar uma mensagem de e-mail do Outlook para aceder ao site de controlo de documentos
 
--   Em uma mensagem de email, na guia **Mensagem** , no grupo  **RMS** , clique em **Compartilhamento protegido**e em **Acompanhar Uso**:
+-   Numa mensagem de e-mail, no separador **Mensagem**, no grupo **RMS**, clique em **Partilhar Protegido** e, em seguida, clique em **Controlar a Utilização**:
 
-    ![Selecione Acompanhar Uso do Outlook ao usar o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
+    ![Selecionar Controlar a Utilização do Outlook ao utilizar a aplicação de partilha RMS](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
 
 ## Exemplos e outras instruções
-Para obter exemplos de como você pode usar o aplicativo Rights Management sharing e instruções, consulte as seguintes seções do guia de usuário do aplicativo Rights Management sharing:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
--   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que pretende fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
-## Consulte também
-[Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
+## Consulte Também
+[Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
 <!--HONumber=May16_HO2-->

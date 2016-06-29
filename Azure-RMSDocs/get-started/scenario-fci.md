@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cenário - Proteger arquivos em um compartilhamento de servidor de arquivos | Azure RMS
+title: Cenário – Proteger ficheiros numa partilha de servidor de ficheiros | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,139 +25,139 @@ ms.suite: ems
 
 ---
 
-# Cenário - Proteger arquivos em um compartilhamento de servidor de arquivos
+# Cenário – Proteger ficheiros numa partilha de servidor de ficheiros
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Este cenário e a documentação de usuário de suporte usam o Azure Rights Management para proteger em massa todos os arquivos que você deseja proteger em um servidor de arquivos, a fim de garantir que somente os funcionários de sua organização possam acessá-los, mesmo que eles sejam copiados e salvos em armazenamentos que não estejam sob controle de seu departamento de TI ou sejam enviados por email para outras pessoas.
+Este cenário e a documentação do utilizador associada utilizam o Azure Rights Management para a proteção em volume de todos os ficheiros que pretende proteger num servidor de ficheiros, de modo a garantir que apenas os funcionários da sua organização podem aceder aos mesmos, mesmo que sejam copiados e guardados num armazenamento que não está sob o controlo do seu departamento de TI ou enviados por e-mail para outras pessoas.
 
-Essas instruções usam um dos modelos padrão, que restringe o acesso a todos os funcionários com todos os direitos de uso. Mas, se for necessário, você pode restringir ainda mais os direitos de acesso e uso configurando um modelo personalizado em vez de usar um modelo padrão.
+Estas instruções utilizam um dos modelos predefinidos, que restringe o acesso a todos os funcionários com todos os direitos de utilização. Contudo, se for necessário, pode restringir mais os direitos de acesso e de utilização ao configurar um modelo personalizado em vez de utilizar um modelo predefinido.
 
-As instruções são adequadas para o seguinte conjunto de circunstâncias:
+As instruções aplicam-se às seguintes circunstâncias:
 
--   Você precisa proteger todos os tipos de arquivo e não apenas os arquivos do Office. Os arquivos que não podem ser protegidos nativamente pelo Azure RMS serão protegidos genericamente.
+-   É necessário proteger todos os tipos de ficheiro e não apenas os ficheiros do Office. Os ficheiros que não podem ser protegidos nativamente pelo Azure RMS serão protegidos genericamente.
 
--   Todos os arquivos no caminho especificado (incluindo subpastas) serão protegidos.
+-   Serão protegidos todos os ficheiros no caminho especificado (incluindo as subpastas).
 
--   Todos os arquivos passam por uma reaplicação agendada da proteção, a fim de garantir que as alterações nos modelos de política de direitos sejam aplicadas aos arquivos protegidos.
+-   A proteção é reaplicada a todos os ficheiros de acordo com uma agenda, para garantir que as alterações aos modelos de política de direitos são aplicadas aos ficheiros protegidos.
 
-## Instruções de implantação
-![Instruções do administrador para implantação rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
+## Instruções de implementação
+![Instruções do administrador para a Implementação Rápida do Azure RMS](../media/AzRMS_AdminBanner.png)
 
-Verifique se os requisitos a seguir foram aplicados e siga as instruções para os procedimentos de suporte antes de ir para a documentação do usuário.
+Certifique-se de que os seguintes requisitos são cumpridos e, em seguida, siga as instruções dos procedimentos de suporte antes de avançar para a documentação do utilizador.
 
 ## Requisitos para este cenário
-Para que as instruções desse cenário funcionem, deve ser feito o seguinte:
+Para que as instruções para este cenário funcionem, é necessário o seguinte:
 
-|Requisito|Se você precisar de mais informações|
+|Requisito|Se precisar de mais informações|
 |---------------|--------------------------------|
-|O Azure Rights Management está ativado|[Ativando o Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Você sincronizou suas contas de usuário do Active Directory local com o Active Directory do Azure ou o Office 365, incluindo seu endereço de email. Isso é necessário para todos os usuários que talvez precisem acessar arquivos depois que eles foram protegidos pelo FCI e pelo Azure Rights Management.|[Preparando o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Um das seguintes condições:<br /><br />- Para usar um modelo padrão para todos os usuários: você não arquivou o padrão, &lt;nome da organização&gt; - confidencial<br /><br />- Para usar um modelo personalizado para usuários específicos: você criou e publicou este modelo personalizado|[Configurando modelos personalizados do Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|O aplicativo Rights Management sharing é implantado nos computadores dos usuários que executam o Windows|[Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|Você baixou a ferramenta de Proteção do RMS e configurou os pré-requisitos para o Azure RMS|Para obter instruções sobre como baixar a ferramenta e seus pré-requisitos: [Cmdlets da Proteção do RMS](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Para configurar os pré-requisitos adicionais para o Azure RMS, como a conta de entidade do serviço: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
+|O Azure Rights Management está ativado|[Activating Azure Rights Management (Ativar o Azure Rights Management – em inglês)](https://technet.microsoft.com/library/jj658941.aspx)|
+|Sincronizou as suas contas de utilizador do Active Directory no local com o Azure Active Directory ou o Office 365, incluindo o respetivo endereço de e-mail. Isto é necessário para todos os utilizadores que possam necessitar de aceder a ficheiros depois de estarem protegidos pela FCI e pelo Azure Rights Management.|[Preparar para o Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Um dos seguintes:<br /><br />- Para utilizar um modelo predefinido para todos os utilizadores: o modelo predefinido não está arquivado, &lt;nome da organização&gt; – Confidencial<br /><br />- Para utilizar um modelo personalizado para utilizadores específicos: criou e publicou este modelo personalizado|[Configurar modelos personalizados para o Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|A aplicação de partilha Rights Management está implementada nos computadores dos utilizadores que executam o Windows|[Implementação automática da aplicação de partilha Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Transferiu a ferramenta de Proteção RMS e configurou os pré-requisitos do Azure RMS|Para obter instruções para transferir a ferramenta e os pré-requisitos: [Cmdlets de Proteção RMS](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Para configurar os pré-requisitos adicionais do Azure RMS, tal como a conta do principal de serviço: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
-### Configuração de um servidor de arquivos para proteger todos os arquivos usando o Azure RMS e o Gerenciador de Recursos de Servidor de Arquivos com a Infraestrutura de Classificação de Arquivos
+### Configurar um servidor de ficheiros para proteger todos os ficheiros ao utilizar o Azure RMS e o Gestor de Recursos do Servidor de Ficheiros com Infraestrutura de Classificação de Ficheiros
 
-1.  Inicie uma sessão do Windows PowerShell. Não é necessário executar essa sessão como administrador.
+1.  Inicie uma sessão do Windows PowerShell. Não é necessário executar esta sessão como administrador.
 
-2.  Autentique no Azure RMS:
+2.  Efetue a autenticação no Azure RMS:
 
     ```
     Set-RMSServerAuthentication
     ```
-    Quando receber uma solicitação, forneça os valores para a conta de entidade do serviço que você criou como pré-requisito para os cmdlets da Proteção do RMS.
+    Quando lhe for pedido, forneça os valores da conta do principal de serviço que criou como pré-requisito dos cmdlets de Proteção RMS.
 
-3.  Execute o seguinte para identificar a ID do modelo que será usada para proteger os arquivos:
+3.  Execute o seguinte para identificar o ID do modelo que será utilizado para proteger os ficheiros:
 
     ```
     Get-RMSTemplate
     ```
-    Para usar o modelo padrão que restringe o acesso a todos os funcionários com todos os direitos de uso, procure o nome do modelo de **&lt;nome da organização&gt; - confidencial**. Por exemplo, **VanArsdel, Ltd - Confidencial**.
+    Para utilizar o modelo predefinido que restringe o acesso a todos os funcionários com todos os direitos de utilização, procure o nome do modelo da **&lt;nome da organização&gt; – Confidencial**. Por exemplo, **VanArsdel, Ltd – Confidencial**.
 
-4.  Siga as instruções passo a passo em [Proteção RMS com a FCI (Infraestrutura de Classificação de Arquivos) do Windows Server ](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx).
+4.  Siga as instruções passo a passo disponíveis em [Proteção RMS com Infraestrutura de Classificação de Ficheiros (FCI) do Windows Server](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx).
 
-    Essas instruções incluem um script do Windows PowerShell que você especifica para ser executado como um executável personalizado no Gerenciador de Recursos do Servidor de Arquivos. As instruções também incluem como verificar se os arquivos estão protegidos pelo Azure Rights Management.
+    Estas instruções incluem um script do Windows PowerShell que deve especificar para ser executado como um executável personalizado no Gestor de Recursos do Servidor de Ficheiros. As instruções também incluem como verificar se os ficheiros estão protegidos pelo Azure Rights Management.
 
-## Instruções sobre a documentação do usuário
-Se os arquivos que você está protegendo forem somente arquivos do Office, não será necessário fornecer as instruções sobre os arquivos protegidos aos usuários. Quando os usuários autorizados abrem esses documentos, normalmente abrem no Office, com a única diferença de que os usuários podem receber uma solicitação de autenticação, e provavelmente verão uma barra de informações na parte superior do documento informando que o documento está protegido.
+## Instruções da documentação do utilizador
+Se os ficheiros que está a proteger forem apenas ficheiros do Office, poderá não ter de fornecer aos utilizadores quaisquer instruções sobre os ficheiros protegidos. Quando os utilizadores autorizados abrem estes documentos, estes abrem no Office como habitualmente. A única diferença é que poderá ser solicitado aos utilizadores que se autentiquem e, provavelmente, estes verão uma barra de informações na parte superior do documento que os informa de que o documento está protegido.
 
-Se os arquivos protegidos tiverem uma extensão de nome de arquivo **.ppdf** ou se forem um arquivo de texto ou de imagem protegido (por exemplo, se tiverem uma extensão de nome de arquivo **.ptxt** ou **.pjpg**), esses arquivos agora serão somente leitura e não poderão ser editados. Os usuários podem exibi-los usando o visualizador do aplicativo de compartilhamento do RMS, que carrega automaticamente para esses tipos de arquivo. Esses arquivos são protegidos de forma nativa pelo Azure RMS e aplicam todas as configurações de política do modelo que você aplicou, exceto os direitos de uso, pois o próprio arquivo é somente leitura. A menos que você saiba que protegerá esses tipos de arquivo, é improvável que precise de instruções de usuário para esse cenário, mas avise a assistência técnica que talvez eles precisem explicar aos usuários o motivo de esses arquivos não poderem ser editados.
+Se os ficheiros protegidos tiverem uma extensão de nome de ficheiro **.ppdf** ou forem um ficheiro de texto ou de imagem protegido (por exemplo, se tiverem uma extensão de nome de ficheiro **.ptxt** ou **.pjpg**), esses ficheiros são agora só de leitura e não podem ser editados. Os utilizadores podem visualizá-los ao utilizar o visualizador da aplicação de partilha RMS, que é carregado automaticamente para estes tipos de ficheiro. Estes ficheiros estão protegidos nativamente pelo Azure RMS e aplicam todas as definições de política do modelo que aplicou, à exceção dos direitos de utilização, porque o próprio ficheiro é só de leitura. A menos que saiba que irá proteger estes tipos de ficheiro, é pouco provável que sejam necessárias instruções de utilizador para este cenário. No entanto, avise o suporte técnico de que poderá ser necessário explicar aos utilizadores por que razão não é possível editar estes ficheiros.
 
-Se os arquivos protegidos tiverem uma extensão de nome de arquivo **.pfile**, os usuários poderão visualizá-los, mas eles deverão ser salvos com o nome do arquivo original (remova a extensão de nome de arquivo .pfile) se os usuários quiserem editar e salvar suas alterações. Esses arquivos estão genericamente protegidos pelo Azure RMS e não podem impor os direitos de uso do modelo que você aplicou, ou seja, a proteção será perdida se o arquivo for salvo com um novo nome. Este cenário precisará de instruções para os usuários.
+Se os ficheiros protegidos tiverem uma extensão **.pfile**, os utilizadores podem ver os ficheiros, mas têm de os guardar com o respetivo nome do ficheiro original (remova a extensão de nome de ficheiro .pfile) se pretenderem editá-los e guardar as alterações. Estes ficheiros estão protegidos genericamente pelo Azure RMS e não podem impor os direitos de utilização do modelo que aplicou, o que significa que a proteção deixa de existir se o ficheiro for guardado com um novo nome. Este cenário requer instruções para os utilizadores.
 
-Usando o modelo a seguir, copie e cole as instruções para os usuários finais para que eles saibam como editar arquivos genericamente protegidos. Faça essas modificações para refletir seu ambiente:
+Utilizando o modelo seguinte, copie e cole as instruções para os utilizadores finais para que estes saibam como editar ficheiros protegidos genericamente. Efetue estas alterações para refletir o seu ambiente:
 
--   Substitua *&lt;tipo de arquivo&gt;* e *&lt;compartilhamento de servidor de arquivos&gt;* pelo tipo de arquivo que será protegido genericamente e o nome do compartilhamento de servidor de arquivo.
+-   Substitua *&lt;tipo de ficheiro&gt;* e *&lt;partilha de servidor de ficheiros&gt;* pelo tipo de ficheiro que será protegido genericamente e o nome da partilha de servidor de ficheiros.
 
--   Substitua o *&lt;nome da organização&gt;* pelo nome da sua organização, como ele é exibido nos modelos do Azure Rights Management.
+-   Substitua *&lt;nome da organização&gt;* pelo nome da sua organização, conforme apresentado nos seus modelos predefinidos do Azure Rights Management.
 
--   Substitua o *&lt;nome da organização&gt;* pelo nome da sua organização.
+-   Substitua *&lt;nome da organização&gt;* pelo nome da sua organização.
 
--   Substitua *&lt;instruções como salvar o arquivo e remover a extensão de nome de arquivo. pfile&gt;* por instruções específicas do aplicativo para este tipo de arquivo.
+-   Substitua *&lt;Instruções para guardar o ficheiro e remover a extensão .pfile&gt;* por instruções específicas da aplicação para este tipo de ficheiro.
 
--   Substitua detalhes de contato por instruções de como os usuários podem entrar em contato com o suporte técnico, como um link de site, endereço de email ou número de telefone.
+-   Substitua os detalhes de contacto por instruções sobre como os utilizadores podem contactar o suporte técnico, tais como uma ligação para um site, um endereço de e-mail ou um número de telefone.
 
--   Faça modificações adicionais que você queira para esse conjunto de instruções e, em seguida, envie-o para esses usuários.
+-   Efetue quaisquer modificações adicionais que pretenda a este conjunto de instruções e, em seguida, envie-o aos utilizadores.
 
-A documentação de exemplo mostra como essas instruções pode parecer para os usuários, após as personalizações.
+A documentação de exemplo mostra que aspeto estas instruções poderão ter para os utilizadores depois das personalizações.
 
-![Documentação de usuário do modelo para implantação rápida de RMS do Azure](../media/AzRMS_UsersBanner.png)
+![Modelo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Como editar o &lt;tipo de arquivo&gt; do &lt;compartilhamento de servidor de arquivos&gt;
+### Como editar &lt;tipo de ficheiro&gt; na &lt;partilha de servidor de ficheiros&gt;
 
-1.  Clique duas vezes no arquivo para abri-lo. Suas credenciais serão solicitadas.
+1.  Faça duplo clique no ficheiro para o abrir. Poderão ser-lhe pedidas as credenciais.
 
-2.  Você verá uma caixa de diálogo **arquivo protegido** no aplicativo de compartilhamento Microsoft Rights Management, que informa que você deve cumprir as permissões para **&lt;nome da organização&gt; - Confidencial**. Isso significa que você não deve compartilhar este documento com outras pessoas se elas não trabalham para a &lt;nome da organização&gt;.
+2.  Será apresentada uma caixa de diálogo **ficheiro protegido** da aplicação de partilha Microsoft Rights Management, que indica que é esperado que respeite as permissões da **&lt;nome da organização&gt; – Confidencial**. Isto significa que não deve partilhar este documento com outras pessoas se estas não trabalharem para a &lt;nome da organização&gt;.
 
 3.  Clique em **Abrir**.
 
-4.  Para editar o arquivo, salve primeiro o arquivo e remova a extensão de nome de arquivo .pfile:
+4.  Para editar o ficheiro, guarde-o primeiro e remova a extensão .pfile:
 
-    -   &lt;Instruções de como salvar o arquivo e remover a extensão de nome de arquivo .pfile&gt;
+    -   &lt;Instruções para guardar o ficheiro e remover a extensão .pfile&gt;
 
-5.  Agora você pode editar e salvar o arquivo como de costume.
+5.  Agora pode editar e guardar o ficheiro como habitualmente.
 
-Periodicamente, o arquivo será protegido novamente, o que adiciona novamente a extensão de nome de arquivo .pfile, e será necessário repetir essas etapas.
+Os ficheiros serão protegidos novamente de forma periódica. Esta operação volta a adicionar a extensão de nome de ficheiro .pfile, pelo que terá de repetir estes passos.
 
 **Precisa de ajuda?**
 
 -   Para obter informações adicionais:
 
-    -   [Exibir e usar os arquivos que foram protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [Ver e utilizar ficheiros que foram protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
 
--   Entre em contato com o suporte técnico:
+-   Contactar o suporte técnico:
 
-    -   *&lt;detalhes de contato&gt;*
+    -   *&lt;detalhes de contacto&gt;*
 
-### Documentação do usuário personalizada de exemplo
-![Documentação de usuário de exemplo para implantação rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
+### Exemplo de documentação do utilizador personalizada
+![Exemplo de documentação do utilizador para a Implementação Rápida do Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Como editar desenhos em CAD no compartilhamento de ProjectNextGen
+#### Como editar desenhos CAD a partir da partilha ProjectNextGen
 
-1.  Clique duas vezes no arquivo para abri-lo. Suas credenciais serão solicitadas.
+1.  Faça duplo clique no ficheiro para o abrir. Poderão ser-lhe pedidas as credenciais.
 
-2.  Você verá uma caixa de diálogo **Arquivo protegido** do aplicativo de compartilhamento do Microsoft Rights Management, que informa você sobre a necessidade de cumprir com as permissões para **VanArsdel, Ltd - Confidencial**. Isso significa que você não deve compartilhar esse documento com outras pessoas, se elas não trabalharem para VanArsdel, Ltd.
+2.  Será apresentada uma caixa de diálogo **ficheiro protegido** da aplicação de partilha Microsoft Rights Management, o que indica que é esperado que respeite as permissões de **VanArsdel, Ltd – Confidencial**. Isto significa que não deve partilhar este documento com outras pessoas se estas não trabalharem para a VanArsdel, Ltd.
 
 3.  Clique em **Abrir**.
 
-4.  Para editar o arquivo, salve primeiro o arquivo e remova a extensão de nome de arquivo .pfile:
+4.  Para editar o ficheiro, guarde-o primeiro e remova a extensão .pfile:
 
-    -   **Arquivo** &gt; **Salvar Como**
+    -   **Ficheiro** &gt; **Guardar como**
 
-    -   Exclua **.pfile** do final do nome do arquivo e clique em **OK**.
+    -   Elimine **.pfile** do fim do nome de ficheiro e clique em **OK**.
 
-5.  Agora você pode editar e salvar o arquivo como de costume.
+5.  Agora pode editar e guardar o ficheiro como habitualmente.
 
-Periodicamente, o arquivo será protegido novamente, o que adiciona novamente a extensão de nome de arquivo .pfile, e será necessário repetir essas etapas.
+Os ficheiros serão protegidos novamente de forma periódica. Esta operação volta a adicionar a extensão de nome de ficheiro .pfile, pelo que terá de repetir estes passos.
 
 **Precisa de ajuda?**
 
 -   Para obter informações adicionais:
 
-    -   [Exibir e usar os arquivos que foram protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [Ver e utilizar ficheiros que foram protegidos](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
 
--   Contate o suporte técnico: helpdesk@vanarsdelltd.com
+-   Contacte o suporte técnico: helpdesk@vanarsdelltd.com
 
 
 

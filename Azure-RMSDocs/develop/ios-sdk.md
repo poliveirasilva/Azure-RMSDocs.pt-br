@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuração do iOS e OS X | Azure RMS
-description: Os aplicativos iOS e OS X podem usar o RMS SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM.
+title: Configuração do iOS e OS X | Azure RMS
+description: As aplicações iOS e OS X podem utilizar o SDK RMS 4.2 para ativar a proteção de informações integrada na respetiva aplicação ao utilizar o AAD RM.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,95 +24,95 @@ ms.suite: ems
 
 ---
 
-# Configuração do iOS e OS X
+# Configuração do iOS e OS X
 
-Os aplicativos iOS e OS X podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM (Azure Active Directory Rights Management).
+As aplicações iOS e OS X podem utilizar o SDK Microsoft Rights Management 4.2 para ativar a proteção de informações integrada na respetiva aplicação utilizando o Azure Active Directory Rights Management (AAD RM).
 
-Este tópico orientará você durante a configuração de seu ambiente para criação de seus próprios aplicativos novos.
+Este tópico descreve como configurar o ambiente para criar as suas novas aplicações.
 
-**Observação**: esse SDK não dá suporte para o iPod Touch.
+**Nota** Este SDK não suporta o iPod Touch.
 
 
 -   [Pré-requisitos](#prerequisites)
 -   [Opcional](#optional)
--   [Configurando o ambiente de desenvolvimento](#configuring_your_development_environment)
--   [Consulte também](#see_also)
+-   [Configurar o ambiente de desenvolvimento](#configuring_your_development_environment)
+-   [Consulte Também](#see_also)
 
 ## Pré-requisitos
 
-Recomendamos o seguinte software em seu sistema de desenvolvimento:
+Recomendamos o seguinte software no sistema de desenvolvimento:
 
--   O OS X é necessário para todo o desenvolvimento do iOS.
--   Xcode versão 6.0 e posterior
+-   O OS X é necessário para toda a programação iOS.
+-   Xcode versão 6.0 e posterior
 
     O Xcode está disponível na [Mac App Store](https://developer.apple.com/technologies/mac/).
 
--   O pacote do MS RMS SDK 4.2 para iOS e OS X. Para obter mais informações, consulte [Introdução](get-started.md).
+-   O pacote do SDK MS RMS 4.2 para iOS e OS X. Para obter mais informações, consulte [Introdução](get-started.md).
 
-    Esse SDK pode ser usado para desenvolver para o iOS 7.0 e OS X 10.8 e posterior.
+    Este SDK pode ser utilizado para a programação do iOS 7.0 e OS X 10.8 e posterior.
 
--   Biblioteca de autenticação: recomendamos o uso da [ADAL (Azure AD Authentication Library)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que dão suporte ao OAuth 2.0 também podem ser usadas.
+-   Biblioteca de autenticação: recomendamos que utilize a [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, também é possível utilizar outras bibliotecas de autenticação que suportem o OAuth 2.0.
 
-    Para saber mais, consulte [ADAL para iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) ou [ADAL para OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
+    Para obter mais informações, consulte [ADAL para iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) ou [ADAL para OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
-Leia o tópico [Novidades](release-notes.md) para saber mais sobre as atualizações de API, notas de versão e perguntas frequentes.
+Consulte o tópico [Novidades](release-notes.md) para obter informações sobre atualizações de API, notas de versão e perguntas mais frequentes (FAQ).
 
 ## Opcional
 
-Nossa biblioteca de interface do usuário fornece uma interface de usuário reutilizável para operações de consumo e proteção para desenvolvedores que não querem criar sua própria interface do usuário personalizada - [Biblioteca de interface do usuário e exemplo de aplicativo para iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios).
+A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para operações de consumo e proteção para programadores que não pretendem criar a sua IU personalizada – [Biblioteca da IU e Aplicação de exemplo para iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios).
 
-## Configurando o ambiente de desenvolvimento
+## Configurar o ambiente de desenvolvimento
 
--   Para criar um novo projeto, no menu **Arquivo**, clique em **Novo** e, em seguida, **Projeto**.
--   Selecione **Aplicativo de Exibição Única**.
+-   Para criar um novo projeto, no menu **Ficheiro**, clique em **Novo** e, em seguida, em **Projeto**.
+-   Selecione **Aplicação de Vista Única**.
 
-    ![Crie um novo projeto](../media/iOS-Project.png)
+    ![Criar um novo projeto](../media/iOS-Project.png)
 
--   Insira um nome e um identificador para o novo projeto.
+-   Introduza um nome e identificador para o novo projeto.
 
-    ![Nomear o projeto](../media/iOS-project-options.png)
+    ![Dar um nome ao projeto](../media/iOS-project-options.png)
 
--   Clique em **Avançar** e selecione o local do seu projeto.
--   Para adicionar a estrutura **MSRightsManagement** para iOS Frameworks, arraste a pasta .framework da pasta de instalação do SDK para a seção **Estruturas** de seu **Navegador de Projeto**.
+-   Clique em **Seguinte** e selecione a localização do seu projeto.
+-   Para adicionar a estrutura **MSRightsManagement** às Estruturas iOS, arraste a pasta .framework da pasta de instalação do SDK para a secção **Estruturas** do **Navegador de Projetos**.
 
-    ![Definir local](../media/ios-add-dependencies-01a.png)
+    ![Definir localização](../media/ios-add-dependencies-01a.png)
 
--   Selecione o botão de opção **Criar grupos para qualquer pasta adicionada** e desmarque a caixa de seleção **Copiar itens na pasta do grupo de destino (se necessário)**.
+-   Selecione o botão da opção **Criar grupos para quaisquer pastas adicionadas** e desmarque a caixa de verificação **Copiar itens para a pasta do grupo de destino (se necessário)**.
 
-    Essa ação mantém a referência para a pasta de instalação do SDK em vez de criar uma cópia.
+    Esta ação mantém a referência à pasta de instalação do SDK em vez de criar uma cópia.
 
-    ![Definir referência à pasta de instalação do SDK](../media/iOS-create-groups.png)
+    ![Definir a referência à pasta de instalação do SDK](../media/iOS-create-groups.png)
 
--   Para adicionar o MS RMS SDK 4.2 ao grupo de recursos, arraste o arquivo MSRightsManagementResources.bundle da pasta MSRightsManagement.framework/Resources para a seção **Estruturas** do seu navegador de projeto.
+-   Para adicionar o SDK MS RMS 4.2 ao pacote de recursos, arraste o ficheiro MSRightsManagementResources.bundle da pasta MSRightsManagement.framework/Resources para a secção **Estruturas** do Navegador de Projetos.
 
     ![Adicionar pacote de recursos](../media/iOS-add-resource-bundle-02a.png)
 
--   Como você fez quando copiou a estrutura, selecione o botão de opção **Criar grupos para qualquer pasta adicionada** e desmarque a caixa de seleção **Copiar itens na pasta do grupo de destino (se necessário)**.
--   O SDK depende de outras estruturas, incluindo: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** e **Segurança**. Para adicionar essas estruturas, navegue até a seção **Estruturas e bibliotecas vinculadas** do painel **Resumo** do destino e expanda essa seção para adicioná-las.
+-   Tal como fez quando copiou a Estrutura, selecione o botão da opção **Criar grupos para quaisquer pastas adicionadas** e desmarque a caixa de verificação **Copiar itens para a pasta do grupo de destino (se necessário)**.
+-   O SDK depende de outras estruturas, incluindo: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** e **Security**. Para adicionar estas estruturas, navegue até à secção **Estruturas e Bibliotecas Ligadas** do painel **Resumo** e expanda essa secção para as adicionar.
 
-    As estruturas **UIKit** e **Foundation** são necessárias e, geralmente, estão presentes por padrão.
+    As estruturas **UIKit** e **Foundation** são necessárias e estão geralmente presentes por predefinição.
 
     ![Adicionar recursos](../media/iOS-add-libraries.png)
 
--   Adicione o sinalizador **- ObjC** como **Outros Sinalizadores do Vinculador** ao seu destino **Configurações da Compilação**.
+-   Adicione o sinalizador **- ObjC** a **Outros Sinalizadores do Linker** nas **Definições de Criação** de destino.
 
-    ![Adicionar configurações de build](../media/iOS-linker-flags.png)
+    ![Adicionar definições de criação](../media/iOS-linker-flags.png)
 
--   Agora seu **Navegador de Projeto** deve estar parecido com essa árvore.
+-   Agora, o **Navegador de Projetos** deve ter um aspeto semelhante a esta árvore.
 
-    ![Revisar projeto](../media/iOS-verify-setup-01a.png)
+    ![Rever projeto](../media/iOS-verify-setup-01a.png)
 
--   Agora você está pronto para criar seus próprios aplicativos novos do iOS/OS.
+-   Agora, está pronto para criar as suas novas aplicações iOS/OS X.
 
-### Consulte também
+### Consulte Também
 
 * [Introdução](get-started.md)
 
 * [Novidades](release-notes.md)
 
-* [Termos e conceitos de desenvolvedor](core-concepts.md)
+* [Conceitos e termos de programação](core-concepts.md)
 
-* [Referência de API do iOS/OS X](/rights-management/sdk/4.2/api/ios/ios)
+* [Referência da API do iOS/OS X](/rights-management/sdk/4.2/api/ios/ios)
 
  
 

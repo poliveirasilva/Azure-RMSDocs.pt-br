@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuração dos direitos de uso do Azure Rights Management | Azure RMS
+title: Configuração de direitos de utilização para o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,271 +25,271 @@ ms.suite: ems
 
 ---
 
-# Configuração dos direitos de uso do Azure Rights Management
+# Configuração de direitos de utilização para o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Quando você define a proteção em arquivos ou emails usando o Azure Rights Management (Azure RMS) e não usa um modelo, você deve configurar os direitos de uso por conta própria. Além disso, ao configurar modelos personalizados para o Azure RMS, selecione os direitos de uso que serão aplicados automaticamente quando o modelo é selecionado por usuários, administradores, ou serviços configurados. Por exemplo, no portal clássico do Azure, você pode selecionar funções que configuram um agrupamento lógico de direitos de uso ou pode configurar os direitos individuais.
+Quando definir a proteção em ficheiros ou e-mails com o Azure Rights Management (Azure RMS) e não utilizar um modelo, terá de configurar os direitos de utilização. Além disso, quando configurar modelos personalizados para o Azure RMS, selecione os direitos de utilização que serão automaticamente aplicados quando o modelo for selecionado por utilizadores, administradores ou serviços configurados. Por exemplo, no portal clássico do Azure, pode selecionar funções que configuram um agrupamento de direitos de utilização lógico ou pode configurar os direitos individuais.
 
-Use este artigo para ajudá-lo a configurar os direitos de uso que você deseja para o aplicativo que está usando e compreender como esses direitos são interpretados pelos aplicativos.
+Utilize este artigo para o ajudar a configurar os direitos de utilização que pretende para a aplicação que está a utilizar e para compreender como estes direitos são interpretados pelas aplicações.
 
-## Direitos de uso e descrições
-As seções a seguir listam e descrevem os direitos de uso aos quais o Rights Management dá suporte e como eles são usados e interpretados. Eles estão listados pelo **Nome comum**, que normalmente é como você pode ver o direito de uso exibido ou referenciado, como uma versão mais amigável do valor de palavra única que é usada no código (o valor de **Codificação na política**). **Constante ou Valor de API** é o nome do SDK para uma chamada à API da MSIPC usada quando você grava um aplicativo habilitado para RMS que verifica um direito de uso ou adiciona um direito de uso a uma política.
+## Direitos de utilização e descrições
+As secções seguintes listam e descrevem os direitos de utilização suportados pelo Rights Management e de que forma são utilizados e interpretados. São listados pelo **Nome comum**, que é, geralmente, a forma como poderá ver o direito de utilização apresentado ou referenciado, como uma versão mais amigável do valor de palavra única que é utilizado no código (o valor **Codificação na política**). A **Constante ou o Valor de API** é o nome do SDK para uma chamada à API MSIPC, utilizada quando escreve uma aplicação otimizada por RMS que verifica a existência de um direito de utilização ou adiciona um direito de utilização a uma política.
 
 
-### Editar conteúdo, editar
+### Editar Conteúdo, Editar
 
-Permite que usuário modifique, reorganize, formate ou filtre o conteúdo dentro do aplicativo. Ele não concede o direito para salvar a cópia editada.
+Permite ao utilizador modificar, reorganizar, formatar ou filtrar o conteúdo dentro da aplicação. Não concede o direito para guardar a cópia editada.
 
 **Codificação na política**: DOCEDIT
 
-**Implementação nos direitos personalizados do Office**: como parte das opções *Alterar* e *Controle Total*.
+**Direitos personalizados de implementação no Office**: como parte das opções *Alterar* e *Controlo Total*.
 
 **Nome no portal clássico do Azure**: *Editar Conteúdo*
 
-**Nome em modelos do AD RMS**:*Editar*
+**Nome em modelos de AD RMS**: *Editar*
 
-**Constante de API ou valor:** *não aplicável*
+**Constante ou valor de API**: *Não aplicável*
 
 ---
 
-### Salvar
+### Guardar
 
-Permite ao usuário salvar o documento em seu local atual.
+Permite ao utilizador guardar o documento na sua localização atual.
 
 **Codificação na política**: EDIT
 
-**Implementação nos direitos personalizados do Office**: como parte das opções *Alterar* e *Controle Total*.
+**Direitos personalizados de implementação no Office**: como parte das opções *Alterar* e *Controlo Total*.
 
-**Nome no portal clássico do Azure**: *Salvar Arquivo*
+**Nome no portal clássico do Azure**: *Guardar Ficheiro*
 
-**Nome em modelos do AD RMS**: *Salvar*
+**Nome em modelos de AD RMS**: *Guardar*
 
-**Constante de API ou valor**: IPC_GENERIC_WRITEL "EDIT"
+**Constante ou valor de API**: IPC_GENERIC_WRITEL"EDIT"
 
-Em aplicativos do Office, esse direito também permite que o usuário modifique o documento.
+Nas aplicações do Office, este direito também permite que o utilizador modifique o documento.
 
 ---
 
 ### Comentário
 
-Habilita a opção para adicionar anotações ou comentários ao conteúdo.
+Ativa a opção para adicionar anotações ou comentários ao conteúdo.
 
 **Codificação na política**: COMMENT
 
-**Implementação de direitos personalizados do Office**: não implementado
+**Direitos personalizados de implementação no Office**: não implementados.
 
-**Nome no portal clássico do Azure**: não implementado
+**Nome no portal clássico do Azure**: não implementado.
 
-**Nome em modelos do AD RMS:** não implementado
+**Nome nos modelos de AD RMS:** não implementado.
 
-**Constante de API ou valor**: IPC_GENERIC_COMMENTL"COMMENT
+**Constante ou valor de API:** IPC_GENERIC_COMMENTL"COMMENT
 
-Esse direito está disponível no SDK, está disponível como uma política ad hoc no módulo de proteção por RMS para Windows PowerShell e foi implementado em alguns aplicativos de fornecedores de software. No entanto, ele não é amplamente usado e não é suportado atualmente por aplicativos do Office.
+Este direito está disponível no SDK, disponível como uma política ad hoc no módulo Proteção RMS para o Windows PowerShell e foi implementado em certas aplicações de fornecedores de software. No entanto, não é amplamente utilizado e atualmente não é suportado por aplicações do Office.
 
 ---
 
-### Salvar como, Exportar
+### Guardar Como, Exportar
 
-Habilita a opção para salvar o conteúdo com um nome de arquivo diferente (Salvar como). Para documentos do Office, o arquivo pode ser salvo sem proteção.
+Ativa a opção para guardar o conteúdo com um nome de ficheiro diferente (Guardar Como). Para documentos do Office, é possível guardar o ficheiro sem proteção.
 
 **Codificação na política:** EXPORT
 
-**Implementação nos direitos personalizados do Office**: como parte das opções *Alterar* e *Controle Total*.
+**Direitos personalizados de implementação no Office:** como parte das opções *Alterar* e *Controlo Total*.
 
-**Nome no portal clássico do Azure:** *Exportar Conteúdo (Salvar como)*
+**Nome no portal clássico do Azure:** *Exportar Conteúdo (Guardar Como)*
 
-**Nome em modelos do AD RMS:** *Exportar (Salvar como)*
+**Nome em modelos de AD RMS:** *Exportar (Guardar Como)*
 
-**Constante de API ou valor**: IPC_GENERIC_EXPORTL"EXPORT"
+**Constante ou valor de API:** IPC_GENERIC_EXPORTL"EXPORT"
 
-Esse direito também permite que o usuário execute outras opções de exportação em aplicativos, como *Enviar para o OneNote*.
+Este direito também permite que o utilizador efetue outras opções de exportação em aplicações, tais como *Enviar para o OneNote*.
 
 ---
 
-### Encaminhar
+### Reencaminhar
 
-Habilita a opção para encaminhar uma mensagem de email e adicionar destinatários nas linhas *Para* e *Cc* . Esse direito não se aplica a documentos; apenas mensagens de email.
+Ativa a opção para reencaminhar uma mensagem de e-mail e para adicionar destinatários às linhas *Para* e *Cc*. Este direito não se aplica a documentos; apenas a mensagens de e-mail.
 
 **Codificação na política:** FORWARD
 
-**Implementação de direitos personalizados do Office:** negado ao usar a política padrão *Não Encaminhar*.
+**Direitos personalizados de implementação no Office:** negados ao utilizar a política padrão *Não Reencaminhar*.
 
-**Nome no portal clássico do Azure:** *Encaminhar*
+**Nome no portal clássico do Azure:** *Reencaminhar*
 
-**Nome em modelos do AD RMS:** *Encaminhar*
+**Nome em modelos de AD RMS:** *Reencaminhar*
 
-**Constante de API ou valor:** IPC_EMAIL_FORWARDL "FORWARD"
+**Constante ou valor de API:** IPC_EMAIL_FORWARDL"FORWARD"
 
-Não permite que o encaminhador conceda direitos a outros usuários como parte da ação de encaminhamento.
+Não permite que o reencaminhador conceda direitos a outros utilizadores como parte da ação de reencaminhar.
 
 ---
 
-### Controle total
+### Controlo Total
 
-Concede todos os direitos ao documento e todas as ações disponíveis podem ser executadas.
+Concede todos os direitos ao documento e podem ser efetuadas todas as ações disponíveis.
 
 **Codificação na política:** OWNER
 
-**Implementação nos direitos personalizados do Office**: como a opção personalizada *Controle Total*.
+**Direitos personalizados de implementação no Office:** como a opção personalizada *Controlo Total*.
 
-**Nome no portal clássico do Azure:** *Controle Total*
+**Nome no portal clássico do Azure:** *Controlo Total*
 
-**Nome em modelos do AD RMS:***Controle Total*
+**Nome em modelos de AD RMS:** *Controlo Total*
 
-**Constante de API ou valor:** IPC_GENERIC_ALLL"OWNER"
+**Constante ou valor de API:** IPC_GENERIC_ALLL"OWNER"
 
-Inclui a capacidade de remover a proteção.
+Inclui a capacidade para remover a proteção.
 
 ---
 
 ### Imprimir
 
-Habilita as opções para imprimir o conteúdo.
+Ativa as opções para imprimir o conteúdo.
 
 **Codificação na política:** PRINT
 
-**Implementação de direitos personalizados do Office:** como a opção *Imprimir Conteúdo* nas permissões personalizadas. Não é uma configuração por destinatário.
+**Direitos personalizados de implementação no Office:** como a opção *Imprimir Conteúdo* em permissões personalizadas. Não é uma definição por destinatário.
 
 **Nome no portal clássico do Azure:** *Imprimir*
 
-**Nome em modelos do AD RMS:** *Imprimir*
+**Nome em modelos de AD RMS:** *Imprimir*
 
-**Constante de API ou valor**: IPC_GENERIC_PRINTL"PRINT
+**Constante ou valor de API:** IPC_GENERIC_PRINTL"PRINT
 
 ---
 
 ### Responder
 
-Habilita a opção Responder em um cliente de email, sem permitir alterações nas linhas *Para* ou *Cc* .
+Ativa a opção Responder num cliente de e-mail, sem permitir alterações nas linhas *Para* ou *Cc*.
 
 **Codificação na política:** REPLY
 
-**Implementação de direitos personalizados do Office**: não aplicável
+**Direitos personalizados de implementação no Office:** não aplicável
 
 **Nome no portal clássico do Azure:** *Responder*
 
-**Nome em modelos do AD RMS:** *Responder*
+**Nome em modelos de AD RMS:** *Responder*
 
-**Constante de API ou valor:** IPC_EMAIL_REPLY
+**Constante ou valor de API:** IPC_EMAIL_REPLY
 
 ---
 
-### Responder a todos
+### Responder a Todos
 
-Habilita a opção *Responder a todos* em um cliente de email, mas não permite que o usuário adicione destinatários nas linhas *Para* ou *Cc* .
+Ativa a opção *Responder a Todos* num cliente de e-mail, mas não permite que o utilizador adicione destinatários às linhas *Para* ou *Cc*.
 
 **Codificação na política:** REPLYALL
 
-**Implementação de direitos personalizados do Office**: não aplicável
+**Direitos personalizados de implementação no Office:** não aplicável
 
 **Nome no portal clássico do Azure:** *Responder a Todos*
 
-**Nome em modelos do AD RMS:** *Responder a Todos*
+**Nome em modelos de AD RMS:** *Responder a Todos*
 
-**Constante de API ou valor:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**Constante ou valor de API:** IPC_EMAIL_REPLYALLL"REPLYALL"
 
 ---
 
-### Modo de exibição, Abrir, Ler
+### Ver, Abrir, Ler
 
-Permite que o usuário abra o documento e visualize o conteúdo.
+Permite que o utilizador abra o documento e veja o conteúdo.
 
 **Codificação na política:** VIEW
 
-**Implementação nos direitos personalizados do Office**: como a política personalizada *Ler*, opção *Exibir*.
+**Direitos personalizados de implementação no Office:** como a política personalizada *Ler*, opção *Ver*.
 
-**Nome no portal clássico do Azure:** *Exibir Conteúdo*
+**Nome no portal clássico do Azure:** *Ver Conteúdo*
 
-**Nome em modelos do AD RMS:** *Exibir*
+**Nome em modelos de AD RMS:** *Ver*
 
-**Constante de API ou valor:** IPC_GENERIC_READL"VIEW"
+**Constante ou valor de API:** IPC_GENERIC_READL"VIEW"
 
 ---
 
 ### Copiar
 
-Habilita opções para copiar dados (incluindo capturas de tela) do documento para o mesmo documento ou outro.
+Ativa opções para copiar dados (incluindo capturas de ecrã) do documento para o mesmo ou outro documento.
 
-**Codificação na política:** EXTRAIR
+**Codificação na política:** EXTRACT
 
-**Implementação nos direitos personalizados do Office:** como a opção de política personalizada *Permitir que usuários com acesso de leitura copiem conteúdo*.
+**Direitos personalizados de implementação no Office:** Como a opção da política personalizada *Permitir que os utilizadores com acesso de Leitura copiem conteúdo*.
 
 **Nome no portal clássico do Azure:** *Copiar e Extrair Conteúdo*
 
-**Nome nos modelos do AD RMS** *Extrair*
+**Nome em modelos de AD RMS:** *Extrair*
 
-**Constante ou valor de API**: IPC_GENERIC_EXTRACTL"EXTRACT"
+**Constante ou valor de API:** IPC_GENERIC_EXTRACTL"EXTRACT"
 
-Em alguns aplicativos, ele também permite que todo o documento seja salvo no formato não protegido.
+Em certas aplicações, também permite que todo o documento seja guardado numa forma não protegida.
 
 ---
 
 
 ### Permitir Macros
 
-Habilita a opção para executar macros ou realizar outro acesso remoto ou por programação ao conteúdo em um documento.
+Ativa a opção para executar macros ou efetuar outro acesso programático ou remoto ao conteúdo num documento.
 
 **Codificação na política:** OBJMODEL
 
-**Implementação nos direitos personalizados do Office**: como a opção de política personalizada *Permitir o Acesso Programático*. Não é uma configuração por destinatário.
+**Direitos personalizados de implementação no Office:** como a opção da política personalizada *Permitir Acesso Programático*. Não é uma definição por destinatário.
 
 **Nome no portal clássico do Azure:** *Permitir Macros*
 
-**Nome em modelos do AD RMS:** *Permitir Macros*
+**Nome em modelos de AD RMS:** *Permitir Macros*
 
-**Constante de API ou valor:** não aplicável
+**Constante ou valor de API:** Não aplicável
 
 
 ## Direitos incluídos nos níveis de permissões
 
-Alguns aplicativos agrupam os direitos de uso em níveis de permissões, para facilitar a seleção dos direitos de uso que normalmente são usados juntos. Estes níveis de permissões ajudam a abstrair um nível de complexidade dos usuários, então eles podem escolher as opções baseadas em funções.  Por exemplo, **Revisor** e **Coautor**. Embora essas opções muitas vezes mostram aos usuários um resumo dos direitos, elas podem não incluir todos os direitos listados na tabela anterior.
+Algumas aplicações agrupam os direitos de utilização em níveis de permissões, para facilitar a seleção de direitos de utilização que são normalmente utilizados em conjunto. Estes níveis de permissões ajudam a abstrair um nível de complexidade dos utilizadores, para que possam escolher opções baseadas em funções.  Por exemplo, **Revisor** e **Coautor**. Apesar de estas opções mostrarem frequentemente aos utilizadores um resumo dos direitos, podem não incluir todos os direitos listados na tabela anterior.
 
-Use a tabela a seguir para obter uma lista desses níveis de permissões e uma lista completa dos direitos que eles contêm.
+Utilize a tabela seguinte para obter uma lista destes níveis de permissões e uma lista completa dos direitos que contêm.
 
-|Nível de Permissões|Aplicativos|Direitos incluídos (nome comum)|
+|Nível de Permissões|Aplicações|Direitos incluídos (nome comum)|
 |---------------------|----------------|---------------------------------|
-|Visualizador|Portal clássico do Azure<br /><br />Aplicativo e compartilhamento Rights Management para Windows|Exibir, Abrir, Ler; Responder; Responder a Todos|
-|Revisor|Portal clássico do Azure<br /><br />Aplicativo e compartilhamento Rights Management para Windows|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Encaminhar [[1]](#footnote-1)|
-|Coautor|Portal clássico do Azure<br /><br />Aplicativo e compartilhamento Rights Management para Windows|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Copiar; Exibir Direitos; Alterar Direitos; Permitir Macros; Salvar como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Encaminhar [[1]](#footnote-1)|
-|Coproprietário|Portal clássico do Azure<br /><br />Aplicativo e compartilhamento Rights Management para Windows|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Copiar; Exibir Direitos; Alterar Direitos; Permitir Macros; Salvar como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Encaminhar [[1]](#footnote-1); Controle Total|
+|Visualizador|Portal clássico do Azure<br /><br />Aplicação de partilha Rights Management para Windows|Ver, Abrir, Ler; Responder; Responder a Todos|
+|Revisor|Portal clássico do Azure<br /><br />Aplicação de partilha Rights Management para Windows|Ver, Abrir, Ler; Guardar; Editar Conteúdo, Editar; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Reencaminhar [[1]](#footnote-1)|
+|Coautor|Portal clássico do Azure<br /><br />Aplicação de partilha Rights Management para Windows|Ver, Abrir, Ler; Guardar; Editar Conteúdo, Editar; Copiar; Ver Direitos; Alterar Direitos; Permitir Macros; Guardar Como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Reencaminhar [[1]](#footnote-1)|
+|Coproprietário|Portal clássico do Azure<br /><br />Aplicação de partilha Rights Management para Windows|Ver, Abrir, Ler; Guardar; Editar Conteúdo, Editar; Copiar; Ver Direitos; Alterar Direitos; Permitir Macros; Guardar Como, Exportar; Imprimir; Responder [[1]](#footnote-1); Responder a Todos [[1]](#footnote-1); Reencaminhar [[1]](#footnote-1); Controlo Total|
 
 ----
 
 ###### Nota de rodapé 1
-Não se aplica ao aplicativo de compartilhamento Rights Management para Windows.
+Não aplicável à aplicação de partilha Rights Management para o Windows.
 
-## Direitos incluídos nos modelos padrão
-Os direitos que estão incluídos com os modelos padrão são as seguintes:
+## Direitos incluídos nos modelos predefinidos
+Os direitos incluídos com os modelos predefinidos são os seguintes:
 
-|Nome para Exibição|Direitos incluídos (nome comum)|
+|Nome a Apresentar|Direitos incluídos (nome comum)|
 |----------------|---------------------------------|
-|&lt;*nome da organização*&gt;*- Somente exibição confidencial*|Modo de exibição, Abrir, Ler|
-|&lt;*nome da organização*&gt; *- Confidencial*|Exibir, Abrir, Ler; Salvar; Editar Conteúdo, Editar; Exibir Direitos Atribuídos; Permitir Macros; Encaminhar; Responder; Responder a Todos|
+|&lt;*nome da organização*&gt;* – Apenas Visualização Confidencial*|Ver, Abrir, Ler|
+|&lt;*nome da organização*&gt;* – Confidencial*|Ver, Abrir, Ler; Guardar; Editar Conteúdos, Editar; Ver Direitos; Permitir Macros; Reencaminhar; Responder; Responder a Todos|
 
-## Opções Não Encaminhar para emails
+## Opção Não Reencaminhar para e-mails
 
-Os clientes e serviços do Exchange (por exemplo, o cliente do Outlook, o aplicativo Outlook Web Access e as regras de transporte do Exchange) têm uma opção adicional de proteção de direitos de informações para emails: **Não Encaminhar**. 
+Os clientes e serviços do Exchange (por exemplo, o cliente Outlook, a aplicação Outlook Web Access e as regras de transporte do Exchange) têm uma opção de proteção dos direitos de informação para e-mails adicional: **Não Reencaminhar**. 
 
-Embora essa opção apareça para os usuários (e os administradores do Exchange) como se fosse um modelo padrão do Rights Management que eles podem selecionar, **Não Encaminhar** não é um modelo. Isso explica por que você não a vê no portal clássico do Azure quando você exibe e gerencia modelos do Azure RMS. Em vez disso, a opção **Não Encaminhar** é um conjunto de direitos que é aplicado dinamicamente por usuários para seus destinatários de email.
+Embora esta opção seja apresentada ao utilizadores (e os administradores do Exchange) como se fosse um modelo de Gestão de Direitos predefinido que podem selecionar, **Não Reencaminhar** não é um modelo. Isto explica por que motivo não é possível vê-lo no portal clássico do Azure quando visualiza e gere modelos para o Azure RMS. Em vez disso, a opção **Não Reencaminhar** é um conjunto de direitos aplicados dinamicamente por utilizadores aos seus destinatários de e-mail.
 
-Quando a opção **Não Encaminhar** é aplicada a um email, os destinatários não podem encaminhá-lo, imprimi-lo, copiá-lo, salvar anexos ou salvá-lo com um nome diferente. Por exemplo, no cliente do Outlook, o botão Encaminhar não fica disponível, as opções de menu **Salvar Como**, **Salvar Anexo** e **Imprimir** não estão disponíveis e você não pode adicionar ou alterar destinatários nas caixas **Para**, **Ccc** ou **Cco**.
+Quando a opção **Não Reencaminhar** é aplicada a um e-mail, os destinatários não podem reencaminhá-lo, imprimi-lo, copiá-lo ou guardar anexos ou guardar com um nome diferente. Por exemplo, no cliente Outlook, o botão Reencaminhar não está disponível, as opções de menu **Guardar Como**, **Guardar Anexo** e **Imprimir** não estão disponíveis e não é possível adicionar ou alterar os destinatários nas caixas **Para**, **Cc** ou **Bcc**.
 
-Há uma distinção importante entre aplicar a opção **Não Encaminhar** e aplicar um modelo que não concede o direito de Encaminhar um email: a opção **Não Encaminhar** usa uma lista dinâmica de usuários autorizados baseada nos destinatários escolhidos pelo usuário do email original, enquanto os direitos no modelo têm uma lista estática de usuários autorizados que o administrador especificou anteriormente. Qual é a diferença? Vejamos um exemplo: 
+Existe uma diferença importante entre aplicar a opção **Não Reencaminhar** e aplicar um modelo que não conceda o direito de Reencaminhar a um e-mail: a opção **Não Reencaminhar** utiliza uma lista dinâmica de utilizadores autorizados que se baseia nos destinatários escolhidos pelo utilizador do e-mail original; enquanto os direitos no modelo têm uma lista estática de utilizadores autorizados especificados anteriormente pelo administrador. Qual a diferença? Vejamos um exemplo: 
 
-Uma usuária deseja enviar algumas informações por email para pessoas específicas do departamento de marketing, e essas informações não devem ser compartilhadas com mais ninguém. Ela deve proteger o email com um modelo que restringe os direitos (exibir, responder e salvar) para o departamento de marketing?  Ou deve escolher a opção **Não Encaminhar**? Ambas as opções fariam com que os destinatários não pudessem encaminhar o email. 
+Um utilizador pretende enviar algumas informações por e-mail a pessoas específicas no departamento de Marketing que não devem ser partilhadas com outras pessoas. Deverá proteger o e-mail com um modelo que restringe direitos (ver, responder e guardar) para o departamento de Marketing?  Ou deverá escolher a opção **Não Reencaminhar**? Ambas as escolhas impedem os destinatários de reencaminhar o e-mail. 
 
-- Se ela aplicasse o modelo, os destinatários ainda poderiam compartilhar as informações com outras pessoas no departamento de marketing. Por exemplo, um destinatário poderia usar o Explorer para arrastar e soltar o email para um local compartilhado ou uma unidade USB. Agora, qualquer pessoa do departamento de marketing (e o proprietário do email) com acesso a esse local poderia exibir as informações no email.
+- Se aplicar o modelo, os destinatários continuam a poder partilhar as informações com outras pessoas no departamento de marketing. Por exemplo, um destinatário poderia utilizar o Explorador para arrastar e largar o e-mail numa localização partilhada ou numa unidade USB. Assim, qualquer pessoa do departamento de marketing (e o proprietário do e-mail) com acesso a esta localização pode ver as informações do e-mail.
  
-- Se ela aplicasse a opção **Não Encaminhar**, os destinatários não poderiam compartilhar as informações com nenhuma outra pessoa no departamento de marketing movendo o email para outro local. Nesse cenário, somente os destinatários originais (e o proprietário de email) poderiam exibir as informações no email.
+- Se aplicar a opção **Não Reencaminhar**, os destinatários não conseguirão partilhar as informações com qualquer pessoa do outro departamento de marketing movendo o e-mail para outra localização. Neste cenário, apenas os destinatários originais (e o proprietário do e-mail) poderão ver as informações do e-mail.
 
-> [!NOTE] Use **Não Encaminhar** quando for importante que somente os destinatários que o remetente escolher possam ver as informações no email. Use um modelo para emails para restringir direitos a um grupo de pessoas que o administrador especifica antecipadamente, independentemente dos destinatários escolhidos pelo remetente.
-
-
+> [!NOTE] Utilize **Não Reencaminhar** quando for importante que restringir o acesso às informações do e-mail apenas os destinatários escolhidos pelo remetente. Utilize um modelo para e-mails para restringir os direitos a um grupo de pessoas especificadas anteriormente pelo administrador, independentemente dos destinatários escolhidos pelo remetente.
 
 
-## Consulte também
-[Configurando modelos personalizados do Azure Rights Management](configure-custom-templates.md)
+
+
+## Consulte Também
+[Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
 
 

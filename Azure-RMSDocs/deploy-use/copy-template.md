@@ -30,17 +30,17 @@ ms.suite: ems
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Se for necessário criar um novo modelo que tenha configurações bem parecidas às de um modelo existente, selecione o modelo original na página **MODELOS** , clique em **COPIAR**, especifique um nome exclusivo e faça as alterações necessárias.
+Se quiser criar um novo modelo com definições muito semelhantes a um modelo existente, selecione o modelo original na página **MODELOS**, clique em **COPIAR**, especifique um nome exclusivo e faça as alterações necessárias.
 
 > [!IMPORTANT]
-> Ao copiar um modelo, o status **Publicado** ou **Arquivado** também é copiado. Então, se você copiar um modelo publicado, seu status será publicado a menos que você o altere.
+> Quando copiar um modelo, o estado **Publicado** ou **Arquivado** também será copiado. Por isso, se copiar um modelo publicado, o seu estado imediato será publicado, a menos que o altere.
 
-Você pode copiar modelos personalizados e modelos padrão. Como uma prática recomendada, copie um dos modelos padrão em vez de criar um novo modelo personalizado se quiser o modelo de concessão de direitos a todos os usuários em sua organização. Este método significa que você não tem que criar ou selecionar vários grupos para especificar todos os usuários. Neste cenário no entanto, certifique-se de especificar um novo nome e uma descrição para o modelo copiado para outros idiomas.
+Pode copiar modelos personalizados e modelos predefinidos. De acordo com as melhores práticas, se quiser que o modelo conceda direitos a todos os utilizadores na sua organização, copie um dos modelos predefinidos em vez de criar um novo modelo personalizado. Este método significa que não tem de criar ou selecionar múltiplos grupos para especificar todos os utilizadores. No entanto, neste cenário, certifique-se de que especifica um novo nome e descrição para o modelo copiado para idiomas adicionais.
 
 
 
-## Consulte também
-[Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
+## Consulte Também
+[Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
 <!--HONumber=May16_HO3-->
 

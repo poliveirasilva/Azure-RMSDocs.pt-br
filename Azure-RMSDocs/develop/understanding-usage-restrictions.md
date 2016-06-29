@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Noções básicas sobre restrições de uso | Azure RMS
-description: Todos os aplicativos habilitados para RMS devem impor restrições de uso.
+title: Compreender as restrições de utilização | Azure RMS
+description: Todas as aplicações com suporte RMS têm de impor restrições de utilização.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,36 +24,36 @@ ms.suite: ems
 
 ---
 
-# Noções básicas sobre restrições de uso
+# Compreender as restrições de utilização
 
-Todos os aplicativos habilitados para RMS devem impor restrições de uso. Uma restrição de uso é uma condição que ocorre quando um usuário tenta executar uma ação (por exemplo, imprimir um documento), mas a política do RMS para esse documento não concede a ele permissão ou direito de executar essa ação (por exemplo, o direito PRINT).
+Todas as aplicações com suporte RMS têm de impor restrições de utilização. Uma restrição de utilização é uma condição que resulta quando um utilizador tenta executar uma ação (por exemplo, imprimir um documento), mas a política do RMS desse documento não lhes concede a permissão ou o direito de executar essa ação (por exemplo, o direito de IMPRIMIR).
 
-As permissões do usuário para um documento podem ser consultadas usando a função [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
+As permissões de um utilizador num documento podem ser consultadas ao utilizar a função [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
 
-## Noções básicas sobre restrições de uso
+## Compreender as restrições de utilização
 
--   Familiarize-se com direitos RMS padrão
+-   Familiarizar-se com os direitos padrão do RMS
 
-    Para o conjunto completo de direitos RMS que seu aplicativo pode impor, consulte [Referência de restrição de uso](usage-restriction-reference.md).
+    Para ver o conjunto completo de direitos do RMS que a sua aplicação pode impor, consulte [Referência das restrições de utilização](usage-restriction-reference.md).
 
-    Observe que o aplicativo definiu direitos específicos para sua situação e que vão além dos direitos RMS padrão que podem ser criados.
+    Tenha em atenção que é possível criar direitos definidos para a aplicação específicos da sua situação e que vão para além dos direitos padrão do RMS.
 
--   Identificar os pontos de imposição de restrição de uso
+-   Identificar pontos de imposição de restrições de utilização
 
-    Um *ponto de imposição da restrição de uso* é um lugar no fluxo de controle do seu aplicativo em que é necessário impor uma restrição de uso. O tópico [Referência de restrição de uso](usage-restriction-reference.md) fornece vários exemplos de pontos de imposição comuns.
+    Um *ponto de imposição de restrição de utilização* é um local no fluxo de controlo da sua aplicação onde precisa de impor uma restrição de utilização. O tópico [Referência das restrições de utilização](usage-restriction-reference.md) fornece vários exemplos de pontos de imposição comuns.
 
-    Avalie seu próprio aplicativo para determinar quais pontos de restrição de uso se aplicam.
+    Avalie a sua própria aplicação para determinar os pontos de imposição de restrições de utilização a aplicar.
 
-    Seu aplicativo pode não precisar de todos os pontos de imposição descritos na [Referência de restrição de uso](usage-restriction-reference.md). Por exemplo, se seu aplicativo não permitir que os usuários imprimam o conteúdo, ele não precisará verificar o direito **IPC\_GENERIC\_PRINT**.
+    A sua aplicação pode não necessitar de todos os pontos de imposição descritos na [Referência das restrições de utilização](usage-restriction-reference.md). Por exemplo, se a sua aplicação não permitir que os utilizadores imprimam conteúdo, não é necessário verificar o direito **IPC\_GENERIC\_PRINT**.
 
--   Atualizar seu código para executar uma verificação de acesso em cada ponto de imposição
+-   Atualizar o código para executar uma verificação de acesso em cada ponto de imposição
 
-    Para obter diretrizes de como impor direitos específicos, consulte [Referência de restrição de uso](usage-restriction-reference.md).
+    Para obter orientações acerca de como impor direitos específicos, consulte [Referência das restrições de utilização](usage-restriction-reference.md).
 
 ## Tópicos relacionados
 
 * [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
-* [Referência de restrição de uso](usage-restriction-reference.md)
+* [Referência das restrições de utilização](usage-restriction-reference.md)
  
 
  

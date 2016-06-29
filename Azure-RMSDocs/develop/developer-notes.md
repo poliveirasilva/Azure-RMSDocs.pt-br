@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Informações e diretrizes para desenvolvedores | Azure RMS
-description: Este tópico aborda as diretrizes específicas para vários cenários de desenvolvimento importantes.
+title: Informações e documentação de orientação para programadores | Azure RMS
+description: Este tópico inclui orientações específicas para vários cenários de desenvolvimento importantes.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,28 +24,28 @@ ms.suite: ems
 
 ---
 
-# Informações e diretrizes para desenvolvedores
+# Informações e documentação de orientação para programadores
 
-Esta seção aborda as diretrizes específicas para vários cenários de desenvolvimento importantes, bem como informações gerais sobre o desenvolvimento com este SDK. Os cenários nesta seção são específicos para esta versão do Rights Management Services SDK 2.1 e podem ser alterados em versões subsequentes.
-- [Como fazer usar a autenticação de ADAL](how-to-use-adal-authentication.md) - autenticação com o Azure RMS para seu aplicativo usando o ADAL (Azure Active Directory Authentication Library).
-- [Como adicionar direitos explícitos de proprietário](add-explicit-owner-rights.md) – seu aplicativo deve adicionar direitos de &quot;Proprietário&quot; explicitamente ao criar do zero uma licença ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
-- [ Como depurar um aplicativo habilitado para direitos](debugging-applications-that-use-ad-rms.md) – este tópico a seguir mostra como depurar seu aplicativo e usar o Log de Eventos do Windows.
-- [Como habilitar o rastreamento e a revogação de documentos](tracking-content.md) – este tópico aborda as diretrizes básicas para implementar o rastreamento de documentos do conteúdo e inclui um código de exemplo das atualizações metadados de e criar um botão **Acompanhar Uso** para seu aplicativo.
-- [Como habilitar a notificação por email](how-to-enable-email-notification.md) - a notificação por email permite que um proprietário de conteúdo protegido seja notificado quando seu conteúdo for acessado.
-- [Como habilitar o serviço de aplicativo para trabalhar com a nuvem com base em RMS](how-to-use-file-api-with-aadrm-cloud.md) - esse tópico descreve as etapas para configurar seu aplicativo de serviço para usar o Azure Rights Management.
-- [Como instalar e configurar um Servidor RMS](how-to-install-and-configure-an-rms-server.md) – este tópico aborda as etapas de conexão a um Servidor RMS ou ao Azure RMS para testar seu aplicativo habilitado para direitos.
-- [Como configurar o modo de segurança da API](setting-the-api-security-mode-api-mode.md) - você pode escolher em que modo de segurança seu aplicativo de API do arquivo é executado usando a função [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
-- [Como trabalhar com configurações de criptografia](working-with-encryption.md) - este tópico orienta você sobre nossos pacotes de criptografia e mostra alguns trechos de código para o uso desses pacotes.
-- [Tipos de aplicativo](application-types.md) - este tópico aborda os tipos de aplicativos que você pode escolher criar como habilitados para direitos.
-- [Configuração da API do arquivo](file-api-configuration.md) - o comportamento da API do arquivo pode ser configurado por meio das configurações no Registro.
-- [Formatos de arquivo com suporte](supported-file-formats.md) - a API do arquivo dá suporte aos formatos pfile e nativo
-- [Plataformas com suporte](supported-platforms.md): este tópico identifica as plataformas de cliente e servidor do RMS SDK 2.1 com suporte.
-- [Noções básicas sobre restrições de uso](understanding-usage-restrictions.md) - todos os aplicativos habilitados para RMS devem impor restrições de uso.
-- [Referência de restrição de uso](usage-restriction-reference.md) – as restrições de uso são definidas pelas constantes listadas neste tópico.
+Esta secção inclui documentação de orientação específica para diversos cenários de desenvolvimento importantes, bem como informações gerais sobre a desenvolvimento este SDK. Os cenários nesta secção são específicos desta versão do SDK Rights Management Services 2.1 e poderão ser alterados em versões posteriores.
+- [Procedimentos: utilizar a autenticação ADAL](how-to-use-adal-authentication.md) - Autenticação com o Azure RMS para a sua aplicação com o ADAL (Azure Active Directory Authentication Library).
+- [Procedimentos: Adicionar direitos de proprietário explícitos](add-explicit-owner-rights.md) – A aplicação deve adicionar explicitamente direitos de &quot;Proprietário&quot; quando cria uma licença de raiz ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)).
+- [Procedimentos: depurar uma aplicação com permissão para direitos](debugging-applications-that-use-ad-rms.md) - Este tópico mostra como depurar a aplicação e utilizar o Registo de Eventos do Windows.
+- [Procedimentos: ativar o controlo e a revogação de documentos](tracking-content.md) -Este tópico inclui a documentação de orientação básica para implementação do controlo de documento do conteúdo, bem como código de exemplo para atualizações de metadados e criação de um botão **Controlar Utilização** para a sua aplicação.
+- [Procedimentos: ativar a notificação por e-mail](how-to-enable-email-notification.md) – A notificação por e-mail permite que um proprietário de conteúdo protegido seja notificado quando esse conteúdo for acedido.
+- [Procedimentos: permitir que a aplicação de serviço funcione com o RMS baseado na nuvem](how-to-use-file-api-with-aadrm-cloud.md) – Este tópico descreve os passos para configurar a sua aplicação de serviço para utilizar o Azure Rights Management.
+- [Procedimentos: instalar e configurar um servidor RMS](how-to-install-and-configure-an-rms-server.md) - Este tópico inclui os passos para ligação a um Servidor RMS ou ao Azure RMS para fins de testar da sua aplicação com permissão para direitos.
+- [Procedimentos: definir o modo de segurança da API](setting-the-api-security-mode-api-mode.md) – Pode escolher em que modo de segurança a sua aplicação de API de Ficheiros é executada utilizando a função [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
+- [Procedimentos: trabalhar com definições de encriptação](working-with-encryption.md) – Este tópico descreve os nossos pacotes de encriptação e mostra alguns fragmentos de código para utilização.
+- [Tipos de aplicação](application-types.md) – Este tópico inclui os tipos de aplicações que pode escolher para criar com capacidade para direitos.
+- [Configuração da API de ficheiros](file-api-configuration.md) – O comportamento da API de ficheiros pode ser configurado através de definições no registo.
+- [Formatos de ficheiro suportados](supported-file-formats.md) – A API de Ficheiros suporta formatos nativos e Pfile
+- [Plataformas suportadas](supported-platforms.md) - Este tópico identifica as plataformas de cliente e de servidor suportadas pelo SDK RMS 2.1.
+- [Compreender restrições de utilização](understanding-usage-restrictions.md) – Todas as aplicações com suporte RMS têm de impor restrições de utilização.
+- [Referência de restrição da utilização](usage-restriction-reference.md) - As restrições de utilização são definidas pelas constantes listadas neste tópico.
 
  
 ## Tópicos relacionados ##
-* [Visão geral](ad-rms-overview.md)
+* [Descrição Geral](ad-rms-overview.md)
  
 
  

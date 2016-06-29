@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implantar e usar o Azure Rights Management | Azure RMS
+title: Implementação e utilização do Azure Rights Management | Azure RMS
 description:
 keywords:
 author: msmbaldwin
@@ -25,7 +25,7 @@ ms.reviewer: mbaldwin
 
 ---
 
-# Implantar e usar o Azure Rights Management
+# Implementação e utilização do Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 

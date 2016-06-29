@@ -26,25 +26,25 @@ ms.suite: ems
 ---
 
 
-# Azure Rights Management - também conhecido como...
+# Azure Rights Management – também conhecido como...
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 
-O Azure Rights Management também é conhecido como *Azure Rights Management Service*, mas por ser executado como um serviço no Azure, o "serviço" normalmente é omitido do seu nome. É a versão de nuvem do *Active Directory Rights Management Services* (AD RMS) que foi inicialmente lançado como *Windows Rights Management Services* (Windows RMS).
+O Azure Rights Management também é conhecido como *Serviço Azure Rights Management*, mas uma vez que é executado como um serviço no Azure, o “serviço” é frequentemente omitido do nome. É a versão de nuvem dos *Serviços de Gestão de Direitos do Active Directory* (AD RMS), inicialmente lançada como *Windows Rights Management Services* (Windows RMS).
 
-Como RMS é uma abreviação conhecida devido a seus predecessores, o Azure Rights Management é muitas vezes abreviado como ***Azure RMS***.
+Uma vez que RMS é uma abreviatura conhecida dos seus antecessores, o Azure Rights Management é frequentemente abreviado para ***Azure RMS***.
 
-O Azure Rights Management foi originalmente nomeado *Microsoft Azure Active Directory Rights Management* (muitas vezes abreviado como Microsoft Azure AD Rights Management), depois como Microsoft Azure Rights Management e, finalmente, como Azure Rights Management.
+O Azure Rights Management foi originalmente denominado *Windows Azure Active Directory Rights Management* (frequentemente abreviado para Windows Azure AD Rights Management), posteriormente, Windows Azure Rights Management e agora, finalmente, Azure Rights Management.
 
-Você também poderá ver referências a *Information Rights Management*, muitas vezes abreviado como *IRM*. Isso é a implementação do Office do Rights Management que é compatível com o Azure RMS e o AD RMS.  Quando o Azure RMS foi lançado, ele só podia ser usado somente com o Office 365 — por exemplo, com uma assinatura do Office 365 E3. Agora, o Azure RMS foi estendido a outras assinaturas, como o Enterprise Mobility Suite (EMS), e o suporte agora inclui o Office 2016, Office 2013, Office 2010, versões locais do SharePoint e do Exchange e o Azure RMS pode proteger qualquer tipo de arquivo. Para obter mais informações, consulte [Como os aplicativos dão suporte ao Azure Rights Management](applications-support.md).
+Também é possível que veja referências a *Gestão de Direitos de Informação*, abreviado frequentemente para *IRM*. Esta é a implementação do Office de Gestão de Direitos, que pode suportar o Azure RMS e o AD RMS.  Quando o Azure RMS foi lançado pela primeira vez, apenas podia ser utilizado com o Office 365 — por exemplo, com uma subscrição do Office 365 E3. Atualmente, o Azure RMS foi alargado a outras subscrições, como o Enterprise Mobility Suite (EMS), e o suporte passou a incluir o Office 2016, o Office 2013, o Office 2010, as versões no local do SharePoint e do Exchange, sendo que o Azure RMS pode proteger qualquer tipo de ficheiro. Para mais informações, consulte [Como é que as aplicações suportam o Azure Rights Management](applications-support.md).
 
-Você também poderá ver referências ocasionais ao *Microsoft Rights Management*ou ao *Microsoft Rights Management Services*, que é um termo coletivo que pode incluir o Azure RMS e o AD RMS.  O "*NOVO Microsoft RMS*" era um rótulo popular por vezes usado quando o Azure Rights Management foi oficialmente lançado, para enfatizar a nova facilidade de implantação em comparação aos seus predecessores locais.
+Também poderá ver referências ocasionais a *Microsoft Rights Management* ou a *Serviços Microsoft Rights Management*, que é um termo coletivo que pode incluir o Azure RMS e o AD RMS.  O “*NOVO Microsoft RMS*” foi uma denominação popular utilizada alguma vezes quando o Azure Rights Management foi oficialmente lançado, para realçar a nova facilidade de implementação em comparação com os antecessores no local.
 
 > [!TIP]
-> Você encontrará esses termos (e mais) na [Terminologia do Azure Rights Management](../get-started/terminology.md).
+> Encontrará estes termos (e mais) em [Terminologia do Azure Rights Management](../get-started/terminology.md).
 
-Como uma solução de proteção de informações corporativas, o Microsoft Rights Management Services não fornece soluções de gerenciamento de direitos digitais (DRM) que normalmente protegem contra distribuição ilegal do software digital. 
+Sendo uma solução de proteção de informações de empresa, os serviços Microsoft Rights Management não fornecem soluções de gestão de direitos digitais (DRM) que, normalmente, protegem contra a distribuição ilegal de software digital. 
 
 
 

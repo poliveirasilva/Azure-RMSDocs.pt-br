@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como usar o rastreamento de documentos | Azure RMS
-description: O recurso de rastreamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
+title: Como utilizar o controlo de documentos | Azure RMS
+description: A funcionalidade de controlo de documentos requer alguns conhecimentos simples sobre a gestão dos metadados associados e o registo do serviço.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,41 +24,41 @@ ms.suite: ems
 
 ---
 
-# Como: usar o rastreamento de documentos
+# Como: utilizar o controlo de documentos
 
-O uso do recurso de rastreamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
+A utilização da funcionalidade de controlo de documentos requer alguns conhecimentos simples sobre a gestão dos metadados associados e o registo do serviço.
 
-## Gerenciamento de metadados de rastreamento de documentos
+## Gerir metadados de controlo de documentos
 
-Cada um dos sistemas operacionais com suporte para rastreamento de documentos tem implementações semelhantes. Isso inclui um conjunto de propriedades que representam os metadados, um novo parâmetro adicionado para os métodos de criação de política de usuário e um método para registrar a política para que ela seja rastreada com o serviço de rastreamento de documentos.
+Todos os sistemas operativos que suportam o controlo de documentos têm implementações semelhantes. Estes incluem um conjunto de propriedades que representam os metadados, um novo parâmetro adicionado aos métodos de criação de políticas de utilizador e um método para registar a política a controlar com o serviço de controlo de documentos.
 
-Operacionalmente, somente as propriedades **nome do conteúdo** e o **tipo de notificação** são necessárias para o rastreamento de documentos.
+Operacionalmente, apenas as propriedades **nome do conteúdo** e **tipo de notificação** são necessárias para o controlo de documentos.
 
-A sequência de etapas que você usará para configurar o rastreamento de documentos para uma determinada parte do conteúdo é:
+A sequência de passos que irá utilizar para configurar o controlo de documentos para um determinado conteúdo é a seguinte:
 
--   Criar um objeto de **metadados de licença**.
+-   Crie um objeto **metadados de licença**.
 
     Consulte [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) ou [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) para obter mais informações.
 
--   Defina o **nome do conteúdo** e o **tipo de notificação**. Essas são as únicas propriedades necessárias.
+-   Defina o **nome do conteúdo** e o **tipo de notificação**. Estas são as únicas propriedades necessárias.
 
-    Para obter mais informações, consulte os métodos de acesso de propriedade para a classe de metadados de licença adequada de plataforma, [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) ou [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
+    Para obter mais informações, consulte os métodos de acesso às propriedades da classe de metadados de licença adequada da plataforma, seja [**LicenseMetadata**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) ou [**MSLicenseMetadata**](/rights-management/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
 
--   Por tipo de política; modelo ou ad-hoc:
+-   Por tipo de política, modelo ou ad hoc:
 
-    -   Para o rastreamento de documentos com base em um modelo, crie um objeto de **política de usuário** passando os metadados de licença como um parâmetro.
+    -   Para o controlo de documentos com base em modelos, crie um objeto **política de utilizador** passando os metadados de licença como um parâmetro.
 
         Para obter mais informações, consulte [**UserPolicy.create**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) e [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc).
 
-    -   Para o rastreamento de documentos com base em ad-hoc, defina a propriedade **metadados de licença** do objeto **descritor de política**.
+    -   Para o controlo de documentos com base em ad hoc, defina a propriedade **metadados de licença** no objeto **descritor de política**.
 
         Para obter mais informações, consulte [**PolicyDescriptor.getLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) e [**MSPolicyDescriptor.licenseMetadata**](/rights-management/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
 
-    **Observação**: o objeto de metadados de licença pode ser acessado diretamente somente durante o processo de configuração de rastreamento de documentos da política de usuário específica. Depois de criar o objeto de política de usuário, os metadados de licença associados não estão acessíveis, ou seja, alterar os valores de metadados de licença não tem nenhum efeito.
+    **Nota** O objeto de metadados de licença só é acessível diretamente durante o processo de configuração do controlo de documentos da política de utilizador especificada. Quando o objeto de política de utilizador tiver sido criado, os metadados de licença associados não estão acessíveis, ou seja, alterar os valores dos metadados de licença não tem qualquer efeito.
 
      
 
--   Chame o método de registro de plataforma para o rastreamento de documentos.
+-   Chame o método de registo de plataforma para o controlo de documentos.
 
     Consulte [**MSUserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) ou [**UserPolicy.registerForDocTracking**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc).
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Operações para sua chave de locatário do Azure Rights Management | Azure RMS
+title: Operações para a sua chave de inquilino do Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,29 +25,29 @@ ms.suite: ems
 
 ---
 
-# Operações para sua chave de locatário do Azure Rights Management
+# Operações para a sua chave de inquilino do Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Dependendo da topologia da sua chave de locatário (gerenciada pela Microsoft ou gerenciada pelo cliente), você tem diferentes níveis de controle e responsabilidade para sua chave de locatário do Microsoft Azure Rights Management (Azure RMS) após ser implantado.
+Dependendo da topologia da chave de inquilino (gerida pela Microsoft ou pelo cliente), tem diferentes níveis de controlo e responsabilidade para a chave de inquilino do Microsoft Azure Rights Management (Azure RMS) após estar implementada.
 
-Quando você gerencia sua própria chave de locatário, esta é geralmente chamada de trazer sua própria chave (BYOK). Para obter mais informações sobre esse cenário e de como escolher entre as duas topologias de chave de locatário, consulte [Planejando e implementando sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+Quando gere a sua própria chave de inquilino, isto é frequentemente referido como BYOK (traga a sua própria chave). Para obter mais informações sobre este cenário e como escolher entre as duas topologias de chave de inquilino, consulte [Planear e implementar a chave de inquilino do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
-A tabela a seguir identifica as operações que você pode realizar, dependendo da topologia escolhida para sua chave de locatário do Azure RMS.
+A tabela seguinte identifica as operações que pode fazer, consoante a topologia que escolheu para a chave de inquilino do Azure RMS.
 
-|Operação do ciclo de vida|Gerenciada pela Microsoft (padrão)|Gerenciada pelo cliente (BYOK)|
+|Operação de ciclo de vida|Gerida pela Microsoft (predefinição)|Gerida pelo cliente (BYOK)|
 |-----------------------|-------------------------------|---------------------------|
-|Revogue sua chave de locatário|Não (automático)|Não (automático)|
-|Crie novamente sua chave de locatário|Sim|Sim|
-|Faça backup e recupere sua chave de locatário|Não|Sim|
-|Exportar sua chave de locatário|Sim|Não|
+|Revogar a chave de inquilino|Não (automático)|Não (automático)|
+|Efetuar o rechaveamento da chave de inquilino|Sim|Sim|
+|Efetuar cópia de segurança e recuperar a chave de inquilino|Não|Sim|
+|Exportar a chave de inquilino|Sim|Não|
 |Responder a uma violação|Sim|Sim|
 
-Depois de ter identificado a topologia que você implementou, use uma das seções a seguir para obter mais informações sobre estas operações para sua chave de locatário do Azure RMS:
+Após ter identificado a topologia que implementou, selecione uma das seguintes opções para obter mais informações sobre estas operações para a sua chave de inquilino do Azure RMS:
 
 
-- [Chave de locatário gerenciada pela Microsoft](operations-microsoft-managed-tenant-key.md)
-- [Chave de locatário gerenciada pelo cliente](operations-customer-managed-tenant-key.md)
+- [Chave de inquilino gerida pela Microsoft](operations-microsoft-managed-tenant-key.md)
+- [Chave de inquilino gerida pelo cliente](operations-customer-managed-tenant-key.md)
 
 
 

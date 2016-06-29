@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Exemplos de código do iOS/OS X | Azure RMS
-description: Este tópico apresentará elementos de código importantes para a versão iOS/OS X do RMS SDK.
+title: Exemplos de código de iOS/OS X | Azure RMS
+description: Este tópico apresenta-lhe elementos de código importantes para a versão iOS/OS X do SDK RMS.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,25 +24,25 @@ ms.suite: ems
 
 ---
 
-# Exemplos de código do iOS/OS X
+# Exemplos de código de iOS/OS X
 
-Este tópico apresentará elementos de código importantes para a versão iOS/OS X do RMS SDK.
+Este tópico apresenta-lhe elementos de código importantes para a versão iOS/OS X do SDK RMS.
 
-**Observação**: no código de exemplo e nas descrições que o seguem, usamos o termo MSIPC (Proteção e Controle de Informações da Microsoft) para fazer referência ao processo do cliente.
+**Nota** No código de exemplo e nas descrições que se seguem, utilizamos o termo MSIPC (Microsoft Information Protection and Control) para referenciar o processo de cliente.
 
  
 
-##Usando o Microsoft Rights Management SDK 4.2 - cenários principais
+##Utilizar o SDK Microsoft Rights Management 4.2 – cenários principais
 
 
-A seguir estão exemplos de código **Objective C** de um aplicativo de exemplo maior que representa os cenários de desenvolvimento importantes para a sua orientação para esse SDK. Eles demonstram: uso do formato de Arquivo Protegido da Microsoft conhecido como arquivo protegido, uso de formatos de arquivo protegido personalizado e uso de controles de interface do usuário personalizados.
+Seguem-se exemplos de código do **Objetivo C** de uma aplicação de exemplo maior que representam cenários de desenvolvimento importantes para se orientar neste SDK. Estes demonstram a utilização do formato de Ficheiro Protegido da Microsoft referido como ficheiro protegido, a utilização de formatos de ficheiros protegidos personalizados e a utilização de controlos de IU personalizados.
 
-###Cenário: consumir um arquivo protegido do RMS
+###Cenário: consumir um ficheiro de RMS protegido
 
 
-- **Etapa 1**: criar um objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)
+- **Passo 1**: criar um objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)
 
- **Descrição**: instanciar um objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) por meio do seu método de criação, que implementa a autenticação de serviço usando [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) para obter um token passando uma instância do **MSAuthenticationCallback**, como o parâmetro *authenticationCallback*, para a API MSIPC. Consulte a chamada para [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) na seção de código de exemplo a seguir.
+ **Descrição**: instanciar um objeto [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) através do respetivo método de criação que implementa o serviço de autenticação utilizando o [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) para obter um token ao transferir uma instância de **MSAuthenticationCallback**, como o parâmetro *authenticationCallback*, para a API de MSIPC. Consulte a chamada para [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) na secção de código de exemplo seguinte.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -58,9 +58,9 @@ A seguir estão exemplos de código **Objective C** de um aplicativo de exemplo 
             }];
         }
 
-- **Etapa 2**: Configurar a autenticação usando a ADAL (Active Directory Authentication Library).
+- **Passo 2**: configurar a autenticação com a Active Directory Authentication Library (ADAL).
 
-  **Descrição**: nessa etapa, você verá a ADAL usada para implementar uma [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) com os parâmetros de autenticação de exemplo. Para obter mais informações sobre como usar a ADAL, consulte a ADAL (Azure AD Authentication Library).
+  **Descrição**: neste passo, verá a ADAL utilizada para implementar um [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) com parâmetros de autenticação de exemplo. Para obter mais informações sobre a utilização da ADAL, consulte a Azure AD Authentication Library (ADAL).
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -99,7 +99,7 @@ A seguir estão exemplos de código **Objective C** de um aplicativo de exemplo 
                           }];
        }
 
--   **Etapa 3**: verifique se o direito Editar existe para este usuário com esse conteúdo por meio do método [**accessCheck**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) de [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
+-   **Passo 3**: verificar se o Direito de edição existe para o utilizador com este conteúdo através do método [**accessCheck**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) de um objeto [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -113,11 +113,11 @@ A seguir estão exemplos de código **Objective C** de um aplicativo de exemplo 
             }
         }
 
-### Cenário: criar um novo arquivo protegido usando um modelo
+### Cenário: criar um novo ficheiro protegido através de um modelo
 
-Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc), selecionando o primeiro para criar uma política e, em seguida, criando e gravando o novo arquivo protegido.
+Este cenário começa com a obtenção de uma lista de modelos, [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc), ao selecionar o primeiro para criar uma política e, em seguida, ao criar e escrever no novo ficheiro protegido.
 
--   **Step 1**: obter uma lista de modelos
+-   **Passo 1**: obter lista de modelos
 
         + (void)templateListUsageWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -129,7 +129,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
                                    }];
         }
 
--   **Etapa 2**: criar uma [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) usando o primeiro modelo na lista.
+-   **Passo 2**: criar um [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) utilizando o primeiro modelo na lista.
 
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -144,7 +144,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             }];
         }
 
--   **Etapa 3**: criar um [**MSMutableProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc) e gravar o conteúdo nele.
+-   **Passo 3**: criar um [**MSMutableProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc) e escrever o conteúdo no mesmo.
 
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
         {
@@ -158,10 +158,10 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             }];
         }
 
-### Cenário: abrir um arquivo protegido personalizado
+### Cenário: abrir um ficheiro protegido personalizado
 
 
--   **Etapa 1**: criar uma [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) usando uma *serializedContentPolicy*.
+-   **Passo 1**: criar um [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)a partir de um *serializedContentPolicy*.
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -189,7 +189,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             }];
          }
 
--   **Etapa 2**: criar um [**MSCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc) usando o [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) da **Etapa 1** e lê-lo.
+-   **Passo 2**: criar um [**MSCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc) utilizando o [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) do **Passo 1** e ler a partir do mesmo.
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -216,12 +216,12 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             }];
          }
 
-### Cenário: criar um arquivo protegido personalizado usando uma política personalizada (ad-hoc)
+### Cenário: criar um ficheiro protegido personalizado utilizando uma política personalizada (ad hoc)
 
 
--   **Etapa 1**: com um endereço de email fornecido pelo usuário, crie um descritor de política.
+-   **Passo 1**: com um endereço de e-mail fornecido pelo utilizador, crie um descritor de política.
 
-    **Descrição**: na prática, os objetos a seguir seriam criados usando entradas do usuário na interface do dispositivo; [**MSUserRights**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) e [**MSPolicyDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
+    **Descrição**: na prática, seria possível criar os seguintes objetos utilizando entradas do utilizador a partir da interface do dispositivo; [**MSUserRights**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) e [**MSPolicyDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
 
         + (void)policyDescriptor
         {
@@ -232,7 +232,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **Etapa 2**: criar uma [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) personalizada do descritor de política, *selectedDescriptor*.
+-   **Passo 2**: crie um [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) personalizado do descritor de política *selectedDescriptor*.
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -246,7 +246,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
             }];
         }
 
--   **Etapa 3**: criar e gravar o conteúdo em [**MSMutableCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc) e então fechar.
+-   **Passo 3**: crie e escreva conteúdo para o [**MSMutableCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc) e, em seguida, feche.
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Termos | Azure RMS
-description: Uma coleção de definições de terminologia específicas do Rights Management Services.
+description: Uma coleção de definições terminológicas específicas dos Serviços de Gestão de Direitos.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,20 +26,20 @@ ms.suite: ems
 
 # Termos
 
-Uma coleção de definições de terminologia específicas do Rights Management Services.
+Uma coleção de definições terminológicas específicas dos Serviços de Gestão de Direitos.
 
-**Algoritmo preterido**  
-Uma configuração modal que implementa um esquema de proteção de conteúdo mais antigo, referindo-se especificamente ao modo de criptografia ECB (guia eletrônico). Nesse SDK, a configuração permite que você gere licenças compatíveis com a biblioteca MSDRM usada pelo [AD Rights Management Services SDK](https://msdn.microsoft.com/en-us/library/windows/desktop/cc530379.aspx).
+**Algoritmo Preterido**  
+Uma definição modal que implementa um esquema de proteção de conteúdo mais antigo, referenciando especificamente o modo de cifra do manual eletrónico (ECB). Neste SDK, a definição permite-lhe gerar licenças compatíveis com a biblioteca MSDRM utilizada pelo [SDK dos Serviços de Gestão de Direitos do AD](https://msdn.microsoft.com/en-us/library/windows/desktop/cc530379.aspx).
 
-Essa configuração pode fazer seu aplicativo proteger o conteúdo de uma maneira que não esteja em conformidade com os padrões de seus clientes para proteção de conteúdo.
+Esta definição pode fazer com que a sua aplicação proteja conteúdo de uma forma que não esteja em conformidade com as normas dos seus clientes para proteção de conteúdo.
 
-Essa configuração impedirá que seu aplicativo se beneficie de quaisquer aperfeiçoamentos de criptografia adicionados ao Microsoft Rights Management SDK 3.0 ou posterior.
+Esta definição irá impedir que a sua aplicação tire partido de quaisquer melhorias criptográficas adicionadas ao SDK Microsoft Rights Management 3.0 ou posterior.
 
-**Formato de arquivo protegido da Microsoft**
+**Formato de ficheiro protegido da Microsoft**
 
-Também conhecido como formato PFile, é o formato de arquivo padrão para o AD RMS e funções como um padrão em todos os aplicativos habilitados para RMS.
+Também conhecido como formato PFile, é o formato de ficheiro predefinido do AD RMS e funciona como um padrão em aplicações preparadas para RMS.
 
-O formato de arquivo PFile é transparente para o desenvolvedor do aplicativo conforme ele é incorporado na maneira como o Microsoft Rights Management SDK 4.2 é projetado.
+O formato PFile é transparente para o programador de aplicações, já que está incorporado na forma como o SDK Microsoft Rights Management 4.2 é concebido.
 
  
 

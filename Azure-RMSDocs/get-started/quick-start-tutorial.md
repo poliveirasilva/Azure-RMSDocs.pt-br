@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tutorial de início rápido para o Azure Rights Management | Azure RMS
-description: Um tutorial de introdução para testar rapidamente o Microsoft Azure Rights Management para sua organização em apenas 5 etapas que devem levar menos de 15 minutos.
+title: Tutorial de início rápido do Azure Rights Management | Azure RMS
+description: Um tutorial de apresentação para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos.
 keywords:
 author: cabailey
 manager: mbaldwin
@@ -25,37 +25,37 @@ ms.suite: ems
 
 ---
 
-# Tutorial de início rápido para o Azure Rights Management
+# Tutorial de início rápido do Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Ir para: 
+Passar para: 
 > [!div class="op_single_selector"]
-- [Etapa 1: Ativar o Azure RMS](tutorial-step1.md)
-- [Etapa 2: Instalar o aplicativo RMS sharing](tutorial-step2.md)
-- [Etapa 3: Enviar o documento confidencial por email](tutorial-step3.md)
-- [Etapa 4: O destinatário lê o documento](tutorial-step4.md)
-- [Etapa 5: Rastrear o seu documento](tutorial-step5.md)
+- [Passo 1: ativar o Azure RMS](tutorial-step1.md)
+- [Passo 2: instalar aplicação de partilha RMS](tutorial-step2.md)
+- [Passo 3: enviar e-mail do documento confidencial](tutorial-step3.md)
+- [Passo 4: o destinatário lê o documento](tutorial-step4.md)
+- [Passo 5: controlar o documento](tutorial-step5.md)
 
-Use este tutorial para testar rapidamente o Microsoft Azure Rights Management (também conhecido como Azure RMS) para sua organização em apenas 5 etapas que devem levar menos de 15 minutos. Você ativará o serviço, enviará um documento confidencial por email para alguém em outra organização com segurança e será capaz de controlar quando o documento for aberto. Quando o documento confidencial for enviado por email, será criptografado em trânsito e apenas poderá ser lido pela pessoa para a qual for enviado, usando as permissões definidas pelo remetente.
+Utilize este tutorial para experimentar rapidamente o Microsoft Azure Rights Management (também conhecido como Azure RMS) na sua organização com apenas 5 passos que devem demorar menos de 15 minutos. Terá de ativar o serviço, enviar em segurança um documento confidencial por e-mail para alguém noutra organização e, em seguida, poderá controlar quando esse documento é aberto. Quando o documento confidencial é enviado por e-mail, é encriptado enquanto se encontra em trânsito e pode ser lido apenas pela pessoa para quem é enviado, utilizando as permissões que são definidas pelo remetente.
 
-![Todas as etapas do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartStepsAll.PNG)
+![Todos os passos do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartStepsAll.PNG)
 
-Este tutorial é destinado a administradores de TI e consultores, para ajudar a avaliar o Azure Rights Management como uma solução de proteção de informações para uma organização. Em um ambiente de produção as instruções para ativar o serviço devem ser realizadas por um administrador, e as instruções para enviar um documento, por usuários finais. Ambos os conjuntos de instruções estão incluídos neste tutorial, para demonstrar o cenário de envio de um documento confidencial para alguém em outra organização com segurança de ponta a ponta. Se você encontrar problemas para concluir este tutorial, envie um email para [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) e iremos ajudá-lo.
+Este tutorial destina-se aos administradores de TI e aos consultores, para os ajudar a avaliar o Azure Rights Management como uma solução de proteção de informações para uma organização. Num ambiente de produção, as instruções para ativar o serviço seriam efetuadas por um administrador e as instruções para enviar o documento seriam ser efetuadas pelos utilizadores finais. Ambos os conjuntos de instruções estão incluídos neste tutorial para demonstrar o cenário de ponto a ponto de forma segura de envio de um documento confidencial para alguém noutra organização. Se tiver dificuldades ao seguir este tutorial, envie uma mensagem de e-mail para [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) para o ajudarmos.
 
-Para concluir este tutorial, você precisará do seguinte:
+Para concluir este tutorial, terá de ter o seguinte:
 
--   Uma assinatura que ofereça suporte ao Azure Rights Management. Ela pode ser uma assinatura paga ou uma assinatura de avaliação. Se você quiser usar o controle de documentos, que é necessário para a etapa 5 deste tutorial, sua assinatura deve oferecer suporte para o controle de documentos. Para obter mais informações sobre as opções de assinatura e links para avaliações gratuitas, consulte [Requisitos do Azure RMS: assinaturas da nuvem que dão suporte ao Azure RMS](requirements-subscriptions.md).
+-   Uma subscrição que suporte o Azure Rights Management. Pode ser uma subscrição paga ou uma subscrição de avaliação. Se pretender utilizar o controlo de documentos, que é necessário para o passo 5 neste tutorial, a subscrição tem de suportar o controlo de documentos. Para mais informações sobre as opções de subscrição e ligações para as versões de avaliação gratuitas, consulte [Requisitos do Azure RMS: subscrições na nuvem que suportam o Azure RMS](requirements-subscriptions.md).
 
-    Dica: Se precisar obter uma assinatura você deve fazer isso com antecedência, porque esse processo pode levar um tempo para ser concluído.
+    Sugestão: se precisar de obter uma subscrição, faça o seguinte com antecedência porque este processo, por vezes, pode demorar algum tempo a concluir.
 
--   Uma conta de administrador para entrar no centro de administração do Office 365 ou no portal clássico do Azure, para que você possa ativar o serviço Rights Management. Essa conta também deve ter um endereço de email e um serviço de email em atividade (por exemplo, Exchange Online ou Exchange Server).
+-   Uma conta de administrador para iniciar sessão no centro de administração do Office 365 ou no portal clássico do Azure para que possa ativar o serviço Rights Management. Esta conta também tem de ter um endereço de e-mail e um serviço de e-mail a funcionar (por exemplo, Exchange Online ou Exchange Server).
 
--   Um computador executando o Windows (no mínimo, Windows 7 SP1) e que tenha instalado tanto o Office 2016, quanto o Office 2013 ou o Office 2010.
+-   Um computador a executar o Windows (no mínimo, o Windows 7 SP1) e no qual se encontre instalado o Office 2016, Office 2013 ou Office 2010.
 
 Vamos começar.
 
->[!div class="step-by-step"] [Etapa 1 »](tutorial-step1.md)
+>[!div class="passo a passo"] [Passo 1 »](tutorial-step1.md)
 
 
 

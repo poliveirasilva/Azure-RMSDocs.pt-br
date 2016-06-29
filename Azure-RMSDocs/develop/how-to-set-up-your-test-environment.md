@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Testando seu aplicativo | Azure RMS
-description: Instruções sobre como configurar seu aplicativo para testes.
+title: Testar a sua aplicação | Azure RMS
+description: Instruções sobre como configurar a sua aplicação para fins de teste.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,36 +24,36 @@ ms.suite: ems
 
 ---
 
-# Testando seu aplicativo
+# Testar a sua aplicação
 
-Este tópico contém instruções sobre a configuração dos testes para seu aplicativo.
+Este tópico contém instruções sobre como configurar o teste de aplicações.
 
 ## Instruções
 
-### Etapa 1: Configurar para os testes
+### Passo 1: Configuração para teste
 
-Você pode testar com o Azure RMS ou um Servidor RMS em execução no Windows Server e sugerimos que você inicie os testes no Azure RMS e, se for necessário para sua implantação, teste com o Servidor RMS.
+Pode testar com o Azure RMS ou um servidor RMS em execução no Windows Server. Sugerimos que inicie os testes no Azure RMS e, em seguida, se for necessário para a implementação, efetue o teste com o RMS Server.
 
-1. Para testar com o Azure RMS, consulte [How-to: use ADAL authentication](how-to-use-adal-authentication.md) (Como usar a autenticação de ADAL).
-2. Para testar com o servidor RMS, consulte [Como instalar e configurar um servidor RMS](how-to-install-and-configure-an-rms-server.md).
-3. O exemplo a seguir descreve como instalar o tempo de execução do desenvolvedor.
+1. Para fins de teste com o Azure RMS, consulte o artigo [Procedimentos: utilizar a autenticação ADAL](how-to-use-adal-authentication.md).
+2. Para fins de teste com o RMS Server, consulte o artigo [Procedimentos: instalar e configurar um servidor RMS](how-to-install-and-configure-an-rms-server.md).
+3. O seguinte procedimento descreve como instalar o runtime de programador.
 
-   Você deve ter o Rights Management Service Client 2.1 instalado no computador no qual testará seu aplicativo.
-   - Se você for testar seu aplicativo em um computador diferente do computador de desenvolvimento, instale o RMS Client 2.1 no computador na [página de download do AD RMS Client 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38396).
-   - Se você for testar seu aplicativo no computador de desenvolvimento, você já deve ter instalado o Rights Management Services SDK 2.1. O RMS Client 2.1 já terá sido instalado silenciosamente.
+   Tem de ter o Rights Management Service Client 2.1 instalado no computador no qual irá testar a aplicação.
+   - Se testar a aplicação num computador diferente do seu computador de desenvolvimento, pode instalar o RMS Client 2.1 nesse computador a partir da [página de transferência do AD RMS Client](http://www.microsoft.com/en-us/download/details.aspx?id=38396).
+   - Se testar a aplicação no seu computador de desenvolvimento, deve ter previamente instalado o SDK Rights Management Services 2.1. O RMS Client 2.1 terá já sido instalado silenciosamente.
 
-    Para saber mais sobre como instalar o SDK 2.1 do RMS, confira [Instalação do SDK](create-your-first-rights-aware-application.md).
+    Para obter informações sobre como instalar o SDK RMS 2.1, consulte [Instalar o SDK](create-your-first-rights-aware-application.md).
 
-## Comentários
+## Observações
 
-As diretrizes neste tópico não são abrangentes. Para saber mais sobre como configurar o RMS Client 2.1, confira [RMS Client 2.1 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (Notas de implantação do RMS Client 2.1).
+As orientações neste tópico não são abrangentes. Para obter informações detalhadas sobre como configurar o RMS Client 2.1, consulte as [Notas de Implementação do RMS Client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
 
 ### Tópicos relacionados
 
-* [Como instalar e configurar um servidor RMS](how-to-install-and-configure-an-rms-server.md)
-* [Como usar a autenticação de ADAL](how-to-use-adal-authentication,md)
+* [Procedimentos: instalar e configurar um servidor RMS](how-to-install-and-configure-an-rms-server.md)
+* [Procedimentos: utilizar a autenticação ADAL](how-to-use-adal-authentication,md)
 * [Instalar o SDK](create-your-first-rights-aware-application.md)
-* [Notas de Implantação do RMS Client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
+* [Notas de Implementação do RMS Client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gerenciado pelo cliente - operações de ciclo de vida da chave de locatário | Azure RMS
+title: Operações de ciclo de vida das chaves de inquilino – geridas pelo cliente | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,47 +26,47 @@ ms.suite: ems
 ---
 
 
-# Gerenciado pelo cliente: operações de ciclo de vida da chave de locatário
+# Operações de ciclo de vida das chaves de inquilino: geridas pelo cliente
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Se você gerencia sua chave de locatário para o Azure Rights Management (traga sua própria chave, ou BYOK), use as seções a seguir para obter mais informações sobre as operações do ciclo de vida que são relevantes para esta topologia.
+Se gerir a sua chave de inquilino para o Azure Rights Management (o cenário traga a sua própria chave ou BYOK), utilize as secções seguintes para obter mais informações sobre as operações de ciclo de vida que são relevantes para esta topologia.
 
-## Revogue sua chave de locatário
-Ao cancelar a assinatura do Azure RMS, o Azure RMS para de usar sua chave de locatário e não precisa realizar nenhuma ação.
+## Revogar a chave de inquilino
+Quando anular a subscrição do Azure RMS, o Azure RMS deixa de utilizar a chave de inquilino e não é necessária qualquer ação por parte do utilizador.
 
-## Crie novamente sua chave de locatário
-A Criação repetida de chaves também é conhecida como geração repetida de sua chave. Não crie novamente sua chave de locatário a menos que seja realmente necessário. Clientes antigos, tais como Office 2010, não foram projetados para manipular normalmente as alterações de chave. Neste cenário, você deve limpar o estado do RMS nos computadores usando uma Política de grupo ou um mecanismo equivalente. Entretanto, há alguns eventos legítimos que podem lhe forçar a criar novamente sua chave de locatário. Por exemplo:
+## Efetuar o rechaveamento da chave de inquilino
+O rechaveamento também é conhecido como implementar a chave. Não efetue o rechaveamento da chave de inquilino, a menos que seja realmente necessário. Os clientes antigos, tal como o Office 2010, não foram concebidos para processar alterações de chave corretamente. Neste cenário, tem de limpar o estado do RMS nos computadores utilizando a Política de Grupo ou um mecanismo equivalente. No entanto, existem alguns eventos legítimos que poderão forçá-lo a efetuar o rechaveamento da chave de inquilino. Por exemplo:
 
--   Sua empresa se dividiu em duas ou mais empresas. Ao criar novamente sua chave de locatário, a nova empresa não terá acesso ao novo conteúdo que seus empregados publiquem. Eles podem acessar o conteúdo antigo se tiverem uma cópia da chave de locatário antiga.
+-   A sua empresa foi dividida em duas ou mais empresas. Quando efetua o rechaveamento da chave de inquilino, a nova empresa não terá acesso ao conteúdo novo que os seus funcionários publicam. Estes podem aceder ao conteúdo antigo se tiverem uma cópia da chave de inquilino antiga.
 
--   Você acredita que a cópia mestre da sua chave de locatário (a cópia em sua posse) foi comprometida.
+-   Considera que a cópia principal da sua chave de inquilino (a cópia na sua posse) foi comprometida.
 
-Ao criar novamente sua chave de locatário, o novo conteúdo é protegido usando a nova chave de locatário. Isto acontece em uma maneira em fases, para que em um período de tempo, algum conteúdo novo continuará sendo protegido com a chave de locatário antiga. O conteúdo previamente protegido permanece protegido com sua chave de locatário antiga. Para oferecer suportes a este cenário, o Azure RMS retém sua chave de locatário antiga de modo que possa emitir licenças para conteúdo antigo.
+Quando efetua o rechaveamento da chave de inquilino, o novo conteúdo é protegido através da utilização da nova chave de inquilino. Isto acontece de forma faseada, pelo que, durante um período de tempo, algum conteúdo novo irá continuar a ser protegido com a chave de inquilino antiga. O conteúdo previamente protegido permanece protegido para a sua chave de inquilino antiga. Para suportar este cenário, o Azure RMS retém a chave de inquilino antiga para poder emitir licenças para o conteúdo antigo.
 
-Para criar novamente sua chave de locatário e criar uma nova chave na Internet ou pessoalmente, use os procedimentos na seção [Implementando sua própria chave (BYOK)](..\plan-design\plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) do tópico [Planejamento e implementação sua chave de locatário do Azure Rights Management](..\plan-design\plan-implement-tenant-key.md).
+Para efetuar o rechaveamento da chave de inquilino, gere e crie uma nova chave através da Internet ou pessoalmente, utilizando os procedimentos na secção [Implementar BYOK (traga a sua própria chave)](..\plan-design\plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) do tópico [Planear e Implementar a Chave de Inquilino do Azure Rights Management](..\plan-design\plan-implement-tenant-key.md).
 
-## Faça backup e recupere sua chave de locatário
-Você é responsável por fazer o backup da sua chave de locatário. Se você gerou sua chave de locatário em um Thales HSM, para fazer o backup da chave, simplesmente faça o backup do arquivo de Chave de token, o arquivo World e os Cartões de administrador.
+## Efetuar cópia de segurança e recuperar a chave de inquilino
+É responsável pela cópia de segurança da sua chave de inquilino. Se gerou a chave de inquilino num HSM da Thales, para efetuar a cópia de segurança da chave, basta efetuar uma cópia de segurança do Ficheiro de Chave com Token, do ficheiro de Universo e dos Cartões de Administrador.
 
-Se você transferiu sua chave seguindo os procedimentos da seção [Implementando o BYOK (traga sua própria chave)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) do artigo [Planejamento e implementação da sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md), o Azure RMS persistirá o arquivo de chave indexado para proteger contra a falha de todos os nós do Azure RMS. No entanto, não considere isto como um backup completo. Por exemplo, se você alguma vez precisar uma cópia em texto não formatado da sua chave para usar fora de um Thales HSM, o Azure RMS não será capaz de recuperá-la para você porque somente tem uma cópia não recuperável.
+Se transferiu a chave ao seguir os procedimentos na secção [Implementar BYOK (traga a sua própria chave)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) do artigo [Planear e implementar a chave de inquilino do Azure Rights Management](../plan-design/plan-implement-tenant-key.md), o Azure RMS irá manter o Ficheiro de Chave com Token, para proteção contra falhas de quaisquer nós do Azure RMS. No entanto, não considere que esta seja uma cópia de segurança completa. Por exemplo, se alguma vez precisar de uma cópia de texto simples da sua chave para utilizar fora de um HSM da Thales, o Azure RMS não conseguirá recuperá-la porque apenas tem uma cópia não recuperável.
 
-## Exportar sua chave de locatário
-Se você usa o BYOK, você não pode exportar sua chave de locatário do Azure RMS. A cópia no Azure RMS não é recuperável. Se desejar excluir essa chave para que ela não possa mais ser usada, entre em contato com o suporte de serviço de cliente da Microsoft (CSS).
+## Exportar a chave de inquilino
+Se utilizar o BYOK, não é possível exportar a chave de inquilino do Azure RMS. A cópia no Azure RMS não é recuperável. Se pretender eliminar esta chave para deixar de poder ser utilizada, contacte o Suporte ao Cliente da Microsoft (CSS).
 
 ## Responder a uma violação
-Nenhum sistema de segurança, sem importar o forte que seja, está completo sem um processo de resposta de violação. Sua chave de locatário pode estar comprometida ou roubada. Ainda quando estiver bem protegido, as vulnerabilidades podem ser encontradas na tecnologia HSM da geração atual ou em comprimentos e algoritmos da chave atual.
+Nenhum sistema de segurança, por mais forte que seja, está completo sem um processo de resposta a violações. A sua chave de inquilino pode estar comprometida ou ter sido roubada. Mesmo quando está bem protegida, podem existir vulnerabilidades na tecnologia HSM da geração atual ou nos algoritmos e comprimentos de chaves atuais.
 
-A Microsoft tem uma equipe dedicada para responder a incidentes de segurança nos seus produtos e serviços. Assim que houver um relatório confiável de um incidente, esta equipe se ocupa de investigar o escopo, a causa raiz e as atenuações. Se este incidente afeta seus ativos, então a Microsoft notificará seus administradores de locatário do Azure RMS por e-mail usando o endereço que você forneceu quando assinou.
+A Microsoft tem uma equipa dedicada para responder a incidentes de segurança nos seus produtos e serviços. Assim que existir um relatório credível de um incidente, esta equipa investiga o âmbito, a causa raiz e as resoluções. Se este incidente afetar os recursos, a Microsoft irá notificar os administradores de inquilinos do Azure RMS por e-mail utilizando o endereço que especificou aquando da subscrição.
 
-Se você tem uma violação, a melhor ação que você ou a Microsoft podem tomar depende do escopo da violação; a Microsoft trabalhará com você ao longo deste processo. A seguinte tabela mostra algumas situações típicas e a resposta provável, embora a resposta exata dependerá de todas as informações que sejam reveladas durante a investigação.
+Se ocorrer uma violação, a melhor ação que o utilizador ou a Microsoft pode efetuar depende do âmbito da violação; a Microsoft irá trabalhar consigo ao longo deste processo. A tabela seguinte mostra algumas situações típicas e a resposta provável, embora a resposta exata dependa de todas as informações que são reveladas durante a investigação.
 
 |Descrição do incidente|Resposta provável|
 |------------------------|-------------------|
-|Sua chave de locatário vazou.|Crie novamente sua chave de locatário. Consulte [Criar novamente sua chave de locatário](#re-key-your-tenant-key).|
-|Um indivíduo não autorizado ou malware obteve direitos para usar sua chave de locatário mas a chave em si não vazou.|Criar novamente sua chave de locatário não ajuda aqui e necessita um análises da causa raiz. Se um processo ou bug do software foi responsável para que o indivíduo não autorizado obtenha acesso, aquela situação deve ser resolvida.|
-|A vulnerabilidade descoberta na tecnologia HSM da geração atual.|A Microsoft deve atualizar os HSMs. Se há um motivo para acreditar que a vulnerabilidade expus as chaves, então a Microsoft instruirá a todos os clientes para renovar suas chaves de locatário.|
-|Vulnerabilidade descoberta no algoritmo RSA, ou comprimento da chave, ou ataques de força bruta se tornam possíveis em termos computacionais.|A Microsoft deve atualizar o Azure RMS para oferecer suporte de novos algoritmos e comprimentos de chave maiores que sejam resilientes, e instruir a todos os usuários a renovar suas chaves de locatário.|
+|Ocorreu uma fuga da chave de inquilino.|Efetue o rechaveamento da chave de inquilino. Consulte [Efetuar o rechaveamento da chave de inquilino](#re-key-your-tenant-key).|
+|Um indivíduo não autorizado ou um software maligno obteve direitos para utilizar a sua chave de inquilino, mas não houve uma fuga da própria chave.|Efetuar o rechaveamento da chave de inquilino não ajuda neste caso e requer a análise da causa raiz. Se um erro no processo ou software tiver sido responsável pelo acesso que o indivíduo não autorizado obteve, essa situação tem de ser resolvida.|
+|Vulnerabilidade detetada na tecnologia HSM de geração atual.|A Microsoft tem de atualizar os HSMs. Se existir razão para considerar que a vulnerabilidade expôs chaves, a Microsoft instruirá todos os clientes a renovarem as respetivas chaves de inquilino.|
+|Foi detetada uma vulnerabilidade no algoritmo RSA, ou no comprimento da chave, ou ataques de força bruta tornaram-se exequíveis a nível informático.|A Microsoft tem de atualizar o Azure RMS para suportar os novos algoritmos e maiores comprimentos de chaves para serem resilientes e instruir todos os clientes a renovarem as respetivas chaves de inquilino.|
 
 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Exemplos de código do Android | Azure RMS
-description: Este tópico apresenta elementos de código importantes para a versão Android do RMS SDK.
+description: Este tópico apresenta-lhe elementos de código importantes para a versão Android do SDK RMS.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,26 +26,26 @@ ms.suite: ems
 
 # Exemplos de código do Android
 
-Este tópico apresenta elementos de código importantes para a versão Android do RMS SDK.
+Este tópico apresenta-lhe elementos de código importantes para a versão Android do SDK RMS.
 
-**Observação**: no código de exemplo e nas descrições que o seguem, usamos o termo MSIPC (Proteção e Controle de Informações da Microsoft) para fazer referência ao processo do cliente.
-
-
-## Usando o Microsoft Rights Management SDK 4.2 - cenários principais
-
-A seguir estão exemplos de código de um aplicativo de exemplo maior que representa os cenários de desenvolvimento importantes para a sua orientação para esse SDK. Eles demonstram: uso do formato de Arquivo Protegido da Microsoft conhecido como arquivo protegido, uso de formatos de arquivo protegido personalizado e uso de controles de interface do usuário personalizados.
+**Nota** No código de exemplo e nas descrições que se seguem, utilizamos o termo MSIPC (Microsoft Information Protection and Control) para referir o processo de cliente.
 
 
+## Utilizar o SDK Microsoft Rights Management 4.2 – cenários principais
 
-O aplicativo de exemplo, *MSIPCSampleApp*, está disponível para uso com esse SDK para o sistema operacional Android. Consulte [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) no GitHub para acessar este aplicativo de exemplo.
+Seguem-se exemplos de código de uma aplicação de exemplo maior que representam cenários de desenvolvimento importantes para se orientar neste SDK. Estes demonstram a utilização do formato de Ficheiro Protegido da Microsoft referido como ficheiro protegido, a utilização de formatos de ficheiros protegidos personalizados e a utilização de controlos de IU personalizados.
 
-### Cenário: consumir um arquivo protegido do RMS
 
--   **Etapa 1**: criar um [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
+
+A aplicação de exemplo, *MSIPCSampleApp*, está disponível para utilização com este SDK para o sistema operativo Android. Consulte [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) no GitHub para ter acesso a esta aplicação de exemplo.
+
+### Cenário: consumir um ficheiro de RMS protegido
+
+-   **Passo 1**: criar um [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
 
     **Origem**: *MsipcAuthenticationCallback.java*
 
-    **Descrição**: instanciar um objeto [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) por meio do seu método de criação, que implementa a autenticação de serviço usando [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) para obter um token passando uma instância do **AuthenticationRequestCallback**, como o parâmetro *mRmsAuthCallback*, para a API MSIPC. Consulte a chamada para [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) perto do final da seção de código de exemplo a seguir.
+    **Descrição**: instanciar um objeto [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) através do respetivo método de criação que implementa o serviço de autenticação através do [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) para obter um token transferindo uma instância de **AuthenticationRequestCallback** como o parâmetro *mRmsAuthCallback* para a API de MSIPC. Consulte a chamada para [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) perto do fim da seguinte secção de código de exemplo.
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -106,11 +106,11 @@ O aplicativo de exemplo, *MSIPCSampleApp*, está disponível para uso com esse S
         }
 
 
--   **Etapa 2**: Configurar a autenticação usando a ADAL (Active Directory Authentication Library).
+-   **Passo 2**: configurar a autenticação com a Active Directory Authentication Library (ADAL).
 
     **Origem**: *MsipcAuthenticationCallback.java*.
 
-    **Descrição**: esta etapa, você verá a ADAL usada para implementar uma [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) com os parâmetros de autenticação de exemplo. Para obter mais informações sobre como usar a ADAL, consulte a [ADAL (Azure AD Authentication Library)](https://msdn.microsoft.com/en-us/library/jj573266.aspx).
+    **Descrição**: neste passo, verá a ADAL utilizada para implementar um [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) com parâmetros de autenticação de exemplo. Para obter mais informações sobre a utilização da ADAL, consulte a [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx).
 
 
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -186,7 +186,7 @@ O aplicativo de exemplo, *MSIPCSampleApp*, está disponível para uso com esse S
                       }
 
 
--   **Etapa 3**: Verifique se o direito **Editar** existe para este usuário com esse conteúdo por meio do método [**accessCheck**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) de [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
+-   **Passo 3**: verificar se o direito **Editar** existe para o utilizador com este conteúdo através do método [**accessCheck**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) de [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy).
 
     **Origem**: *TextEditorFragment.java*
 
@@ -201,13 +201,13 @@ O aplicativo de exemplo, *MSIPCSampleApp*, está disponível para uso com esse S
                 }
 
 
-### Cenário: criar um novo arquivo protegido usando um modelo
+### Cenário: criar um novo ficheiro protegido através de um modelo
 
-Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para criar uma política e, em seguida, criando e gravando o novo arquivo protegido.
+Este cenário começa com a obtenção de uma lista de modelo ao selecionar o primeiro para criar uma política e, em seguida, ao cria e escreve no novo ficheiro protegido.
 
--   **Etapa 1**: obter a lista de modelos por meio de um objeto [**TemplateDescriptor**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java).
+-   **Passo 1**: obter lista de modelos através de um objeto [**TemplateDescriptor**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java).
 
-    **Fonte**: *MsipcTaskFragment.java*
+    **Origem**: *MsipcTaskFragment.java*
 
 
 
@@ -248,7 +248,7 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
       }
 
 
--    **Etapa 2**: criar uma [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) usando o primeiro modelo na lista.
+-    **Passo 2**: criar um [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) utilizando o primeiro modelo na lista.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -293,7 +293,7 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
       }
 
 
--    **Etapa 3**: criar um [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) e gravar o conteúdo nele.
+-    **Passo 3**: criar um [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) e escrever o conteúdo no mesmo.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -357,11 +357,11 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
 
 
 
-### Cenário: abrir um arquivo protegido personalizado
+### Cenário: abrir um ficheiro protegido personalizado
 
--   **Etapa 1**: criar uma [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) usando uma *serializedContentPolicy*.
+-   **Passo 1**: criar um [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) a partir de um *serializedContentPolicy*.
 
-    **Fonte**: *MsipcTaskFragment.java*
+    **Origem**: *MsipcTaskFragment.java*
 
 
     CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
@@ -419,7 +419,7 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
 
 
 
--    **Etapa 2**: criar um [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) usando a [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) de **etapa 1**.
+-    **Passo 2**: criar um [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) utilizando o [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) do **Passo 1**.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -491,7 +491,7 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
     }
 
 
--    **Etapa 3**: ler conteúdo a [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) em *mDecryptedContent* e então fechar.
+-    **Passo 3**: ler conteúdo do [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) para *mDecryptedContent* e fechar.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -526,13 +526,13 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
     }
 
 
-### Cenário: criar um arquivo protegido personalizado usando uma política personalizada (ad-hoc)
+### Cenário: criar um ficheiro protegido personalizado utilizando uma política personalizada (ad hoc)
 
--   **Etapa 1**: com um endereço de email fornecido pelo usuário, crie um descritor de política.
+-   **Passo 1**: com um endereço de e-mail fornecido pelo utilizador, criar um descritor de política.
 
-    **Fonte**: *MsipcTaskFragment.java*
+    **Origem**: *MsipcTaskFragment.java*
 
-    **Descrição**: na prática, os objetos a seguir seriam criados usando entradas do usuário na interface do dispositivo; [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) e [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java).
+    **Descrição**: na prática, seria possível criar os seguintes objetos utilizando entradas do utilizador a partir da interface do dispositivo; [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) e [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java).
 
 
 
@@ -550,7 +550,7 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
 
 
 
--    **Etapa 2**: criar um personalizado [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) do descritor de política, *selectedDescriptor*.
+-    **Passo 2**: criar um [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) personalizado do descritor de política *selectedDescriptor*.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -562,9 +562,9 @@ Este cenário começa obtendo uma lista de modelos, selecionando o primeiro para
 
 
 
--   **Etapa 3**: criar e gravar o conteúdo para o [**CustomProtectedOutputStream**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java) e então fechar.
+-   **Passo 3**: criar e escrever conteúdo para o [**CustomProtectedOutputStream**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java) e fechar.
 
-    **Fonte**: *MsipcTaskFragment.java*
+    **Origem**: *MsipcTaskFragment.java*
 
 
     File file = new File(filePath);

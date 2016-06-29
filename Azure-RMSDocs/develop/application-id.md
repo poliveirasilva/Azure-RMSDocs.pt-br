@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Como &#58; Obter uma ID do aplicativo do Azure | Azure RMS
-description: Criar um aplicativo habilitado para RMS com o Microsoft Rights Management SDK 4.2 exige criar um contrato com a equipe do RMS.
+title: Como&#58; obter uma ID da Aplicação Azure | Azure RMS
+description: Criar uma aplicação ativada com capacidade para RMS com o SDK Microsoft Rights Management 4.2 exige que crie um contrato com a Equipa do RMS.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,28 +24,28 @@ ms.suite: ems
 
 ---
 
-# Como: obter uma ID do aplicativo do Azure
+# Como: obter uma ID da Aplicação Azure
 
-Criar um aplicativo habilitado para RMS com o Microsoft Rights Management SDK 4.2 exige criar um contrato com a equipe do RMS.
+Criar uma aplicação ativada com capacidade para RMS com o SDK Microsoft Rights Management 4.2 exige que crie um contrato com a Equipa do RMS.
 
-## Visão geral
+## Descrição Geral
 
-Criar e lançar um aplicativo habilitado para RMS com o RMS SDK MS 4.2 exige criar um contrato de uso de serviços com a equipe do RMS. Este contrato, também conhecido como um RMLA (Contrato de Licença do Rights Management), o orienta para cumprir o contrato para proteção de conteúdo que será mantido em nome do usuário e/ou do proprietário do conteúdo pelos comportamentos (aderência às regras de negócio) do seu aplicativo. Como um criador de um aplicativo habilitado para RMS, o contrato com a equipe de RMS será imposto pela existência de uma "ID do aplicativo do Azure" que representa este contrato e permite que seu aplicativo se conecte ao serviço de autenticação do Azure AD.
+Criar e lançar uma aplicação com capacidade para RMS com o SDK MS RMS 4.2 exige que crie também um contrato de utilização de serviços com a Equipa do RMS. Este contrato, também conhecido como Contrato de Licença Rights Management (RMLA), descreve como honrar o contrato em relação à proteção de conteúdo que irá preservar em nome do utilizador e/ou do proprietário do conteúdo pelos comportamentos (respeito pelas regras de negócio) da sua aplicação. Na qualidade de criador de uma aplicação com capacidade para RMS, o seu contrato com a Equipa do RMS será aplicado pela existência de uma “ID da Aplicação Azure ” que representa o presente contrato e que permite que a sua aplicação estabeleça ligação com o Serviço de Autenticação do Azure AD.
 
-## Processar
+## Processo
 
-Use as seguintes etapas para criar sua ID do aplicativo e assinar o contrato de uso com a equipe do RMS.
+Utilize os passos seguintes para criar a ID da sua aplicação e assinar o contrato de utilização com a Equipa do RMS.
 
--   Siga as diretrizes no tópico [como criar uma ID do aplicativo no Azure](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx) para criar sua ID do aplicativo.
--   Escreva para a equipe do RMS para iniciar o processo de RMLA, enviando sua "ID do aplicativo" para <askipteam@microsoft.com>.
--   Assine o RMLA e devolva-o à equipe do RMS.
--   Agora que você assinou o RMLA, deve passar a ID do aplicativo ao chamar a biblioteca de autenticação por meio do parâmetro *clientID*.
+-   Siga as orientações no tópico [Como criar uma ID da Aplicação no Azure](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx) para criar a sua ID da aplicação.
+-   Escreva à Equipa do RMS para iniciar o processo de RMLA enviando a sua “ID da Aplicação” para <askipteam@microsoft.com>.
+-   Assine o RMLA e devolva-o à Equipa do RMS.
+-   Agora que tem um RMLA assinado, deverá passar a ID da Aplicação ao chamar a biblioteca de autenticação através do parâmetro *clientID*.
 
-    Esta é a aparência da chamada de autenticação no nosso tópico de [Exemplos de código do iOS/OS X](ios-os-x-code-examples.md).
+    Este é o aspeto da chamada de autenticação no nosso tópico [Exemplos de códigos do iOS/OS X](ios-os-x-code-examples.md).
 
 
-    // Retrieve token using ADAL
-        [contexto acquireTokenWithResource:authenticationParameters.resource
+    // Obter token ao utilizar a ADAL
+        [context acquireTokenWithResource:authenticationParameters.resource
                                  clientId:appClientId
                               redirectUri:redirectURI
                                    userId:authenticationParameters.userId
@@ -53,7 +53,7 @@ Use as seguintes etapas para criar sua ID do aplicativo e assinar o contrato de 
 
 
 
-**Observação** se a equipe do RMS não receber seu RMLA assinado dentro de 60 dias, seu aplicativo será impedido de autenticar-se com o Sistema de Autenticação do Azure.
+**Nota** Se a Equipa do RMS não receber o RMLA assinado num período de 60 dias, a sua aplicação não poderá ser autenticada com o Sistema de Autenticação do Azure.
 
  
 

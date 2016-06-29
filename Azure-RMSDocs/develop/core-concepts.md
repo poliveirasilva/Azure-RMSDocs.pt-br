@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Termos e diretrizes para desenvolvedores | Azure RMS
-description: O foco do RMS SDK 4.2 é ajudá-lo a criar aplicativos habilitados para o AD RMS que aproveitam a proteção de informações do AD RMS do modo mais simples possível.
+title: Termos e orientações para programadores | Azure RMS
+description: O objetivo do SDK RMS 4.2 é ajudá-lo a criar aplicações com suporte para o AD RMS que tiram partido da Proteção de Informações do AD RMS, da forma mais simples possível.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,16 +24,16 @@ ms.suite: ems
 
 ---
 
-# Termos e diretrizes para desenvolvedores
-O foco do Microsoft Rights Management SDK 4.2 é ajudar a compilar aplicativos habilitados para AD RMS que utilizam o AD RMS (Active Directory Right Management Services) da maneira mais simples possível.
+# Termos e orientações para programadores
+O objetivo do SDK Microsoft Rights Management 4.2 é ajudá-lo a criar aplicações com suporte para o AD RMS que tiram partido dos Active Directory Right Management Services (AD RMS), da forma mais simples possível.
 
-Os tópicos a seguir destinam-se a dar suporte ao seu processo de design para o desenvolvimento de aplicativos habilitados por RMS.
+Os tópicos seguintes destinam-se a suportar o processo de estruturação para desenvolver aplicações com suporte para o RMS.
 
-- [Como registrar e habilitar para RMS seu aplicativo com Azure AD](authentication-integration.md) – descreve os conceitos básicos de autenticação de usuário para seu aplicativo habilitado para RMS.
-- [Como habilitar registro em log de erro e desempenho](enabling-logging.md) – o RMS SDK 4.2 gerencia o upload de logs de desempenho e de diagnóstico por meio da propriedade de um único dispositivo.
-- [Como usar direitos internos](built-in-rights-usage-restriction-reference.md) – descreve os direitos internos que o RMS SDK 4.2 fornece e as restrições de uso que um aplicativo deve impor para respeitar essas restrições.
-- [Como usar o acompanhamento de documentos](how-to-use-document-tracking.md) – o uso do recurso de acompanhamento de documentos requer algumas noções básicas simples sobre como gerenciar os metadados associados e o registro com o serviço.
-- [Termos](terms.md) - uma coleção de definições de terminologia específicas do Rights Management Services.
+- [Como registar e ativar o RMS na aplicação com o Azure AD](authentication-integration.md) – Descreve as noções básicas da autenticação de utilizador para a sua aplicação com capacidade para RMS.
+- [Como ativar o registo de erros e de desempenho](enabling-logging.md) – o SDK RMS 4.2 gere o carregamento de registos de diagnóstico e de desempenho através de uma propriedade de único dispositivo.
+- [Como utilizar direitos incorporados](built-in-rights-usage-restriction-reference.md) – Descreve os direitos incorporados que o SDK RMS 4.2 concede e as restrições de utilização que uma aplicação deve impor para respeitar essas restrições.
+- [Como utilizar controlo de documentos](how-to-use-document-tracking.md) – A utilização da funcionalidade de controlo de documentos requer alguns conhecimentos simples sobre a gestão dos metadados associados e o registo do serviço.
+- [Termos](terms.md) – Uma coleção de definições terminológicas específicas dos Serviços de Gestão de Direitos.
 
  
 

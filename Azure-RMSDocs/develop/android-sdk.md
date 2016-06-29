@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuração do Android | Azure RMS
-description: Aplicativos Android podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos.
+description: As aplicações Android podem utilizar o SDK Microsoft Rights Management 4.2 para ativar a proteção de informações integrada nas respetivas aplicações.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,109 +26,109 @@ ms.suite: ems
 
 # Configuração do Android
 
-Aplicativos Android podem usar o Microsoft Rights Management SDK 4.2 para habilitar a proteção de informações em seus aplicativos usando o AAD RM (Azure Active Directory Rights Management).
+As aplicações Android podem utilizar o SDK Microsoft Rights Management 4.2 para ativar a proteção de informações integrada nas respetivas aplicações utilizando o Azure Active Directory Rights Management (AAD RM).
 
-Este tópico orientará você pela configuração de seu ambiente para criação de seus próprios aplicativos novos.
+Este tópico descreve como configurar o ambiente para criar as suas novas aplicações.
 
 -   [Pré-requisitos](#prerequisites)
 -   [Opcional](#optional)
--   [Configurando o ambiente de desenvolvimento](#configuring_your_development_environment_)
--   [Consulte também](#see_also)
+-   [Configurar o ambiente de desenvolvimento](#configuring_your_development_environment_)
+-   [Consulte Também](#see_also)
 
 ## Pré-requisitos
 
-Recomendamos o seguinte software em seu sistema de desenvolvimento:
+Recomendamos o seguinte software no sistema de desenvolvimento:
 
--   Sistema operacional Windows ou OS X para executar o ambiente de desenvolvimento do [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
--   Este guia pressupõe que você esteja usando o SDK do Eclipse, começando com o Eclipse Juno 4.2, e uma instalação padrão.
--   Java a partir do Java 1.6.
--   [Plugin do ADT (Android Developer Tools)](http://developer.android.com/sdk/installing/index.html). OBSERVAÇÃO - Talvez você receba uma solicitação para reiniciar o Eclipse a fim de concluir a instalação.
-
-     
-
--   O pacote do MS RMS SDK 4.2 para Android. Para saber mais, confira [Introdução](get-started.md).
-
-    Esse SDK pode ser usado para desenvolver para Android 4.0.3 (API nível 15) e posterior.
-
--   Biblioteca de autenticação: recomendamos o uso da [ADAL (Biblioteca de Autenticação do Azure AD)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que oferecem suporte a OAuth 2.0 também podem ser usadas.
-
-    Para saber mais, confira [ADAL para Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
-
-    **Observação** Se o seu aplicativo não usar a Biblioteca ADAL como a biblioteca de autenticação do OAuth 2.0, analise esta orientação do Android, [Some SecureRandom Thoughts](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html) (Algumas ideias sobre SecureRandom).
+-   Sistema operativo Windows ou OS X para executar o ambiente de desenvolvimento [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
+-   Este guia pressupõe que está a utilizar o SDK Eclipse com o Eclipse Juno 4.2 ou superior e que está a utilizar uma instalação predefinida.
+-   Java 1.6 ou superior.
+-   [Plug-in Ferramentas do Programador do Android (ADT)](http://developer.android.com/sdk/installing/index.html). NOTA – poderá ser-lhe pedido para reiniciar o Eclipse para concluir a instalação.
 
      
 
-Leia o tópico [Novidades](release-notes.md) para saber mais sobre as atualizações de API, notas de versão e perguntas frequentes (FAQ).
+-   O pacote do SDK MS RMS 4.2 para Android. Para obter mais informações, consulte [Introdução](get-started.md).
+
+    Este SDK pode ser utilizado para desenvolver para o Android 4.0.3 (nível de API 15) e posterior.
+
+-   Biblioteca de autenticação: recomendamos que utilize a [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que suportem o OAuth 2.0 também podem ser utilizadas.
+
+    Para obter mais informações, consulte [ADAL para Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
+
+    **Nota** Se a aplicação não for utilizar a biblioteca ADAL como a biblioteca de autenticação OAuth 2.0, deve rever esta orientação do Android, [Algumas Ideias SecureRandom](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html).
+
+     
+
+Consulte o tópico [Novidades](release-notes.md) para obter informações sobre atualizações de API, notas de versão e perguntas mais frequentes (FAQ).
 
 ## Opcional
 
-Nossa biblioteca de interface de usuário fornece uma interface de usuário reutilizável para operações de consumo e proteção para desenvolvedores que não querem criar sua própria interface de usuário personalizada - [Biblioteca de interface do usuário e exemplo de aplicativo para Android](https://github.com/AzureAD/rms-sdk-ui-for-android).
+A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para operações de consumo e proteção para programadores que não pretendem criar a sua IU personalizada – [Biblioteca da IU e Aplicação de exemplo para Android](https://github.com/AzureAD/rms-sdk-ui-for-android).
 
-## Configuração de seu ambiente de desenvolvimento
+## Configurar o ambiente de desenvolvimento
 
-**Observação** Versão de visualização do MS RMS SDK 4.2: nesta versão de visualização, as capturas de tela não foram atualizadas para mostrar a mudança no nome dos caminhos de com/microsoft/protection para com/microsoft/rightsmanagment. No entanto, o texto foi atualizado.
+**Nota** Versão de  Pré-visualização do SDK MS RMS 4.2: nesta versão de pré-visualização, as capturas de ecrã não foram atualizadas para mostrar a alteração no nome dos caminhos de com/microsoft/protection para com/microsoft/rightsmanagment. No entanto, o texto foi atualizado.
 
  
--   Abra o ambiente de desenvolvimento do Eclipse.
--   Para criar um novo projeto de Aplicativo do Android, no menu **Arquivo**, clique em **Novo**, clique em **Projeto** e, em seguida, selecione **Projeto de Aplicativo Android**.
+-   Abra o ambiente de desenvolvimento Eclipse.
+-   Para criar um novo projeto de Aplicação Android, no menu **Ficheiro**, clique em **Novo**, clique em **Projeto** e selecione **Projeto de Aplicação Android**.
 
-    ![Criar um novo aplicativo Android](../media/Android-setup-01c.png)
+    ![Criar uma nova aplicação Android](../media/Android-setup-01c.png)
 
--   Digite o nome do aplicativo. O nome do projeto e o nome do pacote é preenchido com base no nome do aplicativo.
--   Clique em **Avançar** e selecione onde você deseja criar o espaço de trabalho.
+-   Introduza o nome da aplicação. O nome do projeto e o nome do pacote é preenchido com base no nome da aplicação.
+-   Clique em **Seguinte** e selecione onde pretende criar a área de trabalho.
 
-    ![Inserir o nome do aplicativo](../media/Android-setup-02a.jpg)
+    ![Introduzir o nome da aplicação](../media/Android-setup-02a.jpg)
 
--   Clique em **Avançar** e selecione um ícone para seu aplicativo.
+-   Clique em **Seguinte** e selecione um ícone para a aplicação.
 
-    ![Selecionar um ícone para o aplicativo](../media/Android-setup-03.png)
+    ![Selecionar um ícone para a aplicação](../media/Android-setup-03.png)
 
--   Clique em **Avançar** e selecione **Atividade em Branco** para criar a atividade.
+-   Clique em **Seguinte** e selecione **Atividade em Branco** para criar a atividade.
 
     ![Criar a atividade](../media/Android-setup-04.png)
 
--   Clique em **Avançar** e forneça um nome para a atividade. Você pode deixar *MainActivity* como o nome padrão, com o nome de layout *activity\_main*.
+-   Clique em **Seguinte** e atribua um nome à atividade. Pode deixar *MainActivity* como o nome predefinido com um nome de esquema de *activity\_main*.
 
-    ![Fornecer um nome para a atividade](../media/Android-setup-05a.jpg)
+    ![Atribuir um nome à atividade](../media/Android-setup-05a.jpg)
 
--   Clique em **Finalizar**.
+-   Clique em **Concluir**.
 
     ![Concluir a criação](../media/Android-setup-06.jpg)
 
--   O projeto foi criado, junto com a classe de atividade principal *MainActivity.java*.
+-   O projeto foi criado, em conjunto com a classe de atividade principal *MainActivity.java*.
 
-**Referência ao SDK**
+**Referenciar o SDK**
 
--   Navegue até a pasta na qual você extraiu o *adrms\_android\_sdk.zip*. Na pasta "SDK > com > microsoft > rightsmanagement", verifique se os arquivos *.classpath*, *.project* e *project.properties* não estão marcados como somente leitura.
--   Para fazer referência ao SDK, você deve importá-lo no espaço de trabalho.
+-   Navegue para a pasta onde extraiu o *adrms\_android\_sdk.zip*. Na pasta “SDK > com > microsoft > rightsmanagement”, certifique-se de que os ficheiros *.classpath*, *.project* e *project.properties* não estão marcados como só de leitura.
+-   Para referenciar o SDK, tem de importá-lo para área de trabalho.
 
-    No Eclipse, clique em **Arquivo**. No menu **Arquivo**, clique em **Importar**. Na caixa de diálogo **Importar**, selecione **Android/Código Existente do Android no Espaço de Trabalho**.
+    No Eclipse, clique em **Ficheiro**. No menu **Ficheiro**, clique em **Importar**. Na caixa de diálogo **Importar**, selecione **Android/Código Android existente na Área de Trabalho**.
 
-    ![Importar para o espaço de trabalho](../media/Android-setup-07.png)
+    ![Importá-lo para a área de trabalho](../media/Android-setup-07.png)
 
--   Clique em **Avançar**. Navegue para selecionar a pasta na qual você extraiu o *adrms\_android\_sdk.zip*. O SDK deve aparecer na lista como **com.microsoft.rightsmanagement**.
+-   Clique em **Seguinte**. Navegue para selecionar a pasta onde extraiu o *adrms\_android\_sdk.zip*. O SDK deve aparecer na lista de como **com.microsoft.rightsmanagement**.
 
     ![Navegar para selecionar a pasta](../media/Android-setup-08c.jpg)
 
--   Quando você clicar em **Concluir**, o projeto do SDK aparecerá como um irmão de seu aplicativo criado anteriormente.
+-   Quando clica em **Concluir**, o projeto do SDK aparece como colateral da sua aplicação criada anteriormente.
 
-    ![O projeto do SDK aparece como irmão do seu aplicativo](../media/Android-setup-09.jpg)
+    ![O projeto do SDK aparece como colateral da aplicação](../media/Android-setup-09.jpg)
 
--   Clique com botão direito no ícone **Projeto** e veja as propriedades do projeto.
--   Navegue até a guia **Android**.
--   Clique em **Adicionar** e, em seguida, selecione a biblioteca *com.microsoft.rightsmanagement* do espaço de trabalho.
+-   Clique no botão direito do rato no ícone **Projeto** e veja as propriedades do projeto.
+-   Navegue para o separador **Android**.
+-   Clique em **Adicionar** e selecione a biblioteca *com.microsoft.rightsmanagement* na área de trabalho.
 
     ![Adicionar a biblioteca](../media/Android-setup-10b.jpg)
 
 -   Clique em **OK**.
 
-    Como o MS RMS SDK 4.2 se conecta ao AAD RM, o aplicativo receber a permissão **INTERNET** e **ACCESS\_NETWORK\_STATE**. Para fazer isso, abra o arquivo *AndroidManifest.xml* na raiz do projeto.
+    Uma vez que o SDK MS RMS 4.2 estabelece ligação com o AAD RM, é necessário conceder a aplicação a **INTERNET** e **ACCESS\_NETWORK\_STATE**. Para tal, abra o ficheiro *AndroidManifest.xml* na raiz do projeto.
 
-    Para adicionar as permissões, clique em **Adicionar** e, em seguida, escolha **Permissões de Uso**.
+    Para adicionar as permissões, clique em **Adicionar** e selecione **Utiliza Permissões**.
 
     ![Adicionar permissões](../media/Android-setup-11d.jpg)
 
--   Você pode verificar a etapa do manifesto exibindo o manifesto no modo de exibição de editor de texto. Verifique se as linhas abaixo aparecem:
+-   Pode verificar o passo do manifesto ao visualizar o manifesto na vista de editor de texto. Certifique-se de que as linhas seguintes são apresentadas:
 
 
     <uses-sdk
@@ -139,19 +139,19 @@ Nossa biblioteca de interface de usuário fornece uma interface de usuário reut
     <uses-permission/>
 
 
-**Observação** O SDK usa *android.support.v4*
+**Nota** O SDK utiliza o *android.support.v4*
 
--   Agora você está pronto para criar seus próprios aplicativos novos do Android.
+-   Agora, está pronto para criar as suas novas aplicações Android.
 
-### Consulte também
+### Consulte Também
 
 [Introdução](get-started.md)
 
 [Novidades](release-notes.md)
 
-[Termos e conceitos de desenvolvedor](core-concepts.md)
+[Conceitos e termos de programação](core-concepts.md)
 
-[Referência à API do Android](android-namespaces.md)
+[Referência da API do Android](android-namespaces.md)
 
  
 

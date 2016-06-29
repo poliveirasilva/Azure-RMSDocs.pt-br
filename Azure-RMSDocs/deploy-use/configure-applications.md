@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurando aplicativos do Azure Rights Management | Azure RMS
+title: Configurar aplicações para o Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -25,57 +25,57 @@ ms.suite: ems
 
 ---
 
-# Configuração de aplicativos do Azure Rights Management
+# Configurar aplicações para o Azure Rights Management
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
 > [!NOTE]
-> Essas informações são para os administradores de TI e consultores que implantaram o Azure Rights Management. Se você estiver procurando ajuda e informações sobre como usar o Rights Management para um aplicativo específico ou como abrir um ficheiro com direitos protegidos, use a ajuda e orientação que acompanha o seu aplicativo.
+> Estas informações destinam-se aos administradores de TI e consultores que tenham implementado o Azure Rights Management. Se estiver à procura de ajuda de utilizador e de informações acerca de como utilizar o Rights Management para uma aplicação específica ou como abrir um ficheiro que está protegido por direitos, utilize a ajuda e as orientações incluídas com a sua aplicação.
 >
-> Por exemplo, para aplicativos do Office, clique no ícone de Ajuda e insira termos de pesquisa como **Rights Management** ou **IRM**. Para o aplicativo de compartilhamento RMS para Windows, consulte o [Guia de usuário de aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+> Por exemplo, para aplicações do Office, clique no ícone Ajuda e introduza termos de pesquisa, como **Rights Management** ou **IRM**. Para a aplicação de partilha RMS para Windows, consulte o [Guia do utilizador da aplicação de partilha Rights Management](../rms-client/sharing-app-user-guide.md).
 
-Após ter implantado o Azure Rights Management (Azure RMS) para a sua organização, use a seguinte informação para configurar aolicações e serviços para oferecer suporte ao Azure Rights Management (RMS). Isso inclui aplicativos do Office como Word 2013 e Word 2010 e serviços como o Exchange Online (regras de transporte, prevenção de perda de dados, não encaminhar e criptografia de mensagens) e o SharePoint Online (bibliotecas protegidas). Para obter mais informações sobre como esses aplicativos dão suporte ao Azure RMS, consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md).
+Depois de ter implementado o Azure Rights Management (Azure RMS) na sua organização, utilize as seguintes informações para configurar aplicações e serviços para suportar o Azure RMS. Incluem aplicações do Office como o Word 2013 e o Word 2010, bem como serviços como o Exchange Online (regras de transporte, prevenção de perda de dados, não reencaminhar e encriptação de mensagens) e o SharePoint Online (bibliotecas protegidas). Para obter informações acerca de como estas aplicações e serviços suportam o Rights Management, consulte [Como as aplicações suportam o Azure Rights Management](../understand-explore/applications-support.md).
 
 > [!IMPORTANT]
-> Para obter informações sobre as versões com suporte e outros requisitos, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+> Para obter informações sobre as versões suportadas e outros requisitos, consulte [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
--   [Office 365: Configuração para clientes e serviços online](configure-office365.md)
+-   [Office 365: configuração para clientes e serviços online](configure-office365.md)
 
-    -   [Exchange Online: Configuração do IRM](configure-office365.md#exchange-online-irm-configuration)
+    -   [Exchange Online: configuração de IRM](configure-office365.md#exchange-online-irm-configuration)
 
-    -   [SharePoint Online e OneDrive para a empresa: Configuração do IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
+    -   [SharePoint Online e OneDrive para Empresas: configuração de IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
 
-- [Aplicativos do Office: configuração para clientes](configure-office-apps.md)
+- [Aplicações do Office: configuração para clientes](configure-office-apps.md)
 
     -   [Office 2016 e Office 2013](configure-office-apps.md#office-2016-and-office-2013)
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
--   [Aplicativo de compartilhamento do Rights Management: Instalação e configuração para clientes](configure-sharing-app.md)
+-   [Aplicação de partilha Rights Management: instalação e configuração para clientes](configure-sharing-app.md)
 
-    -   [O aplicativo de compartilhamento do RMS para Windows: Instalação e configuração](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
+    -   [A aplicação de partilha RMS para o Windows: instalação e configuração](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
 
-    -   [O aplicativo RMS sharing para plataformas móveis: instalação e gerenciamento](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
+    -   [A aplicação de partilha RMS para plataformas móveis: instalação e gestão](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
 
 
-Para configurar servidores locais, como o Exchange Server e o SharePoint Server, consulte [Implantando o conector do Azure Rights Management](deploy-rms-connector.md).
+Para configurar servidores no local, como o Exchange Server e o SharePoint Server, consulte [Implementar o conector Azure Rights Management](deploy-rms-connector.md).
 
 > [!TIP]
-> Para obter exemplos de alto nível e capturas de tela de aplicativos configurados para usar o Azure RMS, consulte a seção [O Azure RMS em ação: o que administradores e usuários veem](../understand-explore/what-admins-users-see.md).
+> Para obter exemplos gerais e capturas de ecrã das aplicações configuradas para utilizar o Azure RMS, consulte [O Azure RMS em ação: conteúdo visto pelos administradores e utilizadores](../understand-explore/what-admins-users-see.md).
 
 
-Além desses aplicativos e serviços, há outros aplicativos que dão suporte às APIs do RMS. Esta categoria inclui aplicativos de linha de negócios que são gravados internamente por meio do RMS SDK e aplicativos de fornecedores de software que são gravados por meio do RMS SDK. Para esses aplicativos, siga as instruções que são fornecidas com o aplicativo.
+Além destas aplicações e serviços, existem outras aplicações que suportam as APIs de RMS. Esta categoria inclui aplicações de linha de negócio que são escritas internamente através do SDK RMS, bem como aplicações de fornecedores de software que são escritas através do SDK RMS. Para estas aplicações, siga as instruções fornecidas com a aplicação.
 
-## Próximas etapas
-Depois de configurar seus aplicativos para dar suporte ao Azure Rights Management, use o [Roteiro de implantação do Azure Rights Management](../plan-design/deployment-roadmap.md) para verificar se existem outras etapas de configuração que você pode fazer antes de implementar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para os usuários e administradores. Caso contrário, você pode achar úteis as informações operacionais a seguir:
+## Passos seguintes
+Depois de configurar as suas aplicações para suportar o Azure Rights Management, utilize o [Plano de implementação do Azure Rights Management](../plan-design/deployment-roadmap.md) para verificar se existem outros passos de configuração que queira realizar antes de implementar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] para utilizadores e administradores. Caso contrário, as informações operacionais que se seguem podem ser-lhe úteis:
 
-- [Verificando o Azure Rights Management](verify.md)
+- [Verificar o Azure Rights Management](verify.md)
 
-- [Ajudando os usuários a proteger os arquivos usando o Azure Rights Management](help-users.md)
+- [Ajudar os utilizadores a proteger ficheiros ao utilizar o Azure Rights Management](help-users.md)
 
-- [Registrando em log e analisando o Azure Rights Management](log-analyze-usage.md)
+- [Registo e análise do Azure Rights Management](log-analyze-usage.md)
 
-- [Operações para sua chave de locatário do Azure Rights Management](operations-tenant-key.md)
+- [Operações para a sua chave de inquilino do Azure Rights Management](operations-tenant-key.md)
 
 
 
