@@ -1,29 +1,47 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\tutorial-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/fab51fefed8d3a347a52ab7c118bb40b3cc23b37/Azure-RMSDocs/get-started/tutorial-step1.md) | OutofSyncHandedBackSuccess | [Details](#80f2742bbaab9d3252cec6f6c709012ca81218d5122)
+ [Azure-RMSDocs\deploy-use\log-analyze-usage.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8/Azure-RMSDocs/deploy-use/log-analyze-usage.md) | OutofSyncHandedBackSuccess | [Details](#845a47f526754f291c27a3c2bbd80af736b4499228)
+ [Azure-RMSDocs\plan-design\plan-implement-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f01d57759ab80b4946c07a627269550c80114131/Azure-RMSDocs/plan-design/plan-implement-tenant-key.md) | OutofSyncHandedBackSuccess | [Details](#aa482dace1086222f63e9165e3089051b5de3e8c346)
 
 ## Item Details
-##### <a name='80f2742bbaab9d3252cec6f6c709012ca81218d5122'></a> Source: [Azure-RMSDocs\get-started\tutorial-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/fab51fefed8d3a347a52ab7c118bb40b3cc23b37/Azure-RMSDocs/get-started/tutorial-step1.md)
+##### <a name='845a47f526754f291c27a3c2bbd80af736b4499228'></a> Source: [Azure-RMSDocs\deploy-use\log-analyze-usage.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8/Azure-RMSDocs/deploy-use/log-analyze-usage.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/4cde21cc3ff2edc736f1cbe95d34c6e4999f16a3/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf)
-* Handoff Datetime: 2016-06-29 18:01:18
+* Handoff File: [log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/d3af1e4a4af98590b7cb626e6247b8a92887cf43/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf)
+* Handoff Datetime: 2016-06-30 01:51:50
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\get-started\tutorial-step1.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/get-started/tutorial-step1.md)
-* Current Handback File: [tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf)
+* Current Target File: [Azure-RMSDocs\deploy-use\log-analyze-usage.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/97f4516a2b44a236a073eee3a04711b464e46527/Azure-RMSDocs/deploy-use/log-analyze-usage.md)
+* Current Handback File: [log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf)
 * Current Handback Datetime: 2016-05-30 22:14:59
-* Bilingual File: [tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/tutorial-step1.7df046abdb5ad11593ce3d8b8a2422f84b3fe4d1.pt-br.xlf)
+* Bilingual File: [log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/3856b707d57baf3c0d86c7036dfb30337889f24a/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/log-analyze-usage.78ce815d3f9335f9de6b70be52bcf5de2c9158e4.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 10:21:04
+* [Back to Top](#report-top)
+
+##### <a name='aa482dace1086222f63e9165e3089051b5de3e8c346'></a> Source: [Azure-RMSDocs\plan-design\plan-implement-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f01d57759ab80b4946c07a627269550c80114131/Azure-RMSDocs/plan-design/plan-implement-tenant-key.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/d3af1e4a4af98590b7cb626e6247b8a92887cf43/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf)
+* Handoff Datetime: 2016-06-30 01:51:50
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\plan-design\plan-implement-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/3f460eafa658716f7ba2075b5d4ea86c4c6285b9/Azure-RMSDocs/plan-design/plan-implement-tenant-key.md)
+* Current Handback File: [plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/feae7ef9d27cd2958d9bb89f2f06ab23bf981f4d/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf)
+* Current Handback Datetime: 2016-06-22 15:56:50
+* Bilingual File: [plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/feae7ef9d27cd2958d9bb89f2f06ab23bf981f4d/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/plan-implement-tenant-key.d79d8fa892f346e358054d66de4468234c124ef5.pt-br.xlf)
+* Bilingual Datetime: 2016-06-22 15:58:34
 * [Back to Top](#report-top)
 
 
