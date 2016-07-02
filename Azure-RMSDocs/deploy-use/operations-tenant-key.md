@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Operações para sua chave de locatário do Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Operações para sua chave de locatário do Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 44408fd8f9da73d8050e0938aa1cc9bc76688bed
+
 
 ---
 
@@ -31,7 +25,7 @@ ms.suite: ems
 
 Dependendo da topologia da sua chave de locatário (gerenciada pela Microsoft ou gerenciada pelo cliente), você tem diferentes níveis de controle e responsabilidade para sua chave de locatário do Microsoft Azure Rights Management (Azure RMS) após ser implantado.
 
-Quando você gerencia sua própria chave de locatário, esta é geralmente chamada de trazer sua própria chave (BYOK). Para obter mais informações sobre esse cenário e de como escolher entre as duas topologias de chave de locatário, consulte [Planejando e implementando sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+Quando você gerencia sua própria chave de locatário, esta é geralmente chamada de trazer sua própria chave (BYOK). Para obter mais informações sobre esse cenário e de como escolher entre as duas topologias de chave de locatário, consulte [Planejamento e implementação da sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 A tabela a seguir identifica as operações que você pode realizar, dependendo da topologia escolhida para sua chave de locatário do Azure RMS.
 
@@ -54,6 +48,7 @@ Depois de ter identificado a topologia que você implementou, use uma das seçõ
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

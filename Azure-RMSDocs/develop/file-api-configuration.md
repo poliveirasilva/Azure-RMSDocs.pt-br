@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Configuração da API do arquivo | Azure RMS
-description: O comportamento da API do arquivo pode ser definido nas configurações do registro.
-keywords:
+title: "Configuração da API do arquivo | Azure RMS"
+description: "O comportamento da API do arquivo pode ser definido nas configurações do registro."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 46b1fe5a0c4f138db65072d14489a5d588015df7
+
 
 ---
 
@@ -67,14 +63,16 @@ Defina o valor **Criptografia** na chave para especificar o comportamento de pro
 
 - **Desativada**: a criptografia está desabilitada.
 
-> [!Note] Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de **EXTRAÇÃO**.
+> [!Note] 
+> Essa configuração não tem nenhuma relevância para a descriptografia. Qualquer arquivo criptografado, seja com proteção nativa ou Pfile, pode ser descriptografado, desde que o usuário tenha o direito de **EXTRAÇÃO**.
 
 - **Nativa**: a criptografia nativa é usada. No caso de arquivos do Office, o arquivo criptografado terá a mesma extensão do arquivo original. Por exemplo, um arquivo com a extensão de arquivo .docx será criptografado como um arquivo com uma extensão .docx. No caso de outros arquivos que podem ter a proteção nativa aplicada, o arquivo será criptografado como um arquivo com uma extensão do formato p*zzz*, em que *zzz* é a extensão de arquivo original. Por exemplo, arquivos. txt serão criptografados em um arquivo com a extensão. ptxt. Abaixo temos uma lista de extensões de arquivo que pode ter a proteção nativa aplicada.
 
 - **Pfile**: a criptografia Pfile é usada. O arquivo criptografado terá pfile acrescentado à extensão do original. Por exemplo, após a criptografia, um arquivo. txt, terá uma extensão. txt.pfile.
 
 
-> [!Note] Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
+> [!Note] 
+> Essa configuração não tem nenhuma relevância para formatos de arquivo do Office. Por exemplo, se o valor `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` for definido como &quot;Pfile”, os arquivos .docx ainda serão criptografados usando a proteção nativa e o arquivo criptografado ainda terá uma extensão de arquivo .docx.
 
 A configuração de qualquer outro valor ou a ausência valor resulta no comportamento padrão.
 
@@ -157,6 +155,7 @@ HKEY_LOCAL_MACHINE
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

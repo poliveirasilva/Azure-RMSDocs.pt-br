@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Baixar e instalar o aplicativo de compartilhamento Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+
 
 ---
 
@@ -37,9 +31,9 @@ Você não precisa ser administrador local para instalar o aplicativo RMS sharin
 
 2.  Na seção **Computadores** , clique no ícone do **aplicativo RMS para Windows** e salve o arquivo **Setup.exe** para instalar o aplicativo de compartilhamento Microsoft Rights Management.
 
-3.  Clique duas vezes no arquivo Setup.exe que foi baixado. Se aparecer uma solicitação para continuar, clique em **Sim**.
+3.  Clique duas vezes no arquivo Setup.exe que foi baixado. Se você for solicitado a continuar, clique em **Sim**.
 
-4.  Na página de **Instalação do Microsoft RMS** , clique em **Próximo**e aguarde a conclusão da instalação.
+4.  Na página de **Instalação do Microsoft RMS** clique em **Próximo**, e aguarde a conclusão da instalação.
 
     > [!NOTE]
     > O aplicativo RMS sharing requer o Microsoft .NET Framework versão mínima 4.0. A instalação verifica se ele está instalado e, se não estiver, você verá uma mensagem com um link para instalá-lo.
@@ -75,6 +69,7 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
