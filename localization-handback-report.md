@@ -1,30 +1,14 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6bfe923868b9ad648386c5ce2786b3beb1e9fc0c/Azure-RMSDocs/develop/api-reference-4-2.md) | InSyncHandedBackSuccess | [Details](#25894ed446911a55481d0f2ac628db2f46e477f649)
  [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-sharepoint.md) | InSyncHandedBackSuccess | [Details](#cb028afcbfd9b59f134539c434f4f49efc5e9092118)
 
 ## Item Details
-##### <a name='25894ed446911a55481d0f2ac628db2f46e477f649'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6bfe923868b9ad648386c5ce2786b3beb1e9fc0c/Azure-RMSDocs/develop/api-reference-4-2.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\api-reference-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/710b16184038258276fc927a46316641da71edc3/Azure-RMSDocs/develop/api-reference-4-2.md)
-* Handoff File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ff3349e33da1bafa1563900adf2e53948faea10f/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
-* Handoff Datetime: 2016-06-27 12:52:21
-* Handoff Reason: Include
-* Archive File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
-* Archive Datetime: 2016-07-01 23:54:38
-* Handback File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
-* Handback Datetime: 2016-07-02 10:22:15
-* Handback Error: [handback_transform_failed](#25894ed446911a55481d0f2ac628db2f46e477f649handback_transform_failed)
-* Bilingual File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
-* Bilingual Datetime: 2016-06-22 12:24:24
-* [Back to Top](#report-top)
-
 ##### <a name='cb028afcbfd9b59f134539c434f4f49efc5e9092118'></a> Source: [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-sharepoint.md)
 * Status: InSyncHandedBackSuccess
 * Target File: [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/710b16184038258276fc927a46316641da71edc3/Azure-RMSDocs/get-started/scenario-sharepoint.md)
@@ -34,7 +18,7 @@
 * Archive File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
-* Handback Datetime: 2016-07-02 10:22:15
+* Handback Datetime: 2016-07-02 12:21:48
 * Handback Error: [handback_transform_failed](#cb028afcbfd9b59f134539c434f4f49efc5e9092118handback_transform_failed)
 * Bilingual File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
 * Bilingual Datetime: 2016-06-22 12:24:24
@@ -42,12 +26,6 @@
 
 
 ## Error Details
-##### <a name='25894ed446911a55481d0f2ac628db2f46e477f649handback_transform_failed'></a> Source: [Azure-RMSDocs\develop\api-reference-4-2.md](#25894ed446911a55481d0f2ac628db2f46e477f649)
-* Error Code: handback_transform_failed
-* Error Message: Handback file: C:\ol\master\EM.handback\06462f\ol-handback\Microsoft\Azure-RMSDocs-pr.pt-br\master\api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf failed.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_transform_failed","internal_error_message":"Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.pt-br\\master\\api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf failed.","internal_error_retriable":false,"exception_message":"Fail to transform from xliff to markdown with invalid metadata: Invalid yaml header when parsing:\n# required metadata\n\ntitle: Referência da API | Azure RMS\ndescription: O Microsoft Rights Management SDK 4.2 dá suporte a vários sistemas operacionais: Android, iOS, Windows Store, OS X, Linux e Windows Phone.\nkeywords:\nauthor: bruceperlerms\nmanager: mbaldwin\nms.date: 05/04/2016\nms.topic: article\nms.prod: azure\nms.service: rights-management\nms.technology: techgroup-identity\nms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643\n# optional metadata\n\n#ROBOTS:\naudience: developer\n#ms.devlang:\nms.reviewer: shubhamp\nms.suite: ems\n#ms.tgt_pltfrm:\n#ms.custom:\nError message: (Line: 4, Col: 93, Idx: 150) - (Line: 4, Col: 93, Idx: 150): Mapping values are not allowed in this context.","exception_type":"System.IO.InvalidDataException","stack_trace":"   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406","extended_information":null}
-
 ##### <a name='cb028afcbfd9b59f134539c434f4f49efc5e9092118handback_transform_failed'></a> Source: [Azure-RMSDocs\get-started\scenario-sharepoint.md](#cb028afcbfd9b59f134539c434f4f49efc5e9092118)
 * Error Code: handback_transform_failed
 * Error Message: Handback file: C:\ol\master\EM.handback\06462f\ol-handback\Microsoft\Azure-RMSDocs-pr.pt-br\master\scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf failed.
