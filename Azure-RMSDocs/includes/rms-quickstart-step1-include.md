@@ -55,6 +55,6 @@ Embora não incluímos aqui, em uma implantação em produção provavelmente vo
 |Sobre os modelos padrão e como criar modelos novos e personalizados   →|[Configurando modelos personalizados do Azure Rights Management](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

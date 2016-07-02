@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurando os superusuários para o Azure Rights Management e os serviços de descoberta ou a recuperação de dados | Azure RMS
-description:
-keywords:
+title: "Configurando os superusuários para o Azure Rights Management e os serviços de descoberta ou a recuperação de dados | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+
 
 ---
 
@@ -77,6 +71,7 @@ Para obter mais informações sobre esses cmdlets, consulte [Cmdlets de proteç�
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

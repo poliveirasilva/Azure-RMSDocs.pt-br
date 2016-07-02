@@ -27,6 +27,6 @@ Agora, está tudo pronto para você começar a proteger arquivos que contêm inf
 |Para compreender a diferença entre proteção nativa e proteção genérica   →|[Qual é a diferença entre proteção genérica e proteção interna (nativa)?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

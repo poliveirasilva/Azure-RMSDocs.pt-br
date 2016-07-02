@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Como os usuários se inscrevem no RMS para pessoas físicas | Azure RMS
-description:
-keywords:
+title: "Como os usuários se inscrevem no RMS para pessoas físicas | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 19252180802c69d6e5d6bf22c71ff3bcba96fb36
+
 
 ---
 
@@ -46,11 +40,11 @@ A maneira mais comum para ser direcionado para a página de inscrição é receb
 
     A Microsoft usa seu endereço de email para verificar se sua organização já tem uma [assinatura paga que inclua o Azure RMS](../get-started/requirements-subscriptions.md). Se esse for o caso, você não precisará do RMS para pessoas físicas, por isso, você será conectado imediatamente e a assinatura de autoatendimento para o RMS para pessoas físicas será cancelada. Se uma assinatura paga do Azure RMS não for encontrada, você continuará para a próxima etapa.
 
-4.  Aguarde uma mensagem de confirmação por email que será enviada para o endereço fornecido. Será da Microsoft (DoNotReply@microsoft.com) e tem como assunto **Microsoft RMS**.
+4.  Aguarde uma mensagem de confirmação por email que será enviada para o endereço fornecido. Esta mensagem será da Microsoft (DoNotReply@microsoft.com) e tem como assunto **Microsoft RMS**.
 
 5.  Ao receber o email, clique no link das instruções para concluir o processo de inscrição.
 
-6.  O link leva você uma nova página do **Microsoft Rights Management** para fornecer detalhes da sua conta. Digite seu nome, sobrenome, insira e confirme uma senha de sua escolha, selecione seu país (ou o país mais próximo, caso seu país não esteja na lista suspensa) e, em seguida, clique em **Criar**.
+6.  O link leva você uma nova página do **Microsoft Rights Management** para fornecer detalhes da sua conta. Digite seu nome, seu sobrenome, introduza e confirme uma senha de sua escolha, selecione seu país/região (ou o país/região mais próximo, caso seu país/região não esteja na lista suspensa) e, em seguida, clique em **Criar**.
 
 7.  Espere por outra mensagem de email da Microsoft agora confirmando que a sua conta está pronta para ser usada.
 
@@ -92,13 +86,13 @@ Durante todo este processo, não há custos para a organização e nenhum trabal
 
         -   [Implantando o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md)
 
-    -   Execute o e-discovery em dados de propriedade da empresa para que, se necessário, você possa descriptografar arquivos que foram protegidos com o Rights Management. Para obter mais informações, consulte [Configurando superusuários para o Azure Rights Management e serviços de descoberta ou recuperação de dados](../deploy-use/configure-super-users.md).
+    -   Execute o e-discovery em dados de propriedade da empresa para que, se necessário, você possa descriptografar arquivos que foram protegidos com o Rights Management. Para mais informações, consulte [Configurando os superusuários para o Azure Rights Management e os serviços de descoberta ou a recuperação de dados](../deploy-use/configure-super-users.md).
 
     -   Registre todas as atividades no Rights Management como é feito na sua organização. Isso é muito eficiente, porque não só é possível monitorar quais arquivos estão sendo protegidos e quem os está acessando com sucesso, mas você também pode identificar comportamentos potencialmente suspeitos de pessoas não autorizadas que estão tentando acessar os arquivos protegidos. Para obter mais informações, consulte [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Forneça aos usuários a capacidade de rastrear e revogar seus documentos protegidos, se esses recursos forem compatíveis com a sua [assinatura do Azure RMS](https://technet.microsoft.com/dn858608). Para obter mais informações, consulte [Acompanhar e revogar arquivos](../rms-client/sharing-app-track-revoke.md) no [guia de usuário do aplicativo de compartilhamento RMS](../rms-client/sharing-app-user-guide.md)..
+    -   Forneça aos usuários a capacidade de rastrear e revogar seus documentos protegidos, se esses recursos forem compatíveis com a sua [assinatura do Azure RMS](https://technet.microsoft.com/dn858608). Para obter mais informações, consulte [Rastrear e revogar seus arquivos](../rms-client/sharing-app-track-revoke.md) no [guia de usuário do aplicativo RMS sharing](../rms-client/sharing-app-user-guide.md).
 
-    -   Implemente a solução BYOK (Bring Your Own Key ou Traga Sua Própria Chave) para que sua chave de locatário para o Azure Rights Management seja gerada no local, de acordo com suas políticas de TI, e transferida com segurança para a Microsoft usando um Hardware Security Module (HSM). Para obter mais informações, consulte [Planejando e implementando sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+    -   Implemente a solução BYOK (Bring Your Own Key ou Traga Sua Própria Chave) para que sua chave de locatário para o Azure Rights Management seja gerada no local, de acordo com suas políticas de TI, e transferida com segurança para a Microsoft usando um Hardware Security Module (HSM). Para mais informações, consulte o [Planejamento e implementação de sua chave de locatário do Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 
 ## Próximas etapas
@@ -107,6 +101,7 @@ Consulte [Como os administradores podem controlar as contas criadas para o RMS p
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Termos e diretrizes para desenvolvedores | Azure RMS
-description: O foco do RMS SDK 4.2 é ajudá-lo a criar aplicativos habilitados para o AD RMS que aproveitam a proteção de informações do AD RMS do modo mais simples possível.
-keywords:
+description: "O foco do RMS SDK 4.2 é ajudá-lo a criar aplicativos habilitados para o AD RMS que aproveitam a proteção de informações do AD RMS do modo mais simples possível."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
+ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+
 
 ---
 
@@ -42,6 +38,7 @@ Os tópicos a seguir destinam-se a dar suporte ao seu processo de design para o 
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
