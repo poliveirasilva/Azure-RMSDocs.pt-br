@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Política de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS | Azure RMS
-description:
-keywords:
+title: "Política de privacidade do Microsoft Rights Management em aplicativos habilitados para RMS | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 Aplica-se a: Funcionalidade do Microsoft Rights Management inserida em aplicativos
 
 > [!NOTE]
-> Esta política de privacidade está disponível em idiomas adicionais usando o [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
+> Esta declaração de privacidade está disponível em idiomas adicionais usando o [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
 
 A Microsoft está comprometida a proteger sua privacidade, oferecendo software que proporcione o desempenho, a potência e a conveniência desejados em computação pessoal. Esta declaração de privacidade explica muitas das práticas de uso e a coleta de dados de dados do serviço ou software cliente Microsoft Rights Management e outros produtos ou serviços da Microsoft vinculados a esta notificação.
 
@@ -65,6 +59,7 @@ Ocasionalmente, atualizamos esta política de privacidade para refletir mudança
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

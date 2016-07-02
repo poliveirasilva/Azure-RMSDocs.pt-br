@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Desenvolvendo seu aplicativo | Azure RMS
-description: Instruções sobre como desenvolver um aplicativo usando o RMS SDK 2.1.
-keywords:
+description: "Instruções sobre como desenvolver um aplicativo usando o RMS SDK 2.1."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: f995da0698ec5fb4a8e46865b70506ced92f73db
+
 
 ---
 
@@ -32,7 +28,8 @@ Este tópico contém diretrizes essenciais sobre os principais aspectos de um ap
 
 As diretrizes neste tópico têm como base o aplicativo de exemplo, IPCHelloWorld, que ajudará você a entender os conceitos básicos e o código de um aplicativo habilitado para direitos. Você pode baixar o aplicativo de exemplo completo, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), do Microsoft Connect.
 
-> [!Note] O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+> [!Note] 
+> O projeto IPCHelloWorld já está configurado para o Rights Management Services SDK 2.1. Para saber mais sobre como configurar um novo projeto a fim de usar o SDK 2.1 do RMS, confira [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
 ## Como carregar o MSIPC.dll
 
@@ -187,6 +184,7 @@ Antes de terminar, você também precisa liberar todos os recursos alocados.
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
