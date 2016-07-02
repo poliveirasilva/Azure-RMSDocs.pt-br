@@ -42,6 +42,6 @@ Agora que você enviou o documento protegido está pronto para solicitar que os 
 |Sobre as opções da caixa de diálogo **compartilhamento protegido** →|[Opções da caixa de diálogo do aplicativo de compartilhamento do Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

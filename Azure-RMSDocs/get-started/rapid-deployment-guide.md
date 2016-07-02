@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guia de implantação rápida do Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Guia de implantação rápida do Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ Os cenários listados aqui são um exemplo dos mais populares. Como o Azure RMS 
 
 Antes de implementar essas soluções, convém enviar um anúncio amplo aos usuários finais, avisando sobre algumas alterações que serão feitas para ajudar a proteger os dados da empresa, e que isso pode exigir algumas alterações da parte deles. Veja um exemplo de comunicação logo após a tabela a seguir.
 
-> [!NOTE] Se você tiver dúvidas e comentários sobre este guia, use os mecanismos de comentários nesta página ou envie uma mensagem de email para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE]
+> Se você tiver dúvidas e comentários sobre este guia, use os mecanismos de comentários nesta página ou envie um email para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Cenários para o Azure RMS
 Para ajudar você a implantar o Azure RMS mais rapidamente a fim de resolver problemas comerciais específicos, escolha os cenários mais próximos de suas metas comerciais e adapte-os quando for necessário.
@@ -151,6 +146,7 @@ As soluções que estamos implementando nos ajudarão a proteger nossos dados va
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

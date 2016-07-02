@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Exemplos de código do iOS/OS X | Azure RMS
-description: Este tópico apresentará elementos de código importantes para a versão iOS/OS X do RMS SDK.
-keywords:
+title: "Exemplos de código do iOS/OS X | Azure RMS"
+description: "Este tópico apresentará elementos de código importantes para a versão iOS/OS X do RMS SDK."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: acc140931b5f834ce1d70c851d90c334a03010dc
+ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
+
 
 ---
 
@@ -288,6 +284,7 @@ Este cenário começa obtendo uma lista de modelos, [**MSTemplateDescriptor**](/
 
  
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
