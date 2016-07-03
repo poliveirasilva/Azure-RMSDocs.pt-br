@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Ativando o Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ Como alternativa, você pode usar cmdlets do Windows PowerShell para ativar [!IN
 ## Configurando controles de integração para uma implantação em fases
 Se você não deseja que todos os usuários consigam proteger os arquivos imediatamente usando o Azure RMS, poderá configurar os controles de integração usando o comando Windows PowerShell [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) . Você pode executar esse comando antes ou depois de ativar o Azure RMS.
 
-> [!IMPORTANT] Para usar esse comando, você deve ter pelo menos a versão **2.1.0.0** do módulo [Azure RMS para Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT]
+> Para usar esse comando, você deve ter pelo menos a versão **2.1.0.0** do módulo [RMS Windows PowerShell do Azure](http://go.microsoft.com/fwlink/?LinkId=257721).
 >
 > Para verificar a versão instalada, execute: **(Get-Module aadrm –ListAvailable).Version**
 
@@ -86,6 +81,7 @@ Serviços do Office, como o Exchange Online e o SharePoint Online, exigem config
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
