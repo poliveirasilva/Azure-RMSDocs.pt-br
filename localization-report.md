@@ -2130,7 +2130,7 @@
 * Archive File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf)
-* Handback Datetime: 2016-07-03 01:20:54
+* Handback Datetime: 2016-07-03 06:24:50
 * Handback Error: [handback_transform_failed](#d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d116handback_transform_failed)
 * Bilingual File: [scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-secure-most-valuable-files.326b87ae3260dcee48122d97d6c1cab3d2167974.pt-br.xlf)
 * Bilingual Datetime: 2016-06-22 12:24:24
@@ -2174,7 +2174,7 @@
 * Archive File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
-* Handback Datetime: 2016-07-03 01:20:54
+* Handback Datetime: 2016-07-03 06:24:50
 * Handback Error: [handback_transform_failed](#35ad445e229eac3feeca5522a41b9e3b25fd1180119handback_transform_failed)
 * Bilingual File: [scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-work-folders.37c46518ddc0b687611245d91f30625060e41197.pt-br.xlf)
 * Bilingual Datetime: 2016-06-22 12:24:24
