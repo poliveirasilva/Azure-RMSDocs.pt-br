@@ -1849,8 +1849,8 @@
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/6a0668feb0d84c7d185d1adb8721e87a21be734b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
 * Handback Datetime: 2016-07-04 08:19:17
-* Bilingual File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/5e63e7f16555899beeb7ce3705e0db5d0c5ce2a4/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Bilingual Datetime: 2016-06-16 18:05:22
+* Bilingual File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/6a0668feb0d84c7d185d1adb8721e87a21be734b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
+* Bilingual Datetime: 2016-07-04 08:22:41
 * [Back to Top](#report-top)
 
 ##### <a name='136d6e9d0c45a9779f87e32eed8288fe8ee3a62298'></a> Source: [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/windows-phone-apps.md)
