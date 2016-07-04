@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2acf8095764e2c222881240985df8bccf8a64173/Azure-RMSDocs/develop/usage-restriction-reference.md) | InSyncHandedBackSuccess | [Details](#9788b067f9395b9e078e76994a2a8a79e95baf0697)
 
 ## Item Details
-##### <a name='9788b067f9395b9e078e76994a2a8a79e95baf0697'></a> Source: [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2acf8095764e2c222881240985df8bccf8a64173/Azure-RMSDocs/develop/usage-restriction-reference.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/6b60bbea501b613bd1874d7ecacfd7f1b77348e1/Azure-RMSDocs/develop/usage-restriction-reference.md)
-* Handoff File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ff3349e33da1bafa1563900adf2e53948faea10f/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Handoff Datetime: 2016-06-27 12:52:21
-* Handoff Reason: Include
-* Archive File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Archive Datetime: 2016-07-01 23:54:38
-* Handback File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/6a0668feb0d84c7d185d1adb8721e87a21be734b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Handback Datetime: 2016-07-04 08:19:17
-* Bilingual File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/6a0668feb0d84c7d185d1adb8721e87a21be734b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Bilingual Datetime: 2016-07-04 08:22:41
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
