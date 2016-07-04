@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 63
-[ In Sync Handback Files ](#insync-handback-success-list)| 139
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 62
+[ In Sync Handback Files ](#insync-handback-success-list)| 140
 [ Ignored Files ](#ignored-list)| 67
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -194,7 +194,6 @@
  [Azure-RMSDocs\get-started\tutorial-step3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/tutorial-step3.md) | OutofSyncHandedBackSuccess | [Details](#efe389db839f3f70e9cdb9138f6749e2bd2e029f124)
  [Azure-RMSDocs\get-started\tutorial-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/tutorial-step4.md) | OutofSyncHandedBackSuccess | [Details](#19f536e8d0353c7b0ccbd4de3df646352dc2d748125)
  [Azure-RMSDocs\get-started\tutorial-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/tutorial-step5.md) | OutofSyncHandedBackSuccess | [Details](#9c335e054d4aed1a8cca654420a580d02a4c849f126)
- [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md) | OutofSyncHandedBackSuccess | [Details](#20715a7298d29bcf817ddbfc809eb84ead8d97ef145)
  [Azure-RMSDocs\plan-design\deployment-roadmap.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7f8a4d53665dd79a6d0e02d340b0e7a09d995e00/Azure-RMSDocs/plan-design/deployment-roadmap.md) | OutofSyncHandedBackSuccess | [Details](#96ee0aa3151ede8b8a263f3ce6c3d2e5b8ec9c81332)
  [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md) | OutofSyncHandedBackSuccess | [Details](#1acc66e9a73b100268ed722391a0a87651c64abc334)
  [Azure-RMSDocs\plan-design\generate-tenant-key-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55/Azure-RMSDocs/plan-design/generate-tenant-key-internet.md) | OutofSyncHandedBackSuccess | [Details](#20cfa722f7008c52f4fbc219a4de04c50ee3548d335)
@@ -314,6 +313,7 @@
  [Azure-RMSDocs\includes\o365_1_md.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c1cd5adccb8ed07dac9a0535654f21a970575a78/Azure-RMSDocs/includes/o365_1_md.md) | InSyncHandedBackSuccess | [Details](#abbc3d68e1ce1aa2c8f5b3dfdededdced649bcf0142)
  [Azure-RMSDocs\includes\o365_2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c1cd5adccb8ed07dac9a0535654f21a970575a78/Azure-RMSDocs/includes/o365_2.md) | InSyncHandedBackSuccess | [Details](#7a7696b5c0a84413e52374a40ab71c111dd096f8143)
  [Azure-RMSDocs\includes\o365_2_md.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c1cd5adccb8ed07dac9a0535654f21a970575a78/Azure-RMSDocs/includes/o365_2_md.md) | InSyncHandedBackSuccess | [Details](#b05c48ff61a131f1142e176549fef95ac0425294144)
+ [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md) | InSyncHandedBackSuccess | [Details](#20715a7298d29bcf817ddbfc809eb84ead8d97ef145)
  [Azure-RMSDocs\includes\rms-quickstart-step1-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f3175f081efab6e21cd2f370c579c55fbc9e8096/Azure-RMSDocs/includes/rms-quickstart-step1-include.md) | InSyncHandedBackSuccess | [Details](#2f7554efa3de9dd3a080888f6cbfee972a8bdfc0146)
  [Azure-RMSDocs\includes\rms-quickstart-step2-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f3175f081efab6e21cd2f370c579c55fbc9e8096/Azure-RMSDocs/includes/rms-quickstart-step2-include.md) | InSyncHandedBackSuccess | [Details](#69956f3d714d4f0acaaeb426662d5ec8adfa9b07147)
  [Azure-RMSDocs\includes\rms-quickstart-step3-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f3175f081efab6e21cd2f370c579c55fbc9e8096/Azure-RMSDocs/includes/rms-quickstart-step3-include.md) | InSyncHandedBackSuccess | [Details](#c8f0d0902216a6bdde443e8bfc81754cab556ce4148)
@@ -2534,15 +2534,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='20715a7298d29bcf817ddbfc809eb84ead8d97ef145'></a> Source: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/d7da20c36b6151fb67ca68e6367d5f32bcd2d15e/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/77cf5aa7ad8bd19647dde871376c4dae061104b5/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
 * Handoff File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ff3349e33da1bafa1563900adf2e53948faea10f/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
 * Handoff Datetime: 2016-06-27 12:52:21
 * Handoff Reason: Include
 * Archive File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
-* Handback File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/9e09e58be1f6dc376981e422942a0072b18c2be7/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
-* Handback Datetime: 2016-05-09 13:02:04
+* Handback File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d3c040558e2af7faa4aeab4881d09b1f154acca7/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
+* Handback Datetime: 2016-07-04 10:50:35
 * Bilingual File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/9e09e58be1f6dc376981e422942a0072b18c2be7/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 10:21:04
 * [Back to Top](#report-top)

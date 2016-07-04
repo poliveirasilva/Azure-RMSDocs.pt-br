@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md) | InSyncHandedBackSuccess | [Details](#20715a7298d29bcf817ddbfc809eb84ead8d97ef145)
 
 ## Item Details
+##### <a name='20715a7298d29bcf817ddbfc809eb84ead8d97ef145'></a> Source: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\includes\rms-quickstart-intro-include.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/77cf5aa7ad8bd19647dde871376c4dae061104b5/Azure-RMSDocs/includes/rms-quickstart-intro-include.md)
+* Handoff File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ff3349e33da1bafa1563900adf2e53948faea10f/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
+* Handoff Datetime: 2016-06-27 12:52:21
+* Handoff Reason: Include
+* Archive File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
+* Archive Datetime: 2016-07-01 23:54:38
+* Handback File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/d3c040558e2af7faa4aeab4881d09b1f154acca7/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
+* Handback Datetime: 2016-07-04 10:50:35
+* Bilingual File: [rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/9e09e58be1f6dc376981e422942a0072b18c2be7/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pt-br.xlf)
+* Bilingual Datetime: 2016-06-16 10:21:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
