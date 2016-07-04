@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 64
-[ In Sync Handback Files ](#insync-handback-success-list)| 138
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 63
+[ In Sync Handback Files ](#insync-handback-success-list)| 139
 [ Ignored Files ](#ignored-list)| 67
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -182,7 +182,6 @@
  [Azure-RMSDocs\develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/overview.md) | OutofSyncHandedBackSuccess | [Details](#417888c5445d702b1f700a8e717fbb746593efc685)
  [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md) | OutofSyncHandedBackSuccess | [Details](#eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383587)
  [Azure-RMSDocs\develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/terms.md) | OutofSyncHandedBackSuccess | [Details](#5779cc10503ad7afe997e031a467021b513fc51093)
- [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2acf8095764e2c222881240985df8bccf8a64173/Azure-RMSDocs/develop/usage-restriction-reference.md) | OutofSyncHandedBackSuccess | [Details](#9788b067f9395b9e078e76994a2a8a79e95baf0697)
  [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/windows-phone-apps.md) | OutofSyncHandedBackSuccess | [Details](#136d6e9d0c45a9779f87e32eed8288fe8ee3a62298)
  [Azure-RMSDocs\develop\winrt-sdk.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/winrt-sdk.md) | OutofSyncHandedBackSuccess | [Details](#0b8e0fb6d872506ac3529bd137286f0e8fa562ee99)
  [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/64b9cf141b755e4d54907424a7dcbd4ee14fadd7/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#758a603dde2c185767ba85229a397fd6e77b1c5b102)
@@ -280,6 +279,7 @@
  [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/466db75b55164b638a269816f434cf027ce666a5/Azure-RMSDocs/develop/TOC.md) | InSyncHandedBackSuccess | [Details](#bf36217b4e3e59a6590e0f8cb21cfa9c28ec628d94)
  [Azure-RMSDocs\develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/aa4b1b0aee246b32d5214e2587ac5d291a682fe7/Azure-RMSDocs/develop/tracking-content.md) | InSyncHandedBackSuccess | [Details](#61f70a7b4a85c0ab6f0a2732fcf9d314a230e76995)
  [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/872bb0c20db2ef8d661d321598a2b1fe61d69316/Azure-RMSDocs/develop/understanding-usage-restrictions.md) | InSyncHandedBackSuccess | [Details](#2d2cbe580349e1615371a6a76e78140f6577e89096)
+ [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2acf8095764e2c222881240985df8bccf8a64173/Azure-RMSDocs/develop/usage-restriction-reference.md) | InSyncHandedBackSuccess | [Details](#9788b067f9395b9e078e76994a2a8a79e95baf0697)
  [Azure-RMSDocs\develop\working-with-encryption.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/29e856e3e9990f81a791c533ddad5a332093d5d3/Azure-RMSDocs/develop/working-with-encryption.md) | InSyncHandedBackSuccess | [Details](#82903eff43ee2dee7ef64e618171225a06013d99100)
  [Azure-RMSDocs\get-started\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/get-started/get-started.md) | InSyncHandedBackSuccess | [Details](#5bc6f02c4ffc8eef3c7b15e1777ec4201b357c18103)
  [Azure-RMSDocs\get-started\quick-start-tutorial.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/quick-start-tutorial.md) | InSyncHandedBackSuccess | [Details](#7c89aa5f31732464dab2b90a25ad7c50f36c2c99105)
@@ -1840,15 +1840,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='9788b067f9395b9e078e76994a2a8a79e95baf0697'></a> Source: [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2acf8095764e2c222881240985df8bccf8a64173/Azure-RMSDocs/develop/usage-restriction-reference.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/d9120e1076d24240ed499609f973fdd254ce975f/Azure-RMSDocs/develop/usage-restriction-reference.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/6b60bbea501b613bd1874d7ecacfd7f1b77348e1/Azure-RMSDocs/develop/usage-restriction-reference.md)
 * Handoff File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/ff3349e33da1bafa1563900adf2e53948faea10f/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
 * Handoff Datetime: 2016-06-27 12:52:21
 * Handoff Reason: Include
 * Archive File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
-* Handback File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/5e63e7f16555899beeb7ce3705e0db5d0c5ce2a4/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
-* Handback Datetime: 2016-06-16 18:00:55
+* Handback File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/6a0668feb0d84c7d185d1adb8721e87a21be734b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
+* Handback Datetime: 2016-07-04 08:19:17
 * Bilingual File: [usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/5e63e7f16555899beeb7ce3705e0db5d0c5ce2a4/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/usage-restriction-reference.3ebbbe52fbc3951646a7176ff436bde9d96b3f85.pt-br.xlf)
 * Bilingual Datetime: 2016-06-16 18:05:22
 * [Back to Top](#report-top)
