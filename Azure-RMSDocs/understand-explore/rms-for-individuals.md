@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS para pessoas físicas e Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "RMS para pessoas físicas e Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+
 
 ---
 
@@ -36,7 +30,7 @@ Estes usuários podem criar uma conta corporativa ou de estudante gratuitamente 
 Ao utilizar o aplicativo Rights Management sharing em computadores com Windows, estes usuários podem também proteger os arquivos no local ou enviar arquivos protegidos por email para as pessoas dentro ou fora de sua organização. Se os destinatários do email enviado estiverem em uma organização que também não gerencia contas de usuário no Azure, eles também poderão criar uma conta de pessoa física do RMS para ler o anexo de email protegido.
 
 > [!IMPORTANT]
-> Essa assinatura gratuita garante que pessoas autorizadas sempre possam ler arquivos que foram protegidos. Atualmente, você também pode usar essa assinatura gratuita para proteger documentos e criar novas mensagens de email protegidas, mas a capacidade de criar novo conteúdo protegido destina-se somente para teste e pode ser removida no futuro. Para obter mais informações e saber sobre alterações sobre o uso do RMS para pessoas físicas para proteger conteúdo, consulte os [Termos de Serviço do Microsoft Rights Management](https://portal.aadrm.com/Legal/Service).
+> Essa assinatura gratuita garante que pessoas autorizadas sempre possam ler arquivos que foram protegidos. Atualmente, você também pode usar essa assinatura gratuita para proteger documentos e criar novas mensagens de email protegidas, mas a capacidade de criar novo conteúdo protegido destina-se somente para teste e pode ser removida no futuro. Para obter mais informações e saber sobre alterações sobre o uso do RMS para pessoa física para proteger conteúdo, consulte os [Termos de Serviço do Microsoft Rights Management](https://portal.aadrm.com/Legal/Service).
 
 Para obter mais informações sobre como proteger os arquivos usando o aplicativo de compartilhamento Rights Management gratuito, consulte o [Guia para usuários do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
 
@@ -47,6 +41,7 @@ Consulte [Como os usuários se inscrevem no RMS para pessoas físicas](rms-for-i
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Visão geral | Azure RMS
-description: O AD RMS e o Azure RMS são uma tecnologia de proteção de informações que ajuda a proteger informações digitais do uso não autorizado.
-keywords:
+title: "Visão geral | Azure RMS"
+description: "O AD RMS e o Azure RMS são uma tecnologia de proteção de informações que ajuda a proteger informações digitais do uso não autorizado."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +45,7 @@ O SDK do MS RMS SDK 4.2 oferece alguns recursos novos e interessantes que inclue
 
 -   **API reprojetada** – A API do MS RMS SDK 4.2 foi reformulada para manter a simplicidade máxima, de modo que os desenvolvedores possam aproveitar uma API simples e transparente de criptografia e descriptografia que forneça comportamentos consistentes de RMS com o mínimo de esforço.
 -   **Suporte híbrido para AD RMS e Azure RMS** – um único aplicativo habilitado para RMS pode consumir e proteger o conteúdo do servidor do AD RMS (usando a extensão de dispositivo móvel do AD RMS) e do serviço do Azure RMS. O MS RMS SDK 4.2 descobre de forma transparente o ponto de extremidade relevante que os administradores de TI podem configurar.
--   **Traga sua própria biblioteca de autenticação** – como desenvolvedor de aplicativos você pode escolher qual biblioteca de autenticação é usada com o MS RMS SDK 4.2. Quer seja a [Biblioteca de Autenticação do Azure AD](https://msdn.microsoft.com/en-us/library/jj573266.aspx) ou a biblioteca personalizada de sua organização,o MS RMS SDK 4.2 separa a pilha de autenticação para que você possa escolher a biblioteca mais adequada às suas necessidades.
+-   **Traga sua própria biblioteca de autenticação** – como desenvolvedor de aplicativos você pode escolher qual biblioteca de autenticação é usada com o MS RMS SDK 4.2. Quer seja a [Biblioteca de Autenticação do Azure AD](https://msdn.microsoft.com/library/jj573266.aspx) ou a biblioteca personalizada de sua organização, o MS RMS SDK 4.2 separa a pilha de autenticação para que você possa escolher a biblioteca mais adequada às suas necessidades.
 -   **Traga sua própria interface de usuário** - agora, o MS RMS SDK 4.2 permite que você implemente a interface de usuário personalizada. Desde a proteção do conteúdo e escolha dos modelos até a exibição e alteração de permissões ao consumir conteúdo protegido, o MS RMS SDK 4.2 não impõe qualquer interface interna em seus aplicativos. No entanto, se você quiser, use as bibliotecas de interface de usuário do Microsoft RMS para todas as plataformas por meio de nossa [conta do GitHub](https://github.com/AzureAD/).
 -   **Acessar o conteúdo protegido offline** – O MS RMS SDK 4.2 permite que os usuários de seu aplicativo acessem o conteúdo protegido, mesmo quando não houver conectividade com a internet. O MS RMS SDK 4.2 armazena com segurança em cache as políticas de consumo de conteúdo protegido, para que os usuários possam acessar dados protegido do RMS no modo offline.
 
@@ -70,6 +65,7 @@ Use o guia de [Introdução](get-started.md) para iniciar seu projeto de aplicat
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

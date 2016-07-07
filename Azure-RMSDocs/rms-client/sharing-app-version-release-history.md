@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Aplicativo de compartilhamento Rights Management&colon; Histórico de lançamento de versão | Azure RMS
-description:
-keywords:
+title: "Aplicativo de compartilhamento Rights Management&colon; Histórico de lançamento de versão | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ A equipe do Rights Management atualiza o aplicativo Rights Management sharing re
 
 As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
-> [!NOTE]
-> Se você tiver comentários ou uma pergunta sobre o aplicativo RMS sharing, envie uma mensagem de email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> [!NOTE] Se você tiver comentários ou uma pergunta sobre o aplicativo RMS sharing, envie uma mensagem de email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Versão 1.0.2191.0
+**Lançada em**: 16/06/2016
+
+**Correções**:
+
+- O site de acompanhamento do documento agora mostra o número correto de modos de exibição para cada documento acompanhado.
+
+- Modelos para todas as localidades agora são exibidos como disponíveis para os usuários.
+
+- Depois de usar o compartilhamento protegido para um arquivo do PowerPoint, as alterações na versão local do arquivo são salvas corretamente.
+
+- Pequeno número de bugs secundários e melhorias para mensagens de erro.
+
 
 ## Versão 1.0.2004.0
 **Lançada**: 11/12/2015
@@ -62,7 +68,7 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 -   Suporte para Multi-Factor Authentication (MFA) para o Azure RMS, que também remove a dependência do assistente de conexão da Microsoft que usa autenticação moderna.
 
-    Para obter mais informações, consulte a seção [MFA (Multi-Factor Authentication) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) de [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Para obter mais informações, consulte a seção [Multi-Factor Authentication (MFA) e Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) de [Requisitos do Azure Rights Management](../get-started/requirements-azure-rms.md).
 
 ## Versão 1.0.1784.0
 **Lançada**: 30/7/2015
@@ -84,7 +90,7 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 **Novos recursos**:
 
--   Suporte para rastreamento e revogação de documentos. Para obter mais informações, consulte [Acompanhar e revogar seus documentos ao usar o aplicativo de compartilhamento RMS](sharing-app-track-revoke.md)..
+-   Suporte para rastreamento e revogação de documentos. Para obter mais informações, consulte [Rastrear e revogar seus documentos ao usar o aplicativo RMS sharing](sharing-app-track-revoke.md).
 
 -   Suporte de modelo quando você escolhe **Compartilhamento protegido**:
 
@@ -109,10 +115,11 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 **Novos recursos**:
 
--   **Suporte para vários domínios de email dentro de sua organização**: se você usa o AD RMS e os usuários em sua organização têm vários domínios de email, essa atualização permite que os usuários consumam conteúdo protegido por usuários em sua organização em outros domínios. Para obter mais informações, consulte a seção [Somente AD RMS: suporte para vários domínios de email dentro de sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+-   **Suporte para vários domínios de email dentro de sua organização**: se você usa o AD RMS e os usuários em sua organização têm vários domínios de email, essa atualização permite que os usuários consumam conteúdo protegido por usuários em sua organização em outros domínios. Para obter mais informações, consulte a seção [Somente AD RMS: suporte para vários domínios de email dentro de sua organização](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) no [guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

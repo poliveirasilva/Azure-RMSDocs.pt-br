@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Registrando em log e analisando o uso do Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ Você pode usar esses logs do Azure Rights Management para dar suporte aos cená
 
     Se você tiver um vazamento de informação, é provável que seja solicitado quem acessou recentemente documentos específicos e que informações a pessoa suspeitosa acessou recentemente. Você pode responder a esse tipo de pergunta quando usa o Azure Rights Management e o registro em log porque as pessoas que usam o conteúdo protegido sempre devem obter uma licença do Rights Management para abrir documentos e imagens que sejam projetadas pelo Azure Rights Management, mesmo que esses arquivos sejam movidos por email ou copiados para unidades USB ou outros dispositivos de armazenamento. Isso significa que você pode usar os logs do Azure Rights Management como uma fonte definitiva de informações para análise forense ao proteger seus dados usando o Azure Rights Management.
 
-> [!NOTE] Se você estiver interessado somente no registro em log de tarefas administrativas para o Azure Rights Management e não quiser controlar como os usuários estão usando o Rights Management, poderá usar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell para Azure Rights Management.
+> [!NOTE]
+> Se você estiver interessado somente no registro em log de tarefas administrativas para o Azure Rights Management e não quiser controlar como os usuários estão usando o Rights Management, poderá usar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell do Azure Rights Management.
 > 
 > Você também pode usar o portal clássico do Azure para relatórios de uso de alto nível que incluem **Resumo do RMS**, **Usuários RMS ativos**, **Plataformas do dispositivo RMS** e **Uso do aplicativo RMS**. Para acessar esses relatórios no portal clássico do Azure, clique em **Active Directory**, selecione e abra um diretório e clique em **RELATÓRIOS**,
 
@@ -56,7 +51,8 @@ Use as seguintes seções para obter mais informações sobre registro em log do
 ## Como habilitar o registro em log de uso do Azure Rights Management
 A partir de fevereiro de 2016, o registro em log do uso do Azure Rights Management é habilitado por padrão para todos os clientes. Isto aplica-se aos clientes que ativaram seu serviço Azure RMS antes de fevereiro de 2016 e aos clientes que ativaram o serviço depois de fevereiro de 2016. 
 
-> [!NOTE] Não há nenhum custo extra para o armazenamento de log ou para a funcionalidade de recurso de registro em log.
+> [!NOTE]
+> Não há nenhum custo extra para o armazenamento de log ou para a funcionalidade de recurso de registro em log.
 > 
 > Se você usou o log de uso para Azure RMS antes de fevereiro de 2016, você precisava de uma assinatura do Azure e de armazenamento suficiente no Azure, o que não é mais o caso.
 
@@ -143,17 +139,17 @@ Cada uma das linhas subsequentes é um registro de log. Os valores dos campos es
 |--------------|-----------------|---------------|-----------------|
 |date|Data|Data UTC quando a solicitação foi servida.<br /><br />A fonte é o relógio local no servidor que serviu a solicitação.|2013-06-25|
 |hora|Hora|Hora UTC no formato de 24 horas quando a solicitação foi servida.<br /><br />A fonte é o relógio local no servidor que serviu a solicitação.|21:59:28|
-|row-id|Text|GUID exclusivo para este registro de log.<br /><br />Este valor é usado quando você agrega logs ou cópia logs em um outro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|Text|GUID exclusivo para este registro de log. Se não houver um valor, use o valor correlation-id para identificar a entrada.<br /><br />Este valor é usado quando você agrega logs ou cópia logs em um outro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nome|Nome do API do RMS que foi solicitado.|AcquireLicense|
-|user-id|Cadeia de caracteres|O usuário que fez a solicitação.<br /><br />O valor que é colocado entre aspas simples. Alguns tipos de solicitações são anônimos e, nesse caso, o valor será ”.|‘joe@contoso.com’|
+|user-id|Cadeia de caracteres|O usuário que fez a solicitação.<br /><br />O valor que é colocado entre aspas simples. Chamadas de uma chave de locatário gerenciada por você (BYOK) têm um valor de **"**, que também se aplica quando os tipos de solicitação anônimos.|‘joe@contoso.com’|
 |result|Cadeia de caracteres|‘Êxito’ se a solicitação foi servida com êxito.<br /><br />O tipo de erro entre aspas simples marca se a solicitação falhou.|‘Êxito’|
 |correlation-id|Text|O GUID que seja comum entre o log do cliente do RMS e o log do servidor para uma solicitação especificada.<br /><br />Este valor pode ser útil para ajudar a solucionar problemas de clientes.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Text|O GUID, que se encontra entre chaves que identifica o conteúdo protegido (por exemplo, um documento).<br /><br />Este campo tem um valor somente se o tipo de solicitação é AcquireLicense e é branco par todos os outros tipos de solicitações.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |email proprietário|Cadeia de caracteres|Endereço de email do proprietário do documento.|alice@contoso.com|
 |emissor|Cadeia de caracteres|Endereço de email do emissor do documento.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Id do modelo|Cadeia de caracteres|ID do modelo usado para proteger o documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|Nome do arquivo|Cadeia de caracteres|Nome do arquivo do documento que estava protegido. <br /><br />No momento, alguns arquivos (como documentos do Office) são exibidos como GUIDs em vez do nome do arquivo real.|TopSecretDocument.docx|
-|Data de publicação|Data|Data quando o documento foi protegido.|2015-10-15T21:37:00|
+|template-id|Cadeia de caracteres|ID do modelo usado para proteger o documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|Cadeia de caracteres|Nome do arquivo do documento que estava protegido. <br /><br />No momento, alguns arquivos (como documentos do Office) são exibidos como GUIDs em vez do nome do arquivo real.|TopSecretDocument.docx|
+|date-published|Data|Data quando o documento foi protegido.|2015-10-15T21:37:00|
 |c-info|Cadeia de caracteres|As informações sobre a plataforma do cliente que estão fazendo a solicitação.<br /><br />A cadeia de caracteres varia, dependendo do aplicativo (por exemplo, o sistema operativo ou o navegador).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Endereço|O endereço IP do cliente que realiza a solicitação.|64.51.202,144|
 
@@ -166,7 +162,7 @@ Mesmo que o campo user-id geralmente indica ao usuário que realizou o pedido, h
 
 -   Se você estiver usando o conector do RMS.
 
-    As solicitações deste conector são registrados em log com o nome principal do serviço que o RMS automaticamente gera quando você instala o conector do RMS.
+    As solicitações deste conector são registrados em log com o nome da entidade de serviço de **Aadrm_S-1-7-0**, gerado automaticamente quando você instala o conector RMS.
 
 #### Tipos de solicitações típicas
 Há vários tipos de solicitações no Azure Rights Management, mas a seguinte tabela identifica alguns dos tipos de solicitações mais usados.
@@ -181,7 +177,7 @@ Há vários tipos de solicitações no Azure Rights Management, mas a seguinte t
 |BECreateEndUserLicenseV1|É feita uma chamada de um dispositivo móvel para criar uma licença de usuário final.|
 |BEGetAllTemplatesV1|É feita uma chamada de um dispositivo móvel (backend) para obter todos os modelos.|
 |Certify|O cliente certifica o conteúdo para proteção.|
-|Decrypt|O cliente está tentando descriptografar o conteúdo protegido pelo RMS.|
+|KMSPDecrypt|O cliente está tentando descriptografar o conteúdo protegido pelo RMS. Aplicável somente para uma chave de locatário gerenciada pelo cliente (BYOK).|
 |DeleteTemplateById|É feita uma chamada no portal clássico do Azure para excluir um modelo por ID de modelo.|
 |ExportTemplateById|É feita uma chamada no portal clássico do Azure para excluir um modelo com base no ID de modelo.|
 |FECreateEndUserLicenseV1|Semelhante à solicitação AcquireLicense mas de dispositivos móveis.|
@@ -199,7 +195,7 @@ Há vários tipos de solicitações no Azure Rights Management, mas a seguinte t
 |ServerCertify|É feita uma chamada de um cliente habilitado para RMS (como SharePoint) para certificar o servidor.|
 |SetUsageLogFeatureState|É feita uma chamada para habilitar o registro em log de uso.|
 |SetUsageLogStorageAccount|É feita uma chamada para especificar o local dos logs do Azure RMS.|
-|SignDigest|É feita uma chamada quando uma chave é usada para fins de assinatura. Isso é chamado geralmente uma vez por AcquireLicence (ou FECreateEndUserLicenseV1), Certify e GetClientLicensorCert (ou FECreatePublishingLicenseV1).|
+|KMSPSignDigest|É feita uma chamada quando uma chave gerenciada pelo cliente (BYOK) é usada para fins de assinatura. Isso é chamado geralmente uma vez por AcquireLicence (ou FECreateEndUserLicenseV1), Certify e GetClientLicensorCert (ou FECreatePublishingLicenseV1).|
 |UpdateTemplate|É feita uma chamada do portal clássico do Azure para atualizar um modelo existente.|
 
 ## Referência do Windows PowerShell
@@ -229,6 +225,7 @@ Para obter mais informações sobre o uso do Windows PowerShell para o Azure Rig
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 
