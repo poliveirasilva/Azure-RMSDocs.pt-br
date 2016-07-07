@@ -155,9 +155,6 @@
   "0b8e0fb6d872506ac3529bd137286f0e8fa562ee": [
     "Azure-RMSDocs\\develop\\winrt-sdk.md"
   ],
-  "b8684a62fe1dc26de84cea7abc5720a5a649980b": [
-    "Azure-RMSDocs\\develop\\winrt-sdk.md"
-  ],
   "82903eff43ee2dee7ef64e618171225a06013d99": [
     "Azure-RMSDocs\\develop\\working-with-encryption.md"
   ],
@@ -170,13 +167,7 @@
   "24322775b689ad0508979853fd06b2d33fc33cc1": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
-  "85613d5444bcba3c0d3f1dc808fa16f5a84c7e6d": [
-    "Azure-RMSDocs\\develop\\ad-rms-client.md"
-  ],
   "37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97": [
-    "Azure-RMSDocs\\develop\\ad-rms-overview.md"
-  ],
-  "4183dfdb17479baf3e4494bd3566d7a8cf68eb08": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "2b7c99e3adafde7140d7997364ec2643ba79a2ac": [
@@ -237,15 +228,6 @@
     "Azure-RMSDocs\\develop\\get-started.md"
   ],
   "81541dbadabe3417299f47447384934373275e75": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "db1817835963d49e1f3608489a7a7f730ff60bd9": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "5e8415d165e6105c2592ba10332b8fd4f5e4e725": [
-    "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
-  ],
-  "7d362d91736d5167808a88d487de45049b3b4883": [
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
   "e75ec6c04afd171552697f79deb33ad2cfe2c4e1": [
@@ -383,13 +365,7 @@
   "9cde79791e8c2b04d1d7622f5aa69d654a70646e": [
     "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
   ],
-  "56f4c7081de95d010364d04e7fab12ff9f7007ee": [
-    "Azure-RMSDocs\\deploy-use\\activate-azure-classic.md"
-  ],
   "657fb47485ce0e86fab800f8ab981e6dfbd9ee11": [
-    "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
-  ],
-  "e82089dc6c6dcf9069216e3ab55dcc14e3bd5074": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-classic.md"
   ],
   "1ac96ddb1569483236c4dc61f7bc38c99d43ead2": [
@@ -434,9 +410,6 @@
   "21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
-  "ec5c5616f65422834bdc81a3da4040621ed75c23": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
@@ -471,15 +444,6 @@
     "Azure-RMSDocs\\deploy-use\\operations-customer-managed-tenant-key.md"
   ],
   "feb41356a2ef074679e60ce4bb7b1d6ee910371c": [
-    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
-  ],
-  "4126bc6373f02bdc66206d9d88de43268387d6cf": [
-    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
-  ],
-  "630e2cb72166906340bc3a4d9df1e6c1030038a4": [
-    "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
-  ],
-  "c221a7116250cceabcf6484b5b9348141af1346b": [
     "Azure-RMSDocs\\deploy-use\\operations-microsoft-managed-tenant-key.md"
   ],
   "44408fd8f9da73d8050e0938aa1cc9bc76688bed": [
@@ -572,9 +536,6 @@
   "72a75712da9efa201865440affa80461dcd7df53": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
-  "472935eef8a68b9b8fa618f4cab9d4e365bee8a3": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
-  ],
   "933394c943763b010ac707384918eff86ea33388": [
     "Azure-RMSDocs\\get-started\\requirements-client-devices.md"
   ],
@@ -617,12 +578,6 @@
   "20cfa722f7008c52f4fbc219a4de04c50ee3548d": [
     "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
   ],
-  "96b1554b2bdd292d1fc5ba00bb1e9d755049b7b7": [
-    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
-  ],
-  "f4552994fb8f83120dcadd157cddb150387a169a": [
-    "Azure-RMSDocs\\plan-design\\generate-tenant-key-internet.md"
-  ],
   "defe008a9b78026ccac584bb06762228456a2916": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
@@ -650,37 +605,16 @@
   "75cce1d0e5a1cff0d4f6609d0f084fda1af62951": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
   ],
-  "8c2ebdbdfec2465475f6ce7daa2dafd35b874329": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md"
-  ],
   "7ed3569475362272ace055862fe8bb3ee072036a": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
-  ],
-  "a307f939515d8f81077c73e9b29aa9015b256c7a": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase4.md"
   ],
   "b33839ff5ce0d30082f58ff96eb81215b716e46d": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
   ],
-  "6544421afc1291f5fc7d99ecad71146f0cb4bb1d": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-to-azure-rms.md"
-  ],
   "7b531ebba1923653cb37c70a02fa888a40e96528": [
     "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
   ],
-  "0604eeae0137aa468c15d9ee0d4b70f734f897b3": [
-    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
-  ],
-  "054fe56d85a4259513eea98364ebdf8977164de4": [
-    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
-  ],
   "173641b9dada2673b48a1c210419cb933cdd9f13": [
-    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
-  ],
-  "7ed5d71d6c1c85ccb0f60d8a4471f3923a8c9bc8": [
-    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
-  ],
-  "78c301287ff0b54c193f0657c9490289a54d26b9": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
   ],
   "a739da3fbebc8dfa4c6715fd64ccd72f87d2a686": [
@@ -690,12 +624,6 @@
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
   ],
   "aa482dace1086222f63e9165e3089051b5de3e8c": [
-    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
-  ],
-  "1a01ac672251efe3be7fa485cfadfa118f561d8d": [
-    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
-  ],
-  "f0ba9f31dcc3b349a14f3a820f3c86ab19937d87": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
   "55f092ede1f003c700cb58359bab264772702c39": [
