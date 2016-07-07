@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Gerar e transferir sua chave de locatário - pela Internet | Azure RMS
-description:
-keywords:
+title: "Gerar e transferir sua chave de locatário - pela Internet | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -48,7 +42,7 @@ Na estação de trabalho conectada à Internet, baixe e instale o módulo do Win
 > [!NOTE]
 > Se você já baixou previamente este módulo do Windows PowerShell, execute o seguinte comando para verificar se o seu número de versão é, pelo menos, 2.1.0.0: `(Get-Module aadrm -ListAvailable).Version`
 
-Para instruções de instalação, consulte [Instalando o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md)..
+Para instruções de instalação, consulte [Instalando o Windows PowerShell para Azure Rights Management](../deploy-use/install-powershell.md).
 
 ### Etapa 2: Obtenha sua ID de locatário do Active Directory do Azure
 Inicie o Windows PowerShell com a opção **Executar como administrador** e, em seguida, execute os seguintes comandos:
@@ -89,11 +83,11 @@ O conjunto de ferramentas inclui o seguinte:
 
 -   Um pacote do Security World que tem um nome que começa com **BYOK-SecurityWorld-pkg-**.
 
--   Um script python nomeado **verifykeypackage.py**.
+-   Um script python chamado **verifykeypackage.py**.
 
 -   Um arquivo executável de linha de comando chamado **KeyTransferRemote.exe**, um arquivo de metadados chamado **KeyTransferRemote.exe.config** e as DLLs associadas.
 
--   Um pacote redistribuível do Visual C++, nomeado **vcredist_x64.exe**.
+-   Um pacote redistribuível do Visual C++, chamado **vcredist_x64.exe**.
 
 Copie o pacote para uma unidade USB ou outro armazenamento portátil.
 
@@ -269,11 +263,11 @@ Para reduzir as permissões em sua chave de locatário, faça o seguinte:
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-Ao executar este comando, substitua *contosokey* pelo mesmo valor especificado na [Etapa 1: Crie um mundo de segurança](##step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
+Ao executar este comando, substitua *contosokey* pelo mesmo valor especificado na [Etapa 1: Crie um mundo de segurança](#step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
 
 Você será solicitado a conectar seus cartões de ACS do mundo de segurança e, se for especificado, sua senha ou PIN.
 
-Ao concluir o comando, você verá **Resultado: SUCCESSO** e a cópia da sua chave de locatário com permissões reduzidas estará no arquivo nomeado key_xferacId_*&lt;contosokey&gt;*.
+Ao concluir o comando, você verá **Resultado: ÊXITO** e a cópia da sua chave de locatário com permissões reduzidas estará no arquivo nomeado key_xferacId_*&lt;contosokey&gt;*.
 
 ### Etapa 2: Inspecione a nova cópia da chave
 Opcionalmente, execute os utilitários da Thales para confirmar as permissões mínimas na nova chave de locatário:
@@ -290,7 +284,7 @@ Opcionalmente, execute os utilitários da Thales para confirmar as permissões m
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-Ao executar este comando, substitua *contosokey* pelo mesmo valor especificado na [Etapa 1: Crie um mundo de segurança](##step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
+Ao executar este comando, substitua *contosokey* pelo mesmo valor especificado na [Etapa 1: Crie um mundo de segurança](#step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
 
 ### Etapa 3: Criptografe sua chave usando o Key Exchange Key da Microsoft
 Execute um dos seguintes comandos, dependendo da sua região:
@@ -315,7 +309,7 @@ Execute um dos seguintes comandos, dependendo da sua região:
 
 Ao executar este comando, use estas instruções:
 
--   Substitua *contosokey* pelo identificador usado para gerar a chave na [Etapa 1: Criar um mundo de segurança](##step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
+-   Substitua *contosokey* pelo identificador usado para gerar a chave na [Etapa 1: Criar um mundo de segurança](#step-1-create-a-security-world) da seção *Gerar sua chave de locatário*.
 
 -   Substitua *GUID* pela ID do locatário do Azure Active Directory recuperada na [Etapa 2: Obter sua ID de locatário do Azure Active Directory](#step-2-get-your-azure-active-directory-tenant-id) da seção *Preparar sua estação de trabalho conectada à Internet*.
 
@@ -383,6 +377,7 @@ Agora você concluiu todas as etapas necessárias para obter sua própria chave 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

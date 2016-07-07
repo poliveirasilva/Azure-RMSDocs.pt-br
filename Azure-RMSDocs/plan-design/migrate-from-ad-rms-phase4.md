@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: Migração do AD RMS para o Azure Rights Management - Fase 4 | Azure RMS
-description:
-keywords:
+title: "Migração do AD RMS para o Azure Rights Management - Fase 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ Esta etapa é opcional, mas recomendada quando a migração é concluída, mesmo
 
 Para criar novamente sua chave de locatário do Azure RMS:
 
--   Se a chave de locatário do Azure RMS for gerenciada pela Microsoft: para fazer isso, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com uma solicitação para criar novamente sua chave de locatário do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte Standard se aplicam; redefinir a chave de locatário não é um serviço de suporte gratuito.
+-   Se a chave de locatário do Azure RMS for gerenciada pela Microsoft: para fazer isso, [entre em contato com o Suporte da Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com uma solicitação para criar novamente sua chave de locatário do Azure RMS**. Você deve provar que você é um administrador do seu locatário do Azure RMS e precisa estar ciente de que este processo levará vários dias para ser confirmado. Encargos de suporte Standard se aplicam; redefinir a chave de locatário não é um serviço de suporte gratuito.
 
 -   Se a chave de locatário do Azure RMS for gerenciada por você (BYOK): repita o procedimento BYOK para gerar e criar uma nova chave pela Internet ou pessoalmente.
 
@@ -61,6 +54,7 @@ Agora que você concluiu a migração, examine o [roteiro de implantação](depl
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

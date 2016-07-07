@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Planejando e implementando sua chave de locatário do Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Planejando e implementando sua chave de locatário do Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ Use as informações e os procedimentos desta seção se você tiver decidido ge
 
 
 > [!IMPORTANT]
-> Se você já tiver começado a usar o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tiver usuários que executem o Office 2010, [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, talvez seja possível usar o BYOK, mas com algumas limitações ou passos adicionais.
+> Se você já tiver começado a usar [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (o serviço está ativado) e tiver usuários que executem o Office 2010, [entre em contato com o Suporte da Microsoft](../get-started/information-support.md#to-contact-microsoft-support) antes de executar estes procedimentos. Dependendo do cenário e dos requisitos, talvez seja possível usar o BYOK, mas com algumas limitações ou passos adicionais.
 > 
-> Também entre em [contato com o Suporte Microsoft](../get-started/information-support#to-contact-microsoft-support) se a sua organização tiver políticas específicas para a manipulação de chaves.
+> Também entre em [contato com o Suporte Microsoft](../get-started/information-support.md#to-contact-microsoft-support) se a sua organização tiver políticas específicas para a manipulação de chaves.
 
 ### Pré-requisitos para o BYOK
 Veja a tabela a seguir para obter uma lista de pré-requisitos para trazer sua própria chave (BYOK).
@@ -114,7 +108,7 @@ Os procedimentos para gerar e utilizar a sua própria chave de locatário depend
     > [!NOTE]
     > Sua chave de locatário pode se mover com segurança em computadores e redes não confiáveis​​, pois é criptografada e protegida com permissões de nível de controle de acesso, o que torna utilizável apenas dentro de seus HSMs e HSMs da Microsoft para o Azure RMS. Você pode usar os scripts que são fornecidos no conjunto de ferramentas para verificar as medidas de segurança e ler mais informações sobre como isso funciona a partir da Thales: [Gerenciamento de chaves de hardware na nuvem do RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Pessoalmente:** isso requer que você [entre em contato com o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para agendar um compromisso de transferência de chave para o Azure RMS. Será necessário viajar para um escritório da Microsoft em Redmond, Washington, nos Estados Unidos, para transferir a chave de locatário para o mundo de segurança do Azure RMS.
+-   **Pessoalmente:** isso requer que você [entre em contato com o Suporte da Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para agendar um compromisso de transferência de chave para o Azure RMS. Será necessário viajar para um escritório da Microsoft em Redmond, Washington, nos Estados Unidos, para transferir a chave de locatário para o mundo de segurança do Azure RMS.
 
 Para instruções, selecione se você vai gerar e transferir sua chave de locatário pela Internet ou pessoalmente: 
 
@@ -136,9 +130,9 @@ Agora que você já planejou e, se necessário, gerou sua chave de locatário, f
 
 2.  Considere usar o registro em log de uso, que registra todas as transações que o RMS executa.
 
-    Se você decidiu gerenciar sua própria chave de locatário, o log inclui informações sobre como usar sua chave de locatário. Consulte o exemplo a seguir de um arquivo de log exibido no Excel, onde os Tipos de solicitação **Descriptografar** e **SignDigest** mostram que a chave de locatário está sendo usada.
+    Se você decidiu gerenciar sua própria chave de locatário, o log inclui informações sobre como usar sua chave de locatário. Consulte o trecho de um arquivo de log exibido no Excel a seguir, no qual os tipos de solicitação **KMSPDecrypt** e **KMSPSignDigest** mostram que a chave de locatário está sendo usada.
 
-    ![arquivo de log no Excel no qual a chave de locatário está sendo usada](../media/RMS_Logging.gif)
+    ![arquivo de log no Excel no qual a chave de locatário está sendo usada](../media/RMS_Logging.png)
 
     Para obter mais informações sobre registro em log de uso, consulte [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -148,6 +142,7 @@ Agora que você já planejou e, se necessário, gerou sua chave de locatário, f
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 
