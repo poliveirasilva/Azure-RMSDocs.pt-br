@@ -104,9 +104,6 @@
   "def8b7e98fd55a3d028978ffc9f8e41e38a5622c": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
-  "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": [
-    "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
-  ],
   "c16098a2d0fe41748280704716a2eeef8921a6fa": [
     "Azure-RMSDocs\\get-started\\scenario-fci.md"
   ],
@@ -174,9 +171,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "5d8c7ab53f76005d7efbfd2d795da08e41f83941": [
-    "Azure-RMSDocs\\develop\\android-code.md"
-  ],
-  "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
     "Azure-RMSDocs\\develop\\android-code.md"
   ],
   "30fad88ff664e2df935c8f2cfd28f8b1fe251f67": [
@@ -374,9 +368,6 @@
   "80e17903a6d2f3c6e8f15448a6a5499dfb9852d1": [
     "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
   ],
-  "6df2ebc183c2c268a44d83822d151524e13df2e1": [
-    "Azure-RMSDocs\\deploy-use\\activate-office365-preview.md"
-  ],
   "d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf": [
     "Azure-RMSDocs\\deploy-use\\activate-service.md"
   ],
@@ -470,30 +461,6 @@
   "758a603dde2c185767ba85229a397fd6e77b1c5b": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
-  "d59a27f0ae7dda5ad318efd6d3d21c225c1c90de": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "bd2e6d2e812379791769d7c1df74d117aa22ea36": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "67cbff0a7fc713dadf8f848b270947560cc5c553": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "e0d6e984f49659edcdc69dc4ddb2967321660adb": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "f50a7f202a7c4553c604ed77c0fe40eade4e4a1b": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "80c24cd79ad2836a468b5b9a938a12a8f44b23d1": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "d9107e8566f0e44d87d9da4703aa3376c8594b4e": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "7af7b3698ddf75573dc4712ef335b25378ba2290": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
   "a8f5852d965abe2f2654aa236bfd9ea49a62aa84": [
     "Azure-RMSDocs\\get-started\\information-support.md"
   ],
@@ -581,25 +548,7 @@
   "defe008a9b78026ccac584bb06762228456a2916": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
-  "bae830f3408e1109882e9ed88f32fb9bcab45574": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "9411fee6b29db4404a0ae430cc7ea54d4d7d47e5": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "4f7e6c8b306de1e171c7a4957908bc7d5cf8b029": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
-  "9694b21d3c8175e51f4786f6e1bed27918d7d487": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
   "1016ecdd77e818840f2a2cfab8212e908291bb89": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
-  ],
-  "3ac6ffac17770828a24bbac703ad8aa73b5740eb": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
-  ],
-  "589cd61d24788538ec9a013a236d22cd103ab8ec": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
   ],
   "75cce1d0e5a1cff0d4f6609d0f084fda1af62951": [
@@ -701,9 +650,6 @@
   "affb37cc3b991609f5de51370485b10fed932421": [
     "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md"
   ],
-  "c6c0e2e3afa416f343f23613db4b3ca228426c01": [
-    "Azure-RMSDocs\\understand-explore\\office-apps-services-support.md"
-  ],
   "6a27d5a2a1bad24521a551465fd9324f2a826376": [
     "Azure-RMSDocs\\understand-explore\\rms-for-individuals.md"
   ],
@@ -750,15 +696,6 @@
     "Azure-RMSDocs\\develop\\install-the-rms-sdk.md"
   ],
   "4509126c61c4e37d9655d9bd080be3e097cd103f": [
-    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
-  ],
-  "18f0d47e35f0c75b2814678fd44c8d306414bbd4": [
-    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
-  ],
-  "6a418a057fc922d578f4112fcea3a8dbdc5b61dc": [
-    "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
-  ],
-  "ebaa8aad463bebe7cc2691bddac4cc7ace3c8991": [
     "Azure-RMSDocs\\deploy-use\\monitor-rms-connector.md"
   ],
   "cb82f0333ed17ee2994608baa3bbb50d42f19073": [
