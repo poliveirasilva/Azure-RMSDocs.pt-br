@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 50ebcd71336baeb68687e2d0c1ff1f0608925761
 ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
@@ -43,7 +44,8 @@ Se quiser usar o Azure RMS com servidores locais, os seguintes produtos são com
 
 Para obter informações sobre os requisitos adicionais do Azure RMS para este cenário, consulte [Servidores locais que dão suporte ao Azure RMS](requirements-servers.md).
 
-> [!IMPORTANT] Não há suporte para o cenário de implantação a seguir:
+> [!IMPORTANT]
+> Não há suporte para o cenário de implantação a seguir:
 > 
 > -   Execução do AD RMS e do Azure RMS lado a lado na mesma organização, exceto durante a migração, conforme descrito em [Migrando do AD RMS para o Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 > 
@@ -54,6 +56,6 @@ Para obter informações sobre os requisitos adicionais do Azure RMS para este c
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

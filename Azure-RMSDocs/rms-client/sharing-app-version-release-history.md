@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
 ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
 
@@ -26,7 +27,8 @@ A equipe do Rights Management atualiza o aplicativo Rights Management sharing re
 
 As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
-> [!NOTE] Se você tiver comentários ou uma pergunta sobre o aplicativo RMS sharing, envie uma mensagem de email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> [!NOTE]
+> Se você tiver um comentário ou uma pergunta sobre o aplicativo RMS sharing, envie um email para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
 ## Versão 1.0.2191.0
 **Lançada em**: 16/06/2016
@@ -120,6 +122,6 @@ As versões anteriores a 1º de janeiro de 2015 não são listadas.
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

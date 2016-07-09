@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
 ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
 
@@ -276,7 +277,8 @@ Uma usuária deseja enviar algumas informações por email para pessoas específ
  
 - Se ela aplicasse a opção **Não Encaminhar**, os destinatários não poderiam compartilhar as informações com nenhuma outra pessoa no departamento de marketing movendo o email para outro local. Nesse cenário, somente os destinatários originais (e o proprietário de email) poderiam exibir as informações no email.
 
-> [!NOTE] Use **Não Encaminhar** quando for importante que somente os destinatários que o remetente escolher possam ver as informações no email. Use um modelo para emails para restringir direitos a um grupo de pessoas que o administrador especifica antecipadamente, independentemente dos destinatários escolhidos pelo remetente.
+> [!NOTE] 
+> Use **Não Encaminhar** quando for importante que somente os destinatários que o remetente escolher possam ver as informações no email. Use um modelo para emails para restringir direitos a um grupo de pessoas que o administrador especifica antecipadamente, independentemente dos destinatários escolhidos pelo remetente.
 
 
 
@@ -287,6 +289,6 @@ Uma usuária deseja enviar algumas informações por email para pessoas específ
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
