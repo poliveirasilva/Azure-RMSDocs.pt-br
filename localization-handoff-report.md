@@ -1,32 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/faq.md) | HandedOffSuccess | [Details](#b20ccbd394c88af047b7439a94c54936bc4ab063154)
- [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#7f0ea76b3073721ecba1a3357911a1b8b244a7c8161)
+ [Azure-RMSDocs\information-protection\infoprotect-tutorial-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e2a0ac3fb5653d5260bbd2b3bf572386596b94e0/Azure-RMSDocs/information-protection/infoprotect-tutorial-step4.md) | HandedOffSuccess | [Details](#97d49fc476f2a7a0d9303fd27441d5fe7338fb49159)
 
 ## Item Details
-##### <a name='b20ccbd394c88af047b7439a94c54936bc4ab063154'></a> Source: [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/faq.md)
+##### <a name='97d49fc476f2a7a0d9303fd27441d5fe7338fb49159'></a> Source: [Azure-RMSDocs\information-protection\infoprotect-tutorial-step4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e2a0ac3fb5653d5260bbd2b3bf572386596b94e0/Azure-RMSDocs/information-protection/infoprotect-tutorial-step4.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/013bf69be2b9ed14634c15f7b23c7d38ed75c77a/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pt-br.xlf)
-* Handoff Datetime: 2016-07-12 15:25:09
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='7f0ea76b3073721ecba1a3357911a1b8b244a7c8161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6af8fbffb99414fa36a3ca18cdcbb5734a40e6f9/Azure-RMSDocs/information-protection/what-is-information-protection.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/013bf69be2b9ed14634c15f7b23c7d38ed75c77a/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pt-br.xlf)
-* Handoff Datetime: 2016-07-12 15:25:09
+* Handoff File: [infoprotect-tutorial-step4.e05b067bb63bbb103b67887740ea0bb6b9044c40.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/7381191fe307f71c16233f23d0eec0303f3c7e3c/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/infoprotect-tutorial-step4.e05b067bb63bbb103b67887740ea0bb6b9044c40.pt-br.xlf)
+* Handoff Datetime: 2016-07-12 17:23:05
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
