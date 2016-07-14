@@ -1,42 +1,24 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/947803204b2ae2cb4894a731c6f7899b289e8713/Azure-RMSDocs/information-protection/faq.md) | HandedOffSuccess | [Details](#3264ee76cc675ef7ab2ab352d839fbca4d4876df154)
- [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md) | OutofSyncHandedBackSuccess | [Details](#ee2860da964b52bc41c0aea219110453f024b954386)
+ [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#bfb56fd4994a358d366d94b40f6c5fc889330303161)
 
 ## Item Details
-##### <a name='3264ee76cc675ef7ab2ab352d839fbca4d4876df154'></a> Source: [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/947803204b2ae2cb4894a731c6f7899b289e8713/Azure-RMSDocs/information-protection/faq.md)
+##### <a name='bfb56fd4994a358d366d94b40f6c5fc889330303161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/6dc4bf7c6868aa765a5caf4daf7a2c13a9395502/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pt-br.xlf)
-* Handoff Datetime: 2016-07-13 23:32:25
+* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/75920499d6107b62f3c8273d8f983642a5f04c52/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pt-br.xlf)
+* Handoff Datetime: 2016-07-14 17:29:44
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='ee2860da964b52bc41c0aea219110453f024b954386'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/6dc4bf7c6868aa765a5caf4daf7a2c13a9395502/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf)
-* Handoff Datetime: 2016-07-13 23:32:25
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pt-br/blob/03ebe102e393d3793748d90484a8973baff18143/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
-* Current Handback File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/e09e4d2ca89ca17202a0173be122a052a4a1960b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf)
-* Current Handback Datetime: 2016-07-09 02:01:50
-* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/e09e4d2ca89ca17202a0173be122a052a4a1960b/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pt-br.xlf)
-* Bilingual Datetime: 2016-07-09 02:10:11
 * [Back to Top](#report-top)
 
 
