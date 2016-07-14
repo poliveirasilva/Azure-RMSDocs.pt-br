@@ -1140,7 +1140,7 @@
 * Archive File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
-* Handback Datetime: 2016-07-14 17:03:43
+* Handback Datetime: 2016-07-14 17:43:58
 * Handback Error: [handback_transform_failed](#25894ed446911a55481d0f2ac628db2f46e477f648handback_transform_failed)
 * Bilingual File: [api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pt-br.xlf)
 * Bilingual Datetime: 2016-06-22 12:24:24
