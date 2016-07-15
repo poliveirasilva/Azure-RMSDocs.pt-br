@@ -1476,8 +1476,8 @@
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/66c33cc6ca9618290588e8b73be668fa24d10ddb/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf)
 * Handback Datetime: 2016-07-15 10:48:00
-* Bilingual File: [how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/35aee8278df8f5d13998d8790d586fcb7e4db061/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf)
-* Bilingual Datetime: 2016-07-02 22:01:17
+* Bilingual File: [how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/66c33cc6ca9618290588e8b73be668fa24d10ddb/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf)
+* Bilingual Datetime: 2016-07-15 11:04:10
 * [Back to Top](#report-top)
 
 ##### <a name='ad8c41c9f3f3515a817d508d8f5a8953daf4b44073'></a> Source: [Azure-RMSDocs\develop\how-to-use-file-api-with-aadrm-cloud.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4c3625676c7e794ef133c75881f666bae80e0513/Azure-RMSDocs/develop/how-to-use-file-api-with-aadrm-cloud.md)
