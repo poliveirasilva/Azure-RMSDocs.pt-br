@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "a0f71b3579480945087ffdea1b323da129da1de5",
-  "LastTranslatedCommit": "a1b00cff67806c914214f02663e38b4bf08a449f",
+  "LastTranslatedCommit": "ac48996af3ba4451f2bb155ffc6f4a809d18601f",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -77312,14 +77312,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "bab967cdc9ce08dfc92f3ed9b7afec14f4de2b89",
+      "TargetFileCommit": "ac48996af3ba4451f2bb155ffc6f4a809d18601f",
       "TargetFilePath": "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pt-br\\master\\how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf",
-      "HandbackFileCommit": "35aee8278df8f5d13998d8790d586fcb7e4db061",
-      "HandbackDateTime": "2016-07-02T21:53:20.2185351Z",
+      "HandbackFileCommit": "66c33cc6ca9618290588e8b73be668fa24d10ddb",
+      "HandbackDateTime": "2016-07-15T10:48:00.4071576Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-07-02T21:53:20.2185351Z",
+      "UpdatedDateTime": "2016-07-15T10:48:00.4071576Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.pt-br\\master\\archive\\how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pt-br.xlf",
       "ArchiveFileCommit": "f64b43e8e1290679fe7c80ac4bc22501d6d31064",
       "ArchiveFileDateTime": "2016-07-01T23:54:38.7240184Z",
