@@ -2098,7 +2098,7 @@
 * Archive File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handoff/blob/f64b43e8e1290679fe7c80ac4bc22501d6d31064/ol-handoff/Microsoft/Azure-RMSDocs-pr.pt-br/master/archive/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
 * Archive Datetime: 2016-07-01 23:54:38
 * Handback File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
-* Handback Datetime: 2016-07-15 14:05:17
+* Handback Datetime: 2016-07-15 15:37:03
 * Handback Error: [handback_transform_failed](#cb028afcbfd9b59f134539c434f4f49efc5e9092116handback_transform_failed)
 * Bilingual File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf](https://github.com/Microsoft/EM.handback/blob/2112115e4f05e78128e5d9ac6b498e492253a9ed/ol-handback/Microsoft/Azure-RMSDocs-pr.pt-br/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pt-br.xlf)
 * Bilingual Datetime: 2016-06-22 12:24:24
