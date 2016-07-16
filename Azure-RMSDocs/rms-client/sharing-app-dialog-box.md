@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Opções de caixa de diálogo para o aplicativo de compartilhamento Rights Management | Azure RMS
-description:
-keywords:
+title: "Opções de caixa de diálogo para o aplicativo de compartilhamento Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -61,7 +55,7 @@ Além das opções que você pode escolher, você deve também estar se pergunta
 
 -   Em comparação, quando você usa a **proteção interna (nativa)** do Rights Management com aplicativos que dão suporte a isso (por exemplo, arquivos do Office), a proteção se aplica ao arquivo mesmo que o arquivo seja enviado para outra pessoa ou salvo em outro local. E, ao proteger esses arquivos, você pode usar permissões restritivas, como somente leitura, ou a permissão para editar, mas não imprimir ou copiar. Por exemplo, você poderá selecionar **Visualizador – somente exibição**de modo que o conteúdo não possa ser editado, impresso ou copiado.
 
-Para obter informações técnicas adicionais, consulte a seção [Níveis de proteção – nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no [Guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
+Para obter informações técnicas adicionais, consulte a seção [Níveis de proteção – nativa e genérica](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) no [guia de administrador do aplicativo de compartilhamento Rights Management](sharing-app-admin-guide.md).
 
 ## O que é o arquivo .ppdf, criado automaticamente?
 
@@ -84,6 +78,7 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -20,6 +20,6 @@
 # [Implantar e usar o cliente](/rights-management/rms-client/use-client)
 # [Desenvolver e personalizar aplicativos](/rights-management/develop/developers-guide)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

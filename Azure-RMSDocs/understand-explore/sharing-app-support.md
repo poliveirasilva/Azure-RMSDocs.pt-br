@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Aplicativo RMS sharing para Windows e plataformas móveis | Azure RMS
-description:
-keywords:
+title: "Aplicativo RMS sharing para Windows e plataformas móveis | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+
 
 ---
 
@@ -42,7 +36,7 @@ Para computadores Windows, o aplicativo de compartilhamento RMS se integra de ma
 
 -   Um visualizador para abrir arquivos que foram protegidos pelo [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Esse visualizador será automaticamente invocado quando não houver outro aplicativo instalado que possa abrir o arquivo protegido.
 
--   Configuração de back-end para o Office 2010 que permite que o Word, Excel, PowerPoint e Outlook deste pacote funcionem perfeitamente com [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+-   Configuração de back-end para o Office 2010 que permite que o Word, o Excel, o PowerPoint e o Outlook deste pacote funcionem perfeitamente com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 Embora o compartilhamento de aplicativos para Windows RMS possa ser baixado e instalado para um único computador usando a [página do Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970), ele também suporta uma implantação corporativa para instalação silenciosa e configuração personalizada. Para obter mais informações, consulte os seguintes recursos:
 
@@ -50,7 +44,7 @@ Embora o compartilhamento de aplicativos para Windows RMS possa ser baixado e in
 
 -   [Guia do usuário do aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md)
 
-O aplicativo de compartilhamento RMS para dispositivos móveis é compatível com os dispositivos móveis utilizados com mais frequência, como iPad e iPhone, Android, Windows Phone e Windows RT. Os usuários podem baixar esse aplicativo da loja relevante, e há links para elas na [página do Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970).
+O aplicativo de compartilhamento RMS para dispositivos móveis é compatível com os dispositivos móveis utilizados com mais frequência, como iPad e iPhone, Android, Windows Phone e Windows RT. Os usuários podem baixar esse aplicativo da loja relevante, e há links para elas na [página do Gerenciamento de Direitos Microsoft](http://go.microsoft.com/fwlink/?LinkId=303970).
 
 **Se você tiver o Microsoft Intune**: já que o aplicativo RMS sharing inclui o Software Development Kit do Aplicativo do Microsoft Intune, você poderá usar as seguintes opções:
 
@@ -64,6 +58,7 @@ Para ver como outros aplicativos e serviços dão suporte ao Azure Rights Manage
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Servidor do AD RMS | Azure RMS
-description: O componente de servidor do Rights Management Services (RMS) é implementado por um conjunto de serviços Web executados nos Serviços de Informações da Internet da Microsoft.
-keywords:
+description: "O componente de servidor do Rights Management Services (RMS) é implementado por um conjunto de serviços Web executados nos Serviços de Informações da Internet da Microsoft."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+
 
 ---
 
@@ -30,7 +26,8 @@ Este tópico descreve o a finalidade e as funções do Servidor RMS para Azure e
 
 **Azure RMS** – para obter mais informações sobre como usar o serviço do Azure Rights Management, consulte [Habilitar seu aplicativo de serviço para trabalhar com RMS baseado em nuvem](how-to-use-file-api-with-aadrm-cloud.md).
 
-> [!IMPORTANT] Recomendamos que você desenvolva e teste seu aplicativo usando o Azure RMS.
+> [!IMPORTANT] 
+> Recomendamos que você desenvolva e teste seu aplicativo usando o Azure RMS.
 
 **Windows Server** – para servidores RMS locais, começando com o Windows Server 2008, você pode instalar e configurar o serviço RMS adicionando-o como uma função. Para instalar o serviço em sistemas operacionais anteriores, baixe-o do Centro de Download da Microsoft em [Microsoft Windows Rights Management Services com Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909).
 
@@ -60,6 +57,7 @@ Dos muitos serviços Web instalados, os seguintes são importantes para o desenv
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Introdução | Azure RMS
-description: A plataforma do RMS SDK 2.1 permite aos desenvolvedores compilar aplicativos que aproveitam a proteção de informações do RMS.
-keywords:
+title: "Introdução | Azure RMS"
+description: "A plataforma do RMS SDK 2.1 permite aos desenvolvedores compilar aplicativos que aproveitam a proteção de informações do RMS."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+
 
 ---
 # Introdução
@@ -39,17 +35,17 @@ Este tópico o orientará durante o processo de configuração e execução do s
 | [Instalar o SDK](install-the-rms-sdk.md) | Este tópico o orientará durante a instalação das ferramentas de desenvolvedor.|
 | [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Este tópico contém instruções sobre como configurar um projeto do Visual Studio para usar o RMS SDK 2.1.|
 | [Desenvolvendo seu aplicativo](developing-your-application.md) | Este tópico contém orientações essenciais sobre os principais aspectos de um aplicativo habilitado para RMS e pode servir como a base do desenvolvimento de seu próprio aplicativo.|
-| [Testando seu aplicativo](running-your-first-application.md) |Este tópico contém instruções sobre a configuração dos testes para seu aplicativo.|
+| [Testando seu aplicativo](how-to-set-up-your-test-environment.md) |Este tópico contém instruções sobre a configuração dos testes para seu aplicativo.|
 | [Implantar na produção](deploying-your-application.md) |Este tópico orienta você quanto à opções de implantação para seu aplicativo habilitado para direitos.|
-
-Depois de ter começado usar, confira alguns dos nossos outros [exemplos de RMS](samples.md). Em seguida, mantenha-se atualizado por meio de nosso [Blog do Desenvolvedor do RMS](http://blogs.msdn.com/b/rms/).
 
 
 Tente usar o RMS SDK 2.1 seguindo as diretrizes nestes tópicos:
 
--   [Instalar o SDK](install-the-rms-sdk.md)
--   [Testando seu aplicativo habilitado para direitos](running-your-first-application.md)
--   [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
+- [Instalar o SDK](install-the-rms-sdk.md)
+- [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- [Desenvolvendo seu aplicativo](developing-your-application.md)
+- [Testando seu aplicativo](how-to-set-up-your-test-environment.md)
+- [Implantar na produção](deploying-your-application.md)
 
 ### Por que usar o RMS SDK 2.1 para proteger seu conteúdo
 
@@ -71,17 +67,15 @@ O RMS SDK 2.1 dá suporte a uma variedade de importantes plataformas de cliente 
 
 ## Tópicos relacionados
 
-* [Exemplos do AD RMS](samples.md)
+* [Guia do desenvolvedor do RMS](developers-guide.md)
 * [Blog do Desenvolvedor do AD RMS](http://blogs.msdn.com/b/rms/)
-* [Instalar o SDK](install-the-rms-sdk.md)
-* [IPCHelloWorld - um aplicativo de exemplo](how-to-build-your-first-application.md)
-* [Visão geral](ad-rms-overview.md)
-* [Plataformas com suporte](supported-platforms.md)
+
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

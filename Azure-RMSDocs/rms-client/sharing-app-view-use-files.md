@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Exibir e usar arquivos que foram protegidos pelo Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -39,7 +33,7 @@ Quando o [aplicativo de compartilhamento Rights Management (RMS) é instalado em
 > -   Para se registrar para esta conta, clique no link de registro do [RMS para pessoas físicas](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Ao se registrar, use seu endereço de email da empresa em vez de um endereço de email pessoal. Se você estiver se registrando porque recebeu por email um anexo protegido, use o mesmo endereço de email no qual a mensagem foi recebida.
-> -   Para saber mais, confira [RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> -   Para obter mais informações, consulte [RMS para pessoas físicas e Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Para exibir um arquivo protegido
 Usando o Explorador de arquivos ou a mensagem de email que contém o anexo, clique duas vezes no arquivo protegido e insira suas credenciais se solicitado.
@@ -59,7 +53,7 @@ A forma como o arquivo é aberto depende de como ele foi protegido, o que pode s
 
     ![Caixa de diálogo para um pfile compartilhado por email ao usar o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*))**
+- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*)**
 
     O arquivo foi protegido nativamente como uma cópia de somente leitura.
 
@@ -91,7 +85,7 @@ Se depois de abrir o arquivo protegido, você quiser fazer mais do que apenas l�
 
     O novo arquivo não está mais protegido. Se desejar protegê-lo, você deve fazê-lo manualmente. Para obter instruções, consulte [Proteger um arquivo em um dispositivo (proteger in-loco) usando o aplicativo de compartilhamento Rights Management](sharing-app-protect-in-place.md).
 
-- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*))**
+- **O arquivo tem uma extensão de nome de arquivo *.ppdf* ou é um arquivo de texto ou imagem protegido (como *.ptxt* ou *.pjpg*)**
 
     Só é possível visualizar o arquivo e, se você o renomear ou mover, a proteção permanece com o arquivo.
 
@@ -113,6 +107,7 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

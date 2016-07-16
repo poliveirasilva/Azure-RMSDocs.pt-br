@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Configurar o Azure RMS para autenticação de ADAL | Azure RMS
-description: Descreve as etapas para configurar a autenticação baseada no Azure ADAL
+title: "Configurar o Azure RMS para autenticação de ADAL | Azure RMS"
+description: "Descreve as etapas para configurar a autenticação baseada no Azure ADAL"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ Você precisará do seguinte:
 - Uma [assinatura do Microsoft Azure](https://azure.microsoft.com/en-us/) (uma avaliação gratuita é suficiente). Para obter mais informações, consulte [How users sing up for RMS for individuals](../understand-explore/rms-for-individuals-user-sign-up.md) (Como usuários se inscrevem no RMS para as pessoas)
 - Uma assinatura do Microsoft Azure Rights Management (uma conta gratuita [RMS para pessoas físicas](https://technet.microsoft.com/en-us/library/dn592127.aspx) é suficiente).
 
-> [!NOTE] Pergunte ao seu administrador de TI se você tem ou não uma assinatura do Microsoft Azure Rights Management e peça que ele execute as etapas abaixo. Se sua organização não tiver uma assinatura, peça que o administrador de TI crie uma. Além disso, seu administrador de TI deve assinar com uma *Conta corporativa ou de estudante*, em vez de uma *Conta da Microsoft* (por exemplo, Hotmail).
+> [!NOTE] 
+> Pergunte ao seu administrador de TI se você tem ou não uma assinatura do Microsoft Azure Rights Management e peça que ele execute as etapas abaixo. Se sua organização não tiver uma assinatura, peça que o administrador de TI crie uma. Além disso, seu administrador de TI deve assinar com uma *Conta corporativa ou de estudante*, em vez de uma *Conta da Microsoft* (por exemplo, Hotmail).
 
 Após inscrever-se no Microsoft Azure:
 
@@ -81,11 +77,13 @@ Após inscrever-se no Microsoft Azure:
 
 ![Escolher CONFIGURAR](../media/ConfigYourApp.png)
 
->[!NOTE] Copie a **ID DO CLIENTE** e a **URI de REDIRECIONAMENTO** e armazene-os para uso futuro ao configurar o cliente RMS.
+>[!NOTE] 
+> Copie a **ID DO CLIENTE** e a **URI de REDIRECIONAMENTO** e armazene-os para uso futuro ao configurar o cliente RMS.
 
 - Navegue até a parte inferior das configurações do aplicativo e escolha o botão **Adicionar aplicativo** em **Permissões para outros aplicativos**.
 
->[!NOTE] As **Permissões Delegadas** que são mostradas para o Microsoft Azure Active Directory estão corretas por padrão – somente uma opção deve ser selecionada e essa opção é **Entrar e ler o perfil do usuário**.
+>[!NOTE] 
+> As **Permissões Delegadas** que são mostradas para o Microsoft Azure Active Directory estão corretas por padrão – somente uma opção deve ser selecionada e essa opção é **Entrar e ler o perfil do usuário**.
 
 ![Selecionar Adicionar aplicativo](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ Após inscrever-se no Microsoft Azure:
 ![Selecionar SALVAR](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

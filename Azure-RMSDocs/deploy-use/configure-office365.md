@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Office 365&colon; Configuração para clientes e serviços online | Azure RMS
-description:
-keywords:
+title: "Office 365&colon; Configuração para clientes e serviços online | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+
 
 ---
 
@@ -120,7 +114,7 @@ As seguintes etapas fornecem um conjunto comum de comandos que você executaria 
     Remove-PSSession $Session
     ```
 
-Os usuários agora podem proteger suas mensagens de email usando o Azure RMS. Por exemplo, no Outlook Web App, selecione **Definir permissões** no menu estendido (**...**) e, em seguida, escolha **Não Encaminhar** ou um dos modelos disponíveis para aplicar a proteção de informações para mensagem de email e anexos. No entanto, como o Outlook Web App armazena em cache a interface do usuário por um dia, aguarde esse período de tempo de espera antes de tentar aplicar proteção de informações para mensagens de email e depois de executar estes comandos de configuração. Antes que a interface do usuário seja atualizada para refletir a nova configuração, você não verá as opções do menu **definir permissões** .
+Os usuários agora podem proteger suas mensagens de email usando o Azure RMS. Por exemplo, no Outlook Web App, selecione **definir permissões** no menu estendido (**...**) e, em seguida, escolha **não encaminhar** ou um dos modelos disponíveis para aplicar a proteção de informações para a mensagem de email e anexos. No entanto, como o Outlook Web App armazena em cache a interface do usuário por um dia, aguarde esse período de tempo de espera antes de tentar aplicar proteção de informações para mensagens de email e depois de executar estes comandos de configuração. Antes que a interface do usuário seja atualizada para refletir a nova configuração, você não verá as opções do menu **definir permissões** .
 
 > [!IMPORTANT]
 > Se você criar novos [modelos personalizados](configure-custom-templates.md) para o Azure RMS ou atualizar os modelos, todas as vezes, você deverá executar o seguinte comando do PowerShell do Exchange Online (se necessário, execute as etapas 2 e 3 primeiro) para sincronizar essas alterações para o Exchange Online: `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
@@ -160,18 +154,18 @@ Essa configuração é feita pelo administrador local do SharePoint.
 Depois que você tiver ativado o serviço IRM para o SharePoint Online, a biblioteca de documentos OneDrive for Business dos usuários poderá, então, ser configurada para proteção do Rights Management.  Os usuários podem configurá-la para si mesmos usando o ícone **Configurações** em seu OneDrive. Embora os administradores não possam configurar o Rights Management para os usuários do OneDrive for Business usando o centro de administração do SharePoint, você pode fazê-lo usando o Windows PowerShell.
 
 > [!NOTE]
-> Para mais informações sobre como configurar o OneDrive for Business, consulte a documentação do Office, [Configurar o OneDrive for Business no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
+> Para mais informações sobre como configurar o OneDrive for Business, consulte a documentação do Office,[Configurar o OneDrive for Business no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
 
 #### Configuração para usuários
 Dê essas instruções aos usuários para que eles possam configurar o OneDrive for Business e proteger seus arquivos corporativos por IRM.
 
-1.  No OneDrive, clique no ícone **Configurações** para abrir o menu Configurações e, em seguida, clique em **Conteúdo do Site**.
+1.  No OneDrive, clique no ícone de **configurações** para abrir o menu Configurações e, em seguida, clique em **conteúdo do Site**.
 
-2.  Passe o mouse sobre o bloco **Documentos**, selecione as reticências (**...**) e, em seguida, clique em **CONFIGURAÇÕES.**
+2.  Foque no botão **documentos** , selecione as reticências (**...**) e, em seguida, clique em **configurações.**
 
-3.  Na página **Configurações**, na seção **Permissões e Gerenciamento**, clique em **Gerenciamento de Direitos de Informação**.
+3.  Na página de **configurações** , na seção de **permissões e gerenciamento** , clique em **Gerenciamento de Direitos de Informações**.
 
-4.  Na página **Configurações de Gerenciamento de Direitos de Informação**, marque a caixa de seleção **Restringir permissões nesta biblioteca no download**, especifique sua opção de nome e uma descrição para as permissões e, opcionalmente, clique em **MOSTRAR OPÇÕES** para configurar opções adicionais e depois clique em **OK**.
+4.  Na página de **Configurações de Gerenciamento de Direitos de Informações** , marque a caixa de seleção **restringir as permissões nesta biblioteca no download** , especifique sua opção de nome e uma descrição para as permissões e, opcionalmente, clique em **MOSTRAR OPÇÕES** para configurar opções adicionais, logo depois clique em **OK**.
 
     Para obter mais informações sobre as opções de configuração, consulte as instruções em [Aplicar Gerenciamento de Direitos de Informações para uma lista ou biblioteca](https://support.office.com/article/Apply-Information-Rights-Management-to-a-list-or-library-3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1) na documentação do Office.
 
@@ -180,9 +174,9 @@ Como esta configuração confia nos usuários em vez de confiar em um administra
 #### Configurações para administradores
 Embora você não possa configurar o IRM para usuários do OneDrive for Business usando o centro de administração do SharePoint, você pode fazê-lo usando o Windows PowerShell. Para ativar o IRM para essas bibliotecas, siga estas etapas:
 
-1.  Baixe e instale o [SDK de componentes do cliente SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
+1.  Baixe e instale o [SDK do SharePoint Online Client Components](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
 
-2.  Baixe e instale o [Shell de gerenciamento do SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
+2.  Baixe e instale o [SharePoint Online Management Shell](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
 3.  Copie o conteúdo do script a seguir e nomeie o arquivo Set-IRMOnOneDriveForBusiness.ps1 no seu computador.
 
@@ -584,7 +578,7 @@ Embora você não possa configurar o IRM para usuários do OneDrive for Business
 > [!TIP]
 > Você também poderá usar este script para configurar o IRM para uma biblioteca do SharePoint Online. Para essa configuração, você provavelmente desejará habilitar a opção adicional **Não permitir que os usuários carreguem documentos sem suporte ao IRM** para garantir que a biblioteca contenha somente documentos protegidos.    Para isso, adicione o parâmetro `-IrmReject` ao comando Set-IrmConfiguration no script.
 >
-> Você também precisará modificar a variável `$webUrls` (por exemplo, **https://contoso.sharepoint.com**) e a `$listTitle` variável (por exemplo, **$Reports**).
+> Você também precisará modificar a variável `$webUrls` (por exemplo, **https://contoso.sharepoint.com**) e a variável `$listTitle` (por exemplo, **$Reports**).
 
 Se você precisar desabilitar o IRM para as bibliotecas do OneDrive for Business do usuário, consulte a seção [Script para desabilitar o IRM para OneDrive for Business](#script-to-disable-irm-for-onedrive-for-business).
 
@@ -1111,6 +1105,7 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Como adicionar direitos de proprietário explícitos | Azure RMS
-description: Seu aplicativo deve adicionar explicitamente direitos de "Proprietário" ao criar uma licença do zero.
-keywords:
+title: "Como adicionar direitos de proprietário explícitos | Azure RMS"
+description: "Seu aplicativo deve adicionar explicitamente direitos de \"Proprietário\" ao criar uma licença do zero."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ Seu aplicativo deve adicionar explicitamente direitos de "Proprietário" ao cria
 
 Quando seu aplicativo estiver criando um identificador de licença usando [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), ele também deverá conceder o proprietário todos os direitos (permissões) explicitamente.
 
->[!NOTE] Configurar um usuário como "proprietário" usando [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com a propriedade **IPC\_LI\_OWNER** não concede ao proprietário permissões completas.
+>[!NOTE] 
+> Configurar um usuário como "proprietário" usando [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com a propriedade **IPC\_LI\_OWNER** não concede ao proprietário permissões completas.
 
 O código de exemplo a seguir mostra somente as etapas envolvidas na criação e adição de direitos específicos para uma determinada licença.
 
@@ -118,6 +115,7 @@ Estes dois direitos são adicionados a esses usuários:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

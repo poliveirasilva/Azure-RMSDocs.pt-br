@@ -40,6 +40,6 @@ Quando estiver pronto para iniciar a implantação do Azure RMS, consulte [Rotei
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

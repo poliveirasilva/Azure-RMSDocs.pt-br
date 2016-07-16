@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Como instalar, configurar e testar com um Servidor RMS | Azure RMS
 description: Instale e configure o servidor RMS para testar seu aplicativo habilitado para direitos.
-keywords:
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 
     Para fazer testes com um Servidor RMS, configure a descoberta no lado do servidor ou a descoberta no lado do cliente para permitir que o Rights Management Service Client 2.1 descubra e estabeleça a comunicação com o Servidor RMS.
 
-    > [!Note] Testar com o Azure RMS não requer configuração de descoberta.
+    > [!Note]
+    > Testar com o Azure RMS não requer configuração de descoberta.
 
   - Na descoberta do lado do servidor, um administrador registra um ponto de conexão de serviço (SCP) para o cluster RMS raiz com o Active Directory, e o cliente consulta o Active Directory para descobrir o SCP e estabelecer uma conexão com o servidor.
   - Na descoberta no lado do cliente, você define as configurações de Descoberta do Serviço RMS no Registro no computador no qual o RMS Client 2.1 está em execução. Essas configurações apontam o RMS Client 2.1 para uso do servidor RMS. Quando estiverem presentes, a descoberta no lado do servidor não será executada.
 
-  Para configurar a descoberta no lado do cliente, você pode definir as seguintes chaves do Registro para apontarem para seu Servidor RMS. Para saber mais sobre como configurar a descoberta no lado do serviço, confira [Notas de implantação do RMS Client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+  Para configurar a descoberta no lado do cliente, você pode definir as seguintes chaves do Registro para apontarem para seu Servidor RMS. Para obter informações sobre como configurar a descoberta no lado do serviço, confira [Notas de implantação do RMS Client 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Value**: (Default): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] Por padrão, essas chaves não existem no Registro e devem ser criadas.
+>[!NOTE] 
+> Por padrão, essas chaves não existem no Registro e devem ser criadas.
 
->[!IMPORTANT] Se você estiver executando um aplicativo de 32 bits em uma versão de 64 bits do Windows, defina essas chaves no seguinte local de chave:<p>
+>[!IMPORTANT] 
+> Se você estiver executando um aplicativo de 32 bits em uma versão de 64 bits do Windows, defina essas chaves no seguinte local de chave:<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ As etapas a seguir orientarão você pela configuração de seu servidor RMS e i
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configuração do iOS e OS X | Azure RMS
-description: Os aplicativos iOS e OS X podem usar o RMS SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM.
-keywords:
+title: "Configuração do iOS e OS X | Azure RMS"
+description: "Os aplicativos iOS e OS X podem usar o RMS SDK 4.2 para habilitar a proteção integrada de informações em seus aplicativos usando o AAD RM."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +47,7 @@ Recomendamos o seguinte software em seu sistema de desenvolvimento:
 
     Esse SDK pode ser usado para desenvolver para o iOS 7.0 e OS X 10.8 e posterior.
 
--   Biblioteca de autenticação: recomendamos o uso da [ADAL (Azure AD Authentication Library)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que dão suporte ao OAuth 2.0 também podem ser usadas.
+-   Biblioteca de autenticação: recomendamos o uso da [ADAL (Azure AD Authentication Library)](https://msdn.microsoft.com/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que dão suporte ao OAuth 2.0 também podem ser usadas.
 
     Para saber mais, consulte [ADAL para iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) ou [ADAL para OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
@@ -122,6 +118,7 @@ Nossa biblioteca de interface do usuário fornece uma interface de usuário reut
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

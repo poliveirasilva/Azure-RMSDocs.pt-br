@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Preços e restrições do BYOK | Azure RMS
-description:
-keywords:
+title: "Preços e restrições do BYOK | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+
 
 ---
 
@@ -60,12 +54,13 @@ Se você estiver migrando para o Azure RMS do AD RMS, você pode importar a sua 
 
 ## Próximas etapas
 
-Se você decidiu gerenciar sua própria chave, vá para [Implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
+Se você fez a decisão para gerenciar sua própria chave, vá para [Implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
 
 Se você decidiu permanecer com a configuração padrão em que a Microsoft gerencia sua chave de locatário, consulte a seção [Próximas etapas](plan-implement-tenant-key.md#next-steps) do artigo Planejamento e implementação de sua chave de locatário do Azure Rights Management.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

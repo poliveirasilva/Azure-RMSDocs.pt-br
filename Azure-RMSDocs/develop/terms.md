@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Termos | Azure RMS
-description: Uma coleção de definições de terminologia específicas do Rights Management Services.
-keywords:
+description: "Uma coleção de definições de terminologia específicas do Rights Management Services."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 5779cc10503ad7afe997e031a467021b513fc510
+
 
 ---
 
@@ -29,7 +25,7 @@ ms.suite: ems
 Uma coleção de definições de terminologia específicas do Rights Management Services.
 
 **Algoritmo preterido**  
-Uma configuração modal que implementa um esquema de proteção de conteúdo mais antigo, referindo-se especificamente ao modo de criptografia ECB (guia eletrônico). Nesse SDK, a configuração permite que você gere licenças compatíveis com a biblioteca MSDRM usada pelo [AD Rights Management Services SDK](https://msdn.microsoft.com/en-us/library/windows/desktop/cc530379.aspx).
+Uma configuração modal que implementa um esquema de proteção de conteúdo mais antigo, referindo-se especificamente ao modo de criptografia ECB (guia eletrônico). Nesse SDK, a configuração permite que você gere licenças compatíveis com a biblioteca MSDRM usada pelo [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx).
 
 Essa configuração pode fazer seu aplicativo proteger o conteúdo de uma maneira que não esteja em conformidade com os padrões de seus clientes para proteção de conteúdo.
 
@@ -49,6 +45,7 @@ O formato de arquivo PFile é transparente para o desenvolvedor do aplicativo co
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

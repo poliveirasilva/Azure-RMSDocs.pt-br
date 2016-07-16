@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Visão geral | Azure RMS
-description: O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado.
-keywords:
+title: "Visão geral | Azure RMS"
+description: "O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -44,7 +40,7 @@ A seguir estão apenas alguns dos cenários ao qual os aplicativos criados com o
 -   Os proprietários de uma biblioteca de documentos online desejam habilitar direitos exibir, imprimir ou editar documentos com base na identidade do usuário.
 -   Uma empresa deseja publicar informações confidenciais de funcionários em um site interno que restrinja os privilégios de visualização e edição para determinados usuários.
 
-Para obter mais informações sobre o servidor AD RMS, o cliente AD RMS e sua funcionalidade, consulte o conteúdo do TechNet para [Documentação do profissional de TI para AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx).
+Para obter mais informações sobre o servidor AD RMS, o cliente AD RMS e sua funcionalidade, consulte o conteúdo do TechNet para [Documentação do profissional de TI para AD RMS](https://TechNet.Microsoft.Com/library/cc771234.aspx).
 
 Os tópicos restantes nesta seção abordam a Arquitetura do RMS e suas implementações.
 
@@ -66,6 +62,7 @@ Os tópicos restantes nesta seção abordam a Arquitetura do RMS e suas implemen
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

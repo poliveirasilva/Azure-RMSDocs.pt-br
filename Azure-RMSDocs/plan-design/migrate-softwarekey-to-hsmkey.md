@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Etapa 2&colon; Migração de chave protegida por software para chave protegida por HSM | Azure RMS
-description:
-keywords:
+title: "Etapa 2&colon; Migração de chave protegida por software para chave protegida por HSM | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 Estas instruções fazem parte do [caminho de migração do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) e são aplicáveis somente se a chave do AD RMS é protegida por software e se você deseja migrar para o Azure Rights Management com uma chave de locatário protegida por HSM. 
 
-Se este não for o cenário de configuração escolhido, volte para a [Etapa 2. Exporte os dados de configuração do AD RMS e importe-os para o Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) e escolha uma configuração diferente.
+Se este não for o cenário de configuração escolhido, volte para a [Etapa 2. Exporte os dados de configuração do AD RMS e importe-os para o Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) e escolha uma configuração diferente.
 
 Esse é um procedimento de três partes para importar a configuração do AD RMS para o Azure RMS, para resultar na sua chave de locatário do Azure RMS gerenciada por você (BYOK).
 
@@ -40,7 +34,7 @@ Extraia primeiro a sua chave do certificado de licenciante para servidor (SLC) d
 
 ## Parte 1: extrair o SLC dos dados de configuração e importar a chave para o HSM local
 
-1.  Use as seguintes etapas na seção [Implementando "traga a sua própria chave (BYOK)"](plan-implement-tenant-key.md#BKMK_ImplementBYOK) do tópico [Planejando e implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md):
+1.  Siga as etapas na seção [Implementando sua própria chave (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) do [Planejando e implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md), usando o procedimento **Gerar e transferir sua chave de locatário – na Internet** com as seguintes exceções:
 
     -   **Gerar e transferir a chave de locatário - pela Internet**: **Prepare a sua estação de trabalho conectada à Internet**
 
@@ -79,7 +73,7 @@ Agora que o SLC foi extraído para ser uma chave baseada em HSM, você já pode 
 
 ## Parte 2: Empacotar e transferir a sua chave HSM para o Azure RMS
 
-1.  Use as seguintes etapas da seção [Implementando "traga a sua própria chave (BYOK)"](plan-implement-tenant-key.md#BKMK_ImplementBYOK) de [Planejando e implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md):
+1.  Use as seguintes etapas da seção [Implementando "traga a sua própria chave (BYOK)"](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) de [Planejando e implementando sua chave de locatário do Azure Rights Management](plan-implement-tenant-key.md):
 
     -   **Gerar e transferir a chave de locatário - pela Internet**: **Prepare sua chave de locatário para transferência**
 
@@ -108,11 +102,12 @@ Agora que já transferiu a chave HSM para o Azure RMS, você já pode importar o
     Disconnect-AadrmService
     ```
 
-Agora você está pronto para ir para a [Etapa 3. Ativar locatário do RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+Agora você está pronto para ir para a [Etapa 3. Ativar o seu locatário do RMS](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

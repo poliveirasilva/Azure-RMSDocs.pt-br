@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Rastrear e revogar seus documentos ao usar o aplicativo RMS sharing | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -43,11 +37,11 @@ Ao acessar esse site, basta conectar para acompanhar seus documentos. Levando em
 
 -   Se quiser configurar notificações por email: Clique em **Configurações** e selecione como e se deseja enviar um email quando o documento for acessado.
 
--   Se você tiver dúvidas ou quiser fazer comentários sobre o site de acompanhamento de documentos: clique no ícone Ajuda para acessar as [Perguntas frequentes sobre acompanhamento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
+-   Se você tiver dúvidas ou quiser fazer comentários sobre o site de rastreamento de documentos: Clique no ícone Ajuda para acessar as [Perguntas frequentes sobre o rastreamento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
 ## Usando o Office para acessar o site de rastreamento de documentos
 
--   Para aplicativos do Office, Word, Excel e PowerPoint: na guia **Página Inicial**, no grupo **RMS**, clique em **Compartilhamento Protegido**e em **Acompanhar Uso**.
+-   Para o aplicativos do Office, Word, Excel e PowerPoint: Na guia **Página Inicial** , no grupo **RMS** , clique em **Compartilhamento protegido**e em **Acompanhar Uso**.
 
     ![Acompanhar o uso de aplicativos do Office ao usar o aplicativo de compartilhamento RMS ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
@@ -55,7 +49,7 @@ Ao acessar esse site, basta conectar para acompanhar seus documentos. Levando em
 
     ![Selecione Acompanhar Uso do Outlook ao usar o aplicativo de compartilhamento RMS ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-Se você não vir essas opções para o RMS, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento do Rights Management](install-sharing-app.md).
+Se você não vir essas opções para o RMS, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
 
 ### Outras maneiras de rastrear e revogar seus documentos
 Além de controlar seus documentos em computadores Windows usando aplicativos do Office, você também pode usar estas alternativas:
@@ -68,7 +62,7 @@ Além de controlar seus documentos em computadores Windows usando aplicativos do
 
 #### Usando um navegador da Web para acessar o site de rastreamento de documentos
 
--   Usando um navegador com suporte, vá para o [site de acompanhamento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
+-   Usando um navegador com suporte, vá para o [site de rastreamento de documentos](http://go.microsoft.com/fwlink/?LinkId=529562).
 
     Navegadores compatíveis: É recomendável usar o Internet Explorer, no mínimo a versão 10, mas você pode usar qualquer um dos seguintes navegadores para usar o site de rastreamento de documentos:
 
@@ -105,6 +99,7 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

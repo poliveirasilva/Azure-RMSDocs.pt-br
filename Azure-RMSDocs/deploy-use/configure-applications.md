@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Configurando aplicativos do Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 8fe934c51e852791d19fbb336deaf9cd7be9817b
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 > [!NOTE]
 > Essas informações são para os administradores de TI e consultores que implantaram o Azure Rights Management. Se você estiver procurando ajuda e informações sobre como usar o Rights Management para um aplicativo específico ou como abrir um ficheiro com direitos protegidos, use a ajuda e orientação que acompanha o seu aplicativo.
 >
-> Por exemplo, para aplicativos do Office, clique no ícone de Ajuda e insira termos de pesquisa como **Rights Management** ou **IRM**. Para o aplicativo de compartilhamento RMS para Windows, consulte o [Guia de usuário de aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
+> Por exemplo, para aplicativos do Office, clique no ícone de Ajuda e insira termos de pesquisa como **Rights Management** ou **IRM**. Para o aplicativo RMS sharing para Windows, consulte o [Guia de usuário de aplicativo de compartilhamento Rights Management](../rms-client/sharing-app-user-guide.md).
 
 Após ter implantado o Azure Rights Management (Azure RMS) para a sua organização, use a seguinte informação para configurar aolicações e serviços para oferecer suporte ao Azure Rights Management (RMS). Isso inclui aplicativos do Office como Word 2013 e Word 2010 e serviços como o Exchange Online (regras de transporte, prevenção de perda de dados, não encaminhar e criptografia de mensagens) e o SharePoint Online (bibliotecas protegidas). Para obter mais informações sobre como esses aplicativos dão suporte ao Azure RMS, consulte [Como os aplicativos dão suporte ao Azure Rights Management](../understand-explore/applications-support.md).
 
@@ -80,6 +74,7 @@ Depois de configurar seus aplicativos para dar suporte ao Azure Rights Managemen
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
