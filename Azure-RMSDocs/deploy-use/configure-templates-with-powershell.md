@@ -60,6 +60,6 @@ Os cmdlets que oferecem suporte à criação e gerenciamento de modelos são:
 [Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -71,6 +71,6 @@ Antes de executar qualquer comando que configure o serviço [!INCLUDE[aad_rights
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

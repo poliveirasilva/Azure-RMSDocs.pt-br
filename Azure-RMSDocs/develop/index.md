@@ -52,6 +52,6 @@ Esta coleção de exemplos de código do Microsoft RMS e ferramentas de suporte 
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 
