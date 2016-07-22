@@ -226,6 +226,6 @@ Para obter mais informações sobre o uso do Windows PowerShell para o Azure Rig
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

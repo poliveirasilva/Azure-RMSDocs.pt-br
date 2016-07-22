@@ -187,6 +187,6 @@ Ao editar o registro nos computadores que executam o Office 2010, você pode def
 [Configurar modelos personalizados do Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

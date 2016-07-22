@@ -1,5 +1,5 @@
 ---
-title: Requisitos do Azure RMS&
+title: "Requisitos do Azure RMS& #58; Diretório do Azure AD | Azure RMS"
 description: 
 keywords: 
 author: cabailey
@@ -76,6 +76,6 @@ Para verificar se há outros requisitos, consulte [Requisitos do Azure Rights Ma
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

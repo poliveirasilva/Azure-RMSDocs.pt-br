@@ -108,6 +108,6 @@ Agora você está pronto para ir para a [Etapa 3. Ativar o seu locatário do RMS
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
