@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Gerar e transferir a chave de inquilino – através da Internet | Azure RMS
-description:
-keywords:
+title: "Gerar e transferir a chave de inquilino – através da Internet | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -46,28 +40,28 @@ Para preparar a estação de trabalho que está ligada à Internet, siga estes 3
 Na estação de trabalho ligada à Internet, transfira e instale o módulo do Windows PowerShell para o Azure Rights Management.
 
 > [!NOTE]
-> Caso já tenha transferido este módulo do Windows PowerShell anteriormente, execute o seguinte comando para verificar se o número de versão é 2.1.0.0 ou posterior: `(Get-Module aadrm -ListAvailable).Version`
+> Caso já tenha transferido este módulo do Windows PowerShell anteriormente, execute o seguinte comando para verificar se o seu número de versão é 2.1.0.0 ou posterior: `(Get-Module aadrm -ListAvailable).Version`
 
 Para obter instruções de instalação, consulte [Instalar o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md).
 
-### Passo 2: obter o ID de inquilino do Azure Active Directory
+### Passo 2: obter o seu ID de inquilino do Azure Active Directory
 Inicie o Windows PowerShell com a opção **Executar como administrador** e execute os seguintes comandos:
 
--   Utilize o cmdlet [Connect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629415.aspx) para se ligar ao serviço do Azure RMS:
+-   Utilize o cmdlet [Connect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629415.aspx) para efetuar uma ligação ao serviço Azure RMS:
 
     ```
     Connect-AadrmService
     ```
     Quando for solicitado, introduza as credenciais de administrador de inquilinos do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (normalmente, utilizará uma conta de um administrador global do Azure Active Directory ou do Office 365).
 
--   Utilize o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para visualizar a configuração do inquilino:
+-   Utilize o cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) para ver a configuração do seu inquilino:
 
     ```
     Get-AadrmConfiguration
     ```
     A partir da saída, guarde o GUID da primeira linha (BPOSId). Este é o ID de inquilino do Azure Active Directory, que irá precisar mais tarde quando preparar a chave de inquilino para o carregamento.
 
--   Utilize o cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) para desligar do serviço do Azure RMS até estar pronto para carregar a chave:
+-   Utilize o cmdlet [Desligar AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) para desligar do serviço Azure RMS até estar pronto para carregar a chave:
 
     ```
     Disconnect-AadrmService
@@ -85,7 +79,7 @@ Aceda ao Centro de Transferências da Microsoft e [transfira o conjunto de ferra
 |Ásia|AzureRMS-BYOK-tools-AsiaPacific.zip|
 O conjunto de ferramentas inclui o seguinte:
 
--   Um pacote da Chave de Troca de Chaves (KEK) que tem um nome que começa com **BYOK-KEK-pkg-**.
+-   Um pacote da Chave de Troca de Chaves (KEK) que tem um nome a começar com **BYOK-KEK-pkg-**.
 
 -   Um pacote do Universo de Segurança que tem um nome que começa com **BYOK-SecurityWorld-pkg-**.
 
@@ -95,7 +89,7 @@ O conjunto de ferramentas inclui o seguinte:
 
 -   Um Visual C++ Redistributable Package, com o nome **vcredist_x64.exe**.
 
-Copie o pacote para uma pen USB ou outro armazenamento portátil.
+Copie o pacote para outro armazenamento portátil ou uma unidade USB.
 
 ## Preparar a estação de trabalho desligada
 Para preparar a estação de trabalho que não está ligada a uma rede (Internet ou rede interna), siga estes 2 passos:
@@ -107,7 +101,7 @@ Para preparar a estação de trabalho que não está ligada a uma rede (Internet
 ### Passo 1: preparar a estação de trabalho desligada com o HSM da Thales
 Na estação de trabalho desligada, instale o software de suporte nCipher (Thales) num computador Windows e, em seguida, anexe um HSM da Thales a esse computador.
 
-Certifique-se de que as ferramentas da Thales estão no seu caminho **(%nfast_home%\bin** e **%nfast_home%\python\bin**). Por exemplo, escreva o seguinte:
+Certifique-se de que as ferramentas de Thales estão no seu caminho **(%nfast_home%\bin** e **%nfast_home%\python\bin**). Por exemplo, escreva o seguinte:
 
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
@@ -115,11 +109,11 @@ set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 Para mais informações, consulte o guia de utilizador incluído no HSM da Thales ou visite o Web site da Thales para o Azure RMS em [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### Passo 2: instalar o conjunto de ferramentas BYOK na estação de trabalho desligada
-Copie o conjunto de ferramentas BYOK da pen USB ou de outro armazenamento portátil e efetue o seguinte procedimento:
+Copie o conjunto de ferramentas BYOK da unidade USB ou de outro armazenamento portátil e, em seguida, faça o seguinte:
 
 1.  Extraia os ficheiros do pacote transferido para qualquer pasta.
 
-2.  Nessa pasta, execute vcredist_x64.exe.
+2.  Nessa pasta, execute o ficheiro vcredist_x64.exe.
 
 3.  Siga as instruções para instalar os componentes do Visual C++ runtime para o Visual Studio 2012.
 
@@ -138,16 +132,16 @@ Inicie uma linha de comandos e execute o programa de novo universo da Thales.
 ```
 new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-quorum=2/3
 ```
-Este programa cria um ficheiro **Universo de Segurança** em %NFAST_KMDATA%\local\world, que corresponde à pasta C:\ProgramData\nCipher\Key Management Data\local. Pode utilizar valores diferentes para o quórum, mas no nosso exemplo, é-lhe pedido que introduza três cartões em branco e PINs para cada um deles. Em seguida, qualquer conjunto de dois cartões terá de ter acesso administrativo ao universo de segurança (o quórum especificado).  Estes cartões tornam-se o **Conjunto de Cartões do Administrador** para o novo universo de segurança. Nesta fase, pode especificar a palavra-passe ou o PIN para cada cartão de ACS ou adicioná-lo mais tarde com um comando.
+Este programa cria um ficheiro **Universo de Segurança** em %NFAST_KMDATA%\local\world, que corresponde à pasta C:\ProgramData\nCipher\Key Management Data\local. Pode utilizar valores diferentes para o quórum, mas no nosso exemplo é-lhe pedido que introduza três cartões em branco e pins para cada um deles. Em seguida, qualquer conjunto de dois cartões terá de ter acesso administrativo ao universo de segurança (o quórum especificado).  Estes cartões tornam-se o **Conjunto de Cartões do Administrador** para o novo universo de segurança. Nesta fase, pode especificar a palavra-passe ou o PIN para cada cartão de ACS ou adicioná-lo mais tarde com um comando.
 
 > [!TIP]
 > Pode verificar o estado de configuração atual do HSM ao utilizar o comando `nkminfo`.
 
-Depois, efetue o seguinte:
+Em seguida, faça o seguinte:
 
 1.  Instale o fornecedor CNG da Thales conforme descrito na documentação da Thales e configure-o para utilizar o novo universo de segurança.
 
-2.  Efetue uma cópia de segurança do ficheiro do universo em **%nfast_kmdata%\local**. Proteja o ficheiro do universo, os Cartões de Administrador e os respetivos PINs e certifique-se de que nenhuma pessoa tem acesso a mais do que um cartão.
+2.  Crie uma cópia de segurança do ficheiro do universo em **%nfast_kmdata%\local**. Proteja o ficheiro do universo, os Cartões de Administrador e os respetivos pins e certifique-se de que ninguém tem acesso a mais do que um cartão.
 
 ### Passo 2: validar o pacote transferido
 Este passo é opcional, mas recomendado para que possa validar o seguinte:
@@ -163,7 +157,7 @@ Este passo é opcional, mas recomendado para que possa validar o seguinte:
 
 #### Para validar o pacote transferido
 
-1.  Execute o script verifykeypackage.py ao associar um dos seguintes, consoante a sua região:
+1.  Execute o script verifykeypackage.py ao escrever um dos seguintes, consoante a sua região:
 
     -   Para a América do Norte
 
@@ -186,14 +180,14 @@ Este passo é opcional, mas recomendado para que possa validar o seguinte:
     > [!TIP]
     > O software da Thales inclui um interpretador Python em %NFAST_HOME%\python\bin
 
-2.  Confirme se vê o seguinte, o que indica uma validação com êxito: **Resultado: ÊXITO**
+2.  Confirme se vê o seguinte, que indica uma validação com êxito: **Resultado: ÊXITO**
 
-Este script valida a cadeia de signatário até à chave de raiz da Thales. O hash desta chave de raiz é incorporado no script e o respetivo valor deve ser **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. Pode também confirmar este valor separadamente, ao aceder ao [Web site da Thales](http://www.thalesesec.com/).
+Este script valida a cadeia de signatário até à chave de raiz da Thales. O hash desta chave de raiz é incorporado no script e o respetivo valor deve ser **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. Também pode confirmar este valor separadamente, ao aceder ao [Web site da Thales](http://www.thalesesec.com/).
 
-Agora, está pronto para criar uma nova chave que será a sua chave de inquilino do RMS.
+Agora está pronto para criar uma nova chave que será a sua chave de inquilino do RMS.
 
 ### Passo 3: criar uma nova chave
-Gere uma chave CNG utilizando os programas **generatekey** e **cngimport** da Thales.
+Gere uma chave CNG com os programas **generatekey** e **cngimport** da Thales.
 
 Execute o seguinte comando para criar a chave:
 
@@ -206,9 +200,9 @@ Quando executar este comando, utilize estas instruções:
 
 -   Para o tamanho da chave, recomendamos chaves RSA de 2048 bits, mas também suportamos chaves de 1024 bits para clientes de AD RMS existentes que tenham essas chaves e estejam a migrar para o Azure RMS.
 
--   Substitua o valor de *contosokey* por **ident** e **plainname** por qualquer valor da cadeia. Para minimizar as sobrecargas administrativas e reduzir o risco de erros, recomendamos que utilize o mesmo valor para ambos e utilize todos os carateres minúsculos.
+-   Substitua o valor *contosokey* por **ident** e **plainname** por qualquer valor da cadeia. Para minimizar as tarefas administrativas adicionais e reduzir o risco de erros, recomendamos que utilize o mesmo valor para ambos e utilize todos os carateres em minúsculas.
 
--   O pubexp fica em branco (predefinição) neste exemplo, mas pode especificar valores específicos. Para obter mais informações, consulte a documentação da Thales.
+-   O pubexp fica em branco (predefinição) neste exemplo, mas pode especificar valores. Para mais informações, consulte a documentação da Thales.
 
 Em seguida, execute o seguinte comando para importar a chave para a CNG:
 
@@ -228,12 +222,12 @@ Este comando cria um ficheiro de Chave com Token na pasta %NFAST_KMDATA%\local c
 > [!TIP]
 > Pode verificar o estado de configuração atual das suas chaves ao utilizar o comando `nkminfo –k`.
 
-Efetue uma cópia de segurança deste Ficheiro de Chave com Token numa localização segura.
+Crie uma cópia de segurança deste Ficheiro de Chave com Token numa localização segura.
 
 > [!IMPORTANT]
-> Quando transferir a chave para o Azure RMS posteriormente, a Microsoft não lhe pode exportar esta chave novamente, pelo que é extremamente importante que efetue uma cópia de segurança da chave e do universo de segurança. Contacte a Thales para obter orientações e as melhores práticas para efetuar a cópia de segurança da sua chave.
+> Quando transferir a chave para o Azure RMS posteriormente, a Microsoft não lhe poderá exportar esta chave novamente, pelo que é extremamente importante que crie uma cópia de segurança da chave e do universo de segurança. Contacte a Thales para obter orientações e melhores práticas para criar a cópia de segurança da sua chave.
 
-Agora, está pronto para transferir a chave de inquilino para o Azure RMS.
+Agora está pronto para transferir a chave de inquilino para o Azure RMS.
 
 ## Preparar a transferência da chave de inquilino
 Na estação de trabalho desligada, siga estes 4 passos para preparar a sua própria chave de inquilino:
@@ -247,7 +241,7 @@ Na estação de trabalho desligada, siga estes 4 passos para preparar a sua pró
 -   [Passo 4: copiar o pacote de transferência da chave para a estação de trabalho ligada à Internet](#step-4-copy-your-key-transfer-package-to-the-internet-connected-workstation)
 
 ### Passo 1: criar uma cópia da chave com permissões reduzidas
-Para reduzir as permissões na chave de inquilino, efetue o seguinte:
+Para reduzir as permissões na sua chave de inquilino, faça o seguinte:
 
 -   Numa linha de comandos, execute um dos seguintes procedimentos, consoante a sua região:
 
@@ -269,7 +263,7 @@ Para reduzir as permissões na chave de inquilino, efetue o seguinte:
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-Quando executar este comando, substitua *contosokey* pelo mesmo valor que especificou no [Passo 1: criar um universo de segurança](##step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
+Quando executar este comando, substitua *contosokey* pelo mesmo valor que especificou no [Passo 1: criar um universo de segurança](#step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
 
 Ser-lhe-á pedido que ligue os cartões de ACS do universo de segurança e, se for especificado, a respetiva palavra-passe ou PIN.
 
@@ -290,7 +284,7 @@ Opcionalmente, execute os utilitários da Thales para confirmar as permissões m
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-Quando executar este comando, substitua *contosokey* pelo mesmo valor que especificou no [Passo 1: criar um universo de segurança](##step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
+Quando executar este comando, substitua *contosokey* pelo mesmo valor que especificou no [Passo 1: criar um universo de segurança](#step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
 
 ### Passo 3: encriptar a chave ao utilizar a Chave da Troca de Chaves da Microsoft
 Execute um dos seguintes comandos, dependendo da sua região:
@@ -315,19 +309,19 @@ Execute um dos seguintes comandos, dependendo da sua região:
 
 Quando executar este comando, utilize estas instruções:
 
--   Substitua *contosokey* pelo identificador que utilizou para gerar a chave no [Passo 1: criar um universo de segurança](##step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
+-   Substitua *contosokey* pelo identificador utilizado para gerar a chave no [Passo 1: Criar um universo de segurança](#step-1-create-a-security-world) na secção *Gerar a chave de inquilino*.
 
 -   Substitua *GUID* pelo ID de inquilino do Azure Active Directory que obteve no [Passo 2: obter o ID de inquilino do Azure Active Directory](#step-2-get-your-azure-active-directory-tenant-id) na secção *Preparar a estação de trabalho ligada à Internet*.
 
 -   Substitua *ContosoFirstKey* por uma etiqueta que será utilizada para o nome do ficheiro de saída.
 
-Quando esta ação for concluída com êxito, é apresentada a mensagem **Resultado: ÊXITO** e haverá um novo ficheiro na pasta atual que tem o seguinte nome: TransferPackage-*ContosoFirstkey*.byok
+Quando esta ação for concluída com êxito, será apresentada a mensagem **Resultado: ÊXITO** e haverá um novo ficheiro na pasta atual, que tem o seguinte nome: TransferPackage-*ContosoFirstkey*.byok
 
 ### Passo 4: copiar o pacote de transferência da chave para a estação de trabalho ligada à Internet
 Utilize uma pen USB ou outro armazenamento portátil para copiar o ficheiro de saída do passo anterior (KeyTransferPackage-*ContosoFirstkey*.byok) para a estação de trabalho ligada à Internet.
 
 > [!NOTE]
-> Utilize as práticas de segurança para proteger o ficheiro, pois inclui a chave privada.
+> Utilize as práticas de segurança para proteger o ficheiro, pois inclui a sua chave privada.
 
 ## Transferir a chave de inquilino para o Azure RMS
 Na estação de trabalho ligada à Internet, siga estes 3 passos para transferir a nova chave de inquilino para o Azure RMS:
@@ -367,7 +361,7 @@ Se o carregamento for bem-sucedido, verá a seguinte mensagem: **O serviço de g
 Existirá um atraso na replicação para que a alteração seja propagada a todos os centros de dados do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 ### Passo 3: enumerar as chaves de inquilino – conforme necessário
-Utilize o cmdlet Get-AadrmKeys novamente para ver a alteração na sua chave de inquilino e sempre que pretender ver uma lista das chaves de inquilino. As chaves de inquilino apresentadas incluem a chave de inquilino inicial que a Microsoft gerou para si e quaisquer chaves de inquilino adicionadas:
+Utilize o cmdlet Get-AadrmKeys novamente para ver a alteração na sua chave de inquilino e sempre que pretender ver uma lista das chaves de inquilino. As chaves de inquilino apresentadas incluem a chave de inquilino inicial que a Microsoft gerou para si e todas as chaves de inquilino que adicionou:
 
 ```
 Get-AadrmKeys
@@ -377,12 +371,13 @@ A chave de inquilino que está marcada como **Ativa** é a que a sua organizaç�
 Agora que concluiu todos os passos necessários para levar a sua própria chave através da Internet, pode avançar para os passos seguintes para planear e implementar a sua chave de inquilino.
 
 
-> [!div class="botão"]
+> [!div class="button"]
 [Passos Seguintes >>](plan-implement-tenant-key.md#next-steps)
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

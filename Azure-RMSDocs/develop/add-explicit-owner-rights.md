@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Procedimentos sobre como adicionar direitos de proprietário explícitos | Azure RMS
-description: A aplicação deve adicionar explicitamente direitos de “Proprietário” quando criar uma licença a partir do zero.
-keywords:
+title: "Procedimentos sobre como adicionar direitos de proprietário explícitos | Azure RMS"
+description: "A aplicação deve adicionar explicitamente direitos de “Proprietário” quando criar uma licença a partir do zero."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ A aplicação deve adicionar explicitamente direitos de “Proprietário” quan
 
 Quando a aplicação estiver a criar um identificador de licença através de [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), tem também de conceder ao proprietário direitos completos (permissões) explicitamente.
 
->[!NOTE] Definir um utilizador como “proprietário” através de [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com a propriedade **IPC\_LI\_OWNER** não concede ao proprietário permissões completas.
+>[!NOTE] 
+> Definir um utilizador como “proprietário” através de [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) com a propriedade **IPC\_LI\_OWNER** não concede ao proprietário permissões completas.
 
 O código de exemplo seguinte mostra apenas os passos envolvidos na criação e adição de direitos específicos a uma determinada licença.
 
@@ -118,6 +115,7 @@ Os dois direitos seguintes são adicionados a estes utilizadores:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

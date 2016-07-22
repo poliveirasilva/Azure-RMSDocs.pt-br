@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Cenário – Partilhar um ficheiro do Office com os utilizadores noutra organização | Azure RMS
-description:
-keywords:
+title: "Cenário – Partilhar um ficheiro do Office com os utilizadores noutra organização | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+
 
 ---
 
@@ -74,9 +68,10 @@ Utilizando o modelo seguinte, copie e cole as instruções de utilizador numa co
 
     -   Os passos não incluem a definição de uma data de expiração. Caso as informações não devam ser utilizadas após uma data específica, adicione outro passo para definir um prazo de expiração adequado, como 90 dias após o envio da mensagem de e-mail.
 
-    > [!NOTE] Para mais informações sobre cada uma das opções que os utilizadores podem selecionar, consulte [Opções da caixa de diálogo para a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574738.aspx)
+    > [!NOTE]
+    > Para obter mais informações sobre cada uma das opções que os utilizadores podem selecionar, consulte [Opções da caixa de diálogo para a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574738.aspx)
 
-4.  Efetue quaisquer modificações adicionais que pretenda a este conjunto de instruções e, em seguida, envie-o aos utilizadores.
+4.  Efetue as modificações adicionais que pretender a este conjunto de instruções e, em seguida, envie-o para os utilizadores.
 
 A documentação de exemplo mostra que aspeto estas instruções poderão ter para os utilizadores depois das personalizações.
 
@@ -159,6 +154,7 @@ Utilize o [portal de controlo de documentos](https://track.azurerms.com/) para c
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

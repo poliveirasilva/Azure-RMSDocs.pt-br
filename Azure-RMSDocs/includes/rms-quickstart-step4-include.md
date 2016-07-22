@@ -4,7 +4,7 @@ Os destinatários podem utilizar vários dispositivos para ler o documento prote
 
 Peça-lhes para lerem a mensagem de e-mail que enviou. Os destinatários verão a sua mensagem de e-mail e, antes disso, o seguinte texto:
 
-**O remetente protegeu os anexos com o Microsoft RMS. Tem de** [iniciar sessão](http://aka.ms/rms)
+**O remetente protegeu os anexos com Microsoft RMS. Tem de** [iniciar sessão](http://aka.ms/rms)
       **para os abrir.**
 
 Quando clicam na ligação, são encaminhados para as instruções de instalação da aplicação de partilha RMS e, se necessário, para se inscreverem numa conta gratuita. A conta gratuita concede-lhes uma subscrição do RMS para indivíduos, que garante que os utilizadores autorizados podem sempre ler um documento protegido, mesmo que a organização não tenha o Azure RMS. Em seguida, podem ler o anexo protegido ao utilizar as instruções seguintes.
@@ -33,6 +33,6 @@ Agora que o destinatário abriu o anexo e, opcionalmente, o reencaminhou para ou
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

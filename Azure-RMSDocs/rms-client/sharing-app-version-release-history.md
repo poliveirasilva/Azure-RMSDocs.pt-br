@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Aplicação de partilha Rights Management&colon; histórico de lançamento de versões | Azure RMS
-description:
-keywords:
+title: "Aplicação de partilha Rights Management&colon; histórico de lançamento de versões | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ A equipa do Rights Management atualiza regularmente a aplicação de partilha Ri
 
 As versões anteriores a 1 de janeiro de 2015 não estão listadas.
 
-> [!NOTE]
-> Se tiver comentários ou uma pergunta sobre a aplicação de partilha RMS, envie uma mensagem de e-mail para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+> [!NOTE] Se tiver comentários ou uma pergunta sobre a aplicação de partilha RMS, envie uma mensagem de e-mail para [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Versão 1.0.2191.0
+**Lançamento**: 16/06/2016
+
+**Correções**:
+
+- O site de controlo de documentos mostra agora o número correto de visualizações para cada documento controlado.
+
+- Os modelos para todas as regiões são agora apresentados como disponíveis para os utilizadores.
+
+- Depois de utilizar Partilhar protegido para um ficheiro PowerPoint, as alterações à versão local do ficheiro são agora guardadas corretamente.
+
+- Pequeno número de erros secundários e melhoramentos para mensagens de erro.
+
 
 ## Versão 1.0.2004.0
 **Lançada**: 11/12/2015
@@ -113,6 +119,7 @@ As versões anteriores a 1 de janeiro de 2015 não estão listadas.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

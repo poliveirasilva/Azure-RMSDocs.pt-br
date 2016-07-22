@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Migrar do AD RMS para o Azure Rights Management – fase 3 | Azure RMS
-description:
-keywords:
+title: "Migrar do AD RMS para o Azure Rights Management – fase 3 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,17 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+
 
 ---
 
@@ -31,12 +24,12 @@ ms.suite: ems
 *Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management*
 
 
-Utilize as seguintes informações para a Fase 3 da migração do AD RMS para o Azure Rights Management (Azure RMS). Estes procedimentos incluem os passos 6 a 7 da secção [Migrar do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+Utilize as seguintes informações para a Fase 3 da migração do AD RMS para o Azure Rights Management (Azure RMS). Estes procedimentos incluem os passos de 6 a 7 da secção [Migrar do AD RMS para o Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Passo 6. Configurar a integração de IRM para o Exchange Online
+## Passo 6. Configurar a integração de IRM para o Exchange Online
 
-Se tiver importado anteriormente o TDP do AD RMS para o Exchange Online, tem de remover este TDP para evitar modelos e políticas em conflito após a migração para o Azure RMS. Para tal, utilize o cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/en-us/library/jj200720%28v=exchg.150%29.aspx) do Exchange Online.
+Se tiver importado anteriormente o TDP do AD RMS para o Exchange Online, tem de remover este TDP para evitar modelos e políticas em conflito após a migração para o Azure RMS. Para tal, utilize o cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) do Exchange Online.
 
 Se optou por uma topologia de chave de inquilino do Azure RMS **gerida pela Microsoft**:
 
@@ -84,17 +77,17 @@ Por fim, para este passo, se tiver importado vários TPD para o Azure RMS que fo
 
 6.  Em cada Exchange Server, reponha o IIS, por exemplo, ao executar uma linha de comandos como administrador e escrever **iisreset**.
 
-### Desativar a IRM nos SharePoint Servers e remover a configuração do AD RMS
+### Desativar a IRM em SharePoint Servers e remover a configuração do AD RMS
 
-1.  Certifique-se de que não existem documentos com saída dada em bibliotecas protegidas por RMS. Se existirem, tornar-se-ão inacessíveis no final deste procedimento.
+1.  Certifique-se de que não existem documentos com saída dada em bibliotecas protegidas por RMS. Se existirem, vão tornar-se inacessíveis no final deste procedimento.
 
-2.  No Web site da Administração Central do SharePoint, na secção **Iniciação Rápida**, clique em **Segurança**.
+2.  No Web site de Administração Central do SharePoint , na secção **Iniciação Rápida**, clique em **Segurança**.
 
 3.  Na página **Segurança**, na secção **Política de Informações**, clique em **Configurar gestão de direitos de informação**.
 
-4.  Na página **Gestão de Direitos de Informação**, na secção **Gestão de Direitos de Informação**, selecione **Não utilizar a IRM neste servidor** e, em seguida, clique em **OK**.
+4.  Na página **Gestão de Direitos de Informação**, na secção **Gestão de Direitos de Informação**, selecione **Não utilizar IRM neste servidor** e, em seguida, clique em **OK**.
 
-5.  Em cada computador do SharePoint Server, elimine o conteúdo da pasta \ProgramData\Microsoft\MSIPC\Server\*&lt;SID da conta que está a executar o SharePoint Server&gt;*.
+5.  Em cada computador do SharePoint Server, elimine o conteúdo da pasta \ProgramData\Microsoft\MSIPC\Server\\*&lt;SID da conta que está a executar o SharePoint Server&gt;*.
 
 #### Instalar e configurar o conetor RMS
 
@@ -106,7 +99,7 @@ Por fim, para este passo, se tiver importado vários TPD para o Azure RMS que fo
 
     Quando efetuar estas edições de registo, utilize as instruções seguintes:
 
-    -   Substitua *ConnectorFQDN* pelo nome que definiu no DNS do conetor. Por exemplo, **rmsconnector.contoso.com**.
+    -   Substitua *ConnectorFQDN* pelo nome que definiu no DNS para o conector. Por exemplo, **rmsconnector.contoso.com**.
 
     -   Utilize o prefixo HTTP ou HTTPS para o URL do conetor, dependendo se configurou o conetor para utilizar HTTP ou HTTPS para comunicar com os servidores no local.
 
@@ -221,6 +214,7 @@ Depois de concluir estes procedimentos, está pronto para ler a secção **Passo
 ## Passos seguintes
 Para continuar a migração, consulte a [fase 4 – tarefas de pós-migração](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

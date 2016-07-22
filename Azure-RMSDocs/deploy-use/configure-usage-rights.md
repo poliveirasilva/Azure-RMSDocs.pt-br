@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configuração de direitos de utilização para o Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Configuração de direitos de utilização para o Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +59,7 @@ Permite ao utilizador guardar o documento na sua localização atual.
 
 **Nome em modelos de AD RMS**: *Guardar*
 
-**Constante ou valor de API**: IPC_GENERIC_WRITEL"EDIT"
+**Constante ou valor da API**: IPC_GENERIC_WRITE L"EDIT"
 
 Nas aplicações do Office, este direito também permite que o utilizador modifique o documento.
 
@@ -83,7 +77,7 @@ Ativa a opção para adicionar anotações ou comentários ao conteúdo.
 
 **Nome nos modelos de AD RMS:** não implementado.
 
-**Constante ou valor de API:** IPC_GENERIC_COMMENTL"COMMENT
+**Constante ou valor da API:** IPC_GENERIC_COMMENT L"COMMENT
 
 Este direito está disponível no SDK, disponível como uma política ad hoc no módulo Proteção RMS para o Windows PowerShell e foi implementado em certas aplicações de fornecedores de software. No entanto, não é amplamente utilizado e atualmente não é suportado por aplicações do Office.
 
@@ -101,7 +95,7 @@ Ativa a opção para guardar o conteúdo com um nome de ficheiro diferente (Guar
 
 **Nome em modelos de AD RMS:** *Exportar (Guardar Como)*
 
-**Constante ou valor de API:** IPC_GENERIC_EXPORTL"EXPORT"
+**Constante ou valor da API:** IPC_GENERIC_EXPORT L"EXPORT"
 
 Este direito também permite que o utilizador efetue outras opções de exportação em aplicações, tais como *Enviar para o OneNote*.
 
@@ -119,7 +113,7 @@ Ativa a opção para reencaminhar uma mensagem de e-mail e para adicionar destin
 
 **Nome em modelos de AD RMS:** *Reencaminhar*
 
-**Constante ou valor de API:** IPC_EMAIL_FORWARDL"FORWARD"
+**Constante ou valor de API:** IPC_EMAIL_FORWARD L"FORWARD"
 
 Não permite que o reencaminhador conceda direitos a outros utilizadores como parte da ação de reencaminhar.
 
@@ -137,7 +131,7 @@ Concede todos os direitos ao documento e podem ser efetuadas todas as ações di
 
 **Nome em modelos de AD RMS:** *Controlo Total*
 
-**Constante ou valor de API:** IPC_GENERIC_ALLL"OWNER"
+**Constante ou valor da API:** IPC_GENERIC_ALL L"OWNER"
 
 Inclui a capacidade para remover a proteção.
 
@@ -155,7 +149,7 @@ Ativa as opções para imprimir o conteúdo.
 
 **Nome em modelos de AD RMS:** *Imprimir*
 
-**Constante ou valor de API:** IPC_GENERIC_PRINTL"PRINT
+**Constante ou valor da API:** IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +181,7 @@ Ativa a opção *Responder a Todos* num cliente de e-mail, mas não permite que 
 
 **Nome em modelos de AD RMS:** *Responder a Todos*
 
-**Constante ou valor de API:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**Constante ou valor da API:**IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +197,7 @@ Permite que o utilizador abra o documento e veja o conteúdo.
 
 **Nome em modelos de AD RMS:** *Ver*
 
-**Constante ou valor de API:** IPC_GENERIC_READL"VIEW"
+**Constante ou valor da API:** IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +213,7 @@ Ativa opções para copiar dados (incluindo capturas de ecrã) do documento para
 
 **Nome em modelos de AD RMS:** *Extrair*
 
-**Constante ou valor de API:** IPC_GENERIC_EXTRACTL"EXTRACT"
+**Constante ou valor da API:** IPC_GENERIC_EXTRACT L"EXTRACT"
 
 Em certas aplicações, também permite que todo o documento seja guardado numa forma não protegida.
 
@@ -283,7 +277,8 @@ Um utilizador pretende enviar algumas informações por e-mail a pessoas especí
  
 - Se aplicar a opção **Não Reencaminhar**, os destinatários não conseguirão partilhar as informações com qualquer pessoa do outro departamento de marketing movendo o e-mail para outra localização. Neste cenário, apenas os destinatários originais (e o proprietário do e-mail) poderão ver as informações do e-mail.
 
-> [!NOTE] Utilize **Não Reencaminhar** quando for importante que restringir o acesso às informações do e-mail apenas os destinatários escolhidos pelo remetente. Utilize um modelo para e-mails para restringir os direitos a um grupo de pessoas especificadas anteriormente pelo administrador, independentemente dos destinatários escolhidos pelo remetente.
+> [!NOTE] 
+> Utilize **Não Reencaminhar** quando for importante que restringir o acesso às informações do e-mail apenas os destinatários escolhidos pelo remetente. Utilize um modelo para e-mails para restringir os direitos a um grupo de pessoas especificadas anteriormente pelo administrador, independentemente dos destinatários escolhidos pelo remetente.
 
 
 
@@ -293,6 +288,7 @@ Um utilizador pretende enviar algumas informações por e-mail a pessoas especí
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

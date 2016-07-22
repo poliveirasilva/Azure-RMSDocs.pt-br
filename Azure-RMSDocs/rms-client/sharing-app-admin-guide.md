@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guia do administrador da aplicação de partilha Rights Management|Azure RMS
-description:
-keywords:
+title: "Guia do administrador da aplicação de partilha Rights Management|Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,28 +10,24 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+
 
 ---
 
 
 # Guia do administrador da aplicação de partilha Rights Management
 
-*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
+*Aplica-se a: Serviços de Gestão de Direitos do Active Directory, Azure Rights Management, Windows 10, Windows 7 com SP1, Windows 8, Windows 8.1*
 
 
-Utilize as seguintes informações se for o responsável pela aplicação de partilha Microsoft Rights Management numa rede empresarial ou se quiser obter mais informações técnicas além das que se encontram no [Rights Management sharing application user guide (Guia do utilizador da aplicação de partilha Rights Management – em inglês)](sharing-app-user-guide.md) ou na [FAQ for Microsoft Rights Management Sharing Application for Windows (FAQ sobre a Aplicação de Partilha Microsoft Rights Management do Windows – em inglês)](http://go.microsoft.com/fwlink/?LinkId=303971).
+Utilize as seguintes informações se for o responsável pela aplicação de partilha Microsoft Rights Management numa rede empresarial ou se quiser obter mais informações técnicas além das que se encontram no [Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md) ou nas [FAQ sobre a Aplicação de Partilha Microsoft Rights Management do Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-A aplicação de partilha RMS funciona melhor com o Azure RMS, porque esta configuração de implementação suporta o envio de anexos protegidos para utilizadores de outra organização e opções como notificações por e-mail e o controlo de documentos com revogação.  No entanto, a aplicação também funciona com a versão no local, o AD RMS, embora com algumas limitações. Para ver uma comparação detalhada das funcionalidades suportadas pelo Azure RMS e pelo AD RMS, consulte [Comparing Azure Rights Management and AD RMS (Comparação entre o Azure Rights Management e o AD RMS – em inglês)](../understand-explore/compare-azure-rms-ad-rms.md). Se tiver o AD RMS e quiser migrar para o Azure RMS, consulte [Migrating from AD RMS to Azure Rights Management (Migrar do AD RMS para o Azure Rights Management – em inglês)](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+A aplicação de partilha RMS funciona melhor com o Azure RMS, porque esta configuração de implementação suporta o envio de anexos protegidos para utilizadores de outra organização e opções como notificações por e-mail e o controlo de documentos com revogação.  No entanto, a aplicação também funciona com a versão no local, o AD RMS, embora com algumas limitações. Para ver uma comparação detalhada das funcionalidades suportadas pelo Azure RMS e pelo AD RMS, consulte [Comparing Azure Rights Management and AD RMS (Comparação entre o Azure Rights Management e o AD RMS – em inglês)](../understand-explore/compare-azure-rms-ad-rms.md). Se tiver o AD RMS e quiser migrar para o Azure RMS, consulte [Migrar do AD RMS para o Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 ## Implementação automática da aplicação de partilha Microsoft Rights Management
 A versão para Windows da aplicação de partilha RMS suporta uma instalação com script, o que a torna adequada para implementações empresariais.
@@ -79,7 +73,7 @@ Utilize os seguintes procedimentos para identificar os comandos necessários par
 > [!NOTE]
 > Nestes cenários, se a sua organização estiver a executar o AD RMS, os seus utilizadores podem receber conteúdos protegidos de outras organizações que utilizam o Azure RMS, mas não podem enviar conteúdos protegidos para outros utilizadores de uma organização que utiliza o Azure RMS. No entanto, se a sua organização estiver a executar o Azure RMS, os seus utilizadores podem enviar e receber conteúdos protegidos de outras organizações.
 
-Para concluir a instalação em cada procedimento, é necessário reiniciar o computador. Pode efetuar um reinício automático através de um comando como o **shutdown /i**.
+Para concluir a instalação em cada procedimento, é necessário reiniciar o computador. Pode fazer um reinício automático através de um comando como o **shutdown /i**.
 
 ### Para implementar a aplicação de partilha RMS para o Office 2016 ou Office 2013 e Azure RMS ou Active Directory RMS
 
@@ -335,12 +329,12 @@ Dado que a aplicação de partilha RMS não é suportada pelo WSUS, pode utiliza
 3.  Após a conclusão dos testes e a resolução de eventuais problemas, implemente a versão mais recente para todos os utilizadores através das instruções de implementação automática existentes neste guia.
 
 ## Apenas Azure RMS: configurar o controlo de documentos
-Se tiver uma [subscrição que suporta o controlo de documentos](https://technet.microsoft.com/en-us/dn858608), o site de controlo de documentos é ativado por predefinição para todos os utilizadores da sua organização.  O controlo de documentos apresenta informações como os endereços de e-mail das pessoas que tentaram aceder a documentos protegidos partilhados por utilizadores, quando essas pessoas tentaram aceder aos mesmos e a sua localização. Se a apresentação deste tipo de informações é proibida dentro da sua organização devido a requisitos de privacidade, pode desativar o acesso ao site de controlo de documentos através do cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Pode reativar o acesso ao site em qualquer altura, através do cmdlet [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) e ainda verificar se o acesso ao site está ativado ou desativado, com o cmdlet [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
+Se tiver uma [subscrição que suporta o controlo de documentos](https://technet.microsoft.com/dn858608), o site de controlo de documentos é ativado por predefinição para todos os utilizadores da sua organização.  O controlo de documentos apresenta informações como os endereços de e-mail das pessoas que tentaram aceder a documentos protegidos partilhados por utilizadores, quando essas pessoas tentaram aceder aos mesmos e a sua localização. Se a apresentação deste tipo de informações é proibida dentro da sua organização devido a requisitos de privacidade, pode desativar o acesso ao site de controlo de documentos através do cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). Pode reativar o acesso ao site em qualquer altura através de [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) e ainda verificar se o acesso ao site está ativado ou desativado com [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
 
-Para executar estes cmdlets, tem de ter no mínimo a versão **2.3.0.0** do módulo do Azure RMS para o Windows PowerShell.  Para obter instruções de instalação, consulte [Installing Windows PowerShell for Azure Rights Management (Instalar o Windows PowerShell para o Azure Rights Management – em inglês)](../deploy-use/install-powershell.md).
+Para executar estes cmdlets, tem de ter no mínimo a versão **2.3.0.0** do módulo do Azure RMS para o Windows PowerShell.  Para obter instruções de instalação, consulte [Instalar o Windows PowerShell para o Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!TIP]
-> Se já transferiu e instalou o módulo, verifique o número da versão ao executar: `(Get-Module aadrm –ListAvailable).Version`
+> Se já transferiu e instalou o módulo anteriormente, verifique o número da versão ao executar: `(Get-Module aadrm –ListAvailable).Version`
 
 Os URLs seguintes são utilizados para o controlo de documentos e têm de ser permitidos (por exemplo, adicione-os à sua lista de Sites Fidedignos se estiver a utilizar o Internet Explorer com Segurança Avançada):
 
@@ -368,10 +362,11 @@ Se não fizer esta alteração de registo, é possível que os utilizadores não
 
 
 ## Passos seguintes
-Para informações técnicas adicionais com explicações sobre os diferentes níveis de proteção (nativa e genérica), os tipos de ficheiro e as extensões de nome de ficheiro suportados e como pode alterar o nível de proteção predefinido, consulte [Technical overview for the Rights Management sharing application (Descrição geral técnica da aplicação de partilha Rights Management – em inglês)](sharing-app-admin-guide-technical.md).
+Para obter informações técnicas adicionais com explicações sobre os diferentes níveis de proteção (nativa e genérica), os tipos de ficheiro e as extensões de nome de ficheiro suportados e como pode alterar o nível de proteção predefinido, consulte [Descrição geral técnica da aplicação de partilha Rights Management](sharing-app-admin-guide-technical.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

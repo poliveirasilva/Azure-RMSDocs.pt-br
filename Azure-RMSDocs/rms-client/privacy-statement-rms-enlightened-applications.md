@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Declaração de Privacidade do Microsoft Rights Management em Aplicações Otimizadas por RMS | Azure RMS
-description:
-keywords:
+title: "Declaração de Privacidade do Microsoft Rights Management em Aplicações Otimizadas por RMS | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -53,7 +47,7 @@ Não divulgaremos as Credenciais, as Informações de Recibo de Leitura e/ou as 
 As informações recolhidas ou enviadas para a Microsoft pelas aplicações com capacidade para o Microsoft Rights Management podem ser armazenadas e processadas nos Estados Unidos ou em qualquer outro país em que a Microsoft ou as respetivas filiais, subsidiárias ou prestadores de serviços possuam instalações. A Microsoft rege-se pelo Sistema de Porto Seguro, estabelecido pelo Departamento de Comércio dos EUA, no que diz respeito à recolha, utilização e retenção de dados provenientes da União Europeia, do Espaço Económico Europeu e da Suíça.
 
 ## Microsoft Update
-Quando utilizar aplicações com capacidade para o Microsoft Rights Management com o Windows, pode optar por participar no Microsoft Update. O Microsoft Update (MU) é um serviço que fornece atualizações para o software Microsoft, incluindo o cliente Microsoft Rights Management para o Windows. Para mais informações sobre como as informações são recolhidas, como são utilizadas e como alterar as suas definições, consulte a [Declaração de Privacidade do Update Services](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)).
+Quando utilizar aplicações com capacidade para o Microsoft Rights Management com o Windows, pode optar por participar no Microsoft Update. O Microsoft Update (MU) é um serviço que fornece atualizações para o software Microsoft, incluindo o cliente Microsoft Rights Management para o Windows. Para obter mais informações sobre como as informações são recolhidas e utilizadas e como alterar as suas definições, consulte [Declaração de Privacidade dos Serviços de Atualização](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)).
 
 Escolha/Controlo: para uma instalação automática, as aplicações com capacidade para o Microsoft Rights Management seguem as mesmas definições do MU aplicadas ao ambiente de trabalho do Windows. Para obter instalações do utilizador, se o MU não estiver ativado, poderá receber uma mensagem durante a instalação, permitindo-lhe ativar o MU. Se optar por fazê-lo, estas definições do MU serão aplicadas em todas as aplicações baseadas no Windows.
 
@@ -65,6 +59,7 @@ Ocasionalmente, atualizaremos esta declaração de privacidade para refletir alt
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

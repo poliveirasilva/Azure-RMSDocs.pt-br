@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Tutorial de início rápido do Azure RMS – Passo 4 | AZURE RMS"
-description: "o quarto passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
-keywords:
+title: "Tutorial de início rápido do Azure RMS – Passo 4 | Azure RMS"
+description: "O quarto passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+
 
 ---
 
@@ -44,9 +42,9 @@ Passar para:
 
 ![Passo 4 do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartSteps4.PNG)
 
-Os destinatários podem utilizar vários dispositivos para ler o documento protegido que enviou como anexo de e-mail. Os dispositivos incluem iPads, iPhones, tablets e telemóveis Android, computadores Mac, bem como computadores com o Windows.
+Os destinatários podem utilizar vários dispositivos para ler o documento protegido que enviou como anexo de e-mail. Os dispositivos incluem iPads, iPhones, tablets e telemóveis Android, computadores Mac, bem como computadores Windows.
 
-Peça-lhes para lerem a mensagem de e-mail que enviou. Eles verão a mensagem de e-mail e, antes disso, o seguinte texto:
+Peça-lhes para lerem a mensagem de e-mail que enviou. Os destinatários verão a sua mensagem de e-mail e, antes disso, o seguinte texto:
 
 **O remetente protegeu os anexos com Microsoft RMS. Tem de** [iniciar sessão](http://aka.ms/rms)
       **para os abrir.**
@@ -57,17 +55,17 @@ Quando clicam na ligação, são encaminhados para as instruções de instalaç�
 
 ### Para ver o anexo do documento protegido
 
-1.  Uma vez que o Azure Rights Management protegeu um documento do Word, existem dois anexos na mensagem de e-mail. Estes anexos são, na verdade, duas versões do mesmo ficheiro, mas com extensões de nome de ficheiro diferentes. Abra a versão que tem a extensão de nome de ficheiro **.ppdf** (**Confidencial.ppdf**).
+1.  Uma vez que o Azure Rights Management protegeu um documento do Word, existem dois anexos na mensagem de e-mail. Estes anexos são, na verdade, duas versões do mesmo ficheiro, mas com extensões de nomes de ficheiro diferentes. Abra a versão que tem a extensão de nome de ficheiro **.ppdf** (**Confidencial.ppdf**).
 
-    Se tiver uma versão do [Office no dispositivo que suporte o Rights Management](https://technet.microsoft.com/library/dn655136.aspx), pode abrir a outra versão do ficheiro (**Confidencial.docx**), de modo a ser aberto no Word.
+    Se tiver uma versão do [Office no dispositivo que suporte o Rights Management](https://technet.microsoft.com/library/dn655136.aspx), pode abrir a outra versão do ficheiro (**Confidencial.docx**) no Word.
 
-2.  Se lhe for pedido o nome de utilizador e a palavra-passe, introduza o nome de utilizador no mesmo formato que o endereço de e-mail que foi utilizado para lhe enviar a mensagem de e-mail e o anexo. Por exemplo, **juliam@contoso.com** ou **p.barbosa@fabrikam.com**. Para a palavra-passe, escreva a que especificou quando se inscreveu no RMS para indivíduos. Ou, se a sua organização tiver o Azure RMS, introduza a palavra-passe habitual do trabalho.
+2.  Se lhe for pedido o nome de utilizador e a palavra-passe, introduza o nome de utilizador no mesmo formato que o endereço de e-mail que foi utilizado para lhe enviar a mensagem de e-mail e o anexo. Por exemplo, **juliam@contoso.com** ou **p.barbosa@fabrikam.com**. Para a palavra-passe, escreva a que especificou quando se inscreveu no RMS para indivíduos. Em alternativa, se a sua organização tiver o Azure RMS, introduza a palavra-passe habitual do trabalho.
 
 O documento é aberto e já pode ler o conteúdo. Por exemplo, pode dizer **Se conseguir ler isto no anexo de e-mail, significa que o remetente partilhou com êxito um ficheiro que foi protegido com o Azure RMS.** Uma vez que é só de leitura, não é possível alterar o conteúdo.
 
 Como passo opcional, pode pedir ao destinatário para reencaminhar o e-mail para outras pessoas que não tenha incluído no e-mail original. Mesmo que essas pessoas trabalhem numa organização que tenha o Azure Rights Management ou que se candidatem à própria subscrição do RMS para indivíduos, não vão poder abrir o anexo. Quando lhes for solicitado o respetivo nome de utilizador, o acesso ao documento será negado.
 
-Agora que o destinatário abriu o anexo e, opcionalmente, o reencaminhou para outra pessoa, aguarde a receção de uma notificação de e-mail a comunicar esta atividade. No entanto, é fácil perder mensagens de e-mail ao longo do tempo. Por isso, para melhor controlar quem acede ao documento, utilize o site de controlo de documentos (descrito no último passo).
+Agora que o destinatário abriu o anexo e, opcionalmente, o reencaminhou para outra pessoa, aguarde a receção de uma notificação de e-mail a comunicar esta atividade. No entanto, é fácil perder mensagens de e-mail ao longo do tempo. Como tal, para melhor controlar quem acede ao documento, utilize o site de controlo de documentos (descrito no último passo).
 
 |Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
@@ -76,9 +74,11 @@ Agora que o destinatário abriu o anexo e, opcionalmente, o reencaminhou para ou
 |Acerca das duas versões do ficheiro que vê anexado à mensagem de e-mail|[O que é o ficheiro .ppdf criado automaticamente?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"] [« Passo 3](tutorial-step3.md)
+>[!div class="step-by-step"]
+[« Passo 3](tutorial-step3.md)
 [Passo 5 »](tutorial-step5.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

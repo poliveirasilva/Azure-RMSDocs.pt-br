@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guia do utilizador da aplicação de partilha Rights Management | Azure RMS
-description:
-keywords:
+title: "Guia do utilizador da aplicação de partilha Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+
 
 ---
 
@@ -71,6 +65,7 @@ Seguem-se apenas alguns exemplos de como pode utilizar a aplicação de partilha
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

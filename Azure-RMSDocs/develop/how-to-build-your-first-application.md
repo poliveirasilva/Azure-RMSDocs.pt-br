@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: IPCHelloWorld – uma aplicação de exemplo | Azure RMS
-description: Este tópico contém instruções para criar uma aplicação com capacidade para direitos.
-keywords:
+title: "IPCHelloWorld – uma aplicação de exemplo | Azure RMS"
+description: "Este tópico contém instruções para criar uma aplicação com capacidade para direitos."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** Este conteúdo do SDK não está atualizado. Durante um curto período de tempo, pode encontrar a [versão atual](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) da documentação no MSDN. **
@@ -222,6 +218,7 @@ Antes de terminar, também tem de libertar todos os recursos atribuídos.
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

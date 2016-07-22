@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Introdução | Azure RMS
-description: O guia de introdução para uma primeira aplicação é efetuado através de guias de configuração do ambiente de desenvolvimento para cada um dos sistemas operativos/plataformas.
-keywords:
+title: "Introdução | Azure RMS"
+description: "O guia de introdução para uma primeira aplicação é efetuado através de guias de configuração do ambiente de desenvolvimento para cada um dos sistemas operativos/plataformas."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+
 
 ---
 
@@ -59,6 +55,7 @@ Para esta versão do SDK Microsoft Rights Management 4.2, a abordagem de iníci
   |[Recursos comunitários](community-resources.md)|Os Serviços de Gestão de Direitos do Active Directory são bem suportados por uma crescente comunidade de programadores em várias plataformas.|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

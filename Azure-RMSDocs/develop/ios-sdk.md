@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configuração do iOS e OS X | Azure RMS
-description: As aplicações iOS e OS X podem utilizar o SDK RMS 4.2 para ativar a proteção de informações integrada na respetiva aplicação ao utilizar o AAD RM.
-keywords:
+title: "Configuração do iOS e OS X | Azure RMS"
+description: "As aplicações iOS e OS X podem utilizar o SDK RMS 4.2 para ativar a proteção de informações integrada na respetiva aplicação ao utilizar o AAD RM."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +47,7 @@ Recomendamos o seguinte software no sistema de desenvolvimento:
 
     Este SDK pode ser utilizado para a programação do iOS 7.0 e OS X 10.8 e posterior.
 
--   Biblioteca de autenticação: recomendamos que utilize a [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, também é possível utilizar outras bibliotecas de autenticação que suportem o OAuth 2.0.
+-   Biblioteca de autenticação: recomendamos que utilize a [Biblioteca de Autenticação do Azure AD (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). No entanto, também é possível utilizar outras bibliotecas de autenticação que suportem o OAuth 2.0.
 
     Para obter mais informações, consulte [ADAL para iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) ou [ADAL para OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
@@ -122,6 +118,7 @@ A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

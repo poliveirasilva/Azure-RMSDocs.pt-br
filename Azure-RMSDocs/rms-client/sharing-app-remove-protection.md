@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management | Azure RMS
-description:
-keywords:
+title: "Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 78ceb74a3dd8492ac5c754eea179525cae819fd0
+
 
 ---
 
@@ -47,7 +41,7 @@ Nota: se não vir estas opções de proteção, é provável que a aplicação d
 O ficheiro protegido original é eliminado (por exemplo, Amostra.ptxt) e substituído por um ficheiro que tem o mesmo nome, mas com a extensão de nome de ficheiro não protegido (por exemplo, Amostra.txt).
 
 ## Exemplos e outras instruções
-Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, veja as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
 -   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
@@ -57,6 +51,7 @@ Para obter exemplos de como pode utilizar a aplicação de partilha Rights Manag
 [Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: Migrar do AD RMS para o Azure Rights Management – Fase 4 | Azure RMS
-description:
-keywords:
+title: "Migrar do AD RMS para o Azure Rights Management – Fase 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ Este passo é opcional, mas recomendado, quando a migração estiver concluída,
 
 Para efetuar o rechaveamento da chave de inquilino do Azure RMS:
 
--   Se a sua chave de inquilino do Azure RMS for gerida pela Microsoft: para fazer isto, [contacte o Suporte da Microsoft](../get-started/information-support#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com um pedido de rechaveamento da chave de inquilino do Azure RMS**. Tem de provar que é um administrador do inquilino do Azure RMS e compreender que este processo demorará alguns dias a ser confirmado. São aplicáveis encargos de suporte padrão; o rechaveamento da chave de inquilino não é um serviço de suporte gratuito.
+-   Se a sua chave de inquilino do Azure RMS for gerida pela Microsoft: para fazer isto, [contacte o Suporte da Microsoft](../get-started/information-support.md#to-contact-microsoft-support) para abrir um **caso de suporte do Azure Rights Management com um pedido de rechaveamento da chave de inquilino do Azure RMS**. Tem de provar que é um administrador do inquilino do Azure RMS e compreender que este processo demorará alguns dias a ser confirmado. São aplicáveis encargos de suporte padrão; o rechaveamento da chave de inquilino não é um serviço de suporte gratuito.
 
 -   Se a chave inquilino do Azure RMS for gerida por si (BYOK): repita o procedimento BYOK para gerar e criar uma nova chave através da Internet ou pessoalmente.
 
@@ -61,6 +54,7 @@ Agora que concluiu a migração, consulte o [plano de implementação](deploymen
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

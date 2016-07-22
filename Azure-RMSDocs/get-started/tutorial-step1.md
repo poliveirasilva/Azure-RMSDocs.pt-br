@@ -1,26 +1,20 @@
 ---
-# required metadata
-
-title: Tutorial de início rápido do Azure RMS – Passo 1 | Azure RMS
-description: O primeiro passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos.
-keywords:
+title: "Tutorial de início rápido do Azure RMS – Passo 1 | Azure RMS"
+description: "O primeiro passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
+keywords: 
 author: Cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
+ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+
 
 ---
 
@@ -43,9 +37,9 @@ Passar para:
 
 ![Passo 1 do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartSteps1.PNG)
 
-Apesar de poder ter uma subscrição que suporta o Azure Rights Management, o serviço está desativado por predefinição. Para ativá-lo, pode utilizar o centro de administração do Office 365 ou o portal clássico do Azure:
+Apesar de poder ter uma subscrição que suporta o Azure Rights Management, o serviço está desativado por predefinição. Para o ativar, pode utilizar o centro de administração do Office 365 ou o portal clássico do Azure:
 
--   Se tiver uma subscrição do Office 365 que inclua o Azure Rights Management ou uma subscrição do Office 365 que exclua o Azure Rights Management mas tiver uma subscrição do Azure RMS Premium: **utilize o centro de administração do Office 365**.
+-   Se tiver uma subscrição do Office 365 que inclua o Azure Rights Management ou uma subscrição do Office 365 que exclua o Azure Rights Management, mas tiver uma subscrição do Azure RMS Premium: **utilize o centro de administração do Office 365**.
 
 -   Se não tiver uma subscrição do Office 365: **utilize o portal clássico do Azure**.
 
@@ -53,9 +47,12 @@ Apesar de poder ter uma subscrição que suporta o Azure Rights Management, o se
 
 ### Para ativar o Rights Management a partir do centro de administração clássico do Office 365
 
-1.  Aceda ao [portal do Office 365](https://portal.office.com/) e inicie sessão com a sua conta escolar ou profissional.
+> [!NOTE]
+> Se estiver a utilizar o **pré-visualização do centro de administração do Office 365** em vez do centro de administração clássico do Office 365, pode utilizar as instruções em [Como ativar o Azure Rights Management a partir da pré-visualização do centro de administração do Office 365](../deploy-use/activate-office365-preview.md) ou mudar para a versão clássica para utilizar estas instruções. Para mudar, clique em **Ir para o centro de administração antigo** na página **Base** após ter iniciado sessão.
 
-2.  Se o centro de administração do Office 365 não for apresentado automaticamente, selecione o ícone do iniciador de aplicações no canto superior esquerdo e escolha **Administrador**. O mosaico **Administrador** só é apresentado aos administradores do Office 365.
+1.  Vá para o [portal do Office 365](https://portal.office.com/) e inicie sessão com a sua conta de administrador global do Office 365.
+
+2.  Se o centro de administração do Office 365 não for apresentado automaticamente, selecione o ícone do iniciador de aplicações no canto superior esquerdo e escolha **Administrador**. O mosaico **Administrador** só é apresentado para os administradores do Office 365.
 
     > [!TIP]
     > Para obter ajuda acerca do centro de administração, consulte [Acerca do centro de administração do Office 365 – Ajuda de Administração](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547).
@@ -76,11 +73,11 @@ Neste momento, não clique em **funcionalidades avançadas**. Isto leva-o para o
 
 ### Para ativar o Rights Management a partir do portal clássico do Azure
 
-1.  Aceda ao [portal clássico do Azure](http://go.microsoft.com/fwlink/p/?LinkID=275081) e inicie sessão.
+1.  Vá para o [portal clássico do Azure](http://go.microsoft.com/fwlink/p/?LinkID=275081) e inicie sessão com a sua conta de administrador global do Azure Active Directory.
 
 2.  No painel esquerdo, clique em **ACTIVE DIRECTORY**.
 
-3.  Na página **active directory**, clique em **RIGHTS MANAGEMENT**..
+3.  Na página **active directory**, clique em **RIGHTS MANAGEMENT**.
 
 4.  Selecione o diretório a gerir para o [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], clique em **ATIVAR** e confirme a ação.
 
@@ -90,7 +87,7 @@ Embora seja possível configurar outras opções do Rights Management no portal,
 
 É tudo o que precisa de fazer neste primeiro passo. O serviço está ativado para que todos os utilizadores na sua organização possam agora começar a proteger documentos importantes e confidenciais. Num ambiente de produção, pondere restringir quem pode fazer isto inicialmente, para uma implementação faseada. Mas não é necessário para este tutorial.
 
-Embora não estejam incluídos aqui, para uma implementação de produção, provavelmente também pretenderá configurar modelos personalizados. Os modelos fazem com que seja mais fácil para os utilizadores aplicarem rapidamente as definições corretas quando necessitam de proteger ficheiros. Quando ativar o Rights Management, obtém automaticamente 2 modelos predefinidos e é provável que deseje complementá-los com os seus modelos personalizados num ambiente de produção. No entanto, os modelos não são necessários para este tutorial, por isso pode ir para o passo seguinte.
+Embora não estejam incluídos aqui, para uma implementação de produção, provavelmente também pretenderá configurar modelos personalizados. Os modelos fazem com que seja mais fácil para os utilizadores aplicarem rapidamente as definições corretas quando necessitam de proteger ficheiros. Quando ativar o Rights Management, obtém automaticamente 2 modelos predefinidos e é provável que deseje complementá-los com os seus modelos personalizados num ambiente de produção. No entanto, os modelos não são necessários para este tutorial, pelo que pode ir para o passo seguinte.
 
 |Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
@@ -98,10 +95,11 @@ Embora não estejam incluídos aqui, para uma implementação de produção, pro
 |Acerca dos modelos predefinidos e de como criar modelos novos e personalizados|[Configurar modelos personalizados para o Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 
 
->[!div class="passo a passo"]
+>[!div class="step-by-step"]
 [« Introdução](quick-start-tutorial.md)
 [Passo 2 »](tutorial-step2.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

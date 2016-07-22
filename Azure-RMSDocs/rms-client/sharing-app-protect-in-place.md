@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management | Azure RMS
-description:
-keywords:
+title: "Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 Quando protege um ficheiro no local, este substitui o ficheiro original, que está desprotegido. Em seguida, pode deixar o ficheiro onde se encontra, copiá-lo para outra pasta ou dispositivo ou partilhar a pasta onde está e o ficheiro permanece protegido. Também pode anexar o ficheiro protegido a uma mensagem de e-mail, embora a forma recomendada para partilhar um ficheiro protegido por e-mail seja diretamente a partir do Explorador de Ficheiros ou de uma aplicação do Office (consulte [Proteger um ficheiro que partilha por e-mail ao utilizar a aplicação de partilha Rights Management](sharing-app-protect-by-email.md)).
 
 > [!TIP]
-> Se vir algum erro ao tentar proteger ficheiros, consulte a [FAQ acerca da Aplicação de Partilha Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
+> Se vir algum erro ao tentar proteger ficheiros, consulte as [FAQ acerca da Aplicação de Partilha Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
 ## Para proteger um ficheiro num dispositivo (proteger no local)
 
@@ -60,7 +54,7 @@ Quando protege um ficheiro no local, este substitui o ficheiro original, que est
 Se precisar de remover a proteção de um ficheiro mais tarde, consulte [Remover a proteção de um ficheiro ao utilizar a aplicação de partilha Rights Management](sharing-app-remove-protection.md).
 
 ## Exemplos e outras instruções
-Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, veja as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
 -   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
@@ -70,6 +64,7 @@ Para obter exemplos de como pode utilizar a aplicação de partilha Rights Manag
 [Guia do utilizador da aplicação de partilha Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

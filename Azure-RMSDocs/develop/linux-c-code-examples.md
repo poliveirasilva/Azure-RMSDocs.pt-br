@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Exemplos de código do Linux | Azure RMS
-description: Este tópico apresenta-lhe elementos de código e cenários importantes para a versão do Linux do SDK RMS.
-keywords:
+title: "Exemplos de código do Linux | Azure RMS"
+description: "Este tópico apresenta-lhe elementos de código e cenários importantes para a versão do Linux do SDK RMS."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: ace7103cfb44d84a7dd6bf64f57c2a47530117e0
+
 
 ---
 
@@ -28,7 +24,7 @@ ms.suite: ems
 
 Este tópico apresenta-lhe elementos de código e cenários importantes para a versão do Linux do SDK RMS.
 
-Os fragmentos de código abaixo são das aplicações de exemplo, *rms\_sample* e *rmsauth\_sample*. Para obter mais informações, consulte [amostras](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) no repositório GitHub.
+Os fragmentos de código abaixo são das aplicações de amostra, *rms\_sample* and *rmsauth\_sample*. Para obter mais informações, consulte [amostras](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) no repositório GitHub.
 
 ## Cenário: aceder às informações da política de proteção a partir de um ficheiro protegido
 
@@ -100,7 +96,7 @@ Os fragmentos de código abaixo são das aplicações de exemplo, *rms\_sample* 
     outFile-&gt;close();
     }
 
-**Criar uma sequência de ficheiros protegidos**
+**Criar um fluxo de ficheiros protegidos**
 **Origem**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Descrição**: este método cria uma sequência de ficheiros protegidos do fluxo subjacente transmitido através do método SDK *ProtectedFileStream::Aquire* que, em seguida, é devolvida ao autor da chamada.
@@ -205,13 +201,7 @@ Os fragmentos de código abaixo são das aplicações de exemplo, *rms\_sample* 
     
     AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+   catch (const rmsauth::Exception&amp; e) { AddLog(&quot;ERROR: &quot;, e.error().c_str()); outFile-&gt;close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException&amp; e) { AddLog(&quot;ERROR: &quot;, e.what());
     
     outFile-&gt;close();
     remove(fileOut.c_str());
@@ -254,7 +244,7 @@ Os fragmentos de código abaixo são das aplicações de exemplo, *rms\_sample* 
     }
     }
 
-**Protege um ficheiro ao qual é atribuído uma política**
+**Protege um ficheiro com base numa política**
 **Origem**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **Descrição**: crie uma sequência de ficheiros protegidos através da política em questão e, em seguida, proteja esse ficheiro.
@@ -511,7 +501,7 @@ O método *WorkerThread()* é chamado por dois dos cenários de exemplo anterior
 ## Cenário: autenticação de RMS
 
 Os exemplos seguintes mostram duas abordagens de autenticação diferentes: obter o token oAuth2 de Autenticação do Azure com e sem a IU.
-**Adquirir token de Autenticação oAuth2 com a IU**
+**Adquirir o Token de Autenticação oAuth2 com IU**
 **Origem**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
 **Passo 1**: crie um ponto partilhado do objeto **rmsauth::FileCache**.
@@ -522,8 +512,7 @@ Descrição: pode definir o caminho da cache ou utilizar a predefinição.
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Passo 2**: crie o objeto **rmsauth::AuthenticationContext**.
-Descrição: especifique o objeto *URI de autoridade* e *FileCache* do Azure.
+**Passo 2**: crie o objeto **rmsauth::AuthenticationContext** Descrição: especifique o objeto *authority URI* e *FileCache* do Azure.
 
 **C++**:
 
@@ -533,8 +522,7 @@ Descrição: especifique o objeto *URI de autoridade* e *FileCache* do Azure.
                               FileCachePtr);
 
 
-**Passo 3**: chame o método **aquireToken** do objeto **authContext** e especifique os parâmetros seguintes:
-Descrição:
+**Passo 3**: chame o método **aquireToken** do objeto **authContext** e especifique os parâmetros seguintes: Descrição:
 
 -   *Recurso requerido* – recurso protegido ao qual pretende aceder
 -   *ID único de cliente* – normalmente, um GUID
@@ -552,25 +540,22 @@ Descrição:
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**Passo 4**: obtenha o token de acesso do resultado.
-Descrição: chamar o método **result-&gt; accessToken()**
+**Passo 4**: obtenha o token de acesso do resultado Descrição: chame o método **result-&gt; accessToken()**
 
 **Nota** Qualquer um dos métodos de autenticação da biblioteca pode gerar **rmsauth::Exception**
 
  
-**Adquirir token de Autenticação oAuth2 sem a IU**
+**Adquirir Token de Autenticação oAuth2 sem IU**
 **Origem**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**Passo 1**: crie um ponto partilhado do objeto **rmsauth::FileCache**.
-Descrição: pode definir o caminho da cache ou utilizar a predefinição
+**Passo 1**: crie um ponto partilhado do objeto **rmsauth::FileCache** Descrição: pode definir o caminho da cache ou utilizar a predefinição
 
 **C++**:
 
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Passo 2**: crie o objeto **UserCredential**.
-Descrição: especifique o *início de sessão de utilizador* e a *palavra-passe*
+**Passo 2**: crie o objeto **UserCredential** Descrição: especifique *user login* e *password*
 
 **C++**:
 
@@ -578,8 +563,7 @@ Descrição: especifique o *início de sessão de utilizador* e a *palavra-passe
                                                  &quot;SomePass&quot;);
 
 
-**Passo 3**: crie o objeto **rmsauth::AuthenticationContext**.
-Descrição: especifique o objeto *URI* e *FileCache* da autoridade do Azure.
+**Passo 3**: crie o objeto **rmsauth::AuthenticationContext** Descrição: especifique o objeto *URI* e *FileCache* da autoridade do Azure
 
 **C++**:
 
@@ -602,13 +586,13 @@ Descrição: especifique o objeto *URI* e *FileCache* da autoridade do Azure.
                 userCred);
 
 
-**Passo 5**: obtenha o token de acesso do resultado.
-Descrição: chamar o método **result-&gt; accessToken()**
+**Passo 5**: obtenha o token de acesso a partir do resultado Descrição: chame o método **result-&gt; accessToken()**
 
 **Nota** Qualquer um dos métodos de autenticação da biblioteca pode gerar **rmsauth::Exception**
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

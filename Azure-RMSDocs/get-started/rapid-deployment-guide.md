@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Guia de implementação rápida para o Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Guia de implementação rápida para o Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ Os cenários aqui listados são uma amostra daqueles mais populares. Uma vez que
 
 Antes de implementar estas soluções, deve enviar um anúncio abrangente para os utilizadores finais, permitindo-lhes saber que algumas alterações serão feitas para ajudar a proteger os dados da empresa e que podem ser necessárias algumas alterações por parte desses indivíduos. Uma comunicação de exemplo está incluída depois da tabela seguinte.
 
-> [!NOTE] Se tiver perguntas e comentários acerca deste guia, utilize os mecanismos de comentários nesta página ou envie uma mensagem de e-mail para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE]
+> Se tiver perguntas e comentários acerca deste guia, utilize os mecanismos de comentários nesta página ou envie uma mensagem de e-mail para [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Cenários para o Azure RMS
 Para o ajudar a implementar mais rapidamente o Azure RMS para resolver problemas empresariais específicos, escolha os cenários que melhor correspondem aos seus objetivos empresariais e adapte-os sempre que necessário.
@@ -151,6 +146,7 @@ As soluções que estamos a implementar ajudam-nos a proteger os nossos dados va
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

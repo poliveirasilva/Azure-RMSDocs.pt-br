@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Tutorial de início rápido do Azure RMS – Passo 2 | Azure RMS
-description: O segundo passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos.
-keywords:
+title: "Tutorial de início rápido do Azure RMS – Passo 2 | Azure RMS"
+description: "O segundo passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+
 
 ---
 
@@ -44,7 +38,7 @@ Passar para:
 
 ![Passo 2 do tutorial de início rápido do Azure RMS](../media/AzRMS_QuickStartSteps2.PNG)
 
-A aplicação de partilha Rights Management (também conhecida como “aplicação de partilha RMS”) não é um requisito para o Azure Rights Management, mas é recomendada para todos os computadores e dispositivos móveis que suportem o Azure Rights Management. A aplicação de partilha RMS integra-se com aplicações do Office através da instalação de um suplemento do Office, para que os utilizadores possam facilmente proteger ficheiros diretamente a partir do friso. Também permite proteger todos os tipos de ficheiros ao aplicar a proteção genérica a ficheiros que não são suportados nativamente pelo Azure Rights Management e possibilita um site de controlo de documentos para os utilizadores controlarem e revogarem ficheiros protegidos por eles. Vamos utilizar o site de controlo de documentos mais adiante neste tutorial.
+A aplicação de partilha Rights Management (também conhecida como “aplicação de partilha RMS”) não é um requisito para o Azure Rights Management, mas é recomendada para todos os computadores e dispositivos móveis que suportem o Azure Rights Management. A aplicação de partilha RMS integra-se com aplicações do Office através da instalação de um suplemento do Office para que os utilizadores possam facilmente proteger ficheiros diretamente a partir do friso. De igual modo, permite proteger todos os tipos de ficheiros ao aplicar a proteção genérica a ficheiros que não são suportados nativamente pelo Azure Rights Management e possibilita um site de controlo de documentos para os utilizadores controlarem e revogarem ficheiros protegidos por eles. Vamos utilizar o site de controlo de documentos mais adiante neste tutorial.
 
 Esta aplicação pode ser transferida gratuitamente e oferece uma instalação com script para ambientes de produção. Mas, para este tutorial, vamos instalá-la localmente.
 
@@ -62,18 +56,20 @@ Esta aplicação pode ser transferida gratuitamente e oferece uma instalação c
 
 5.  Quando a instalação estiver concluída, clique em **Reiniciar**, se lhe for pedido para reiniciar o computador, ou clique em **Fechar** para concluir a instalação.
 
-Agora está pronto para começar a proteger ficheiros que contêm informações que pretende partilhar, mas apenas com as pessoas que especificar.
+Agora, está pronto para começar a proteger ficheiros que contêm informações que pretende partilhar, mas apenas com as pessoas que especificar.
 
 |Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
 |Acerca de uma instalação local da aplicação de partilha Rights Management para o Windows e instruções de utilizador|[Guia do utilizador da aplicação de partilha Rights Management](../rms-client/sharing-app-user-guide.md)|
 |Acerca de uma instalação com script da aplicação de partilha Rights Management para Windows e mais informações técnicas|[Guia do administrador da aplicação de partilha Rights Management](../rms-client/sharing-app-admin-guide.md)|
-|Para compreender a diferença entre a proteção nativa e a proteção genérica|[Qual é a diferença entre a proteção genérica e proteção incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|Para compreender a diferença entre a proteção nativa e a proteção genérica|[Qual é a diferença entre proteção genérica e proteção incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="step-by-step"] [« Passo 1](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[« Passo 1](quick-start-tutorial.md)
 [Passo 3 »](tutorial-step3.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

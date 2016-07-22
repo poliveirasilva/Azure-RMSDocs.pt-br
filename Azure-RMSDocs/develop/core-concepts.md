@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Termos e orientações para programadores | Azure RMS
-description: O objetivo do SDK RMS 4.2 é ajudá-lo a criar aplicações com suporte para o AD RMS que tiram partido da Proteção de Informações do AD RMS, da forma mais simples possível.
-keywords:
+title: "Termos e orientações para programadores | Azure RMS"
+description: "O objetivo do SDK RMS 4.2 é ajudá-lo a criar aplicações com suporte para o AD RMS que tiram partido da Proteção de Informações do AD RMS, da forma mais simples possível."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
+ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+
 
 ---
 
@@ -42,6 +38,7 @@ Os tópicos seguintes destinam-se a suportar o processo de estruturação para d
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

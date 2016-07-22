@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Aplicação de partilha RMS para Windows e plataformas móveis | Azure RMS
-description:
-keywords:
+title: "Aplicação de partilha RMS para Windows e plataformas móveis | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+
 
 ---
 
@@ -64,6 +58,7 @@ Para ver como outras aplicações e serviços suportam o Azure Rights Management
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Opções da caixa de diálogo para a aplicação de partilha Rights Management | Azure RMS
-description:
-keywords:
+title: "Opções da caixa de diálogo para a aplicação de partilha Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,7 +51,7 @@ Além das opções que pode escolher, poderá também estar a perguntar-se:
 -   Quando **protege um ficheiro genericamente**, as pessoas não autorizadas não podem abrir esse ficheiro. Porém, depois de as pessoas autorizadas abrirem o ficheiro, podem reencaminhá-lo desprotegido para outras pessoas ou guardá-lo numa localização à qual têm acesso outros utilizadores. No entanto, veem uma mensagem que indica as permissões que têm para o ficheiro e é-lhes pedido que as respeitem, mas esta proteção não pode ser imposta. Além disso, quando protege genericamente um ficheiro, não pode restringir as permissões além da autorização. Por exemplo, não pode restringir o conteúdo para ver apenas ou não imprimir.
 
     > [!NOTE]
-    > Um ficheiro protegido genericamente tem sempre uma extensão de nome de ficheiro **.pfile**.
+    > Um ficheiro protegido genericamente tem sem+re a extensão de nome de ficheiro **.pfile**.
 
 -   Em comparação, quando utiliza a **proteção incorporada (nativa)** do Rights Management com aplicações que suportam este tipo de proteção (por exemplo, ficheiros do Office), a proteção é aplicada ao ficheiro mesmo se este for enviado para outra pessoa ou guardado noutra localização. Além disso, ao proteger estes ficheiros, pode utilizar permissões restritivas como só de leitura, ou a permissão para editar, mas não para imprimir ou copiar. Por exemplo, pode selecionar **Visualizador – Ver Apenas**, para que não seja possível editar, imprimir ou copiar o conteúdo.
 
@@ -73,7 +67,7 @@ Para obter informações técnicas adicionais, consulte a secção [Níveis de p
     > Um ficheiro .ppdf é criado automaticamente quando utiliza a opção partilhar protegido (partilhar por e-mail), mas não é criado quando utiliza a opção proteger no local.
 
 ## Exemplos e outras instruções
-Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, veja as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
 -   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
@@ -84,6 +78,7 @@ Para obter exemplos de como pode utilizar a aplicação de partilha Rights Manag
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: SDK Microsoft Rights Management 4.2 | Azure RMS
-description: O SDK RMS 4.2 é uma API simplificada de última geração que possibilita uma experiência de desenvolvimento simples na atualização das suas aplicações de dispositivos com a proteção de informações.
-keywords:
+title: "SDK Microsoft Rights Management 4.2 | Azure RMS"
+description: "O SDK RMS 4.2 é uma API simplificada de última geração que possibilita uma experiência de desenvolvimento simples na atualização das suas aplicações de dispositivos com a proteção de informações."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf22d0b3c574ff1472df8428f6a39c359e0e95e1
+ms.openlocfilehash: be2774ba361c478fa20faa1490bb4e5ead90b8af
+
 
 ---
 
@@ -61,6 +57,7 @@ Esta versão, SDK MS RMS 4.2, está disponível para os seguintes sistemas ope
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

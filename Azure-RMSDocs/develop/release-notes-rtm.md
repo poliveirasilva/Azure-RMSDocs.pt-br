@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Notas de versão | Azure RMS
-description:
-keywords:
+title: "Notas de versão | Azure RMS"
+description: 
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+
 
 ---
 
@@ -30,7 +26,8 @@ Este tópico contém informações importantes sobre isto e sobre versões anter
 
 ## Novo na atualização da documentação do SDK de fevereiro de 2016
 
->[!Note]  As atualizações da documentação da funcionalidade nesta secção aplicam-se à transferência do SDK com a data de 11/12/2015.
+>[!Note]
+> As atualizações da documentação da funcionalidade nesta secção aplicam-se à transferência do SDK com a data de 11/12/2015.
 
 - **Fluxo de autenticação melhorado** – utilizar a autenticação com base no token OAuth2 através da [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Para mais informações sobre este processo e as extensões da API para o mesmo, consulte [Autenticação ADAL para a aplicação com permissão para RMS](how-to-use-adal-authentication.md).
 
@@ -180,6 +177,7 @@ Se não for possível obter um nome e uma descrição, é devolvido um erro. Ape
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

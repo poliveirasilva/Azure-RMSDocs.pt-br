@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Procedimentos para instalar, configurar e testar com um servidor RMS | Azure RMS
-description: Instale e configure e Servidor RMS para testar a sua aplicação com capacidade para direitos.
-keywords:
+description: "Instale e configure e Servidor RMS para testar a sua aplicação com capacidade para direitos."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ Os seguintes passos descrevem a configuração do servidor RMS e incluem:
 
     Para efetuar testes com um servidor RMS, configure a deteção do lado do servidor ou do lado do cliente para permitir que o Rights Management Service Client 2.1 detete e estabeleça comunicação com o seu servidor RMS.
 
-    > [!Note] Os testes com o Azure RMS não necessitam de configuração de deteção.
+    > [!Note]
+    > Os testes com o Azure RMS não necessitam de configuração de deteção.
 
   - Na deteção do lado do servidor, um administrador regista um ponto de ligação de serviço (SCP) para o cluster de raiz RMS com o Active Directory e o cliente consulta o Active Directory para detetar o SCP e estabelecer uma ligação com o servidor.
   - Na deteção do lado do cliente, configura as definições de Deteção do Serviço RMS no registo do computador onde está a executar o RMS Client 2.1. Estas definições apontam o RMS Client 2.1 para o servidor RMS a utilizar. Quando estiverem presentes, a deteção do lado do servidor não é efetuada.
 
-  Para configurar a deteção do lado do cliente, pode definir as seguintes chaves de registo para que apontem para o servidor RMS. Para obter informações sobre como configurar a deteção do lado do serviço, consulte as [Notas de Implementação do RMS Client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+  Para configurar a deteção do lado do cliente, pode definir as seguintes chaves de registo para que apontem para o servidor RMS. Para obter informações sobre como configurar a deteção do lado do serviço, consulte as [Notas de Implementação do RMS Client 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ Os seguintes passos descrevem a configuração do servidor RMS e incluem:
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Value**: (Predefinição): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] Por predefinição, estas chaves não existem no registo e têm de ser criadas.
+>[!NOTE] 
+> Por predefinição, estas chaves não existem no registo e têm de ser criadas.
 
->[!IMPORTANT] Se estiver a executar uma aplicação de 32 bits numa versão de 64 bits do Windows, tem de definir estas chaves na seguinte localização da chave:<p>
+>[!IMPORTANT] 
+> Se estiver a executar uma aplicação de 32 bits numa versão de 64 bits do Windows, tem de definir estas chaves na seguinte localização da chave:<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ Os seguintes passos descrevem a configuração do servidor RMS e incluem:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

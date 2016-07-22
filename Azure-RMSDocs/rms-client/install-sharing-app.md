@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Transferir e instalar a aplicação de partilha Rights Management | Azure RMS
-description:
-keywords:
+title: "Transferir e instalar a aplicação de partilha Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+
 
 ---
 
@@ -37,7 +31,7 @@ Não é necessário ser um administrador local para instalar a aplicação de pa
 
 2.  Na secção **Computadores**, clique no ícone da **aplicação RMS para Windows** e guarde o ficheiro **Setup.exe** para instalar a aplicação de partilha Microsoft Rights Management.
 
-3.  Faça duplo clique no ficheiro Setup.exe transferido. Se lhe for pedido para continuar, clique em **Sim**..
+3.  Faça duplo clique no ficheiro Setup.exe transferido. Se lhe for pedido para continuar, clique em **Sim**.
 
 4.  Na página **Configurar o Microsoft RMS**, clique em **Seguinte** e aguarde até que a instalação esteja concluída.
 
@@ -64,7 +58,7 @@ Se não for um administrador local e utilizar o Office 365 ou Office 2013, não 
 Pode continuar a instalação com estas limitações conhecidas. Em alternativa, pode interromper a instalação e voltar a executá-la com a opção **Executar como administrador** quando executar Setup.exe no passo 3 ou pedir a um administrador que o instale por si. Os administradores podem [efetuar o script desta instalação](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) para instalar automaticamente.
 
 ## Exemplos e outras instruções
-Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, consulte as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
+Para obter exemplos de como pode utilizar a aplicação de partilha Rights Management e instruções sobre como proceder, veja as secções seguintes do guia do utilizador da aplicação de partilha Rights Management:
 
 -   [Exemplos de utilização da aplicação de partilha RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
@@ -75,6 +69,7 @@ Para obter exemplos de como pode utilizar a aplicação de partilha Rights Manag
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

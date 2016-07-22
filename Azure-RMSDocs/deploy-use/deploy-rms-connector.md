@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Implementar o conector Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
+ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+
 
 ---
 
@@ -31,7 +25,8 @@ ms.suite: ems
 
 Utilize estas informações para saber mais acerca do conector Azure Rights Management (RMS) e como pode utilizá-lo para proporcionar proteção de informações com as implementações no local existentes que utilizam o Microsoft Exchange Server, o Microsoft SharePoint Server ou servidores de ficheiros que executam o Windows Server e utilizam a capacidade de Infraestrutura de Classificação de Ficheiros (FCI) do Gestor de Recursos do Servidor de Ficheiros.
 
-> [!TIP] Para um cenário geral de exemplo com capturas de ecrã, consulte a secção [Proteger automaticamente os ficheiros em servidores de ficheiros com o Windows Server e a Infraestrutura de Classificação de Ficheiros](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) no artigo [O Azure RMS em ação](../understand-explore/what-admins-users-see.md).
+> [!TIP]
+> Para um cenário geral de exemplo com capturas de ecrã, consulte a secção [Proteger automaticamente ficheiros em servidores de ficheiros a executar o Windows Server e a Infraestrutura de Classificação de Ficheiros](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) no artigo [O Azure RMS em ação](../understand-explore/what-admins-users-see.md).
 
 ## Descrição geral do conector Microsoft Rights Management
 O conector Microsoft Rights Management (RMS) permite-lhe ativar rapidamente servidores no local existentes para utilizar a respetiva funcionalidade de Gestão de Direitos de Informação (IRM) com o serviço Microsoft Rights Management (Azure RMS) baseado na nuvem. Com esta funcionalidade, o departamento de TI e os utilizadores podem proteger facilmente documentos e imagens dentro e fora da organização, sem terem de instalar outras infraestruturas ou estabelecer relações de fidedignidade com outras organizações. Pode utilizar este conector, mesmo que alguns dos seus utilizadores estabeleçam ligação a serviços online, num cenário híbrido. Por exemplo, as caixas de correio de alguns utilizadores utilizam o Exchange Online e as caixas de correio de alguns utilizadores utilizam o Exchange Server. Depois de instalar o conector RMS, todos os utilizadores podem proteger e consumir mensagens de e-mail e anexos ao utilizar o Azure RMS, sendo que a proteção de informações funciona na perfeição entre as duas configurações de implementação.
@@ -44,7 +39,8 @@ Se gerir a sua própria chave de inquilino para o Azure RMS (o cenário traga a 
 
 O conector RMS suporta os seguintes servidores no local: Exchange Server, SharePoint Server e servidores de ficheiros que executam o Windows Server e utilizam a Infraestrutura de Classificação de Ficheiros para classificar e aplicar políticas a documentos do Office numa pasta. Se pretender proteger todos os tipos de ficheiros ao utilizar a Classificação de Ficheiros, não utilize o conector RMS, mas sim os [cmdlets Proteção RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
-> [!NOTE] Para ver as versões suportadas destes servidores no local, consulte [Servidores no local que suportam o Azure RMS](..\get-started\requirements-servers.md).
+> [!NOTE]
+> Para ficar a conhecer as versões suportadas destes serviços no local, consulte [Servidores no local que suportam o Azure RMS](..\get-started\requirements-servers.md).
 
 Utilize as seguintes informações para o ajudar a planear, instalar e configurar o conector RMS. Em seguida, é necessário efetuar algumas tarefas de configuração pós-instalação para que os servidores possam utilizar o conector.
 
@@ -87,6 +83,7 @@ Antes de instalar o conector RMS, certifique-se de que os seguintes requisitos s
 
 Aceda a [Instalar e configurar o conector Azure Rights Management](install-configure-rms-connector.md).
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

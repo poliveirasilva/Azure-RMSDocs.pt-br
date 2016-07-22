@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Aplicações e serviços do Office | Azure RMS
-description:
-keywords:
+title: "Aplicações e serviços do Office | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 99eb67f6296ad1782c787aabb73a28458c02f367
+ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
+
 
 ---
 
@@ -33,9 +27,9 @@ ms.suite: ems
 As aplicações do Office para o utilizador final (tais como o Word, Excel, PowerPoint e Outlook) e os serviços do Office (tais como o Exchange e SharePoint) podem utilizar o Microsoft Azure Rights Management para ajudar a proteger os dados da sua organização.
 
 ## Aplicações do Office: Word, Excel, PowerPoint, Outlook
-Estas aplicações suportam nativamente o Rights Management, utilizando a gestão de direitos de informação (IRM), e permitem que os utilizadores protejam m documento guardado ou a uma mensagem de e-mail a enviar. Os utilizadores podem aplicar modelos ou escolher definições muito personalizadas para as restrições de acesso, os direitos e as restrições de utilização. 
+Estas aplicações suportam nativamente o Rights Management, utilizando a gestão de direitos de informação (IRM), e permitem que os utilizadores protejam m documento guardado ou a uma mensagem de e-mail a enviar. Os utilizadores podem aplicar modelos ou escolher definições muito personalizadas para as restrições de acesso, os direitos e as restrições de utilização no Word, Excel e PowerPoint. 
 
-Por exemplo, os utilizadores podem configurar um ficheiro para que possa ser acedido apenas por pessoas na sua organização ou controlar se o ficheiro pode ser editado, restrito ao acesso de leitura ou impedi-lo de ser impresso. Para ficheiros sensíveis ao tempo, é possível configurar um prazo de expiração (diretamente pelos utilizadores ou ao aplicar um modelo) para indicar quando deixa de ser possível aceder ao ficheiro. Para o Outlook, os utilizadores também podem escolher a opção **Não Reencaminhar** para ajudar a evitar a fuga de dados.
+Por exemplo, os utilizadores podem configurar um documento do Word para que possa ser acedido apenas por pessoas na sua organização ou controlar se uma folha de cálculo do Excel pode ser editada, restringida para acesso só d leitura ou impedida de ser impressa. Para ficheiros sensíveis ao tempo, é possível configurar um prazo de expiração (diretamente pelos utilizadores ou ao aplicar um modelo) para indicar quando deixa de ser possível aceder ao ficheiro. Para o Outlook, os utilizadores também podem escolher a opção **Não Reencaminhar** para ajudar a evitar a fuga de dados, além de escolherem um modelo.
 
 ## Exchange Online e Exchange Server
 Quando utiliza o Exchange Online ou o Exchange Server, pode utilizar a integração de gestão de direitos de informação (IRM), que fornece soluções de proteção de informações adicionais:
@@ -52,7 +46,7 @@ Quando utiliza o Exchange Online ou o Exchange Server, pode utilizar a integraç
 
 -   **Encriptação de Mensagens do Office 365** que utiliza regras de transporte para enviar e-mails encriptados para pessoas fora da sua empresa e o e-mail é lido num browser com uma interface semelhante ao Outlook Web App. Pode personalizar o texto de exclusão de responsabilidade e o texto do cabeçalho nos e-mails encriptados da sua empresa e até adicionar o logótipo da empresa. Para obter mais informações, consulte [Encriptação de Mensagens do Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) no Web site do Office.
 
-Se utilizar o Exchange Server, pode utilizar as funcionalidades de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] ao implementar o conetor RMS, que atua como um reencaminhamento entre os servidores no local e o serviço em nuvem do RMS. Para mais informações, consulte: [Implementar o conetor Azure Rights Management](../deploy-use/deploy-rms-connector.md).
+Se utilizar o Exchange Server, pode utilizar as funcionalidades de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] ao implementar o conetor RMS, que atua como um reencaminhamento entre os servidores no local e o serviço em nuvem do RMS. Para obter mais informações, consulte [Implementar o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## SharePoint Online e SharePoint Server
 Quando utiliza o SharePoint Online ou o SharePoint Server, pode utilizar a integração de gestão de direitos de informação (IRM), que permite aos administradores protegerem as listas ou bibliotecas para que quando um utilizador sai de um documento, o ficheiro fique protegido para que apenas pessoal autorizado possa vê-lo e utilizá-lo de acordo com as políticas de proteção de informações que especificar. Por exemplo, o ficheiro poderá ser só de leitura, poderá desativar a cópia de texto, impedir guardar uma cópia local e evitar imprimir o ficheiro.
@@ -61,7 +55,7 @@ Para listas e bibliotecas, a proteção de informações é sempre aplicada por 
 
 Primeiro, o serviço de IRM tem de estar ativado para o SharePoint. Em seguida, especifique a Gestão de Direitos de Informação para uma biblioteca. No caso do SharePoint Online e do OneDrive para Empresas, os utilizadores também podem especificar a Gestão de Direitos de Informação para a respetiva biblioteca do OneDrive para Empresas. O SharePoint não utiliza modelos de política de direitos, apesar de existirem configurações do SharePoint que pode selecionar que estritamente correspondem às definições que pode especificar nos modelos.
 
-Se utiliza o SharePoint Server, pode utilizar as funcionalidades de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] ao implementar o conetor RMS, que atua como um reencaminhamento entre os servidores no local e o serviço em nuvem do RMS. Para mais informações, consulte: [Implementar o conetor Azure Rights Management](../deploy-use/deploy-rms-connector.md).
+Se utiliza o SharePoint Server, pode utilizar as funcionalidades de proteção de informações com o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] ao implementar o conetor RMS, que atua como um reencaminhamento entre os servidores no local e o serviço em nuvem do RMS. Para obter mais informações, consulte [Implementar o conector do Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 > [!NOTE]
 > Atualmente, existem algumas limitações ao utilizar a IRM com o SharePoint:
@@ -78,6 +72,7 @@ Para obter mais informações sobre como utilizar o Azure RMS com o SharePoint, 
 
 Para ver como outras aplicações e serviços suportam o Azure Rights Management, consulte [Como as aplicações suportam o Azure Rights Management](applications-support.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: SDK Rights Management Services 2.1 | Azure RMS
-description: A plataforma SDK RMS 2.1 permite aos programadores criarem aplicações que tiram partido do RMS ou do Azure RMS para fornecer proteção de informações.
-keywords:
+title: "SDK Rights Management Services 2.1 | Azure RMS"
+description: "A plataforma SDK RMS 2.1 permite aos programadores criarem aplicações que tiram partido do RMS ou do Azure RMS para fornecer proteção de informações."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+
 
 ---
 
@@ -45,10 +41,8 @@ Para obter informações sobre os requisitos de tempo de execução para um dete
 |Tópico|Descrição|
 |-----|--------|
 |[Descrição Geral](ad-rms-overview.md)|O Rights Management Services (RMS) é uma tecnologia de proteção de informações que ajuda a salvaguardar as informações digitais contra a utilização não autorizada.|
-|[De que forma este SDK é melhor](differences-between-ad-rms-and-ad-rms-2-0.md)|O SDK RMS 2.1 é uma melhoria significativa em relação ao SDK Rights Management Services original.|
 |[Introdução](getting-started-with-ad-rms-2-0.md)|A plataforma SDK RMS 2.1 permite aos programadores criarem aplicações que tiram partido da proteção de informações do RMS.|
 |[Notas de versão](release-notes-rtm.md)|Este tópico contém informações importantes sobre isto e sobre versões anteriores do SDK RMS 2.1.|
-|[Exemplos de código](samples.md)|Este tópico indica um conjunto de exemplos utilizando o SDK RMS 2.1, disponível no Centro de Transferências MSDN.|
 |[Notas do programador](developer-notes.md)|Esta secção inclui orientações específicas para vários cenários de desenvolvimento importantes.|
 |[Referência da API](api-reference-2-1.md)|Esta secção contém tópicos que abrangem o material de referência de todos os elementos da API.|
 
@@ -64,6 +58,7 @@ Para obter informações sobre os requisitos de tempo de execução para um dete
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Script do Windows PowerShell para a proteção Azure RMS através do Gestor de Recursos do Servidor de Ficheiros (FCI) | Azure RMS
-description:
-keywords:
+title: "Script do Windows PowerShell para a proteção Azure RMS através do Gestor de Recursos do Servidor de Ficheiros (FCI) | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+
 
 ---
 
@@ -29,10 +23,10 @@ ms.suite: ems
 
 *Aplica-se a: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Esta página contém o script de exemplo para copiar e editar, conforme descrito em [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
+Esta página contém o script de amostra para copiar e editar, conforme descrito em [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
 
-*&#42;&#42;Exclusão de responsabilidade&#42;&#42;: este script de exemplo não é suportado por nenhum serviço ou programa de suporte padrão da Microsoft. Este script de*
-*exemplo é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantias.*
+*&#42;&#42;Exclusão de responsabilidade&#42;&#42;: este script de amostra não é suportado por nenhum serviço ou programa de suporte padrão da Microsoft. Este script de*
+*amostra é fornecido TAL COMO ESTÁ, sem qualquer tipo de garantias.*
 
 ```
 <#
@@ -177,9 +171,10 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-Voltar a [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
+Volte à [Proteção RMS com Infraestrutura de Classificação de Ficheiros do Windows Server](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

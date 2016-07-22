@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instalar e configurar o conector Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
+ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *Aplica-se a: Azure Rights Management, Office 365*
 
-Utilize as seguintes informações para o ajudar a instalar e configurar o conector Azure Rights Management (RMS). Estes procedimentos estão descritos nos passos 1 a 4 do artigo [Deploying the Azure Rights Management connector (Implementar o conector Azure Rights Management – em inglês)](deploy-rms-connector.md).
+Utilize as seguintes informações para o ajudar a instalar e configurar o conector Azure Rights Management (RMS). Estes procedimentos abrangem os passos de 1 a 4 para [Implementar o conector do Azure Rights Management](deploy-rms-connector.md).
 
 Antes de começar, certifique-se de que consultou e verificou os [pré-requisitos](deploy-rms-connector.md#prerequisites-for-the-rms-connector) para esta implementação.
 
@@ -53,9 +47,9 @@ Antes de começar, certifique-se de que consultou e verificou os [pré-requisito
 
 3.  No computador em que pretende instalar o conector RMS, execute o ficheiro **RMSConnectorSetup.exe** com privilégios de Administrador.
 
-4.  Na página de boas-vindas da página Configuração do Conector Microsoft Rights Management, selecione **Instalar o conector Microsoft Rights Management no computador** e, em seguida, clique em **Seguinte**.
+4.  Na página de boas-vindas da página Configuração do Conector do Microsoft Rights Management, selecione **Instalar o conector do Microsoft Rights Management no computador** e, em seguida, clique em **Seguinte**.
 
-5.  Leia e concorde com os termos de licenciamento do conector RMS e, em seguida, clique em **Seguinte**.
+5.  Leia e aceite os termos de licença do conector RMS e, em seguida, clique em **Seguinte**.
 
 Para continuar, introduza uma conta e palavra-passe para configurar o conector RMS.
 
@@ -68,16 +62,18 @@ Além disso, se tiver implementado [controlos de integração](activate-service.
 
 Pode utilizar uma conta que tenha um dos seguintes privilégios:
 
--   **Administrador do inquilino do Office 365**: uma conta que seja um administrador global do seu inquilino do Office 365.
+-   **Administrador global do seu inquilino**: uma conta que é um administrador global do inquilino do Office 365 ou do inquilino do Azure AD.
 
--   **Administrador global do Azure Rights Management**: uma conta com privilégios de administrador do inquilino do Azure RMS.
+-   **Administrador global do Azure Rights Management**: uma conta no Azure Active Directory à qual foi atribuída a função de administrador global do Azure RMS.
 
--   **Administrador do conector Microsoft RMS**: uma conta no Azure Active Directory com direitos para instalar e administrar o conector RMS na sua organização.
+-   **Administrador do conector do Azure Rights Management**: uma conta no Azure Active Directory com direitos para instalar e administrar o conector do RMS na sua organização.
 
     > [!NOTE]
-    > Se quiser utilizar a conta de Administrador do conector Microsoft RMS, tem primeiro de atribuir a função de administrador do conector RMS, da seguinte forma:
+    > A função de administrador global do Azure Rights Management e a função de administrador do conector do Azure Rights Management são atribuídas às contas através do cmdlet [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) do Azure RMS.
+    > 
+    > Para executar o conector do RMS com o mínimo de privilégios, crie uma conta dedicada para este efeito que depois atribui a função de administrador do conector do Azure RMS através do seguinte procedimento:
     >
-    > 1.  No mesmo computador, transfira e instale o Windows PowerShell para o Rights Management. Para mais informações, consulte [Installing Windows PowerShell for Azure Rights Management (Instalar o Windows PowerShell para o Azure Rights Management – em inglês)](install-powershell.md).
+    > 1.  Se ainda não o fez, transfira e instale o Windows PowerShell para o Rights Management. Para mais informações, consulte [Instalar o Windows PowerShell para o Azure Rights Management](install-powershell.md).
     >
     >     Inicie o Windows PowerShell com o comando **Executar como administrador** e estabeleça ligação ao serviço Azure RMS através do comando [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx):
     >
@@ -99,7 +95,7 @@ Pode utilizar uma conta que tenha um dos seguintes privilégios:
     >     ```
     >     Por exemplo, escreva: **Add-AadrmRoleBasedAdministrator -EmailAddress mariana@contoso.com -Role " ConnectorAdministrator "**
     >
-    >     Embora estes comandos utilizem a função ConnectorAdministrator, também pode utilizar a função GlobalAdministrator aqui.
+    >     Embora estes comandos atribuam a função de administrador do conector, também pode utilizar a função GlobalAdministrator aqui.
 
 Durante o processo de instalação do conector RMS, todos os softwares de pré-requisito são validados e instalados, os Serviços de Informação Internet (IIS) são instalados se ainda não estiverem presentes e o software do conector é instalado e configurado. Além disso, o Azure RMS é preparado para configuração ao criar o seguinte:
 
@@ -111,7 +107,7 @@ Na página final do assistente, efetue o seguinte procedimento e, em seguida, cl
 
 -   Se este for o primeiro conector que instala, não selecione ainda a opção **Iniciar a consola do administrador do conector para autorizar servidores**. Selecione esta opção depois de instalar o seu segundo (ou último) conector RMS. Em alternativa, execute novamente o assistente em pelo menos mais um computador. Tem de instalar um mínimo de dois conectores.
 
--   Se já tiver instalado o seu segundo (ou último) conector, selecione a opção **Iniciar a consola do administrador do conector para autorizar servidores**.
+-   Se já tiver instalado o seu segundo (ou último) conector, selecione **Iniciar a consola do administrador do conector para autorizar servidores**.
 
 > [!TIP]
 > Nesta fase, existe um teste de verificação que pode realizar para testar se os serviços Web do conector RMS estão operacionais:
@@ -173,7 +169,7 @@ O nome de servidor do URL do conector pode ser qualquer nome dentro do espaço d
 > [!IMPORTANT]
 > Recomendamos que não altere este nome após ter configurado os servidores Exchange e do SharePoint para utilizar o conector, uma vez que teria de limpar as configurações de IRM destes servidores e, depois, reconfigurá-las.
 
-Depois de criar o nome no DNS e de o configurar para um endereço IP, configure o balanceamento de carga desse endereço, que redireciona o tráfego para os servidores do conector. Pode utilizar qualquer balanceador de carga baseado em IP para este fim, que inclua a funcionalidade Balanceamento de Carga na Rede (NLB) no Windows Server. Para mais informações, consulte o [Load Balancing Deployment Guide (Guia de Implementação do Balanceamento de Carga – em inglês)](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx).
+Depois de criar o nome no DNS e de o configurar para um endereço IP, configure o balanceamento de carga desse endereço, que redireciona o tráfego para os servidores do conector. Pode utilizar qualquer balanceador de carga baseado em IP para este fim, que inclua a funcionalidade Balanceamento de Carga na Rede (NLB) no Windows Server. Para mais informações, consulte o [Load Balancing Deployment Guide ](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Guia de Implementação do Balanceamento de Carga – em inglês).
 
 Utilize as seguintes definições para configurar o cluster com balanceamento de carga em rede (NLB):
 
@@ -242,8 +238,9 @@ Se ainda não tiver transferido estes ficheiros, pode fazê-lo no [Centro de Tra
 
 
 ## Passos seguintes
-Agora que o conector RMS está instalado e configurado, está pronto para configurar os seus servidores no local para utilizá-lo. Aceda a [Configuring servers for the Azure Rights Management connector (Configurar servidores para o conector Azure Rights Management – em inglês)](configure-servers-rms-connector.md).
+Agora que o conector RMS está instalado e configurado, está pronto para configurar os seus servidores no local para utilizá-lo. Aceda a [Configuring servers for the Azure Rights Management connector](configure-servers-rms-connector.md) (Configurar servidores para o conector Azure Rights Management – em inglês).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

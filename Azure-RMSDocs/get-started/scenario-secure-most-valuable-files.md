@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Cenário – Proteger alguns dos seus ficheiros mais importantes | Azure RMS
-description:
-keywords:
+title: "Cenário – Proteger alguns dos seus ficheiros mais importantes | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+
 
 ---
 
@@ -94,7 +88,8 @@ Para este cenário, é necessário que os seguintes aspetos estejam implementado
 
 Para obter mais informações sobre como proteger ficheiros no local, consulte [Proteger um ficheiro num dispositivo (proteger no local) ao utilizar a aplicação de partilha Rights Management](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
 
-> [!TIP] Se o número de ficheiros que pretende proteger for demasiado elevado para executar este processo manual, considere utilizar a [ferramenta de Proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) para proteger os ficheiros em volume com o modelo.
+> [!TIP]
+> Se o número de ficheiros que quer proteger for demasiado elevado para executar este processo manual, considere utilizar a [ferramenta de Proteção RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) para proteger os ficheiros em volume com o modelo.
 
 ### Para monitorizar e, se necessário, revogar o acesso aos ficheiros
 
@@ -152,6 +147,7 @@ Os ficheiros seguintes estão agora sujeitos a um nível muito elevado de prote�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

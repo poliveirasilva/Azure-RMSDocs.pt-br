@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Atualizar modelos | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -34,10 +28,10 @@ Quando utiliza o Azure RMS, os modelos são automaticamente transferidos para co
 
 |Aplicação ou serviço|Como os modelos são atualizados depois das alterações|
 |--------------------------|---------------------------------------------|
-|Exchange Online|Configuração manual necessária para atualizar os modelos.<br /><br />Para obter os passos de configuração, consulte a secção [Apenas para o Exchange Online: como configurar o Exchange para transferir modelos personalizados modificados](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)..|
+|Exchange Online|Configuração manual necessária para atualizar os modelos.<br /><br />Para obter os passos de configuração, consulte a secção [Apenas para o Exchange Online: como configurar o Exchange para transferir modelos personalizados modificados](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
 |Office 365|Atualizados automaticamente – não existem passos adicionais necessários.|
 |Office 2016 e Office 2013<br /><br />Aplicação de partilha RMS para Windows|Atualizados automaticamente – com base numa agenda:<br /><br />Para estas versões posteriores do Office: o intervalo de atualização predefinido é de 7 dias.<br /><br />Para a aplicação de partilha RMS para Windows: a partir da versão 1.0.1784.0, o intervalo de atualização predefinido é de 1 dia. As versões anteriores têm um intervalo de atualização predefinido de 7 dias.<br /><br />Para forçar uma atualização mais cedo do que a agendada, consulte a secção [Office 2016, Office 2013 e aplicação de partilha RMS para Windows: como forçar uma atualização de um modelo personalizado modificado](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Office 2010|Atualizado quando os utilizadores iniciam sessão.<br /><br />Para forçar uma atualização, peça ou force os utilizadores a terminarem e a iniciarem a sessão novamente. Em alternativa, consulte a secção [Apenas para Office 2010: como forçar uma atualização de um modelo personalizado modificado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Office 2010|Atualizado quando os utilizadores iniciam sessão.<br /><br />Para forçar uma atualização, peça ou force os utilizadores a terminar a sessão e a iniciar sessão novamente. Em alternativa, consulte a secção [Apenas para Office 2010: como forçar uma atualização de um modelo personalizado modificado](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
 Para dispositivos móveis que utilizam a aplicação de partilha RMS, os modelos são automaticamente transferidos (e atualizados se necessário) sem ser necessária uma configuração adicional.
 
 ## Apenas para Exchange Online: como configurar o Exchange para transferir modelos personalizados modificados
@@ -58,7 +52,7 @@ Tem de efetuar este procedimento sempre que alterar um modelo.
         $Cred = Get-Credential
         ```
 
-    2.  Execute os dois comandos seguintes para ligar ao serviço do Exchange Online:
+    2.  Execute os dois comandos seguintes para ligar ao serviço Exchange Online:
 
         ```
         $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
@@ -192,6 +186,7 @@ Ao editar o registo nos computadores ao executar o Office 2010, pode definir um 
 ## Consulte Também
 [Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

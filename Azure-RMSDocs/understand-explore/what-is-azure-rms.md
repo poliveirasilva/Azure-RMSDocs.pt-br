@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: O que é o Azure Rights Management? | Azure RMS
-description:
-keywords:
+title: "O que é o Azure Rights Management? | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ Igualmente importante é o facto de as pessoas e os serviços autorizados (por e
 A imagem que se segue mostra de que forma o Azure RMS funciona como uma solução de Rights Management para o Office 365, bem como para servidores e serviços no local. Também verá que suporta os dispositivos de utilizador final populares que utilizam Windows, Mac OS, iOS, Android e Windows Phone.
 
 > [!NOTE]
-Pode utilizar o Azure RMS com subscrições de nuvem diferentes, que incluem o Office 365, o Enterprise Mobility Suite e o Azure RMS Premium. Para obter mais informações, consulte [Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).
+Pode utilizar o Azure RMS com subscrições de nuvem diferentes, que incluem o Office 365, o Enterprise Mobility Suite e o Azure RMS Premium. Para mais informações, consulte [Subscrições na nuvem que suportam o Azure RMS](../get-started/requirements-subscriptions.md).
 
 ![Como funciona o Azure RMS](../media/AzRMS_elements.png)
 
@@ -64,9 +58,10 @@ Se quiser começar já e experimentar o Azure RMS, utilize o [Tutorial de iníci
 No entanto, se estiver pronto para iniciar a implementação do Azure RMS na sua organização, utilize o [Plano de implementação do Azure Rights Management](../plan-design/deployment-roadmap.md) para obter os passos da implementação e ligações para instruções sobre como proceder.
 
 > [!TIP]
-> Para obter informações adicionais e ajuda, utilize os recursos e ligações em [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
+> Para obter ajuda e informações adicionais, utilize os recursos e as ligações em [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

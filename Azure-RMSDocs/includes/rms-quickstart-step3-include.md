@@ -42,6 +42,6 @@ Agora que enviou o documento protegido, pode pedir aos destinatários para o abr
 |Acerca das opções na caixa de diálogo **partilhar protegido**   →|[Opções da caixa de diálogo para a aplicação de partilha Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

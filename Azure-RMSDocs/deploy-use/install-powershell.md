@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Instalar o Windows PowerShell para o Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 590148218fdd10e88ba764b2dc523a2213e2c8bb
+
 
 ---
 
@@ -40,7 +34,7 @@ Esta tabela lista os pré-requisitos para instalar e utilizar o Windows PowerShe
 |---------------|--------------------|
 |Uma versão do Windows que suporte o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Verifique a lista de sistemas operativos suportados na secção **Requisitos de Sistema** da [página de transferência da Ferramenta de Administração do Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).|
 |Versão mínima do Windows PowerShell: 2.0|O suporte para o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] é apresentado no Windows PowerShell 2.0.<br /><br />Por predefinição, a maioria dos sistemas operativos do Windows instala com, pelo menos, a versão 2.0 do Windows PowerShell. Se precisar de instalar o Windows PowerShell 2.0, consulte [Instalar o Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Dica: pode confirmar a versão do Windows PowerShell que está a executar, escrevendo **$PSVersionTable** numa sessão do Windows PowerShell.|
-|Versão mínima do Microsoft .NET Framework: 4.5<br /><br />Nota: esta versão do Microsoft .NET Framework está incluída em sistemas operativos posteriores, pelo que apenas deve instalá-la manualmente se o sistema operativo cliente for inferior ao Windows 8.0 ou o sistema operativo do servidor for inferior ao Windows Server 2012.|Se a versão mínima do Microsoft .NET Framework não estiver já instalada, pode transferir o [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Esta versão mínima do Microsoft .NET Framework é necessária para algumas das classes que o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] utiliza.|
+|Versão mínima do Microsoft .NET Framework: 4.5<br /><br />Nota: esta versão do Microsoft .NET Framework está incluída em sistemas operativos posteriores, pelo que apenas deve instalá-la manualmente se o sistema operativo cliente for inferior ao Windows 8.0 ou o sistema operativo do servidor for inferior ao Windows Server 2012.|Se a versão mínima do Microsoft .NET Framework não estiver já instalada, pode transferir o [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Esta versão mínima do Microsoft .NET Framework é necessária para algumas das classes que o módulo de administração do [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] utiliza.|
 |Assistente de Início de Sessão no Microsoft Online Services 7.0|O Assistente de Início de Sessão no Microsoft Online Services é necessário para a autenticação do [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].<br /><br />Para obter mais informações, consulte [Centro de Transferências: Assistente do Microsoft Online Services para Profissionais de TI RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
 
 ## Como instalar o módulo de administração do Rights Management
@@ -76,6 +70,7 @@ Antes de poder executar quaisquer comandos para configurar o serviço [!INCLUDE[
 [Administrar o Azure Rights Management ao Utilizar o Windows PowerShell](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

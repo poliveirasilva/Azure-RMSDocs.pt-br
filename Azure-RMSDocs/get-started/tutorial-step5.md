@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Tutorial de início rápido do Azure RMS – Passo 5 | AZURE RMS"
-description: "o último passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
-keywords:
+title: "Tutorial de início rápido do Azure RMS - Passo 5 | Azure RMS"
+description: "O último passo de um tutorial para experimentar rapidamente o Microsoft Azure Rights Management na sua organização com apenas 5 passos que devem demorar menos de 15 minutos."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -46,9 +44,9 @@ Passar para:
 > [!NOTE]
 > Para este passo, é necessário ter uma subscrição que suporte o controlo de documentos. Para verificar se a sua subscrição inclui o controlo de documentos, consulte [Comparação das Ofertas do Rights Management Services (RMS)](https://technet.microsoft.com/dn858608.aspx).
 
-Este passo é opcional, mas a maioria das pessoas gosta de saber se o anexo que enviam as outras pessoas foi aberto, quando e até a partir de onde. Por exemplo:
+Este passo é opcional, mas a maioria das pessoas gosta de saber se o anexo que enviam para as outras pessoas foi aberto, quando e até a partir de onde. Por exemplo:
 
--   Está à espera de uma resposta de uma pessoa até uma determinada hora e consegue ver no site de controlo de documentos que essa pessoa ainda não abriu o documento, apesar do prazo estar a chegar ao fim. Envia-lhe uma mensagem de e-mail de acompanhamento ou telefona-lhe para a lembrar.
+-   Está à espera de uma resposta de uma pessoa até uma determinada hora e consegue ver no site de controlo de documentos que essa pessoa ainda não abriu o documento, apesar de o prazo estar a chegar ao fim. Envia-lhe uma mensagem de e-mail de acompanhamento ou telefona-lhe para a lembrar.
 
 -   Depois de ver que alguém abriu o documento, pergunta à pessoa se tem alguma questão ou se necessita de mais informações.
 
@@ -58,7 +56,7 @@ Este passo é opcional, mas a maioria das pessoas gosta de saber se o anexo que 
 
 1.  No Outlook, no separador **Base**, no grupo **RMS**, clique em **Controlar a Utilização**.
 
-2.  Se vir a página **Proteção e partilha à sua medida**, clique em **Iniciar sessão** e indique novamente o nome de utilizador e palavra-passe.
+2.  Se vir a página **Proteção e partilha à sua medida**, clique em **Iniciar sessão** e indique novamente o nome de utilizador e a palavra-passe.
 
 3.  Na página **Documentos partilhados**, verá o documento que anexou à mensagem de e-mail, **Confidencial.docx**. Neste momento, é o único ficheiro apresentado, mas à medida que partilhar mais documentos protegidos, a lista aumenta.
 
@@ -68,7 +66,7 @@ Este passo é opcional, mas a maioria das pessoas gosta de saber se o anexo que 
 
     Clique em cada opção para explorar formas diferentes de controlar o documento protegido. Em alternativa, ainda na página **Resumo**, clique em **Abrir no Excel** para exportar as informações para uma folha de cálculo ou clique em **Revogar acesso** para deixar de partilhar o documento.
 
-Pode voltar a este site para controlar mais atividades do documento protegido ou revogar o acesso, se necessário. Pode inclusivamente aceder ao site a partir do seu dispositivo móvel ou tablet, utilizando um browser com esta ligação: [controlo de documentos](http://go.microsoft.com/fwlink/?LinkId=529562)
+Pode voltar a este site para controlar mais atividades do documento protegido ou revogar o acesso, se necessário. Pode, inclusive, aceder ao site a partir do dispositivo móvel ou tablet, utilizando um browser com esta ligação: [controlo de documentos](http://go.microsoft.com/fwlink/?LinkId=529562)
 
 |Se pretender mais informações|Informações adicionais|
 |--------------------------------|--------------------------|
@@ -83,7 +81,8 @@ Se estiver pronto para iniciar a implementação do Azure RMS, utilize o [Plano 
 
 Ou, para ver uma lista de cenários específicos e passos de configuração associados e a documentação do utilizador final, consulte o [Guia de implementação rápida do Azure Rights Management](../get-started/rapid-deployment-guide.md).
 
->[!div class="step-by-step"] [Introdução](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[Introdução](quick-start-tutorial.md)
 [Passo 1](tutorial-step1.md)
 [Passo 2](tutorial-step2.md)
 [Passo 3](tutorial-step3.md)
@@ -91,6 +90,7 @@ Ou, para ver uma lista de cenários específicos e passos de configuração asso
 *Passo 5*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

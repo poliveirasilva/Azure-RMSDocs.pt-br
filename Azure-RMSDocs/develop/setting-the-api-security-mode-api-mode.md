@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Procedimentos para definir o modo de segurança da API | Azure RMS
-description: Escolha o modo de segurança em que é executada a sua aplicação de API de Ficheiros.
-keywords:
+title: "Procedimentos para definir o modo de segurança da API | Azure RMS"
+description: "Escolha o modo de segurança em que é executada a sua aplicação de API de Ficheiros."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 11b998addd14fdde0592ed948b956ddb2ed6e570
+ms.openlocfilehash: 2be40c9caf33f391f8be9fe116d3473ce995613b
+
 
 ---
 
@@ -44,6 +40,7 @@ Para obter mais informações sobre o *modo de servidor*, consulte [Tipos de apl
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

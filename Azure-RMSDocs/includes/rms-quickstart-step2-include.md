@@ -27,6 +27,6 @@ Agora, está pronto para começar a proteger ficheiros que contêm informações
 |Para compreender a diferença entre a proteção nativa e a proteção genérica   →|[Qual é a diferença entre a proteção genérica e proteção incorporada (nativa)?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

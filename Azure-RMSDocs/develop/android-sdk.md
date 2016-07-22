@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configuração do Android | Azure RMS
-description: As aplicações Android podem utilizar o SDK Microsoft Rights Management 4.2 para ativar a proteção de informações integrada nas respetivas aplicações.
-keywords:
+title: "Configuração do Android | Azure RMS"
+description: "As aplicações Android podem utilizar o SDK Microsoft Rights Management 4.2 para ativar a proteção de informações integrada nas respetivas aplicações."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +46,7 @@ Recomendamos o seguinte software no sistema de desenvolvimento:
 
     Este SDK pode ser utilizado para desenvolver para o Android 4.0.3 (nível de API 15) e posterior.
 
--   Biblioteca de autenticação: recomendamos que utilize a [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que suportem o OAuth 2.0 também podem ser utilizadas.
+-   Biblioteca de autenticação: recomendamos que utilize a [Biblioteca de Autenticação do Azure AD (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). No entanto, outras bibliotecas de autenticação que suportem o OAuth 2.0 também podem ser utilizadas.
 
     Para obter mais informações, consulte [ADAL para Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
@@ -106,7 +102,7 @@ A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para 
 
     ![Importá-lo para a área de trabalho](../media/Android-setup-07.png)
 
--   Clique em **Seguinte**. Navegue para selecionar a pasta onde extraiu o *adrms\_android\_sdk.zip*. O SDK deve aparecer na lista de como **com.microsoft.rightsmanagement**.
+-   Clique em **Seguinte**. Navegue para a pasta onde extraiu o *adrms\_android\_sdk.zip*. O SDK deve aparecer na lista de como **com.microsoft.rightsmanagement**.
 
     ![Navegar para selecionar a pasta](../media/Android-setup-08c.jpg)
 
@@ -122,7 +118,7 @@ A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para 
 
 -   Clique em **OK**.
 
-    Uma vez que o SDK MS RMS 4.2 estabelece ligação com o AAD RM, é necessário conceder a aplicação a **INTERNET** e **ACCESS\_NETWORK\_STATE**. Para tal, abra o ficheiro *AndroidManifest.xml* na raiz do projeto.
+    Uma vez que o SDK MS RMS 4.2 liga ao AAD RM, é necessário conceder **INTERNET** e **ACCESS\_NETWORK\_STATE** à aplicação. Para tal, abra o ficheiro *AndroidManifest.xml* na raiz do projeto.
 
     Para adicionar as permissões, clique em **Adicionar** e selecione **Utiliza Permissões**.
 
@@ -131,12 +127,7 @@ A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para 
 -   Pode verificar o passo do manifesto ao visualizar o manifesto na vista de editor de texto. Certifique-se de que as linhas seguintes são apresentadas:
 
 
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **Nota** O SDK utiliza o *android.support.v4*
@@ -158,6 +149,7 @@ A nossa biblioteca da interface de utilizador fornece uma IU reutilizável para 
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

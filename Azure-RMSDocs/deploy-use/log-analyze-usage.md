@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Registo e análise da utilização do Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Registo e análise da utilização do Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ Em seguida, pode utilizar estes registos do Azure Rights Management para ajudar 
 
     Se ocorrer uma fuga de informações, é provável que lhe seja pedido para indicar quem acedeu recentemente a documentos específicos e a que tipo de informações uma pessoa suspeita acedeu recentemente. Se utilizar o Azure Rights Management e os registos, poderá responder a este tipo de questões, porque as pessoas que utilizam conteúdos protegidos têm sempre de obter uma licença de Rights Management para abrir documentos e imagens protegidos pelo Azure Rights Management, mesmo que estes ficheiros sejam movidos por e-mail ou copiados para unidades USB ou para outros dispositivos de armazenamento. Isto significa que, se proteger os seus dados com o Azure Rights Management, pode utilizar os registos do mesmo como fonte definitiva de informações para análises forenses.
 
-> [!NOTE] Caso só esteja interessado no registo de tarefas administrativas para o Azure Rights Management e não queira controlar a forma como os utilizadores estão a utilizar o Rights Management, pode utilizar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell para o Azure Rights Management.
+> [!NOTE]
+> Caso só esteja interessado no registo de tarefas administrativas para o Azure Rights Management e não queira controlar a forma como os utilizadores estão a utilizar o Rights Management, pode utilizar o cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) do Windows PowerShell para o Azure Rights Management.
 > 
 > Também pode utilizar o portal clássico do Azure para relatórios gerais de utilização que incluam **Resumo do RMS**, **Utilizadores ativos do RMS**, **Plataformas de dispositivos do RMS** e **Utilização da aplicação do RMS**. Para aceder a estes relatórios a partir do portal clássico do Azure, clique em **Active Directory**, selecione e abra um diretório e, em seguida, clique em **RELATÓRIOS**.
 
@@ -56,7 +51,8 @@ Utilize as seguintes secções para obter mais informações sobre o registo de 
 ## Como ativar o registo de utilização do Azure Rights Management
 A partir de fevereiro de 2016, o registo de utilização do Azure Rights Management passou a ser ativado por predefinição para todos os clientes. Isto aplica-se aos clientes que ativaram o serviço Azure RMS antes e após fevereiro de 2016. 
 
-> [!NOTE] Não existem custos adicionais associados ao armazenamento dos registos nem à funcionalidade do registo.
+> [!NOTE]
+> Não existem custos adicionais associados ao armazenamento dos registos nem à funcionalidade do registo.
 > 
 > Se utilizava o registo de utilização para o Azure RMS antes de fevereiro de 2016, precisava de uma subscrição do Azure e de espaço de armazenamento suficiente no Azure, o que já não é o caso.
 
@@ -143,17 +139,17 @@ Cada uma das linhas subsequentes é um registo. Os valores dos campos estão na 
 |--------------|-----------------|---------------|-----------------|
 |date|Data|Data UTC em que o pedido foi servido.<br /><br />A origem é o relógio local no servidor que serviu o pedido.|2013-06-25|
 |time|Hora|Hora UTC, em formato de 24 horas, em que o pedido foi servido.<br /><br />A origem é o relógio local no servidor que serviu o pedido.|21:59:28|
-|row-id|Texto|GUID exclusivo deste registo.<br /><br />Este valor é útil quando agrega registos ou copia registos para outro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|Texto|GUID exclusivo deste registo. Se não existir um valor, utilize o valor correlation-id para identificar a entrada.<br /><br />Este valor é útil quando agrega registos ou copia registos para outro formato.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nome|Nome da API de RMS que foi pedida.|AcquireLicense|
-|user-id|Cadeia|O utilizador que efetuou o pedido.<br /><br />O valor está entre plicas. Alguns tipos de pedido são anónimos. Se assim for, o valor será ”.|‘joao@contoso.com’|
-|result|Cadeia|‘Êxito’, se o pedido tiver sido servido com êxito.<br /><br />O tipo de erro entre plicas se o pedido tiver falhado.|‘Êxito’|
+|user-id|Cadeia|O utilizador que efetuou o pedido.<br /><br />O valor está entre plicas. As chamadas a partir de uma chave de inquilino gerida por si (BYOK) têm um valor de **"**, o qual também é aplicável aplica quando os tipos de pedido são anónimos.|‘joao@contoso.com’|
+|result|Cadeia|'Êxito' se o pedido tiver sido servido com êxito.<br /><br />O tipo de erro entre plicas se o pedido tiver falhado.|'Êxito'|
 |correlation-id|Texto|GUID que é comum entre o registo de cliente do RMS e o registo do servidor para um determinado pedido.<br /><br />Este valor pode ser útil para ajudar na resolução de problemas do cliente.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Texto|GUID, entre chavetas, que identifica os conteúdos protegidos (por exemplo, um documento).<br /><br />Este campo só terá um valor se o request-type for AcquireLicense e estiver em branco para todos os outros tipos de pedido.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|Cadeia|Endereço de e-mail do proprietário do documento.|ines@contoso.com|
 |issuer|Cadeia|Endereço de e-mail do emissor do documento.|ines@contoso.com (ou) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|Cadeia|ID do modelo utilizado para proteger o documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|Cadeia|Nome de ficheiro do documento que foi protegido. <br /><br />Atualmente, alguns ficheiros (como documentos do Office) são apresentados como GUIDs em vez do nome de ficheiro real.|DocumentoConfidencial.docx|
-|Date-published|Data|Data em que o ficheiro foi protegido.|2015-10-15T21:37:00|
+|template-id|Cadeia|ID do modelo utilizado para proteger o documento.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|Cadeia|Nome de ficheiro do documento que foi protegido. <br /><br />Atualmente, alguns ficheiros (como documentos do Office) são apresentados como GUIDs em vez do nome de ficheiro real.|DocumentoConfidencial.docx|
+|date-published|Data|Data em que o ficheiro foi protegido.|2015-10-15T21:37:00|
 |c-info|Cadeia|Informações sobre a plataforma de cliente que está a efetuar o pedido.<br /><br />A cadeia específica varia em função da aplicação (por exemplo, do sistema operativo ou do browser).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Endereço|Endereço IP do cliente que efetua o pedido.|64.51.202.144|
 
@@ -166,7 +162,7 @@ Apesar de o campo user-id indicar geralmente o utilizador que efetuou o pedido, 
 
 -   Se estiver a utilizar o conector RMS.
 
-    Os pedidos efetuados a partir deste conector são registados com o nome do principal do serviço que o RMS gera automaticamente quando o conector RMS é instalado.
+    Os pedidos feitos a partir deste conector são registados com o nome do principal do serviço de **Aadrm_S-1-7-0** que é gerado automaticamente quando instala o conector RMS.
 
 #### Tipos de pedido comuns
 Há muitos tipos de pedido para o Azure Rights Management, mas a seguinte tabela apresenta alguns dos tipos de pedido mais frequentemente utilizados.
@@ -181,7 +177,7 @@ Há muitos tipos de pedido para o Azure Rights Management, mas a seguinte tabela
 |BECreateEndUserLicenseV1|É efetuada uma chamada a partir de um dispositivo móvel para criar uma licença de utilizador final.|
 |BEGetAllTemplatesV1|É efetuada uma chamada a partir de um dispositivo móvel (back-end) para obter todos os modelos.|
 |Certify|O cliente está a certificar os conteúdos para proteção.|
-|Desencriptar|O cliente está a tentar desencriptar os conteúdos protegidos pelo RMS.|
+|KMSPDecrypt|O cliente está a tentar desencriptar os conteúdos protegidos pelo RMS. Aplicável apenas para uma chave de inquilino gerida pelo cliente (BYOK).|
 |DeleteTemplateById|É efetuada uma chamada a partir do portal clássico do Azure para eliminar um modelo por ID de modelo.|
 |ExportTemplateById|É efetuada uma chamada a partir do portal clássico do Azure para exportar um modelo baseado num ID de modelo.|
 |FECreateEndUserLicenseV1|É semelhante ao pedido AcquireLicense, mas este pedido é efetuado a partir de dispositivos móveis.|
@@ -199,7 +195,7 @@ Há muitos tipos de pedido para o Azure Rights Management, mas a seguinte tabela
 |ServerCertify|É efetuada uma chamada a partir de um cliente com RMS ativado (tal como o SharePoint) para certificar o servidor.|
 |SetUsageLogFeatureState|É efetuada uma chamada para ativar o registo de utilização.|
 |SetUsageLogStorageAccount|É efetuada uma chamada para especificar a localização dos registos do Azure RMS.|
-|SignDigest|É efetuada uma chamada quando é utilizada uma chave para fins de assinatura. Esta opção é normalmente chamada uma vez por cada pedido AcquireLicence (ou FECreateEndUserLicenseV1), Certify e GetClientLicensorCert (ou FECreatePublishingLicenseV1).|
+|KMSPSignDigest|É feita uma chamada quando uma chave gerida pelo cliente (BYOK) é utilizada para fins de assinatura. Esta opção é normalmente chamada uma vez por cada pedido AcquireLicence (ou FECreateEndUserLicenseV1), Certify e GetClientLicensorCert (ou FECreatePublishingLicenseV1).|
 |UpdateTemplate|É efetuada uma chamada a partir do portal clássico do Azure para atualizar um modelo existente.|
 
 ## Referência do Windows PowerShell
@@ -229,6 +225,7 @@ Para mais informações sobre como utilizar o Windows PowerShell para o Azure Ri
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

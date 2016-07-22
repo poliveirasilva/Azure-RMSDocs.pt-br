@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Office 365&colon; Configuração para clientes e serviços online | Azure RMS
-description:
-keywords:
+title: "Office 365&colon; Configuração para clientes e serviços online | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+
 
 ---
 
@@ -31,13 +25,13 @@ ms.suite: ems
 
 Como o Office 365 suporta nativamente o Azure RMS, não é necessária nenhuma configuração de computador cliente para suportar as funcionalidades de gestão de direitos de informação (IRM) em aplicações como o Word, o Excel, o PowerPoint, o Outlook e o Outlook Web App. Os utilizadores só têm de iniciar sessão nas aplicações do Office com as respetivas credenciais do [!INCLUDE[o365_1](../includes/o365_1_md.md)] para poderem proteger ficheiros e e-mails e utilizar ficheiros e e-mails protegidos por outras pessoas.
 
-No entanto, recomendamos que complemente estas aplicações com a aplicação de partilha Rights Management, para que os utilizadores possam beneficiar do suplemento do Office. Para mais informações, consulte [Rights Management sharing application: Installation and configuration for clients (Aplicação de partilha Rights Management: instalação e configuração para clientes – em inglês)](configure-sharing-app.md).
+No entanto, recomendamos que complemente estas aplicações com a aplicação de partilha Rights Management, para que os utilizadores possam beneficiar do suplemento do Office. Para obter mais informações, consulte [Aplicação de partilha Rights Management: instalação e configuração para clientes](configure-sharing-app.md).
 
-## Exchange Online: Configuração da IRM
+## Exchange Online: configuração de IRM
 Para configurar o Exchange Online para suportar o Azure RMS, tem de configurar o serviço de gestão de direitos de informação (IRM) para o Exchange Online. Para isso, tem de utilizar o Windows PowerShell (não é necessário instalar um módulo separado) e executar os [comandos do PowerShell para o Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
 
 > [!NOTE]
-> Atualmente, não pode configurar o Exchange Online para suportar o Azure RMS caso esteja a utilizar uma chave de inquilino gerida pelo cliente (BYOK) para o Azure RMS, em vez da configuração predefinida de uma chave de inquilino gerida pela Microsoft. Para mais informações, consulte [BYOK pricing and restrictions (Preços e restrições do BYOK – em inglês)](../plan-design/byok-price-restrictions.md).
+> Atualmente, não pode configurar o Exchange Online para suportar o Azure RMS caso esteja a utilizar uma chave de inquilino gerida pelo cliente (BYOK) para o Azure RMS, em vez da configuração predefinida de uma chave de inquilino gerida pela Microsoft. Para obter mais informações, consulte [Preços e restrições do BYOK](../plan-design/byok-price-restrictions.md).
 >
 > Se tentar configurar o Exchange Online quando o Azure RMS está a utilizar uma BYOK, o comando para importar a chave (passo 5 no procedimento seguinte) falha com a mensagem de erro **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
 
@@ -160,7 +154,7 @@ Esta configuração é efetuada pelo administrador do site do SharePoint.
 Após ativar o serviço de IRM para o SharePoint Online, a biblioteca de documentos do OneDrive para Empresas dos utilizadores pode ser configurada para a proteção Rights Management.  Os próprios utilizadores podem configurar isto através do ícone **Definições** no respetivo OneDrive. Embora os administradores não possam configurar o Rights Management para o OneDrive para Empresas dos utilizadores através do centro de administração do SharePoint, o utilizador pode fazê-lo através do Windows PowerShell.
 
 > [!NOTE]
-> Para mais informações sobre como configurar o OneDrive para Empresas, consulte a documentação do Office, [Configurar o OneDrive para Empresas no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
+> Para obter mais informações sobre como configurar o OneDrive para Empresas, consulte a documentação do Office, [Configurar o OneDrive para Empresas no Office 365](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
 
 #### Configuração para os utilizadores
 Dê estas instruções aos utilizadores para que possam configurar o OneDrive para Empresas e proteger os respetivos ficheiros empresariais com IRM.
@@ -1111,6 +1105,7 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

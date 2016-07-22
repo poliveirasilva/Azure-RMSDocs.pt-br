@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Implementar a aplicação | Azure RMS
-description: Este tópico descreve e serve de orientação nas opções de implementação da sua aplicação com capacidade para direitos
-keywords:
+title: "Implementar a aplicação | Azure RMS"
+description: "Este tópico descreve e serve de orientação nas opções de implementação da sua aplicação com capacidade para direitos"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,19 +10,17 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
+ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+
 
 ---
 
-# Implementar em pré-produção
+# Implementar em produção
 
 
 Este tópico descreve e serve de orientação nas opções de implementação da sua aplicação com capacidade para direitos.
@@ -84,7 +80,8 @@ O RMS Client 2.1 é um software concebido para computadores cliente para ajudar 
 O RMS Client 2.1 não é um componente de sistema operativo Windows. O RMS Client 2.1 é incluído como uma transferência opcional que pode ser, com o reconhecimento e a aceitação do respetivo contrato de licença, distribuída gratuitamente com o seu software de terceiros para permitir o acesso de cliente a conteúdo que foi protegido por direitos através da utilização e implementação de servidores RMS no seu ambiente.
 
 
-> [!IMPORTANT] O Cliente de AD RMS 2.1 é de arquitetura específica e tem de corresponder à arquitetura do seu sistema operativo de destino.
+> [!IMPORTANT]
+> O Cliente de AD RMS 2.1 é de arquitetura específica e tem de corresponder à arquitetura do seu sistema operativo de destino.
 
 
 ## Opções de instalação do RMS Client 2.1
@@ -137,6 +134,7 @@ Para obter mais informações sobre como permitir que a aplicação utilize o RM
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

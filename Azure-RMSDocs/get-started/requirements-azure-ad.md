@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Requisitos do Azure RMS&#58; Diretório do Azure AD | Azure RMS
-description:
-keywords:
+title: "Requisitos do Azure RMS&#58; Diretório do Azure AD | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
+
 
 ---
 
@@ -42,9 +36,10 @@ Para obter mais informações, consulte os recursos seguintes na documentação 
 
 Se pretender integrar o seu diretório do Azure AD com as suas florestas do AD no local, consulte [Integrar as identidades no local com o Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE]Se tiver dispositivos móveis ou computadores Mac que autenticam no local ao utilizar o AD FS ou um fornecedor de autenticação equivalente:
+> [!NOTE]
+> Se tiver dispositivos móveis ou computadores Mac que autenticam no local ao utilizar o AD FS ou um fornecedor de autenticação equivalente:
 > 
-> -   É necessário utilizar o AD FS na versão mínima de servidor do **Windows Server 2012 R2** ou num fornecedor de autenticação alternativo que suporte o protocolo OAuth 2.0.
+> -   É necessário utilizar o AD FS na versão mínima de servidor do **Windows Server 2012 R2** ou num fornecedor de autenticação alternativo que suporte o protocolo OAuth 2.0.
 
 ## Multi-Factor Authentication (MFA) e Azure RMS
 A utilização da Multi-Factor Authentication (MFA) com o Azure RMS requer pelo menos um dos seguintes:
@@ -80,6 +75,7 @@ Para verificar outros requisitos, consulte [Requisitos do Azure Rights Managemen
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

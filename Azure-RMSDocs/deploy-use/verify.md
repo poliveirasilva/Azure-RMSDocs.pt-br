@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Verificar o Azure Rights Management | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
+ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
+
 
 ---
 
@@ -36,7 +30,7 @@ Para fazer este teste, pode utilizar as informações em [Ajudar os utilizadores
 Se o teste tiver sido bem-sucedido, reveja os passos de configuração no [Plano de implementação do Azure Rights Management](../plan-design/deployment-roadmap.md) e utilize a [Ferramenta RMS Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=46437) para ajudar a identificar e corrigir problemas potenciais. Também pode executar esta ferramenta periodicamente, como uma verificação de estado de funcionamento geral.
 
 > [!TIP]
-> Se precisar de mais ajuda, consulte a secção [Opções de suporte e recursos da comunidade](../get-started/information-support.md##support-options-and-community-resources) no artigo [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
+> Se precisar de mais ajuda, consulte a secção [Opções de suporte e recursos da comunidade](../get-started/information-support.md#support-options-and-community-resources) no artigo [Informações e suporte do Azure Rights Management](../get-started/information-support.md).
 
 ## Passos seguintes
 
@@ -46,6 +40,7 @@ Pode monitorizar a forma como a sua organização está a utilizar a proteção 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

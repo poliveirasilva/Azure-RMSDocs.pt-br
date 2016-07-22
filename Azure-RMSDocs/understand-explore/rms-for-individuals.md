@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS para indivíduos e Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "RMS para indivíduos e Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+
 
 ---
 
@@ -36,17 +30,18 @@ Estes utilizadores podem inscrever-se numa conta escolar ou profissional gratuit
 Ao utilizar a aplicação de partilha Rights Management em computadores Windows, estes utilizadores também podem proteger ficheiros no local ou enviar ficheiros protegidos por e-mail para as pessoas dentro ou fora da sua organização. Se os destinatários do e-mail enviado estiverem numa organização que também não gere contas de utilizadores no Azure, também podem inscrever-se numa conta do RMS para indivíduos para ler o anexo de e-mail protegido.
 
 > [!IMPORTANT]
-> Esta subscrição gratuita garante que as pessoas autorizadas podem sempre ler ficheiros que foram protegidos. Atualmente, também pode utilizar esta subscrição gratuita para proteger documentos e criar novas mensagens de e-mail protegidas, mas a capacidade de criar novo conteúdo protegido destina-se apenas a uma utilização de avaliação e poderá ser removida no futuro. Para obter mais informações e as alterações efetuadas à utilização do RMS para indivíduos para proteger conteúdo, consulte os [Termos do Serviço do Microsoft Rights Management](https://portal.aadrm.com/Legal/Service).
+> Esta subscrição gratuita garante que as pessoas autorizadas podem sempre ler ficheiros que foram protegidos. Atualmente, também pode utilizar esta subscrição gratuita para proteger documentos e criar novas mensagens de e-mail protegidas, mas a capacidade de criar novo conteúdo protegido destina-se apenas a uma utilização de avaliação e poderá ser removida no futuro. Para obter mais informações e as alterações feitas à utilização do RMS para indivíduos para proteger conteúdo, consulte os [Termos do Serviço do Microsoft Rights Management](https://portal.aadrm.com/Legal/Service).
 
-Para mais informações sobre como pode proteger ficheiros utilizando a aplicação de partilha Rights Management gratuita, consulte o [Guia da aplicação de partilha Rights Management para utilizadores](../rms-client/sharing-app-user-guide.md).
+Para obter mais informações sobre como pode proteger ficheiros com a aplicação de partilha Rights Management gratuita, consulte o [Guia da aplicação de partilha Rights Management para utilizadores](../rms-client/sharing-app-user-guide.md).
 
-O RMS para indivíduos é um exemplo de uma inscrição self-service que é suportada pelo Azure Active Directory. Para mais informações sobre como isto funciona, consulte [O que é a Inscrição Self-Service para o Azure?](/active-directory/active-directory-self-service-signup) na documentação do Azure Active Directory. 
+O RMS para indivíduos é um exemplo de uma inscrição self-service que é suportada pelo Azure Active Directory. Para obter mais informações sobre como isto funciona, consulte [O que é a Inscrição Self-Service para o Azure?](/active-directory/active-directory-self-service-signup) na documentação do Azure Active Directory. 
 
 ## Passos seguintes
 Consulte [Como os utilizadores se inscrevem no RMS para indivíduos](rms-for-individuals-user-sign-up.md) para obter instruções passo a passo e uma descrição geral técnica de o que está a acontecer em segundo plano. 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

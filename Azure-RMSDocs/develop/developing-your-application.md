@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Desenvolver a sua aplicação | Azure RMS
-description: Instruções sobre como desenvolver uma aplicação utilizando o SDK RMS 2.1.
-keywords:
+title: "Desenvolver a sua aplicação | Azure RMS"
+description: "Instruções sobre como desenvolver uma aplicação utilizando o SDK RMS 2.1."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cb1a4dfa4465e8f4798866c95d8965eec1b68f6b
+ms.openlocfilehash: 5dcb3fe88cced7945591a08c492b32bdc8895162
+
 
 ---
 
@@ -32,7 +28,8 @@ Este tópico contém documentação de orientação essencial sobre os aspetos b
 
 A documentação de orientação incluída neste tópico baseia-se na aplicação de amostra IPCHelloWorld que o ajudará com os conceitos básicos e o código de uma aplicação com permissão para direitos. Pode transferir a aplicação de amostra IPCHellowWorld completa como [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440) em Microsoft Connect.
 
-> [!Note] O projeto IPCHelloWorld já está configurado para o SDK Rights Management Services 2.1. Para obter informações sobre como configurar um novo projeto para utilizar o SDK RMS 2.1, consulte [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+> [!Note] 
+> O projeto IPCHelloWorld já está configurado para o SDK Rights Management Services 2.1. Para obter informações sobre como configurar um novo projeto para utilizar o SDK RMS 2.1, consulte [Configurar o Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
 ## Carregar o MSIPC.dll
 
@@ -187,6 +184,7 @@ Antes de terminar, também tem de libertar todos os recursos atribuídos.
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

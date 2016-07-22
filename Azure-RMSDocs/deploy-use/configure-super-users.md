@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurar superutilizadores para o Azure Rights Management e serviços de deteção ou recuperação de dados | Azure RMS
-description:
-keywords:
+title: "Configurar superutilizadores para o Azure Rights Management e serviços de deteção ou recuperação de dados | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+
 
 ---
 
@@ -69,7 +63,7 @@ O seguinte extrato de registo mostra algumas entradas de exemplo ao utilizar o c
 ## Opções de scripting para superutilizadores
 É frequente que uma pessoa a quem seja atribuído um superutilizador para o [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] venha a ter de remover a proteção de vários ficheiros, em várias localizações. Embora seja possível fazê-lo manualmente, é mais eficaz (e, muitas vezes, mais fiável) efetuar um script disto. Para tal, [transfira a Ferramenta de Proteção RMS](http://www.microsoft.com/en-us/download/details.aspx?id=47256). Em seguida, utilize o cmdlet [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) e o cmdlet [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx), conforme necessário.
 
-Para mais informações acerca destes cmdlets, consulte [Cmdlets da Proteção RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx)..
+Para obter mais informações acerca destes cmdlets, consulte [Cmdlets da Proteção RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
 > [!NOTE]
 > O módulo do PowerShell de Proteção RMS que é fornecido com a Ferramenta de Proteção RMS é diferente do principal [módulo do Windows PowerShell para o Azure Rights Management](administer-powershell.md) e complementa-o. O módulo de Proteção RMS suporta o Azure RMS e o AD RMS.
@@ -77,6 +71,7 @@ Para mais informações acerca destes cmdlets, consulte [Cmdlets da Proteção R
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

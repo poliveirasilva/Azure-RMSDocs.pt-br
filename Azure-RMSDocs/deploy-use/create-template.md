@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Criar, configurar e publicar um modelo personalizado | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/30/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
+ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+
 
 ---
 
@@ -66,7 +60,8 @@ Utilize os seguintes procedimentos para criar, configurar e publicar modelos per
 
         4.  Se ainda não ativou o Rights Management, primeiro clique em **ATIVAR** e confirme a ação.
 
-            > [!NOTE] Para mais informações, consulte [Ativar o Azure Rights Management](activate-service.md).
+            > [!NOTE]
+            > Para mais informações, consulte [Activating Azure Rights Management (Ativar o Azure Rights Management – em inglês)](activate-service.md)
 
 2.  Criar um novo modelo:
 
@@ -169,6 +164,7 @@ Para fazer alterações ao seu modelo, selecione-o e, em seguida, utilize os pas
 ## Consulte Também
 [Configurar modelos personalizados para o Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 
