@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
+ms.sourcegitcommit: 638c2f27c8d552653dcf3f41d8fad6d44cb08887
+ms.openlocfilehash: 5150351ec6772b95d77698dc39a1f69105c02d2c
 
 
 ---
@@ -51,6 +51,8 @@ Quando você protege um arquivo in-loco, ele substitui o arquivo original, despr
 
     ![Arquivo protegido com ícone de bloqueio para o aplicativo de compartilhamento RMS](../media/ADRMS_MSRMSApp_Pfile.png)
 
+Se você mudar de ideia sobre as permissões ou precisar modificá-las posteriormente, basta proteger o arquivo novamente.
+
 Se você precisar posteriormente remover a proteção de um arquivo, consulte [Remover a proteção de um arquivo usando o aplicativo de compartilhamento Rights Management](sharing-app-remove-protection.md).
 
 ## Exemplos e outras instruções
@@ -58,13 +60,13 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

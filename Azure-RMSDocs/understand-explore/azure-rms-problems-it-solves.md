@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
-ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 
 ---
@@ -28,7 +28,7 @@ Use a tabela a seguir para identificar os requisitos ou problemas empresariais q
 
 |Requisito ou problema|Resolvido pelo Azure RMS|
 |--------------------------|-----------------------|
-|Proteger todos os tipos de arquivos|√ Na implementação anterior do Rights Management, só era possível proteger arquivos do Office usando a proteção nativa. Agora, [proteção genérica](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) significa que todos os tipos de arquivo têm suporte.|
+|Proteger todos os tipos de arquivos|√ Na implementação anterior do Rights Management, só era possível proteger arquivos do Office usando a proteção nativa. Agora, [proteção genérica](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) significa que todos os tipos de arquivo têm suporte.|
 |Proteger arquivos em qualquer lugar|√ Quando um arquivo é salvo em um local ([proteção in-loco](../rms-client/sharing-app-protect-in-place.md)), a proteção permanece com o arquivo, mesmo que ele seja copiado para o armazenamento que não está sob o controle da TI, como um serviço de armazenamento de nuvem.|
 |Compartilhar arquivos por email com segurança|√ Quando um arquivo é compartilhado por email ([compartilhamento protegido](../rms-client/sharing-app-protect-by-email.md)), o arquivo é protegido como um anexo a uma mensagem de email, com instruções de como abrir o anexo protegido. O texto do email não é criptografado, então o destinatário sempre pode ler essas instruções. No entanto, como o documento anexo é protegido, somente usuários autorizados podem abri-lo, mesmo que o email ou o documento seja encaminhado para outras pessoas.|
 |Auditoria e monitoramento|√ Você pode [auditar e monitorar o uso](../deploy-use/log-analyze-usage.md) dos seus arquivos protegidos, mesmo depois que eles saírem dos limites da sua organização.<br /><br />Por exemplo, você trabalha para a Contoso, Ltd. Você está trabalhando em um projeto conjunto com 3 pessoas da Fabrikam, Inc. Você envia um e-mail para essas 3 pessoas um documento que proteger e restringir a somente leitura. A auditoria do Azure RMS pode fornecer as seguintes informações:<br /><br />– Se as pessoas da Fabrikam que você especificou abriram o documento e quando o fizeram.<br /><br />– Se outras pessoas que você não especificou tentaram (e não conseguiram) abrir o documento: talvez porque ele foi encaminhado ou salvo em um local compartilhado ao qual outras pessoas têm acesso.<br /><br />– Se alguma das pessoas especificadas tentou (e não conseguiu) imprimir ou alterar o documento.|
@@ -73,6 +73,6 @@ Para ver a aparência do Azure RMS para administradores e usuários, consulte [A
 Se você estiver interessado em mais informações técnicas sobre como funciona o Azure RMS, confira [Como funciona o Azure RMS?](how-does-it-work.md) 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "Descreve os conceitos básicos da autenticação do usuário para 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ Autenticação de usuário é uma etapa essencial para estabelecer a comunicaç�
 
 ## Registro por meio do portal do Azure
 Comece seguindo este guia para configurar o registro do seu aplicativo por meio do portal do Azure, [Configure Azure RMS for ADAL authentication](adal-auth.md) (Configurar o Azure RMS para autenticação da ADAL). Certifique-se de copiar e salvar a **ID do Cliente** e o **URI de Redirecionamento** desse processo para uso posterior.
+
+## Concluir seu RMLA (Contrato de Licença do Rights Managagement)
+Antes de implantar seu aplicativo, você deve concluir um RMLA com a equipe do Microsoft Rights Management. Para obter os detalhes completos, consulte a primeira seção do tópico, [Implantar na produção – Solicitar um Contrato de Licença de Produção](deploying-your-application.md).
 
 ## Implementar autenticação de usuário para seu aplicativo
 Cada API do RMS tem um retorno de chamada que deve ser implementado para habilitar a autenticação do usuário. O RMS SDK 4.2 então usará sua implementação do retorno de chamada quando você não fornecer um token de acesso, quando seu token de acesso precisar ser atualizado ou quando o token de acesso tiver expirado.
@@ -271,6 +274,6 @@ e vem da etapa de registro anterior por meio do portal do Azure.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

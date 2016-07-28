@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: "Requisitos do Azure RMS: aplicativos | Azure RMS"
-description:
-keywords:
+title: 'Requisitos do Azure RMS: aplicativos | Azure RMS'
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a807917671cd869259c664929378b27dd42b743
+ms.openlocfilehash: b6ae1192a97deb02a66fa49f3ced4995c7590b98
+
 
 ---
 
@@ -46,9 +40,9 @@ Informações sobre as colunas da tabela:
 
 |**Sistema operacional do dispositivo**|Word, Excel, PowerPoint|PDF protegido|Email|Outros tipos de arquivos|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplicativos Office Mobile (somente Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client para Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicativo RMS sharing|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|Aplicativo de compartilhamento RMS para Windows: texto, imagens, pfile<br /><br />Siemens JT2Go: arquivos JT (somente Windows 10)|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplicativos Office Mobile (somente Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client para Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplicativo RMS sharing|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Aplicativo de compartilhamento RMS para Windows: texto, imagens, pfile<br /><br />Siemens JT2Go: arquivos JT (somente Windows 10)|
 |**iOS**|Office para iPad e iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para iPad e iPhone [[4]](#footnote-4)<br /><br />OWA para iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile<br /><br />TITUS Docs: Pfile|
-|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) and [[7]](#footnote-7)<br /><br />Samsung Email (S3 e posterior) [[7]](#footnote-7)<br /><br />Classificação TITUS para dispositivos móveis|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
+|**Android**|GigaTrust App para Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile [[1]](#footnote-1)|GigaTrust App para Android<br /><br />Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App para Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook para Android [[4]](#footnote-4)<br /><br />OWA para Android [[3]](#footnote-3) and [[7]](#footnote-7)<br /><br />Samsung Email (S3 e posterior) [[7]](#footnote-7)<br /><br />Classificação TITUS para dispositivos móveis|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
 |**OS X**|Office 2011 (somente do AD RMS)<br /><br />Office 2016 para Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />Aplicativo de compartilhamento de RMS [[1]](#footnote-1)|Outlook 2011 (somente do AD RMS)<br /><br />Outlook 2016 para Mac<br /><br />Outlook para Mac|Aplicativo de compartilhamento de RMS [[1]](#footnote-1): Texto, imagens, pfile|
 |**Windows 10 Mobile**|Aplicativos do Office Mobile (somente Azure RMS)[[1]](#footnote-1)|Sem suporte|Citrix WorxMail [[6]](#footnote-6)<br /><br />Email do Outlook|Sem suporte|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|Sem suporte|Outlook 2013 RT<br /><br />Aplicativo de email para o Windows<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: arquivos JT|
@@ -80,6 +74,14 @@ Para obter mais informações, consulte [Documentação de produto para WorxMail
 Para saber mais, confira a seguinte postagem no blog do Office: [OWA for Android now available on select devices (OWA para Android já disponível em dispositivos selecionados)](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/)
 
 ## Para saber mais sobre o suporte do Azure RMS para Office
+
+O Azure RMS é totalmente integrado a aplicativos Word, Excel, PowerPoint e Outlook, em que essa funcionalidade é conhecida como IRM (Gerenciamento de Direitos de Informação). As seguintes edições do cliente Office dão suporte à proteção de arquivos e emails usando o Azure RMS:
+
+- Office Professional Plus 2016
+
+- Office Professional Plus 2013
+
+- Office Professional Plus 2010
 
 Todas as edições do Office (com exceção do Office 2007) oferecem suporte ao consumo de conteúdo protegido.
 
@@ -145,6 +147,7 @@ Para saber mais sobre como os aplicativos usados com mais frequência oferecem s
 
 Para saber mais sobre como configurar os aplicativos usados com mais frequência para o Azure RMS, veja [Configuração de aplicativos para o Azure Rights Management](../deploy-use/configure-applications.md).
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

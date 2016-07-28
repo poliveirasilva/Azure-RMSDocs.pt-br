@@ -1,10 +1,10 @@
 ---
-title: "Visão geral | Azure RMS"
+title: "Visão geral – RMS SDK 2.1 | Azure RMS"
 description: "O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,17 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: 53571aff357bbc0cdcb44ce9b403c68719abbaff
 
 
 ---
 
 # Visão geral
 
-O RMS (Rights Management Services) é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado. Por meio do aplicativo habilitado para direitos, os proprietários de conteúdo poderão definir quem pode abrir, modificar, imprimir, encaminhar ou executar outras ações no conteúdo.
-
-## Visão geral
+O Rights Management Services SDK 2.1 é uma tecnologia de proteção de informações que ajuda a proteger informações digitais contra uso não autorizado. Por meio do aplicativo habilitado para direitos, os proprietários de conteúdo poderão definir quem pode abrir, modificar, imprimir, encaminhar ou executar outras ações no conteúdo.
 
 O AD RMS consiste em dois componentes de [servidor](ad-rms-server.md) e [cliente](ad-rms-client.md). O servidor, em execução no Azure ou no Windows Server, consiste em diversos serviços Web.
 
@@ -63,6 +61,6 @@ Os tópicos restantes nesta seção abordam a Arquitetura do RMS e suas implemen
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

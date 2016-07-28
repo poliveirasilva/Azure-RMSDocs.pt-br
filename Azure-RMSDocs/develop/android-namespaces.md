@@ -32,6 +32,6 @@ A API do Android tem dois namespaces que abrangem a funcionalidade principal e e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

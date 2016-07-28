@@ -19,7 +19,9 @@
 # [Implantar e usar o serviço](/rights-management/deploy-use/activate-service)
 # [Implantar e usar o cliente](/rights-management/rms-client/use-client)
 # [Desenvolver e personalizar aplicativos](/rights-management/develop/developers-guide)
+# [Azure Information Protection (visualização)](/rights-management/information-protection/what-is-information-protection)
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

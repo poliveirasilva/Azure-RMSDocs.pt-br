@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
+ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
 
 
 ---
@@ -28,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 Use as seguintes informações se você for responsável pelo aplicativo de compartilhamento Microsoft Rights Management em uma rede corporativa, ou se você quiser obter mais informações técnicas do que há no [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md) ou [perguntas frequentes para aplicativo de compartilhamento Microsoft Rights Management para Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
 O aplicativo de RMS sharing é ideal para trabalhar com o Azure RMS, porque essa configuração de implantação oferece suporte ao envio de anexos protegidos aos usuários de outra organização, e opções como notificações por email e controle de documento com revogação.  No entanto, com algumas limitações, também funciona com a versão local, AD RMS. Para obter uma comparação abrangente dos recursos que têm suporte pelo Azure RMS e pelo AD RMS, consulte [Comparando o Azure Rights Management e o AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Se você tiver o AD RMS e desejar migrar para o Azure RMS, consulte [Migrando do AD RMS para o Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+
+Para obter uma visão geral técnica do aplicativo de compartilhamento Rights Management, informações sobre proteção nativa e genérica e os tipos de arquivo com suporte, extensões de nome de arquivo e como alterar o nível de proteção padrão, consulte [Technical overview and protection details for the Rights Management sharing application](sharing-app-admin-guide-technical.md) (Visão geral técnica e detalhes da proteção do aplicativo de compartilhamento Rights Management). 
 
 ## Implantação automática para o aplicativo de compartilhamento Microsoft Rights Management
 A versão do Windows do aplicativo de RMS sharing oferece suporte a uma instalação com script, o que a torna adequada para implantações corporativas.
@@ -116,13 +118,13 @@ Para verificar o sucesso, consulte a seção [Verificando o sucesso da instalaç
         > [!NOTE]
         > Esse comando pode solicitar que você insira suas credenciais do Azure. Se o computador não tiver ingressado em um domínio, você será solicitado. Se o computador tiver ingressado em um domínio, a ferramenta poderá usar credenciais armazenadas em cache.
 
-2.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, execute o seguinte comando com privilégios elevados:
+2.  Em cada computador no qual você instalará o aplicativo RMS sharing, execute o seguinte comando uma vez com privilégios elevados:
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  Em cada computador no qual você deseja instalar o aplicativo RMS sharing, os usuários devem executar o seguinte comando (não necessita de privilégios elevados). Há diferentes maneiras de alcançar isso, incluindo pedir aos usuários para executar o comando (por exemplo, um link em uma mensagem de email ou um link no portal help desk) ou você pode adicioná-lo para o script de logon:
+3.  Em cada computador no qual você instalará o aplicativo RMS sharing, cada usuário nesse computador deve executar o seguinte comando (não necessita de privilégios elevados). Há diferentes maneiras de alcançar isso, incluindo pedir aos usuários para executar o comando (por exemplo, um link em uma mensagem de email ou um link no portal help desk) ou você pode adicioná-lo para o script de logon:
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -367,6 +369,6 @@ Para obter informações técnicas adicionais que incluem a explicação da dife
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 
