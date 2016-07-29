@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 4ff6328c0be4cd217390ee802e53e93c90f41c99
 
 
 ---
@@ -28,8 +28,8 @@ Este tópico orientará você pela configuração de seu ambiente para criação
 
 -   [Pré-requisitos](#prerequisites)
 -   [Opcional](#optional)
--   [Configurando o ambiente de desenvolvimento](#configuring_your_development_environment_)
--   [Consulte também](#see_also)
+-   [Configurando o ambiente de desenvolvimento](#configuring-your-development-environment_)
+-   [Consulte também](#see-also)
 
 ## Pré-requisitos
 
@@ -150,6 +150,6 @@ Nossa biblioteca de interface de usuário fornece uma interface de usuário reut
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

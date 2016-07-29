@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
-ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 1728a094dfaa869ae490e86d10ffe5ebcf4bfa5d
 
 
 ---
@@ -28,8 +28,8 @@ Os aplicativos do Windows Phone podem usar o Microsoft Rights Management SDK 4.2
 Este tópico orientará você pela configuração de seu ambiente para criação de seus próprios aplicativos novos.
 
 -   [Pré-requisitos](#prerequisites)
--   [Configurando o ambiente de desenvolvimento](#configuring_your_development_environment)
--   [Consulte também](#see_also)
+-   [Configurando o ambiente de desenvolvimento](#configuring-your-development-environment)
+-   [Consulte também](#see-also)
 
 ## Pré-requisitos
 
@@ -93,6 +93,6 @@ Agora você está pronto para criar seus próprios aplicativos novos do Windows 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

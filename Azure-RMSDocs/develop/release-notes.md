@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 8de1886adf322439721274e23452af75b4db2e00
 
 
 ---
@@ -25,15 +25,15 @@ ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
 ## Novidades
 O Microsoft Rights Management SDK 4.2 leva a habilitação do aplicativo RMS para um novo nível de facilidade e flexibilidade. Este tópico descreve alterações e recursos importantes nesta nova versão do RMS SDK.
 
--   [Novo para junho de 2016](#new_for_June_2016)
--   [Atualização de dezembro de 2015](#december_2015_update)
--   [Atualização de julho de 2015 - Acrescenta suporte para Linux/desenvolvimento em C++](#july_2015_update_-_adds_support_for_linux___c___development)
--   [Atualização de maio de 2015 - Acrescenta o controle de registro em log](#may_2015_update_-_adds_logging_control)
--   [Atualização de fevereiro de 2015 - Acrescenta o suporte a aplicativos da Windows Store](#february_2015_update_-_adds_windows_store_application_support)
--   [Atualização de janeiro de 2015 - Acrescenta suporte à plataforma WinPhone](#january_2015_update_-_adds_winphone_platform_support)
--   [Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
+-   [Novo para junho de 2016](#new-for-June-2016)
+-   [Atualização de dezembro de 2015](#december-2015-update)
+-   [Atualização de julho de 2015 - Acrescenta suporte para Linux/desenvolvimento em C++](#july-2015-update-adds-support-for-linux-c-developm)
+-   [Atualização de maio de 2015 - Acrescenta o controle de registro em log](#may-2015-update-adds-logging-control)
+-   [Atualização de fevereiro de 2015 - Acrescenta o suporte a aplicativos da Windows Store](#february-2015-update-adds-windows-store-application-support)
+-   [Atualização de janeiro de 2015 - Acrescenta suporte à plataforma WinPhone](#january-2015-update-adds-winphone-platform-support)
+-   [Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
 -   [Notas de versão](#release-notes)
--   [Perguntas frequentes](#frequently_asked_questions)
+-   [Perguntas frequentes](#frequently-asked-questions)
 
 ### Novo para junho de 2016
 
@@ -109,7 +109,7 @@ Essa versão adiciona suporte para aplicativos da Windows Store e fornece uma pa
 
 Essa versão adiciona suporte para o sistema operacional Windows Phone e fornece uma paridade funcional com a versão do RMS SDK 4.1 para iOS/OS X e Android.
 
-## Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1
+### Atualização de outubro de 2014 - Atualiza para o Microsoft RMS SDK 4.1
 
 A versão 4.1 do RMS SDK adiciona os seguintes recursos novos ao Google Android e Apple iOS/OS X.
 
@@ -233,6 +233,6 @@ Esta seção descreve as informações sobre as versões atuais e anteriores das
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 
