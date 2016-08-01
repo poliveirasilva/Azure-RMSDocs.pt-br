@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cb1a4dfa4465e8f4798866c95d8965eec1b68f6b
-ms.openlocfilehash: 5dcb3fe88cced7945591a08c492b32bdc8895162
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: e00af9b9b0a5f2d917ac96812e980505d4cfd347
 
 
 ---
@@ -56,7 +56,7 @@ O trecho de código a seguir enumera os modelos RMS disponíveis no servidor RMS
         goto exit;
       }
 
-Essa chamada recuperará os modelos RMS instalados no servidor padrão e carregará os resultados na estrutura [IPC\_TIL](/rights-management/sdk/2.1/api/win/functions#msipc_ipctil) apontada pela variável *pcTil* e, em seguida, exibirá os modelos.
+Essa chamada recuperará os modelos RMS instalados no servidor padrão e carregará os resultados na estrutura [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til) apontada pela variável *pcTil* e, em seguida, exibirá os modelos.
 
       C++
       if (0 == pcTil->cTi) {
@@ -180,11 +180,11 @@ Antes de terminar, você também precisa liberar todos os recursos alocados.
 - [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 - [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 - [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/rights-management/sdk/2.1/api/win/functions#msipc_ipctil)
+- [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

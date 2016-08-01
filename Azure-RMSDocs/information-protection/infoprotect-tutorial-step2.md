@@ -3,15 +3,15 @@ title: "Etapa 2 do tutorial de início rápido do Azure Information Protection |
 description: "Etapa 2 de um tutorial de introdução para testar rapidamente o Microsoft Azure Information Protection para sua organização com apenas 4 etapas que devem levar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 463c0bc1fa86f73e2623faf5a624afeabcadeedb
-ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
+ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
+ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 
 ---
@@ -44,7 +44,7 @@ Agora, alteraremos as configurações de um dos rótulos, **Confidencial**:
 
 2. Na folha **Label: Confidential** (Rótulo: Confidencial), você verá agora as configurações que estão disponíveis para cada rótulo. Faça as seguintes alterações:
 
-    a. Se você tiver ativado o Azure Rights Managment, para **Selecionar Modelo do RMS**: clique na caixa suspensa e selecione o modelo padrão **\<nome da sua organização >- Confidencial**. Por exemplo, se o nome da organização for VanArsdel, Ltd, você verá e selecionará **VanArsdel, Ltd - Confidencial**. Se você tiver desabilitado esse modelo padrão do Azure Rights Management, selecione um modelo alternativo. No entanto, se você selecionar um modelo de departamento, certifique-se de que sua conta esteja incluída no escopo.
+    a. Se você tiver ativado o Azure Rights Managment, para **definir o modelo RMS para proteger documentos e emails que contenham esse rótulo**: verifique se o **Azure RMS** está selecionado, clique na caixa suspensa e selecione o modelo padrão **\<nome da sua organização > - Confidencial**. Por exemplo, se o nome da organização for VanArsdel, Ltd, você verá e selecionará **VanArsdel, Ltd - Confidencial**. Se você tiver desabilitado esse modelo padrão do Azure Rights Management, selecione um modelo alternativo. No entanto, se você selecionar um modelo de departamento, certifique-se de que sua conta esteja incluída no escopo.
 
     Se você não tiver ativado o Azure Rights Management, não poderá usar essa opção.
 
@@ -82,6 +82,6 @@ Agora que você analisou a política padrão e fez algumas alterações, a próx
 [Etapa 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

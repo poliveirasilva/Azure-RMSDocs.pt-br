@@ -4,7 +4,7 @@ description: "Quando um arquivo foi protegido pelo Rights Management, você pode
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51050497fe128d94e069d0ac010435bea5623af2
-ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
+ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
+ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 ---
@@ -32,7 +32,7 @@ Quando um arquivo foi protegido pelo Rights Management, você pode alterar as pe
 >
 > Da mesma forma, se você quiser adicionar ou remover uma permissão, não será possível apenas especificar a permissão a ser adicionada ou removida, mas será necessário especificar todas as permissões que você deseja que as pessoas especificadas tenham.
 
-Se você for o proprietário do arquivo que deseja proteger novamente (por exemplo, você o protegeu originalmente usando o aplicativo de compartilhamento), automaticamente terá as permissões para proteger o arquivo novamente. Se você não for o proprietário, poderá ou não ter permissões para proteger o arquivo novamente, dependendo das permissões que o arquivo protegido tem no momento. 
+Se você for o proprietário do arquivo que deseja proteger novamente (por exemplo, você o protegeu originalmente usando o aplicativo de compartilhamento), automaticamente terá as permissões para proteger o arquivo novamente. Se você não for o proprietário, poderá ou não ter permissões para proteger o arquivo novamente, dependendo das permissões que o arquivo protegido tem no momento. É necessário o [Direito de uso de controle total](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) para proteger um arquivo novamente.
 
 Por exemplo, se outra pessoa protegeu o arquivo usando o aplicativo de compartilhamento do Rights Management e especificou um grupo ao qual você pertence e **Coproprietário** como a permissão personalizada, você poderá proteger o arquivo novamente. No entanto, se ela não especificou seu nome ou um grupo ao qual você pertence, ou se ela selecionou **Revisor – Exibir e Editar** ou um modelo que não permite a remoção de permissões, você não poderá proteger o arquivo novamente. A maneira mais fácil de descobrir é tentar proteger o arquivo novamente.
 
@@ -96,6 +96,6 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
