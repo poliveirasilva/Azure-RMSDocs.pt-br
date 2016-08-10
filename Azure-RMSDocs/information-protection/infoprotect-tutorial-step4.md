@@ -3,22 +3,24 @@ title: "Etapa 4 do tutorial de início rápido do Azure Information Protection |
 description: "Etapa 4 de um tutorial de introdução para testar rapidamente o Microsoft Azure Information Protection para sua organização com apenas 4 etapas que devem levar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: e80ea074fb1f6e571b846969b15c08cf7108b11c
-ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 ---
 
 # Etapa 4: Ver a classificação, a rotulação e a proteção em ação 
 
-*Aplica-se a: visualização do Azure Information Protection*
+>*Aplica-se a: visualização do Azure Information Protection*
+
+**[Estas informações são preliminares e estão sujeitas a alterações. ]**
 
 Agora que você tem um documento do Word aberto com o cliente do Azure Information Protection instalado, está pronto para ver como é fácil começar a rotular e proteger seu documento usando a política que configuramos.
 
@@ -75,6 +77,6 @@ Quando terminar seus próprios testes, talvez seja útil para examinar as [pergu
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -13,8 +13,18 @@
 ### [Etapa 3: Instale o cliente](infoprotect-tutorial-step3.md)
 ### [Etapa 4: Veja isso em ação](infoprotect-tutorial-step4.md)
 ## [Perguntas frequentes](faq.md)
+## [Configurar política](configure-policy.md)
+### [A política padrão](configure-policy-default.md)
+### [Definir as configurações globais](configure-policy-settings.md)
+### [Criar um novo rótulo](configure-policy-new-label.md)
+### [Excluir ou reordenar um rótulo](configure-policy-delete-reorder.md)
+### [Alterar um rótulo](configure-policy-change-label.md)
+### [Aplicar proteção](configure-policy-protection.md)
+### [Configurar marcações visuais](configure-policy-markings.md)
+### [Configurar condições](configure-policy-classification.md)
+## [Instalar o cliente](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
