@@ -3,15 +3,15 @@ title: "Etapa 3 do tutorial de início rápido do Azure Information Protection |
 description: "Etapa 3 de um tutorial de introdução para testar rapidamente o Microsoft Azure Information Protection para sua organização com apenas 4 etapas que devem levar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ Nesta etapa, você instalará o cliente do Azure Information Protection para que
         Clique em **Proteger** > **Ajuda e comentários** e, na caixa de diálogo **Microsoft Azure Information Protection**, confirme o status do cliente. Ela deve exibir **Information Protection policy is installed** (A política do Information Protection está instalada) e o horário de uma conexão recente. Verifique se o nome de usuário exibido está correto para seu locatário.
 
     - Uma nova barra é exibida abaixo da faixa de opções, a barra do Information Protection. Ela exibe o título de **Confidencialidade** e o rótulo padrão que configuramos de **Interno**. 
-
-
-![Etapa 3 do tutorial de início rápido do Azure Information Protection – cliente instalado](../media/word2013-callouts.png)
+    
+        ![Etapa 3 do tutorial de início rápido do Azure Information Protection – cliente instalado](../media/word2013-callouts2.png)
 
 Você está pronto para a etapa final, para ver a classificação, a rotulação e a proteção em ação.
 
@@ -53,6 +52,6 @@ Você está pronto para a etapa final, para ver a classificação, a rotulação
 [Etapa 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
