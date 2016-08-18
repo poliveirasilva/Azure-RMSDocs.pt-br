@@ -3,15 +3,15 @@ title: "Como configurar condições para classificação automática e recomenda
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
 
 
 ---
@@ -49,15 +49,15 @@ Neste exemplo, o usuário pode clicar em **Alterar Agora** para aplicar o rótul
 
 ## Para configurar a classificação automática ou recomendada para um rótulo
 
-1. Verifique se você está conectado ao Portal do Azure usando este link especial do Azure Information Protection: https://portal.azure.com/?microsoft_azure_informationprotection=true
- 
-2. No menu hub, clique em **Procurar** e comece a digitar **Information** na caixa de filtro. Selecione **Azure Information Protection**.
+1. Se você ainda não fez isso, entre no [portal do Azure](https://portal.azure.com) e navegue até a folha **Azure Information Protection**. 
+    
+    Por exemplo, no menu hub, clique em **Procurar** e comece a digitar **Information** na caixa Filtro. Selecione **Azure Information Protection**.
 
-3. Na folha **Azure Information Protection**, selecione a folha que deseja configurar para classificação automática ou recomendada.
+2. Na folha **Azure Information Protection**, selecione a folha que deseja configurar para classificação automática ou recomendada.
 
-4. Na folha **Rótulo**, na seção **Configurar condições para aplicar este rótulo automaticamente**, clique em **Adicionar uma nova condição**.
+3. Na folha **Rótulo**, na seção **Configurar condições para aplicar este rótulo automaticamente**, clique em **Adicionar uma nova condição**.
 
-5. Na folha **Condição**, selecione **Interno** se desejar usar uma condição predefinida ou **Personalizado** se desejar especificar sua própria condição e, em seguida, clique em **Salvar**:
+4. Na folha **Condição**, selecione **Interno** se desejar usar uma condição predefinida ou **Personalizado** se desejar especificar sua própria condição e, em seguida, clique em **Salvar**:
 
     - Para **Interno**: selecione na lista de condições disponíveis e, em seguida, selecione o número mínimo de ocorrências e se a ocorrência deve ter um valor exclusivo a ser incluído na contagem de ocorrências.
         
@@ -67,13 +67,13 @@ Neste exemplo, o usuário pode clicar em **Alterar Agora** para aplicar o rótul
         
     **Exemplo de opções de ocorrências**: você seleciona a opção interna de número do seguro social e define o número mínimo de ocorrências como 2, e um documento tem o mesmo número do seguro social listado duas vezes: se você definiu **Contar ocorrências apenas com valores exclusivos** como **Ativado**, a condição não é atendida e, se você definiu essa opção como **Desativado**, a condição é atendida.
 
-6. Na folha **Rótulo**, configure o seguinte e, em seguida, clique em **Salvar**:
+5. Na folha **Rótulo**, configure o seguinte e, em seguida, clique em **Salvar**:
 
     - Escolha a classificação automática ou recomendada: em **Selecionar como esse rótulo é aplicado: automaticamente ou recomendado ao usuário**, selecione **Automático** ou **Recomendado**.
 
     - Especifique o texto do aviso ao usuário ou da dica de política: mantenha o texto padrão ou especifique sua própria cadeia de caracteres.
 
-7. Para disponibilizar as alterações aos usuários, na folha **Azure Information Protection**, clique em **Publicar**.
+6. Para disponibilizar as alterações aos usuários, na folha **Azure Information Protection**, clique em **Publicar**.
 
 ## Informações sobre as condições internas
 
@@ -225,6 +225,6 @@ Para obter mais informações de como configurar a política do Azure Informatio
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

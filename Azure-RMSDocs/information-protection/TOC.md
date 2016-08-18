@@ -20,11 +20,12 @@
 ### [Excluir ou reordenar um rótulo](configure-policy-delete-reorder.md)
 ### [Alterar um rótulo](configure-policy-change-label.md)
 ### [Aplicar proteção](configure-policy-protection.md)
+#### [Restrições de HYOK](configure-adrms-restrictions.md)
 ### [Configurar marcações visuais](configure-policy-markings.md)
 ### [Configurar condições](configure-policy-classification.md)
 ## [Instalar o cliente](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

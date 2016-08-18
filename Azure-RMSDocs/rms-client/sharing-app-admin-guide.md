@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
-ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -351,6 +351,33 @@ As seguintes URLs são usadas para controle de documentos e devem ser permitidas
 
 -   https://&#42;.microsoftonline-p.com
 
+### Rastreamento e revogação de documentos para usuários
+
+Quando os usuários entram no site de rastreamento de documentos, eles podem acompanhar e revogar documentos compartilhados usando o aplicativo RMS sharing. Quando você entra como um administrador do Azure RMS (administrador global), é possível clicar no ícone Administrador na parte superior direita da página, que muda para o modo de Administrador, para que você possa ver os documentos que foram compartilhados por usuários em sua organização.
+
+As ações que podem ser executadas no modo de Administrador são auditadas e registradas nos arquivos de log de uso, sendo necessário confirmar para continuar. Para obter mais informações sobre esse log, confira a próxima seção.
+
+Quando estiver no modo de Administrador, você poderá pesquisar por usuário ou documento. Se você pesquisar por usuário, verá todos os documentos compartilhados pelo usuário especificado. Se você pesquisar por documento, verá todos os usuários em sua organização que compartilharam esse documento. Em seguida, você poderá fazer uma busca detalhada nos resultados da pesquisa para acompanhar os documentos que os usuários compartilharam e revogar esses documentos, se necessário. 
+
+Para sair do modo de Administrador, clique no **X** ao lado de **Sair do modo de administrador**.
+
+Para obter instruções sobre como usar o site de rastreamento de documentos, veja [Acompanhar e revogar seus documentos](sharing-app-track-revoke.md) no guia do usuário.
+
+
+
+### Log de uso para o site de rastreamento de documentos
+
+Dois campos nos arquivos de log de uso são aplicáveis ao rastreamento de documentos: **AdminAction** e **ActingAsUser**.
+
+**AdminAction** – Este campo tem o valor true quando um administrador usa o site de rastreamento de documentos no modo de Administrador, por exemplo, para revogar um documento em nome de um usuário ou para ver quando ele foi compartilhado. Esse campo fica vazio quando um usuário faz logon no site de rastreamento de documentos.
+
+**ActingAsUser** – Quando o campo AdminAction for true, esse campo conterá o nome de usuário em nome de quem o administrador está agindo como o usuário ou o proprietário do documento pesquisado. Esse campo fica vazio quando um usuário faz logon no site de rastreamento de documentos. 
+
+Também existem tipos de solicitação que registram como os usuários e administradores usam o site de rastreamento de documentos. Por exemplo, **RevokeAccess** é o tipo de solicitação que ocorre quando um usuário ou administrador em nome do usuário revogou um documento no site de rastreamento de documentos. Use esse tipo de solicitação em combinação com o campo AdminAction para determinar se o usuário revogou seus próprios documentos (o campo AdminAction fica vazio) ou um administrador revogou um documento em nome de um usuário (o AdminAction é true).
+
+
+Para obter mais informações sobre o log de uso, veja [Registrando em log e analisando o uso do Azure Rights Management](../deploy-use/log-analyze-usage.md)
+
 ## Somente AD RMS: Suporte para vários domínios de email dentro de sua organização
 Se você usa o AD RMS e usuários em sua organização tem vários domínios de email, talvez como resultado de uma fusão ou aquisição, você deve fazer a seguinte edição no registro:
 
@@ -369,6 +396,6 @@ Para obter informações técnicas adicionais que incluem a explicação da dife
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

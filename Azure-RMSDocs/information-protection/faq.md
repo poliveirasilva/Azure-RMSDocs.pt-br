@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ Experimente nosso tutorial de início rápido para ver isso funcionando em apena
 
 Observe que a visualização permite que você experimente o novo **plano de serviço Premium P2** e que alguns recursos avançados, como a rotulação automática e recomendada, podem não estar disponíveis para você no seu plano atual na disponibilidade geral. Para obter informações sobre os diferentes planos de serviço (Azure Information Protection Premium P1 e Azure Information Protection Premium P2), consulte a seguinte postagem do blog: [Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/) (Apresentando a mobilidade corporativa + segurança).
 
-Essa versão de visualização tem as limitações a seguir. Esteja atento aos comunicados no [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Blog de segurança e mobilidade corporativa) e em nosso [site do Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para quando recursos e funcionalidades adicionais forem disponibilizados:
+Essa versão de visualização tem as limitações a seguir. Fique atento aos comunicados no [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog do Enterprise Mobility and Security) e em nosso [site do Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) para saber quando outros recursos e funcionalidades serão disponibilizados:
 
 - Não há nenhum log centralizado para classificação e rotulagem.
 
-- Nomes de rótulo e dicas de ferramentas têm suporte apenas em inglês.
+- Há suporte para nomes de rótulo e dicas de ferramentas apenas em um único idioma.
 
 - As condições para a classificação automática devem ser frases ou padrões.
 
@@ -61,11 +61,11 @@ Para a versão de visualização, você pode usar qualquer assinatura que inclua
 
 Para configurar as políticas do Azure Information Protection no Portal do Azure, você deve ter uma assinatura do Azure. Se você ainda não tiver uma assinatura do Azure para sua organização, poderá obtê-la se inscrevendo em uma avaliação gratuita: vá para a página [Introdução ao Azure](https://account.windowsazure.com/organization) e siga as instruções.
 
-Todas as alterações nos requisitos de assinatura serão anunciadas no [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Blog de segurança e mobilidade corporativa).
+Todas as alterações nos requisitos de assinatura serão anunciadas no [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Blog do Enterprise Mobility and Security).
 
 ## É necessário ser um administrador global para experimentar a visualização do Azure Information Protection?
 
-Apenas para a versão de visualização, qualquer usuário autenticado pelo Azure poderá ver e configurar sua política do Azure Information Protection de locatário no Portal do Azure.
+Apenas na versão de visualização, qualquer usuário autenticado pelo Azure poderá ver e configurar sua política do Azure Information Protection de locatário referente à classificação e rotulagem no portal do Azure. No entanto, para configurar um rótulo para aplicar um modelo do Azure Rights Management, é necessário estar conectado como administrador global do Azure Active Directory.
 
 Se você selecionar a opção para instalar a política de demonstração, ao instalar o [cliente do Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018), não precisa nem entrar no portal para experimentar a visualização. A política de demonstração instala localmente a política padrão para o Azure Information Protection, portanto, é possível tentar rotular documentos e emails, mas não é possível alterar ou adicionar novos rótulos sem entrar no Portal do Azure. 
 
@@ -74,7 +74,7 @@ Se você quiser proteger os documentos e emails classificados e rotulados e aind
 
 ## O Azure Information Protection dá suporte a cenários locais e híbridos?
 
-O Azure Information Protection é uma solução baseada em nuvem. Se você tiver interesse em cenários híbridos, entre em contato com a equipe do Information Protection enviando um email para askipteam@microsoft.com.
+O Azure Information Protection é uma solução baseada em nuvem. Se você tiver interesse em implantar o Azure Information Protection em um cenário híbrido, entre em contato com a equipe do Information Protection enviando um email para askipteam@microsoft.com.
 
 ## Quais plataformas de cliente e aplicativos têm suporte no Azure Information Protection?
 
@@ -150,7 +150,11 @@ Como o Azure Information Protection usa metadados persistentes para a classifica
 
 ## Como o rastreamento de documentos e a revogação funcionam para o Azure Information Protection?
 
-O rastreamento de documentos para os arquivos que você classifica e protege usando o Azure Information Protection funciona da mesma forma que atualmente para o Azure Rights Management. Para obter mais informações, consulte [Rastreie e revogue seus documentos ao usar o aplicativo RMS sharing](../rms-client/sharing-app-track-revoke.md).
+O rastreamento de documentos dos arquivos classificados e protegidos com o Azure Information Protection funciona da mesma forma que atualmente para o Azure Rights Management e o aplicativo RMS sharing. Você também pode acessar o site de rastreamento de documentos usando o cliente Azure Information Protection (versão 1.0.233 ou posterior): 
+
+- Em um aplicativo do Office, na guia **Início**, no grupo **Proteção**, clique em **Proteger** > **Acompanhar uso**. 
+
+Para obter mais informações, consulte [Rastreie e revogue seus documentos ao usar o aplicativo RMS sharing](../rms-client/sharing-app-track-revoke.md).
 
 ## Como o Azure Information Protection impõe as políticas que eu configuro?
 
@@ -184,6 +188,6 @@ Em seguida, visite nosso [site do Yammer](https://www.yammer.com/askipteam/#/thr
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ Ao acessar esse site, basta conectar para acompanhar seus documentos. Levando em
 
 -   Se você precisar interromper o compartilhamento de um documento: Clique em **Revogar acesso**, observe o período de tempo em que o documento continuará disponível e decida se quer informar às pessoas que você está revogando o acesso ao documento antes compartilhado e forneça uma mensagem personalizada. Quando você revoga um documento, o documento que você compartilhou não é excluído, mas usuários autorizados já não serão capazes de abri-lo.
 
--   Se quiser exportar para o Excel: Clique em **Abrir no Excel**, de modo que você possa modificar os dados e criar seus próprios modos de exibição e gráficos.
+-   Se você quiser exportar para o Excel: clique em **Exportar para CSV**, para que você possa modificar os dados e criar suas próprias exibições e gráficos.
 
 -   Se quiser configurar notificações por email: Clique em **Configurações** e selecione como e se deseja enviar um email quando o documento for acessado.
+
+- Se você quer acompanhar e revogar documentos compartilhados para outras pessoas: os administradores do Azure RMS podem acompanhar e revogar documentos para outras pessoas clicando no ícone Administrador. Somente os administradores veem esse ícone.
 
 -   Se você tiver dúvidas ou quiser fazer comentários sobre o site de rastreamento de documentos: Clique no ícone Ajuda para acessar as [Perguntas frequentes sobre o rastreamento de documentos](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -50,6 +52,11 @@ Ao acessar esse site, basta conectar para acompanhar seus documentos. Levando em
     ![Selecione Acompanhar Uso do Outlook ao usar o aplicativo de compartilhamento RMS ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 Se você não vir essas opções para o RMS, é provável que o aplicativo RMS sharing não esteja instalado no seu computador, a versão mais recente não esteja instalada ou o computador deve ser reiniciado para concluir a instalação. Para obter mais informações sobre como instalar o aplicativo de compartilhamento, consulte [Baixar e instalar o aplicativo de compartilhamento Rights Management](install-sharing-app.md).
+
+> [!NOTE] 
+> Se você instalou a versão de visualização do [cliente Azure Information Protection](../information-protection/info-protect-client.md), versão 1.0.233 ou posterior, também poderá acessar o site de rastreamento de documentos usando o botão **Proteger**: 
+> 
+> - Em um aplicativo do Office, na guia **Início**, no grupo **Proteção**, clique em **Proteger** > **Acompanhar uso**. 
 
 ### Outras maneiras de rastrear e revogar seus documentos
 Além de controlar seus documentos em computadores Windows usando aplicativos do Office, você também pode usar estas alternativas:
@@ -93,13 +100,13 @@ Para obter exemplos de como você pode usar o aplicativo Rights Management shari
 
 -   [Exemplos de uso do aplicativo RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [O que você deseja fazer?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Consulte também
 [Guia do usuário do aplicativo de compartilhamento Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

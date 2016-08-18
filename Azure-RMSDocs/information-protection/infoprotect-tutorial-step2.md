@@ -3,15 +3,15 @@ title: "Etapa 2 do tutorial de início rápido do Azure Information Protection |
 description: "Etapa 2 de um tutorial de introdução para testar rapidamente o Microsoft Azure Information Protection para sua organização com apenas 4 etapas que devem levar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
-ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
+ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
+ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 
 
 ---
@@ -24,13 +24,20 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 Embora o Azure Information Protection seja fornecido com uma política padrão que pode ser usada sem configuração, analisaremos essa política e faremos algumas alterações.
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
+1. Entre no [Portal do Azure](https://portal.azure.com). Se você quiser testar a proteção, bem como a classificação e rotulagem, entre como administrador global para que você possa recuperar os modelos do Azure Rights Management.
  
-2. No menu hub, clique em **Procurar** e comece a digitar **Information** na caixa de filtro. Selecione **Azure Information Protection**.
+2. No menu hub: clique em **Novo** > **Segurança + Identidade** > **Azure Information Protection (visualização)** > **Criar**.
 
-- Você verá agora folha **Azure Information Protection** principal, mostrando a política padrão do Information Protection que é criada automaticamente. Essa política padrão contém os seguintes rótulos para classificação: **Pessoal**, **Público**, **Interno**, **Confidencial** e **Segredo**. Leia a dica de ferramenta para entender como os rótulos devem ser usados. Observe que **Segredo** tem dois sub-rótulos: **Todos os Funcionários** e **Meu Grupo**, que fornecem um exemplo de como uma categoria pode ter subcategorias.
+    Essa ação cria a folha **Azure Information Protection**, para que na próxima vez que você entrar no portal, seja possível selecionar o serviço na lista **Procurar** do hub. 
 
-- Com as configurações padrão, **Interno**, **Confidencial** e **Segredo** têm marcas visuais configuradas (como rodapé, cabeçalho, marca-d'água) e nenhum dos rótulos têm a proteção definida. Além disso, as três configurações globais estão definidas, de forma que todos os documentos e emails não precisem ter um rótulo, não haja um rótulo padrão e os usuários não tenham que fornecer justificativas ao reduzir o nível de confidencialidade.
+    > [!TIP] 
+    > Selecione **Fixar no painel** para criar um bloco do **Azure Information Protection** no painel, para que você possa ignorar a etapa Procurar na próxima vez que entrar no portal.
+
+3.  Explore a folha principal **Azure Information Protection**, que mostra a política padrão do Information Protection que é criada automaticamente:
+    
+    - Rótulos de classificação: **Pessoal**, **Público**, **Interno**, **Confidencial** e **Segredo**. Leia a dica de ferramenta para entender como os rótulos devem ser usados. Observe que **Segredo** tem dois sub-rótulos: **Todos os Funcionários** e **Meu Grupo**, que fornecem um exemplo de como uma categoria pode ter subcategorias.
+
+    - Com as configurações padrão, os rótulos **Interno**, **Confidencial** e **Segredo** têm marcações visuais configuradas (como rodapé, cabeçalho, marca-d’água) e nenhum dos rótulos tem a proteção definida. Além disso, as três configurações globais estão definidas, de forma que todos os documentos e emails não precisem ter um rótulo, não haja um rótulo padrão e os usuários não tenham que fornecer justificativas ao reduzir o nível de confidencialidade.
 
     ![Etapa 3 do tutorial de início rápido do Azure Information Protection – política padrão](../media/info-protect-policy.png)
 
@@ -42,7 +49,7 @@ Para nosso tutorial, vamos alterar algumas dessas configurações globais para q
 
 Agora, alteraremos as configurações de um dos rótulos, **Confidencial**:
 
-1. Clique na entrada de rótulo **Confidencial**.
+1. Clique no rótulo **Confidencial**.
 
 2. Na folha **Label: Confidential** (Rótulo: Confidencial), você verá agora as configurações que estão disponíveis para cada rótulo. Faça as seguintes alterações:
 
@@ -90,6 +97,6 @@ Agora que você analisou a política padrão e fez algumas alterações, a próx
 [Etapa 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

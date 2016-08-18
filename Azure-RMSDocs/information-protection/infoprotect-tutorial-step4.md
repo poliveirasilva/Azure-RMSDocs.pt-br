@@ -3,15 +3,15 @@ title: "Etapa 4 do tutorial de início rápido do Azure Information Protection |
 description: "Etapa 4 de um tutorial de introdução para testar rapidamente o Microsoft Azure Information Protection para sua organização com apenas 4 etapas que devem levar menos de 15 minutos."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ A classificação e a proteção acontecem quando você salva o documento, mas a
 
 ### Para alterar manualmente nosso rótulo padrão:
 
-- Na barra Information Protection, clique no ícone Editar rótulo ao lado de **Interno**. Isso exibe os rótulos disponíveis. Escolha **Pessoal** e você será solicitado a justificar o motivo de estar diminuindo o nível de classificação. Selecione **This file no longer requires that classification** (Este arquivo não precisa mais da classificação) e clique em **Confirmar**.  
+- Na barra Information Protection, selecione o rótulo **Pessoal** e será solicitado que você justifique por que está reduzindo o nível de classificação. Selecione **This file no longer requires that classification** (Este arquivo não precisa mais da classificação) e clique em **Confirmar**.  
 
     Você verá o **Confidencialidade** mudar para **Pessoal**.
 
@@ -36,7 +36,7 @@ A classificação e a proteção acontecem quando você salva o documento, mas a
 
 ### Para remover completamente a classificação:
 
-- Na barra Information Protection, clique no ícone Editar rótulo ao lado de **Pessoal**. Isso exibe os rótulos disponíveis. Mas, em vez de escolher um dos rótulos, desta vez, clique no ícone Remover rótulo. Clique em **OK** para confirmar e fornecer uma justificativa para essa ação.  
+- Na barra Information Protection, clique no ícone **Editar rótulo** ao lado de **Pessoal**. Isso exibe os rótulos disponíveis. Mas, em vez de escolher um dos rótulos, desta vez, clique no ícone **Remover rótulo**. Clique em **OK** para confirmar e fornecer uma justificativa para essa ação.  
 
     Você verá o valor **Confidencialidade** mostrar **Não definido**, que é o que os usuários veem inicialmente se você não definir um rótulo padrão.
 
@@ -77,6 +77,6 @@ Quando terminar seus próprios testes, talvez seja útil para examinar as [pergu
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

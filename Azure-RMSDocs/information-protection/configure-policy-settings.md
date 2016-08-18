@@ -3,15 +3,15 @@ title: "Como definir as configurações globais da política do Azure Informatio
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Há três configurações na política do Azure Information Protection que se ap
 
 Para definir essas configurações:
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
- 
-2. No menu hub, clique em **Procurar** e comece a digitar **Information** na caixa de filtro. Selecione **Azure Information Protection**.
+1. Se você ainda não fez isso, entre no [portal do Azure](https://portal.azure.com) e navegue até a folha **Azure Information Protection**. 
+    
+    Por exemplo, no menu hub, clique em **Procurar** e comece a digitar **Information** na caixa Filtro. Selecione **Azure Information Protection**.
 
-3. Na folha **Azure Information Protection**, defina estas configurações globais:
+2. Na folha **Azure Information Protection**, defina estas configurações globais:
 
     - **Todos os documentos e emails devem ter um rótulo**: quando essa opção for configurada como **Ativado**, todos os documentos salvos e os email enviados deverão ter um rótulo aplicado. Os rótulos podem ser atribuídos manualmente por um usuário, automaticamente como resultado de uma [condição](configure-policy-classification.md) ou por padrão (ao definir a opção **Selecione o rótulo padrão**). 
 
@@ -49,9 +49,9 @@ Para definir essas configurações:
 
     Essa opção não se aplica a sub-rótulos.
 
-4. Para salvar suas alterações, clique em **Salvar**.
+3. Para salvar suas alterações, clique em **Salvar**.
 
-5. Para disponibilizar as alterações aos usuários, clique em **Publicar**.
+4. Para disponibilizar as alterações aos usuários, clique em **Publicar**.
 
 ## Próximas etapas
 
@@ -68,6 +68,6 @@ Para obter mais informações de como configurar a política do Azure Informatio
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

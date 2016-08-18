@@ -3,15 +3,15 @@ title: "Como criar um novo rótulo para o Azure Information Protection | Azure R
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 26f22fb616f66332abf87501f782f1f8e8f0c013
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: c2f8f3204e3d5947137e7e9111ba4eba2628293b
 
 
 ---
@@ -28,22 +28,22 @@ Você poderá adicionar um novo rótulo ou adicionar um novo sub-rótulo em um r
 
 Use as instruções a seguir para adicionar um novo rótulo à política do Azure Information Protection.
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
- 
-2. No menu hub, clique em **Procurar** e comece a digitar **Information** na caixa de filtro. Selecione **Azure Information Protection**.
+1. Se você ainda não fez isso, entre no [portal do Azure](https://portal.azure.com) e navegue até a folha **Azure Information Protection**. 
+    
+    Por exemplo, no menu hub, clique em **Procurar** e comece a digitar **Information** na caixa Filtro. Selecione **Azure Information Protection**.
 
-3. Na folha **Azure Information Protection**, siga um destes procedimentos:
+2. Na folha **Azure Information Protection**, siga um destes procedimentos:
 
     - Para criar um novo rótulo: clique em **Adicionar um novo rótulo**.
 
     - Para criar um novo sub-rótulo: clique com o botão direito do mouse ou selecione o menu de contexto (**...**) do rótulo em que deseja criar um sub-rótulo e, em seguida, clique em **Adicionar um sub-rótulo**.
 
-4. Na folha **Rótulo** ou **Sub-rótulo**, selecione as opções que deseja para este novo rótulo e, em seguida, clique em **Salvar**.
+3. Na folha **Rótulo** ou **Sub-rótulo**, selecione as opções que deseja para este novo rótulo e, em seguida, clique em **Salvar**.
 
     > [!NOTE]
     >Para obter informações sobre a configuração de proteção, consulte [How to configure a label to apply protection](configure-policy-protection.md) (Como configurar um rótulo para aplicar proteção).
 
-5. Para disponibilizar as alterações aos usuários, na folha **Azure Information Protection**, clique em **Publicar**.
+4. Para disponibilizar as alterações aos usuários, na folha **Azure Information Protection**, clique em **Publicar**.
 
 ## Próximas etapas
 
@@ -53,6 +53,6 @@ Para obter mais informações de como configurar a política do Azure Informatio
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
