@@ -16,7 +16,7 @@ ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
 
 ---
 
-# O que é o Azure Information Protection (visualização)?
+# O que é o Azure Information Protection (prévia)?
 
 >*Aplica-se a: visualização do Azure Information Protection*
 
